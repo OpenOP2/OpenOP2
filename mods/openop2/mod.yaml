@@ -1,0 +1,290 @@
+Metadata:
+	Title: Tiberian Dawn
+	Version: release-20200503
+	Website: https://www.openra.net
+	WebIcon32: https://www.openra.net/images/icons/cnc_32x32.png
+
+PackageFormats: Mix
+
+Packages:
+	~^Content/cnc
+	~^Content/cnc/movies
+	.
+	$openop2: openop2
+	./mods/common: common
+	~speech.mix
+	~conquer.mix
+	~sounds.mix
+	~tempicnh.mix
+	~temperat.mix
+	~winter.mix
+	~desert.mix
+	~movies.mix
+	~scores.mix
+	~scores2.mix
+	~scores-covertops.mix
+	~transit.mix
+	openop2|bits/snow.mix
+	openop2|bits
+	openop2|bits/jungle
+	openop2|bits/desert
+	openop2|bits/ss
+	openop2|bits/scripts
+	openop2|uibits
+
+MapFolders:
+	openop2|maps: System
+	~^maps/openop2/release-20200503: User
+
+Rules:
+	openop2|rules/misc.yaml
+	openop2|rules/ai.yaml
+	openop2|rules/player.yaml
+	openop2|rules/world.yaml
+	openop2|rules/palettes.yaml
+	openop2|rules/defaults.yaml
+	openop2|rules/structures.yaml
+	openop2|rules/infantry.yaml
+	openop2|rules/vehicles.yaml
+	openop2|rules/trees.yaml
+	openop2|rules/civilian.yaml
+	openop2|rules/civilian-desert.yaml
+	openop2|rules/tech.yaml
+	openop2|rules/ships.yaml
+	openop2|rules/aircraft.yaml
+	openop2|rules/husks.yaml
+
+Sequences:
+	openop2|sequences/structures.yaml
+	openop2|sequences/vehicles.yaml
+	openop2|sequences/infantry.yaml
+	openop2|sequences/aircraft.yaml
+	openop2|sequences/decorations.yaml
+	openop2|sequences/misc.yaml
+	openop2|sequences/funpark.yaml
+	openop2|sequences/civilian.yaml
+	openop2|sequences/campaign.yaml
+
+TileSets:
+	openop2|tilesets/desert.yaml
+	openop2|tilesets/winter.yaml
+	openop2|tilesets/snow.yaml
+	openop2|tilesets/temperat.yaml
+	openop2|tilesets/jungle.yaml
+
+Weapons:
+	openop2|weapons/explosions.yaml
+	openop2|weapons/ballistics.yaml
+	openop2|weapons/missiles.yaml
+	openop2|weapons/other.yaml
+	openop2|weapons/smallcaliber.yaml
+	openop2|weapons/superweapons.yaml
+
+Cursors:
+	openop2|cursors.yaml
+
+Chrome:
+	openop2|chrome.yaml
+
+Assemblies:
+	common|OpenRA.Mods.Common.dll
+	common|OpenRA.Mods.Cnc.dll
+
+ChromeLayout:
+	openop2|chrome/mainmenu.yaml
+	openop2|chrome/mainmenu-prompts.yaml
+	openop2|chrome/playerprofile.yaml
+	openop2|chrome/multiplayer-browser.yaml
+	openop2|chrome/multiplayer-browserpanels.yaml
+	openop2|chrome/multiplayer-createserver.yaml
+	openop2|chrome/multiplayer-directconnect.yaml
+	openop2|chrome/lobby.yaml
+	openop2|chrome/lobby-mappreview.yaml
+	openop2|chrome/lobby-players.yaml
+	openop2|chrome/lobby-options.yaml
+	openop2|chrome/lobby-music.yaml
+	openop2|chrome/lobby-servers.yaml
+	openop2|chrome/lobby-kickdialogs.yaml
+	openop2|chrome/connection.yaml
+	openop2|chrome/color-picker.yaml
+	openop2|chrome/mapchooser.yaml
+	openop2|chrome/replaybrowser.yaml
+	openop2|chrome/gamesave-browser.yaml
+	openop2|chrome/gamesave-loading.yaml
+	openop2|chrome/ingame.yaml
+	openop2|chrome/ingame-chat.yaml
+	openop2|chrome/ingame-menu.yaml
+	openop2|chrome/ingame-debug.yaml
+	openop2|chrome/ingame-infochat.yaml
+	openop2|chrome/ingame-info.yaml
+	openop2|chrome/ingame-infobriefing.yaml
+	openop2|chrome/ingame-infoscripterror.yaml
+	openop2|chrome/ingame-infoobjectives.yaml
+	openop2|chrome/ingame-infostats.yaml
+	openop2|chrome/ingame-debuginfo.yaml
+	openop2|chrome/music.yaml
+	openop2|chrome/settings.yaml
+	openop2|chrome/credits.yaml
+	openop2|chrome/dialogs.yaml
+	openop2|chrome/tooltips.yaml
+	openop2|chrome/assetbrowser.yaml
+	openop2|chrome/missionbrowser.yaml
+	openop2|chrome/editor.yaml
+
+Voices:
+	openop2|audio/voices.yaml
+
+Notifications:
+	openop2|audio/notifications.yaml
+
+Music:
+	openop2|audio/music.yaml
+
+Translations:
+	openop2|languages/english.yaml
+
+Hotkeys:
+	common|hotkeys/game.yaml
+	common|hotkeys/observer.yaml
+	common|hotkeys/production-common.yaml
+	common|hotkeys/production-peractor.yaml
+	common|hotkeys/supportpowers.yaml
+	common|hotkeys/viewport.yaml
+	openop2|hotkeys.yaml
+
+LoadScreen: CncLoadScreen
+	Image: openop2|uibits/chrome.png
+	Image2x: openop2|uibits/chrome-2x.png
+	Image3x: openop2|uibits/chrome-3x.png
+	Text: Loading
+
+ServerTraits:
+	LobbyCommands
+	PlayerPinger
+	MasterServerPinger
+	LobbySettingsNotification
+
+ChromeMetrics:
+	common|metrics.yaml
+	openop2|metrics.yaml
+
+Fonts:
+	Tiny:
+		Font: common|FreeSans.ttf
+		Size: 10
+		Ascender: 8
+	TinyBold:
+		Font: common|FreeSansBold.ttf
+		Size: 10
+		Ascender: 8
+	Small:
+		Font: common|FreeSans.ttf
+		Size: 12
+		Ascender: 9
+	Regular:
+		Font: common|FreeSans.ttf
+		Size: 14
+		Ascender: 11
+	Bold:
+		Font: common|FreeSansBold.ttf
+		Size: 14
+		Ascender: 11
+	MediumBold:
+		Font: common|FreeSansBold.ttf
+		Size: 18
+		Ascender: 14
+	BigBold:
+		Font: common|FreeSansBold.ttf
+		Size: 24
+		Ascender: 18
+	Title:
+		Font: common|FreeSansBold.ttf
+		Size: 32
+		Ascender: 24
+
+Missions:
+	./mods/cnc/missions.yaml
+
+MapGrid:
+	TileSize: 24,24
+	Type: Rectangular
+
+SupportsMapsFrom: cnc
+
+SoundFormats: Aud, Wav
+
+SpriteFormats: ShpTD, TmpTD, ShpTS, TmpRA
+
+SpriteSequenceFormat: TilesetSpecificSpriteSequence
+	TilesetExtensions:
+		TEMPERAT: .tem
+		WINTER: .win
+		SNOW: .sno
+		DESERT: .des
+		JUNGLE: .jun
+
+ModelSequenceFormat: PlaceholderModelSequence
+
+AssetBrowser:
+	SupportedExtensions: .shp, .tem, .des, .sno, .jun, .vqa
+
+GameSpeeds:
+	slowest:
+		Name: Slowest
+		Timestep: 80
+		OrderLatency: 2
+	slower:
+		Name: Slower
+		Timestep: 50
+		OrderLatency: 3
+	default:
+		Name: Normal
+		Timestep: 40
+		OrderLatency: 3
+	fast:
+		Name: Fast
+		Timestep: 35
+		OrderLatency: 4
+	faster:
+		Name: Faster
+		Timestep: 30
+		OrderLatency: 4
+	fastest:
+		Name: Fastest
+		Timestep: 20
+		OrderLatency: 6
+
+ColorValidator:
+	TeamColorPresets: f70606, ff7a22, f8d3b3, f8e947, 94b319, f335a0, a64d6c, ce08f9, f5b2db, 12b572, 502048, 1d06f7, 328dff, 78dbf8, cef6b1, 391d1d
+
+ModContent:
+	InstallPromptMessage: Tiberian Dawn requires artwork and audio from the original game.\n\nQuick Install will automatically download this content (without music\nor videos) from a mirror of the 2007 C&C Gold freeware release.\n\nAdvanced Install includes options for downloading the music and for\ncopying the videos and other content from an original game disc.
+	QuickDownload: basefiles
+	HeaderMessage: Game content may be extracted from the original game discs or an\nexisting digital install. OpenRA can also download the base game\nfiles from an online mirror of the 2007 freeware release of C&C.
+	Packages:
+		base: Base Game Files
+			TestFiles: ^Content/cnc/conquer.mix, ^Content/cnc/desert.mix, ^Content/cnc/sounds.mix, ^Content/cnc/speech.mix, ^Content/cnc/temperat.mix, ^Content/cnc/tempicnh.mix, ^Content/cnc/winter.mix
+			Sources: gdi95, gdi95-linux, nod95, nod95-linux, tfd, origin
+			Required: true
+			Download: basefiles
+		music: Base Game Music
+			TestFiles: ^Content/cnc/scores.mix
+			Sources: gdi95, gdi95-linux, nod95, nod95-linux, tfd, origin
+			Download: music
+		movies-gdi: GDI Campaign Briefings
+			TestFiles: ^Content/cnc/movies/visor.vqa, ^Content/cnc/movies/turtkill.vqa, ^Content/cnc/movies/trailer.vqa, ^Content/cnc/movies/tbrinfo3.vqa, ^Content/cnc/movies/tbrinfo2.vqa, ^Content/cnc/movies/tbrinfo1.vqa, ^Content/cnc/movies/seige.vqa, ^Content/cnc/movies/samsite.vqa, ^Content/cnc/movies/samdie.vqa, ^Content/cnc/movies/sabotage.vqa, ^Content/cnc/movies/retro.vqa, ^Content/cnc/movies/podium.vqa, ^Content/cnc/movies/planecra.vqa, ^Content/cnc/movies/pintle.vqa, ^Content/cnc/movies/paratrop.vqa, ^Content/cnc/movies/nodsweep.vqa, ^Content/cnc/movies/nodlose.vqa, ^Content/cnc/movies/nodflees.vqa, ^Content/cnc/movies/nod1.vqa, ^Content/cnc/movies/nitejump.vqa, ^Content/cnc/movies/napalm.vqa, ^Content/cnc/movies/logo.vqa, ^Content/cnc/movies/landing.vqa, ^Content/cnc/movies/intro2.vqa, ^Content/cnc/movies/hellvaly.vqa, ^Content/cnc/movies/gunboat.vqa, ^Content/cnc/movies/generic.vqa, ^Content/cnc/movies/gdilose.vqa, ^Content/cnc/movies/gdifinb.vqa, ^Content/cnc/movies/gdifina.vqa, ^Content/cnc/movies/gdiend2.vqa, ^Content/cnc/movies/gdiend1.vqa, ^Content/cnc/movies/gdi9.vqa, ^Content/cnc/movies/gdi8b.vqa, ^Content/cnc/movies/gdi8a.vqa, ^Content/cnc/movies/gdi7.vqa, ^Content/cnc/movies/gdi6.vqa, ^Content/cnc/movies/gdi5.vqa, ^Content/cnc/movies/gdi4b.vqa, ^Content/cnc/movies/gdi4a.vqa, ^Content/cnc/movies/gdi3lose.vqa, ^Content/cnc/movies/gdi3.vqa, ^Content/cnc/movies/gdi2.vqa, ^Content/cnc/movies/gdi15.vqa, ^Content/cnc/movies/gdi14.vqa, ^Content/cnc/movies/gdi13.vqa, ^Content/cnc/movies/gdi12.vqa, ^Content/cnc/movies/gdi11.vqa, ^Content/cnc/movies/gdi10.vqa, ^Content/cnc/movies/gdi1.vqa, ^Content/cnc/movies/gameover.vqa, ^Content/cnc/movies/forestkl.vqa, ^Content/cnc/movies/flyy.vqa, ^Content/cnc/movies/flag.vqa, ^Content/cnc/movies/dino.vqa, ^Content/cnc/movies/desolat.vqa, ^Content/cnc/movies/consyard.vqa, ^Content/cnc/movies/cc2tease.vqa, ^Content/cnc/movies/burdet2.vqa, ^Content/cnc/movies/burdet1.vqa, ^Content/cnc/movies/bombflee.vqa, ^Content/cnc/movies/bombaway.vqa, ^Content/cnc/movies/bkground.vqa, ^Content/cnc/movies/bcanyon.vqa, ^Content/cnc/movies/banner.vqa
+			Sources: gdi95, gdi95-linux, tfd, origin
+		movies-nod: Nod Campaign Briefings
+			TestFiles: ^Content/cnc/movies/visor.vqa, ^Content/cnc/movies/trtkil_d.vqa, ^Content/cnc/movies/trailer.vqa, ^Content/cnc/movies/tiberfx.vqa, ^Content/cnc/movies/tankkill.vqa, ^Content/cnc/movies/tankgo.vqa, ^Content/cnc/movies/sundial.vqa, ^Content/cnc/movies/stealth.vqa, ^Content/cnc/movies/spycrash.vqa, ^Content/cnc/movies/sethpre.vqa, ^Content/cnc/movies/seige.vqa, ^Content/cnc/movies/samsite.vqa, ^Content/cnc/movies/retro.vqa, ^Content/cnc/movies/refint.vqa, ^Content/cnc/movies/obel.vqa, ^Content/cnc/movies/nuke.vqa, ^Content/cnc/movies/nodlose.vqa, ^Content/cnc/movies/nodfinal.vqa, ^Content/cnc/movies/nodend4.vqa, ^Content/cnc/movies/nodend3.vqa, ^Content/cnc/movies/nodend2.vqa, ^Content/cnc/movies/nodend1.vqa, ^Content/cnc/movies/nod9.vqa, ^Content/cnc/movies/nod8.vqa, ^Content/cnc/movies/nod7b.vqa, ^Content/cnc/movies/nod7a.vqa, ^Content/cnc/movies/nod6.vqa, ^Content/cnc/movies/nod5.vqa, ^Content/cnc/movies/nod4b.vqa, ^Content/cnc/movies/nod4a.vqa, ^Content/cnc/movies/nod3.vqa, ^Content/cnc/movies/nod2.vqa, ^Content/cnc/movies/nod1pre.vqa, ^Content/cnc/movies/nod13.vqa, ^Content/cnc/movies/nod12.vqa, ^Content/cnc/movies/nod11.vqa, ^Content/cnc/movies/nod10b.vqa, ^Content/cnc/movies/nod10a.vqa, ^Content/cnc/movies/nod1.vqa, ^Content/cnc/movies/logo.vqa, ^Content/cnc/movies/landing.vqa, ^Content/cnc/movies/kanepre.vqa, ^Content/cnc/movies/intro2.vqa, ^Content/cnc/movies/insites.vqa, ^Content/cnc/movies/generic.vqa, ^Content/cnc/movies/gdi1.vqa, ^Content/cnc/movies/gameover.vqa, ^Content/cnc/movies/forestkl.vqa, ^Content/cnc/movies/flag.vqa, ^Content/cnc/movies/dino.vqa, ^Content/cnc/movies/dessweep.vqa, ^Content/cnc/movies/deskill.vqa, ^Content/cnc/movies/desflees.vqa, ^Content/cnc/movies/consyard.vqa, ^Content/cnc/movies/cc2tease.vqa, ^Content/cnc/movies/bombflee.vqa, ^Content/cnc/movies/bombaway.vqa, ^Content/cnc/movies/bcanyon.vqa, ^Content/cnc/movies/banner.vqa, ^Content/cnc/movies/akira.vqa, ^Content/cnc/movies/airstrk.vqa
+			Sources: nod95, nod95-linux, tfd, origin
+		music-covertops: Covert Operations Music
+			TestFiles: ^Content/cnc/scores-covertops.mix
+			Sources: covertops, covertops-linux, tfd, origin
+	Downloads:
+		openop2|installer/downloads.yaml
+	Sources:
+		openop2|installer/covertops.yaml
+		openop2|installer/firstdecade.yaml
+		openop2|installer/gdi95.yaml
+		openop2|installer/nod95.yaml
+		openop2|installer/origin.yaml
