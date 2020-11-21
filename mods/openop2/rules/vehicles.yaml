@@ -41,6 +41,9 @@ MCV:
 	SelectionDecorations:
 
 HARV:
+	RenderSprites:
+		Palette: op2
+		PlayerColorPalette: player2
 	Inherits: ^Tank
 	Inherits@CLOAK: ^AcceptsCloakCrate
 	Inherits@selection: ^SelectableEconomicUnit
@@ -321,7 +324,7 @@ JEEP:
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Hum-Vee
+		Name: Laser Lynx
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -344,9 +347,8 @@ JEEP:
 		TurnSpeed: 10
 		Offset: -85,0,128
 	Armament:
-		Weapon: MachineGunH
+		Weapon: Laser
 		LocalOffset: 171,0,85
-		MuzzleSequence: muzzle
 	AttackTurreted:
 	WithMuzzleOverlay:
 	WithSpriteTurret:
