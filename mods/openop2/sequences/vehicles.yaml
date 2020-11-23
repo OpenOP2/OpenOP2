@@ -13,8 +13,11 @@ mcv.destroyed:
 
 harv:
 	idle:
-		Facings: 32
-		UseClassicFacingFudge: True
+		RenderSprites:Edozer.shp
+		Palette: op2
+		PlayerColorPalette: player2
+		Facings: 8
+		AddExtension: False
 	harvest:
 		Start: 32
 		Length: 4
