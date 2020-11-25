@@ -706,7 +706,7 @@ TRUCK:
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
 
-Edozer:
+edozer:
 	Inherits: ^Vehicle
 	Buildable:
 		Queue: Vehicle.GDI, Vehicle.Nod

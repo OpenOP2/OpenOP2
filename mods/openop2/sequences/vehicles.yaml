@@ -345,9 +345,9 @@ truck.destroyed:
 		UseClassicFacingFudge: True
 		ZOffset: -512
 
-Edozer:
-	idle: Edozer
+edozer:
+	idle: edozer
 		Facings: 8
 		UseTileSetExtension: False
 	icon: truckicon
-		UseTilesetExtension: False
+		UseTileSetExtension: False

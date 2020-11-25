@@ -1,8 +1,8 @@
 ^Palettes:
-	PaletteFromFile@op2
+	PaletteFromFile@op2:
 		Name: op2
 		Filename: op2.pal
-		ShadowIndex: 4
+		ShadowIndex: 4, 6
 	PaletteFromFile@terrain-desert:
 		Name: terrain
 		Tileset: DESERT
@@ -119,6 +119,7 @@
 	PlayerColorPalette:
 		BasePalette: op2
 		RemapIndex: 1, 11, 199, 92, 197, 195, 91, 94, 198, 89
+		ShadowIndex: 4, 6
 	PlayerHighlightPalette:
 	MenuPaletteEffect:
 		MenuEffect: Desaturated
