@@ -12,12 +12,9 @@ mcv.destroyed:
 		ZOffset: -512
 
 harv:
-	idle:
-		RenderSprites:Edozer.shp
-		Palette: op2
-		PlayerColorPalette: player2
-		Facings: 8
-		AddExtension: False
+	idle: 
+		Facings: 32
+		UseClassicFacingFudge: True
 	harvest:
 		Start: 32
 		Length: 4
@@ -347,3 +344,10 @@ truck.destroyed:
 		Facings: 32
 		UseClassicFacingFudge: True
 		ZOffset: -512
+
+Edozer:
+	idle: Edozer
+		Facings: 8
+		UseTileSetExtension: False
+	icon: truckicon
+		UseTilesetExtension: False

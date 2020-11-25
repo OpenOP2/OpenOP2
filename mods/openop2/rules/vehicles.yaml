@@ -41,9 +41,6 @@ MCV:
 	SelectionDecorations:
 
 HARV:
-	RenderSprites:
-		Palette: op2
-		PlayerColorPalette: player2
 	Inherits: ^Tank
 	Inherits@CLOAK: ^AcceptsCloakCrate
 	Inherits@selection: ^SelectableEconomicUnit
@@ -708,3 +705,23 @@ TRUCK:
 		Actor: TRUCK.Husk
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
+
+Edozer:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle.GDI, Vehicle.Nod
+		BuildPaletteOrder: 36
+		Prerequisites: vehicleproduction
+		Description: Creates terrain that units move faster on
+	Valued:
+		Cost: 100
+	Tooltip:
+		Name: Bulldozer
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 60
+	RevealsShroud:
+		Range: 4c0
