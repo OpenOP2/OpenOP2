@@ -1,2 +1,20 @@
 blank:
 	idle: bits/blank.png
+resources:
+	Defaults:
+		Length: *
+	blank: bits/blank.png
+
+
+editor-overlay:
+	Defaults: bits/blank.png
+		Length: *
+	copy:
+	paste:
+
+constructionvehicle:
+	Defaults: op2_art.bmp
+	idle:
+		Facings: 8
+		Length: 3
+		Tick: 25

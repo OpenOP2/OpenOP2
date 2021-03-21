@@ -14,6 +14,7 @@ using System.IO;
 using System.Linq;
 using OpenRA.Graphics;
 using OpenRA.Mods.Common.Graphics;
+using OpenRA.Mods.OpenOP2.FileSystem;
 using OpenRA.Primitives;
 
 namespace OpenRA.Mods.OpenOP2.SpriteLoaders
@@ -75,6 +76,134 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			}
 		}
 
+		void LoadGroups(Stream s, uint spriteCount, out PrtFile prtFile)
+		{
+			var h = new PrtFile()
+			{
+				ImageCount = (int)spriteCount,
+				ImageHeader = new Op2Image[spriteCount]
+			};
+
+			for (var i = 0; i < h.ImageCount; i++)
+			{
+				var paddedWidth = s.ReadUInt32();
+				var dataOffset = s.ReadUInt32();
+				var height = s.ReadUInt32();
+				var width = s.ReadUInt32();
+				var type = s.ReadUInt16();
+				var palette = s.ReadUInt16();
+
+				var img = new Op2Image
+				{
+					SizeX = (int)width,
+					SizeY = (int)height,
+				};
+
+				// img.ImgData = s.ReadBytes(img.SizeScanline);
+				// img.SizeX = s.ReadInt32();
+				// img.SizeY = s.ReadInt32();
+				// img.Unknown = s.ReadInt16();
+				// img.Palette = s.ReadInt16();
+				h.ImageHeader[i] = img;
+			}
+
+			h.AllGroupCount = s.ReadInt32();
+			h.AllFrameCount = s.ReadInt32();
+			h.AllPicCount = s.ReadInt32();
+			h.AllExtInfoCount = s.ReadInt32();
+			h.Groups = new ImageGroup[h.AllGroupCount];
+
+			for (var i = 0; i < h.AllGroupCount; i++)
+			{
+				var img = new ImageGroup
+				{
+					Unknown1 = s.ReadInt32(),
+					SelLeft = s.ReadInt32(),
+					SelTop = s.ReadInt32(),
+					SelRight = s.ReadInt32(),
+					SelBottom = s.ReadInt32(),
+					CenterX = s.ReadInt32(),
+					CenterY = s.ReadInt32(),
+					Unknown8 = s.ReadInt32(),
+					FrameCount = s.ReadInt32()
+				};
+
+				img.Frames = new Op2Frame[img.FrameCount];
+
+				for (var j = 0; j < img.FrameCount; j++)
+				{
+					var frame = new Op2Frame
+					{
+						PicCount = s.ReadUInt8(),
+						Unknown = s.ReadUInt8(),
+					};
+
+					frame.ExtUnknown1 = new BytePair[frame.PicCount >> 7];
+					for (var k = 0; k < frame.PicCount >> 7; k++)
+					{
+						var bp = new BytePair
+						{
+							Byte1 = s.ReadUInt8(),
+							Byte2 = s.ReadUInt8(),
+						};
+
+						frame.ExtUnknown1[k] = bp;
+					}
+
+					frame.ExtUnknown2 = new BytePair[frame.Unknown >> 7];
+					for (var k = 0; k < frame.Unknown >> 7; k++)
+					{
+						var bp = new BytePair
+						{
+							Byte1 = s.ReadUInt8(),
+							Byte2 = s.ReadUInt8(),
+						};
+
+						frame.ExtUnknown2[k] = bp;
+					}
+
+					frame.Pictures = new Op2Picture[frame.PicCount & 0x7F];
+					for (var k = 0; k < frame.Pictures.Length; k++)
+					{
+						var pic = new Op2Picture
+						{
+							ImgNumber = s.ReadInt16(),
+							Reserved = s.ReadUInt8(),
+							PicOrder = s.ReadUInt8(),
+							PosX = s.ReadInt16(),
+							PosY = s.ReadInt16()
+						};
+
+						frame.Pictures[k] = pic;
+					}
+
+					img.Frames[j] = frame;
+				}
+
+				img.GroupExtCount = s.ReadInt32();
+				img.Extended = new GroupExt[img.GroupExtCount];
+
+				for (var j = 0; j < img.GroupExtCount; j++)
+				{
+					var ext = new GroupExt
+					{
+						Unknown1 = s.ReadInt32(),
+						Unknown2 = s.ReadInt32(),
+						Unknown3 = s.ReadInt32(),
+						Unknown4 = s.ReadInt32(),
+					};
+
+					img.Extended[j] = ext;
+				}
+
+				h.Groups[i] = img;
+			}
+
+			prtFile = h;
+		}
+
+		private PrtFile prtFile;
+
 		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
 			var start = s.Position;
@@ -98,6 +227,12 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			var palettes = new Dictionary<int, uint[]>();
 
 			var spriteCount = prt.ReadUInt32();
+
+			var originalPosition = prt.Position;
+			LoadGroups(prt, spriteCount, out prtFile);
+			prt.Seek(originalPosition, SeekOrigin.Begin);
+
+			// Populate raw frames
 			frames = new ISpriteFrame[spriteCount];
 			for (var f = 0; f < frames.Length; f++)
 			{
@@ -124,7 +259,22 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 				};
 			}
 
+			// Now, order by groups
+			var frames2 = new List<ISpriteFrame>(); // new ISpriteFrame[spriteCount];
+			foreach (var group in prtFile.Groups)
+			{
+				foreach (var frame in group.Frames)
+				{
+					var firstPic = frame.Pictures.LastOrDefault();
+					if (firstPic == null) continue;
+
+					frames2.Add(frames[firstPic.ImgNumber]);
+				}
+			}
+
 			metadata = new TypeDictionary { new EmbeddedSpritePalette(framePalettes: palettes) };
+
+			frames = frames2.ToArray();
 
 			return true;
 		}

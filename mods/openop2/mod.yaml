@@ -9,8 +9,8 @@ Packages:
 	~^Content/openop2
 	.
 	$openop2: openop2
-	./mods/common: common
 	./mods/cnc: cnc
+	./mods/common: common
 	./mods/modcontent: modcontent
 	openop2|uibits
 	~MAPS.VOL
@@ -24,7 +24,11 @@ MapFolders:
 	~^maps/openop2/{DEV_VERSION}: User
 
 Rules:
+	openop2|rules/palettes.yaml
+	openop2|rules/locomotors.yaml
 	openop2|rules.yaml
+	openop2|rules/defaults.yaml
+	openop2|rules/vehicles.yaml
 
 Sequences:
 	openop2|sequences.yaml

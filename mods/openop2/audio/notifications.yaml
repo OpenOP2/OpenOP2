@@ -7,4 +7,5 @@ Sounds:
 	DefaultVariant: .wav
 	Notifications:
 		ClickSound:
+		ChatLine: 
 		ClickDisabledSound:
