@@ -1,0 +1,52 @@
+^Palettes:
+	PaletteFromPng@Terrain:
+		Name: terrain
+		Filename: bits/blank.png
+	PaletteFromPng@ColorPicker:
+		Name: colorpicker
+		Filename: bits/blank.png
+	PaletteFromPng@Chrome:
+		Name: chrome
+		Filename: bits/blank.png
+	PaletteFromPrtFile@player:
+		Name: player
+		Number: 0
+		Filename: op2_art.prt
+	PaletteFromPrtFile@1:
+		Name: 1
+		Number: 1
+		Filename: op2_art.prt
+	PaletteFromPrtFile@2:
+		Name: 2
+		Number: 2
+		Filename: op2_art.prt
+	PaletteFromPrtFile@3:
+		Name: 3
+		Number: 3
+		Filename: op2_art.prt
+	PaletteFromPrtFile@4:
+		Name: 4
+		Number: 4
+		Filename: op2_art.prt
+	PaletteFromPrtFile@5:
+		Name: 5
+		Number: 5
+		Filename: op2_art.prt
+	PaletteFromPrtFile@6:
+		Name: 6
+		Number: 6
+		Filename: op2_art.prt
+	PaletteFromPrtFile@7:
+		Name: 7
+		Number: 7
+		Filename: op2_art.prt
+	PaletteFromPrtFile@8:
+		Name: 8
+		Number: 8
+		Filename: op2_art.prt
+	PaletteFromRGBA@highlight:
+		Name: highlight
+		R: 255
+		G: 255
+		B: 255
+		A: 128

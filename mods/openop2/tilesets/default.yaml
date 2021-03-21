@@ -1,0 +1,37 @@
+General:
+	Name: Default
+	Id: DEFAULT
+	SheetSize: 1024
+	EditorTemplateOrder: Terrain
+	HeightDebugColors: AA0000
+
+Terrain:
+	TerrainType@Clear:
+		Type: Clear
+		TargetTypes: Ground
+		Color: FFD8B4
+		RestrictPlayerColor: true
+		#AcceptsSmudgeType: MiniCrater, SmallCrater, MediumCrater, BigCrater, HugeCrater
+	TerrainType@Water:
+		Type: Water
+		TargetTypes: Water
+		Color: 2B8164
+		RestrictPlayerColor: true
+
+Templates:
+	Template@1:
+		Id: 1
+		Images: BARREN/BARREN.TIL
+		Size: 1,1
+		PickAny: True
+		Frames: 8, 9, 10, 11, 12, 13, 14, 15
+		Categories: Terrain
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
