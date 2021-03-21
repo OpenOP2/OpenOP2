@@ -18,6 +18,8 @@ Packages:
 	~SOUND.VOL
 	~STORY.VOL
 	~VOICES.VOL
+	~well0001.png
+
 
 MapFolders:
 	openop2|maps: System
@@ -34,7 +36,7 @@ Sequences:
 	openop2|sequences.yaml
 
 TileSets:
-	openop2|tileset.yaml
+	openop2|tilesets/well0001.yaml
 
 Weapons:
 

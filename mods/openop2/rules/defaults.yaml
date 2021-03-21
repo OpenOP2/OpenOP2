@@ -132,8 +132,8 @@
 	ActorLostNotification:
 	ProximityCaptor:
 		Types: Vehicle
-	GpsDot:
-		String: Vehicle
+	#GpsDot:
+	#	String: Vehicle
 	WithDamageOverlay:
 	Guard:
 	Guardable:
@@ -158,14 +158,14 @@
 	#	Weapon: UnitExplodeSmall
 	#	EmptyWeapon: UnitExplodeSmall
 	WithFacingSpriteBody:
-	WithParachute:
-		ShadowImage: parach-shadow
-		ShadowSequence: idle
-		Image: parach
-		Sequence: idle
-		OpeningSequence: open
-		Offset: 0,0,200
-		RequiresCondition: parachute
+	#WithParachute:
+	#	ShadowImage: parach-shadow
+	#	ShadowSequence: idle
+	#	Image: parach
+	#	Sequence: idle
+	#	OpeningSequence: open
+	#	Offset: 0,0,200
+	#	RequiresCondition: parachute
 	BodyOrientation:
 		UseClassicFacingFudge: True
 	HitShape:

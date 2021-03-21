@@ -1,7 +1,16 @@
 ^Palettes:
-	PaletteFromPng@Terrain:
+	#PaletteFromPng@Terrain:
+	#	Name: terrain
+	#	Filename: bits/blank.png
+	#PaletteFromPng@Player:
+	#	Name: player
+	#s	Filename: bits/blank.png
+	PaletteFromGimpOrJascFile@well0001:
+		Name: well0001
+		Filename: well0001.pal
+	PaletteFromGimpOrJascFile@Terrain:
 		Name: terrain
-		Filename: bits/blank.png
+		Filename: well0001.pal
 	PaletteFromPng@ColorPicker:
 		Name: colorpicker
 		Filename: bits/blank.png

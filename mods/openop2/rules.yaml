@@ -20,16 +20,16 @@
 		Side: Any
 		RandomFactionMembers: eden, plymouth
 		Description: Randomly select Eden or Plymouth.
-	ResourceType@water:
-		Type: SpringWater
-		Name: Water Spring DO NOT USE
+	ResourceType@placeholder:
+		Type: ResourcePlaceholder
+		Name: Resource Placeholder
 		ResourceType: 1
-		TerrainType: SpringWater
+		TerrainType: ResourcePlaceholder
 		Palette: player
 		Sequences: blank
 		MaxDensity: 120000
 		ValuePerUnit: 120
-		AllowedTerrainTypes: Clear,Road,Normal2, Normal3, Muddy1, Muddy2, Rough1, Rough2, RoadBase
+		AllowedTerrainTypes: Clear
 		AllowUnderActors: true
 	Selection:
 	MusicPlaylist:
