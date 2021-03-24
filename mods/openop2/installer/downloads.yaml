@@ -16,3 +16,7 @@ op2music: Music
 	MirrorList: http://drogoganor.net/op2/op2-music-mirrors.txt
 	Extract:
 		^SupportDir|Content/openop2/music.zip: music.zip
+op2voices: Voices
+	MirrorList: http://drogoganor.net/op2/op2-voices-mirrors.txt
+	Extract:
+		^SupportDir|Content/openop2/voices.zip: voices.zip

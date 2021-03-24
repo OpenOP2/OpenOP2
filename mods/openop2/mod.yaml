@@ -12,17 +12,23 @@ Packages:
 	^EngineDir|/mods/common: common
 	openop2|bits
 	openop2|uibits
-	~MAPS.VOL
-	~SHEETS.VOL
-	~SOUND.VOL
-	~STORY.VOL
-	~VOICES.VOL
+	~art.vol
+	~maps.vol
+	~OP2_ART.BMP
+	~op2_art.prt
+	~sheets.vol
+	~sound.vol
+	~story.vol
+	~tech.vol
+	~voices.vol
 	~well0001.png
+	~well0001.pal
 	~music.zip
+	~voices.zip
 
 MapFolders:
 	openop2|maps: System
-	~^maps/openop2/{DEV_VERSION}: User
+	~^SupportDir|maps/openop2/{DEV_VERSION}: User
 
 Rules:
 	openop2|rules/palettes.yaml
@@ -37,6 +43,10 @@ Sequences:
 
 TileSets:
 	openop2|tilesets/well0001.yaml
+	openop2|tilesets/well0002.yaml
+	openop2|tilesets/well0003.yaml
+	openop2|tilesets/well0004.yaml
+	openop2|tilesets/well0005.yaml
 
 Weapons:
 
@@ -178,7 +188,7 @@ SupportsMapsFrom: openop2
 
 SoundFormats: Aud, Wav
 
-SpriteFormats: ShpTD, PngSheet, Op2Sprite
+SpriteFormats: ShpTD, PngSheet, Op2Sprite, Op2TileSet
 
 SpriteSequenceFormat: DefaultSpriteSequence
 
@@ -224,6 +234,9 @@ ModContent:
 		music: Music
 			TestFiles: ^SupportDir|Content/openop2/music.zip
 			Download: op2music
+		voices: Voices
+			TestFiles: ^SupportDir|Content/openop2/voices.zip
+			Download: op2voices
 	Downloads:
 		openop2|installer/downloads.yaml
 
