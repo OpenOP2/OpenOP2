@@ -1,11 +1,13 @@
 
-ConstructionVehicle:
+edozer:
 	Inherits: ^Vehicle
 	RenderSprites:
-		Image: constructionvehicle
+		Image: edozer
 		Palette: 3
 	Tooltip:
-		Name: Construction Vehicle
+		Name: E-Dozer
+	#WithIdleOverlay@TRACKS:
+	#	Sequence: idle2
 	#Buildable:
 	#	Description: Stalwart of the Freedom Guard cause, the Raider is\narmed with a laser rifle. Once the Phasing Facility\nis constructed, the Raider gains the ability to\nphase underground.
 	#	Prerequisites: ~infantry.human

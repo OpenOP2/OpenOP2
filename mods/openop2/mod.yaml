@@ -31,6 +31,7 @@ Rules:
 	openop2|rules.yaml
 	openop2|rules/defaults.yaml
 	openop2|rules/vehicles.yaml
+	openop2|rules/misc.yaml
 
 Sequences:
 	openop2|sequences.yaml

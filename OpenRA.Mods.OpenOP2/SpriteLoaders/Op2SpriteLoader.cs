@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -21,25 +22,16 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 {
 	public class Op2SpriteLoader : ISpriteLoader
 	{
-		class BitmapSpriteFrame : ISpriteFrame
-		{
-			public SpriteFrameType Type { get; set; }
-			public Size Size { get; set; }
-			public Size FrameSize { get; set; }
-			public float2 Offset { get; set; }
-			public byte[] Data { get; set; }
-			public bool DisableExportPadding { get { return false; } }
-		}
+		private PrtFile prtFile;
+		private List<uint[]> framePalettes;
 
-		List<uint[]> framePalettes;
-
-		void LoadPalettes(Stream s)
+		List<uint[]> LoadPalettes(Stream s)
 		{
 			var cpal = s.ReadASCII(4);
 			if (cpal != "CPAL")
 				throw new InvalidDataException();
 
-			framePalettes = new List<uint[]>();
+			var palettes = new List<uint[]>();
 			var paletteCount = s.ReadUInt32();
 			for (var p = 0; p < paletteCount; p++)
 			{
@@ -72,19 +64,24 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					var reserved = s.ReadByte();
 				}
 
-				framePalettes.Add(paletteData.Select(d => (uint)d.ToArgb()).ToArray());
+				palettes.Add(paletteData.Select(d => (uint)d.ToArgb()).ToArray());
 			}
+
+			return palettes;
 		}
 
-		void LoadGroups(Stream s, uint spriteCount, out PrtFile prtFile)
+		PrtFile LoadGroups(Stream s, out Dictionary<int, uint[]> palettes)
 		{
+			var spriteCount = s.ReadUInt32();
 			var h = new PrtFile()
 			{
 				ImageCount = (int)spriteCount,
 				ImageHeader = new Op2Image[spriteCount]
 			};
 
-			for (var i = 0; i < h.ImageCount; i++)
+			palettes = new Dictionary<int, uint[]>();
+			var rawFrames = h.ImageHeader;
+			for (var f = 0; f < rawFrames.Length; f++)
 			{
 				var paddedWidth = s.ReadUInt32();
 				var dataOffset = s.ReadUInt32();
@@ -92,19 +89,19 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 				var width = s.ReadUInt32();
 				var type = s.ReadUInt16();
 				var palette = s.ReadUInt16();
+				palettes.Add(f, framePalettes[palette]);
 
 				var img = new Op2Image
 				{
-					SizeX = (int)width,
-					SizeY = (int)height,
+					PaddedWidth = paddedWidth,
+					DataOffset = dataOffset,
+					Height = height,
+					Width = width,
+					ImageType = type,
+					Palette = palette,
 				};
 
-				// img.ImgData = s.ReadBytes(img.SizeScanline);
-				// img.SizeX = s.ReadInt32();
-				// img.SizeY = s.ReadInt32();
-				// img.Unknown = s.ReadInt16();
-				// img.Palette = s.ReadInt16();
-				h.ImageHeader[i] = img;
+				h.ImageHeader[f] = img;
 			}
 
 			h.AllGroupCount = s.ReadInt32();
@@ -199,10 +196,8 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 				h.Groups[i] = img;
 			}
 
-			prtFile = h;
+			return h;
 		}
-
-		private PrtFile prtFile;
 
 		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
@@ -223,58 +218,55 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			var dataStart = s.ReadUInt32();
 
 			var prt = Game.ModData.DefaultFileSystem.Open("op2_art.prt");
-			LoadPalettes(prt);
-			var palettes = new Dictionary<int, uint[]>();
+			framePalettes = LoadPalettes(prt);
+			prtFile = LoadGroups(prt, out var palettes);
 
-			var spriteCount = prt.ReadUInt32();
-
-			var originalPosition = prt.Position;
-			LoadGroups(prt, spriteCount, out prtFile);
-			prt.Seek(originalPosition, SeekOrigin.Begin);
-
-			// Populate raw frames
-			frames = new ISpriteFrame[spriteCount];
-			for (var f = 0; f < frames.Length; f++)
+			// Populate art data
+			foreach (var img in prtFile.ImageHeader)
 			{
-				var paddedWidth = prt.ReadUInt32();
-				var dataOffset = prt.ReadUInt32();
-				var height = prt.ReadUInt32();
-				var width = prt.ReadUInt32();
-				var type = prt.ReadUInt16();
-				var palette = prt.ReadUInt16();
-				palettes.Add(f, framePalettes[palette]);
-
-				var dataSize = new Size((int)paddedWidth, (int)height);
-				var frameSize = new Size((int)width, (int)height);
-
-				s.Seek(dataStart + dataOffset, SeekOrigin.Begin);
-				var data = s.ReadBytes((int)(paddedWidth * height));
-
-				frames[f] = new BitmapSpriteFrame()
+				var dataSize = new Size((int)img.PaddedWidth, (int)img.Height);
+				var frameSize = new Size((int)img.Width, (int)img.Height);
+				s.Seek(dataStart + img.DataOffset, SeekOrigin.Begin);
+				var data = s.ReadBytes((int)(img.PaddedWidth * img.Height));
+				img.SpriteFrame = new BitmapSpriteFrame
 				{
 					Size = dataSize,
 					FrameSize = frameSize,
 					Data = data,
-					Type = SpriteFrameType.Indexed
+					Type = SpriteFrameType.Indexed,
 				};
 			}
 
 			// Now, order by groups
-			var frames2 = new List<ISpriteFrame>(); // new ISpriteFrame[spriteCount];
+			var frameList = new List<ISpriteFrame>();
+			int maxGroups = 8;
+			int groupCount = 0;
 			foreach (var group in prtFile.Groups)
 			{
-				foreach (var frame in group.Frames)
+				var groupList = new List<BitmapSpriteFrame>();
+				var maxFrames = group.Frames.Min(f => f.PicCount);
+				for (var frameIndex = 0; frameIndex < maxFrames; frameIndex++)
 				{
-					var firstPic = frame.Pictures.LastOrDefault();
-					if (firstPic == null) continue;
+					foreach (var frame in group.Frames)
+					{
+						var pic = frame.Pictures[frameIndex];
+						if (pic == null) continue;
 
-					frames2.Add(frames[firstPic.ImgNumber]);
+						var rawFrame = prtFile.ImageHeader[pic.ImgNumber];
+						if (rawFrame.Palette != 3) continue;
+
+						frameList.Add(rawFrame.SpriteFrame);
+					}
 				}
+
+				groupCount++;
+
+				if (groupCount >= maxGroups) break;
 			}
 
 			metadata = new TypeDictionary { new EmbeddedSpritePalette(framePalettes: palettes) };
 
-			frames = frames2.ToArray();
+			frames = frameList.ToArray();
 
 			return true;
 		}

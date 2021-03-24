@@ -1,5 +1,18 @@
-﻿namespace OpenRA.Mods.OpenOP2.FileSystem
+﻿using OpenRA.Graphics;
+using OpenRA.Primitives;
+
+namespace OpenRA.Mods.OpenOP2.FileSystem
 {
+	public class BitmapSpriteFrame : ISpriteFrame
+	{
+		public SpriteFrameType Type { get; set; }
+		public Size Size { get; set; }
+		public Size FrameSize { get; set; }
+		public float2 Offset { get; set; }
+		public byte[] Data { get; set; }
+		public bool DisableExportPadding { get { return false; } }
+	}
+
 	public class PrtFile
 	{
 		public string ID; // CPAL
@@ -36,12 +49,13 @@
 
 	public class Op2Image
 	{
-		public int SizeScanline;
-		public byte[] ImgData;
-		public int SizeX;
-		public int SizeY;
-		public short Unknown;
-		public short Palette;
+		public uint PaddedWidth;
+		public uint DataOffset;
+		public uint Height;
+		public uint Width;
+		public ushort ImageType;
+		public ushort Palette;
+		public BitmapSpriteFrame SpriteFrame;
 	}
 
 	public class ImageGroup

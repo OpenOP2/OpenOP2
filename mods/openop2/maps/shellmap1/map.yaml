@@ -12,7 +12,7 @@ MapSize: 114,86
 
 Bounds: 1,1,112,84
 
-Visibility: Shellmap, Lobby
+Visibility: Lobby, Shellmap
 
 Categories: Maps
 
@@ -28,7 +28,7 @@ Players:
 		Faction: eden
 
 Actors:
-	Actor0: constructionvehicle
+	Actor0: edozer
 		Owner: Neutral
 		Location: 57,47
-		Facing: 120
+		Facing: 0
