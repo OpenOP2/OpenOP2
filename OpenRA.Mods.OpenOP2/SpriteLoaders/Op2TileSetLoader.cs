@@ -34,13 +34,13 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			var dataSize = new Size(tileWidth * 8, tileWidth * 8);
 			var size = new Size(tileWidth, tileWidth);
 			var frameSize = new Size(0, 0);
-			s.Seek(10, SeekOrigin.Begin);
-			var wtf32 = s.ReadUInt16();
-			var shit = s.ReadUInt32();
-			var shit2 = s.ReadUInt32();
+			s.Seek(12, SeekOrigin.Begin);
+			var something = s.ReadDouble();
+			var width = s.ReadUInt32();
+			var height = s.ReadUInt32();
+			var numTiles = height / width;
 			s.Seek(1088, SeekOrigin.Begin);
 			var wtf2 = s.ReadASCII(4);
-			const int numTiles = 128;
 			for (var i = 0; i < numTiles; i++)
 			{
 				var bytes = s.ReadBytes(tileWidth * tileWidth);

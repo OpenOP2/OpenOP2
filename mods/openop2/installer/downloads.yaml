@@ -10,8 +10,6 @@ op2devtest: Dev Test Package (Full)
 		^SupportDir|Content/openop2/voices.vol: voices.vol
 		^SupportDir|Content/openop2/op2_art.prt: op2_art.prt
 		^SupportDir|Content/openop2/OP2_ART.BMP: OP2_ART.BMP
-		^SupportDir|Content/openop2/well0001.pal: well0001.pal
-		^SupportDir|Content/openop2/well0001.png: well0001.png
 op2music: Music
 	MirrorList: http://drogoganor.net/op2/op2-music-mirrors.txt
 	Extract:

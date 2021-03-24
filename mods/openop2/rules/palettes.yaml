@@ -5,26 +5,26 @@
 	#PaletteFromPng@Player:
 	#	Name: player
 	#s	Filename: bits/blank.png
-	PaletteFromBmpFile@terrain-well0001:
+	PaletteFromBmpFile@terrain-moon:
 		Name: terrain
 		Filename: well0001.bmp
-		Tilesets: well0001
-	PaletteFromBmpFile@terrain-well0002:
+		Tilesets: moon
+	PaletteFromBmpFile@terrain-toxic:
 		Name: terrain
 		Filename: well0002.bmp
-		Tilesets: well0002
-	PaletteFromBmpFile@terrain-well0003:
+		Tilesets: toxic
+	PaletteFromBmpFile@terrain-resources:
 		Name: terrain
 		Filename: well0003.bmp
-		Tilesets: well0003
-	PaletteFromBmpFile@terrain-well0004:
+		Tilesets: resources
+	PaletteFromBmpFile@terrain-barren:
 		Name: terrain
 		Filename: well0004.bmp
-		Tilesets: well0004
-	PaletteFromBmpFile@terrain-well0005:
+		Tilesets: barren
+	PaletteFromBmpFile@terrain-industrial:
 		Name: terrain
 		Filename: well0005.bmp
-		Tilesets: well0005
+		Tilesets: industrial
 	#PaletteFromGimpOrJascFile@well0001:
 	#	Name: well0001
 	#	Filename: well0001.pal

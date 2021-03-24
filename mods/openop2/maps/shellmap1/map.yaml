@@ -2,15 +2,15 @@ MapFormat: 11
 
 RequiresMod: openop2
 
-Title: Shellmap 1
+Title: shellmap1
 
 Author: OpenOP2
 
-Tileset: well0001
+Tileset: moon
 
-MapSize: 114,86
+MapSize: 66,50
 
-Bounds: 1,1,112,84
+Bounds: 1,1,64,48
 
 Visibility: Lobby, Shellmap
 
@@ -29,6 +29,14 @@ Players:
 
 Actors:
 	Actor0: edozer
-		Owner: Neutral
-		Location: 57,47
-		Facing: 0
+		Owner: Creeps
+		Facing: 384
+		Location: 33,22
+	Actor1: edozer
+		Owner: Creeps
+		Location: 28,25
+		Facing: 475
+	Actor2: edozer
+		Owner: Creeps
+		Location: 31,29
+		Facing: 610

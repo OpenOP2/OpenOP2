@@ -21,8 +21,6 @@ Packages:
 	~story.vol
 	~tech.vol
 	~voices.vol
-	~well0001.png
-	~well0001.pal
 	~music.zip
 	~voices.zip
 
@@ -228,7 +226,7 @@ ModContent:
 	HeaderMessage: Game content may be extracted from the original game.
 	Packages:
 		devtest: Dev Test Package
-			TestFiles: ^SupportDir|Content/openop2/art.vol, ^SupportDir|Content/openop2/maps.vol, ^SupportDir|Content/openop2/sheets.vol, ^SupportDir|Content/openop2/sound.vol, ^SupportDir|Content/openop2/story.vol, ^SupportDir|Content/openop2/tech.vol, ^SupportDir|Content/openop2/voices.vol, ^SupportDir|Content/openop2/op2_art.prt, ^SupportDir|Content/openop2/OP2_ART.BMP, ^SupportDir|Content/openop2/well0001.pal, ^SupportDir|Content/openop2/well0001.png
+			TestFiles: ^SupportDir|Content/openop2/art.vol, ^SupportDir|Content/openop2/maps.vol, ^SupportDir|Content/openop2/sheets.vol, ^SupportDir|Content/openop2/sound.vol, ^SupportDir|Content/openop2/story.vol, ^SupportDir|Content/openop2/tech.vol, ^SupportDir|Content/openop2/voices.vol, ^SupportDir|Content/openop2/op2_art.prt, ^SupportDir|Content/openop2/OP2_ART.BMP
 			Download: op2devtest
 			Required: true
 		music: Music

@@ -1,6 +1,6 @@
 General:
-	Name: Well0002
-	Id: well0002
+	Name: Toxic Wasteland
+	Id: toxic
 	EditorTemplateOrder: Terrain
 	Palette: well0002
 
@@ -1036,6 +1036,286 @@ Templates:
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 127
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@129:
+		Id: 129
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 128
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@130:
+		Id: 130
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 129
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@131:
+		Id: 131
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 130
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@132:
+		Id: 132
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 131
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@133:
+		Id: 133
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 132
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@134:
+		Id: 134
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 133
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@135:
+		Id: 135
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 134
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@136:
+		Id: 136
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 135
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@137:
+		Id: 137
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 136
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@138:
+		Id: 138
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 137
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@139:
+		Id: 139
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 138
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@140:
+		Id: 140
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 139
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@141:
+		Id: 141
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 140
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@142:
+		Id: 142
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 141
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@143:
+		Id: 143
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 142
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@144:
+		Id: 144
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 143
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@145:
+		Id: 145
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 144
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@146:
+		Id: 146
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 145
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@147:
+		Id: 147
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 146
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@148:
+		Id: 148
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 147
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@149:
+		Id: 149
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 148
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@150:
+		Id: 150
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 149
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@151:
+		Id: 151
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 150
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@152:
+		Id: 152
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 151
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@153:
+		Id: 153
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 152
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@154:
+		Id: 154
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 153
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@155:
+		Id: 155
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 154
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@156:
+		Id: 156
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 155
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@157:
+		Id: 157
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 156
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@158:
+		Id: 158
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 157
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@159:
+		Id: 159
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 158
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@160:
+		Id: 160
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 159
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@161:
+		Id: 161
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 160
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@162:
+		Id: 162
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 161
+		Categories: Terrain
+		Tiles:
+			0: Clear
+	Template@163:
+		Id: 163
+		Images: well0002.bmp
+		Size: 1,1
+		Frames: 162
 		Categories: Terrain
 		Tiles:
 			0: Clear
