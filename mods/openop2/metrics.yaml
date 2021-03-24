@@ -4,8 +4,8 @@ Metrics:
 	ButtonDepth: 0
 	ButtonFont: Bold
 	CheckboxPressedState: true
-	ColorPickerActorType: fact.colorpicker
-	ColorPickerRemapIndices: 176, 178, 180, 182, 184, 186, 189, 191, 177, 179, 181, 183, 185, 187, 188, 190
+	ColorPickerActorType: DummyActor
+	ColorPickerRemapIndices: 1
 	TextfieldColorHighlight: 800000
 	ChatLineSound: ChatLine
 	ClickDisabledSound: ClickDisabledSound
