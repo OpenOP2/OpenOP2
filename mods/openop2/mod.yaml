@@ -18,6 +18,7 @@ Packages:
 	~STORY.VOL
 	~VOICES.VOL
 	~well0001.png
+	~music.zip
 
 MapFolders:
 	openop2|maps: System
@@ -97,6 +98,7 @@ ChromeLayout:
 	common|chrome/playerprofile.yaml
 
 Voices:
+	openop2|audio/voices.yaml
 
 Music:
 	openop2|audio/music.yaml
@@ -169,21 +171,21 @@ Fonts:
 Missions:
 
 MapGrid:
-	TileSize: 24,24
+	TileSize: 32,32
 	Type: Rectangular
 
 SupportsMapsFrom: openop2
 
-SoundFormats: Wav
+SoundFormats: Aud, Wav
 
-SpriteFormats: PngSheet, Op2Sprite
+SpriteFormats: ShpTD, PngSheet, Op2Sprite
 
 SpriteSequenceFormat: DefaultSpriteSequence
 
 ModelSequenceFormat: PlaceholderModelSequence
 
 AssetBrowser:
-	SupportedExtensions: OP2_ART.BMP
+	SupportedExtensions: .BMP
 
 GameSpeeds:
 	slowest:
@@ -210,3 +212,21 @@ GameSpeeds:
 		Name: Fastest
 		Timestep: 20
 		OrderLatency: 6
+
+ModContent:
+	InstallPromptMessage: OpenOP2 requires artwork and audio from the original game.\n\nPlease select Advanced Install and choose a source for installing\nthe game content.
+	HeaderMessage: Game content may be extracted from the original game.
+	Packages:
+		devtest: Dev Test Package
+			TestFiles: ^SupportDir|Content/openop2/art.vol, ^SupportDir|Content/openop2/maps.vol, ^SupportDir|Content/openop2/sheets.vol, ^SupportDir|Content/openop2/sound.vol, ^SupportDir|Content/openop2/story.vol, ^SupportDir|Content/openop2/tech.vol, ^SupportDir|Content/openop2/voices.vol, ^SupportDir|Content/openop2/op2_art.prt, ^SupportDir|Content/openop2/OP2_ART.BMP, ^SupportDir|Content/openop2/well0001.pal, ^SupportDir|Content/openop2/well0001.png
+			Download: op2devtest
+			Required: true
+		music: Music
+			TestFiles: ^SupportDir|Content/openop2/music.zip
+			Download: op2music
+	Downloads:
+		openop2|installer/downloads.yaml
+
+DiscordService:
+	ApplicationId: 811571076660199444
+

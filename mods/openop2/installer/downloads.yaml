@@ -1,19 +1,18 @@
-basefiles: Base Freeware Content
-	SHA1: 72f337464963fa37d3688eb03e80eefd33669a3d
-	MirrorList: http://www.openra.net/packages/cnc-mirrors.txt
+op2devtest: Dev Test Package (Full)
+	MirrorList: http://drogoganor.net/op2/op2-devtest-mirrors.txt
 	Extract:
-		^Content/cnc/conquer.mix: conquer.mix
-		^Content/cnc/desert.mix: desert.mix
-		^Content/cnc/general.mix: general.mix
-		^Content/cnc/sounds.mix: sounds.mix
-		^Content/cnc/speech.mix: speech.mix
-		^Content/cnc/temperat.mix: temperat.mix
-		^Content/cnc/tempicnh.mix: tempicnh.mix
-		^Content/cnc/transit.mix: transit.mix
-		^Content/cnc/winter.mix: winter.mix
-
-music: Freeware Music
-	SHA1: c7f220aa59024f02932d5713b1aa6201113c03b5
-	MirrorList: http://www.openra.net/packages/cnc-music-mirrors.txt
+		^SupportDir|Content/openop2/art.vol: art.vol
+		^SupportDir|Content/openop2/maps.vol: maps.vol
+		^SupportDir|Content/openop2/sheets.vol: sheets.vol
+		^SupportDir|Content/openop2/sound.vol: sound.vol
+		^SupportDir|Content/openop2/story.vol: story.vol
+		^SupportDir|Content/openop2/tech.vol: tech.vol
+		^SupportDir|Content/openop2/voices.vol: voices.vol
+		^SupportDir|Content/openop2/op2_art.prt: op2_art.prt
+		^SupportDir|Content/openop2/OP2_ART.BMP: OP2_ART.BMP
+		^SupportDir|Content/openop2/well0001.pal: well0001.pal
+		^SupportDir|Content/openop2/well0001.png: well0001.png
+op2music: Music
+	MirrorList: http://drogoganor.net/op2/op2-music-mirrors.txt
 	Extract:
-		^Content/cnc/scores.mix: scores.mix
+		^SupportDir|Content/openop2/music.zip: music.zip
