@@ -1,0 +1,64 @@
+General:
+	Name: Well0001
+	Id: well0001
+	EditorTemplateOrder: Terrain
+	Palette: well0001
+
+Terrain:
+	TerrainType@Clear:
+		Type: Clear
+		Color: 654A28
+		TargetTypes: Ground
+	TerrainType@ResourcePlaceholder:
+		Type: ResourcePlaceholder
+		Color: 192326
+		TargetTypes: Ground
+
+Templates:
+	Template@1:
+		Id: 1
+		Images: well0001.png
+		Size: 1,1
+		PickAny: True
+		Frames: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+		Categories: Terrain
+		Tiles:
+			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
+			9: Clear
+			10: Clear
+			11: Clear
+			12: Clear
+			13: Clear
+			14: Clear
+			15: Clear
+			16: Clear
+			17: Clear
+			18: Clear
+			19: Clear
+			20: Clear
+			21: Clear
+			22: Clear
+			23: Clear
+			24: Clear
+			25: Clear
+			26: Clear
+			27: Clear
+			28: Clear
+			29: Clear
+			30: Clear
+			31: Clear
+	Template@255:
+		Id: 255
+		Images: well0001.png
+		Size: 1,1
+		Categories: Terrain
+		Tiles:
+			0: Clear

@@ -1,0 +1,34 @@
+MapFormat: 11
+
+RequiresMod: openop2
+
+Title: Shellmap 1
+
+Author: OpenOP2
+
+Tileset: well0001
+
+MapSize: 114,86
+
+Bounds: 1,1,112,84
+
+Visibility: Lobby, Shellmap
+
+Categories: Maps
+
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: eden
+	PlayerReference@Creeps:
+		Name: Creeps
+		NonCombatant: True
+		Faction: eden
+
+Actors:
+	Actor0: edozer
+		Owner: Neutral
+		Location: 57,47
+		Facing: 0
