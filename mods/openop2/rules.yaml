@@ -3,7 +3,6 @@
 	Inherits: ^Locomotors
 	TerrainRenderer:
 	LoadWidgetAtGameStart:
-		ShellmapRoot: MENU_BACKGROUND
 	Faction@Eden:
 		Name: Eden
 		InternalName: eden

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+	"OpenOP2": {
+      "commandName": "Project",
+      "commandLineArgs": "Game.Mod=openop2 Engine.ModSearchPaths=../mods,./mods"
+    }
+  }
+}

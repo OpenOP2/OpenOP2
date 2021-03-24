@@ -6,12 +6,11 @@ Metadata:
 PackageFormats: VolFile
 
 Packages:
-	~^Content/openop2
-	.
+	~^SupportDir|Content/openop2/
+	^EngineDir|
 	$openop2: openop2
-	./mods/cnc: cnc
-	./mods/common: common
-	./mods/modcontent: modcontent
+	^EngineDir|/mods/common: common
+	openop2|bits
 	openop2|uibits
 	~MAPS.VOL
 	~SHEETS.VOL
@@ -19,7 +18,6 @@ Packages:
 	~STORY.VOL
 	~VOICES.VOL
 	~well0001.png
-
 
 MapFolders:
 	openop2|maps: System
@@ -42,56 +40,61 @@ TileSets:
 Weapons:
 
 Cursors:
-	modcontent|cursors.yaml
+	openop2|cursors.yaml
 
 Chrome:
-	cnc|chrome.yaml
+	openop2|chrome.yaml
 
 Assemblies:
-	openop2|OpenRA.Mods.OpenOP2.dll
-	common|OpenRA.Mods.Common.dll
-	common|OpenRA.Mods.Cnc.dll
+	^BinDir|OpenRA.Mods.OpenOP2.dll
+	^BinDir|OpenRA.Mods.Common.dll
+	^BinDir|OpenRA.Mods.Cnc.dll
 
 ChromeLayout:
-	cnc|chrome/mainmenu.yaml
-	cnc|chrome/mainmenu-prompts.yaml
-	cnc|chrome/playerprofile.yaml
-	cnc|chrome/multiplayer-browser.yaml
-	cnc|chrome/multiplayer-browserpanels.yaml
-	cnc|chrome/multiplayer-createserver.yaml
-	cnc|chrome/multiplayer-directconnect.yaml
-	cnc|chrome/lobby.yaml
-	cnc|chrome/lobby-mappreview.yaml
-	cnc|chrome/lobby-players.yaml
-	cnc|chrome/lobby-options.yaml
-	cnc|chrome/lobby-music.yaml
-	cnc|chrome/lobby-servers.yaml
-	cnc|chrome/lobby-kickdialogs.yaml
-	cnc|chrome/connection.yaml
-	cnc|chrome/color-picker.yaml
-	cnc|chrome/mapchooser.yaml
-	cnc|chrome/replaybrowser.yaml
-	cnc|chrome/gamesave-browser.yaml
-	cnc|chrome/gamesave-loading.yaml
-	cnc|chrome/ingame.yaml
-	cnc|chrome/ingame-chat.yaml
-	cnc|chrome/ingame-menu.yaml
-	cnc|chrome/ingame-debug.yaml
-	cnc|chrome/ingame-infochat.yaml
-	cnc|chrome/ingame-info.yaml
-	cnc|chrome/ingame-infobriefing.yaml
-	cnc|chrome/ingame-infoscripterror.yaml
-	cnc|chrome/ingame-infoobjectives.yaml
-	cnc|chrome/ingame-infostats.yaml
-	cnc|chrome/ingame-debuginfo.yaml
-	cnc|chrome/music.yaml
-	cnc|chrome/settings.yaml
-	cnc|chrome/credits.yaml
-	cnc|chrome/dialogs.yaml
-	cnc|chrome/tooltips.yaml
-	cnc|chrome/assetbrowser.yaml
-	cnc|chrome/missionbrowser.yaml
-	cnc|chrome/editor.yaml
+	common|chrome/ingame.yaml
+	common|chrome/ingame-chat.yaml
+	common|chrome/ingame-fmvplayer.yaml
+	common|chrome/ingame-info.yaml
+	common|chrome/ingame-infoscripterror.yaml
+	common|chrome/ingame-infobriefing.yaml
+	common|chrome/ingame-infoobjectives.yaml
+	common|chrome/ingame-infostats.yaml
+	common|chrome/ingame-menu.yaml
+	openop2|chrome/ingame-observer.yaml
+	openop2|chrome/ingame-player.yaml
+	common|chrome/ingame-perf.yaml
+	common|chrome/ingame-debug.yaml
+	common|chrome/ingame-debuginfo.yaml
+	common|chrome/ingame-infochat.yaml
+	common|chrome/mainmenu.yaml
+	common|chrome/mainmenu-prompts.yaml
+	common|chrome/settings.yaml
+	common|chrome/credits.yaml
+	common|chrome/lobby.yaml
+	common|chrome/lobby-mappreview.yaml
+	common|chrome/lobby-players.yaml
+	common|chrome/lobby-options.yaml
+	common|chrome/lobby-music.yaml
+	common|chrome/lobby-servers.yaml
+	common|chrome/lobby-kickdialogs.yaml
+	common|chrome/color-picker.yaml
+	common|chrome/map-chooser.yaml
+	common|chrome/multiplayer-browser.yaml
+	common|chrome/multiplayer-browserpanels.yaml
+	common|chrome/multiplayer-createserver.yaml
+	common|chrome/multiplayer-directconnect.yaml
+	common|chrome/connection.yaml
+	common|chrome/replaybrowser.yaml
+	common|chrome/gamesave-browser.yaml
+	openop2|chrome/gamesave-loading.yaml
+	common|chrome/dropdowns.yaml
+	common|chrome/musicplayer.yaml
+	common|chrome/tooltips.yaml
+	common|chrome/assetbrowser.yaml
+	common|chrome/missionbrowser.yaml
+	common|chrome/confirmation-dialogs.yaml
+	common|chrome/editor.yaml
+	common|chrome/playerprofile.yaml
 
 Voices:
 
@@ -113,11 +116,11 @@ Hotkeys:
 	common|hotkeys/viewport.yaml
 	openop2|hotkeys.yaml
 
-LoadScreen: CncLoadScreen
-	Image: openop2|uibits/chrome.png
-	Image2x: openop2|uibits/chrome-2x.png
-	Image3x: openop2|uibits/chrome-3x.png
-	Text: Loading
+LoadScreen: LogoStripeLoadScreen
+	Image: openop2|uibits/loadscreen.png
+	Image2x: openop2|uibits/loadscreen-2x.png
+	Image3x: openop2|uibits/loadscreen-3x.png
+	Text: Filling Crates..., Charging Capacitors..., Reticulating Splines..., Planting Trees..., Building Bridges..., Aging Empires..., Compiling EVA..., Constructing Pylons..., Activating Skynet..., Splitting Atoms...
 
 ServerTraits:
 	LobbyCommands
@@ -169,7 +172,7 @@ MapGrid:
 	TileSize: 24,24
 	Type: Rectangular
 
-SupportsMapsFrom: cnc
+SupportsMapsFrom: openop2
 
 SoundFormats: Wav
 

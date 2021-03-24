@@ -21,7 +21,7 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.OpenOP2.Traits
 {
 	[Desc("Loads palettes from a .prt file.")]
-	class PaletteFromPrtFileInfo : ITraitInfo, IProvidesCursorPaletteInfo
+	class PaletteFromPrtFileInfo : TraitInfo, IProvidesCursorPaletteInfo
 	{
 		[PaletteDefinition]
 		[FieldLoader.Require]
@@ -51,7 +51,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		[Desc("Whether this palette is available for cursors.")]
 		public readonly bool CursorPalette = false;
 
-		public object Create(ActorInitializer init) { return new PaletteFromPrtFile(init.World, this); }
+		public override object Create(ActorInitializer init) { return new PaletteFromPrtFile(init.World, this); }
 
 		string IProvidesCursorPaletteInfo.Palette { get { return CursorPalette ? Name : null; } }
 
