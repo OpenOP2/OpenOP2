@@ -29,34 +29,34 @@
 		Name: terrain
 		Filename: well0005.bmp
 		Tilesets: industrial
-	PaletteFromBmpFile@terrain-well0006:
+	PaletteFromBmpFile@terrain-gravel:
 		Name: terrain
 		Filename: well0006.bmp
-		Tilesets: well0006
-	PaletteFromBmpFile@terrain-well0007:
+		Tilesets: gravel
+	PaletteFromBmpFile@terrain-lava:
 		Name: terrain
 		Filename: well0007.bmp
-		Tilesets: well0007
-	PaletteFromBmpFile@terrain-well0008:
+		Tilesets: lava
+	PaletteFromBmpFile@terrain-desert:
 		Name: terrain
 		Filename: well0008.bmp
-		Tilesets: well0008
-	PaletteFromBmpFile@terrain-well0009:
+		Tilesets: desert
+	PaletteFromBmpFile@terrain-desert2:
 		Name: terrain
 		Filename: well0009.bmp
-		Tilesets: well0009
-	PaletteFromBmpFile@terrain-well0010:
+		Tilesets: desert2
+	PaletteFromBmpFile@terrain-desert-moon-gravel-transitions:
 		Name: terrain
 		Filename: well0010.bmp
-		Tilesets: well0010
-	PaletteFromBmpFile@terrain-well0011:
-		Name: terrain
-		Filename: well0011.bmp
-		Tilesets: well0011
+		Tilesets: desert-moon-gravel-transitions
 	PaletteFromBmpFile@terrain-ice:
 		Name: terrain
-		Filename: well0012.bmp
+		Filename: well0011.bmp
 		Tilesets: ice
+	PaletteFromBmpFile@terrain-ice2:
+		Name: terrain
+		Filename: well0012.bmp
+		Tilesets: ice2
 	#PaletteFromGimpOrJascFile@well0001:
 	#	Name: well0001
 	#	Filename: well0001.pal
