@@ -41,6 +41,22 @@
 		Name: terrain
 		Filename: well0008.bmp
 		Tilesets: well0008
+	PaletteFromBmpFile@terrain-well0009:
+		Name: terrain
+		Filename: well0009.bmp
+		Tilesets: well0009
+	PaletteFromBmpFile@terrain-well0010:
+		Name: terrain
+		Filename: well0010.bmp
+		Tilesets: well0010
+	PaletteFromBmpFile@terrain-well0011:
+		Name: terrain
+		Filename: well0011.bmp
+		Tilesets: well0011
+	PaletteFromBmpFile@terrain-ice:
+		Name: terrain
+		Filename: well0012.bmp
+		Tilesets: ice
 	#PaletteFromGimpOrJascFile@well0001:
 	#	Name: well0001
 	#	Filename: well0001.pal
