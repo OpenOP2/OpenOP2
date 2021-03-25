@@ -1,8 +1,8 @@
 General:
-	Name: Well0005
-	Id: well0005
+	Name: Industrial
+	Id: industrial
 	EditorTemplateOrder: Terrain
-	Palette: well0005
+	Palette: industrial
 
 Terrain:
 	TerrainType@Clear:
