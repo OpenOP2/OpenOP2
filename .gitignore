@@ -20,3 +20,5 @@ StyleCopViolations.xml
 .idea/
 mods/cnc/
 utils/
+BACKUP/
+mods/common/

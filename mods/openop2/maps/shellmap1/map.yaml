@@ -2,11 +2,11 @@ MapFormat: 11
 
 RequiresMod: openop2
 
-Title: shellmap1
+Title: Shellmap
 
 Author: OpenOP2
 
-Tileset: moon
+Tileset: default
 
 MapSize: 66,50
 

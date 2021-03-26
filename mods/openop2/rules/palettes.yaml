@@ -5,61 +5,93 @@
 	#PaletteFromPng@Player:
 	#	Name: player
 	#s	Filename: bits/blank.png
-	PaletteFromBmpFile@terrain-moon:
+	PaletteFromBmpFile@terrain:
 		Name: terrain
 		Filename: well0001.bmp
-		Tilesets: moon
-	PaletteFromBmpFile@terrain-toxic:
-		Name: terrain
+	PaletteFromBmpFile@well0002:
+		Name: well0002.bmp
 		Filename: well0002.bmp
-		Tilesets: toxic
-	PaletteFromBmpFile@terrain-resources:
-		Name: terrain
+	PaletteFromBmpFile@well0003:
+		Name: well0003.bmp
 		Filename: well0003.bmp
-		Tilesets: resources
-	PaletteFromBmpFile@terrain-barren:
-		Name: terrain
+	PaletteFromBmpFile@well0004:
+		Name: well0004.bmp
 		Filename: well0004.bmp
-		Tilesets: barren
-	PaletteFromBmpFile@terrain-industrial:
-		Name: terrain
+	PaletteFromBmpFile@well0005:
+		Name: well0005.bmp
 		Filename: well0005.bmp
-		Tilesets: industrial
-	PaletteFromBmpFile@terrain-industrial:
-		Name: terrain
-		Filename: well0005.bmp
-		Tilesets: industrial
-	PaletteFromBmpFile@terrain-gravel:
-		Name: terrain
+	PaletteFromBmpFile@well0006:
+		Name: well0006.bmp
 		Filename: well0006.bmp
-		Tilesets: gravel
-	PaletteFromBmpFile@terrain-lava:
-		Name: terrain
+	PaletteFromBmpFile@well0007:
+		Name: well0007.bmp
 		Filename: well0007.bmp
-		Tilesets: lava
-	PaletteFromBmpFile@terrain-desert:
-		Name: terrain
+	PaletteFromBmpFile@well0008:
+		Name: well0008.bmp
 		Filename: well0008.bmp
-		Tilesets: desert
-	PaletteFromBmpFile@terrain-desert2:
-		Name: terrain
+	PaletteFromBmpFile@well0009:
+		Name: well0009.bmp
 		Filename: well0009.bmp
-		Tilesets: desert2
-	PaletteFromBmpFile@terrain-desert-moon-gravel-transitions:
-		Name: terrain
+	PaletteFromBmpFile@well0010:
+		Name: well0010.bmp
 		Filename: well0010.bmp
-		Tilesets: desert-moon-gravel-transitions
-	PaletteFromBmpFile@terrain-ice:
-		Name: terrain
+	PaletteFromBmpFile@well0011:
+		Name: well0011.bmp
 		Filename: well0011.bmp
-		Tilesets: ice
-	PaletteFromBmpFile@terrain-ice2:
-		Name: terrain
+	PaletteFromBmpFile@well0012:
+		Name: well0012.bmp
 		Filename: well0012.bmp
-		Tilesets: ice2
-	#PaletteFromGimpOrJascFile@well0001:
-	#	Name: well0001
-	#	Filename: well0001.pal
+	#PaletteFromBmpFile@toxic:
+	#	Name: toxic
+	#	Filename: well0002.bmp
+	#PaletteFromBmpFile@terrain-moon:
+	#	Name: terrain
+	#	Filename: well0001.bmp
+	#	Tilesets: moon
+	#PaletteFromBmpFile@terrain-toxic:
+	#	Name: terrain
+	#	Filename: well0002.bmp
+	#	Tilesets: toxic
+	#PaletteFromBmpFile@terrain-resources:
+	#	Name: terrain
+	#	Filename: well0003.bmp
+	#	Tilesets: resources
+	#PaletteFromBmpFile@terrain-rock:
+	#	Name: terrain
+	#	Filename: well0004.bmp
+	#	Tilesets: rock
+	#PaletteFromBmpFile@terrain-rock-additional:
+	#	Name: terrain
+	#	Filename: well0005.bmp
+	#	Tilesets: rock-additional
+	#PaletteFromBmpFile@terrain-rock-moon-additional:
+	#	Name: terrain
+	#	Filename: well0006.bmp
+	#	Tilesets: rock-moon-additional
+	#PaletteFromBmpFile@terrain-lava:
+	#	Name: terrain
+	#	Filename: well0007.bmp
+	#	Tilesets: lava
+	#PaletteFromBmpFile@terrain-mars:
+	#	Name: terrain
+	#	Filename: well0008.bmp
+	#	Tilesets: mars
+	#PaletteFromBmpFile@terrain-mars-additional:
+	#	Name: terrain
+	#	Filename: well0009.bmp
+	#	Tilesets: mars-additional
+	#PaletteFromBmpFile@terrain-mars-moon-rock-transitions:
+	#	Name: terrain
+	#	Filename: well0010.bmp
+	#	Tilesets: mars-moon-rock-transitions
+	#PaletteFromBmpFile@terrain-ice:
+	#	Name: terrain
+	#	Filename: well0011.bmp
+	#	Tilesets: ice
+	#PaletteFromBmpFile@terrain-ice-additional:
+	#	Name: terrain
+	#	Filename: well0012.bmp
+	#	Tilesets: ice-additional
 	PaletteFromPng@ColorPicker:
 		Name: colorpicker
 		Filename: bits/blank.png

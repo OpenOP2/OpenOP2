@@ -93,8 +93,17 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 		public void LoadPalettes(WorldRenderer wr)
 		{
-			if (info.Tilesets != null && info.Tilesets.Any(tileSet => string.Equals(tileSet, world.Map.Tileset, StringComparison.InvariantCultureIgnoreCase)))
+			if (info.Tilesets?.Count > 0)
+			{
+				// If it's tileset-specific, only load it if it matches the tileset of this map
+				if (info.Tilesets.Any(tileSet => string.Equals(tileSet, world.Map.Tileset, StringComparison.InvariantCultureIgnoreCase)))
+					wr.AddPalette(info.Name, ((IProvidesCursorPaletteInfo)info).ReadPalette(world.Map), info.AllowModifiers);
+			}
+			else
+			{
+				// Else, add it as normal
 				wr.AddPalette(info.Name, ((IProvidesCursorPaletteInfo)info).ReadPalette(world.Map), info.AllowModifiers);
+			}
 		}
 
 		public IEnumerable<string> PaletteNames
