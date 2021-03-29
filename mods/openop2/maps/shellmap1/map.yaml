@@ -29,14 +29,14 @@ Players:
 
 Actors:
 	Actor0: edozer
-		Owner: Creeps
+		Owner: Neutral
 		Facing: 384
-		Location: 33,22
+		Location: 35,25
 	Actor1: edozer
-		Owner: Creeps
-		Location: 28,25
-		Facing: 475
+		Owner: Neutral
+		Location: 31,21
+		Facing: 800
 	Actor2: edozer
-		Owner: Creeps
-		Location: 31,29
-		Facing: 610
+		Owner: Neutral
+		Location: 27,26
+		Facing: 126
