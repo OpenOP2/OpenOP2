@@ -40,7 +40,9 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			var height = s.ReadUInt32();
 			var numTiles = height / width;
 			s.Seek(1088, SeekOrigin.Begin);
-			var wtf2 = s.ReadASCII(4);
+			var header = s.ReadASCII(4);
+
+			var blockSize = s.ReadUInt32();
 			for (var i = 0; i < numTiles; i++)
 			{
 				var bytes = s.ReadBytes(tileWidth * tileWidth);
