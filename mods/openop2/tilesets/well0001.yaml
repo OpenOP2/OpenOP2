@@ -6438,12 +6438,13 @@ Templates:
 			0: Clear
 		Palette: well0007.bmp
 	# Sand
+	# 1x1 sand debris
 	Template@1262:
 		Id: 1262
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 64
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6452,7 +6453,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 65
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6461,7 +6462,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 66
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6470,7 +6471,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 67
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6479,7 +6480,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 68
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6488,7 +6489,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 69
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6497,7 +6498,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 70
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6506,7 +6507,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 71
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6515,7 +6516,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 72
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6524,7 +6525,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 73
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6533,7 +6534,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 74
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6542,7 +6543,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 75
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6551,7 +6552,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 76
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6560,7 +6561,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 77
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6569,7 +6570,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 78
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6578,7 +6579,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 79
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6587,7 +6588,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 80
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6596,7 +6597,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 81
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6605,7 +6606,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 82
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6614,7 +6615,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 83
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6623,7 +6624,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 84
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6632,7 +6633,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 85
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6641,7 +6642,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 86
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6650,7 +6651,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 87
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6659,7 +6660,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 88
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -6668,2077 +6669,488 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 89
-		Categories: Sand
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
 	Template@1288:
 		Id: 1288
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 90
-		Categories: Sand
+		Size: 2,2
+		Frames: 90, 91, 92, 93
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
-		Palette: well0008.bmp
-	Template@1289:
-		Id: 1289
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 91
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1290:
-		Id: 1290
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 92
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1291:
-		Id: 1291
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 93
-		Categories: Sand
-		Tiles:
-			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
 		Palette: well0008.bmp
 	Template@1292:
 		Id: 1292
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 94
-		Categories: Sand
+		Size: 4,4
+		Frames: 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
-		Palette: well0008.bmp
-	Template@1293:
-		Id: 1293
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 95
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1294:
-		Id: 1294
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 96
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1295:
-		Id: 1295
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 97
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1296:
-		Id: 1296
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 98
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1297:
-		Id: 1297
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 99
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1298:
-		Id: 1298
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 100
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1299:
-		Id: 1299
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 101
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1300:
-		Id: 1300
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 102
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1301:
-		Id: 1301
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 103
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1302:
-		Id: 1302
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 104
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1303:
-		Id: 1303
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 105
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1304:
-		Id: 1304
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 106
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1305:
-		Id: 1305
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 107
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1306:
-		Id: 1306
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 108
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1307:
-		Id: 1307
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 109
-		Categories: Sand
-		Tiles:
-			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
+			9: Clear
+			10: Clear
+			11: Clear
+			12: Clear
+			13: Clear
+			14: Clear
+			15: Clear
 		Palette: well0008.bmp
 	Template@1308:
 		Id: 1308
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 110
-		Categories: Sand
+		Size: 3,1
+		Frames: 110, 111, 112
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
-		Palette: well0008.bmp
-	Template@1309:
-		Id: 1309
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 111
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1310:
-		Id: 1310
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 112
-		Categories: Sand
-		Tiles:
-			0: Clear
+			1: Clear
+			2: Clear
 		Palette: well0008.bmp
 	Template@1311:
 		Id: 1311
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 113
-		Categories: Sand
+		Size: 2,2
+		Frames: 113, 114, 115, 116
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
-		Palette: well0008.bmp
-	Template@1312:
-		Id: 1312
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 114
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1313:
-		Id: 1313
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 115
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1314:
-		Id: 1314
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 116
-		Categories: Sand
-		Tiles:
-			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
 		Palette: well0008.bmp
 	Template@1315:
 		Id: 1315
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 117
-		Categories: Sand
+		Size: 2,4
+		Frames: 117, 118, 119, 120, 121, 122, 123, 124
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
-		Palette: well0008.bmp
-	Template@1316:
-		Id: 1316
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 118
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1317:
-		Id: 1317
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 119
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1318:
-		Id: 1318
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 120
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1319:
-		Id: 1319
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 121
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1320:
-		Id: 1320
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 122
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1321:
-		Id: 1321
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 123
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1322:
-		Id: 1322
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 124
-		Categories: Sand
-		Tiles:
-			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
 		Palette: well0008.bmp
 	Template@1323:
 		Id: 1323
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 125
-		Categories: Sand
+		Size: 2,2
+		Frames: 125, 126, 127, 128
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
-		Palette: well0008.bmp
-	Template@1324:
-		Id: 1324
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 126
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1325:
-		Id: 1325
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 127
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1326:
-		Id: 1326
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 128
-		Categories: Sand
-		Tiles:
-			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
 		Palette: well0008.bmp
 	Template@1327:
 		Id: 1327
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 129
-		Categories: Sand
+		Size: 3,1
+		Frames: 129, 130, 131
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
-		Palette: well0008.bmp
-	Template@1328:
-		Id: 1328
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 130
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1329:
-		Id: 1329
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 131
-		Categories: Sand
-		Tiles:
-			0: Clear
+			1: Clear
+			2: Clear
 		Palette: well0008.bmp
 	Template@1330:
 		Id: 1330
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 132
-		Categories: Sand
+		Size: 2,2
+		Frames: 132, 133, 134, 135
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
-		Palette: well0008.bmp
-	Template@1331:
-		Id: 1331
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 133
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1332:
-		Id: 1332
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 134
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1333:
-		Id: 1333
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 135
-		Categories: Sand
-		Tiles:
-			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
 		Palette: well0008.bmp
 	Template@1334:
 		Id: 1334
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 136
-		Categories: Sand
+		Size: 2,4
+		Frames: 136, 137, 138, 139, 140, 141, 142, 143
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
-		Palette: well0008.bmp
-	Template@1335:
-		Id: 1335
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 137
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1336:
-		Id: 1336
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 138
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1337:
-		Id: 1337
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 139
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1338:
-		Id: 1338
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 140
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1339:
-		Id: 1339
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 141
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1340:
-		Id: 1340
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 142
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1341:
-		Id: 1341
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 143
-		Categories: Sand
-		Tiles:
-			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
 		Palette: well0008.bmp
 	Template@1342:
 		Id: 1342
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 144
-		Categories: Sand
+		Size: 2,2
+		Frames: 144, 145, 146, 147
+		Categories: Sand - Features
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
 		Palette: well0008.bmp
-	Template@1343:
-		Id: 1343
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 145
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1344:
-		Id: 1344
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 146
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1345:
-		Id: 1345
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 147
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1346:
+	Template@sand-cliff-n-1:
 		Id: 1346
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 148
-		Categories: Sand
+		Size: 3,1
+		Frames: 148, 149, 150
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
 		Palette: well0008.bmp
-	Template@1347:
-		Id: 1347
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 149
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1348:
-		Id: 1348
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 150
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1349:
+	Template@sand-cliff-n-2:
 		Id: 1349
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 151
-		Categories: Sand
+		Size: 3,1
+		Frames: 151, 152, 153
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
 		Palette: well0008.bmp
-	Template@1350:
-		Id: 1350
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 152
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1351:
-		Id: 1351
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 153
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1352:
+	Template@sand-cliff-n-3:
 		Id: 1352
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 154
-		Categories: Sand
+		Size: 3,1
+		Frames: 154, 155, 156
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
 		Palette: well0008.bmp
-	Template@1353:
-		Id: 1353
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 155
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1354:
-		Id: 1354
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 156
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1355:
+	Template@sand-cliff-s-1:
 		Id: 1355
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 157
-		Categories: Sand
+		Size: 3,3
+		Frames: 157, 158, 159, 160, 161, 162, 163, 164, 165
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
 		Palette: well0008.bmp
-	Template@1356:
-		Id: 1356
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 158
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1357:
-		Id: 1357
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 159
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1358:
-		Id: 1358
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 160
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1359:
-		Id: 1359
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 161
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1360:
-		Id: 1360
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 162
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1361:
-		Id: 1361
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 163
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1362:
-		Id: 1362
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 164
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1363:
-		Id: 1363
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 165
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1364:
+	Template@sand-cliff-s-2:
 		Id: 1364
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 166
-		Categories: Sand
+		Size: 3,3
+		Frames: 166, 167, 168, 169, 170, 171, 172, 173, 174
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
 		Palette: well0008.bmp
-	Template@1365:
-		Id: 1365
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 167
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1366:
-		Id: 1366
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 168
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1367:
-		Id: 1367
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 169
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1368:
-		Id: 1368
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 170
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1369:
-		Id: 1369
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 171
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1370:
-		Id: 1370
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 172
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1371:
-		Id: 1371
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 173
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1372:
-		Id: 1372
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 174
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1373:
+	Template@sand-cliff-corner-nw:
 		Id: 1373
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 175
-		Categories: Sand
+		Size: 3,6
+		Frames: 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
+			9: Clear
+			10: Clear
+			11: Clear
+			12: Clear
+			13: Clear
+			14: Clear
+			15: Clear
+			16: Clear
+			17: Clear
 		Palette: well0008.bmp
-	Template@1374:
-		Id: 1374
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 176
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1375:
-		Id: 1375
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 177
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1376:
-		Id: 1376
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 178
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1377:
-		Id: 1377
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 179
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1378:
-		Id: 1378
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 180
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1379:
-		Id: 1379
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 181
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1380:
-		Id: 1380
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 182
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1381:
-		Id: 1381
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 183
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1382:
-		Id: 1382
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 184
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1383:
-		Id: 1383
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 185
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1384:
-		Id: 1384
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 186
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1385:
-		Id: 1385
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 187
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1386:
-		Id: 1386
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 188
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1387:
-		Id: 1387
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 189
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1388:
-		Id: 1388
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 190
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1389:
-		Id: 1389
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 191
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1390:
-		Id: 1390
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 192
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1391:
+	Template@sand-cliff-inner-nw:
 		Id: 1391
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 193
-		Categories: Sand
+		Size: 3,1
+		Frames: 193, 194, 195
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
 		Palette: well0008.bmp
-	Template@1392:
-		Id: 1392
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 194
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1393:
-		Id: 1393
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 195
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1394:
+	Template@sand-cliff-w-1:
 		Id: 1394
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 196
-		Categories: Sand
+		Size: 3,4
+		Frames: 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
+			9: Clear
+			10: Clear
+			11: Clear
 		Palette: well0008.bmp
-	Template@1395:
-		Id: 1395
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 197
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1396:
-		Id: 1396
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 198
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1397:
-		Id: 1397
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 199
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1398:
-		Id: 1398
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 200
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1399:
-		Id: 1399
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 201
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1400:
-		Id: 1400
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 202
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1401:
-		Id: 1401
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 203
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1402:
-		Id: 1402
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 204
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1403:
+	Template@sand-cliff-taper-e:
 		Id: 1403
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 205
-		Categories: Sand
+		Size: 3,3
+		Frames: 208, 209, 210, 211, 212, 213, 214, 215, 216
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
 		Palette: well0008.bmp
-	Template@1404:
-		Id: 1404
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 206
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1405:
-		Id: 1405
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 207
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1406:
-		Id: 1406
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 208
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1407:
-		Id: 1407
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 209
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1408:
-		Id: 1408
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 210
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1409:
-		Id: 1409
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 211
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1410:
-		Id: 1410
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 212
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1411:
-		Id: 1411
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 213
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1412:
-		Id: 1412
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 214
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1413:
-		Id: 1413
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 215
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1414:
-		Id: 1414
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 216
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1415:
+	Template@sand-cliff-corner-sw:
 		Id: 1415
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 217
-		Categories: Sand
+		Size: 3,3
+		Frames: 217, 218, 219, 220, 221, 222, 223, 224, 225
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
 		Palette: well0008.bmp
-	Template@1416:
-		Id: 1416
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 218
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1417:
-		Id: 1417
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 219
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1418:
-		Id: 1418
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 220
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1419:
-		Id: 1419
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 221
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1420:
-		Id: 1420
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 222
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1421:
-		Id: 1421
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 223
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1422:
-		Id: 1422
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 224
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1423:
-		Id: 1423
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 225
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1424:
+	Template@sand-cliff-corner-inner-sw:
 		Id: 1424
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 226
-		Categories: Sand
+		Size: 3,3
+		Frames: 226, 227, 228, 229, 230, 231, 232, 233, 234
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
 		Palette: well0008.bmp
-	Template@1425:
-		Id: 1425
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 227
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1426:
-		Id: 1426
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 228
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1427:
-		Id: 1427
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 229
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1428:
-		Id: 1428
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 230
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1429:
-		Id: 1429
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 231
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1430:
-		Id: 1430
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 232
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1431:
-		Id: 1431
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 233
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1432:
-		Id: 1432
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 234
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1433:
+	Template@sand-cliff-corner-se:
 		Id: 1433
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 235
-		Categories: Sand
+		Size: 3,3
+		Frames: 235, 236, 237, 238, 239, 240, 241, 242, 243
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
 		Palette: well0008.bmp
-	Template@1434:
-		Id: 1434
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 236
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1435:
-		Id: 1435
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 237
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1436:
-		Id: 1436
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 238
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1437:
-		Id: 1437
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 239
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1438:
-		Id: 1438
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 240
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1439:
-		Id: 1439
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 241
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1440:
-		Id: 1440
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 242
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1441:
-		Id: 1441
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 243
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1442:
+	Template@sand-cliff-taper-w:
 		Id: 1442
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 244
-		Categories: Sand
+		Size: 3,3
+		Frames: 244, 245, 246, 247, 248, 249, 250, 251, 252
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
 		Palette: well0008.bmp
-	Template@1443:
-		Id: 1443
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 245
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1444:
-		Id: 1444
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 246
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1445:
-		Id: 1445
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 247
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1446:
-		Id: 1446
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 248
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1447:
-		Id: 1447
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 249
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1448:
-		Id: 1448
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 250
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1449:
-		Id: 1449
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 251
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1450:
-		Id: 1450
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 252
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1451:
+	Template@sand-cliff-corner-inner-se:
 		Id: 1451
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 253
-		Categories: Sand
+		Size: 3,3
+		Frames: 253, 254, 255, 256, 257, 258, 259, 260, 261
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
 		Palette: well0008.bmp
-	Template@1452:
-		Id: 1452
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 254
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1453:
-		Id: 1453
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 255
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1454:
-		Id: 1454
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 256
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1455:
-		Id: 1455
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 257
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1456:
-		Id: 1456
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 258
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1457:
-		Id: 1457
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 259
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1458:
-		Id: 1458
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 260
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1459:
-		Id: 1459
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 261
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1460:
+	Template@sand-cliff-e:
 		Id: 1460
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 262
-		Categories: Sand
+		Size: 3,4
+		Frames: 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
+			9: Clear
+			10: Clear
+			11: Clear
 		Palette: well0008.bmp
-	Template@1461:
-		Id: 1461
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 263
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1462:
-		Id: 1462
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 264
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1463:
-		Id: 1463
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 265
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1464:
-		Id: 1464
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 266
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1465:
-		Id: 1465
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 267
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1466:
-		Id: 1466
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 268
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1467:
-		Id: 1467
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 269
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1468:
-		Id: 1468
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 270
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1469:
-		Id: 1469
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 271
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1470:
-		Id: 1470
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 272
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1471:
-		Id: 1471
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 273
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1472:
+	Template@sand-cliff-corner-ne:
 		Id: 1472
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 274
-		Categories: Sand
+		Size: 3,6
+		Frames: 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
+			9: Clear
+			10: Clear
+			11: Clear
+			12: Clear
+			13: Clear
+			14: Clear
+			15: Clear
+			16: Clear
+			17: Clear
 		Palette: well0008.bmp
-	Template@1473:
-		Id: 1473
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 275
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1474:
-		Id: 1474
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 276
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1475:
-		Id: 1475
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 277
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1476:
-		Id: 1476
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 278
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1477:
-		Id: 1477
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 279
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1478:
-		Id: 1478
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 280
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1479:
-		Id: 1479
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 281
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1480:
-		Id: 1480
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 282
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1481:
-		Id: 1481
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 283
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1482:
-		Id: 1482
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 284
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1483:
-		Id: 1483
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 285
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1484:
-		Id: 1484
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 286
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1485:
-		Id: 1485
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 287
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1486:
-		Id: 1486
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 288
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1487:
-		Id: 1487
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 289
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1488:
-		Id: 1488
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 290
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1489:
-		Id: 1489
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 291
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1490:
+	Template@sand-cliff-corner-inner-ne:
 		Id: 1490
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 292
-		Categories: Sand
+		Size: 3,1
+		Frames: 292, 293, 294
+		Categories: Sand - Cliffs
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
 		Palette: well0008.bmp
-	Template@1491:
-		Id: 1491
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 293
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1492:
-		Id: 1492
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 294
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1493:
+	Template@sand-rock-3x3-1:
 		Id: 1493
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 295
-		Categories: Sand
+		Size: 3,3
+		Frames: 295, 296, 297, 298, 299, 300, 301, 302, 303
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
 		Palette: well0008.bmp
-	Template@1494:
-		Id: 1494
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 296
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1495:
-		Id: 1495
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 297
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1496:
-		Id: 1496
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 298
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1497:
-		Id: 1497
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 299
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1498:
-		Id: 1498
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 300
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1499:
-		Id: 1499
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 301
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1500:
-		Id: 1500
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 302
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1501:
-		Id: 1501
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 303
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1502:
+	Template@sand-rock-3x3-2:
 		Id: 1502
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 304
-		Categories: Sand
+		Size: 3,3
+		Frames: 304, 305, 306, 307, 308, 309, 310, 311, 312
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
+			8: Clear
 		Palette: well0008.bmp
-	Template@1503:
-		Id: 1503
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 305
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1504:
-		Id: 1504
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 306
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1505:
-		Id: 1505
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 307
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1506:
-		Id: 1506
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 308
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1507:
-		Id: 1507
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 309
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1508:
-		Id: 1508
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 310
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1509:
-		Id: 1509
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 311
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1510:
-		Id: 1510
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 312
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1511:
+	# sand - resources
+	Template@sand-resources:
 		Id: 1511
 		Images: well0008.bmp
 		Size: 1,1
-		Frames: 313
-		Categories: Sand
+		Frames: 313, 314, 315, 316, 317, 318
+		PickAny: True
+		Categories: Sand - Resources
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
 		Palette: well0008.bmp
-	Template@1512:
-		Id: 1512
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 314
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1513:
-		Id: 1513
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 315
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1514:
-		Id: 1514
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 316
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1515:
-		Id: 1515
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 317
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1516:
-		Id: 1516
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 318
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
+	# sand - 1x1 debris
 	Template@1517:
 		Id: 1517
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 319
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -8747,7 +7159,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 320
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -8756,7 +7168,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 321
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -8765,7 +7177,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 322
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -8774,7 +7186,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 323
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -8783,160 +7195,65 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 324
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1523:
+	# sand - more rocks
+	Template@sand-rock-2x2-1:
 		Id: 1523
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 325
-		Categories: Sand
+		Size: 2,2
+		Frames: 325, 326, 327, 328
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
 		Palette: well0008.bmp
-	Template@1524:
-		Id: 1524
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 326
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1525:
-		Id: 1525
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 327
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1526:
-		Id: 1526
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 328
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1527:
+	Template@sand-rock-2x2-2:
 		Id: 1527
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 329
-		Categories: Sand
+		Size: 2,2
+		Frames: 329, 330, 331, 332
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
 		Palette: well0008.bmp
-	Template@1528:
-		Id: 1528
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 330
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1529:
-		Id: 1529
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 331
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1530:
-		Id: 1530
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 332
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1531:
+	Template@sand-rock-2x2-3:
 		Id: 1531
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 333
-		Categories: Sand
+		Size: 2,2
+		Frames: 333, 334, 335, 336
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
 		Palette: well0008.bmp
-	Template@1532:
-		Id: 1532
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 334
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1533:
-		Id: 1533
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 335
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1534:
-		Id: 1534
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 336
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1535:
+	Template@sand-debris-2x2:
 		Id: 1535
 		Images: well0008.bmp
-		Size: 1,1
-		Frames: 337
-		Categories: Sand
+		Size: 2,2
+		Frames: 337, 338, 339, 340
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
-		Palette: well0008.bmp
-	Template@1536:
-		Id: 1536
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 338
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1537:
-		Id: 1537
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 339
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0008.bmp
-	Template@1538:
-		Id: 1538
-		Images: well0008.bmp
-		Size: 1,1
-		Frames: 340
-		Categories: Sand
-		Tiles:
-			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
 		Palette: well0008.bmp
 	Template@1539:
 		Id: 1539
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 341
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -8945,7 +7262,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 342
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -8954,7 +7271,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 343
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -8963,7 +7280,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 344
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -8972,7 +7289,7 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 345
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
@@ -8981,16 +7298,17 @@ Templates:
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 346
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
+	# sand - walls
 	Template@1545:
 		Id: 1545
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 0
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -8999,7 +7317,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 1
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9008,7 +7326,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 2
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9017,7 +7335,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 3
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9026,7 +7344,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 4
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9035,7 +7353,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 5
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9044,7 +7362,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 6
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9053,7 +7371,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 7
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9062,7 +7380,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 8
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9071,7 +7389,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 9
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9080,7 +7398,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 10
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9089,7 +7407,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 11
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9098,7 +7416,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 12
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9107,7 +7425,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 13
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9116,7 +7434,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 14
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9125,7 +7443,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 15
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9134,7 +7452,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 16
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9143,7 +7461,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 17
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9152,7 +7470,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 18
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9161,7 +7479,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 19
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9170,7 +7488,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 20
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9179,7 +7497,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 21
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9188,7 +7506,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 22
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9197,7 +7515,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 23
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9206,7 +7524,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 24
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9215,7 +7533,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 25
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9224,7 +7542,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 26
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9233,7 +7551,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 27
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9242,7 +7560,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 28
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9251,7 +7569,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 29
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9260,7 +7578,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 30
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9269,16 +7587,17 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 31
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
+	# sand - junk
 	Template@1577:
 		Id: 1577
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 32
-		Categories: Sand
+		Categories: Sand - Resources
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9287,7 +7606,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 33
-		Categories: Sand
+		Categories: Sand - Resources
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9296,7 +7615,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 34
-		Categories: Sand
+		Categories: Sand - Resources
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9305,7 +7624,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 35
-		Categories: Sand
+		Categories: Sand - Resources
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9314,7 +7633,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 36
-		Categories: Sand
+		Categories: Sand - Resources
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9323,7 +7642,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 37
-		Categories: Sand
+		Categories: Sand - Resources
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9332,7 +7651,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 38
-		Categories: Sand
+		Categories: Sand - Resources
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9341,16 +7660,17 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 39
-		Categories: Sand
+		Categories: Sand - Resources
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
+	# sand - more walls
 	Template@1585:
 		Id: 1585
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 40
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9359,7 +7679,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 41
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9368,7 +7688,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 42
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9377,7 +7697,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 43
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9386,7 +7706,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 44
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9395,7 +7715,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 45
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9404,7 +7724,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 46
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9413,7 +7733,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 47
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9422,7 +7742,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 48
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9431,7 +7751,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 49
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9440,7 +7760,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 50
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9449,7 +7769,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 51
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9458,7 +7778,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 52
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9467,7 +7787,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 53
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9476,7 +7796,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 54
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9485,7 +7805,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 55
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9494,7 +7814,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 56
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9503,7 +7823,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 57
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9512,7 +7832,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 58
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9521,7 +7841,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 59
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9530,7 +7850,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 60
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9539,7 +7859,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 61
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9548,7 +7868,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 62
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9557,7 +7877,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 63
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9566,7 +7886,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 64
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9575,7 +7895,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 65
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9584,7 +7904,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 66
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9593,7 +7913,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 67
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9602,7 +7922,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 68
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9611,7 +7931,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 69
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9620,7 +7940,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 70
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9629,7 +7949,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 71
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9638,7 +7958,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 72
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9647,7 +7967,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 73
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9656,7 +7976,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 74
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9665,7 +7985,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 75
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9674,7 +7994,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 76
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9683,7 +8003,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 77
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9692,7 +8012,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 78
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9701,7 +8021,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 79
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9710,7 +8030,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 80
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9719,7 +8039,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 81
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9728,7 +8048,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 82
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9737,7 +8057,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 83
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9746,7 +8066,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 84
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9755,7 +8075,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 85
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9764,7 +8084,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 86
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9773,16 +8093,17 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 87
-		Categories: Sand
+		Categories: Sand - Walls
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
+	# sand - more 1x1 debris (88-103)
 	Template@1633:
 		Id: 1633
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 88
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9791,7 +8112,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 89
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9800,7 +8121,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 90
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9809,7 +8130,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 91
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9818,7 +8139,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 92
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9827,7 +8148,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 93
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9836,7 +8157,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 94
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9845,7 +8166,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 95
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9854,7 +8175,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 96
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9863,7 +8184,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 97
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9872,7 +8193,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 98
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9881,7 +8202,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 99
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9890,7 +8211,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 100
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9899,7 +8220,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 101
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9908,7 +8229,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 102
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -9917,205 +8238,72 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 103
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
 	Template@1649:
 		Id: 1649
 		Images: well0009.bmp
-		Size: 1,1
-		Frames: 104
-		Categories: Sand
+		Size: 4,2
+		Frames: 104, 105, 106, 107, 108, 109, 110, 111
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
-		Palette: well0009.bmp
-	Template@1650:
-		Id: 1650
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 105
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1651:
-		Id: 1651
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 106
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1652:
-		Id: 1652
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 107
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1653:
-		Id: 1653
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 108
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1654:
-		Id: 1654
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 109
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1655:
-		Id: 1655
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 110
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1656:
-		Id: 1656
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 111
-		Categories: Sand
-		Tiles:
-			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
 		Palette: well0009.bmp
 	Template@1657:
 		Id: 1657
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 112
-		Categories: Sand
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
 	Template@1658:
 		Id: 1658
 		Images: well0009.bmp
-		Size: 1,1
-		Frames: 113
-		Categories: Sand
+		Size: 2,2
+		Frames: 113, 114, 115, 116
+		Categories: Sand - Debris
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
 		Palette: well0009.bmp
-	Template@1659:
-		Id: 1659
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 114
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1660:
-		Id: 1660
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 115
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1661:
-		Id: 1661
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 116
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
+	# sand - base
 	Template@1662:
 		Id: 1662
 		Images: well0009.bmp
 		Size: 1,1
-		Frames: 117
-		Categories: Sand
+		Frames: 117, 118, 119, 120, 121, 122, 123, 124
+		PickAny: True
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
+			1: Clear
+			2: Clear
+			3: Clear
+			4: Clear
+			5: Clear
+			6: Clear
+			7: Clear
 		Palette: well0009.bmp
-	Template@1663:
-		Id: 1663
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 118
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1664:
-		Id: 1664
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 119
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1665:
-		Id: 1665
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 120
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1666:
-		Id: 1666
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 121
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1667:
-		Id: 1667
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 122
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1668:
-		Id: 1668
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 123
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1669:
-		Id: 1669
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 124
-		Categories: Sand
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
+	# sand - pipes
 	Template@1670:
 		Id: 1670
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 125
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -10124,7 +8312,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 126
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -10133,7 +8321,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 127
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -10142,7 +8330,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 128
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -10151,7 +8339,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 129
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -10160,7 +8348,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 130
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -10169,7 +8357,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 131
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -10178,7 +8366,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 132
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -10187,7 +8375,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 133
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -10196,7 +8384,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 134
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -10205,7 +8393,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 135
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -10214,7 +8402,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 136
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -10223,7 +8411,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 137
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -10232,7 +8420,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 138
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -10241,7 +8429,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 139
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
@@ -10250,7 +8438,7 @@ Templates:
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 140
-		Categories: Sand
+		Categories: Sand - Base
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
