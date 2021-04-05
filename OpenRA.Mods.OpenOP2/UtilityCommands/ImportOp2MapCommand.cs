@@ -13,12 +13,54 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
 using OpenRA.FileSystem;
 
 namespace OpenRA.Mods.OpenOP2.UtilityCommands
 {
 	class ImportOp2MapCommand : IUtilityCommand
 	{
+		class ClipRect
+		{
+			public int X1;
+			public int X2;
+			public int Y1;
+			public int Y2;
+		}
+
+		class TileSetInfo
+		{
+			public int NumTiles;				// Number of tiles in this tile set
+			public string TileSetName;			// File name of the tile set, as Outpost2 sees it
+		}
+
+		class TileSetMapping
+		{
+			public short TileSetIndex;
+			public short TileIndex;
+			public short NumTileReplacements;
+			public short CycleDelay;
+		}
+
+		class TerrainType
+		{
+			// public short FirstTile;		// First tile index in this terrain type class
+			// public short LastTile;			// Last tile index in this terrain type class
+			// public short Bulldozed;		// Index of the bulldozed tile
+			// public short CommonRubble;		// Index of the common rubble tile (4 common rubble tiles, followed by 4 rare rubble tiles)
+			// public short[] TubeUnknown;	// (6) 12
+			//
+			// // public TerrainTypeItemTable Wall[5];	// Wall groups 16 shorts (160)
+			// public short Lava;
+			// public short Flat1;
+			// public short Flat2;
+			// public short Flat3;
+			//
+			// // public TerrainTypeItemTable Tube;		// Tube group 32
+			// public short Scorched;			// Scorched tile index (from vehicle explosion) 214 total
+			// public short[] Unknown;	// 21 (266 total)
+		}
+
 		string IUtilityCommand.Name => "--import-op2-map";
 		bool IUtilityCommand.ValidateArguments(string[] args) { return ValidateArguments(args); }
 
@@ -50,8 +92,8 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				var tag = stream.ReadUInt32(); // always 4113
 				var unknown = stream.ReadUInt32(); // always 0
 				var lgTileWidth = stream.ReadInt32();
-				var tileHeight = stream.ReadUInt32(); // always 64
-				var numTileSets = stream.ReadUInt32(); // always 512
+				var tileHeight = stream.ReadInt32(); // always 64
+				var numTileSets = stream.ReadInt32(); // always 512
 
 				// Update map header fields
 				// Round height up to nearest power of 2
@@ -66,29 +108,107 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				var width = 1 << lgTileWidth; // Calculate map width
 				var height = newHeight;
 
-				map = new Map(modData, modData.DefaultTileSets["default"], width + 2, (int)height + 2)
+				map = new Map(modData, modData.DefaultTileSets["raw"], width + 2, (int)height + 2)
 				{
 					Title = Path.GetFileNameWithoutExtension(filename),
 					Author = "OpenOP2",
 					RequiresMod = modData.Manifest.Id,
 				};
 
-				SetBounds(map, (int)width + 2, (int)height + 2);
+				var tiles = new List<uint>();
+				for (var i = 0; i < width * height; i++)
+				{
+					var tile = stream.ReadUInt32();
+					tiles.Add(tile);
+				}
+
+				var clipRect = new ClipRect()
+				{
+					X1 = stream.ReadInt32(),
+					Y1 = stream.ReadInt32(),
+					X2 = stream.ReadInt32(),
+					Y2 = stream.ReadInt32(),
+				};
+
+				SetBounds(map, width, height);
+
+				// map.SetBounds(new PPos(clipRect.X1, clipRect.Y1), new PPos(width - clipRect.X2, (int)height - clipRect.Y2));
+				// map.SetBounds(new PPos(clipRect.X1, clipRect.Y1), new PPos(clipRect.X1 + clipRect.X2, clipRect.Y1 - clipRect.Y2));
+				// Read in tileset mappings
+				var tileIds = new List<TileSetInfo>();
+				var tilesetStartIndices = new List<uint>();
+				var tilesetTileIndex = 0;
+				for (int i = 0; i < numTileSets; i++)
+				{
+					var stringLength = stream.ReadInt32();
+					if (stringLength <= 0) continue;
+
+					var tilesetMapping = new TileSetInfo()
+					{
+						TileSetName = stream.ReadASCII(stringLength),
+						NumTiles = stream.ReadInt32(),
+					};
+
+					tilesetStartIndices.Add((uint)tilesetTileIndex);
+					tilesetTileIndex += tilesetMapping.NumTiles;
+
+					tileIds.Add(tilesetMapping);
+				}
+
+				var testString = stream.ReadASCII(10);
+				if (!testString.StartsWith("TILE SET"))
+				{
+					throw new IOException("Couldn't find TILE SET tag.");
+				}
+
+				var numMappings = stream.ReadInt32();
+				var mappings = new TileSetMapping[numMappings];
+				for (var i = 0; i < numMappings; i++)
+				{
+					mappings[i] = new TileSetMapping
+					{
+						TileSetIndex = stream.ReadInt16(),
+						TileIndex = stream.ReadInt16(),
+						NumTileReplacements = stream.ReadInt16(),
+						CycleDelay = stream.ReadInt16(),
+					};
+				}
+
+				var numTerrainTypes = stream.ReadInt32();
+				var terrains = new TerrainType[numTerrainTypes];
+
+				// for (var i = 0; i < numTerrainTypes; i++)
+				// {
+				// }
+				stream.Seek(numTerrainTypes * 264, SeekOrigin.Current);
+
+				var checkTag = stream.ReadUInt32();
+				if (checkTag != tag)
+				{
+					throw new IOException("Format error: Tag did not match header tag.");
+				}
+
+				// Actually place the tiles
 				for (var y = 0; y < height; y++)
 				{
 					for (var x = 0; x < width; x++)
 					{
 						// All these tile ID's will be completely different to ours - this importer will be broken until there's a mapping
 						// between the OP2 tile IDs and OpenOP2 tile IDs.
-						var tileType = stream.ReadUInt8();
-						var byte2 = stream.ReadUInt8(); // Elevation or something
-						var byte3 = stream.ReadUInt8();
-						var byte4 = stream.ReadUInt8();
-						map.Tiles[new CPos(x + 1, y + 1)] = new TerrainTile((ushort)tileType, 0);
+						var tileXUpper = x >> 5;
+						var tileXLower = x & 0x1F;
+						var tileOffset = (((tileXUpper * height) + y) << 5) + tileXLower;
+						var tile = tiles[tileOffset];
+
+						// Get the tile mapping index
+						var tileMappingIndex = (tile & 0x0000FFE0) >> 5;
+
+						var thisMapping = mappings[tileMappingIndex];
+						var startIndex = tilesetStartIndices[thisMapping.TileSetIndex];
+
+						map.Tiles[new CPos(x + 1, y + 1)] = new TerrainTile((ushort)(startIndex + thisMapping.TileIndex), 0);
 					}
 				}
-
-				// TODO: Read all the rest of the actors and whatnot
 			}
 
 			mapPlayers = new MapPlayers(map.Rules, 0);

@@ -40,7 +40,8 @@ Sequences:
 	openop2|sequences.yaml
 
 TileSets:
-	openop2|tilesets/well0001.yaml
+	openop2|tilesets/default.yaml
+	openop2|tilesets/raw.yaml
 
 Weapons:
 

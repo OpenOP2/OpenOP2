@@ -2,6 +2,9 @@
 	PaletteFromBmpFile@terrain:
 		Name: terrain
 		Filename: well0001.bmp
+	PaletteFromBmpFile@well0000:
+		Name: well0000.bmp
+		Filename: well0000.bmp
 	PaletteFromBmpFile@well0002:
 		Name: well0002.bmp
 		Filename: well0002.bmp
