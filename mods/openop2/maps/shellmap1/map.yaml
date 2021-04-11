@@ -6,11 +6,11 @@ Title: Shellmap
 
 Author: OpenOP2
 
-Tileset: default
+Tileset: raw
 
-MapSize: 66,50
+MapSize: 66,66
 
-Bounds: 1,1,64,48
+Bounds: 1,1,62,62
 
 Visibility: Lobby, Shellmap
 
@@ -28,15 +28,7 @@ Players:
 		Faction: eden
 
 Actors:
-	Actor0: edozer
+	Actor0: eden-robo-dozer
 		Owner: Neutral
-		Location: 41,28
-		Facing: 384
-	Actor1: edozer
-		Owner: Neutral
-		Location: 35,19
-		Facing: 816
-	Actor2: edozer
-		Owner: Neutral
-		Location: 29,26
-		Facing: 111
+		Location: 30,35
+		Facing: 0

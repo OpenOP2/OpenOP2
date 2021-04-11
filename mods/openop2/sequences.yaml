@@ -1,5 +1,3 @@
-blank:
-	idle: bits/blank.png
 resources:
 	Defaults:
 		Length: *
@@ -20,34 +18,3 @@ waypoint:
 	Defaults: bits/blank.png
 		Length: *
 	idle:
-
-edozer:
-	idle:
-		Length: 3
-		Facings: 8
-		Combine:
-			op2_art.bmp: edozer-e
-				Length: 3
-				Frames: 0, 1, 2
-			op2_art.bmp: edozer-ne
-				Length: 3
-				Frames: 6, 7, 8
-			op2_art.bmp: edozer-n
-				Length: 3
-				Frames: 12, 13, 14
-			op2_art.bmp: edozer-nw
-				Length: 3
-				Frames: 18, 19, 20
-			op2_art.bmp: edozer-w
-				Length: 3
-				Frames: 24, 25, 26
-			op2_art.bmp: edozer-sw
-				Length: 3
-				Frames: 27, 28, 29
-				#Frames: 30, 31, 32
-			op2_art.bmp: edozer-s
-				Length: 3
-				Frames: 38, 38, 38
-			op2_art.bmp: edozer-se
-				Length: 3
-				Frames: 40, 40, 40

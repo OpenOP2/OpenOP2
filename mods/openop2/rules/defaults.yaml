@@ -516,10 +516,10 @@
 		DamagedSounds: kaboom1.aud
 		DestroyedSounds: kaboom22.aud
 	WithSpriteBody:
-	Explodes:
-		Type: Footprint
-		Weapon: BuildingExplode
-		EmptyWeapon: BuildingExplode
+	#Explodes:
+	#	Type: Footprint
+	#	Weapon: BuildingExplode
+	#	EmptyWeapon: BuildingExplode
 	CaptureNotification:
 	ShakeOnDeath:
 	ProximityCaptor:
