@@ -1,8 +1,20 @@
 ^BaseWorld:
 	Inherits: ^Palettes
+	AlwaysVisible:
+	ActorMap:
+	ScreenMap:
+	Selection:
+	MusicPlaylist:
+		VictoryMusic: score
+		DefeatMusic: map
+	TerrainGeometryOverlay:
+	DebugVisualizations:
 	Inherits: ^Locomotors
 	TerrainRenderer:
-	LoadWidgetAtGameStart:
+	#ShroudRenderer:
+	#	FogVariants: shroud
+	#	Index: 255, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 20, 40, 56, 65, 97, 130, 148, 194, 24, 33, 66, 132, 28, 41, 67, 134, 1, 2, 4, 8, 3, 6, 12, 9, 7, 14, 13, 11, 5, 10, 15, 255
+	#	UseExtendedIndex: true
 	Faction@Eden:
 		Name: Eden
 		InternalName: eden
@@ -19,31 +31,19 @@
 		Side: Any
 		RandomFactionMembers: eden, plymouth
 		Description: Randomly select Eden or Plymouth.
-	ResourceType@placeholder:
-		Type: ResourcePlaceholder
-		Name: Resource Placeholder
+	ResourceType@metals:
+		Type: Metals
+		Name: Valuable Metals
 		ResourceType: 1
-		TerrainType: ResourcePlaceholder
-		Palette: player
+		TerrainType: Metals
+		Palette: terrain
 		Sequences: blank
-		MaxDensity: 120000
-		ValuePerUnit: 120
-		AllowedTerrainTypes: Clear
+		MaxDensity: 1
+		ValuePerUnit: 25
+		AllowedTerrainTypes: Clear,Road
 		AllowUnderActors: true
-	Selection:
-	MusicPlaylist:
-	AlwaysVisible:
-	ScreenMap:
-	ActorMap:
-	Selection:
-	TimeLimitManager:
-	MusicPlaylist:
-	DebugVisualizations:
-	TerrainGeometryOverlay:
-	#ShroudRenderer:
-	#	FogVariants: shroud
-	#	Index: 255, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 20, 40, 56, 65, 97, 130, 148, 194, 24, 33, 66, 132, 28, 41, 67, 134, 1, 2, 4, 8, 3, 6, 12, 9, 7, 14, 13, 11, 5, 10, 15, 255
-	#	UseExtendedIndex: true
+	ResourceRenderer:
+		RenderTypes: Metals
 
 World:
 	Inherits: ^BaseWorld
@@ -54,29 +54,44 @@ World:
 	HelpCommand:
 	ScreenShaker:
 	BuildingInfluence:
-	#GlobalLightingPaletteEffect:
-	#	Ambient: 1.05
 	ProductionQueueFromSelection:
 		ProductionPaletteWidget: PRODUCTION_PALETTE
+	#LegacyBridgeLayer:
+	#	Bridges: bridge1, bridge2, bridge3, bridge4, br1, br2, br3, sbridge1, sbridge2, sbridge3, sbridge4
+	CustomTerrainDebugOverlay:
+	#CrateSpawner:
+	#	DeliveryAircraft: badr
+	#	QuantizedFacings: 16
+	#	Minimum: 1
+	#	Maximum: 3
+	#	SpawnInterval: 3000
+	#	WaterChance: 20
+	#	InitialSpawnDelay: 1500
+	#	CheckboxDisplayOrder: 1
 	DomainIndex:
+	#SmudgeLayer@SCORCH:
+	#	Type: Scorch
+	#	Sequence: scorches
+	#	SmokeChance: 50
+	#	SmokeImage: smoke_m
+	#	SmokeSequences: idle
+	#SmudgeLayer@CRATER:
+	#	Type: Crater
+	#	Sequence: craters
+	#	SmokeChance: 25
+	#	SmokeImage: smoke_m
+	#	SmokeSequences: idle
 	ResourceLayer:
 	ResourceClaimLayer:
 	WarheadDebugOverlay:
-	CustomTerrainDebugOverlay:
-	MapCreeps:
-		CheckboxVisible: False
 	SpawnMapActors:
 	MapBuildRadius:
 		AllyBuildRadiusCheckboxDisplayOrder: 4
 		BuildRadiusCheckboxDisplayOrder: 5
-		BuildRadiusCheckboxVisible: False
-		AllyBuildRadiusCheckboxVisible: False
 	MapOptions:
-		GameSpeed: fast
 		ShortGameCheckboxDisplayOrder: 2
 		TechLevelDropdownDisplayOrder: 2
 		GameSpeedDropdownDisplayOrder: 3
-	MPStartLocations:
 	CreateMPPlayers:
 	MPStartUnits@cc-eden:
 		Class: none
@@ -107,17 +122,29 @@ World:
 	SpawnMPUnits:
 		StartingUnitsClass: light
 		DropdownDisplayOrder: 0
+	MPStartLocations:
+		SeparateTeamSpawnsCheckboxDisplayOrder: 6
 	PathFinder:
 	ValidateOrder:
 	DebugPauseState:
+	RadarPings:
+	StartGameNotification:
 	ObjectivesPanel:
 		ExitDelay: 1650
 		PanelName: SKIRMISH_STATS
-	RadarPings:
-	#LoadWidgetAtGameStart:
-	#	ShellmapRoot: MAINMENU_PRERELEASE_NOTIFICATION
-	ResourceRenderer:
-		RenderTypes:
+	LoadWidgetAtGameStart:
+	ScriptTriggers:
+	#TimeLimitManager:
+	#	TimeLimitWarnings:
+	#		40: FourtyMinutesRemaining
+	#		30: ThirtyMinutesRemaining
+	#		20: TwentyMinutesRemaining
+	#		10: TenMinutesRemaining
+	#		5: WarningFiveMinutesRemaining
+	#		4: WarningFourMinutesRemaining
+	#		3: WarningThreeMinutesRemaining
+	#		2: WarningTwoMinutesRemaining
+	#		1: WarningOneMinuteRemaining
 
 EditorWorld:
 	Inherits: ^BaseWorld
@@ -125,6 +152,5 @@ EditorWorld:
 	EditorCursorLayer:
 	EditorResourceLayer:
 	EditorSelectionLayer:
-	EditorActionManager:
 	LoadWidgetAtGameStart:
-	MapOptions:
+	EditorActionManager:

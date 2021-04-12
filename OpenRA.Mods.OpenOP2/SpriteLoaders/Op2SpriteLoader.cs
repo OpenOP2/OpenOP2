@@ -71,7 +71,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			return palettes;
 		}
 
-		PrtFile LoadGroups(Stream s, out Dictionary<int, uint[]> palettes)
+		PrtFile LoadImageHeader(Stream s, out Dictionary<int, uint[]> palettes)
 		{
 			var spriteCount = s.ReadUInt32();
 			var h = new PrtFile()
@@ -109,94 +109,6 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			h.AllFrameCount = s.ReadInt32();
 			h.AllPicCount = s.ReadInt32();
 			h.AllExtInfoCount = s.ReadInt32();
-			h.Groups = new ImageGroup[h.AllGroupCount];
-
-			for (var i = 0; i < h.AllGroupCount; i++)
-			{
-				var img = new ImageGroup
-				{
-					Unknown1 = s.ReadInt32(),
-					SelLeft = s.ReadInt32(),
-					SelTop = s.ReadInt32(),
-					SelRight = s.ReadInt32(),
-					SelBottom = s.ReadInt32(),
-					CenterX = s.ReadInt32(),
-					CenterY = s.ReadInt32(),
-					Unknown8 = s.ReadInt32(),
-					FrameCount = s.ReadInt32()
-				};
-
-				img.Frames = new Op2Frame[img.FrameCount];
-
-				for (var j = 0; j < img.FrameCount; j++)
-				{
-					var frame = new Op2Frame
-					{
-						PicCount = s.ReadUInt8(),
-						Unknown = s.ReadUInt8(),
-					};
-
-					frame.ExtUnknown1 = new BytePair[frame.PicCount >> 7];
-					for (var k = 0; k < frame.PicCount >> 7; k++)
-					{
-						var bp = new BytePair
-						{
-							Byte1 = s.ReadUInt8(),
-							Byte2 = s.ReadUInt8(),
-						};
-
-						frame.ExtUnknown1[k] = bp;
-					}
-
-					frame.ExtUnknown2 = new BytePair[frame.Unknown >> 7];
-					for (var k = 0; k < frame.Unknown >> 7; k++)
-					{
-						var bp = new BytePair
-						{
-							Byte1 = s.ReadUInt8(),
-							Byte2 = s.ReadUInt8(),
-						};
-
-						frame.ExtUnknown2[k] = bp;
-					}
-
-					frame.Pictures = new Op2Picture[frame.PicCount & 0x7F];
-					for (var k = 0; k < frame.Pictures.Length; k++)
-					{
-						var pic = new Op2Picture
-						{
-							ImgNumber = s.ReadInt16(),
-							Reserved = s.ReadUInt8(),
-							PicOrder = s.ReadUInt8(),
-							PosX = s.ReadInt16(),
-							PosY = s.ReadInt16()
-						};
-
-						frame.Pictures[k] = pic;
-					}
-
-					img.Frames[j] = frame;
-				}
-
-				img.GroupExtCount = s.ReadInt32();
-				img.Extended = new GroupExt[img.GroupExtCount];
-
-				for (var j = 0; j < img.GroupExtCount; j++)
-				{
-					var ext = new GroupExt
-					{
-						Unknown1 = s.ReadInt32(),
-						Unknown2 = s.ReadInt32(),
-						Unknown3 = s.ReadInt32(),
-						Unknown4 = s.ReadInt32(),
-					};
-
-					img.Extended[j] = ext;
-				}
-
-				h.Groups[i] = img;
-			}
-
 			return h;
 		}
 
@@ -220,7 +132,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 			var prt = Game.ModData.DefaultFileSystem.Open("op2_art.prt");
 			framePalettes = LoadPalettes(prt);
-			prtFile = LoadGroups(prt, out var palettes);
+			prtFile = LoadImageHeader(prt, out var palettes);
 			var frameList = new List<ISpriteFrame>();
 
 			// Populate art data
@@ -307,21 +219,6 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			frames = frameList.ToArray();
 
 			return true;
-		}
-
-		private byte EncodeBool(IEnumerable<bool> array)
-		{
-			byte val = 0;
-			foreach (var arrayValue in array)
-			{
-				val <<= 1;
-				if (arrayValue)
-				{
-					val |= 1;
-				}
-			}
-
-			return val;
 		}
 	}
 }

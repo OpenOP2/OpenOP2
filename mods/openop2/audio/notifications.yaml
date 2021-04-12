@@ -1,11 +1,84 @@
 Speech:
 	DefaultVariant: 
 	Notifications:
-		StartGame:
-		UnitLost:
+		StartGame: savant98.wav
+		UnitLost: savnt206.wav
 		Lose:
 		Win:
-		Leave:
+		Leave: savnt220.wav
+		GameLoaded: 
+		GameSaved: 
+		ConstructionComplete: 
+		NoBuild: 
+		BuildingCannotPlaceAudio: savant97.wav
+		BuildingInProgress: 
+		Building: 
+		OnHold: 
+		Cancelled: 
+		NewOptions: 
+		LowPower: 
+		InsufficientFunds: 
+		BaseAttack: savant3.wav
+		SilosNeeded: 
+		BuildingCaptured: 
+		Repairing: 
+		ResearchCompleted: savant2.wav
+		OurColonyIsUnderAttack: savant3.wav
+		WeAreUnderAttack: savant4.wav
+		VehicleReady: savant6.wav
+		ConsumerItemsCompleted: savant7.wav
+		StructureKitManufactured: savant8.wav
+		SpiderReady: savant9.wav
+		ScorpionReady: savant10.wav
+		StructureDestroyed: savant11.wav
+		DatabaseReconstructed: savant13.wav
+		EnemyUnitSighted: savant14.wav
+		VehicleRepaired: savant15.wav
+		WarningMissileLaunchDetected: savant17.wav
+		WarningIncomingMissile: savant18.wav
+		MoraleIsExcellent: savant19.wav
+		MoraleIsGood: savant20.wav
+		MoraleIsFair: savant21.wav
+		MoraleIsPoor: savant22.wav
+		MoraleIsTerrible: savant23.wav
+		FoodProductionInSurplus: savant24.wav
+		CautionFoodStorageDiminishing: savant25.wav
+		WarningPeopleAreStarving: savant26.wav
+		PowerLevelsOptimal: savant27.wav
+		CautionPowerLevelsMarginal: savant28.wav
+		WarningPowerShortage: savant29.wav
+		NewMissionObjective: savant30.wav
+		EdwardSatelliteDeployed: savant32.wav
+		SolarPowerSatelliteDeployed: savant33.wav
+		RocketLaunched: savant46.wav
+		RLVLaunched: savant47.wav
+		RLVReady: savant48.wav
+		RocketReady: savant49.wav
+		RareMetalStorageNeeded: savant51.wav
+		NewWorkerReady: savant53.wav
+		OurPeopleAreDying: savant58.wav
+		YouHaveDoneWellOurColonyIsSurviving: savant65.wav
+		CautionVolcanoWatchInitiated: savant66.wav
+		AlertVolcanicEruptionImminent: savant67.wav
+		WarningVolcanicEruptionDetected: savant68.wav
+		CautionVortexWatchInitiated: savant69.wav
+		AlertVortexImminent: savant70.wav
+		WarningVortexDetected: savant71.wav
+		CautionElectricalStormWatchInitiated: savant72.wav
+		AlertElectricalStormImminent: savant73.wav
+		WarningElectricalStormDetected: savant74.wav
+		CautionMeteorWatchInitiated: savant75.wav
+		AlertMeteorImpactImminent: savant76.wav
+		WarningMeteorApproaching: savant77.wav
+		CautionSeismicWatchInitiated: savant78.wav
+		AlertSeismicEventImminent: savant79.wav
+		WarningSeismicEventDetected: savant80.wav
+		WreckageLocated: savant93.wav
+		MiningLocationSurveyed: savant96.wav
+		CannotDeploy: savant97.wav
+		CommandControlInitiated: savant98.wav
+		SavantSeriesDemoSpiel: savant99.wav
+		CannotComply: savant100.wav
 
 Sounds:
 	DefaultVariant: 
@@ -13,3 +86,6 @@ Sounds:
 		ClickSound: beep2.WAV
 		ChatLine: beep5.WAV
 		ClickDisabledSound: beep6.WAV
+		CashTickUp: 
+		CashTickDown: 
+		Beacon: message2.WAV

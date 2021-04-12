@@ -4,6 +4,7 @@
 	{
 		public int Offset;
 		public int Length;
+		public int LoopOffset = 0;
 		public string Sequence { get; set; }
 	}
 
@@ -38,7 +39,8 @@
 					{
 						Offset = 0,
 						Length = 8,
-						Sequence = "idle"
+						Sequence = "idle",
+						LoopOffset = 2,
 					},
 				}
 			},

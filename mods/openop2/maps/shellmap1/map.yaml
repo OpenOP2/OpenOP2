@@ -32,3 +32,5 @@ Actors:
 		Owner: Neutral
 		Location: 30,35
 		Facing: 0
+
+Rules: rules.yaml

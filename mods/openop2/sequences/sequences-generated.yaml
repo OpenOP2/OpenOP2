@@ -9,123 +9,123 @@ eden-robo-dozer:
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 2916
-				Offset: 2, -1
+				Frames: 2924
+				Offset: 0, 0
 				Length: 1
 				ZOffset: 0
 			op2_art.bmp: idle-facing0-1
-				Frames: 2916
-				Offset: 2, -1
+				Frames: 2924
+				Offset: 0, 0
 				Length: 1
 				ZOffset: 0
 			op2_art.bmp: idle-facing0-2
-				Frames: 2916
-				Offset: 2, -1
+				Frames: 2924
+				Offset: 0, 0
 				Length: 1
 				ZOffset: 0
 			op2_art.bmp: idle-facing1-0
-				Frames: 2920
-				Offset: 0, 0
+				Frames: 2928
+				Offset: 1, 1
 				Length: 1
 				ZOffset: 0
 			op2_art.bmp: idle-facing1-1
-				Frames: 2920
-				Offset: 0, 0
+				Frames: 2928
+				Offset: 1, 1
 				Length: 1
 				ZOffset: 0
 			op2_art.bmp: idle-facing1-2
-				Frames: 2920
-				Offset: 0, 0
+				Frames: 2928
+				Offset: 1, 1
 				Length: 1
 				ZOffset: 0
 			op2_art.bmp: idle-facing2-0
-				Frames: 2924
-				Offset: 0, 0
-				Length: 1
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-1
-				Frames: 2924
-				Offset: 0, 0
-				Length: 1
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-2
-				Frames: 2924
-				Offset: 0, 0
-				Length: 1
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-0
-				Frames: 2928
-				Offset: 1, 1
-				Length: 1
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-1
-				Frames: 2928
-				Offset: 1, 1
-				Length: 1
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-2
-				Frames: 2928
-				Offset: 1, 1
-				Length: 1
-				ZOffset: 0
-			op2_art.bmp: idle-facing4-0
 				Frames: 2932
 				Offset: 1, 2
 				Length: 1
 				ZOffset: 0
-			op2_art.bmp: idle-facing4-1
+			op2_art.bmp: idle-facing2-1
 				Frames: 2933
 				Offset: 1, 2
 				Length: 1
 				ZOffset: 0
-			op2_art.bmp: idle-facing4-2
+			op2_art.bmp: idle-facing2-2
 				Frames: 2934
 				Offset: 1, 2
 				Length: 1
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: idle-facing3-0
 				Frames: 2935
 				Offset: 0, 2
 				Length: 1
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-1
+			op2_art.bmp: idle-facing3-1
 				Frames: 2935
 				Offset: 0, 2
 				Length: 1
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-2
+			op2_art.bmp: idle-facing3-2
 				Frames: 2935
 				Offset: 0, 2
 				Length: 1
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-0
+			op2_art.bmp: idle-facing4-0
 				Frames: 2939
 				Offset: 0, 1
 				Length: 1
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-1
+			op2_art.bmp: idle-facing4-1
 				Frames: 2939
 				Offset: 0, 1
 				Length: 1
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-2
+			op2_art.bmp: idle-facing4-2
 				Frames: 2942
 				Offset: 1, 1
 				Length: 1
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-0
+			op2_art.bmp: idle-facing5-0
 				Frames: 3048
 				Offset: -2, 0
 				Length: 1
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-1
+			op2_art.bmp: idle-facing5-1
 				Frames: 2943
 				Offset: 1, 1
 				Length: 1
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-2
+			op2_art.bmp: idle-facing5-2
 				Frames: 2943
 				Offset: 1, 1
+				Length: 1
+				ZOffset: 0
+			op2_art.bmp: idle-facing6-0
+				Frames: 2916
+				Offset: 2, -1
+				Length: 1
+				ZOffset: 0
+			op2_art.bmp: idle-facing6-1
+				Frames: 2916
+				Offset: 2, -1
+				Length: 1
+				ZOffset: 0
+			op2_art.bmp: idle-facing6-2
+				Frames: 2916
+				Offset: 2, -1
+				Length: 1
+				ZOffset: 0
+			op2_art.bmp: idle-facing7-0
+				Frames: 2920
+				Offset: 0, 0
+				Length: 1
+				ZOffset: 0
+			op2_art.bmp: idle-facing7-1
+				Frames: 2920
+				Offset: 0, 0
+				Length: 1
+				ZOffset: 0
+			op2_art.bmp: idle-facing7-2
+				Frames: 2920
+				Offset: 0, 0
 				Length: 1
 				ZOffset: 0
 	idle-sprite-id1:
@@ -134,120 +134,120 @@ eden-robo-dozer:
 		ZOffset: -256
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 2917
-				Offset: -3, 10
-				Length: 1
-				ZOffset: -256
-			op2_art.bmp: idle-facing0-1
-				Frames: 2918
-				Offset: -2, 10
-				Length: 1
-				ZOffset: -256
-			op2_art.bmp: idle-facing0-2
-				Frames: 2919
-				Offset: -2, 10
-				Length: 1
-				ZOffset: -256
-			op2_art.bmp: idle-facing1-0
-				Frames: 2923
-				Offset: 6, 10
-				Length: 1
-				ZOffset: -256
-			op2_art.bmp: idle-facing1-1
-				Frames: 2921
-				Offset: 6, 10
-				Length: 1
-				ZOffset: -256
-			op2_art.bmp: idle-facing1-2
-				Frames: 2922
-				Offset: 8, 10
-				Length: 1
-				ZOffset: -256
-			op2_art.bmp: idle-facing2-0
 				Frames: 2925
 				Offset: 1, 5
 				Length: 1
 				ZOffset: -256
-			op2_art.bmp: idle-facing2-1
+			op2_art.bmp: idle-facing0-1
 				Frames: 2926
 				Offset: 1, 5
 				Length: 1
 				ZOffset: -256
-			op2_art.bmp: idle-facing2-2
+			op2_art.bmp: idle-facing0-2
 				Frames: 2927
 				Offset: 1, 5
 				Length: 1
 				ZOffset: -256
-			op2_art.bmp: idle-facing3-0
+			op2_art.bmp: idle-facing1-0
 				Frames: 2929
 				Offset: -4, 11
 				Length: 1
 				ZOffset: -256
-			op2_art.bmp: idle-facing3-1
+			op2_art.bmp: idle-facing1-1
 				Frames: 2930
 				Offset: -4, 10
 				Length: 1
 				ZOffset: -256
-			op2_art.bmp: idle-facing3-2
+			op2_art.bmp: idle-facing1-2
 				Frames: 2931
 				Offset: -4, 11
 				Length: 1
 				ZOffset: -256
-			blank.png: idle-facing4-0
+			blank.png: idle-facing2-0
 				Frames: 0 # blank
 				Length: 1
 				ZOffset: -256
-			blank.png: idle-facing4-1
+			blank.png: idle-facing2-1
 				Frames: 0 # blank
 				Length: 1
 				ZOffset: -256
-			blank.png: idle-facing4-2
+			blank.png: idle-facing2-2
 				Frames: 0 # blank
 				Length: 1
 				ZOffset: -256
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: idle-facing3-0
 				Frames: 2936
 				Offset: 10, 7
 				Length: 1
 				ZOffset: -256
-			op2_art.bmp: idle-facing5-1
+			op2_art.bmp: idle-facing3-1
 				Frames: 2937
 				Offset: 10, 7
 				Length: 1
 				ZOffset: -256
-			op2_art.bmp: idle-facing5-2
+			op2_art.bmp: idle-facing3-2
 				Frames: 2938
 				Offset: 10, 7
 				Length: 1
 				ZOffset: -256
-			op2_art.bmp: idle-facing6-0
+			op2_art.bmp: idle-facing4-0
 				Frames: 2940
 				Offset: 1, 1
 				Length: 1
 				ZOffset: -256
-			op2_art.bmp: idle-facing6-1
+			op2_art.bmp: idle-facing4-1
 				Frames: 2941
 				Offset: 1, 1
 				Length: 1
 				ZOffset: -256
-			op2_art.bmp: idle-facing6-2
+			op2_art.bmp: idle-facing4-2
 				Frames: 2939
 				Offset: 0, 1
 				Length: 1
 				ZOffset: -256
-			op2_art.bmp: idle-facing7-0
+			op2_art.bmp: idle-facing5-0
 				Frames: 3049
 				Offset: 8, 4
 				Length: 1
 				ZOffset: -256
-			op2_art.bmp: idle-facing7-1
+			op2_art.bmp: idle-facing5-1
 				Frames: 2946
 				Offset: -8, 7
 				Length: 1
 				ZOffset: -256
-			op2_art.bmp: idle-facing7-2
+			op2_art.bmp: idle-facing5-2
 				Frames: 2945
 				Offset: -8, 7
+				Length: 1
+				ZOffset: -256
+			op2_art.bmp: idle-facing6-0
+				Frames: 2917
+				Offset: -3, 10
+				Length: 1
+				ZOffset: -256
+			op2_art.bmp: idle-facing6-1
+				Frames: 2918
+				Offset: -2, 10
+				Length: 1
+				ZOffset: -256
+			op2_art.bmp: idle-facing6-2
+				Frames: 2919
+				Offset: -2, 10
+				Length: 1
+				ZOffset: -256
+			op2_art.bmp: idle-facing7-0
+				Frames: 2923
+				Offset: 6, 10
+				Length: 1
+				ZOffset: -256
+			op2_art.bmp: idle-facing7-1
+				Frames: 2921
+				Offset: 6, 10
+				Length: 1
+				ZOffset: -256
+			op2_art.bmp: idle-facing7-2
+				Frames: 2922
+				Offset: 8, 10
 				Length: 1
 				ZOffset: -256
 	idle-sprite-id2:
@@ -315,8 +315,9 @@ eden-robo-dozer:
 				Frames: 0 # blank
 				Length: 1
 				ZOffset: -512
-			blank.png: idle-facing5-0
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing5-0
+				Frames: 2944
+				Offset: -8, 7
 				Length: 1
 				ZOffset: -512
 			blank.png: idle-facing5-1
@@ -339,9 +340,8 @@ eden-robo-dozer:
 				Frames: 0 # blank
 				Length: 1
 				ZOffset: -512
-			op2_art.bmp: idle-facing7-0
-				Frames: 2944
-				Offset: -8, 7
+			blank.png: idle-facing7-0
+				Frames: 0 # blank
 				Length: 1
 				ZOffset: -512
 			blank.png: idle-facing7-1
@@ -358,48 +358,42 @@ eden-robo-dozer:
 		ZOffset: -768
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 4972
-				Offset: 7, -2
+				Frames: 4976
+				Offset: -2, -8
 				Length: 1
 				ZOffset: -768
 			op2_art.bmp: idle-facing0-1
-				Frames: 4972
-				Offset: 7, -2
+				Frames: 4976
+				Offset: -2, -8
 				Length: 1
 				ZOffset: -768
 			op2_art.bmp: idle-facing0-2
-				Frames: 4972
-				Offset: 7, -2
-				Length: 1
-				ZOffset: -768
-			op2_art.bmp: idle-facing1-0
-				Frames: 4974
-				Offset: -7, 3
-				Length: 1
-				ZOffset: -768
-			op2_art.bmp: idle-facing1-1
-				Frames: 4974
-				Offset: -7, 3
-				Length: 1
-				ZOffset: -768
-			op2_art.bmp: idle-facing1-2
-				Frames: 4974
-				Offset: -7, 3
-				Length: 1
-				ZOffset: -768
-			op2_art.bmp: idle-facing2-0
 				Frames: 4976
 				Offset: -2, -8
 				Length: 1
 				ZOffset: -768
-			op2_art.bmp: idle-facing2-1
-				Frames: 4976
-				Offset: -2, -8
+			blank.png: idle-facing1-0
+				Frames: 0 # blank
 				Length: 1
 				ZOffset: -768
-			op2_art.bmp: idle-facing2-2
-				Frames: 4976
-				Offset: -2, -8
+			blank.png: idle-facing1-1
+				Frames: 0 # blank
+				Length: 1
+				ZOffset: -768
+			blank.png: idle-facing1-2
+				Frames: 0 # blank
+				Length: 1
+				ZOffset: -768
+			blank.png: idle-facing2-0
+				Frames: 0 # blank
+				Length: 1
+				ZOffset: -768
+			blank.png: idle-facing2-1
+				Frames: 0 # blank
+				Length: 1
+				ZOffset: -768
+			blank.png: idle-facing2-2
+				Frames: 0 # blank
 				Length: 1
 				ZOffset: -768
 			blank.png: idle-facing3-0
@@ -414,58 +408,64 @@ eden-robo-dozer:
 				Frames: 0 # blank
 				Length: 1
 				ZOffset: -768
-			blank.png: idle-facing4-0
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing4-0
+				Frames: 4968
+				Offset: -3, 6
 				Length: 1
 				ZOffset: -768
-			blank.png: idle-facing4-1
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing4-1
+				Frames: 4968
+				Offset: -3, 6
 				Length: 1
 				ZOffset: -768
-			blank.png: idle-facing4-2
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing4-2
+				Frames: 4968
+				Offset: -3, 6
 				Length: 1
 				ZOffset: -768
-			blank.png: idle-facing5-0
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing5-0
+				Frames: 4971
+				Offset: -8, -3
 				Length: 1
 				ZOffset: -768
-			blank.png: idle-facing5-1
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing5-1
+				Frames: 4971
+				Offset: -8, -3
 				Length: 1
 				ZOffset: -768
-			blank.png: idle-facing5-2
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing5-2
+				Frames: 4971
+				Offset: -8, -3
 				Length: 1
 				ZOffset: -768
 			op2_art.bmp: idle-facing6-0
-				Frames: 4968
-				Offset: -3, 6
+				Frames: 4972
+				Offset: 7, -2
 				Length: 1
 				ZOffset: -768
 			op2_art.bmp: idle-facing6-1
-				Frames: 4968
-				Offset: -3, 6
+				Frames: 4972
+				Offset: 7, -2
 				Length: 1
 				ZOffset: -768
 			op2_art.bmp: idle-facing6-2
-				Frames: 4968
-				Offset: -3, 6
+				Frames: 4972
+				Offset: 7, -2
 				Length: 1
 				ZOffset: -768
 			op2_art.bmp: idle-facing7-0
-				Frames: 4971
-				Offset: -8, -3
+				Frames: 4974
+				Offset: -7, 3
 				Length: 1
 				ZOffset: -768
 			op2_art.bmp: idle-facing7-1
-				Frames: 4971
-				Offset: -8, -3
+				Frames: 4974
+				Offset: -7, 3
 				Length: 1
 				ZOffset: -768
 			op2_art.bmp: idle-facing7-2
-				Frames: 4971
-				Offset: -8, -3
+				Frames: 4974
+				Offset: -7, 3
 				Length: 1
 				ZOffset: -768
 	idle-shadow-id4:
@@ -474,48 +474,42 @@ eden-robo-dozer:
 		ZOffset: -1024
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 4973
-				Offset: -8, -2
+				Frames: 4977
+				Offset: -3, 0
 				Length: 1
 				ZOffset: -1024
 			op2_art.bmp: idle-facing0-1
-				Frames: 4973
-				Offset: -8, -2
+				Frames: 4977
+				Offset: -3, 0
 				Length: 1
 				ZOffset: -1024
 			op2_art.bmp: idle-facing0-2
-				Frames: 4973
-				Offset: -8, -2
-				Length: 1
-				ZOffset: -1024
-			op2_art.bmp: idle-facing1-0
-				Frames: 4975
-				Offset: 2, -7
-				Length: 1
-				ZOffset: -1024
-			op2_art.bmp: idle-facing1-1
-				Frames: 4975
-				Offset: 2, -7
-				Length: 1
-				ZOffset: -1024
-			op2_art.bmp: idle-facing1-2
-				Frames: 4975
-				Offset: 2, -7
-				Length: 1
-				ZOffset: -1024
-			op2_art.bmp: idle-facing2-0
 				Frames: 4977
 				Offset: -3, 0
 				Length: 1
 				ZOffset: -1024
-			op2_art.bmp: idle-facing2-1
-				Frames: 4977
-				Offset: -3, 0
+			blank.png: idle-facing1-0
+				Frames: 0 # blank
 				Length: 1
 				ZOffset: -1024
-			op2_art.bmp: idle-facing2-2
-				Frames: 4977
-				Offset: -3, 0
+			blank.png: idle-facing1-1
+				Frames: 0 # blank
+				Length: 1
+				ZOffset: -1024
+			blank.png: idle-facing1-2
+				Frames: 0 # blank
+				Length: 1
+				ZOffset: -1024
+			blank.png: idle-facing2-0
+				Frames: 0 # blank
+				Length: 1
+				ZOffset: -1024
+			blank.png: idle-facing2-1
+				Frames: 0 # blank
+				Length: 1
+				ZOffset: -1024
+			blank.png: idle-facing2-2
+				Frames: 0 # blank
 				Length: 1
 				ZOffset: -1024
 			blank.png: idle-facing3-0
@@ -530,58 +524,64 @@ eden-robo-dozer:
 				Frames: 0 # blank
 				Length: 1
 				ZOffset: -1024
-			blank.png: idle-facing4-0
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing4-0
+				Frames: 4969
+				Offset: -2, -7
 				Length: 1
 				ZOffset: -1024
-			blank.png: idle-facing4-1
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing4-1
+				Frames: 4969
+				Offset: -2, -7
 				Length: 1
 				ZOffset: -1024
-			blank.png: idle-facing4-2
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing4-2
+				Frames: 4969
+				Offset: -2, -7
 				Length: 1
 				ZOffset: -1024
-			blank.png: idle-facing5-0
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing5-0
+				Frames: 4970
+				Offset: 6, 3
 				Length: 1
 				ZOffset: -1024
-			blank.png: idle-facing5-1
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing5-1
+				Frames: 4970
+				Offset: 6, 3
 				Length: 1
 				ZOffset: -1024
-			blank.png: idle-facing5-2
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing5-2
+				Frames: 4970
+				Offset: 6, 3
 				Length: 1
 				ZOffset: -1024
 			op2_art.bmp: idle-facing6-0
-				Frames: 4969
-				Offset: -2, -7
+				Frames: 4973
+				Offset: -8, -2
 				Length: 1
 				ZOffset: -1024
 			op2_art.bmp: idle-facing6-1
-				Frames: 4969
-				Offset: -2, -7
+				Frames: 4973
+				Offset: -8, -2
 				Length: 1
 				ZOffset: -1024
 			op2_art.bmp: idle-facing6-2
-				Frames: 4969
-				Offset: -2, -7
+				Frames: 4973
+				Offset: -8, -2
 				Length: 1
 				ZOffset: -1024
 			op2_art.bmp: idle-facing7-0
-				Frames: 4970
-				Offset: 6, 3
+				Frames: 4975
+				Offset: 2, -7
 				Length: 1
 				ZOffset: -1024
 			op2_art.bmp: idle-facing7-1
-				Frames: 4970
-				Offset: 6, 3
+				Frames: 4975
+				Offset: 2, -7
 				Length: 1
 				ZOffset: -1024
 			op2_art.bmp: idle-facing7-2
-				Frames: 4970
-				Offset: 6, 3
+				Frames: 4975
+				Offset: 2, -7
 				Length: 1
 				ZOffset: -1024
 	idle-shadow-id5:
@@ -601,73 +601,73 @@ eden-robo-dozer:
 				Frames: 0 # blank
 				Length: 1
 				ZOffset: -1280
-			blank.png: idle-facing1-0
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing1-0
+				Frames: 4640
+				Offset: -2, 1
 				Length: 1
 				ZOffset: -1280
-			blank.png: idle-facing1-1
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing1-1
+				Frames: 4640
+				Offset: -2, 1
 				Length: 1
 				ZOffset: -1280
-			blank.png: idle-facing1-2
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing1-2
+				Frames: 4640
+				Offset: -2, 1
 				Length: 1
 				ZOffset: -1280
-			blank.png: idle-facing2-0
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing2-0
+				Frames: 4641
+				Offset: 0, -2
 				Length: 1
 				ZOffset: -1280
-			blank.png: idle-facing2-1
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing2-1
+				Frames: 4641
+				Offset: 0, -2
 				Length: 1
 				ZOffset: -1280
-			blank.png: idle-facing2-2
-				Frames: 0 # blank
+			op2_art.bmp: idle-facing2-2
+				Frames: 4641
+				Offset: 0, -2
 				Length: 1
 				ZOffset: -1280
 			op2_art.bmp: idle-facing3-0
-				Frames: 4640
-				Offset: -2, 1
+				Frames: 4642
+				Offset: -2, -1
 				Length: 1
 				ZOffset: -1280
 			op2_art.bmp: idle-facing3-1
-				Frames: 4640
-				Offset: -2, 1
+				Frames: 4642
+				Offset: -2, -1
 				Length: 1
 				ZOffset: -1280
 			op2_art.bmp: idle-facing3-2
-				Frames: 4640
-				Offset: -2, 1
-				Length: 1
-				ZOffset: -1280
-			op2_art.bmp: idle-facing4-0
-				Frames: 4641
-				Offset: 0, -2
-				Length: 1
-				ZOffset: -1280
-			op2_art.bmp: idle-facing4-1
-				Frames: 4641
-				Offset: 0, -2
-				Length: 1
-				ZOffset: -1280
-			op2_art.bmp: idle-facing4-2
-				Frames: 4641
-				Offset: 0, -2
-				Length: 1
-				ZOffset: -1280
-			op2_art.bmp: idle-facing5-0
 				Frames: 4642
 				Offset: -2, -1
 				Length: 1
 				ZOffset: -1280
-			op2_art.bmp: idle-facing5-1
-				Frames: 4642
-				Offset: -2, -1
+			blank.png: idle-facing4-0
+				Frames: 0 # blank
 				Length: 1
 				ZOffset: -1280
-			op2_art.bmp: idle-facing5-2
-				Frames: 4642
-				Offset: -2, -1
+			blank.png: idle-facing4-1
+				Frames: 0 # blank
+				Length: 1
+				ZOffset: -1280
+			blank.png: idle-facing4-2
+				Frames: 0 # blank
+				Length: 1
+				ZOffset: -1280
+			blank.png: idle-facing5-0
+				Frames: 0 # blank
+				Length: 1
+				ZOffset: -1280
+			blank.png: idle-facing5-1
+				Frames: 0 # blank
+				Length: 1
+				ZOffset: -1280
+			blank.png: idle-facing5-2
+				Frames: 0 # blank
 				Length: 1
 				ZOffset: -1280
 			blank.png: idle-facing6-0

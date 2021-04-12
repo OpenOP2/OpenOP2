@@ -235,12 +235,29 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				sb.AppendLine($"{groupSequence.Name}:");
 				foreach (var groupSequenceSet in groupSequence.Sets)
 				{
-					var groups = prtFile.Groups
-						.Skip(groupSequenceSet.Offset)
-						.Take(groupSequenceSet.Length)
-						.ToList();
+					List<ImageGroup> groups;
+					if (groupSequenceSet.LoopOffset > 0)
+					{
+						groups = prtFile.Groups
+							.Skip(groupSequenceSet.Offset + groupSequenceSet.LoopOffset)
+							.Take(groupSequenceSet.Length - groupSequenceSet.LoopOffset)
+							.ToList();
+
+						groups.AddRange(prtFile.Groups
+							.Skip(groupSequenceSet.Offset)
+							.Take(groupSequenceSet.LoopOffset));
+					}
+					else
+					{
+						groups = prtFile.Groups
+							.Skip(groupSequenceSet.Offset)
+							.Take(groupSequenceSet.Length)
+							.ToList();
+					}
+
 					var typeGroupedFrames = new List<SequenceSet>();
 					var frameCount = groups.Max(x => x.FrameCount);
+
 					for (var frameIndex = 0; frameIndex < frameCount; frameIndex++)
 					{
 						var groupIndex = 0;

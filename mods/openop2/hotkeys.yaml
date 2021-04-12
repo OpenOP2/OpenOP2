@@ -17,3 +17,11 @@ ProductionTypeVehicle: Y
 ProductionTypeAircraft: U
 	Description: Aircraft Tab
 	Types: Production, Player
+
+ProductionTypeNaval: I
+	Description: Naval Tab
+	Types: Production, Player
+
+PowerDown: X
+	Description: Power-down mode
+	Types: OrderGenerator, Player

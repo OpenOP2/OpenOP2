@@ -1,0 +1,10 @@
+Player:
+	-ConquestVictoryConditions:
+
+World:
+	-SpawnMPUnits:
+	-MPStartLocations:
+	MusicPlaylist:
+		AllowMuteBackgroundMusic: true
+		DisableWorldSounds: true
+	-StartGameNotification:

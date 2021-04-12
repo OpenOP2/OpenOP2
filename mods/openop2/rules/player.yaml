@@ -8,33 +8,22 @@ EditorPlayer:
 Player:
 	Inherits: ^BasePlayer
 	TechTree:
-	GameSaveViewportManager:
-	DeveloperMode:
-		CheckboxDisplayOrder: 8
-	PlayerResources:
-		SelectableCash: 10000, 15000, 20000, 30000, 45000, 60000, 90000
-		DefaultCash: 15000
-		InsufficientFundsNotification: InsufficientFunds
-		CashTickUpNotification: CashTickUp
-		CashTickDownNotification: CashTickDown
-	PlayerResources:
-	ClassicProductionQueue@DummyQueue:
-		Type: Dummy
-		Group: Dummy
-		BuildDurationModifier: 100 # DR build rate 2486
-		LowPowerModifier: 100
-	Shroud:
-		FogCheckboxDisplayOrder: 3
-		ExploredMapCheckboxEnabled: False
-		FogCheckboxEnabled: True
+	ClassicProductionQueue@Building:
+		Type: Building
+		DisplayOrder: 0
+		LowPowerModifier: 300
+		ReadyAudio: ConstructionComplete
+		BlockedAudio: NoBuild
+		LimitedAudio: BuildingInProgress
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		SpeedUp: True
 	PlaceBuilding:
-		NewOptionsNotificationDelay: 0
 		NewOptionsNotification: NewOptions
 		CannotPlaceNotification: BuildingCannotPlaceAudio
-	#BuildUnitPlaceBuilding:
 	SupportPowerManager:
 	ScriptTriggers:
-	PlayerRadarTerrain:
 	MissionObjectives:
 		WinNotification: Win
 		LoseNotification: Lose
@@ -43,6 +32,15 @@ Player:
 	PowerManager:
 		SpeechNotification: LowPower
 	AllyRepair:
+	PlayerResources:
+		InsufficientFundsNotification: InsufficientFunds
+		CashTickUpNotification: CashTickUp
+		CashTickDownNotification: CashTickDown
+	DeveloperMode:
+		CheckboxDisplayOrder: 10
+	GpsWatcher:
+	Shroud:
+		FogCheckboxDisplayOrder: 3
 	FrozenActorLayer:
 	BaseAttackNotifier:
 	PlayerStatistics:
@@ -69,4 +67,10 @@ Player:
 		Id: unrestricted
 	GrantConditionOnPrerequisiteManager:
 	EnemyWatcher:
+	#VeteranProductionIconOverlay:
+	#	Image: iconchevrons
+	#	Sequence: veteran
+	ResourceStorageWarning:
 	PlayerExperience:
+	GameSaveViewportManager:
+	PlayerRadarTerrain:

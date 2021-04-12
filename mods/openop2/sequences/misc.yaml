@@ -3,6 +3,12 @@ resources:
 		Length: *
 	blank: bits/blank.png
 
+pips:
+	Defaults: bits/blank.png
+		Length: *
+	blank:
+	groups:
+
 editor-overlay:
 	Defaults: bits/blank.png
 		Length: *
