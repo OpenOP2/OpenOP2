@@ -139,7 +139,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			const byte shadowTileIndex = 1;
 			foreach (var img in prtFile.ImageHeader)
 			{
-				var isShadow = img.ImageType is 4 or 5;
+				var isShadow = img.ImageType == 4 || img.ImageType == 5;
 
 				var dataSize = new Size((int)img.PaddedWidth, (int)img.Height);
 				var frameSize = new Size((int)img.Width, (int)img.Height);

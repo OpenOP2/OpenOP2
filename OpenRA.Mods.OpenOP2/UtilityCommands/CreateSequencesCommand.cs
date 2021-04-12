@@ -85,7 +85,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				sb.AppendLine($"^{actorRule.Name}-generated:");
 				sb.AppendLine($"\tRenderSprites:");
 				sb.AppendLine($"\t\tImage: {actorRule.Name}");
-				if (actorRule.Palette is "1" or "2")
+				if (actorRule.Palette == "1" || actorRule.Palette == "2")
 				{
 					// Building
 					sb.AppendLine($"\t\tPalette: {actorRule.Palette}");
@@ -159,7 +159,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				if (!actorRule.CreateExampleActor)
 					continue;
 
-				if (actorRule.ActorType is ActorType.Effect or ActorType.Decoration)
+				if (actorRule.ActorType == ActorType.Effect || actorRule.ActorType == ActorType.Decoration)
 					continue;
 
 				var inheritor = "^StubVehicle";
@@ -352,7 +352,8 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 						return inFrameType switch
 						{
 							1 => "sprite",
-							4 or 5 => "shadow",
+							4 => "shadow",
+							5 => "shadow",
 							_ => "unknown"
 						};
 					};
@@ -409,7 +410,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 						}
 
 						// Also assemble actor rules
-						var overlayPalette = typeGroupedFrame.FrameType is 4 or 5 ? "shadow" : null;
+						var overlayPalette = typeGroupedFrame.FrameType == 4 || typeGroupedFrame.FrameType == 5 ? "shadow" : null;
 						if (typeGroupedFrame.Palette == 1 && typeGroupedFrame.FrameType == 1)
 						{
 							// Eden building
