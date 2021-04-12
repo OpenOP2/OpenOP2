@@ -18,7 +18,6 @@ StyleCopViolations.xml
 .DS_Store
 *.lnk
 .idea/
-mods/cnc/
 utils/
 BACKUP/
 mods/common/
