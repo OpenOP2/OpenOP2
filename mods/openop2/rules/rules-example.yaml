@@ -9,6 +9,8 @@
 		Name: Example Vehicle
 	Selectable:
 		Class: E1
+	Voiced:
+		VoiceSet: GenericVoice
 	Valued:
 		Cost: 150
 	Health:
@@ -20,6 +22,7 @@
 
 ^StubBuilding:
 	Inherits: ^Building
+	MustBeDestroyed:
 	Tooltip:
 		Name: Example Building
 	Selectable:
@@ -41,16 +44,8 @@ cargo-truck:
 	Inherits@generated: ^cargo-truck-generated
 	Inherits: ^StubVehicle
 
-smokingcrater:
-	Inherits@generated: ^smokingcrater-generated
-	Inherits: ^StubVehicle
-
 eden-storage-common:
 	Inherits@generated: ^eden-storage-common-generated
-	Inherits: ^StubBuilding
-
-eden-command-center:
-	Inherits@generated: ^eden-command-center-generated
 	Inherits: ^StubBuilding
 
 eden-dirt:
@@ -67,10 +62,6 @@ eden-lab-basic:
 
 plymouth-agridome:
 	Inherits@generated: ^plymouth-agridome-generated
-	Inherits: ^StubBuilding
-
-plymouth-command-center:
-	Inherits@generated: ^plymouth-command-center-generated
 	Inherits: ^StubBuilding
 
 plymouth-dirt:
@@ -265,6 +256,10 @@ eden-mine-common:
 	Inherits@generated: ^eden-mine-common-generated
 	Inherits: ^StubBuilding
 
+plymouth-mine-common:
+	Inherits@generated: ^plymouth-mine-common-generated
+	Inherits: ^StubBuilding
+
 eden-mine-rare:
 	Inherits@generated: ^eden-mine-rare-generated
 	Inherits: ^StubBuilding
@@ -293,8 +288,8 @@ plymouth-spaceport:
 	Inherits@generated: ^plymouth-spaceport-generated
 	Inherits: ^StubBuilding
 
-explosion1:
-	Inherits@generated: ^explosion1-generated
+explosion2:
+	Inherits@generated: ^explosion2-generated
 	Inherits: ^StubVehicle
 
 eden-combat-chassis-heavy:

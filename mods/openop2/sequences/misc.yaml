@@ -1,3 +1,20 @@
-clock:
-	idle:
+resources:
+	Defaults:
 		Length: *
+	blank: bits/blank.png
+
+editor-overlay:
+	Defaults: bits/blank.png
+		Length: *
+	copy:
+	paste:
+
+moveflsh:
+	Defaults: bits/blank.png
+		Length: *
+	idle:
+
+allyrepair:
+	Defaults: bits/blank.png
+		Length: *
+	repair:

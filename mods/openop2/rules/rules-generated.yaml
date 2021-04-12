@@ -39,7 +39,9 @@
 		Image: eden-storage-common
 		Palette: 1
 	WithIdleOverlay@0:
-		Sequence: idle-shadow-id1
+		Sequence: idle-sprite-id1
+	WithIdleOverlay@1:
+		Sequence: idle-shadow-id2
 		Palette: shadow
 
 ^eden-command-center-generated:
@@ -53,8 +55,8 @@
 		Sequence: idle-sprite-id2
 		Palette: 1
 	WithIdleOverlay@2:
-		Sequence: idle-shadow-id3
-		Palette: shadow
+		Sequence: idle-sprite-id3
+		Palette: 1
 	WithIdleOverlay@3:
 		Sequence: idle-shadow-id4
 		Palette: shadow
@@ -66,6 +68,9 @@
 		Palette: shadow
 	WithIdleOverlay@6:
 		Sequence: idle-shadow-id7
+		Palette: shadow
+	WithIdleOverlay@7:
+		Sequence: idle-shadow-id8
 		Palette: shadow
 
 ^eden-dirt-generated:
@@ -149,10 +154,13 @@
 		Sequence: idle-sprite-id2
 		Palette: 2
 	WithIdleOverlay@2:
-		Sequence: idle-shadow-id3
-		Palette: shadow
+		Sequence: idle-sprite-id3
+		Palette: 2
 	WithIdleOverlay@3:
 		Sequence: idle-shadow-id4
+		Palette: shadow
+	WithIdleOverlay@4:
+		Sequence: idle-shadow-id5
 		Palette: shadow
 
 ^plymouth-dirt-generated:
@@ -160,13 +168,16 @@
 		Image: plymouth-dirt
 		Palette: 2
 	WithIdleOverlay@0:
-		Sequence: idle-shadow-id1
-		Palette: shadow
+		Sequence: idle-sprite-id1
+		Palette: 2
 	WithIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
 	WithIdleOverlay@2:
 		Sequence: idle-shadow-id3
+		Palette: shadow
+	WithIdleOverlay@3:
+		Sequence: idle-shadow-id4
 		Palette: shadow
 
 ^plymouth-factory-structure-generated:
@@ -176,13 +187,22 @@
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 	WithIdleOverlay@1:
-		Sequence: idle-shadow-id2
-		Palette: shadow
+		Sequence: idle-sprite-id2
 	WithIdleOverlay@2:
-		Sequence: idle-shadow-id3
-		Palette: shadow
+		Sequence: idle-sprite-id3
 	WithIdleOverlay@3:
-		Sequence: idle-shadow-id4
+		Sequence: idle-sprite-id4
+	WithIdleOverlay@4:
+		Sequence: idle-sprite-id5
+		Palette: 2
+	WithIdleOverlay@5:
+		Sequence: idle-shadow-id6
+		Palette: shadow
+	WithIdleOverlay@6:
+		Sequence: idle-shadow-id7
+		Palette: shadow
+	WithIdleOverlay@7:
+		Sequence: idle-shadow-id8
 		Palette: shadow
 
 ^plymouth-lab-basic-generated:
@@ -190,7 +210,10 @@
 		Image: plymouth-lab-basic
 		Palette: 2
 	WithIdleOverlay@0:
-		Sequence: idle-shadow-id1
+		Sequence: idle-sprite-id1
+		Palette: 2
+	WithIdleOverlay@1:
+		Sequence: idle-shadow-id2
 		Palette: shadow
 
 ^plymouth-residence-generated:
@@ -262,7 +285,10 @@
 		Image: plymouth-storage-common
 		Palette: 2
 	WithIdleOverlay@0:
-		Sequence: idle-shadow-id1
+		Sequence: idle-sprite-id1
+		Palette: 2
+	WithIdleOverlay@1:
+		Sequence: idle-shadow-id2
 		Palette: shadow
 
 ^plymouth-tokamak-generated:
@@ -313,13 +339,16 @@
 		Image: plymouth-factory-vehicle
 		Palette: 2
 	WithIdleOverlay@0:
-		Sequence: idle-shadow-id1
-		Palette: shadow
+		Sequence: idle-sprite-id1
+		Palette: 2
 	WithIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
 	WithIdleOverlay@2:
 		Sequence: idle-shadow-id3
+		Palette: shadow
+	WithIdleOverlay@3:
+		Sequence: idle-shadow-id4
 		Palette: shadow
 
 ^eden-residence-advanced-generated:
@@ -567,16 +596,16 @@
 		Image: eden-tokamak
 		Palette: 1
 	WithIdleOverlay@0:
-		Sequence: damaged-sprite
-		Palette: 1
+		Sequence: idle-sprite-id1
+		Palette: 2
 	WithIdleOverlay@1:
-		Sequence: damaged-sprite-id1
+		Sequence: idle-sprite-id2
 		Palette: 2
 	WithIdleOverlay@2:
-		Sequence: damaged-shadow-id2
+		Sequence: idle-shadow-id3
 		Palette: shadow
 	WithIdleOverlay@3:
-		Sequence: damaged-shadow-id3
+		Sequence: idle-shadow-id4
 		Palette: shadow
 
 ^eden-university-generated:
@@ -624,7 +653,10 @@
 		Image: plymouth-factory-arachnid
 		Palette: 2
 	WithIdleOverlay@0:
-		Sequence: idle-shadow-id1
+		Sequence: idle-sprite-id1
+		Palette: 2
+	WithIdleOverlay@1:
+		Sequence: idle-shadow-id2
 		Palette: shadow
 
 ^plymouth-forum-generated:
@@ -632,7 +664,10 @@
 		Image: plymouth-forum
 		Palette: 2
 	WithIdleOverlay@0:
-		Sequence: idle-shadow-id1
+		Sequence: idle-sprite-id1
+		Palette: 2
+	WithIdleOverlay@1:
+		Sequence: idle-shadow-id2
 		Palette: shadow
 
 ^plymouth-lab-advanced-generated:
@@ -777,6 +812,7 @@
 		Sequence: idle-sprite-id4
 	WithIdleOverlay@4:
 		Sequence: idle-sprite-id5
+		Palette: 8
 	WithIdleOverlay@5:
 		Sequence: idle-shadow-id6
 		Palette: shadow
@@ -792,7 +828,13 @@
 		Image: eden-factory-consumer
 		Palette: 1
 	WithIdleOverlay@0:
-		Sequence: idle-shadow-id1
+		Sequence: idle-sprite-id1
+	WithIdleOverlay@1:
+		Sequence: idle-sprite-id2
+	WithIdleOverlay@2:
+		Sequence: idle-sprite-id3
+	WithIdleOverlay@3:
+		Sequence: idle-shadow-id4
 		Palette: shadow
 
 ^eden-smelter-rare-generated:
@@ -801,6 +843,23 @@
 		Palette: 1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+	WithIdleOverlay@1:
+		Sequence: idle-sprite-id2
+	WithIdleOverlay@2:
+		Sequence: idle-sprite-id3
+	WithIdleOverlay@3:
+		Sequence: idle-sprite-id4
+	WithIdleOverlay@4:
+		Sequence: idle-sprite-id5
+		Palette: 1
+	WithIdleOverlay@5:
+		Sequence: idle-sprite-id6
+		Palette: 1
+	WithIdleOverlay@6:
+		Sequence: idle-sprite-id7
+		Palette: 1
+	WithIdleOverlay@7:
+		Sequence: idle-sprite-id8
 
 ^plymouth-gorf-generated:
 	RenderSprites:
@@ -869,7 +928,9 @@
 		Image: eden-storage-rare
 		Palette: 1
 	WithIdleOverlay@0:
-		Sequence: idle-shadow-id1
+		Sequence: idle-sprite-id1
+	WithIdleOverlay@1:
+		Sequence: idle-shadow-id2
 		Palette: shadow
 
 ^plymouth-storage-rare-generated:
@@ -932,6 +993,19 @@
 		Palette: shadow
 	WithIdleOverlay@2:
 		Sequence: idle-shadow-id3
+		Palette: shadow
+
+^plymouth-mine-common-generated:
+	RenderSprites:
+		Image: plymouth-mine-common
+	WithIdleOverlay@0:
+		Sequence: idle-sprite-id1
+	WithIdleOverlay@1:
+		Sequence: idle-sprite-id2
+	WithIdleOverlay@2:
+		Sequence: idle-sprite-id3
+	WithIdleOverlay@3:
+		Sequence: idle-shadow-id4
 		Palette: shadow
 
 ^eden-mine-rare-generated:
@@ -1054,6 +1128,17 @@
 ^explosion1-generated:
 	RenderSprites:
 		Image: explosion1
+
+^explosion2-generated:
+	RenderSprites:
+		Image: explosion2
+	WithIdleOverlay@0:
+		Sequence: idle-sprite-id1
+	WithIdleOverlay@1:
+		Sequence: idle-sprite-id2
+	WithIdleOverlay@2:
+		Sequence: idle-shadow-id3
+		Palette: shadow
 
 ^eden-combat-chassis-heavy-generated:
 	RenderSprites:
@@ -1195,4 +1280,20 @@
 	WithIdleOverlay@2:
 		Sequence: idle-shadow-id3
 		Palette: shadow
+
+^rallypoint-generated:
+	RenderSprites:
+		Image: rallypoint
+
+^waypoint-generated:
+	RenderSprites:
+		Image: waypoint
+
+^mpspawn-generated:
+	RenderSprites:
+		Image: mpspawn
+
+^clock-generated:
+	RenderSprites:
+		Image: clock
 

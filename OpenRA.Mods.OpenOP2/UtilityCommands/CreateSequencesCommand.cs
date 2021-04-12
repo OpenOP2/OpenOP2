@@ -121,6 +121,8 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 		Name: Example Vehicle
 	Selectable:
 		Class: E1
+	Voiced:
+		VoiceSet: GenericVoice
 	Valued:
 		Cost: 150
 	Health:
@@ -132,6 +134,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 ^StubBuilding:
 	Inherits: ^Building
+	MustBeDestroyed:
 	Tooltip:
 		Name: Example Building
 	Selectable:
@@ -153,6 +156,12 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 			foreach (var actorRule in actorRules)
 			{
+				if (!actorRule.CreateExampleActor)
+					continue;
+
+				if (actorRule.ActorType is ActorType.Effect or ActorType.Decoration)
+					continue;
+
 				var inheritor = "^StubVehicle";
 				if (actorRule.ActorType == ActorType.Building)
 				{
@@ -205,6 +214,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 		{
 			public string Name;
 			public string Palette;
+			public bool CreateExampleActor = true;
 			public ActorType ActorType;
 			public List<ActorOverlay> Overlays = new List<ActorOverlay>();
 		}
@@ -395,6 +405,12 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 							overlayPalette = "2";
 						}
 
+						if (typeGroupedFrame.Palette == 8)
+						{
+							// UI item
+							overlayPalette = "8";
+						}
+
 						ActorRule actorRule;
 						if (newActorRules.ContainsKey(groupSequence.Name))
 						{
@@ -407,6 +423,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 								Name = groupSequence.Name,
 								Palette = overlayPalette,
 								ActorType = groupSequence.ActorType,
+								CreateExampleActor = groupSequence.CreateExampleActor,
 							};
 
 							newActorRules.Add(groupSequence.Name, actorRule);

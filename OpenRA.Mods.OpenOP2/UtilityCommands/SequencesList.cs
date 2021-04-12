@@ -13,6 +13,7 @@
 		Building,
 		Effect,
 		Decoration,
+		PaletteEight,
 	}
 
 	public class GroupSequence
@@ -20,6 +21,7 @@
 		public string Name;
 		public ActorType ActorType;
 		public GroupSequenceSet[] Sets;
+		public bool CreateExampleActor = true;
 	}
 
 	public static class SequencesList
@@ -82,21 +84,27 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 59,
+						Offset = 2059,
 						Length = 1,
 						Sequence = "idle"
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 60,
+						Offset = 59,
 						Length = 1,
 						Sequence = "damaged"
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 60,
+						Length = 1,
+						Sequence = "damaged2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 69,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -104,25 +112,32 @@
 			{
 				Name = "eden-command-center",
 				ActorType = ActorType.Building,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 61,
+						Offset = 1845,
 						Length = 1,
 						Sequence = "idle"
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 62,
+						Offset = 61,
 						Length = 1,
 						Sequence = "damaged"
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 62,
+						Length = 1,
+						Sequence = "damaged2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 70,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -146,6 +161,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 1846,
+						Length = 1,
+						Sequence = "idle3"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 63,
 						Length = 1,
 						Sequence = "damaged"
@@ -160,7 +181,7 @@
 					{
 						Offset = 71,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -192,7 +213,7 @@
 					{
 						Offset = 72,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -210,6 +231,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 1857,
+						Length = 1,
+						Sequence = "idle2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 67,
 						Length = 1,
 						Sequence = "damaged"
@@ -224,7 +251,7 @@
 					{
 						Offset = 74,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -256,7 +283,7 @@
 					{
 						Offset = 138,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -264,25 +291,32 @@
 			{
 				Name = "plymouth-command-center",
 				ActorType = ActorType.Building,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 84,
+						Offset = 1854,
 						Length = 1,
 						Sequence = "idle"
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 85,
+						Offset = 84,
 						Length = 1,
 						Sequence = "damaged"
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 85,
+						Length = 1,
+						Sequence = "damaged2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 140,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -294,21 +328,27 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 86,
+						Offset = 1862,
 						Length = 1,
 						Sequence = "idle"
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 87,
+						Offset = 86,
 						Length = 1,
 						Sequence = "damaged"
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 87,
+						Length = 1,
+						Sequence = "damaged2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 139,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -320,21 +360,33 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 88,
+						Offset = 1860,
 						Length = 1,
 						Sequence = "idle"
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 89,
+						Offset = 1861,
+						Length = 1,
+						Sequence = "idle2"
+					},
+					new GroupSequenceSet()
+					{
+						Offset = 88,
 						Length = 1,
 						Sequence = "damaged"
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 89,
+						Length = 1,
+						Sequence = "damaged2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 143,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -346,21 +398,27 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 90,
+						Offset = 2034,
 						Length = 1,
 						Sequence = "idle"
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 91,
+						Offset = 90,
 						Length = 1,
 						Sequence = "damaged"
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 91,
+						Length = 1,
+						Sequence = "damaged2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 148,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -384,6 +442,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 1849,
+						Length = 1,
+						Sequence = "idle3"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 92,
 						Length = 1,
 						Sequence = "damaged"
@@ -398,7 +462,7 @@
 					{
 						Offset = 150,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -416,6 +480,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 1852,
+						Length = 1,
+						Sequence = "idle2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 94,
 						Length = 1,
 						Sequence = "damaged"
@@ -430,7 +500,7 @@
 					{
 						Offset = 149,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -448,6 +518,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 1859,
+						Length = 1,
+						Sequence = "idle2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 96,
 						Length = 1,
 						Sequence = "damaged"
@@ -462,7 +538,7 @@
 					{
 						Offset = 144,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -474,21 +550,27 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 98,
+						Offset = 2061,
 						Length = 1,
 						Sequence = "idle"
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 99,
+						Offset = 98,
 						Length = 1,
 						Sequence = "damaged"
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 99,
+						Length = 1,
+						Sequence = "damaged2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 154,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -532,7 +614,7 @@
 					{
 						Offset = 151,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -544,21 +626,27 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 102,
+						Offset = 1853,
 						Length = 1,
 						Sequence = "idle"
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 103,
+						Offset = 102,
 						Length = 1,
 						Sequence = "damaged"
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 103,
+						Length = 1,
+						Sequence = "damaged2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 354,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -596,7 +684,7 @@
 					{
 						Offset = 152,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -628,7 +716,7 @@
 					{
 						Offset = 142,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -686,7 +774,7 @@
 					{
 						Offset = 153,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -724,7 +812,7 @@
 					{
 						Offset = 141,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -762,7 +850,7 @@
 					{
 						Offset = 155,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -794,7 +882,7 @@
 					{
 						Offset = 145,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -838,7 +926,7 @@
 					{
 						Offset = 595,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -868,6 +956,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 1843,
+						Length = 1,
+						Sequence = "idle4"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 122,
 						Length = 1,
 						Sequence = "damaged"
@@ -882,7 +976,7 @@
 					{
 						Offset = 146,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -906,6 +1000,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 1864,
+						Length = 1,
+						Sequence = "idle3"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 124,
 						Length = 1,
 						Sequence = "damaged"
@@ -920,7 +1020,7 @@
 					{
 						Offset = 77,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -950,6 +1050,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 1858,
+						Length = 1,
+						Sequence = "idle4"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 126,
 						Length = 1,
 						Sequence = "damaged"
@@ -964,7 +1070,7 @@
 					{
 						Offset = 78,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -984,7 +1090,13 @@
 					{
 						Offset = 1008,
 						Length = 1,
-						Sequence = "idle"
+						Sequence = "idle2"
+					},
+					new GroupSequenceSet()
+					{
+						Offset = 1855,
+						Length = 1,
+						Sequence = "idle3"
 					},
 					new GroupSequenceSet()
 					{
@@ -1002,7 +1114,7 @@
 					{
 						Offset = 79,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1034,7 +1146,7 @@
 					{
 						Offset = 80,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1044,6 +1156,12 @@
 				ActorType = ActorType.Building,
 				Sets = new[]
 				{
+					new GroupSequenceSet()
+					{
+						Offset = 2035,
+						Length = 1,
+						Sequence = "idle"
+					},
 					new GroupSequenceSet()
 					{
 						Offset = 132,
@@ -1060,7 +1178,7 @@
 					{
 						Offset = 76,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1098,7 +1216,7 @@
 					{
 						Offset = 147,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1111,6 +1229,12 @@
 					new GroupSequenceSet()
 					{
 						Offset = 807,
+						Length = 1,
+						Sequence = "idle"
+					},
+					new GroupSequenceSet()
+					{
+						Offset = 2064,
 						Length = 1,
 						Sequence = "idle"
 					},
@@ -1130,7 +1254,7 @@
 					{
 						Offset = 75,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1142,21 +1266,27 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 156,
+						Offset = 1847,
 						Length = 1,
 						Sequence = "idle"
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 157,
+						Offset = 156,
 						Length = 1,
 						Sequence = "damaged"
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 157,
+						Length = 1,
+						Sequence = "damaged2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 158,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1168,21 +1298,27 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 160,
+						Offset = 2033,
 						Length = 1,
 						Sequence = "idle"
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 161,
+						Offset = 160,
 						Length = 1,
 						Sequence = "damaged"
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 161,
+						Length = 1,
+						Sequence = "damaged2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 159,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1220,7 +1356,7 @@
 					{
 						Offset = 162,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1264,7 +1400,7 @@
 					{
 						Offset = 165,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1294,6 +1430,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 1850,
+						Length = 1,
+						Sequence = "idle4"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 169,
 						Length = 1,
 						Sequence = "damaged"
@@ -1308,7 +1450,7 @@
 					{
 						Offset = 168,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1332,6 +1474,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 1777,
+						Length = 1,
+						Sequence = "idle3"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 172,
 						Length = 1,
 						Sequence = "damaged"
@@ -1346,7 +1494,7 @@
 					{
 						Offset = 171,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1364,6 +1512,18 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 2063,
+						Length = 1,
+						Sequence = "idle2"
+					},
+					new GroupSequenceSet()
+					{
+						Offset = 1851,
+						Length = 1,
+						Sequence = "idle3"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 175,
 						Length = 1,
 						Sequence = "damaged"
@@ -1378,7 +1538,7 @@
 					{
 						Offset = 174,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1404,7 +1564,7 @@
 					{
 						Offset = 178,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1448,7 +1608,7 @@
 					{
 						Offset = 607,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1486,7 +1646,7 @@
 					{
 						Offset = 183,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1512,7 +1672,7 @@
 					{
 						Offset = 186,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1544,7 +1704,7 @@
 					{
 						Offset = 189,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1556,21 +1716,27 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 366,
+						Offset = 1839,
 						Length = 1,
 						Sequence = "idle"
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 367,
+						Offset = 366,
 						Length = 1,
 						Sequence = "damaged"
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 367,
+						Length = 1,
+						Sequence = "damaged2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 365,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 					new GroupSequenceSet()
 					{
@@ -1588,21 +1754,27 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 370,
+						Offset = 1841,
 						Length = 1,
 						Sequence = "idle"
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 371,
+						Offset = 370,
 						Length = 1,
 						Sequence = "damaged"
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 371,
+						Length = 1,
+						Sequence = "damaged2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 369,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 					new GroupSequenceSet()
 					{
@@ -1646,7 +1818,7 @@
 					{
 						Offset = 378,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 					new GroupSequenceSet()
 					{
@@ -1678,7 +1850,7 @@
 					{
 						Offset = 382,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 					new GroupSequenceSet()
 					{
@@ -1702,6 +1874,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 1838,
+						Length = 1,
+						Sequence = "idle2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 387,
 						Length = 1,
 						Sequence = "damaged"
@@ -1716,7 +1894,7 @@
 					{
 						Offset = 386,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 					new GroupSequenceSet()
 					{
@@ -1740,6 +1918,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 1837,
+						Length = 1,
+						Sequence = "idle2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 362,
 						Length = 1,
 						Sequence = "damaged"
@@ -1754,7 +1938,7 @@
 					{
 						Offset = 363,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -1766,21 +1950,27 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 391,
+						Offset = 2060,
 						Length = 1,
 						Sequence = "idle"
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 392,
+						Offset = 391,
 						Length = 1,
 						Sequence = "damaged"
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 392,
+						Length = 1,
+						Sequence = "damaged2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 390,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 					new GroupSequenceSet()
 					{
@@ -1810,6 +2000,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 2062,
+						Length = 1,
+						Sequence = "idle3"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 395,
 						Length = 1,
 						Sequence = "damaged"
@@ -1824,7 +2020,7 @@
 					{
 						Offset = 394,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 					new GroupSequenceSet()
 					{
@@ -1874,7 +2070,7 @@
 					{
 						Offset = 398,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 					new GroupSequenceSet()
 					{
@@ -1904,6 +2100,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 1844,
+						Length = 1,
+						Sequence = "idle3"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 402,
 						Length = 1,
 						Sequence = "damaged"
@@ -1918,7 +2120,7 @@
 					{
 						Offset = 425,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 					new GroupSequenceSet()
 					{
@@ -1950,6 +2152,20 @@
 			},
 			new GroupSequence()
 			{
+				Name = "plymouth-mine-common",
+				ActorType = ActorType.Building,
+				Sets = new[]
+				{
+					new GroupSequenceSet()
+					{
+						Offset = 1848,
+						Length = 1,
+						Sequence = "idle"
+					},
+				}
+			},
+			new GroupSequence()
+			{
 				Name = "eden-mine-rare",
 				ActorType = ActorType.Building,
 				Sets = new[]
@@ -1976,7 +2192,7 @@
 					{
 						Offset = 406,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 					new GroupSequenceSet()
 					{
@@ -2026,6 +2242,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Offset = 1863,
+						Length = 1,
+						Sequence = "idle2"
+					},
+					new GroupSequenceSet()
+					{
 						Offset = 414,
 						Length = 1,
 						Sequence = "damaged"
@@ -2040,7 +2262,7 @@
 					{
 						Offset = 413,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 					new GroupSequenceSet()
 					{
@@ -2084,7 +2306,7 @@
 					{
 						Offset = 417,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 					new GroupSequenceSet()
 					{
@@ -2122,7 +2344,7 @@
 					{
 						Offset = 421,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 					new GroupSequenceSet()
 					{
@@ -2186,7 +2408,7 @@
 					{
 						Offset = 440,
 						Length = 1,
-						Sequence = "build"
+						Sequence = "make"
 					},
 				}
 			},
@@ -2202,6 +2424,20 @@
 					{
 						Offset = 230,
 						Length = 1,
+						Sequence = "idle"
+					},
+				}
+			},
+			new GroupSequence()
+			{
+				Name = "explosion2",
+				ActorType = ActorType.Vehicle,
+				Sets = new[]
+				{
+					new GroupSequenceSet()
+					{
+						Offset = 460,
+						Length = 16,
 						Sequence = "idle"
 					},
 				}
@@ -2384,6 +2620,62 @@
 					{
 						Offset = 460,
 						Length = 16,
+						Sequence = "idle"
+					},
+				}
+			},
+			new GroupSequence()
+			{
+				Name = "rallypoint",
+				ActorType = ActorType.Decoration,
+				Sets = new[]
+				{
+					new GroupSequenceSet()
+					{
+						Offset = 1759,
+						Length = 1,
+						Sequence = "idle"
+					},
+				}
+			},
+			new GroupSequence()
+			{
+				Name = "waypoint",
+				ActorType = ActorType.Decoration,
+				Sets = new[]
+				{
+					new GroupSequenceSet()
+					{
+						Offset = 1856,
+						Length = 1,
+						Sequence = "idle"
+					},
+				}
+			},
+			new GroupSequence()
+			{
+				Name = "mpspawn",
+				ActorType = ActorType.Decoration,
+				Sets = new[]
+				{
+					new GroupSequenceSet()
+					{
+						Offset = 1764,
+						Length = 1,
+						Sequence = "idle"
+					},
+				}
+			},
+			new GroupSequence()
+			{
+				Name = "clock",
+				ActorType = ActorType.Decoration,
+				Sets = new[]
+				{
+					new GroupSequenceSet()
+					{
+						Offset = 804,
+						Length = 1,
 						Sequence = "idle"
 					},
 				}

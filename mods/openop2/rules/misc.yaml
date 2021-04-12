@@ -1,4 +1,6 @@
 mpspawn:
+	Inherits: ^mpspawn-generated
+	-RenderSprites:
 	Interactable:
 	EditorOnlyTooltip:
 		Name: (multiplayer player starting point)
@@ -7,12 +9,16 @@ mpspawn:
 		OccupiesSpace: false
 	WithSpriteBody:
 	RenderSpritesEditorOnly:
+		Image: mpspawn
+		Palette: 8
 	BodyOrientation:
 		QuantizedFacings: 1
 	MapEditorData:
 		Categories: System
 
 waypoint:
+	Inherits: ^waypoint-generated
+	-RenderSprites:
 	Interactable:
 	EditorOnlyTooltip:
 		Name: (waypoint for scripted behavior)
@@ -21,6 +27,8 @@ waypoint:
 		OccupiesSpace: false
 	WithSpriteBody:
 	RenderSpritesEditorOnly:
+		Image: waypoint
+		Palette: 3
 	BodyOrientation:
 		QuantizedFacings: 1
 	MapEditorData:

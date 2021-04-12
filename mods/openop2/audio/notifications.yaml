@@ -1,11 +1,15 @@
 Speech:
-	DefaultVariant: .wav
+	DefaultVariant: 
 	Notifications:
 		StartGame:
+		UnitLost:
+		Lose:
+		Win:
+		Leave:
 
 Sounds:
-	DefaultVariant: .wav
+	DefaultVariant: 
 	Notifications:
-		ClickSound:
-		ChatLine: 
-		ClickDisabledSound:
+		ClickSound: beep2.WAV
+		ChatLine: beep5.WAV
+		ClickDisabledSound: beep6.WAV

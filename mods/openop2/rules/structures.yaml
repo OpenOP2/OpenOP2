@@ -1,0 +1,14 @@
+# Hi Zhall and Zon,
+# You'll want to look in rules-generated.yaml for the building you need, then move it into here and customize it as you need.
+
+eden-command-center:
+	Inherits@generated: ^eden-command-center-generated
+	Inherits: ^StubBuilding
+	Voiced:
+		VoiceSet: CommandCenterVoice
+
+plymouth-command-center:
+	Inherits@generated: ^plymouth-command-center-generated
+	Inherits: ^StubBuilding
+	Voiced:
+		VoiceSet: CommandCenterVoice
