@@ -54,13 +54,15 @@
 					{
 						Offset = 8,
 						Length = 16,
-						Sequence = "idle"
+						Sequence = "idle",
+						LoopOffset = 4,
 					},
 					new GroupSequenceSet()
 					{
 						Offset = 24,
 						Length = 16,
-						Sequence = "idle-full"
+						Sequence = "idle-full",
+						LoopOffset = 4,
 					},
 				}
 			},
@@ -896,21 +898,21 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 596,
+						Offset = 598,
 						Length = 1,
 						Sequence = "idle"
+					},
+					new GroupSequenceSet()
+					{
+						Offset = 596,
+						Length = 1,
+						Sequence = "idle3"
 					},
 					new GroupSequenceSet()
 					{
 						Offset = 597,
 						Length = 1,
 						Sequence = "idle2"
-					},
-					new GroupSequenceSet()
-					{
-						Offset = 598,
-						Length = 1,
-						Sequence = "idle3"
 					},
 					new GroupSequenceSet()
 					{
@@ -2454,7 +2456,8 @@
 					{
 						Offset = 231,
 						Length = 8,
-						Sequence = "idle"
+						Sequence = "idle",
+						LoopOffset = 2,
 					},
 				}
 			},
@@ -2468,7 +2471,8 @@
 					{
 						Offset = 239,
 						Length = 8,
-						Sequence = "idle"
+						Sequence = "idle",
+						LoopOffset = 2,
 					},
 				}
 			},
@@ -2482,7 +2486,8 @@
 					{
 						Offset = 248,
 						Length = 8,
-						Sequence = "idle"
+						Sequence = "idle",
+						LoopOffset = 2,
 					},
 				}
 			},
@@ -2496,7 +2501,8 @@
 					{
 						Offset = 255,
 						Length = 8,
-						Sequence = "idle"
+						Sequence = "idle",
+						LoopOffset = 2,
 					},
 				}
 			},
@@ -2510,7 +2516,8 @@
 					{
 						Offset = 263,
 						Length = 16,
-						Sequence = "idle"
+						Sequence = "idle",
+						LoopOffset = 4,
 					},
 				}
 			},
@@ -2524,7 +2531,8 @@
 					{
 						Offset = 279,
 						Length = 8,
-						Sequence = "idle"
+						Sequence = "idle",
+						LoopOffset = 2,
 					},
 				}
 			},
@@ -2538,7 +2546,8 @@
 					{
 						Offset = 287,
 						Length = 16,
-						Sequence = "idle"
+						Sequence = "idle",
+						LoopOffset = 4,
 					},
 				}
 			},
@@ -2552,7 +2561,8 @@
 					{
 						Offset = 303,
 						Length = 16,
-						Sequence = "idle"
+						Sequence = "idle",
+						LoopOffset = 4,
 					},
 				}
 			},
@@ -2566,7 +2576,8 @@
 					{
 						Offset = 319,
 						Length = 16,
-						Sequence = "idle"
+						Sequence = "idle",
+						LoopOffset = 4,
 					},
 				}
 			},
@@ -2580,7 +2591,8 @@
 					{
 						Offset = 335,
 						Length = 8,
-						Sequence = "idle"
+						Sequence = "idle",
+						LoopOffset = 2,
 					},
 				}
 			},
@@ -2594,7 +2606,8 @@
 					{
 						Offset = 343,
 						Length = 8,
-						Sequence = "idle"
+						Sequence = "idle",
+						LoopOffset = 2,
 					},
 				}
 			},
@@ -2608,7 +2621,8 @@
 					{
 						Offset = 442,
 						Length = 16,
-						Sequence = "idle"
+						Sequence = "idle",
+						LoopOffset = 4,
 					},
 				}
 			},
@@ -2622,7 +2636,8 @@
 					{
 						Offset = 460,
 						Length = 16,
-						Sequence = "idle"
+						Sequence = "idle",
+						LoopOffset = 4,
 					},
 				}
 			},
@@ -2654,17 +2669,20 @@
 					},
 				}
 			},
+
 			new GroupSequence()
 			{
 				Name = "mpspawn",
 				ActorType = ActorType.Decoration,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
+					// Alt mpspawn: 1764, 1111, 1112, 1107
 					new GroupSequenceSet()
 					{
-						Offset = 1764,
+						Offset = 1107,
 						Length = 1,
-						Sequence = "idle"
+						Sequence = "idle",
 					},
 				}
 			},
@@ -2674,6 +2692,7 @@
 				ActorType = ActorType.Decoration,
 				Sets = new[]
 				{
+					// Alt clocks: 658, 599
 					new GroupSequenceSet()
 					{
 						Offset = 804,

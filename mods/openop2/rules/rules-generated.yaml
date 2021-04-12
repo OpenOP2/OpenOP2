@@ -6,8 +6,10 @@
 		Image: eden-robo-dozer
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-shadow-id3
 		Palette: shadow
@@ -23,8 +25,10 @@
 		Image: cargo-truck
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-shadow-id3
 		Palette: shadow
@@ -40,6 +44,7 @@
 		Palette: 1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 5
 	WithIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
@@ -79,6 +84,7 @@
 		Palette: 1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 6
 	WithIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
@@ -92,14 +98,19 @@
 		Palette: 1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 3
 	WithIdleOverlay@3:
 		Sequence: idle-sprite-id4
+		Palette: 3
 	WithIdleOverlay@4:
 		Sequence: idle-sprite-id5
+		Palette: 5
 	WithIdleOverlay@5:
 		Sequence: idle-shadow-id6
 		Palette: shadow
@@ -116,6 +127,7 @@
 		Palette: 1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 5
 	WithIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
@@ -186,12 +198,16 @@
 		Palette: 2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 3
 	WithIdleOverlay@3:
 		Sequence: idle-sprite-id4
+		Palette: 3
 	WithIdleOverlay@4:
 		Sequence: idle-sprite-id5
 		Palette: 2
@@ -222,12 +238,16 @@
 		Palette: 2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 6
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 6
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 6
 	WithIdleOverlay@3:
 		Sequence: idle-sprite-id4
+		Palette: 6
 	WithIdleOverlay@4:
 		Sequence: idle-sprite-id5
 		Palette: 1
@@ -261,12 +281,16 @@
 		Palette: 2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 3
 	WithIdleOverlay@3:
 		Sequence: idle-sprite-id4
+		Palette: 3
 	WithIdleOverlay@4:
 		Sequence: idle-sprite-id5
 		Palette: 2
@@ -330,6 +354,7 @@
 		Palette: 2
 	WithIdleOverlay@11:
 		Sequence: idle-sprite-id12
+		Palette: 3
 	WithIdleOverlay@12:
 		Sequence: idle-shadow-id13
 		Palette: shadow
@@ -435,6 +460,7 @@
 ^eden-medical-center-generated:
 	RenderSprites:
 		Image: eden-medical-center
+		Palette: 5
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -445,22 +471,36 @@
 ^eden-nursery-generated:
 	RenderSprites:
 		Image: eden-nursery
+		Palette: 5
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 5
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 5
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 5
 	WithIdleOverlay@3:
 		Sequence: idle-sprite-id4
+		Palette: 5
 	WithIdleOverlay@4:
 		Sequence: idle-sprite-id5
+		Palette: 5
 	WithIdleOverlay@5:
 		Sequence: idle-sprite-id6
+		Palette: 5
 	WithIdleOverlay@6:
 		Sequence: idle-sprite-id7
+		Palette: 5
 	WithIdleOverlay@7:
-		Sequence: idle-shadow-id8
+		Sequence: idle-sprite-id8
+		Palette: 5
+	WithIdleOverlay@8:
+		Sequence: idle-sprite-id9
+		Palette: 5
+	WithIdleOverlay@9:
+		Sequence: idle-shadow-id10
 		Palette: shadow
 
 ^eden-recreation-facility-generated:
@@ -469,6 +509,7 @@
 		Palette: 1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 5
 	WithIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
@@ -527,10 +568,13 @@
 		Image: eden-smelter-common
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 3
 	WithIdleOverlay@3:
 		Sequence: idle-sprite-id4
 		Palette: 1
@@ -704,6 +748,7 @@
 		Palette: 2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 5
 	WithIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
@@ -804,12 +849,16 @@
 		Palette: 2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 3
 	WithIdleOverlay@3:
 		Sequence: idle-sprite-id4
+		Palette: 3
 	WithIdleOverlay@4:
 		Sequence: idle-sprite-id5
 		Palette: 8
@@ -829,10 +878,13 @@
 		Palette: 1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 5
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 5
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 5
 	WithIdleOverlay@3:
 		Sequence: idle-shadow-id4
 		Palette: shadow
@@ -843,12 +895,16 @@
 		Palette: 1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 3
 	WithIdleOverlay@3:
 		Sequence: idle-sprite-id4
+		Palette: 3
 	WithIdleOverlay@4:
 		Sequence: idle-sprite-id5
 		Palette: 1
@@ -860,21 +916,26 @@
 		Palette: 1
 	WithIdleOverlay@7:
 		Sequence: idle-sprite-id8
+		Palette: 5
 
 ^plymouth-gorf-generated:
 	RenderSprites:
 		Image: plymouth-gorf
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 3
 	WithIdleOverlay@3:
 		Sequence: idle-sprite-id4
 		Palette: 2
 	WithIdleOverlay@4:
 		Sequence: idle-sprite-id5
+		Palette: 6
 	WithIdleOverlay@5:
 		Sequence: idle-shadow-id6
 		Palette: shadow
@@ -894,6 +955,7 @@
 		Palette: 1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
@@ -929,6 +991,7 @@
 		Palette: 1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 5
 	WithIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
@@ -957,17 +1020,22 @@
 		Palette: 1
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 3
 	WithIdleOverlay@3:
 		Sequence: idle-sprite-id4
+		Palette: 3
 	WithIdleOverlay@4:
 		Sequence: idle-sprite-id5
+		Palette: 3
 	WithIdleOverlay@5:
 		Sequence: idle-sprite-id6
 		Palette: 1
 	WithIdleOverlay@6:
 		Sequence: idle-sprite-id7
+		Palette: 5
 	WithIdleOverlay@7:
 		Sequence: idle-shadow-id8
 		Palette: shadow
@@ -1000,10 +1068,13 @@
 		Image: plymouth-mine-common
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 3
 	WithIdleOverlay@3:
 		Sequence: idle-shadow-id4
 		Palette: shadow
@@ -1011,6 +1082,7 @@
 ^eden-mine-rare-generated:
 	RenderSprites:
 		Image: eden-mine-rare
+		Palette: 5
 	WithIdleOverlay@0:
 		Sequence: idle-shadow-id1
 		Palette: shadow
@@ -1021,6 +1093,7 @@
 ^eden-mine-magma-generated:
 	RenderSprites:
 		Image: eden-mine-magma
+		Palette: 5
 	WithIdleOverlay@0:
 		Sequence: idle-shadow-id1
 		Palette: shadow
@@ -1048,6 +1121,7 @@
 ^plymouth-medical-center-generated:
 	RenderSprites:
 		Image: plymouth-medical-center
+		Palette: 8
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -1063,10 +1137,13 @@
 		Image: plymouth-mine-rare
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 3
 	WithIdleOverlay@3:
 		Sequence: idle-shadow-id4
 		Palette: shadow
@@ -1088,12 +1165,16 @@
 		Palette: 2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 3
 	WithIdleOverlay@3:
 		Sequence: idle-sprite-id4
+		Palette: 3
 	WithIdleOverlay@4:
 		Sequence: idle-sprite-id5
 		Palette: 2
@@ -1134,8 +1215,10 @@
 		Image: explosion2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 7
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 7
 	WithIdleOverlay@2:
 		Sequence: idle-shadow-id3
 		Palette: shadow
@@ -1145,6 +1228,7 @@
 		Image: eden-combat-chassis-heavy
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
@@ -1154,6 +1238,7 @@
 		Image: eden-combat-chassis-medium
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 5
 	WithIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
@@ -1163,10 +1248,13 @@
 		Image: eden-robo-surveyor
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 6
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 3
 	WithIdleOverlay@3:
 		Sequence: idle-shadow-id4
 		Palette: shadow
@@ -1176,10 +1264,13 @@
 		Image: plymouth-robo-surveyor
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 7
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 7
 	WithIdleOverlay@2:
 		Sequence: idle-sprite-id3
+		Palette: 6
 	WithIdleOverlay@3:
 		Sequence: idle-shadow-id4
 		Palette: shadow
@@ -1189,8 +1280,10 @@
 		Image: plymouth-evacuation-transport
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-shadow-id3
 		Palette: shadow
@@ -1200,6 +1293,7 @@
 		Image: plymouth-combat-chassis-heavy
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 7
 	WithIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
@@ -1209,8 +1303,10 @@
 		Image: eden-convec
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-shadow-id3
 		Palette: shadow
@@ -1220,6 +1316,7 @@
 		Image: eden-evacuation-transport
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
@@ -1229,8 +1326,10 @@
 		Image: plymouth-convec
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 7
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-shadow-id3
 		Palette: shadow
@@ -1240,6 +1339,7 @@
 		Image: plymouth-combat-chassis-medium
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 5
 	WithIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
@@ -1249,6 +1349,7 @@
 		Image: plymouth-robo-dozer
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 7
 	WithIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
@@ -1264,8 +1365,10 @@
 		Image: eden-scout
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 3
 	WithIdleOverlay@2:
 		Sequence: idle-shadow-id3
 		Palette: shadow
@@ -1275,8 +1378,10 @@
 		Image: plymouth-scout
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
+		Palette: 3
 	WithIdleOverlay@1:
 		Sequence: idle-sprite-id2
+		Palette: 7
 	WithIdleOverlay@2:
 		Sequence: idle-shadow-id3
 		Palette: shadow
@@ -1284,6 +1389,7 @@
 ^rallypoint-generated:
 	RenderSprites:
 		Image: rallypoint
+		Palette: 5
 
 ^waypoint-generated:
 	RenderSprites:
@@ -1292,6 +1398,7 @@
 ^mpspawn-generated:
 	RenderSprites:
 		Image: mpspawn
+		Palette: 5
 
 ^clock-generated:
 	RenderSprites:

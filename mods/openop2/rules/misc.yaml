@@ -1,6 +1,4 @@
 mpspawn:
-	Inherits: ^mpspawn-generated
-	-RenderSprites:
 	Interactable:
 	EditorOnlyTooltip:
 		Name: (multiplayer player starting point)
@@ -10,7 +8,7 @@ mpspawn:
 	WithSpriteBody:
 	RenderSpritesEditorOnly:
 		Image: mpspawn
-		Palette: 8
+		Palette: 5
 	BodyOrientation:
 		QuantizedFacings: 1
 	MapEditorData:

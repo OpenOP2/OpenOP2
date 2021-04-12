@@ -85,7 +85,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				sb.AppendLine($"^{actorRule.Name}-generated:");
 				sb.AppendLine($"\tRenderSprites:");
 				sb.AppendLine($"\t\tImage: {actorRule.Name}");
-				if (actorRule.Palette == "1" || actorRule.Palette == "2")
+				if (actorRule.Palette == "1" || actorRule.Palette == "2" || actorRule.Palette == "5" || actorRule.Palette == "8")
 				{
 					// Building
 					sb.AppendLine($"\t\tPalette: {actorRule.Palette}");
@@ -313,7 +313,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 										AnimationFacings = new AnimationFacing[groupSequenceSet.Length],
 										FrameType = rawFrame.ImageType,
 										Palette = rawFrame.Palette,
-										PicOrder = pic.PicOrder
+										PicOrder = pic.PicOrder,
 									};
 
 									for (var i = 0; i < groupSequenceSet.Length; i++)
@@ -409,24 +409,23 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 							}
 						}
 
-						// Also assemble actor rules
+						typeIndex++;
+						zIndex -= 256;
+					}
+
+					// Also assemble actor rules
+					var actorId = 0;
+					foreach (var typeGroupedFrame in typeGroupedFrames)
+					{
 						var overlayPalette = typeGroupedFrame.FrameType == 4 || typeGroupedFrame.FrameType == 5 ? "shadow" : null;
-						if (typeGroupedFrame.Palette == 1 && typeGroupedFrame.FrameType == 1)
+						if (typeGroupedFrame.FrameType == 1)
 						{
-							// Eden building
-							overlayPalette = "1";
-						}
-
-						if (typeGroupedFrame.Palette == 2 && typeGroupedFrame.FrameType == 1)
-						{
-							// Plymouth building
-							overlayPalette = "2";
-						}
-
-						if (typeGroupedFrame.Palette == 8)
-						{
-							// UI item
-							overlayPalette = "8";
+							// Palette possibilities:
+							// 1: Eden building
+							// 2: Plymouth building
+							// 5: Unknown other
+							// 8: Unknown other 2, UI item?
+							overlayPalette = $"{typeGroupedFrame.Palette}";
 						}
 
 						ActorRule actorRule;
@@ -447,6 +446,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 							newActorRules.Add(groupSequence.Name, actorRule);
 						}
 
+						var sequenceName = getSequenceName(typeGroupedFrame, actorId);
 						if (sequenceName != "idle")
 						{
 							actorRule.Overlays.Add(new ActorOverlay
@@ -456,8 +456,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 							});
 						}
 
-						typeIndex++;
-						zIndex -= 256;
+						actorId++;
 					}
 
 					break; // Only do idle set for now
