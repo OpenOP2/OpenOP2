@@ -10,12 +10,9 @@ Packages:
 	^EngineDir|
 	$openop2: openop2
 	^EngineDir|/mods/common: common
-	openop2|bits
-	openop2|uibits
 	~art.vol
 	~maps.vol
 	~OP2_ART.BMP
-	~op2_art.prt
 	~sheets.vol
 	~sound.vol
 	~story.vol
@@ -23,6 +20,8 @@ Packages:
 	~voices.vol
 	~music.zip
 	~voices.zip
+	openop2|bits
+	openop2|uibits
 
 MapFolders:
 	openop2|maps: System
@@ -228,8 +227,12 @@ ModContent:
 	HeaderMessage: Game content may be extracted from the original game.
 	Packages:
 		devtest: Dev Test Package
-			TestFiles: ^SupportDir|Content/openop2/art.vol, ^SupportDir|Content/openop2/maps.vol, ^SupportDir|Content/openop2/sheets.vol, ^SupportDir|Content/openop2/sound.vol, ^SupportDir|Content/openop2/story.vol, ^SupportDir|Content/openop2/tech.vol, ^SupportDir|Content/openop2/voices.vol, ^SupportDir|Content/openop2/op2_art.prt, ^SupportDir|Content/openop2/OP2_ART.BMP
+			TestFiles: ^SupportDir|Content/openop2/art.vol, ^SupportDir|Content/openop2/maps.vol, ^SupportDir|Content/openop2/sheets.vol, ^SupportDir|Content/openop2/sound.vol, ^SupportDir|Content/openop2/story.vol, ^SupportDir|Content/openop2/tech.vol, ^SupportDir|Content/openop2/voices.vol, ^SupportDir|Content/openop2/OP2_ART.BMP
 			Download: op2devtest
+			Required: false
+		gog: GOG Install
+			TestFiles: ^SupportDir|Content/openop2/maps.vol, ^SupportDir|Content/openop2/sheets.vol, ^SupportDir|Content/openop2/sound.vol, ^SupportDir|Content/openop2/story.vol, ^SupportDir|Content/openop2/voices.vol, ^SupportDir|Content/openop2/OP2_ART.BMP
+			Sources: op2gog
 			Required: true
 		music: Music
 			TestFiles: ^SupportDir|Content/openop2/music.zip
@@ -239,6 +242,8 @@ ModContent:
 			Download: op2voices
 	Downloads:
 		openop2|installer/downloads.yaml
+	Sources:
+		openop2|installer/gog.yaml
 
 DiscordService:
 	ApplicationId: 824544668116189194

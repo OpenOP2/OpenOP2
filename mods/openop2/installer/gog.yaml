@@ -1,0 +1,16 @@
+op2gog: GOG Install Files
+	Type: Install
+	RegistryPrefixes: HKEY_LOCAL_MACHINE\Software\, HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\
+	RegistryKey: GOG.com\Games\1494370738
+	RegistryValue: PATH
+	IDFiles:
+		maps.vol: 111972f2d66d2bfcbfbdc48c6cc194c7f2269ad5
+		OP2_ART.BMP: 8a19ad87f561ef24b2379e8bb6265ddba0c8b6c0
+	Install:
+		copy: .
+			^SupportDir|Content/openop2/maps.vol: maps.vol
+			^SupportDir|Content/openop2/sheets.vol: sheets.vol
+			^SupportDir|Content/openop2/sound.vol: sound.vol
+			^SupportDir|Content/openop2/story.vol: story.vol
+			^SupportDir|Content/openop2/voices.vol: voices.vol
+			^SupportDir|Content/openop2/OP2_ART.BMP: OP2_ART.BMP
