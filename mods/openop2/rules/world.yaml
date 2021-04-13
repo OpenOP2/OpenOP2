@@ -35,12 +35,12 @@
 		Type: Metals
 		Name: Valuable Metals
 		ResourceType: 1
-		TerrainType: Metals
+		TerrainType: Junk
 		Palette: terrain
 		Sequences: blank
 		MaxDensity: 1
 		ValuePerUnit: 25
-		AllowedTerrainTypes: Clear,Road
+		AllowedTerrainTypes: ClearMud, ClearRock, ClearSand
 		AllowUnderActors: true
 	ResourceRenderer:
 		RenderTypes: Metals

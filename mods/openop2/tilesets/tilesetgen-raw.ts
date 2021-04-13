@@ -41,7 +41,7 @@ const tilesets: Tileset[] = [
     size: 163,
     image: 'well0002.bmp',
     palette: 'well0002.bmp',
-    category: category,
+    category: category + ' - Mud - Walls',
 },
 {
     size: 6,
@@ -59,7 +59,7 @@ const tilesets: Tileset[] = [
     size: 147,
     image: 'well0005.bmp',
     palette: 'well0005.bmp',
-    category: category,
+    category: category + ' - Rock - Walls',
 },
 {
     size: 54,
@@ -71,7 +71,7 @@ const tilesets: Tileset[] = [
     size: 207,
     image: 'well0007.bmp',
     palette: 'well0007.bmp',
-    category: category,
+    category: category + ' - Lava',
 },
 {
     size: 347,
@@ -83,7 +83,7 @@ const tilesets: Tileset[] = [
     size: 141,
     image: 'well0009.bmp',
     palette: 'well0009.bmp',
-    category: category,
+    category: category + ' - Sand - Walls',
 },
 {
     size: 96,

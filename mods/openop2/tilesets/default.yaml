@@ -16,7 +16,7 @@ Terrain:
 
 Templates:
 	Template@mud-terrain-1:
-		Id: 0
+		Id: 2012
 		Images: well0001.bmp
 		Size: 4,4
 		Categories: Terrain
@@ -39,7 +39,7 @@ Templates:
 			14: Clear
 			15: Clear
 	Template@mud-terrain-2:
-		Id: 1
+		Id: 2013
 		Images: well0001.bmp
 		Size: 4,4
 		Categories: Terrain
@@ -62,199 +62,199 @@ Templates:
 			14: Clear
 			15: Clear
 	Template@rock-terrain-1:
-		Id: 2
+		Id: 2014
 		Images: well0004.bmp
 		Size: 4,4
 		Categories: Terrain
 		Palette: well0004.bmp
 		Frames: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
+			0: ClearRock
+			1: ClearRock
+			2: ClearRock
+			3: ClearRock
+			4: ClearRock
+			5: ClearRock
+			6: ClearRock
+			7: ClearRock
+			8: ClearRock
+			9: ClearRock
+			10: ClearRock
+			11: ClearRock
+			12: ClearRock
+			13: ClearRock
+			14: ClearRock
+			15: ClearRock
 	Template@rock-terrain-2:
-		Id: 3
+		Id: 2015
 		Images: well0004.bmp
 		Size: 4,4
 		Categories: Terrain
 		Palette: well0004.bmp
 		Frames: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
+			0: ClearRock
+			1: ClearRock
+			2: ClearRock
+			3: ClearRock
+			4: ClearRock
+			5: ClearRock
+			6: ClearRock
+			7: ClearRock
+			8: ClearRock
+			9: ClearRock
+			10: ClearRock
+			11: ClearRock
+			12: ClearRock
+			13: ClearRock
+			14: ClearRock
+			15: ClearRock
 	Template@rock-terrain-3:
-		Id: 4
+		Id: 2016
 		Images: well0004.bmp
 		Size: 4,4
 		Categories: Terrain
 		Palette: well0004.bmp
 		Frames: 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
+			0: ClearRock2
+			1: ClearRock2
+			2: ClearRock2
+			3: ClearRock2
+			4: ClearRock2
+			5: ClearRock2
+			6: ClearRock2
+			7: ClearRock2
+			8: ClearRock2
+			9: ClearRock2
+			10: ClearRock2
+			11: ClearRock2
+			12: ClearRock2
+			13: ClearRock2
+			14: ClearRock2
+			15: ClearRock2
 	Template@rock-terrain-4:
-		Id: 5
+		Id: 2017
 		Images: well0004.bmp
 		Size: 4,4
 		Categories: Terrain
 		Palette: well0004.bmp
 		Frames: 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
+			0: ClearRock2
+			1: ClearRock2
+			2: ClearRock2
+			3: ClearRock2
+			4: ClearRock2
+			5: ClearRock2
+			6: ClearRock2
+			7: ClearRock2
+			8: ClearRock2
+			9: ClearRock2
+			10: ClearRock2
+			11: ClearRock2
+			12: ClearRock2
+			13: ClearRock2
+			14: ClearRock2
+			15: ClearRock2
 	Template@sand-terrain-1:
-		Id: 6
+		Id: 2018
 		Images: well0008.bmp
 		Size: 4,4
 		Categories: Terrain
 		Palette: well0008.bmp
 		Frames: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
+			9: ClearSand
+			10: ClearSand
+			11: ClearSand
+			12: ClearSand
+			13: ClearSand
+			14: ClearSand
+			15: ClearSand
 	Template@sand-terrain-2:
-		Id: 7
+		Id: 2019
 		Images: well0008.bmp
 		Size: 4,4
 		Categories: Terrain
 		Palette: well0008.bmp
 		Frames: 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
+			9: ClearSand
+			10: ClearSand
+			11: ClearSand
+			12: ClearSand
+			13: ClearSand
+			14: ClearSand
+			15: ClearSand
 	Template@sand-terrain-3:
-		Id: 8
+		Id: 2020
 		Images: well0008.bmp
 		Size: 4,4
 		Categories: Terrain
 		Palette: well0008.bmp
 		Frames: 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
+			9: ClearSand
+			10: ClearSand
+			11: ClearSand
+			12: ClearSand
+			13: ClearSand
+			14: ClearSand
+			15: ClearSand
 	Template@sand-terrain-4:
-		Id: 9
+		Id: 2021
 		Images: well0008.bmp
 		Size: 4,4
 		Categories: Terrain
 		Palette: well0008.bmp
 		Frames: 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
+			9: ClearSand
+			10: ClearSand
+			11: ClearSand
+			12: ClearSand
+			13: ClearSand
+			14: ClearSand
+			15: ClearSand
 	Template@mud-tracks:
-		Id: 10
+		Id: 2022
 		Images: well0001.bmp
 		Size: 2,3
 		Frames: 32, 33, 34, 35, 36, 37
@@ -267,15 +267,15 @@ Templates:
 			4: Clear
 			5: Clear
 	Template@mud-rock-1x1:
-		Id: 11
+		Id: 2023
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 38
 		Categories: Mud - Features
 		Tiles:
-			0: Clear
+			0: RockMud
 	Template@mud-rock-2x3:
-		Id: 12
+		Id: 2024
 		Images: well0001.bmp
 		Size: 2,3
 		Frames: 39, 40, 41, 42, 43, 44
@@ -288,7 +288,7 @@ Templates:
 			4: Clear
 			5: Clear
 	Template@mud-crater-1:
-		Id: 13
+		Id: 2025
 		Images: well0001.bmp
 		Size: 3,2
 		Categories: Mud - Features
@@ -301,7 +301,7 @@ Templates:
 			4: Clear
 			5: Clear
 	Template@mud-crater-2:
-		Id: 14
+		Id: 2026
 		Images: well0001.bmp
 		Size: 2,3
 		Categories: Mud - Features
@@ -314,7 +314,7 @@ Templates:
 			4: Clear
 			5: Clear
 	Template@mud-rock-2x2-1:
-		Id: 15
+		Id: 2027
 		Images: well0001.bmp
 		Size: 2,2
 		Categories: Mud - Features
@@ -325,7 +325,7 @@ Templates:
 			2: Clear
 			3: Clear
 	Template@mud-rock-2x2-2:
-		Id: 16
+		Id: 2028
 		Images: well0001.bmp
 		Size: 2,2
 		Categories: Mud - Features
@@ -336,15 +336,15 @@ Templates:
 			2: Clear
 			3: Clear
 	Template@mud-rock-1x1-1:
-		Id: 17
+		Id: 2029
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 65
 		Categories: Mud - Features
 		Tiles:
-			0: Clear
+			0: RockMud
 	Template@mud-rock-1x1-2:
-		Id: 18
+		Id: 2030
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 66
@@ -352,7 +352,7 @@ Templates:
 		Tiles:
 			0: Clear
 	Template@mud-rock-1x1-3:
-		Id: 19
+		Id: 2031
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 67
@@ -360,185 +360,185 @@ Templates:
 		Tiles:
 			0: Clear
 	Template@mud-rock-1x1-4:
-		Id: 20
+		Id: 2032
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 68
 		Categories: Mud - Features
 		Tiles:
-			0: Clear
+			0: RockMud
 	Template@mud-cliff-corner-sw-1:
-		Id: 21
+		Id: 2033
 		Images: well0001.bmp
 		Size: 3,6
 		Frames: 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86
 		Categories: Mud - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
+			0: RockMud
+			1: RockMud
 			2: Clear
 			3: Clear
-			4: Clear
+			4: RockMud
 			5: Clear
 			6: Clear
-			7: Clear
-			8: Clear
+			7: RockMud
+			8: RockMud
 			9: Clear
-			10: Clear
-			11: Clear
+			10: RockMud
+			11: RockMud
 			12: Clear
-			13: Clear
-			14: Clear
+			13: RockMud
+			14: RockMud
 			15: Clear
 			16: Clear
-			17: Clear
+			17: RockMud
 	Template@mud-cliff-corner-ne:
-		Id: 22
+		Id: 2034
 		Images: well0001.bmp
 		Size: 2,3
 		Frames: 87, 88, 89, 90, 91, 92
 		Categories: Mud - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
+			0: RockMud
+			1: RockMud
 			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
+			3: RockMud
+			4: RockMud
+			5: RockMud
 	Template@mud-cliff-corner-nw:
-		Id: 23
+		Id: 2035
 		Images: well0001.bmp
 		Size: 3,3
 		Frames: 93, 94, 95, 96, 97, 98, 99, 100, 101
 		Categories: Mud - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
+			0: RockMud
+			1: RockMud
+			2: RockMud
+			3: RockMud
+			4: RockMud
 			5: Clear
-			6: Clear
-			7: Clear
+			6: RockMud
+			7: RockMud
 			8: Clear
 	Template@mud-cliff-s-1:
-		Id: 24
+		Id: 2036
 		Images: well0001.bmp
 		Size: 3,3
 		Frames: 102, 103, 104, 105, 106, 107, 108, 109, 110
 		Categories: Mud - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: RockMud
+			1: RockMud
+			2: RockMud
+			3: RockMud
+			4: RockMud
+			5: RockMud
+			6: RockMud
+			7: RockMud
+			8: RockMud
 	Template@mud-cliff-s-2:
-		Id: 25
+		Id: 2037
 		Images: well0001.bmp
 		Size: 3,3
 		Frames: 111, 112, 113, 114, 115, 116, 117, 118, 119
 		Categories: Mud - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: RockMud
+			1: RockMud
+			2: RockMud
+			3: RockMud
+			4: RockMud
+			5: RockMud
+			6: RockMud
+			7: RockMud
+			8: RockMud
 	Template@mud-cliff-taper-w:
-		Id: 26
+		Id: 2038
 		Images: well0001.bmp
 		Size: 3,3
 		Frames: 120, 121, 122, 123, 124, 125, 126, 127, 128
 		Categories: Mud - Cliffs
 		Tiles:
 			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
+			1: RockMud
+			2: RockMud
+			3: RockMud
+			4: RockMud
+			5: RockMud
 			6: Clear
 			7: Clear
-			8: Clear
+			8: RockMud
 	Template@mud-cliff-se-inner:
-		Id: 27
+		Id: 2039
 		Images: well0001.bmp
 		Size: 3,3
 		Frames: 129, 130, 131, 132, 133, 134, 135, 136, 137
 		Categories: Mud - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: RockMud
+			1: RockMud
+			2: RockMud
+			3: RockMud
+			4: RockMud
+			5: RockMud
+			6: RockMud
+			7: RockMud
+			8: RockMud
 	Template@mud-cliff-sw-inner:
-		Id: 28
+		Id: 2040
 		Images: well0001.bmp
 		Size: 3,3
 		Frames: 138, 139, 140, 141, 142, 143, 144, 145, 146
 		Categories: Mud - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: RockMud
+			1: RockMud
+			2: RockMud
+			3: RockMud
+			4: RockMud
+			5: RockMud
+			6: RockMud
+			7: RockMud
+			8: RockMud
 	Template@mud-cliff-taper-e:
-		Id: 29
+		Id: 2041
 		Images: well0001.bmp
 		Size: 3,3
 		Frames: 147, 148, 149, 150, 151, 152, 153, 154, 155
 		Categories: Mud - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
+			0: RockMud
+			1: RockMud
 			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
+			3: RockMud
+			4: RockMud
+			5: RockMud
+			6: RockMud
 			7: Clear
 			8: Clear
 	Template@mud-cliff-n-1:
-		Id: 30
+		Id: 2042
 		Images: well0001.bmp
 		Size: 3,3
 		Frames: 156, 157, 158
 		Categories: Mud - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
+			0: RockMud
+			1: RockMud
+			2: RockMud
 	Template@mud-cliff-n-2:
-		Id: 31
+		Id: 2043
 		Images: well0001.bmp
 		Size: 3,3
 		Frames: 159, 160, 161
 		Categories: Mud - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
+			0: RockMud
+			1: RockMud
+			2: RockMud
 	Template@mud-cliff-corner-se-1:
-		Id: 32
+		Id: 2044
 		Images: well0001.bmp
 		Size: 4,6
 		Frames: 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185
@@ -546,155 +546,155 @@ Templates:
 		Tiles:
 			0: Clear
 			1: Clear
-			2: Clear
+			2: RockMud
 			3: Clear
 			4: Clear
-			5: Clear
-			6: Clear
+			5: RockMud
+			6: RockMud
 			7: Clear
 			8: Clear
-			9: Clear
-			10: Clear
+			9: RockMud
+			10: RockMud
 			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
+			12: RockMud
+			13: RockMud
+			14: RockMud
 			15: Clear
-			16: Clear
-			17: Clear
+			16: RockMud
+			17: RockMud
 			18: Clear
 			19: Clear
-			20: Clear
+			20: RockMud
 			21: Clear
 			22: Clear
 			23: Clear
 	Template@mud-cliff-corner-se-2:
-		Id: 33
+		Id: 2045
 		Images: well0001.bmp
 		Size: 3,3
 		Frames: 186, 187, 188, 189, 190, 191, 192, 193, 194
 		Categories: Mud - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
+			0: RockMud
+			1: RockMud
+			2: RockMud
+			3: RockMud
+			4: RockMud
 			5: Clear
-			6: Clear
+			6: RockMud
 			7: Clear
 			8: Clear
 	Template@mud-cliff-ne-inner:
-		Id: 34
+		Id: 2046
 		Images: well0001.bmp
 		Size: 3,3
 		Frames: 195, 196, 197, 198, 199, 200, 201, 202, 203
 		Categories: Mud - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
+			0: RockMud
+			1: RockMud
 			2: Clear
-			3: Clear
-			4: Clear
+			3: RockMud
+			4: RockMud
 			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			6: RockMud
+			7: RockMud
+			8: RockMud
 	Template@mud-cliff-nw-inner:
-		Id: 35
+		Id: 2047
 		Images: well0001.bmp
 		Size: 3,3
 		Frames: 204, 205, 206, 207, 208, 209, 210, 211, 212
 		Categories: Mud - Cliffs
 		Tiles:
 			0: Clear
-			1: Clear
-			2: Clear
+			1: RockMud
+			2: RockMud
 			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			4: RockMud
+			5: RockMud
+			6: RockMud
+			7: RockMud
+			8: RockMud
 	Template@mud-cliff-corner-sw-2:
-		Id: 36
+		Id: 2048
 		Images: well0001.bmp
 		Size: 3,3
 		Frames: 213, 214, 215, 216, 217, 218, 219, 220, 221
 		Categories: Mud - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
+			0: RockMud
+			1: RockMud
+			2: RockMud
 			3: Clear
-			4: Clear
-			5: Clear
+			4: RockMud
+			5: RockMud
 			6: Clear
 			7: Clear
-			8: Clear
+			8: RockMud
 	Template@mud-cliff-w:
-		Id: 37
+		Id: 2049
 		Images: well0001.bmp
 		Size: 2,5
 		Frames: 222, 223, 224, 225, 226, 227, 228, 229, 230, 231
 		Categories: Mud - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
+			0: RockMud
+			1: RockMud
+			2: RockMud
+			3: RockMud
+			4: RockMud
+			5: RockMud
+			6: RockMud
+			7: RockMud
+			8: RockMud
+			9: RockMud
 	Template@mud-cliff-e:
-		Id: 38
+		Id: 2050
 		Images: well0001.bmp
 		Size: 2,5
 		Frames: 232, 233, 234, 235, 236, 237, 238, 239, 240, 241
 		Categories: Mud - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
+			0: RockMud
+			1: RockMud
+			2: RockMud
+			3: RockMud
+			4: RockMud
+			5: RockMud
+			6: RockMud
+			7: RockMud
+			8: RockMud
+			9: RockMud
 	Template@mud-rock-2x2-3:
-		Id: 39
+		Id: 2051
 		Images: well0001.bmp
 		Size: 2,2
 		Frames: 242, 243, 244, 245
 		Categories: Mud - Debris
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: RockMud
+			1: RockMud
+			2: RockMud
+			3: RockMud
 	Template@mud-rock-3x3:
-		Id: 40
+		Id: 2052
 		Images: well0001.bmp
 		Size: 3,3
 		Frames: 246, 247, 248, 249, 250, 251, 252, 253, 254
 		Categories: Mud - Debris
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: RockMud
+			1: RockMud
+			2: RockMud
+			3: RockMud
+			4: RockMud
+			5: RockMud
+			6: RockMud
+			7: RockMud
+			8: RockMud
 	Template@mud-toxic-house-1:
-		Id: 41
+		Id: 2053
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 109
@@ -703,7 +703,7 @@ Templates:
 			0: Clear
 		Palette: well0002.bmp
 	Template@mud-toxic-house-2:
-		Id: 42
+		Id: 2054
 		Images: well0002.bmp
 		Size: 2,1
 		Frames: 110, 111
@@ -713,7 +713,7 @@ Templates:
 			1: Clear
 		Palette: well0002.bmp
 	Template@mud-toxic-junk-1:
-		Id: 43
+		Id: 2055
 		Images: well0002.bmp
 		Size: 2,2
 		Frames: 112, 113, 114, 115
@@ -725,7 +725,7 @@ Templates:
 			3: Clear
 		Palette: well0002.bmp
 	Template@mud-toxic-junk-2:
-		Id: 44
+		Id: 2056
 		Images: well0002.bmp
 		Size: 2,2
 		Frames: 116, 117, 118, 119
@@ -737,16 +737,16 @@ Templates:
 			3: Clear
 		Palette: well0002.bmp
 	Template@mud-toxic-junk-3:
-		Id: 45
+		Id: 2057
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 120
 		Categories: Mud - Debris
 		Tiles:
-			0: Clear
+			0: RockMud
 		Palette: well0002.bmp
 	Template@mud-toxic-junk-4:
-		Id: 46
+		Id: 2058
 		Images: well0002.bmp
 		Size: 2,2
 		Frames: 121, 122, 123, 124
@@ -758,7 +758,7 @@ Templates:
 			3: Clear
 		Palette: well0002.bmp
 	Template@mud-toxic-junk-5:
-		Id: 47
+		Id: 2059
 		Images: well0002.bmp
 		Size: 3,2
 		Frames: 131, 132, 133, 134, 135, 136
@@ -812,133 +812,109 @@ Templates:
 	#		30: Clear
 	#		31: Clear
 	# 1x1 debris
-	Template@48:
-		Id: 48
-		Images: well0001.bmp
-		Size: 1,1
-		Frames: 252
-		Categories: Mud - Debris
-		Tiles:
-			0: Clear
-	Template@49:
-		Id: 49
-		Images: well0001.bmp
-		Size: 1,1
-		Frames: 253
-		Categories: Mud - Debris
-		Tiles:
-			0: Clear
-	Template@50:
-		Id: 50
-		Images: well0001.bmp
-		Size: 1,1
-		Frames: 254
-		Categories: Mud - Debris
-		Tiles:
-			0: Clear
-	Template@51:
-		Id: 51
+	Template@2060:
+		Id: 2060
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 255
 		Categories: Mud - Debris
 		Tiles:
 			0: Clear
-	Template@52:
-		Id: 52
+	Template@2061:
+		Id: 2061
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 256
 		Categories: Mud - Debris
 		Tiles:
 			0: Clear
-	Template@53:
-		Id: 53
+	Template@2062:
+		Id: 2062
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 257
 		Categories: Mud - Debris
 		Tiles:
-			0: Clear
-	Template@54:
-		Id: 54
+			0: RockMud
+	Template@2063:
+		Id: 2063
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 258
 		Categories: Mud - Debris
 		Tiles:
-			0: Clear
-	Template@55:
-		Id: 55
+			0: RockMud
+	Template@2064:
+		Id: 2064
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 259
 		Categories: Mud - Debris
 		Tiles:
-			0: Clear
-	Template@56:
-		Id: 56
+			0: RockMud
+	Template@2065:
+		Id: 2065
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 260
 		Categories: Mud - Debris
 		Tiles:
-			0: Clear
-	Template@57:
-		Id: 57
+			0: RockMud
+	Template@2066:
+		Id: 2066
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 261
 		Categories: Mud - Debris
 		Tiles:
-			0: Clear
-	Template@58:
-		Id: 58
+			0: RockMud
+	Template@2067:
+		Id: 2067
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 262
 		Categories: Mud - Debris
 		Tiles:
-			0: Clear
+			0: RockMud
 	# Toxic debris 394 - 399:
-	Template@59:
-		Id: 59
+	Template@2068:
+		Id: 2068
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 125
 		Categories: Mud - Debris
 		Tiles:
-			0: Clear
+			0: RockMud
 		Palette: well0002.bmp
-	Template@60:
-		Id: 60
+	Template@2069:
+		Id: 2069
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 126
 		Categories: Mud - Debris
 		Tiles:
-			0: Clear
+			0: RockMud
 		Palette: well0002.bmp
-	Template@61:
-		Id: 61
+	Template@2070:
+		Id: 2070
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 127
 		Categories: Mud - Debris
 		Tiles:
-			0: Clear
+			0: RockMud
 		Palette: well0002.bmp
-	Template@62:
-		Id: 62
+	Template@2071:
+		Id: 2071
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 128
 		Categories: Mud - Debris
 		Tiles:
-			0: Clear
+			0: RockMud
 		Palette: well0002.bmp
-	Template@63:
-		Id: 63
+	Template@2072:
+		Id: 2072
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 129
@@ -946,8 +922,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0002.bmp
-	Template@64:
-		Id: 64
+	Template@2073:
+		Id: 2073
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 130
@@ -956,8 +932,8 @@ Templates:
 			0: Clear
 		Palette: well0002.bmp
 	# Couple more toxic debris:
-	Template@65:
-		Id: 65
+	Template@2074:
+		Id: 2074
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 137
@@ -965,1052 +941,329 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0002.bmp
-	Template@66:
-		Id: 66
+	Template@2075:
+		Id: 2075
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 138
 		Categories: Mud - Debris
 		Tiles:
-			0: Clear
+			0: RockMud
 		Palette: well0002.bmp
 	# 263 - 268 smudges
-	Template@67:
-		Id: 67
+	Template@2076:
+		Id: 2076
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 263
 		Categories: Mud - Debris
 		Tiles:
 			0: Clear
-	Template@68:
-		Id: 68
+	Template@2077:
+		Id: 2077
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 264
 		Categories: Mud - Debris
 		Tiles:
 			0: Clear
-	Template@69:
-		Id: 69
+	Template@2078:
+		Id: 2078
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 265
 		Categories: Mud - Debris
 		Tiles:
 			0: Clear
-	Template@70:
-		Id: 70
+	Template@2079:
+		Id: 2079
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 266
 		Categories: Mud - Debris
 		Tiles:
 			0: Clear
-	Template@71:
-		Id: 71
+	Template@2080:
+		Id: 2080
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 267
 		Categories: Mud - Debris
 		Tiles:
 			0: Clear
-	Template@72:
-		Id: 72
+	Template@2081:
+		Id: 2081
 		Images: well0001.bmp
 		Size: 1,1
 		Frames: 268
 		Categories: Mud - Debris
 		Tiles:
 			0: Clear
-	# Mud - Walls
-	Template@73:
-		Id: 73
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 0
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@74:
-		Id: 74
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 1
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@75:
-		Id: 75
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 2
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@76:
-		Id: 76
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 3
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@77:
-		Id: 77
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 4
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@78:
-		Id: 78
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 5
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@79:
-		Id: 79
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 6
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@80:
-		Id: 80
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 7
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@81:
-		Id: 81
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 8
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@82:
-		Id: 82
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 9
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@83:
-		Id: 83
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 10
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@84:
-		Id: 84
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 11
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@85:
-		Id: 85
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 12
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@86:
-		Id: 86
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 13
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@87:
-		Id: 87
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 14
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@88:
-		Id: 88
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 15
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	# Radioactive walls
-	Template@89:
-		Id: 89
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 16
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@90:
-		Id: 90
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 17
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@91:
-		Id: 91
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 18
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@92:
-		Id: 92
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 19
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@93:
-		Id: 93
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 20
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@94:
-		Id: 94
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 21
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@95:
-		Id: 95
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 22
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@96:
-		Id: 96
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 23
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@97:
-		Id: 97
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 24
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@98:
-		Id: 98
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 25
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@99:
-		Id: 99
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 26
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@100:
-		Id: 100
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 27
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@101:
-		Id: 101
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 28
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@102:
-		Id: 102
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 29
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@103:
-		Id: 103
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 30
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@104:
-		Id: 104
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 31
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	# More walls
-	Template@105:
-		Id: 105
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 61
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@106:
-		Id: 106
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 62
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@107:
-		Id: 107
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 63
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@108:
-		Id: 108
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 64
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@109:
-		Id: 109
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 65
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@110:
-		Id: 110
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 66
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@111:
-		Id: 111
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 67
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@112:
-		Id: 112
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 68
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@113:
-		Id: 113
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 69
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@114:
-		Id: 114
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 70
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@115:
-		Id: 115
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 71
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@116:
-		Id: 116
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 72
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@117:
-		Id: 117
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 73
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@118:
-		Id: 118
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 74
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@119:
-		Id: 119
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 75
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@120:
-		Id: 345
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 76
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@121:
-		Id: 121
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 77
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@122:
-		Id: 122
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 78
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@123:
-		Id: 123
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 79
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@124:
-		Id: 124
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 80
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@125:
-		Id: 125
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 81
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@126:
-		Id: 126
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 82
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@127:
-		Id: 127
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 83
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@128:
-		Id: 128
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 84
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@129:
-		Id: 129
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 85
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@130:
-		Id: 130
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 86
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@131:
-		Id: 131
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 87
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@132:
-		Id: 132
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 88
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@133:
-		Id: 133
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 89
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@134:
-		Id: 134
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 90
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@135:
-		Id: 135
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 91
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@136:
-		Id: 136
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 92
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@137:
-		Id: 137
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 93
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@138:
-		Id: 138
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 94
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@139:
-		Id: 139
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 95
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@140:
-		Id: 140
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 96
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@141:
-		Id: 141
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 97
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@142:
-		Id: 142
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 98
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@143:
-		Id: 143
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 99
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@144:
-		Id: 144
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 100
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@145:
-		Id: 145
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 101
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@146:
-		Id: 146
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 102
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@147:
-		Id: 147
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 103
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@148:
-		Id: 148
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 104
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@149:
-		Id: 149
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 105
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@150:
-		Id: 150
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 106
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@151:
-		Id: 151
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 107
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
-	Template@152:
-		Id: 152
-		Images: well0002.bmp
-		Size: 1,1
-		Frames: 108
-		Categories: Mud - Walls
-		Tiles:
-			0: Clear
-		Palette: well0002.bmp
 	# Resources
-	Template@153:
-		Id: 153
+	Template@2082:
+		Id: 2082
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 32
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@154:
-		Id: 154
+	Template@2083:
+		Id: 2083
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 33
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@155:
-		Id: 155
+	Template@2084:
+		Id: 2084
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 34
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@156:
-		Id: 156
+	Template@2085:
+		Id: 2085
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 35
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@157:
-		Id: 157
+	Template@2086:
+		Id: 2086
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 36
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@158:
-		Id: 158
+	Template@2087:
+		Id: 2087
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 37
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@159:
-		Id: 159
+	Template@2088:
+		Id: 2088
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 38
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@160:
-		Id: 160
+	Template@2089:
+		Id: 2089
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 39
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@161:
-		Id: 161
+	Template@2090:
+		Id: 2090
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 40
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@162:
-		Id: 162
+	Template@2091:
+		Id: 2091
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 41
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@163:
-		Id: 163
+	Template@2092:
+		Id: 2092
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 42
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@164:
-		Id: 164
+	Template@2093:
+		Id: 2093
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 43
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@165:
-		Id: 165
+	Template@2094:
+		Id: 2094
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 44
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@166:
-		Id: 166
+	Template@2095:
+		Id: 2095
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 45
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@167:
-		Id: 167
+	Template@2096:
+		Id: 2096
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 46
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@168:
-		Id: 168
+	Template@2097:
+		Id: 2097
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 47
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@169:
-		Id: 169
+	Template@2098:
+		Id: 2098
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 48
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@170:
-		Id: 170
+	Template@2099:
+		Id: 2099
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 49
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@171:
-		Id: 171
+	Template@2100:
+		Id: 2100
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 50
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@172:
-		Id: 172
+	Template@2101:
+		Id: 2101
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 51
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@173:
-		Id: 173
+	Template@2102:
+		Id: 2102
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 52
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Plant
 		Palette: well0002.bmp
-	Template@174:
-		Id: 174
+	Template@2103:
+		Id: 2103
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 53
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Junk
 		Palette: well0002.bmp
-	Template@175:
-		Id: 175
+	Template@2104:
+		Id: 2104
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 54
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Junk
 		Palette: well0002.bmp
-	Template@176:
-		Id: 176
+	Template@2105:
+		Id: 2105
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 55
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Junk
 		Palette: well0002.bmp
-	Template@177:
-		Id: 177
+	Template@2106:
+		Id: 2106
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 56
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Junk
 		Palette: well0002.bmp
-	Template@178:
-		Id: 178
+	Template@2107:
+		Id: 2107
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 57
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Junk
 		Palette: well0002.bmp
-	Template@179:
-		Id: 179
+	Template@2108:
+		Id: 2108
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 58
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Junk
 		Palette: well0002.bmp
-	Template@180:
-		Id: 180
+	Template@2109:
+		Id: 2109
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 59
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Junk
 		Palette: well0002.bmp
-	Template@181:
-		Id: 181
+	Template@2110:
+		Id: 2110
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 60
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
+			0: Junk
 		Palette: well0002.bmp
 	# 408 - 415: Base ground
 	Template@mud-base-ground:
-		Id: 182
+		Id: 2111
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 139, 140, 141, 142, 143, 144, 145, 146
@@ -2027,8 +1280,8 @@ Templates:
 			7: Clear
 		Palette: well0002.bmp
 	# 416 - 424: Pipes - Mud
-	Template@183:
-		Id: 183
+	Template@2112:
+		Id: 2112
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 147
@@ -2036,8 +1289,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0002.bmp
-	Template@184:
-		Id: 184
+	Template@2113:
+		Id: 2113
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 148
@@ -2045,8 +1298,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0002.bmp
-	Template@185:
-		Id: 185
+	Template@2114:
+		Id: 2114
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 149
@@ -2054,8 +1307,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0002.bmp
-	Template@186:
-		Id: 186
+	Template@2115:
+		Id: 2115
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 150
@@ -2063,8 +1316,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0002.bmp
-	Template@187:
-		Id: 187
+	Template@2116:
+		Id: 2116
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 151
@@ -2072,8 +1325,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0002.bmp
-	Template@188:
-		Id: 188
+	Template@2117:
+		Id: 2117
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 152
@@ -2081,8 +1334,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0002.bmp
-	Template@189:
-		Id: 189
+	Template@2118:
+		Id: 2118
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 153
@@ -2090,8 +1343,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0002.bmp
-	Template@190:
-		Id: 190
+	Template@2119:
+		Id: 2119
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 154
@@ -2099,8 +1352,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0002.bmp
-	Template@191:
-		Id: 191
+	Template@2120:
+		Id: 2120
 		Images: well0002.bmp
 		Size: 1,1
 		Frames: 155
@@ -2110,23 +1363,23 @@ Templates:
 		Palette: well0002.bmp
 	# 425 - 430: Rusty lumps
 	Template@rusty-lumps:
-		Id: 192
+		Id: 2121
 		Images: well0003.bmp
 		Size: 1,1
 		Frames: 0, 1, 2, 3, 4, 5
 		PickAny: True
 		Categories: Mud - Resources
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
+			0: Rust
+			1: Rust
+			2: Rust
+			3: Rust
+			4: Rust
+			5: Rust
 		Palette: well0003.bmp
 	# Rock
 	Template@rock-crack-1:
-		Id: 193
+		Id: 2122
 		Images: well0004.bmp
 		Size: 2,5
 		Frames: 66, 67, 68, 69, 70, 71, 72, 73, 74, 75
@@ -2144,7 +1397,7 @@ Templates:
 			9: Clear
 		Palette: well0004.bmp
 	Template@rock-crack-2:
-		Id: 194
+		Id: 2123
 		Images: well0004.bmp
 		Size: 1,2
 		Frames: 76, 77
@@ -2154,7 +1407,7 @@ Templates:
 			1: Clear
 		Palette: well0004.bmp
 	Template@rock-crack-3:
-		Id: 195
+		Id: 2124
 		Images: well0004.bmp
 		Size: 2,1
 		Frames: 78, 79
@@ -2164,7 +1417,7 @@ Templates:
 			1: Clear
 		Palette: well0004.bmp
 	Template@rock-crack-4:
-		Id: 196
+		Id: 2125
 		Images: well0004.bmp
 		Size: 2,1
 		Frames: 80, 81
@@ -2174,7 +1427,7 @@ Templates:
 			1: Clear
 		Palette: well0004.bmp
 	Template@rock-crack-5:
-		Id: 197
+		Id: 2126
 		Images: well0004.bmp
 		Size: 2,2
 		Frames: 82, 83, 84, 85
@@ -2186,7 +1439,7 @@ Templates:
 			3: Clear
 		Palette: well0004.bmp
 	Template@rock-crack-6:
-		Id: 198
+		Id: 2127
 		Images: well0004.bmp
 		Size: 2,2
 		Frames: 86, 87, 88, 89
@@ -2198,7 +1451,7 @@ Templates:
 			3: Clear
 		Palette: well0004.bmp
 	Template@rock-crack-7:
-		Id: 199
+		Id: 2128
 		Images: well0004.bmp
 		Size: 2,2
 		Frames: 90, 91, 92, 93
@@ -2210,7 +1463,7 @@ Templates:
 			3: Clear
 		Palette: well0004.bmp
 	Template@rock-debris-1:
-		Id: 200
+		Id: 2129
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 95
@@ -2219,7 +1472,7 @@ Templates:
 			0: Clear
 		Palette: well0004.bmp
 	Template@rock-debris-2:
-		Id: 201
+		Id: 2130
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 96
@@ -2228,7 +1481,7 @@ Templates:
 			0: Clear
 		Palette: well0004.bmp
 	Template@rock-debris-3:
-		Id: 202
+		Id: 2131
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 97
@@ -2237,7 +1490,7 @@ Templates:
 			0: Clear
 		Palette: well0004.bmp
 	Template@rock-rock-3x3-1:
-		Id: 203
+		Id: 2132
 		Images: well0004.bmp
 		Size: 3,3
 		Frames: 98, 99, 100, 101, 102, 103, 104, 105, 106 # , 107, 108, 109
@@ -2254,7 +1507,7 @@ Templates:
 			8: Clear
 		Palette: well0004.bmp
 	Template@rock-debris-4x1:
-		Id: 204
+		Id: 2133
 		Images: well0004.bmp
 		Size: 4,1
 		Frames: 107, 108, 109, 110
@@ -2266,7 +1519,7 @@ Templates:
 			3: Clear
 		Palette: well0004.bmp
 	Template@rock-rock-3x3-2:
-		Id: 205
+		Id: 2134
 		Images: well0004.bmp
 		Size: 3,3
 		Frames: 111, 112, 113, 114, 115, 116, 117, 118, 119
@@ -2283,7 +1536,7 @@ Templates:
 			8: Clear
 		Palette: well0004.bmp
 	Template@rock-crater-2x2-1:
-		Id: 206
+		Id: 2135
 		Images: well0004.bmp
 		Size: 2,2
 		Frames: 120, 121, 122, 123
@@ -2295,7 +1548,7 @@ Templates:
 			3: Clear
 		Palette: well0004.bmp
 	Template@rock-crater-2x2-2:
-		Id: 207
+		Id: 2136
 		Images: well0004.bmp
 		Size: 2,2
 		Frames: 124, 125, 126, 127
@@ -2307,7 +1560,7 @@ Templates:
 			3: Clear
 		Palette: well0004.bmp
 	Template@rock-caldera-6x6-1:
-		Id: 208
+		Id: 2137
 		Images: well0004.bmp
 		Size: 6,6
 		Frames: 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204
@@ -2351,7 +1604,7 @@ Templates:
 			35: Clear
 		Palette: well0004.bmp
 	Template@rock-caldera-3x3:
-		Id: 209
+		Id: 2138
 		Images: well0004.bmp
 		Size: 3,3
 		Frames: 205, 206, 207, 208, 209, 210, 211, 212, 213
@@ -2368,7 +1621,7 @@ Templates:
 			8: Clear
 		Palette: well0004.bmp
 	Template@rock-caldera-6x6-2:
-		Id: 210
+		Id: 2139
 		Images: well0004.bmp
 		Size: 6,6
 		Frames: 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249
@@ -2412,7 +1665,7 @@ Templates:
 			35: Clear
 		Palette: well0004.bmp
 	Template@rock-caldera-10x10:
-		Id: 211
+		Id: 2140
 		Images: well0004.bmp
 		Size: 10,10
 		Frames: 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349
@@ -2520,7 +1773,7 @@ Templates:
 			99: Clear
 		Palette: well0004.bmp
 	Template@rock-crater-1x1-5:
-		Id: 212
+		Id: 2141
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 168
@@ -2529,8 +1782,8 @@ Templates:
 			0: Clear
 		Palette: well0004.bmp
 	# Lat tiles 559 - 598 (frames 128 - 167)
-	Template@213:
-		Id: 213
+	Template@2142:
+		Id: 2142
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 128
@@ -2538,8 +1791,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@214:
-		Id: 214
+	Template@2143:
+		Id: 2143
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 129
@@ -2547,8 +1800,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@215:
-		Id: 215
+	Template@2144:
+		Id: 2144
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 130
@@ -2556,8 +1809,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@216:
-		Id: 216
+	Template@2145:
+		Id: 2145
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 131
@@ -2565,8 +1818,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@217:
-		Id: 217
+	Template@2146:
+		Id: 2146
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 132
@@ -2574,8 +1827,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@218:
-		Id: 218
+	Template@2147:
+		Id: 2147
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 133
@@ -2583,8 +1836,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@219:
-		Id: 219
+	Template@2148:
+		Id: 2148
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 134
@@ -2592,8 +1845,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@220:
-		Id: 220
+	Template@2149:
+		Id: 2149
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 135
@@ -2601,8 +1854,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@221:
-		Id: 221
+	Template@2150:
+		Id: 2150
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 136
@@ -2610,8 +1863,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@222:
-		Id: 222
+	Template@2151:
+		Id: 2151
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 137
@@ -2619,8 +1872,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@223:
-		Id: 223
+	Template@2152:
+		Id: 2152
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 138
@@ -2628,8 +1881,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@224:
-		Id: 224
+	Template@2153:
+		Id: 2153
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 139
@@ -2637,8 +1890,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@225:
-		Id: 225
+	Template@2154:
+		Id: 2154
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 140
@@ -2646,8 +1899,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@226:
-		Id: 226
+	Template@2155:
+		Id: 2155
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 141
@@ -2655,8 +1908,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@227:
-		Id: 227
+	Template@2156:
+		Id: 2156
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 142
@@ -2664,8 +1917,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@228:
-		Id: 228
+	Template@2157:
+		Id: 2157
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 143
@@ -2673,8 +1926,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@229:
-		Id: 229
+	Template@2158:
+		Id: 2158
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 144
@@ -2682,8 +1935,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@230:
-		Id: 230
+	Template@2159:
+		Id: 2159
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 145
@@ -2691,8 +1944,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@231:
-		Id: 231
+	Template@2160:
+		Id: 2160
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 146
@@ -2700,8 +1953,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@232:
-		Id: 232
+	Template@2161:
+		Id: 2161
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 147
@@ -2709,8 +1962,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@233:
-		Id: 233
+	Template@2162:
+		Id: 2162
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 148
@@ -2718,8 +1971,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@234:
-		Id: 234
+	Template@2163:
+		Id: 2163
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 149
@@ -2727,8 +1980,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@235:
-		Id: 235
+	Template@2164:
+		Id: 2164
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 150
@@ -2736,8 +1989,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@236:
-		Id: 236
+	Template@2165:
+		Id: 2165
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 151
@@ -2745,8 +1998,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@237:
-		Id: 237
+	Template@2166:
+		Id: 2166
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 152
@@ -2754,8 +2007,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@238:
-		Id: 238
+	Template@2167:
+		Id: 2167
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 153
@@ -2763,8 +2016,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@239:
-		Id: 239
+	Template@2168:
+		Id: 2168
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 154
@@ -2772,8 +2025,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@240:
-		Id: 240
+	Template@2169:
+		Id: 2169
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 155
@@ -2781,8 +2034,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@241:
-		Id: 241
+	Template@2170:
+		Id: 2170
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 156
@@ -2790,8 +2043,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@242:
-		Id: 242
+	Template@2171:
+		Id: 2171
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 157
@@ -2799,8 +2052,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@243:
-		Id: 243
+	Template@2172:
+		Id: 2172
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 158
@@ -2808,8 +2061,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@244:
-		Id: 244
+	Template@2173:
+		Id: 2173
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 159
@@ -2817,8 +2070,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@245:
-		Id: 245
+	Template@2174:
+		Id: 2174
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 160
@@ -2826,8 +2079,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@246:
-		Id: 246
+	Template@2175:
+		Id: 2175
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 161
@@ -2835,8 +2088,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@247:
-		Id: 247
+	Template@2176:
+		Id: 2176
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 162
@@ -2844,8 +2097,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@248:
-		Id: 248
+	Template@2177:
+		Id: 2177
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 163
@@ -2853,8 +2106,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@249:
-		Id: 249
+	Template@2178:
+		Id: 2178
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 164
@@ -2862,8 +2115,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@250:
-		Id: 250
+	Template@2179:
+		Id: 2179
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 165
@@ -2871,8 +2124,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@251:
-		Id: 251
+	Template@2180:
+		Id: 2180
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 166
@@ -2880,8 +2133,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@252:
-		Id: 252
+	Template@2181:
+		Id: 2181
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 167
@@ -2890,8 +2143,8 @@ Templates:
 			0: Clear
 		Palette: well0004.bmp
 	# smudges - rock 350 - 358
-	Template@253:
-		Id: 253
+	Template@2182:
+		Id: 2182
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 350
@@ -2899,8 +2152,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@254:
-		Id: 254
+	Template@2183:
+		Id: 2183
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 351
@@ -2908,8 +2161,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@255:
-		Id: 255
+	Template@2184:
+		Id: 2184
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 352
@@ -2917,8 +2170,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@256:
-		Id: 256
+	Template@2185:
+		Id: 2185
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 353
@@ -2926,8 +2179,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@257:
-		Id: 257
+	Template@2186:
+		Id: 2186
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 354
@@ -2935,8 +2188,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@258:
-		Id: 258
+	Template@2187:
+		Id: 2187
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 355
@@ -2944,8 +2197,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@259:
-		Id: 259
+	Template@2188:
+		Id: 2188
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 356
@@ -2953,8 +2206,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@260:
-		Id: 260
+	Template@2189:
+		Id: 2189
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 357
@@ -2962,8 +2215,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	Template@261:
-		Id: 261
+	Template@2190:
+		Id: 2190
 		Images: well0004.bmp
 		Size: 1,1
 		Frames: 358
@@ -2971,298 +2224,9 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0004.bmp
-	# walls - rock:
-	Template@790:
-		Id: 790
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 0
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@791:
-		Id: 791
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 1
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@792:
-		Id: 792
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 2
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@793:
-		Id: 793
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 3
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@794:
-		Id: 794
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 4
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@795:
-		Id: 795
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 5
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@796:
-		Id: 796
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 6
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@797:
-		Id: 797
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 7
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@798:
-		Id: 798
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 8
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@799:
-		Id: 799
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 9
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@800:
-		Id: 800
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 10
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@801:
-		Id: 801
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 11
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@802:
-		Id: 802
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 12
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@803:
-		Id: 803
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 13
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@804:
-		Id: 804
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 14
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@805:
-		Id: 805
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 15
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@806:
-		Id: 806
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 16
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@807:
-		Id: 807
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 17
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@808:
-		Id: 808
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 18
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@809:
-		Id: 809
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 19
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@810:
-		Id: 810
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 20
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@811:
-		Id: 811
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 21
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@812:
-		Id: 812
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 22
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@813:
-		Id: 813
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 23
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@814:
-		Id: 814
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 24
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@815:
-		Id: 815
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 25
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@816:
-		Id: 816
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 26
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@817:
-		Id: 817
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 27
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@818:
-		Id: 818
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 28
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@819:
-		Id: 819
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 29
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@820:
-		Id: 820
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 30
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@821:
-		Id: 821
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 31
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
 	# rock - junk
-	Template@822:
-		Id: 822
+	Template@2191:
+		Id: 2191
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 32
@@ -3270,8 +2234,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@823:
-		Id: 823
+	Template@2192:
+		Id: 2192
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 33
@@ -3279,8 +2243,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@824:
-		Id: 824
+	Template@2193:
+		Id: 2193
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 34
@@ -3288,8 +2252,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@825:
-		Id: 825
+	Template@2194:
+		Id: 2194
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 35
@@ -3297,8 +2261,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@826:
-		Id: 826
+	Template@2195:
+		Id: 2195
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 36
@@ -3306,8 +2270,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@827:
-		Id: 827
+	Template@2196:
+		Id: 2196
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 37
@@ -3315,8 +2279,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@828:
-		Id: 828
+	Template@2197:
+		Id: 2197
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 38
@@ -3324,8 +2288,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@829:
-		Id: 829
+	Template@2198:
+		Id: 2198
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 39
@@ -3333,442 +2297,9 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	# rock - walls more
-	Template@830:
-		Id: 830
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 40
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@831:
-		Id: 831
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 41
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@832:
-		Id: 832
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 42
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@833:
-		Id: 833
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 43
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@834:
-		Id: 834
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 44
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@835:
-		Id: 835
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 45
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@836:
-		Id: 836
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 46
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@837:
-		Id: 837
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 47
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@838:
-		Id: 838
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 48
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@839:
-		Id: 839
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 49
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@840:
-		Id: 840
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 50
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@841:
-		Id: 841
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 51
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@842:
-		Id: 842
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 52
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@843:
-		Id: 843
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 53
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@844:
-		Id: 844
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 54
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@845:
-		Id: 845
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 55
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@846:
-		Id: 846
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 56
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@847:
-		Id: 847
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 57
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@848:
-		Id: 848
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 58
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@849:
-		Id: 849
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 59
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@850:
-		Id: 850
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 60
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@851:
-		Id: 851
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 61
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@852:
-		Id: 852
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 62
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@853:
-		Id: 853
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 63
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@854:
-		Id: 854
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 64
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@855:
-		Id: 855
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 65
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@856:
-		Id: 856
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 66
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@857:
-		Id: 857
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 67
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@858:
-		Id: 858
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 68
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@859:
-		Id: 859
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 69
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@860:
-		Id: 860
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 70
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@861:
-		Id: 861
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 71
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@862:
-		Id: 862
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 72
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@863:
-		Id: 863
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 73
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@864:
-		Id: 864
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 74
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@865:
-		Id: 865
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 75
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@866:
-		Id: 866
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 76
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@867:
-		Id: 867
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 77
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@868:
-		Id: 868
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 78
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@869:
-		Id: 869
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 79
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@870:
-		Id: 870
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 80
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@871:
-		Id: 871
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 81
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@872:
-		Id: 872
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 82
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@873:
-		Id: 873
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 83
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@874:
-		Id: 874
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 84
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@875:
-		Id: 875
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 85
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@876:
-		Id: 876
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 86
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
-	Template@877:
-		Id: 877
-		Images: well0005.bmp
-		Size: 1,1
-		Frames: 87
-		Categories: Rock - Walls
-		Tiles:
-			0: Clear
-		Palette: well0005.bmp
 	# rock - debris
-	Template@878:
-		Id: 878
+	Template@2199:
+		Id: 2199
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 88
@@ -3776,8 +2307,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@879:
-		Id: 879
+	Template@2200:
+		Id: 2200
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 89
@@ -3785,8 +2316,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@880:
-		Id: 880
+	Template@2201:
+		Id: 2201
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 90
@@ -3794,8 +2325,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@881:
-		Id: 881
+	Template@2202:
+		Id: 2202
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 91
@@ -3803,8 +2334,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@882:
-		Id: 882
+	Template@2203:
+		Id: 2203
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 92
@@ -3812,8 +2343,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@883:
-		Id: 883
+	Template@2204:
+		Id: 2204
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 93
@@ -3821,8 +2352,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@884:
-		Id: 884
+	Template@2205:
+		Id: 2205
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 94
@@ -3830,8 +2361,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@885:
-		Id: 885
+	Template@2206:
+		Id: 2206
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 95
@@ -3839,8 +2370,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@886:
-		Id: 886
+	Template@2207:
+		Id: 2207
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 96
@@ -3848,8 +2379,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@887:
-		Id: 887
+	Template@2208:
+		Id: 2208
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 97
@@ -3857,8 +2388,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@888:
-		Id: 888
+	Template@2209:
+		Id: 2209
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 98
@@ -3866,8 +2397,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@889:
-		Id: 889
+	Template@2210:
+		Id: 2210
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 99
@@ -3875,8 +2406,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@890:
-		Id: 890
+	Template@2211:
+		Id: 2211
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 100
@@ -3884,8 +2415,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@891:
-		Id: 891
+	Template@2212:
+		Id: 2212
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 101
@@ -3893,8 +2424,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@892:
-		Id: 892
+	Template@2213:
+		Id: 2213
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 102
@@ -3903,8 +2434,8 @@ Templates:
 			0: Clear
 		Palette: well0005.bmp
 	# combined rock debris
-	Template@893:
-		Id: 893
+	Template@2214:
+		Id: 2214
 		Images: well0005.bmp
 		Size: 1,2
 		Frames: 103, 104
@@ -3913,8 +2444,8 @@ Templates:
 			0: Clear
 			1: Clear
 		Palette: well0005.bmp
-	Template@895:
-		Id: 895
+	Template@2215:
+		Id: 2215
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 105
@@ -3922,8 +2453,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@896:
-		Id: 896
+	Template@2216:
+		Id: 2216
 		Images: well0005.bmp
 		Size: 2,2
 		Frames: 106, 107, 108, 109
@@ -3934,8 +2465,8 @@ Templates:
 			2: Clear
 			3: Clear
 		Palette: well0005.bmp
-	Template@900:
-		Id: 900
+	Template@2217:
+		Id: 2217
 		Images: well0005.bmp
 		Size: 2,2
 		Frames: 110, 111, 112, 113
@@ -3946,8 +2477,8 @@ Templates:
 			2: Clear
 			3: Clear
 		Palette: well0005.bmp
-	Template@904:
-		Id: 904
+	Template@2218:
+		Id: 2218
 		Images: well0005.bmp
 		Size: 3,3
 		Frames: 114, 115, 116, 117, 118, 119, 120, 121, 122
@@ -3965,7 +2496,7 @@ Templates:
 		Palette: well0005.bmp
 	# rock - base ground
 	Template@rock-base-ground:
-		Id: 913
+		Id: 2219
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 123, 124, 125, 126, 127, 128, 129, 130
@@ -3982,8 +2513,8 @@ Templates:
 			7: Clear
 		Palette: well0005.bmp
 	# pipes - rock (131 - 146)
-	Template@921:
-		Id: 921
+	Template@2220:
+		Id: 2220
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 131
@@ -3991,8 +2522,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@922:
-		Id: 922
+	Template@2221:
+		Id: 2221
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 132
@@ -4000,8 +2531,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@923:
-		Id: 923
+	Template@2222:
+		Id: 2222
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 133
@@ -4009,8 +2540,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@924:
-		Id: 924
+	Template@2223:
+		Id: 2223
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 134
@@ -4018,8 +2549,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@925:
-		Id: 925
+	Template@2224:
+		Id: 2224
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 135
@@ -4027,8 +2558,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@926:
-		Id: 926
+	Template@2225:
+		Id: 2225
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 136
@@ -4036,8 +2567,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@927:
-		Id: 927
+	Template@2226:
+		Id: 2226
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 137
@@ -4045,8 +2576,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@928:
-		Id: 928
+	Template@2227:
+		Id: 2227
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 138
@@ -4054,8 +2585,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@929:
-		Id: 929
+	Template@2228:
+		Id: 2228
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 139
@@ -4063,8 +2594,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@930:
-		Id: 930
+	Template@2229:
+		Id: 2229
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 140
@@ -4072,8 +2603,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@931:
-		Id: 931
+	Template@2230:
+		Id: 2230
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 141
@@ -4081,8 +2612,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@932:
-		Id: 932
+	Template@2231:
+		Id: 2231
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 142
@@ -4090,8 +2621,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@933:
-		Id: 933
+	Template@2232:
+		Id: 2232
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 143
@@ -4099,8 +2630,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@934:
-		Id: 934
+	Template@2233:
+		Id: 2233
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 144
@@ -4108,8 +2639,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@935:
-		Id: 935
+	Template@2234:
+		Id: 2234
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 145
@@ -4117,8 +2648,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0005.bmp
-	Template@936:
-		Id: 936
+	Template@2235:
+		Id: 2235
 		Images: well0005.bmp
 		Size: 1,1
 		Frames: 146
@@ -4127,8 +2658,8 @@ Templates:
 			0: Clear
 		Palette: well0005.bmp
 	# rock - resources
-	Template@937:
-		Id: 937
+	Template@2236:
+		Id: 2236
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 0, 1, 2, 3, 4, 5
@@ -4142,8 +2673,8 @@ Templates:
 			4: Clear
 			5: Clear
 		Palette: well0006.bmp
-	Template@943:
-		Id: 943
+	Template@2237:
+		Id: 2237
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 6
@@ -4151,8 +2682,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@944:
-		Id: 944
+	Template@2238:
+		Id: 2238
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 7
@@ -4160,8 +2691,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@945:
-		Id: 945
+	Template@2239:
+		Id: 2239
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 8
@@ -4169,8 +2700,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@946:
-		Id: 946
+	Template@2240:
+		Id: 2240
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 9
@@ -4178,8 +2709,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@947:
-		Id: 947
+	Template@2241:
+		Id: 2241
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 10
@@ -4187,8 +2718,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@948:
-		Id: 948
+	Template@2242:
+		Id: 2242
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 11
@@ -4196,8 +2727,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@949:
-		Id: 949
+	Template@2243:
+		Id: 2243
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 12
@@ -4205,8 +2736,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@950:
-		Id: 950
+	Template@2244:
+		Id: 2244
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 13
@@ -4214,8 +2745,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@951:
-		Id: 951
+	Template@2245:
+		Id: 2245
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 14
@@ -4223,8 +2754,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@952:
-		Id: 952
+	Template@2246:
+		Id: 2246
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 15
@@ -4232,8 +2763,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@953:
-		Id: 953
+	Template@2247:
+		Id: 2247
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 16
@@ -4241,8 +2772,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@954:
-		Id: 954
+	Template@2248:
+		Id: 2248
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 17
@@ -4250,8 +2781,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@955:
-		Id: 955
+	Template@2249:
+		Id: 2249
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 18
@@ -4259,8 +2790,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@956:
-		Id: 956
+	Template@2250:
+		Id: 2250
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 19
@@ -4268,8 +2799,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@957:
-		Id: 957
+	Template@2251:
+		Id: 2251
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 20
@@ -4277,8 +2808,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@958:
-		Id: 958
+	Template@2252:
+		Id: 2252
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 21
@@ -4286,8 +2817,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@959:
-		Id: 959
+	Template@2253:
+		Id: 2253
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 22
@@ -4295,8 +2826,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@960:
-		Id: 960
+	Template@2254:
+		Id: 2254
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 23
@@ -4304,8 +2835,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@961:
-		Id: 961
+	Template@2255:
+		Id: 2255
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 24
@@ -4313,8 +2844,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@962:
-		Id: 962
+	Template@2256:
+		Id: 2256
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 25
@@ -4322,8 +2853,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@963:
-		Id: 963
+	Template@2257:
+		Id: 2257
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 26
@@ -4331,8 +2862,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@964:
-		Id: 964
+	Template@2258:
+		Id: 2258
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 27
@@ -4340,8 +2871,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@965:
-		Id: 965
+	Template@2259:
+		Id: 2259
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 28
@@ -4349,8 +2880,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@966:
-		Id: 966
+	Template@2260:
+		Id: 2260
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 29
@@ -4358,8 +2889,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@967:
-		Id: 967
+	Template@2261:
+		Id: 2261
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 30
@@ -4367,8 +2898,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@968:
-		Id: 968
+	Template@2262:
+		Id: 2262
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 31
@@ -4376,8 +2907,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@969:
-		Id: 969
+	Template@2263:
+		Id: 2263
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 32
@@ -4385,8 +2916,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@970:
-		Id: 970
+	Template@2264:
+		Id: 2264
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 33
@@ -4394,8 +2925,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@971:
-		Id: 971
+	Template@2265:
+		Id: 2265
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 34
@@ -4403,8 +2934,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@972:
-		Id: 972
+	Template@2266:
+		Id: 2266
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 35
@@ -4412,8 +2943,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@973:
-		Id: 973
+	Template@2267:
+		Id: 2267
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 36
@@ -4421,8 +2952,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@974:
-		Id: 974
+	Template@2268:
+		Id: 2268
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 37
@@ -4430,8 +2961,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@975:
-		Id: 975
+	Template@2269:
+		Id: 2269
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 38
@@ -4439,8 +2970,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@976:
-		Id: 976
+	Template@2270:
+		Id: 2270
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 39
@@ -4448,8 +2979,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@977:
-		Id: 977
+	Template@2271:
+		Id: 2271
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 40
@@ -4457,8 +2988,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@978:
-		Id: 978
+	Template@2272:
+		Id: 2272
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 41
@@ -4466,8 +2997,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@979:
-		Id: 979
+	Template@2273:
+		Id: 2273
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 42
@@ -4475,8 +3006,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@980:
-		Id: 980
+	Template@2274:
+		Id: 2274
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 43
@@ -4484,8 +3015,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@981:
-		Id: 981
+	Template@2275:
+		Id: 2275
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 44
@@ -4493,8 +3024,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@982:
-		Id: 982
+	Template@2276:
+		Id: 2276
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 45
@@ -4502,8 +3033,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@983:
-		Id: 983
+	Template@2277:
+		Id: 2277
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 46
@@ -4511,8 +3042,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@984:
-		Id: 984
+	Template@2278:
+		Id: 2278
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 47
@@ -4520,8 +3051,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@985:
-		Id: 985
+	Template@2279:
+		Id: 2279
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 48
@@ -4529,8 +3060,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@986:
-		Id: 986
+	Template@2280:
+		Id: 2280
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 49
@@ -4538,8 +3069,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@987:
-		Id: 987
+	Template@2281:
+		Id: 2281
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 50
@@ -4547,8 +3078,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@988:
-		Id: 988
+	Template@2282:
+		Id: 2282
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 51
@@ -4556,8 +3087,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@989:
-		Id: 989
+	Template@2283:
+		Id: 2283
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 52
@@ -4565,8 +3096,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@990:
-		Id: 990
+	Template@2284:
+		Id: 2284
 		Images: well0006.bmp
 		Size: 1,1
 		Frames: 53
@@ -4574,1873 +3105,10 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0006.bmp
-	Template@991:
-		Id: 991
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 0
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@992:
-		Id: 992
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 1
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@993:
-		Id: 993
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 2
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@994:
-		Id: 994
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 3
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@995:
-		Id: 995
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 4
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@996:
-		Id: 996
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 5
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@997:
-		Id: 997
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 6
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@998:
-		Id: 998
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 7
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@999:
-		Id: 999
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 8
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1000:
-		Id: 1000
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 9
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1001:
-		Id: 1001
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 10
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1002:
-		Id: 1002
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 11
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1003:
-		Id: 1003
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 12
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1004:
-		Id: 1004
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 13
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1005:
-		Id: 1005
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 14
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1006:
-		Id: 1006
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 15
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1007:
-		Id: 1007
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 16
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1008:
-		Id: 1008
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 17
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1009:
-		Id: 1009
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 18
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1010:
-		Id: 1010
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 19
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1011:
-		Id: 1011
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 20
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1012:
-		Id: 1012
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 21
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1013:
-		Id: 1013
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 22
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1014:
-		Id: 1014
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 23
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1015:
-		Id: 1015
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 24
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1016:
-		Id: 1016
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 25
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1017:
-		Id: 1017
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 26
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1018:
-		Id: 1018
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 27
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1019:
-		Id: 1019
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 28
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1020:
-		Id: 1020
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 29
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1021:
-		Id: 1021
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 30
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1022:
-		Id: 1022
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 31
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1023:
-		Id: 1023
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 32
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1024:
-		Id: 1024
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 33
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1025:
-		Id: 1025
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 34
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1026:
-		Id: 1026
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 35
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1027:
-		Id: 1027
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 36
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1028:
-		Id: 1028
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 37
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1029:
-		Id: 1029
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 38
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1030:
-		Id: 1030
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 39
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1031:
-		Id: 1031
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 40
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1032:
-		Id: 1032
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 41
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1033:
-		Id: 1033
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 42
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1034:
-		Id: 1034
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 43
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1035:
-		Id: 1035
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 44
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1036:
-		Id: 1036
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 45
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1037:
-		Id: 1037
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 46
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1038:
-		Id: 1038
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 47
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1039:
-		Id: 1039
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 48
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1040:
-		Id: 1040
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 49
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1041:
-		Id: 1041
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 50
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1042:
-		Id: 1042
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 51
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1043:
-		Id: 1043
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 52
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1044:
-		Id: 1044
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 53
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1045:
-		Id: 1045
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 54
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1046:
-		Id: 1046
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 55
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1047:
-		Id: 1047
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 56
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1048:
-		Id: 1048
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 57
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1049:
-		Id: 1049
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 58
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1050:
-		Id: 1050
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 59
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1051:
-		Id: 1051
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 60
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1052:
-		Id: 1052
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 61
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1053:
-		Id: 1053
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 62
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1054:
-		Id: 1054
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 63
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1055:
-		Id: 1055
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 64
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1056:
-		Id: 1056
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 65
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1057:
-		Id: 1057
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 66
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1058:
-		Id: 1058
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 67
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1059:
-		Id: 1059
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 68
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1060:
-		Id: 1060
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 69
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1061:
-		Id: 1061
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 70
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1062:
-		Id: 1062
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 71
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1063:
-		Id: 1063
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 72
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1064:
-		Id: 1064
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 73
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1065:
-		Id: 1065
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 74
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1066:
-		Id: 1066
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 75
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1067:
-		Id: 1067
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 76
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1068:
-		Id: 1068
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 77
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1069:
-		Id: 1069
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 78
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1070:
-		Id: 1070
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 79
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1071:
-		Id: 1071
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 80
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1072:
-		Id: 1072
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 81
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1073:
-		Id: 1073
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 82
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1074:
-		Id: 1074
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 83
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1075:
-		Id: 1075
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 84
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1076:
-		Id: 1076
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 85
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1077:
-		Id: 1077
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 86
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1078:
-		Id: 1078
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 87
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1079:
-		Id: 1079
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 88
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1080:
-		Id: 1080
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 89
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1081:
-		Id: 1081
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 90
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1082:
-		Id: 1082
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 91
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1083:
-		Id: 1083
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 92
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1084:
-		Id: 1084
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 93
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1085:
-		Id: 1085
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 94
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1086:
-		Id: 1086
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 95
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1087:
-		Id: 1087
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 96
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1088:
-		Id: 1088
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 97
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1089:
-		Id: 1089
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 98
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1090:
-		Id: 1090
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 99
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1091:
-		Id: 1091
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 100
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1092:
-		Id: 1092
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 101
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1093:
-		Id: 1093
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 102
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1094:
-		Id: 1094
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 103
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1095:
-		Id: 1095
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 104
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1096:
-		Id: 1096
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 105
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1097:
-		Id: 1097
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 106
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1098:
-		Id: 1098
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 107
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1099:
-		Id: 1099
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 108
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1100:
-		Id: 1100
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 109
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1101:
-		Id: 1101
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 110
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1102:
-		Id: 1102
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 111
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1103:
-		Id: 1103
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 112
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1104:
-		Id: 1104
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 113
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1105:
-		Id: 1105
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 114
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1106:
-		Id: 1106
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 115
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1107:
-		Id: 1107
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 116
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1108:
-		Id: 1108
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 117
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1109:
-		Id: 1109
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 118
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1110:
-		Id: 1110
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 119
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1111:
-		Id: 1111
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 120
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1112:
-		Id: 1112
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 121
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1113:
-		Id: 1113
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 122
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1114:
-		Id: 1114
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 123
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1115:
-		Id: 1115
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 124
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1116:
-		Id: 1116
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 125
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1117:
-		Id: 1117
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 126
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1118:
-		Id: 1118
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 127
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1119:
-		Id: 1119
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 128
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1120:
-		Id: 1120
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 129
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1121:
-		Id: 1121
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 130
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1122:
-		Id: 1122
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 131
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1123:
-		Id: 1123
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 132
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1124:
-		Id: 1124
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 133
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1125:
-		Id: 1125
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 134
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1126:
-		Id: 1126
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 135
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1127:
-		Id: 1127
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 136
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1128:
-		Id: 1128
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 137
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1129:
-		Id: 1129
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 138
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1130:
-		Id: 1130
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 139
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1131:
-		Id: 1131
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 140
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1132:
-		Id: 1132
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 141
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1133:
-		Id: 1133
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 142
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1134:
-		Id: 1134
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 143
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1135:
-		Id: 1135
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 144
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1136:
-		Id: 1136
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 145
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1137:
-		Id: 1137
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 146
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1138:
-		Id: 1138
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 147
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1139:
-		Id: 1139
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 148
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1140:
-		Id: 1140
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 149
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1141:
-		Id: 1141
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 150
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1142:
-		Id: 1142
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 151
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1143:
-		Id: 1143
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 152
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1144:
-		Id: 1144
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 153
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1145:
-		Id: 1145
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 154
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1146:
-		Id: 1146
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 155
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1147:
-		Id: 1147
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 156
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1148:
-		Id: 1148
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 157
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1149:
-		Id: 1149
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 158
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1150:
-		Id: 1150
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 159
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1151:
-		Id: 1151
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 160
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1152:
-		Id: 1152
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 161
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1153:
-		Id: 1153
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 162
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1154:
-		Id: 1154
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 163
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1155:
-		Id: 1155
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 164
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1156:
-		Id: 1156
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 165
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1157:
-		Id: 1157
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 166
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1158:
-		Id: 1158
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 167
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1159:
-		Id: 1159
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 168
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1160:
-		Id: 1160
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 169
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1161:
-		Id: 1161
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 170
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1162:
-		Id: 1162
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 171
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1163:
-		Id: 1163
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 172
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1164:
-		Id: 1164
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 173
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1165:
-		Id: 1165
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 174
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1166:
-		Id: 1166
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 175
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1167:
-		Id: 1167
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 176
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1168:
-		Id: 1168
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 177
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1169:
-		Id: 1169
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 178
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1170:
-		Id: 1170
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 179
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1171:
-		Id: 1171
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 180
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1172:
-		Id: 1172
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 181
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1173:
-		Id: 1173
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 182
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1174:
-		Id: 1174
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 183
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1175:
-		Id: 1175
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 184
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1176:
-		Id: 1176
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 185
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1177:
-		Id: 1177
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 186
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1178:
-		Id: 1178
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 187
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1179:
-		Id: 1179
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 188
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1180:
-		Id: 1180
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 189
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1181:
-		Id: 1181
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 190
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1182:
-		Id: 1182
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 191
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1183:
-		Id: 1183
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 192
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1184:
-		Id: 1184
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 193
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1185:
-		Id: 1185
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 194
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1186:
-		Id: 1186
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 195
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1187:
-		Id: 1187
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 196
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1188:
-		Id: 1188
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 197
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1189:
-		Id: 1189
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 198
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1190:
-		Id: 1190
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 199
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1191:
-		Id: 1191
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 200
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1192:
-		Id: 1192
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 201
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1193:
-		Id: 1193
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 202
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1194:
-		Id: 1194
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 203
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1195:
-		Id: 1195
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 204
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1196:
-		Id: 1196
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 205
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
-	Template@1197:
-		Id: 1197
-		Images: well0007.bmp
-		Size: 1,1
-		Frames: 206
-		Categories: Lava
-		Tiles:
-			0: Clear
-		Palette: well0007.bmp
 	# Sand
 	# 1x1 sand debris
-	Template@1262:
-		Id: 1262
+	Template@2285:
+		Id: 2285
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 64
@@ -6448,8 +3116,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1263:
-		Id: 1263
+	Template@2286:
+		Id: 2286
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 65
@@ -6457,8 +3125,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1264:
-		Id: 1264
+	Template@2287:
+		Id: 2287
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 66
@@ -6466,8 +3134,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1265:
-		Id: 1265
+	Template@2288:
+		Id: 2288
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 67
@@ -6475,8 +3143,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1266:
-		Id: 1266
+	Template@2289:
+		Id: 2289
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 68
@@ -6484,8 +3152,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1267:
-		Id: 1267
+	Template@2290:
+		Id: 2290
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 69
@@ -6493,8 +3161,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1268:
-		Id: 1268
+	Template@2291:
+		Id: 2291
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 70
@@ -6502,8 +3170,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1269:
-		Id: 1269
+	Template@2292:
+		Id: 2292
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 71
@@ -6511,8 +3179,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1270:
-		Id: 1270
+	Template@2293:
+		Id: 2293
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 72
@@ -6520,8 +3188,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1271:
-		Id: 1271
+	Template@2294:
+		Id: 2294
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 73
@@ -6529,8 +3197,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1272:
-		Id: 1272
+	Template@2295:
+		Id: 2295
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 74
@@ -6538,8 +3206,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1273:
-		Id: 1273
+	Template@2296:
+		Id: 2296
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 75
@@ -6547,8 +3215,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1274:
-		Id: 1274
+	Template@2297:
+		Id: 2297
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 76
@@ -6556,8 +3224,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1275:
-		Id: 1275
+	Template@2298:
+		Id: 2298
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 77
@@ -6565,8 +3233,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1276:
-		Id: 1276
+	Template@2299:
+		Id: 2299
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 78
@@ -6574,8 +3242,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1277:
-		Id: 1277
+	Template@2300:
+		Id: 2300
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 79
@@ -6583,8 +3251,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1278:
-		Id: 1278
+	Template@2301:
+		Id: 2301
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 80
@@ -6592,8 +3260,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1279:
-		Id: 1279
+	Template@2302:
+		Id: 2302
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 81
@@ -6601,8 +3269,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1280:
-		Id: 1280
+	Template@2303:
+		Id: 2303
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 82
@@ -6610,8 +3278,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1281:
-		Id: 1281
+	Template@2304:
+		Id: 2304
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 83
@@ -6619,8 +3287,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1282:
-		Id: 1282
+	Template@2305:
+		Id: 2305
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 84
@@ -6628,8 +3296,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1283:
-		Id: 1283
+	Template@2306:
+		Id: 2306
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 85
@@ -6637,8 +3305,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1284:
-		Id: 1284
+	Template@2307:
+		Id: 2307
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 86
@@ -6646,8 +3314,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1285:
-		Id: 1285
+	Template@2308:
+		Id: 2308
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 87
@@ -6655,8 +3323,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1286:
-		Id: 1286
+	Template@2309:
+		Id: 2309
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 88
@@ -6664,8 +3332,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1287:
-		Id: 1287
+	Template@2310:
+		Id: 2310
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 89
@@ -6673,8 +3341,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1288:
-		Id: 1288
+	Template@2311:
+		Id: 2311
 		Images: well0008.bmp
 		Size: 2,2
 		Frames: 90, 91, 92, 93
@@ -6685,8 +3353,8 @@ Templates:
 			2: Clear
 			3: Clear
 		Palette: well0008.bmp
-	Template@1292:
-		Id: 1292
+	Template@2312:
+		Id: 2312
 		Images: well0008.bmp
 		Size: 4,4
 		Frames: 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109
@@ -6709,8 +3377,8 @@ Templates:
 			14: Clear
 			15: Clear
 		Palette: well0008.bmp
-	Template@1308:
-		Id: 1308
+	Template@2313:
+		Id: 2313
 		Images: well0008.bmp
 		Size: 3,1
 		Frames: 110, 111, 112
@@ -6720,8 +3388,8 @@ Templates:
 			1: Clear
 			2: Clear
 		Palette: well0008.bmp
-	Template@1311:
-		Id: 1311
+	Template@2314:
+		Id: 2314
 		Images: well0008.bmp
 		Size: 2,2
 		Frames: 113, 114, 115, 116
@@ -6732,8 +3400,8 @@ Templates:
 			2: Clear
 			3: Clear
 		Palette: well0008.bmp
-	Template@1315:
-		Id: 1315
+	Template@2315:
+		Id: 2315
 		Images: well0008.bmp
 		Size: 2,4
 		Frames: 117, 118, 119, 120, 121, 122, 123, 124
@@ -6748,8 +3416,8 @@ Templates:
 			6: Clear
 			7: Clear
 		Palette: well0008.bmp
-	Template@1323:
-		Id: 1323
+	Template@2316:
+		Id: 2316
 		Images: well0008.bmp
 		Size: 2,2
 		Frames: 125, 126, 127, 128
@@ -6760,8 +3428,8 @@ Templates:
 			2: Clear
 			3: Clear
 		Palette: well0008.bmp
-	Template@1327:
-		Id: 1327
+	Template@2317:
+		Id: 2317
 		Images: well0008.bmp
 		Size: 3,1
 		Frames: 129, 130, 131
@@ -6771,8 +3439,8 @@ Templates:
 			1: Clear
 			2: Clear
 		Palette: well0008.bmp
-	Template@1330:
-		Id: 1330
+	Template@2318:
+		Id: 2318
 		Images: well0008.bmp
 		Size: 2,2
 		Frames: 132, 133, 134, 135
@@ -6783,8 +3451,8 @@ Templates:
 			2: Clear
 			3: Clear
 		Palette: well0008.bmp
-	Template@1334:
-		Id: 1334
+	Template@2319:
+		Id: 2319
 		Images: well0008.bmp
 		Size: 2,4
 		Frames: 136, 137, 138, 139, 140, 141, 142, 143
@@ -6799,8 +3467,8 @@ Templates:
 			6: Clear
 			7: Clear
 		Palette: well0008.bmp
-	Template@1342:
-		Id: 1342
+	Template@2320:
+		Id: 2320
 		Images: well0008.bmp
 		Size: 2,2
 		Frames: 144, 145, 146, 147
@@ -6812,7 +3480,7 @@ Templates:
 			3: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-n-1:
-		Id: 1346
+		Id: 2321
 		Images: well0008.bmp
 		Size: 3,1
 		Frames: 148, 149, 150
@@ -6823,7 +3491,7 @@ Templates:
 			2: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-n-2:
-		Id: 1349
+		Id: 2322
 		Images: well0008.bmp
 		Size: 3,1
 		Frames: 151, 152, 153
@@ -6834,7 +3502,7 @@ Templates:
 			2: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-n-3:
-		Id: 1352
+		Id: 2323
 		Images: well0008.bmp
 		Size: 3,1
 		Frames: 154, 155, 156
@@ -6845,7 +3513,7 @@ Templates:
 			2: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-s-1:
-		Id: 1355
+		Id: 2324
 		Images: well0008.bmp
 		Size: 3,3
 		Frames: 157, 158, 159, 160, 161, 162, 163, 164, 165
@@ -6862,7 +3530,7 @@ Templates:
 			8: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-s-2:
-		Id: 1364
+		Id: 2325
 		Images: well0008.bmp
 		Size: 3,3
 		Frames: 166, 167, 168, 169, 170, 171, 172, 173, 174
@@ -6879,7 +3547,7 @@ Templates:
 			8: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-corner-nw:
-		Id: 1373
+		Id: 2326
 		Images: well0008.bmp
 		Size: 3,6
 		Frames: 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192
@@ -6905,7 +3573,7 @@ Templates:
 			17: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-inner-nw:
-		Id: 1391
+		Id: 2327
 		Images: well0008.bmp
 		Size: 3,1
 		Frames: 193, 194, 195
@@ -6916,7 +3584,7 @@ Templates:
 			2: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-w-1:
-		Id: 1394
+		Id: 2328
 		Images: well0008.bmp
 		Size: 3,4
 		Frames: 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207
@@ -6936,7 +3604,7 @@ Templates:
 			11: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-taper-e:
-		Id: 1403
+		Id: 2329
 		Images: well0008.bmp
 		Size: 3,3
 		Frames: 208, 209, 210, 211, 212, 213, 214, 215, 216
@@ -6953,7 +3621,7 @@ Templates:
 			8: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-corner-sw:
-		Id: 1415
+		Id: 2330
 		Images: well0008.bmp
 		Size: 3,3
 		Frames: 217, 218, 219, 220, 221, 222, 223, 224, 225
@@ -6970,7 +3638,7 @@ Templates:
 			8: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-corner-inner-sw:
-		Id: 1424
+		Id: 2331
 		Images: well0008.bmp
 		Size: 3,3
 		Frames: 226, 227, 228, 229, 230, 231, 232, 233, 234
@@ -6987,7 +3655,7 @@ Templates:
 			8: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-corner-se:
-		Id: 1433
+		Id: 2332
 		Images: well0008.bmp
 		Size: 3,3
 		Frames: 235, 236, 237, 238, 239, 240, 241, 242, 243
@@ -7004,7 +3672,7 @@ Templates:
 			8: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-taper-w:
-		Id: 1442
+		Id: 2333
 		Images: well0008.bmp
 		Size: 3,3
 		Frames: 244, 245, 246, 247, 248, 249, 250, 251, 252
@@ -7021,7 +3689,7 @@ Templates:
 			8: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-corner-inner-se:
-		Id: 1451
+		Id: 2334
 		Images: well0008.bmp
 		Size: 3,3
 		Frames: 253, 254, 255, 256, 257, 258, 259, 260, 261
@@ -7038,7 +3706,7 @@ Templates:
 			8: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-e:
-		Id: 1460
+		Id: 2335
 		Images: well0008.bmp
 		Size: 3,4
 		Frames: 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273
@@ -7058,7 +3726,7 @@ Templates:
 			11: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-corner-ne:
-		Id: 1472
+		Id: 2336
 		Images: well0008.bmp
 		Size: 3,6
 		Frames: 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291
@@ -7084,7 +3752,7 @@ Templates:
 			17: Clear
 		Palette: well0008.bmp
 	Template@sand-cliff-corner-inner-ne:
-		Id: 1490
+		Id: 2337
 		Images: well0008.bmp
 		Size: 3,1
 		Frames: 292, 293, 294
@@ -7095,7 +3763,7 @@ Templates:
 			2: Clear
 		Palette: well0008.bmp
 	Template@sand-rock-3x3-1:
-		Id: 1493
+		Id: 2338
 		Images: well0008.bmp
 		Size: 3,3
 		Frames: 295, 296, 297, 298, 299, 300, 301, 302, 303
@@ -7112,7 +3780,7 @@ Templates:
 			8: Clear
 		Palette: well0008.bmp
 	Template@sand-rock-3x3-2:
-		Id: 1502
+		Id: 2339
 		Images: well0008.bmp
 		Size: 3,3
 		Frames: 304, 305, 306, 307, 308, 309, 310, 311, 312
@@ -7130,7 +3798,7 @@ Templates:
 		Palette: well0008.bmp
 	# sand - resources
 	Template@sand-resources:
-		Id: 1511
+		Id: 2340
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 313, 314, 315, 316, 317, 318
@@ -7145,8 +3813,8 @@ Templates:
 			5: Clear
 		Palette: well0008.bmp
 	# sand - 1x1 debris
-	Template@1517:
-		Id: 1517
+	Template@2341:
+		Id: 2341
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 319
@@ -7154,8 +3822,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1518:
-		Id: 1518
+	Template@2342:
+		Id: 2342
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 320
@@ -7163,8 +3831,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1519:
-		Id: 1519
+	Template@2343:
+		Id: 2343
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 321
@@ -7172,8 +3840,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1520:
-		Id: 1520
+	Template@2344:
+		Id: 2344
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 322
@@ -7181,8 +3849,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1521:
-		Id: 1521
+	Template@2345:
+		Id: 2345
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 323
@@ -7190,8 +3858,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1522:
-		Id: 1522
+	Template@2346:
+		Id: 2346
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 324
@@ -7201,7 +3869,7 @@ Templates:
 		Palette: well0008.bmp
 	# sand - more rocks
 	Template@sand-rock-2x2-1:
-		Id: 1523
+		Id: 2347
 		Images: well0008.bmp
 		Size: 2,2
 		Frames: 325, 326, 327, 328
@@ -7213,7 +3881,7 @@ Templates:
 			3: Clear
 		Palette: well0008.bmp
 	Template@sand-rock-2x2-2:
-		Id: 1527
+		Id: 2348
 		Images: well0008.bmp
 		Size: 2,2
 		Frames: 329, 330, 331, 332
@@ -7225,7 +3893,7 @@ Templates:
 			3: Clear
 		Palette: well0008.bmp
 	Template@sand-rock-2x2-3:
-		Id: 1531
+		Id: 2349
 		Images: well0008.bmp
 		Size: 2,2
 		Frames: 333, 334, 335, 336
@@ -7237,7 +3905,7 @@ Templates:
 			3: Clear
 		Palette: well0008.bmp
 	Template@sand-debris-2x2:
-		Id: 1535
+		Id: 2350
 		Images: well0008.bmp
 		Size: 2,2
 		Frames: 337, 338, 339, 340
@@ -7248,8 +3916,8 @@ Templates:
 			2: Clear
 			3: Clear
 		Palette: well0008.bmp
-	Template@1539:
-		Id: 1539
+	Template@2351:
+		Id: 2351
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 341
@@ -7257,8 +3925,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1540:
-		Id: 1540
+	Template@2352:
+		Id: 2352
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 342
@@ -7266,8 +3934,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1541:
-		Id: 1541
+	Template@2353:
+		Id: 2353
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 343
@@ -7275,8 +3943,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1542:
-		Id: 1542
+	Template@2354:
+		Id: 2354
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 344
@@ -7284,8 +3952,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1543:
-		Id: 1543
+	Template@2355:
+		Id: 2355
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 345
@@ -7293,8 +3961,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	Template@1544:
-		Id: 1544
+	Template@2356:
+		Id: 2356
 		Images: well0008.bmp
 		Size: 1,1
 		Frames: 346
@@ -7302,298 +3970,9 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0008.bmp
-	# sand - walls
-	Template@1545:
-		Id: 1545
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 0
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1546:
-		Id: 1546
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 1
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1547:
-		Id: 1547
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 2
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1548:
-		Id: 1548
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 3
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1549:
-		Id: 1549
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 4
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1550:
-		Id: 1550
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 5
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1551:
-		Id: 1551
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 6
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1552:
-		Id: 1552
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 7
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1553:
-		Id: 1553
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 8
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1554:
-		Id: 1554
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 9
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1555:
-		Id: 1555
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 10
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1556:
-		Id: 1556
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 11
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1557:
-		Id: 1557
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 12
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1558:
-		Id: 1558
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 13
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1559:
-		Id: 1559
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 14
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1560:
-		Id: 1560
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 15
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1561:
-		Id: 1561
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 16
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1562:
-		Id: 1562
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 17
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1563:
-		Id: 1563
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 18
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1564:
-		Id: 1564
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 19
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1565:
-		Id: 1565
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 20
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1566:
-		Id: 1566
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 21
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1567:
-		Id: 1567
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 22
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1568:
-		Id: 1568
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 23
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1569:
-		Id: 1569
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 24
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1570:
-		Id: 1570
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 25
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1571:
-		Id: 1571
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 26
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1572:
-		Id: 1572
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 27
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1573:
-		Id: 1573
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 28
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1574:
-		Id: 1574
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 29
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1575:
-		Id: 1575
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 30
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1576:
-		Id: 1576
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 31
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
 	# sand - junk
-	Template@1577:
-		Id: 1577
+	Template@2357:
+		Id: 2357
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 32
@@ -7601,8 +3980,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1578:
-		Id: 1578
+	Template@2358:
+		Id: 2358
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 33
@@ -7610,8 +3989,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1579:
-		Id: 1579
+	Template@2359:
+		Id: 2359
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 34
@@ -7619,8 +3998,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1580:
-		Id: 1580
+	Template@2360:
+		Id: 2360
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 35
@@ -7628,8 +4007,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1581:
-		Id: 1581
+	Template@2361:
+		Id: 2361
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 36
@@ -7637,8 +4016,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1582:
-		Id: 1582
+	Template@2362:
+		Id: 2362
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 37
@@ -7646,8 +4025,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1583:
-		Id: 1583
+	Template@2363:
+		Id: 2363
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 38
@@ -7655,8 +4034,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1584:
-		Id: 1584
+	Template@2364:
+		Id: 2364
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 39
@@ -7664,442 +4043,9 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	# sand - more walls
-	Template@1585:
-		Id: 1585
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 40
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1586:
-		Id: 1586
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 41
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1587:
-		Id: 1587
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 42
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1588:
-		Id: 1588
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 43
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1589:
-		Id: 1589
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 44
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1590:
-		Id: 1590
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 45
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1591:
-		Id: 1591
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 46
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1592:
-		Id: 1592
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 47
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1593:
-		Id: 1593
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 48
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1594:
-		Id: 1594
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 49
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1595:
-		Id: 1595
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 50
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1596:
-		Id: 1596
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 51
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1597:
-		Id: 1597
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 52
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1598:
-		Id: 1598
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 53
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1599:
-		Id: 1599
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 54
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1600:
-		Id: 1600
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 55
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1601:
-		Id: 1601
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 56
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1602:
-		Id: 1602
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 57
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1603:
-		Id: 1603
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 58
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1604:
-		Id: 1604
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 59
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1605:
-		Id: 1605
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 60
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1606:
-		Id: 1606
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 61
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1607:
-		Id: 1607
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 62
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1608:
-		Id: 1608
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 63
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1609:
-		Id: 1609
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 64
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1610:
-		Id: 1610
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 65
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1611:
-		Id: 1611
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 66
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1612:
-		Id: 1612
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 67
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1613:
-		Id: 1613
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 68
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1614:
-		Id: 1614
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 69
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1615:
-		Id: 1615
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 70
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1616:
-		Id: 1616
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 71
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1617:
-		Id: 1617
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 72
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1618:
-		Id: 1618
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 73
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1619:
-		Id: 1619
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 74
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1620:
-		Id: 1620
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 75
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1621:
-		Id: 1621
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 76
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1622:
-		Id: 1622
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 77
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1623:
-		Id: 1623
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 78
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1624:
-		Id: 1624
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 79
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1625:
-		Id: 1625
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 80
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1626:
-		Id: 1626
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 81
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1627:
-		Id: 1627
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 82
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1628:
-		Id: 1628
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 83
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1629:
-		Id: 1629
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 84
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1630:
-		Id: 1630
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 85
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1631:
-		Id: 1631
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 86
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
-	Template@1632:
-		Id: 1632
-		Images: well0009.bmp
-		Size: 1,1
-		Frames: 87
-		Categories: Sand - Walls
-		Tiles:
-			0: Clear
-		Palette: well0009.bmp
 	# sand - more 1x1 debris (88-103)
-	Template@1633:
-		Id: 1633
+	Template@2365:
+		Id: 2365
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 88
@@ -8107,8 +4053,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1634:
-		Id: 1634
+	Template@2366:
+		Id: 2366
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 89
@@ -8116,8 +4062,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1635:
-		Id: 1635
+	Template@2367:
+		Id: 2367
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 90
@@ -8125,8 +4071,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1636:
-		Id: 1636
+	Template@2368:
+		Id: 2368
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 91
@@ -8134,8 +4080,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1637:
-		Id: 1637
+	Template@2369:
+		Id: 2369
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 92
@@ -8143,8 +4089,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1638:
-		Id: 1638
+	Template@2370:
+		Id: 2370
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 93
@@ -8152,8 +4098,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1639:
-		Id: 1639
+	Template@2371:
+		Id: 2371
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 94
@@ -8161,8 +4107,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1640:
-		Id: 1640
+	Template@2372:
+		Id: 2372
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 95
@@ -8170,8 +4116,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1641:
-		Id: 1641
+	Template@2373:
+		Id: 2373
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 96
@@ -8179,8 +4125,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1642:
-		Id: 1642
+	Template@2374:
+		Id: 2374
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 97
@@ -8188,8 +4134,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1643:
-		Id: 1643
+	Template@2375:
+		Id: 2375
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 98
@@ -8197,8 +4143,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1644:
-		Id: 1644
+	Template@2376:
+		Id: 2376
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 99
@@ -8206,8 +4152,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1645:
-		Id: 1645
+	Template@2377:
+		Id: 2377
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 100
@@ -8215,8 +4161,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1646:
-		Id: 1646
+	Template@2378:
+		Id: 2378
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 101
@@ -8224,8 +4170,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1647:
-		Id: 1647
+	Template@2379:
+		Id: 2379
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 102
@@ -8233,8 +4179,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1648:
-		Id: 1648
+	Template@2380:
+		Id: 2380
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 103
@@ -8242,8 +4188,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1649:
-		Id: 1649
+	Template@2381:
+		Id: 2381
 		Images: well0009.bmp
 		Size: 4,2
 		Frames: 104, 105, 106, 107, 108, 109, 110, 111
@@ -8258,8 +4204,8 @@ Templates:
 			6: Clear
 			7: Clear
 		Palette: well0009.bmp
-	Template@1657:
-		Id: 1657
+	Template@2382:
+		Id: 2382
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 112
@@ -8267,8 +4213,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1658:
-		Id: 1658
+	Template@2383:
+		Id: 2383
 		Images: well0009.bmp
 		Size: 2,2
 		Frames: 113, 114, 115, 116
@@ -8280,8 +4226,8 @@ Templates:
 			3: Clear
 		Palette: well0009.bmp
 	# sand - base
-	Template@1662:
-		Id: 1662
+	Template@2384:
+		Id: 2384
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 117, 118, 119, 120, 121, 122, 123, 124
@@ -8298,8 +4244,8 @@ Templates:
 			7: Clear
 		Palette: well0009.bmp
 	# sand - pipes
-	Template@1670:
-		Id: 1670
+	Template@2385:
+		Id: 2385
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 125
@@ -8307,8 +4253,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1671:
-		Id: 1671
+	Template@2386:
+		Id: 2386
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 126
@@ -8316,8 +4262,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1672:
-		Id: 1672
+	Template@2387:
+		Id: 2387
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 127
@@ -8325,8 +4271,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1673:
-		Id: 1673
+	Template@2388:
+		Id: 2388
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 128
@@ -8334,8 +4280,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1674:
-		Id: 1674
+	Template@2389:
+		Id: 2389
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 129
@@ -8343,8 +4289,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1675:
-		Id: 1675
+	Template@2390:
+		Id: 2390
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 130
@@ -8352,8 +4298,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1676:
-		Id: 1676
+	Template@2391:
+		Id: 2391
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 131
@@ -8361,8 +4307,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1677:
-		Id: 1677
+	Template@2392:
+		Id: 2392
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 132
@@ -8370,8 +4316,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1678:
-		Id: 1678
+	Template@2393:
+		Id: 2393
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 133
@@ -8379,8 +4325,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1679:
-		Id: 1679
+	Template@2394:
+		Id: 2394
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 134
@@ -8388,8 +4334,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1680:
-		Id: 1680
+	Template@2395:
+		Id: 2395
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 135
@@ -8397,8 +4343,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1681:
-		Id: 1681
+	Template@2396:
+		Id: 2396
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 136
@@ -8406,8 +4352,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1682:
-		Id: 1682
+	Template@2397:
+		Id: 2397
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 137
@@ -8415,8 +4361,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1683:
-		Id: 1683
+	Template@2398:
+		Id: 2398
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 138
@@ -8424,8 +4370,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1684:
-		Id: 1684
+	Template@2399:
+		Id: 2399
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 139
@@ -8433,8 +4379,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1685:
-		Id: 1685
+	Template@2400:
+		Id: 2400
 		Images: well0009.bmp
 		Size: 1,1
 		Frames: 140
@@ -8442,8 +4388,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0009.bmp
-	Template@1686:
-		Id: 1686
+	Template@2401:
+		Id: 2401
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 0
@@ -8451,8 +4397,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1687:
-		Id: 1687
+	Template@2402:
+		Id: 2402
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 1
@@ -8460,8 +4406,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1688:
-		Id: 1688
+	Template@2403:
+		Id: 2403
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 2
@@ -8469,8 +4415,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1689:
-		Id: 1689
+	Template@2404:
+		Id: 2404
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 3
@@ -8478,8 +4424,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1690:
-		Id: 1690
+	Template@2405:
+		Id: 2405
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 4
@@ -8487,8 +4433,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1691:
-		Id: 1691
+	Template@2406:
+		Id: 2406
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 5
@@ -8496,8 +4442,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1692:
-		Id: 1692
+	Template@2407:
+		Id: 2407
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 6
@@ -8505,8 +4451,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1693:
-		Id: 1693
+	Template@2408:
+		Id: 2408
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 7
@@ -8514,8 +4460,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1694:
-		Id: 1694
+	Template@2409:
+		Id: 2409
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 8
@@ -8523,8 +4469,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1695:
-		Id: 1695
+	Template@2410:
+		Id: 2410
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 9
@@ -8532,8 +4478,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1696:
-		Id: 1696
+	Template@2411:
+		Id: 2411
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 10
@@ -8541,8 +4487,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1697:
-		Id: 1697
+	Template@2412:
+		Id: 2412
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 11
@@ -8550,8 +4496,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1698:
-		Id: 1698
+	Template@2413:
+		Id: 2413
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 12
@@ -8559,8 +4505,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1699:
-		Id: 1699
+	Template@2414:
+		Id: 2414
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 13
@@ -8568,8 +4514,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1700:
-		Id: 1700
+	Template@2415:
+		Id: 2415
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 14
@@ -8577,8 +4523,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1701:
-		Id: 1701
+	Template@2416:
+		Id: 2416
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 15
@@ -8586,8 +4532,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1702:
-		Id: 1702
+	Template@2417:
+		Id: 2417
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 16
@@ -8595,8 +4541,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1703:
-		Id: 1703
+	Template@2418:
+		Id: 2418
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 17
@@ -8604,8 +4550,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1704:
-		Id: 1704
+	Template@2419:
+		Id: 2419
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 18
@@ -8613,8 +4559,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1705:
-		Id: 1705
+	Template@2420:
+		Id: 2420
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 19
@@ -8622,8 +4568,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1706:
-		Id: 1706
+	Template@2421:
+		Id: 2421
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 20
@@ -8631,8 +4577,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1707:
-		Id: 1707
+	Template@2422:
+		Id: 2422
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 21
@@ -8640,8 +4586,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1708:
-		Id: 1708
+	Template@2423:
+		Id: 2423
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 22
@@ -8649,8 +4595,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1709:
-		Id: 1709
+	Template@2424:
+		Id: 2424
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 23
@@ -8658,8 +4604,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1710:
-		Id: 1710
+	Template@2425:
+		Id: 2425
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 24
@@ -8667,8 +4613,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1711:
-		Id: 1711
+	Template@2426:
+		Id: 2426
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 25
@@ -8676,8 +4622,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1712:
-		Id: 1712
+	Template@2427:
+		Id: 2427
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 26
@@ -8685,8 +4631,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1713:
-		Id: 1713
+	Template@2428:
+		Id: 2428
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 27
@@ -8694,8 +4640,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1714:
-		Id: 1714
+	Template@2429:
+		Id: 2429
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 28
@@ -8703,8 +4649,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1715:
-		Id: 1715
+	Template@2430:
+		Id: 2430
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 29
@@ -8712,8 +4658,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1716:
-		Id: 1716
+	Template@2431:
+		Id: 2431
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 30
@@ -8721,8 +4667,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1717:
-		Id: 1717
+	Template@2432:
+		Id: 2432
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 31
@@ -8730,8 +4676,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1718:
-		Id: 1718
+	Template@2433:
+		Id: 2433
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 32
@@ -8739,8 +4685,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1719:
-		Id: 1719
+	Template@2434:
+		Id: 2434
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 33
@@ -8748,8 +4694,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1720:
-		Id: 1720
+	Template@2435:
+		Id: 2435
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 34
@@ -8757,8 +4703,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1721:
-		Id: 1721
+	Template@2436:
+		Id: 2436
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 35
@@ -8766,8 +4712,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1722:
-		Id: 1722
+	Template@2437:
+		Id: 2437
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 36
@@ -8775,8 +4721,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1723:
-		Id: 1723
+	Template@2438:
+		Id: 2438
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 37
@@ -8784,8 +4730,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1724:
-		Id: 1724
+	Template@2439:
+		Id: 2439
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 38
@@ -8793,8 +4739,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1725:
-		Id: 1725
+	Template@2440:
+		Id: 2440
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 39
@@ -8802,8 +4748,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1726:
-		Id: 1726
+	Template@2441:
+		Id: 2441
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 40
@@ -8811,8 +4757,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1727:
-		Id: 1727
+	Template@2442:
+		Id: 2442
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 41
@@ -8820,8 +4766,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1728:
-		Id: 1728
+	Template@2443:
+		Id: 2443
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 42
@@ -8829,8 +4775,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1729:
-		Id: 1729
+	Template@2444:
+		Id: 2444
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 43
@@ -8838,8 +4784,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1730:
-		Id: 1730
+	Template@2445:
+		Id: 2445
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 44
@@ -8847,8 +4793,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1731:
-		Id: 1731
+	Template@2446:
+		Id: 2446
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 45
@@ -8856,8 +4802,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1732:
-		Id: 1732
+	Template@2447:
+		Id: 2447
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 46
@@ -8865,8 +4811,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1733:
-		Id: 1733
+	Template@2448:
+		Id: 2448
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 47
@@ -8874,8 +4820,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1734:
-		Id: 1734
+	Template@2449:
+		Id: 2449
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 48
@@ -8883,8 +4829,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1735:
-		Id: 1735
+	Template@2450:
+		Id: 2450
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 49
@@ -8892,8 +4838,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1736:
-		Id: 1736
+	Template@2451:
+		Id: 2451
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 50
@@ -8901,8 +4847,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1737:
-		Id: 1737
+	Template@2452:
+		Id: 2452
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 51
@@ -8910,8 +4856,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1738:
-		Id: 1738
+	Template@2453:
+		Id: 2453
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 52
@@ -8919,8 +4865,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1739:
-		Id: 1739
+	Template@2454:
+		Id: 2454
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 53
@@ -8928,8 +4874,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1740:
-		Id: 1740
+	Template@2455:
+		Id: 2455
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 54
@@ -8937,8 +4883,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1741:
-		Id: 1741
+	Template@2456:
+		Id: 2456
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 55
@@ -8946,8 +4892,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1742:
-		Id: 1742
+	Template@2457:
+		Id: 2457
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 56
@@ -8955,8 +4901,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1743:
-		Id: 1743
+	Template@2458:
+		Id: 2458
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 57
@@ -8964,8 +4910,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1744:
-		Id: 1744
+	Template@2459:
+		Id: 2459
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 58
@@ -8973,8 +4919,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1745:
-		Id: 1745
+	Template@2460:
+		Id: 2460
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 59
@@ -8982,8 +4928,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1746:
-		Id: 1746
+	Template@2461:
+		Id: 2461
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 60
@@ -8991,8 +4937,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1747:
-		Id: 1747
+	Template@2462:
+		Id: 2462
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 61
@@ -9000,8 +4946,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1748:
-		Id: 1748
+	Template@2463:
+		Id: 2463
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 62
@@ -9009,8 +4955,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1749:
-		Id: 1749
+	Template@2464:
+		Id: 2464
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 63
@@ -9018,8 +4964,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1750:
-		Id: 1750
+	Template@2465:
+		Id: 2465
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 64
@@ -9027,8 +4973,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1751:
-		Id: 1751
+	Template@2466:
+		Id: 2466
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 65
@@ -9036,8 +4982,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1752:
-		Id: 1752
+	Template@2467:
+		Id: 2467
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 66
@@ -9045,8 +4991,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1753:
-		Id: 1753
+	Template@2468:
+		Id: 2468
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 67
@@ -9054,8 +5000,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1754:
-		Id: 1754
+	Template@2469:
+		Id: 2469
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 68
@@ -9063,8 +5009,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1755:
-		Id: 1755
+	Template@2470:
+		Id: 2470
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 69
@@ -9072,8 +5018,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1756:
-		Id: 1756
+	Template@2471:
+		Id: 2471
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 70
@@ -9081,8 +5027,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1757:
-		Id: 1757
+	Template@2472:
+		Id: 2472
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 71
@@ -9090,8 +5036,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1758:
-		Id: 1758
+	Template@2473:
+		Id: 2473
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 72
@@ -9099,8 +5045,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1759:
-		Id: 1759
+	Template@2474:
+		Id: 2474
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 73
@@ -9108,8 +5054,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1760:
-		Id: 1760
+	Template@2475:
+		Id: 2475
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 74
@@ -9117,8 +5063,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1761:
-		Id: 1761
+	Template@2476:
+		Id: 2476
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 75
@@ -9126,8 +5072,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1762:
-		Id: 1762
+	Template@2477:
+		Id: 2477
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 76
@@ -9135,8 +5081,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1763:
-		Id: 1763
+	Template@2478:
+		Id: 2478
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 77
@@ -9144,8 +5090,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1764:
-		Id: 1764
+	Template@2479:
+		Id: 2479
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 78
@@ -9153,8 +5099,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1765:
-		Id: 1765
+	Template@2480:
+		Id: 2480
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 79
@@ -9162,8 +5108,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1766:
-		Id: 1766
+	Template@2481:
+		Id: 2481
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 80
@@ -9171,8 +5117,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1767:
-		Id: 1767
+	Template@2482:
+		Id: 2482
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 81
@@ -9180,8 +5126,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1768:
-		Id: 1768
+	Template@2483:
+		Id: 2483
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 82
@@ -9189,8 +5135,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1769:
-		Id: 1769
+	Template@2484:
+		Id: 2484
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 83
@@ -9198,8 +5144,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1770:
-		Id: 1770
+	Template@2485:
+		Id: 2485
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 84
@@ -9207,8 +5153,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1771:
-		Id: 1771
+	Template@2486:
+		Id: 2486
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 85
@@ -9216,8 +5162,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1772:
-		Id: 1772
+	Template@2487:
+		Id: 2487
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 86
@@ -9225,8 +5171,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1773:
-		Id: 1773
+	Template@2488:
+		Id: 2488
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 87
@@ -9234,8 +5180,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1774:
-		Id: 1774
+	Template@2489:
+		Id: 2489
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 88
@@ -9243,8 +5189,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1775:
-		Id: 1775
+	Template@2490:
+		Id: 2490
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 89
@@ -9252,8 +5198,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1776:
-		Id: 1776
+	Template@2491:
+		Id: 2491
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 90
@@ -9261,8 +5207,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1777:
-		Id: 1777
+	Template@2492:
+		Id: 2492
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 91
@@ -9270,8 +5216,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1778:
-		Id: 1778
+	Template@2493:
+		Id: 2493
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 92
@@ -9279,8 +5225,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1779:
-		Id: 1779
+	Template@2494:
+		Id: 2494
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 93
@@ -9288,8 +5234,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1780:
-		Id: 1780
+	Template@2495:
+		Id: 2495
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 94
@@ -9297,8 +5243,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0010.bmp
-	Template@1781:
-		Id: 1781
+	Template@2496:
+		Id: 2496
 		Images: well0010.bmp
 		Size: 1,1
 		Frames: 95
@@ -9307,8 +5253,8 @@ Templates:
 			0: Clear
 		Palette: well0010.bmp
 	# ice 1
-	Template@1782:
-		Id: 1782
+	Template@2497:
+		Id: 2497
 		Images: well0011.bmp
 		Size: 6,3
 		Frames: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17
@@ -9333,8 +5279,8 @@ Templates:
 			16: Clear
 			17: Clear
 		Palette: well0011.bmp
-	Template@1800:
-		Id: 1800
+	Template@2498:
+		Id: 2498
 		Images: well0011.bmp
 		Size: 6,3
 		Frames: 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35
@@ -9359,8 +5305,8 @@ Templates:
 			16: Clear
 			17: Clear
 		Palette: well0011.bmp
-	Template@1818:
-		Id: 1818
+	Template@2499:
+		Id: 2499
 		Images: well0011.bmp
 		Size: 6,3
 		Frames: 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53
@@ -9385,8 +5331,8 @@ Templates:
 			16: Clear
 			17: Clear
 		Palette: well0011.bmp
-	Template@1836:
-		Id: 1836
+	Template@2500:
+		Id: 2500
 		Images: well0011.bmp
 		Size: 6,3
 		Frames: 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71
@@ -9411,8 +5357,8 @@ Templates:
 			16: Clear
 			17: Clear
 		Palette: well0011.bmp
-	Template@1854:
-		Id: 1854
+	Template@2501:
+		Id: 2501
 		Images: well0011.bmp
 		Size: 6,3
 		Frames: 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89
@@ -9437,8 +5383,8 @@ Templates:
 			16: Clear
 			17: Clear
 		Palette: well0011.bmp
-	Template@1872:
-		Id: 1872
+	Template@2502:
+		Id: 2502
 		Images: well0011.bmp
 		Size: 6,3
 		Frames: 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107
@@ -9463,8 +5409,8 @@ Templates:
 			16: Clear
 			17: Clear
 		Palette: well0011.bmp
-	Template@1890:
-		Id: 1890
+	Template@2503:
+		Id: 2503
 		Images: well0011.bmp
 		Size: 6,3
 		Frames: 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125
@@ -9489,8 +5435,8 @@ Templates:
 			16: Clear
 			17: Clear
 		Palette: well0011.bmp
-	Template@1908:
-		Id: 1908
+	Template@2504:
+		Id: 2504
 		Images: well0011.bmp
 		Size: 6,3
 		Frames: 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143
@@ -9516,8 +5462,8 @@ Templates:
 			17: Clear
 		Palette: well0011.bmp
 	# 1x1 ice chunks 144 - 149
-	Template@1926:
-		Id: 1926
+	Template@2505:
+		Id: 2505
 		Images: well0011.bmp
 		Size: 1,1
 		Frames: 144
@@ -9525,8 +5471,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0011.bmp
-	Template@1927:
-		Id: 1927
+	Template@2506:
+		Id: 2506
 		Images: well0011.bmp
 		Size: 1,1
 		Frames: 145
@@ -9534,8 +5480,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0011.bmp
-	Template@1928:
-		Id: 1928
+	Template@2507:
+		Id: 2507
 		Images: well0011.bmp
 		Size: 1,1
 		Frames: 146
@@ -9543,8 +5489,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0011.bmp
-	Template@1929:
-		Id: 1929
+	Template@2508:
+		Id: 2508
 		Images: well0011.bmp
 		Size: 1,1
 		Frames: 147
@@ -9552,8 +5498,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0011.bmp
-	Template@1930:
-		Id: 1930
+	Template@2509:
+		Id: 2509
 		Images: well0011.bmp
 		Size: 1,1
 		Frames: 148
@@ -9561,8 +5507,8 @@ Templates:
 		Tiles:
 			0: Clear
 		Palette: well0011.bmp
-	Template@1931:
-		Id: 1931
+	Template@2510:
+		Id: 2510
 		Images: well0011.bmp
 		Size: 1,1
 		Frames: 149
@@ -9571,8 +5517,8 @@ Templates:
 			0: Clear
 		Palette: well0011.bmp
 	# ice 2
-	Template@1932:
-		Id: 1932
+	Template@2511:
+		Id: 2511
 		Images: well0012.bmp
 		Size: 6,6
 		Frames: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35
@@ -9615,8 +5561,8 @@ Templates:
 			34: Clear
 			35: Clear
 		Palette: well0012.bmp
-	Template@1968:
-		Id: 1968
+	Template@2512:
+		Id: 2512
 		Images: well0012.bmp
 		Size: 6,6
 		Frames: 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71
