@@ -5,10 +5,50 @@ General:
 	SheetSize: 1024
 
 Terrain:
-	TerrainType@Clear:
+	TerrainType@ClearMud: # Clear as mud!
 		Type: Clear
+		Color: 726E5A
+		TargetTypes: Ground
+	TerrainType@ClearSand:
+		Type: ClearSand
 		Color: B59582
 		TargetTypes: Ground
+	TerrainType@ClearRock:
+		Type: ClearRock
+		Color: 757A75
+		TargetTypes: Ground
+	TerrainType@ClearRock2:
+		Type: ClearRock2
+		Color: 5A5A5A
+		TargetTypes: Ground
+	TerrainType@Lava:
+		Type: Lava
+		Color: EF3108
+		TargetTypes: Lava
+	TerrainType@RockMud:
+		Type: RockMud
+		Color: 423931
+		TargetTypes: Rock
+	TerrainType@RockSand: # All she wanna do is party all night
+		Type: RockSand
+		Color: 632910
+		TargetTypes: Rock
+	TerrainType@RockRock:
+		Type: RockRock
+		Color: 292918
+		TargetTypes: Rock
+	TerrainType@Junk:
+		Type: Junk
+		Color: 026BFF
+		TargetTypes: Junk
+	TerrainType@Rust:
+		Type: Rust
+		Color: DC7A18
+		TargetTypes: Rust
+	TerrainType@Plant:
+		Type: Plant
+		Color: 056C49
+		TargetTypes: Plant
 	TerrainType@ResourcePlaceholder:
 		Type: ResourcePlaceholder
 		Color: 192326

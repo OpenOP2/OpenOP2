@@ -62,9 +62,11 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 				const string idTemplate = "\t\tId: ";
 				const string imagesTemplate = "\t\tImages: ";
+				const string tilesTemplate = "\t\tTiles:";
 				const string tileTerrainRegex = @"^\s\s\s(0?\d|\d\d):\s";
 				var currentImage = string.Empty;
 				var lineIndex = 0;
+				int[] frames = new int[0];
 				foreach (var line in lines)
 				{
 					var newLine = line;
@@ -86,17 +88,19 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					}
 					else if (line.StartsWith(framesTemplate))
 					{
-						var frames = extractFrames(line);
+						frames = extractFrames(line);
 
 						if (!dict.ContainsKey(currentImage))
 						{
 							dict.Add(currentImage, new Dictionary<int, string>());
 						}
-
+					}
+					else if (line.StartsWith(tilesTemplate))
+					{
 						// Read ahead the tile definitions
 						var frameCount = frames.Length;
 						var tileLines = lines
-							.Skip(lineIndex + 2)
+							.Skip(lineIndex + 1)
 							.Take(frameCount)
 							.ToArray();
 
@@ -106,11 +110,11 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 						var currentDictionary = dict[currentImage];
 						var frameIndex = 0;
-						foreach (var frame in frames)
+						foreach (var frameId in frames)
 						{
-							if (!currentDictionary.ContainsKey(frame))
+							if (!currentDictionary.ContainsKey(frameId))
 							{
-								currentDictionary.Add(frame, tileNames[frameIndex]);
+								currentDictionary.Add(frameId, tileNames[frameIndex]);
 							}
 							else
 							{
@@ -139,18 +143,18 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					}
 					else if (line.StartsWith(framesTemplate))
 					{
-						var frames = extractFrames(line);
+						frames = extractFrames(line);
 
 						if (dict.ContainsKey(currentImage))
 						{
 							var currentDictionary = dict[currentImage];
 							var frameIndex = 0;
-							foreach (var frame in frames)
+							foreach (var frameId in frames)
 							{
-								if (currentDictionary.ContainsKey(frame))
+								if (currentDictionary.ContainsKey(frameId))
 								{
 									// Found a replacement
-									var terrainType = currentDictionary[frame];
+									var terrainType = currentDictionary[frameId];
 									tileDefs.Add(frameIndex, terrainType);
 								}
 
@@ -162,11 +166,19 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					{
 						var extractedPrefix = Regex.Match(line, tileTerrainRegex).Value;
 						var restOfLine = line.Replace(extractedPrefix, string.Empty);
-						var tileIndex = int.Parse(restOfLine);
+						var digitNotOk = int.TryParse(restOfLine, out var tileIndex);
+						if (digitNotOk)
+						{
+							throw new Exception($"Couldn't parse digit: {restOfLine}");
+						}
+
 						if (tileDefs.ContainsKey(tileIndex))
 						{
 							var tileDef = tileDefs[tileIndex];
-							newLine = extractedPrefix + tileIndex + ": " + tileDef; // \t\t\t0: ClearMud
+							if (restOfLine != tileDef)
+							{
+								newLine = extractedPrefix + tileDef; // \t\t\t0: ClearMud
+							}
 						}
 					}
 
