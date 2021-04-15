@@ -1425,8 +1425,8 @@ Templates:
 		Frames: 64, 65
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
+			0: ClearRock
+			1: ClearRock
 		Palette: well0004.bmp
 	Template@rock-crack-1:
 		Id: 2122
@@ -1435,16 +1435,16 @@ Templates:
 		Frames: 66, 67, 68, 69, 70, 71, 72, 73, 74, 75
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
+			0: ClearRock
+			1: ClearRock
+			2: ClearRock
+			3: ClearRock
+			4: ClearRock
+			5: ClearRock
+			6: ClearRock
+			7: ClearRock
+			8: ClearRock
+			9: ClearRock
 		Palette: well0004.bmp
 	Template@rock-crack-2:
 		Id: 2123
@@ -1453,8 +1453,8 @@ Templates:
 		Frames: 76, 77
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
+			0: ClearRock
+			1: ClearRock
 		Palette: well0004.bmp
 	Template@rock-crack-3:
 		Id: 2124
@@ -1463,8 +1463,8 @@ Templates:
 		Frames: 78, 79
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
+			0: ClearRock
+			1: ClearRock
 		Palette: well0004.bmp
 	Template@rock-crack-4:
 		Id: 2125
@@ -1473,8 +1473,8 @@ Templates:
 		Frames: 80, 81
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
+			0: ClearRock
+			1: ClearRock
 		Palette: well0004.bmp
 	Template@rock-crack-5:
 		Id: 2126
@@ -1483,10 +1483,10 @@ Templates:
 		Frames: 82, 83, 84, 85
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: ClearRock
+			1: ClearRock
+			2: ClearRock
+			3: ClearRock
 		Palette: well0004.bmp
 	Template@rock-crack-6:
 		Id: 2127
@@ -1495,10 +1495,10 @@ Templates:
 		Frames: 86, 87, 88, 89
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: ClearRock
+			1: ClearRock
+			2: ClearRock
+			3: ClearRock
 		Palette: well0004.bmp
 	Template@rock-crack-7:
 		Id: 2128
@@ -1507,10 +1507,10 @@ Templates:
 		Frames: 90, 91, 92, 93
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: ClearRock
+			1: ClearRock
+			2: ClearRock
+			3: ClearRock
 		Palette: well0004.bmp
 	Template@rock-debris-1:
 		Id: 2129
@@ -1519,7 +1519,7 @@ Templates:
 		Frames: 95
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@rock-debris-2:
 		Id: 2130
@@ -1528,7 +1528,7 @@ Templates:
 		Frames: 96
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@rock-debris-3:
 		Id: 2131
@@ -1537,7 +1537,7 @@ Templates:
 		Frames: 97
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@rock-rock-3x3-1:
 		Id: 2132
@@ -1546,15 +1546,15 @@ Templates:
 		Frames: 98, 99, 100, 101, 102, 103, 104, 105, 106
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: RockRock
+			1: RockRock
+			2: ClearRock
+			3: RockRock
+			4: RockRock
+			5: RockRock
+			6: RockRock
+			7: RockRock
+			8: ClearRock
 		Palette: well0004.bmp
 	Template@rock-debris-4x1:
 		Id: 2133
@@ -1563,10 +1563,10 @@ Templates:
 		Frames: 107, 108, 109, 110
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: RockRock
+			1: RockRock
+			2: RockRock
+			3: ClearRock
 		Palette: well0004.bmp
 	Template@rock-rock-3x3-2:
 		Id: 2134
@@ -1575,15 +1575,15 @@ Templates:
 		Frames: 111, 112, 113, 114, 115, 116, 117, 118, 119
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: RockRock
+			1: RockRock
+			2: RockRock
+			3: RockRock
+			4: RockRock
+			5: RockRock
+			6: RockRock
+			7: RockRock
+			8: RockRock
 		Palette: well0004.bmp
 	Template@rock-crater-2x2-1:
 		Id: 2135
@@ -1592,10 +1592,10 @@ Templates:
 		Frames: 120, 121, 122, 123
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: ClearRock
+			1: ClearRock
+			2: ClearRock
+			3: ClearRock
 		Palette: well0004.bmp
 	Template@rock-crater-2x2-2:
 		Id: 2136
@@ -1604,10 +1604,10 @@ Templates:
 		Frames: 124, 125, 126, 127
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: ClearRock
+			1: ClearRock
+			2: ClearRock
+			3: ClearRock
 		Palette: well0004.bmp
 	Template@rock-caldera-6x6-1:
 		Id: 2137
@@ -1616,42 +1616,42 @@ Templates:
 		Frames: 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
-			16: Clear
-			17: Clear
-			18: Clear
-			19: Clear
-			20: Clear
-			21: Clear
-			22: Clear
-			23: Clear
-			24: Clear
-			25: Clear
-			26: Clear
-			27: Clear
-			28: Clear
-			29: Clear
-			30: Clear
-			31: Clear
-			32: Clear
-			33: Clear
-			34: Clear
-			35: Clear
+			0: ClearRock
+			1: ClearRock
+			2: RockRock
+			3: RockRock
+			4: ClearRock
+			5: ClearRock
+			6: ClearRock
+			7: RockRock
+			8: RockRock
+			9: RockRock
+			10: RockRock
+			11: ClearRock
+			12: RockRock
+			13: RockRock
+			14: RockRock
+			15: RockRock
+			16: RockRock
+			17: RockRock
+			18: RockRock
+			19: RockRock
+			20: RockRock
+			21: RockRock
+			22: RockRock
+			23: ClearRock
+			24: ClearRock
+			25: RockRock
+			26: RockRock
+			27: RockRock
+			28: RockRock
+			29: ClearRock
+			30: ClearRock
+			31: ClearRock
+			32: RockRock
+			33: RockRock
+			34: ClearRock
+			35: ClearRock
 		Palette: well0004.bmp
 	Template@rock-caldera-3x3:
 		Id: 2138
@@ -1660,15 +1660,15 @@ Templates:
 		Frames: 205, 206, 207, 208, 209, 210, 211, 212, 213
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: RockRock
+			1: RockRock
+			2: RockRock
+			3: RockRock
+			4: RockRock
+			5: RockRock
+			6: RockRock
+			7: RockRock
+			8: RockRock
 		Palette: well0004.bmp
 	Template@rock-caldera-6x6-2:
 		Id: 2139
@@ -1677,42 +1677,42 @@ Templates:
 		Frames: 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
-			16: Clear
-			17: Clear
-			18: Clear
-			19: Clear
-			20: Clear
-			21: Clear
-			22: Clear
-			23: Clear
-			24: Clear
-			25: Clear
-			26: Clear
-			27: Clear
-			28: Clear
-			29: Clear
-			30: Clear
-			31: Clear
-			32: Clear
-			33: Clear
-			34: Clear
-			35: Clear
+			0: ClearRock
+			1: ClearRock
+			2: ClearRock
+			3: ClearRock
+			4: ClearRock
+			5: ClearRock
+			6: ClearRock
+			7: RockRock
+			8: RockRock
+			9: RockRock
+			10: RockRock
+			11: ClearRock
+			12: ClearRock
+			13: RockRock
+			14: RockRock
+			15: RockRock
+			16: RockRock
+			17: ClearRock
+			18: ClearRock
+			19: RockRock
+			20: RockRock
+			21: RockRock
+			22: RockRock
+			23: ClearRock
+			24: ClearRock
+			25: ClearRock
+			26: RockRock
+			27: RockRock
+			28: RockRock
+			29: ClearRock
+			30: ClearRock
+			31: ClearRock
+			32: RockRock
+			33: ClearRock
+			34: ClearRock
+			35: ClearRock
 		Palette: well0004.bmp
 	Template@rock-caldera-10x10:
 		Id: 2140
@@ -1721,106 +1721,106 @@ Templates:
 		Frames: 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349
 		Categories: Rock - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
-			16: Clear
-			17: Clear
-			18: Clear
-			19: Clear
-			20: Clear
-			21: Clear
-			22: Clear
-			23: Clear
-			24: Clear
-			25: Clear
-			26: Clear
-			27: Clear
-			28: Clear
-			29: Clear
-			30: Clear
-			31: Clear
-			32: Clear
-			33: Clear
-			34: Clear
-			35: Clear
-			36: Clear
-			37: Clear
-			38: Clear
-			39: Clear
-			40: Clear
-			41: Clear
-			42: Clear
-			43: Clear
-			44: Clear
-			45: Clear
-			46: Clear
-			47: Clear
-			48: Clear
-			49: Clear
-			50: Clear
-			51: Clear
-			52: Clear
-			53: Clear
-			54: Clear
-			55: Clear
-			56: Clear
-			57: Clear
-			58: Clear
-			59: Clear
-			60: Clear
-			61: Clear
-			62: Clear
-			63: Clear
-			64: Clear
-			65: Clear
-			66: Clear
-			67: Clear
-			68: Clear
-			69: Clear
-			70: Clear
-			71: Clear
-			72: Clear
-			73: Clear
-			74: Clear
-			75: Clear
-			76: Clear
-			77: Clear
-			78: Clear
-			79: Clear
-			80: Clear
-			81: Clear
-			82: Clear
-			83: Clear
-			84: Clear
-			85: Clear
-			86: Clear
-			87: Clear
-			88: Clear
-			89: Clear
-			90: Clear
-			91: Clear
-			92: Clear
-			93: Clear
-			94: Clear
-			95: Clear
-			96: Clear
-			97: Clear
-			98: Clear
-			99: Clear
+			0: ClearRock
+			1: ClearRock
+			2: ClearRock
+			3: RockRock
+			4: RockRock
+			5: RockRock
+			6: RockRock
+			7: ClearRock
+			8: ClearRock
+			9: ClearRock
+			10: ClearRock
+			11: ClearRock
+			12: RockRock
+			13: RockRock
+			14: RockRock
+			15: RockRock
+			16: RockRock
+			17: RockRock
+			18: RockRock
+			19: ClearRock
+			20: ClearRock
+			21: RockRock
+			22: RockRock
+			23: RockRock
+			24: RockRock
+			25: RockRock
+			26: RockRock
+			27: RockRock
+			28: RockRock
+			29: ClearRock
+			30: ClearRock
+			31: RockRock
+			32: RockRock
+			33: RockRock
+			34: RockRock
+			35: RockRock
+			36: RockRock
+			37: RockRock
+			38: RockRock
+			39: ClearRock
+			40: RockRock
+			41: RockRock
+			42: RockRock
+			43: RockRock
+			44: RockRock
+			45: RockRock
+			46: RockRock
+			47: RockRock
+			48: RockRock
+			49: ClearRock
+			50: RockRock
+			51: RockRock
+			52: RockRock
+			53: RockRock
+			54: RockRock
+			55: RockRock
+			56: RockRock
+			57: RockRock
+			58: RockRock
+			59: RockRock
+			60: RockRock
+			61: RockRock
+			62: RockRock
+			63: RockRock
+			64: RockRock
+			65: RockRock
+			66: RockRock
+			67: RockRock
+			68: RockRock
+			69: RockRock
+			70: RockRock
+			71: RockRock
+			72: RockRock
+			73: RockRock
+			74: RockRock
+			75: RockRock
+			76: RockRock
+			77: RockRock
+			78: RockRock
+			79: RockRock
+			80: RockRock
+			81: RockRock
+			82: RockRock
+			83: RockRock
+			84: RockRock
+			85: RockRock
+			86: RockRock
+			87: RockRock
+			88: RockRock
+			89: ClearRock
+			90: ClearRock
+			91: ClearRock
+			92: ClearRock
+			93: RockRock
+			94: RockRock
+			95: RockRock
+			96: ClearRock
+			97: ClearRock
+			98: ClearRock
+			99: ClearRock
 		Palette: well0004.bmp
 	Template@rock-crater-1x1-5:
 		Id: 2141
@@ -1829,7 +1829,7 @@ Templates:
 		Frames: 168
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	# Lat tiles 559 - 598 (frames 128 - 167)
 	Template@2142:
@@ -1839,7 +1839,7 @@ Templates:
 		Frames: 128
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2143:
 		Id: 2143
@@ -1848,7 +1848,7 @@ Templates:
 		Frames: 129
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2144:
 		Id: 2144
@@ -1857,7 +1857,7 @@ Templates:
 		Frames: 130
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2145:
 		Id: 2145
@@ -1866,7 +1866,7 @@ Templates:
 		Frames: 131
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2146:
 		Id: 2146
@@ -1875,7 +1875,7 @@ Templates:
 		Frames: 132
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2147:
 		Id: 2147
@@ -1884,7 +1884,7 @@ Templates:
 		Frames: 133
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2148:
 		Id: 2148
@@ -1893,7 +1893,7 @@ Templates:
 		Frames: 134
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2149:
 		Id: 2149
@@ -1902,7 +1902,7 @@ Templates:
 		Frames: 135
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2150:
 		Id: 2150
@@ -1911,7 +1911,7 @@ Templates:
 		Frames: 136
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2151:
 		Id: 2151
@@ -1920,7 +1920,7 @@ Templates:
 		Frames: 137
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2152:
 		Id: 2152
@@ -1929,7 +1929,7 @@ Templates:
 		Frames: 138
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2153:
 		Id: 2153
@@ -1938,7 +1938,7 @@ Templates:
 		Frames: 139
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2154:
 		Id: 2154
@@ -1947,7 +1947,7 @@ Templates:
 		Frames: 140
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2155:
 		Id: 2155
@@ -1956,7 +1956,7 @@ Templates:
 		Frames: 141
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2156:
 		Id: 2156
@@ -1965,7 +1965,7 @@ Templates:
 		Frames: 142
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2157:
 		Id: 2157
@@ -1974,7 +1974,7 @@ Templates:
 		Frames: 143
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2158:
 		Id: 2158
@@ -1983,7 +1983,7 @@ Templates:
 		Frames: 144
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2159:
 		Id: 2159
@@ -1992,7 +1992,7 @@ Templates:
 		Frames: 145
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2160:
 		Id: 2160
@@ -2001,7 +2001,7 @@ Templates:
 		Frames: 146
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2161:
 		Id: 2161
@@ -2010,7 +2010,7 @@ Templates:
 		Frames: 147
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2162:
 		Id: 2162
@@ -2019,7 +2019,7 @@ Templates:
 		Frames: 148
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2163:
 		Id: 2163
@@ -2028,7 +2028,7 @@ Templates:
 		Frames: 149
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2164:
 		Id: 2164
@@ -2037,7 +2037,7 @@ Templates:
 		Frames: 150
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2165:
 		Id: 2165
@@ -2046,7 +2046,7 @@ Templates:
 		Frames: 151
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2166:
 		Id: 2166
@@ -2055,7 +2055,7 @@ Templates:
 		Frames: 152
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2167:
 		Id: 2167
@@ -2064,7 +2064,7 @@ Templates:
 		Frames: 153
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2168:
 		Id: 2168
@@ -2073,7 +2073,7 @@ Templates:
 		Frames: 154
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2169:
 		Id: 2169
@@ -2082,7 +2082,7 @@ Templates:
 		Frames: 155
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2170:
 		Id: 2170
@@ -2091,7 +2091,7 @@ Templates:
 		Frames: 156
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2171:
 		Id: 2171
@@ -2100,7 +2100,7 @@ Templates:
 		Frames: 157
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2172:
 		Id: 2172
@@ -2109,7 +2109,7 @@ Templates:
 		Frames: 158
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2173:
 		Id: 2173
@@ -2118,7 +2118,7 @@ Templates:
 		Frames: 159
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2174:
 		Id: 2174
@@ -2127,7 +2127,7 @@ Templates:
 		Frames: 160
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2175:
 		Id: 2175
@@ -2136,7 +2136,7 @@ Templates:
 		Frames: 161
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2176:
 		Id: 2176
@@ -2145,7 +2145,7 @@ Templates:
 		Frames: 162
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2177:
 		Id: 2177
@@ -2154,7 +2154,7 @@ Templates:
 		Frames: 163
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2178:
 		Id: 2178
@@ -2163,7 +2163,7 @@ Templates:
 		Frames: 164
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2179:
 		Id: 2179
@@ -2172,7 +2172,7 @@ Templates:
 		Frames: 165
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2180:
 		Id: 2180
@@ -2181,7 +2181,7 @@ Templates:
 		Frames: 166
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2181:
 		Id: 2181
@@ -2190,7 +2190,7 @@ Templates:
 		Frames: 167
 		Categories: Rock
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	# smudges - rock 350 - 358
 	Template@2182:
@@ -2200,7 +2200,7 @@ Templates:
 		Frames: 350
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2183:
 		Id: 2183
@@ -2209,7 +2209,7 @@ Templates:
 		Frames: 351
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2184:
 		Id: 2184
@@ -2218,7 +2218,7 @@ Templates:
 		Frames: 352
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2185:
 		Id: 2185
@@ -2227,7 +2227,7 @@ Templates:
 		Frames: 353
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2186:
 		Id: 2186
@@ -2236,7 +2236,7 @@ Templates:
 		Frames: 354
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2187:
 		Id: 2187
@@ -2245,7 +2245,7 @@ Templates:
 		Frames: 355
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2188:
 		Id: 2188
@@ -2254,7 +2254,7 @@ Templates:
 		Frames: 356
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2189:
 		Id: 2189
@@ -2263,7 +2263,7 @@ Templates:
 		Frames: 357
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	Template@2190:
 		Id: 2190
@@ -2272,7 +2272,7 @@ Templates:
 		Frames: 358
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0004.bmp
 	# rock - junk
 	Template@2191:
@@ -2282,7 +2282,7 @@ Templates:
 		Frames: 32
 		Categories: Rock - Resources
 		Tiles:
-			0: Clear
+			0: JunkRock
 		Palette: well0005.bmp
 	Template@2192:
 		Id: 2192
@@ -2291,7 +2291,7 @@ Templates:
 		Frames: 33
 		Categories: Rock - Resources
 		Tiles:
-			0: Clear
+			0: JunkRock
 		Palette: well0005.bmp
 	Template@2193:
 		Id: 2193
@@ -2300,7 +2300,7 @@ Templates:
 		Frames: 34
 		Categories: Rock - Resources
 		Tiles:
-			0: Clear
+			0: JunkRock
 		Palette: well0005.bmp
 	Template@2194:
 		Id: 2194
@@ -2309,7 +2309,7 @@ Templates:
 		Frames: 35
 		Categories: Rock - Resources
 		Tiles:
-			0: Clear
+			0: JunkRock
 		Palette: well0005.bmp
 	Template@2195:
 		Id: 2195
@@ -2318,7 +2318,7 @@ Templates:
 		Frames: 36
 		Categories: Rock - Resources
 		Tiles:
-			0: Clear
+			0: JunkRock
 		Palette: well0005.bmp
 	Template@2196:
 		Id: 2196
@@ -2327,7 +2327,7 @@ Templates:
 		Frames: 37
 		Categories: Rock - Resources
 		Tiles:
-			0: Clear
+			0: JunkRock
 		Palette: well0005.bmp
 	Template@2197:
 		Id: 2197
@@ -2336,7 +2336,7 @@ Templates:
 		Frames: 38
 		Categories: Rock - Resources
 		Tiles:
-			0: Clear
+			0: JunkRock
 		Palette: well0005.bmp
 	Template@2198:
 		Id: 2198
@@ -2345,7 +2345,7 @@ Templates:
 		Frames: 39
 		Categories: Rock - Resources
 		Tiles:
-			0: Clear
+			0: JunkRock
 		Palette: well0005.bmp
 	# rock - debris
 	Template@2199:
@@ -2355,7 +2355,7 @@ Templates:
 		Frames: 88
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: RockRock
 		Palette: well0005.bmp
 	Template@2200:
 		Id: 2200
@@ -2364,7 +2364,7 @@ Templates:
 		Frames: 89
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: RockRock
 		Palette: well0005.bmp
 	Template@2201:
 		Id: 2201
@@ -2373,7 +2373,7 @@ Templates:
 		Frames: 90
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2202:
 		Id: 2202
@@ -2382,7 +2382,7 @@ Templates:
 		Frames: 91
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2203:
 		Id: 2203
@@ -2391,7 +2391,7 @@ Templates:
 		Frames: 92
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2204:
 		Id: 2204
@@ -2400,7 +2400,7 @@ Templates:
 		Frames: 93
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: RockRock
 		Palette: well0005.bmp
 	Template@2205:
 		Id: 2205
@@ -2409,7 +2409,7 @@ Templates:
 		Frames: 94
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: RockRock
 		Palette: well0005.bmp
 	Template@2206:
 		Id: 2206
@@ -2418,7 +2418,7 @@ Templates:
 		Frames: 95
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: RockRock
 		Palette: well0005.bmp
 	Template@2207:
 		Id: 2207
@@ -2427,7 +2427,7 @@ Templates:
 		Frames: 96
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: RockRock
 		Palette: well0005.bmp
 	Template@2208:
 		Id: 2208
@@ -2436,7 +2436,7 @@ Templates:
 		Frames: 97
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: RockRock
 		Palette: well0005.bmp
 	Template@2209:
 		Id: 2209
@@ -2445,7 +2445,7 @@ Templates:
 		Frames: 98
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: RockRock
 		Palette: well0005.bmp
 	Template@2210:
 		Id: 2210
@@ -2454,7 +2454,7 @@ Templates:
 		Frames: 99
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: RockRock
 		Palette: well0005.bmp
 	Template@2211:
 		Id: 2211
@@ -2463,7 +2463,7 @@ Templates:
 		Frames: 100
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: RockRock
 		Palette: well0005.bmp
 	Template@2212:
 		Id: 2212
@@ -2472,7 +2472,7 @@ Templates:
 		Frames: 101
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: RockRock
 		Palette: well0005.bmp
 	Template@2213:
 		Id: 2213
@@ -2481,7 +2481,7 @@ Templates:
 		Frames: 102
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: RockRock
 		Palette: well0005.bmp
 	# combined rock debris
 	Template@2214:
@@ -2491,8 +2491,8 @@ Templates:
 		Frames: 103, 104
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
-			1: Clear
+			0: RockRock
+			1: RockRock
 		Palette: well0005.bmp
 	Template@2215:
 		Id: 2215
@@ -2501,7 +2501,7 @@ Templates:
 		Frames: 105
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
+			0: RockRock
 		Palette: well0005.bmp
 	Template@2216:
 		Id: 2216
@@ -2510,10 +2510,10 @@ Templates:
 		Frames: 106, 107, 108, 109
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: RockRock
+			1: RockRock
+			2: RockRock
+			3: RockRock
 		Palette: well0005.bmp
 	Template@2217:
 		Id: 2217
@@ -2522,10 +2522,10 @@ Templates:
 		Frames: 110, 111, 112, 113
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: RockRock
+			1: RockRock
+			2: RockRock
+			3: RockRock
 		Palette: well0005.bmp
 	Template@2218:
 		Id: 2218
@@ -2534,15 +2534,15 @@ Templates:
 		Frames: 114, 115, 116, 117, 118, 119, 120, 121, 122
 		Categories: Rock - Debris
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: ClearRock
+			1: RockRock
+			2: RockRock
+			3: RockRock
+			4: RockRock
+			5: RockRock
+			6: RockRock
+			7: RockRock
+			8: ClearRock
 		Palette: well0005.bmp
 	# rock - base ground
 	Template@rock-base-ground:
@@ -2553,14 +2553,14 @@ Templates:
 		PickAny: True
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
+			0: ClearRock
+			1: ClearRock
+			2: ClearRock
+			3: ClearRock
+			4: ClearRock
+			5: ClearRock
+			6: ClearRock
+			7: ClearRock
 		Palette: well0005.bmp
 	# pipes - rock (131 - 146)
 	Template@2220:
@@ -2570,7 +2570,7 @@ Templates:
 		Frames: 131
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2221:
 		Id: 2221
@@ -2579,7 +2579,7 @@ Templates:
 		Frames: 132
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2222:
 		Id: 2222
@@ -2588,7 +2588,7 @@ Templates:
 		Frames: 133
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2223:
 		Id: 2223
@@ -2597,7 +2597,7 @@ Templates:
 		Frames: 134
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2224:
 		Id: 2224
@@ -2606,7 +2606,7 @@ Templates:
 		Frames: 135
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2225:
 		Id: 2225
@@ -2615,7 +2615,7 @@ Templates:
 		Frames: 136
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2226:
 		Id: 2226
@@ -2624,7 +2624,7 @@ Templates:
 		Frames: 137
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2227:
 		Id: 2227
@@ -2633,7 +2633,7 @@ Templates:
 		Frames: 138
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2228:
 		Id: 2228
@@ -2642,7 +2642,7 @@ Templates:
 		Frames: 139
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2229:
 		Id: 2229
@@ -2651,7 +2651,7 @@ Templates:
 		Frames: 140
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2230:
 		Id: 2230
@@ -2660,7 +2660,7 @@ Templates:
 		Frames: 141
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2231:
 		Id: 2231
@@ -2669,7 +2669,7 @@ Templates:
 		Frames: 142
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2232:
 		Id: 2232
@@ -2678,7 +2678,7 @@ Templates:
 		Frames: 143
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2233:
 		Id: 2233
@@ -2687,7 +2687,7 @@ Templates:
 		Frames: 144
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2234:
 		Id: 2234
@@ -2696,7 +2696,7 @@ Templates:
 		Frames: 145
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	Template@2235:
 		Id: 2235
@@ -2705,7 +2705,7 @@ Templates:
 		Frames: 146
 		Categories: Rock - Base
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0005.bmp
 	# rock - resources
 	Template@2236:
@@ -2716,12 +2716,12 @@ Templates:
 		PickAny: True
 		Categories: Rock - Resources
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
+			0: RustRock
+			1: RustRock
+			2: RustRock
+			3: RustRock
+			4: RustRock
+			5: RustRock
 		Palette: well0006.bmp
 	Template@2237:
 		Id: 2237
@@ -3164,7 +3164,7 @@ Templates:
 		Frames: 64
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2286:
 		Id: 2286
@@ -3173,7 +3173,7 @@ Templates:
 		Frames: 65
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2287:
 		Id: 2287
@@ -3182,7 +3182,7 @@ Templates:
 		Frames: 66
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2288:
 		Id: 2288
@@ -3191,7 +3191,7 @@ Templates:
 		Frames: 67
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2289:
 		Id: 2289
@@ -3200,7 +3200,7 @@ Templates:
 		Frames: 68
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2290:
 		Id: 2290
@@ -3209,7 +3209,7 @@ Templates:
 		Frames: 69
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2291:
 		Id: 2291
@@ -3218,7 +3218,7 @@ Templates:
 		Frames: 70
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2292:
 		Id: 2292
@@ -3227,7 +3227,7 @@ Templates:
 		Frames: 71
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2293:
 		Id: 2293
@@ -3236,7 +3236,7 @@ Templates:
 		Frames: 72
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2294:
 		Id: 2294
@@ -3245,7 +3245,7 @@ Templates:
 		Frames: 73
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2295:
 		Id: 2295
@@ -3254,7 +3254,7 @@ Templates:
 		Frames: 74
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2296:
 		Id: 2296
@@ -3263,7 +3263,7 @@ Templates:
 		Frames: 75
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2297:
 		Id: 2297
@@ -3272,7 +3272,7 @@ Templates:
 		Frames: 76
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2298:
 		Id: 2298
@@ -3281,7 +3281,7 @@ Templates:
 		Frames: 77
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2299:
 		Id: 2299
@@ -3290,7 +3290,7 @@ Templates:
 		Frames: 78
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2300:
 		Id: 2300
@@ -3299,7 +3299,7 @@ Templates:
 		Frames: 79
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2301:
 		Id: 2301
@@ -3308,7 +3308,7 @@ Templates:
 		Frames: 80
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2302:
 		Id: 2302
@@ -3317,7 +3317,7 @@ Templates:
 		Frames: 81
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2303:
 		Id: 2303
@@ -3326,7 +3326,7 @@ Templates:
 		Frames: 82
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2304:
 		Id: 2304
@@ -3335,7 +3335,7 @@ Templates:
 		Frames: 83
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2305:
 		Id: 2305
@@ -3344,7 +3344,7 @@ Templates:
 		Frames: 84
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2306:
 		Id: 2306
@@ -3353,7 +3353,7 @@ Templates:
 		Frames: 85
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2307:
 		Id: 2307
@@ -3362,7 +3362,7 @@ Templates:
 		Frames: 86
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2308:
 		Id: 2308
@@ -3371,7 +3371,7 @@ Templates:
 		Frames: 87
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2309:
 		Id: 2309
@@ -3380,7 +3380,7 @@ Templates:
 		Frames: 88
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2310:
 		Id: 2310
@@ -3389,7 +3389,7 @@ Templates:
 		Frames: 89
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2311:
 		Id: 2311
@@ -3398,10 +3398,10 @@ Templates:
 		Frames: 90, 91, 92, 93
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
 		Palette: well0008.bmp
 	Template@2312:
 		Id: 2312
@@ -3410,22 +3410,22 @@ Templates:
 		Frames: 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
+			9: ClearSand
+			10: ClearSand
+			11: ClearSand
+			12: ClearSand
+			13: ClearSand
+			14: ClearSand
+			15: ClearSand
 		Palette: well0008.bmp
 	Template@2313:
 		Id: 2313
@@ -3434,9 +3434,9 @@ Templates:
 		Frames: 110, 111, 112
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
 		Palette: well0008.bmp
 	Template@2314:
 		Id: 2314
@@ -3445,10 +3445,10 @@ Templates:
 		Frames: 113, 114, 115, 116
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
 		Palette: well0008.bmp
 	Template@2315:
 		Id: 2315
@@ -3457,14 +3457,14 @@ Templates:
 		Frames: 117, 118, 119, 120, 121, 122, 123, 124
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
 		Palette: well0008.bmp
 	Template@2316:
 		Id: 2316
@@ -3473,10 +3473,10 @@ Templates:
 		Frames: 125, 126, 127, 128
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
 		Palette: well0008.bmp
 	Template@2317:
 		Id: 2317
@@ -3485,9 +3485,9 @@ Templates:
 		Frames: 129, 130, 131
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
 		Palette: well0008.bmp
 	Template@2318:
 		Id: 2318
@@ -3496,10 +3496,10 @@ Templates:
 		Frames: 132, 133, 134, 135
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
 		Palette: well0008.bmp
 	Template@2319:
 		Id: 2319
@@ -3508,14 +3508,14 @@ Templates:
 		Frames: 136, 137, 138, 139, 140, 141, 142, 143
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
 		Palette: well0008.bmp
 	Template@2320:
 		Id: 2320
@@ -3524,10 +3524,10 @@ Templates:
 		Frames: 144, 145, 146, 147
 		Categories: Sand - Features
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-n-1:
 		Id: 2321
@@ -3536,9 +3536,9 @@ Templates:
 		Frames: 148, 149, 150
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-n-2:
 		Id: 2322
@@ -3547,9 +3547,9 @@ Templates:
 		Frames: 151, 152, 153
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-n-3:
 		Id: 2323
@@ -3558,9 +3558,9 @@ Templates:
 		Frames: 154, 155, 156
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-s-1:
 		Id: 2324
@@ -3569,15 +3569,15 @@ Templates:
 		Frames: 157, 158, 159, 160, 161, 162, 163, 164, 165
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-s-2:
 		Id: 2325
@@ -3586,15 +3586,15 @@ Templates:
 		Frames: 166, 167, 168, 169, 170, 171, 172, 173, 174
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-corner-nw:
 		Id: 2326
@@ -3603,24 +3603,24 @@ Templates:
 		Frames: 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
-			16: Clear
-			17: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
+			9: ClearSand
+			10: ClearSand
+			11: ClearSand
+			12: ClearSand
+			13: ClearSand
+			14: ClearSand
+			15: ClearSand
+			16: ClearSand
+			17: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-inner-nw:
 		Id: 2327
@@ -3629,9 +3629,9 @@ Templates:
 		Frames: 193, 194, 195
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-w-1:
 		Id: 2328
@@ -3640,18 +3640,18 @@ Templates:
 		Frames: 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
+			9: ClearSand
+			10: ClearSand
+			11: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-taper-e:
 		Id: 2329
@@ -3660,15 +3660,15 @@ Templates:
 		Frames: 208, 209, 210, 211, 212, 213, 214, 215, 216
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-corner-sw:
 		Id: 2330
@@ -3677,15 +3677,15 @@ Templates:
 		Frames: 217, 218, 219, 220, 221, 222, 223, 224, 225
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-corner-inner-sw:
 		Id: 2331
@@ -3694,15 +3694,15 @@ Templates:
 		Frames: 226, 227, 228, 229, 230, 231, 232, 233, 234
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-corner-se:
 		Id: 2332
@@ -3711,15 +3711,15 @@ Templates:
 		Frames: 235, 236, 237, 238, 239, 240, 241, 242, 243
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-taper-w:
 		Id: 2333
@@ -3728,15 +3728,15 @@ Templates:
 		Frames: 244, 245, 246, 247, 248, 249, 250, 251, 252
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-corner-inner-se:
 		Id: 2334
@@ -3745,15 +3745,15 @@ Templates:
 		Frames: 253, 254, 255, 256, 257, 258, 259, 260, 261
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-e:
 		Id: 2335
@@ -3762,18 +3762,18 @@ Templates:
 		Frames: 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
+			9: ClearSand
+			10: ClearSand
+			11: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-corner-ne:
 		Id: 2336
@@ -3782,24 +3782,24 @@ Templates:
 		Frames: 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
-			9: Clear
-			10: Clear
-			11: Clear
-			12: Clear
-			13: Clear
-			14: Clear
-			15: Clear
-			16: Clear
-			17: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
+			9: ClearSand
+			10: ClearSand
+			11: ClearSand
+			12: ClearSand
+			13: ClearSand
+			14: ClearSand
+			15: ClearSand
+			16: ClearSand
+			17: ClearSand
 		Palette: well0008.bmp
 	Template@sand-cliff-corner-inner-ne:
 		Id: 2337
@@ -3808,9 +3808,9 @@ Templates:
 		Frames: 292, 293, 294
 		Categories: Sand - Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
 		Palette: well0008.bmp
 	Template@sand-rock-3x3-1:
 		Id: 2338
@@ -3819,15 +3819,15 @@ Templates:
 		Frames: 295, 296, 297, 298, 299, 300, 301, 302, 303
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
 		Palette: well0008.bmp
 	Template@sand-rock-3x3-2:
 		Id: 2339
@@ -3836,15 +3836,15 @@ Templates:
 		Frames: 304, 305, 306, 307, 308, 309, 310, 311, 312
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
-			8: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
+			8: ClearSand
 		Palette: well0008.bmp
 	# sand - resources
 	Template@sand-resources:
@@ -3855,12 +3855,12 @@ Templates:
 		PickAny: True
 		Categories: Sand - Resources
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
 		Palette: well0008.bmp
 	# sand - 1x1 debris
 	Template@2341:
@@ -3870,7 +3870,7 @@ Templates:
 		Frames: 319
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2342:
 		Id: 2342
@@ -3879,7 +3879,7 @@ Templates:
 		Frames: 320
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2343:
 		Id: 2343
@@ -3888,7 +3888,7 @@ Templates:
 		Frames: 321
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2344:
 		Id: 2344
@@ -3897,7 +3897,7 @@ Templates:
 		Frames: 322
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2345:
 		Id: 2345
@@ -3906,7 +3906,7 @@ Templates:
 		Frames: 323
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2346:
 		Id: 2346
@@ -3915,7 +3915,7 @@ Templates:
 		Frames: 324
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	# sand - more rocks
 	Template@sand-rock-2x2-1:
@@ -3925,10 +3925,10 @@ Templates:
 		Frames: 325, 326, 327, 328
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
 		Palette: well0008.bmp
 	Template@sand-rock-2x2-2:
 		Id: 2348
@@ -3937,10 +3937,10 @@ Templates:
 		Frames: 329, 330, 331, 332
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
 		Palette: well0008.bmp
 	Template@sand-rock-2x2-3:
 		Id: 2349
@@ -3949,10 +3949,10 @@ Templates:
 		Frames: 333, 334, 335, 336
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
 		Palette: well0008.bmp
 	Template@sand-debris-2x2:
 		Id: 2350
@@ -3961,10 +3961,10 @@ Templates:
 		Frames: 337, 338, 339, 340
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
 		Palette: well0008.bmp
 	Template@2351:
 		Id: 2351
@@ -3973,7 +3973,7 @@ Templates:
 		Frames: 341
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2352:
 		Id: 2352
@@ -3982,7 +3982,7 @@ Templates:
 		Frames: 342
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2353:
 		Id: 2353
@@ -3991,7 +3991,7 @@ Templates:
 		Frames: 343
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2354:
 		Id: 2354
@@ -4000,7 +4000,7 @@ Templates:
 		Frames: 344
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2355:
 		Id: 2355
@@ -4009,7 +4009,7 @@ Templates:
 		Frames: 345
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	Template@2356:
 		Id: 2356
@@ -4018,7 +4018,7 @@ Templates:
 		Frames: 346
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0008.bmp
 	# sand - junk
 	Template@2357:
@@ -4028,7 +4028,7 @@ Templates:
 		Frames: 32
 		Categories: Sand - Resources
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2358:
 		Id: 2358
@@ -4037,7 +4037,7 @@ Templates:
 		Frames: 33
 		Categories: Sand - Resources
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2359:
 		Id: 2359
@@ -4046,7 +4046,7 @@ Templates:
 		Frames: 34
 		Categories: Sand - Resources
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2360:
 		Id: 2360
@@ -4055,7 +4055,7 @@ Templates:
 		Frames: 35
 		Categories: Sand - Resources
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2361:
 		Id: 2361
@@ -4064,7 +4064,7 @@ Templates:
 		Frames: 36
 		Categories: Sand - Resources
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2362:
 		Id: 2362
@@ -4073,7 +4073,7 @@ Templates:
 		Frames: 37
 		Categories: Sand - Resources
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2363:
 		Id: 2363
@@ -4082,7 +4082,7 @@ Templates:
 		Frames: 38
 		Categories: Sand - Resources
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2364:
 		Id: 2364
@@ -4091,7 +4091,7 @@ Templates:
 		Frames: 39
 		Categories: Sand - Resources
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	# sand - more 1x1 debris (88-103)
 	Template@2365:
@@ -4101,7 +4101,7 @@ Templates:
 		Frames: 88
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2366:
 		Id: 2366
@@ -4110,7 +4110,7 @@ Templates:
 		Frames: 89
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2367:
 		Id: 2367
@@ -4119,7 +4119,7 @@ Templates:
 		Frames: 90
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2368:
 		Id: 2368
@@ -4128,7 +4128,7 @@ Templates:
 		Frames: 91
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2369:
 		Id: 2369
@@ -4137,7 +4137,7 @@ Templates:
 		Frames: 92
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2370:
 		Id: 2370
@@ -4146,7 +4146,7 @@ Templates:
 		Frames: 93
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2371:
 		Id: 2371
@@ -4155,7 +4155,7 @@ Templates:
 		Frames: 94
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2372:
 		Id: 2372
@@ -4164,7 +4164,7 @@ Templates:
 		Frames: 95
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2373:
 		Id: 2373
@@ -4173,7 +4173,7 @@ Templates:
 		Frames: 96
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2374:
 		Id: 2374
@@ -4182,7 +4182,7 @@ Templates:
 		Frames: 97
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2375:
 		Id: 2375
@@ -4191,7 +4191,7 @@ Templates:
 		Frames: 98
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2376:
 		Id: 2376
@@ -4200,7 +4200,7 @@ Templates:
 		Frames: 99
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2377:
 		Id: 2377
@@ -4209,7 +4209,7 @@ Templates:
 		Frames: 100
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2378:
 		Id: 2378
@@ -4218,7 +4218,7 @@ Templates:
 		Frames: 101
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2379:
 		Id: 2379
@@ -4227,7 +4227,7 @@ Templates:
 		Frames: 102
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2380:
 		Id: 2380
@@ -4236,7 +4236,7 @@ Templates:
 		Frames: 103
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2381:
 		Id: 2381
@@ -4245,14 +4245,14 @@ Templates:
 		Frames: 104, 105, 106, 107, 108, 109, 110, 111
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
 		Palette: well0009.bmp
 	Template@2382:
 		Id: 2382
@@ -4261,7 +4261,7 @@ Templates:
 		Frames: 112
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2383:
 		Id: 2383
@@ -4270,10 +4270,10 @@ Templates:
 		Frames: 113, 114, 115, 116
 		Categories: Sand - Debris
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
 		Palette: well0009.bmp
 	# sand - base
 	Template@2384:
@@ -4284,14 +4284,14 @@ Templates:
 		PickAny: True
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
-			1: Clear
-			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
-			6: Clear
-			7: Clear
+			0: ClearSand
+			1: ClearSand
+			2: ClearSand
+			3: ClearSand
+			4: ClearSand
+			5: ClearSand
+			6: ClearSand
+			7: ClearSand
 		Palette: well0009.bmp
 	# sand - pipes
 	Template@2385:
@@ -4301,7 +4301,7 @@ Templates:
 		Frames: 125
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2386:
 		Id: 2386
@@ -4310,7 +4310,7 @@ Templates:
 		Frames: 126
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2387:
 		Id: 2387
@@ -4319,7 +4319,7 @@ Templates:
 		Frames: 127
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2388:
 		Id: 2388
@@ -4328,7 +4328,7 @@ Templates:
 		Frames: 128
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2389:
 		Id: 2389
@@ -4337,7 +4337,7 @@ Templates:
 		Frames: 129
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2390:
 		Id: 2390
@@ -4346,7 +4346,7 @@ Templates:
 		Frames: 130
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2391:
 		Id: 2391
@@ -4355,7 +4355,7 @@ Templates:
 		Frames: 131
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2392:
 		Id: 2392
@@ -4364,7 +4364,7 @@ Templates:
 		Frames: 132
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2393:
 		Id: 2393
@@ -4373,7 +4373,7 @@ Templates:
 		Frames: 133
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2394:
 		Id: 2394
@@ -4382,7 +4382,7 @@ Templates:
 		Frames: 134
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2395:
 		Id: 2395
@@ -4391,7 +4391,7 @@ Templates:
 		Frames: 135
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2396:
 		Id: 2396
@@ -4400,7 +4400,7 @@ Templates:
 		Frames: 136
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2397:
 		Id: 2397
@@ -4409,7 +4409,7 @@ Templates:
 		Frames: 137
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2398:
 		Id: 2398
@@ -4418,7 +4418,7 @@ Templates:
 		Frames: 138
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2399:
 		Id: 2399
@@ -4427,7 +4427,7 @@ Templates:
 		Frames: 139
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2400:
 		Id: 2400
@@ -4436,7 +4436,7 @@ Templates:
 		Frames: 140
 		Categories: Sand - Base
 		Tiles:
-			0: Clear
+			0: ClearSand
 		Palette: well0009.bmp
 	Template@2401:
 		Id: 2401
