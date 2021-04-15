@@ -22,6 +22,7 @@ Packages:
 	~voices.zip
 	openop2|bits
 	openop2|uibits
+	openop2|maps-import
 
 MapFolders:
 	openop2|maps: System
@@ -45,7 +46,6 @@ Sequences:
 
 TileSets:
 	openop2|tilesets/default.yaml
-	openop2|tilesets/raw.yaml
 
 Weapons:
 

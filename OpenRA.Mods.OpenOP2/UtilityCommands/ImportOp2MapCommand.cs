@@ -108,7 +108,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				var width = 1 << lgTileWidth; // Calculate map width
 				var height = newHeight;
 
-				map = new Map(modData, modData.DefaultTileSets["raw"], width + 2, (int)height + 2)
+				map = new Map(modData, modData.DefaultTileSets["default"], width + 2, (int)height + 2)
 				{
 					Title = Path.GetFileNameWithoutExtension(filename),
 					Author = "OpenOP2",
