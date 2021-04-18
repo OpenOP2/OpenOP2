@@ -26,6 +26,12 @@ allyrepair:
 	repair:
 
 wall-mud:
+	icon:
+		Length: 1
+		Combine:
+			well0002.bmp: single-segment-ew
+				Frames: 15
+				Length: 1
 	idle:
 		Length: 16
 		Combine:

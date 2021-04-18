@@ -40,7 +40,7 @@ wall-mud:
 	Buildable:
 		Queue: Defense
 		BuildPaletteOrder: 30
-		Prerequisites: fact, ~techlevel.medium
+		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
 	Valued:
 		Cost: 200
