@@ -7,35 +7,39 @@ General:
 Terrain:
 	TerrainType@ClearMud: # Clear as mud!
 		Type: Clear
-		Color: 997E6E
+		Color: 756B58
 		TargetTypes: Ground
 	TerrainType@ClearSand:
 		Type: ClearSand
-		Color: EF8D53
+		Color: 92500F
 		TargetTypes: Ground
 	TerrainType@ClearRock:
 		Type: ClearRock
-		Color: 757A75
+		Color: 42413C
 		TargetTypes: Ground
 	TerrainType@ClearRock2:
 		Type: ClearRock2
-		Color: 5A5A5A
+		Color: 3B3B3A
 		TargetTypes: Ground
+	TerrainType@Wall:
+		Type: Wall
+		Color: 353535
+		TargetTypes: Wall
 	TerrainType@Lava:
 		Type: Lava
 		Color: EF3108
 		TargetTypes: Lava
 	TerrainType@RockMud:
 		Type: RockMud
-		Color: 423931
+		Color: 564F41
 		TargetTypes: Rock
 	TerrainType@RockSand: # All she wanna do is party all night
 		Type: RockSand
-		Color: 632910
+		Color: 723D0C
 		TargetTypes: Rock
 	TerrainType@RockRock:
 		Type: RockRock
-		Color: 292918
+		Color: 282828
 		TargetTypes: Rock
 	TerrainType@Junk:
 		Type: Junk
@@ -3599,7 +3603,7 @@ Templates:
 			6: RockSand
 			7: RockSand
 			8: RockSand
-		Palette: well0008.bmps
+		Palette: well0008.bmp
 	Template@sand-cliff-corner-nw:
 		Id: 2326
 		Images: well0008.bmp
@@ -16832,7 +16836,7 @@ Templates:
 		Frames: 64
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1271:
 		Id: 1271
@@ -16886,7 +16890,7 @@ Templates:
 		Frames: 70
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1277:
 		Id: 1277
@@ -16895,7 +16899,7 @@ Templates:
 		Frames: 71
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1278:
 		Id: 1278
@@ -16904,7 +16908,7 @@ Templates:
 		Frames: 72
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1279:
 		Id: 1279
@@ -16922,7 +16926,7 @@ Templates:
 		Frames: 74
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1281:
 		Id: 1281
@@ -16940,7 +16944,7 @@ Templates:
 		Frames: 76
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1283:
 		Id: 1283
@@ -17003,7 +17007,7 @@ Templates:
 		Frames: 83
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1290:
 		Id: 1290
@@ -17057,7 +17061,7 @@ Templates:
 		Frames: 89
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1296:
 		Id: 1296
@@ -17066,7 +17070,7 @@ Templates:
 		Frames: 90
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1297:
 		Id: 1297
@@ -17075,7 +17079,7 @@ Templates:
 		Frames: 91
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1298:
 		Id: 1298
@@ -17084,7 +17088,7 @@ Templates:
 		Frames: 92
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1299:
 		Id: 1299
@@ -17093,7 +17097,7 @@ Templates:
 		Frames: 93
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1300:
 		Id: 1300
@@ -17102,7 +17106,7 @@ Templates:
 		Frames: 94
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1301:
 		Id: 1301
@@ -17111,7 +17115,7 @@ Templates:
 		Frames: 95
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1302:
 		Id: 1302
@@ -17120,7 +17124,7 @@ Templates:
 		Frames: 96
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1303:
 		Id: 1303
@@ -17129,7 +17133,7 @@ Templates:
 		Frames: 97
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1304:
 		Id: 1304
@@ -17138,7 +17142,7 @@ Templates:
 		Frames: 98
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1305:
 		Id: 1305
@@ -17165,7 +17169,7 @@ Templates:
 		Frames: 101
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1308:
 		Id: 1308
@@ -17174,7 +17178,7 @@ Templates:
 		Frames: 102
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1309:
 		Id: 1309
@@ -17201,7 +17205,7 @@ Templates:
 		Frames: 105
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1312:
 		Id: 1312
@@ -17210,7 +17214,7 @@ Templates:
 		Frames: 106
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1313:
 		Id: 1313
@@ -17219,7 +17223,7 @@ Templates:
 		Frames: 107
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1314:
 		Id: 1314
@@ -17228,7 +17232,7 @@ Templates:
 		Frames: 108
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1315:
 		Id: 1315
@@ -17237,7 +17241,7 @@ Templates:
 		Frames: 109
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1316:
 		Id: 1316
@@ -17246,7 +17250,7 @@ Templates:
 		Frames: 110
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1317:
 		Id: 1317
@@ -17255,7 +17259,7 @@ Templates:
 		Frames: 111
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1318:
 		Id: 1318
@@ -17264,7 +17268,7 @@ Templates:
 		Frames: 112
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1319:
 		Id: 1319
@@ -17273,7 +17277,7 @@ Templates:
 		Frames: 113
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1320:
 		Id: 1320
@@ -17282,7 +17286,7 @@ Templates:
 		Frames: 114
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1321:
 		Id: 1321
@@ -17291,7 +17295,7 @@ Templates:
 		Frames: 115
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1322:
 		Id: 1322
@@ -17300,7 +17304,7 @@ Templates:
 		Frames: 116
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1323:
 		Id: 1323
@@ -17309,7 +17313,7 @@ Templates:
 		Frames: 117
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1324:
 		Id: 1324
@@ -17327,7 +17331,7 @@ Templates:
 		Frames: 119
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1326:
 		Id: 1326
@@ -17336,7 +17340,7 @@ Templates:
 		Frames: 120
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1327:
 		Id: 1327
@@ -17345,7 +17349,7 @@ Templates:
 		Frames: 121
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1328:
 		Id: 1328
@@ -17354,7 +17358,7 @@ Templates:
 		Frames: 122
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1329:
 		Id: 1329
@@ -17363,7 +17367,7 @@ Templates:
 		Frames: 123
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1330:
 		Id: 1330
@@ -17381,7 +17385,7 @@ Templates:
 		Frames: 125
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1332:
 		Id: 1332
@@ -17390,7 +17394,7 @@ Templates:
 		Frames: 126
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1333:
 		Id: 1333
@@ -17399,7 +17403,7 @@ Templates:
 		Frames: 127
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1334:
 		Id: 1334
@@ -17417,7 +17421,7 @@ Templates:
 		Frames: 129
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1336:
 		Id: 1336
@@ -17426,7 +17430,7 @@ Templates:
 		Frames: 130
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1337:
 		Id: 1337
@@ -17435,7 +17439,7 @@ Templates:
 		Frames: 131
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1338:
 		Id: 1338
@@ -17444,7 +17448,7 @@ Templates:
 		Frames: 132
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1339:
 		Id: 1339
@@ -17462,7 +17466,7 @@ Templates:
 		Frames: 134
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1341:
 		Id: 1341
@@ -17471,7 +17475,7 @@ Templates:
 		Frames: 135
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1342:
 		Id: 1342
@@ -17489,7 +17493,7 @@ Templates:
 		Frames: 137
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1344:
 		Id: 1344
@@ -17498,7 +17502,7 @@ Templates:
 		Frames: 138
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1345:
 		Id: 1345
@@ -17507,7 +17511,7 @@ Templates:
 		Frames: 139
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1346:
 		Id: 1346
@@ -17516,7 +17520,7 @@ Templates:
 		Frames: 140
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1347:
 		Id: 1347
@@ -17525,7 +17529,7 @@ Templates:
 		Frames: 141
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1348:
 		Id: 1348
@@ -17534,7 +17538,7 @@ Templates:
 		Frames: 142
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1349:
 		Id: 1349
@@ -17552,7 +17556,7 @@ Templates:
 		Frames: 144
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1351:
 		Id: 1351
@@ -17561,7 +17565,7 @@ Templates:
 		Frames: 145
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1352:
 		Id: 1352
@@ -17570,7 +17574,7 @@ Templates:
 		Frames: 146
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1353:
 		Id: 1353
@@ -17579,7 +17583,7 @@ Templates:
 		Frames: 147
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1354:
 		Id: 1354
@@ -17588,7 +17592,7 @@ Templates:
 		Frames: 148
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1355:
 		Id: 1355
@@ -17597,7 +17601,7 @@ Templates:
 		Frames: 149
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1356:
 		Id: 1356
@@ -17606,7 +17610,7 @@ Templates:
 		Frames: 150
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1357:
 		Id: 1357
@@ -17615,7 +17619,7 @@ Templates:
 		Frames: 151
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1358:
 		Id: 1358
@@ -17624,7 +17628,7 @@ Templates:
 		Frames: 152
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1359:
 		Id: 1359
@@ -17633,7 +17637,7 @@ Templates:
 		Frames: 153
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1360:
 		Id: 1360
@@ -17642,7 +17646,7 @@ Templates:
 		Frames: 154
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1361:
 		Id: 1361
@@ -17651,7 +17655,7 @@ Templates:
 		Frames: 155
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1362:
 		Id: 1362
@@ -17660,7 +17664,7 @@ Templates:
 		Frames: 156
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1363:
 		Id: 1363
@@ -17669,7 +17673,7 @@ Templates:
 		Frames: 157
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1364:
 		Id: 1364
@@ -17678,7 +17682,7 @@ Templates:
 		Frames: 158
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1365:
 		Id: 1365
@@ -17687,7 +17691,7 @@ Templates:
 		Frames: 159
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1366:
 		Id: 1366
@@ -17696,7 +17700,7 @@ Templates:
 		Frames: 160
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1367:
 		Id: 1367
@@ -17705,7 +17709,7 @@ Templates:
 		Frames: 161
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1368:
 		Id: 1368
@@ -17714,7 +17718,7 @@ Templates:
 		Frames: 162
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1369:
 		Id: 1369
@@ -17723,7 +17727,7 @@ Templates:
 		Frames: 163
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1370:
 		Id: 1370
@@ -17732,7 +17736,7 @@ Templates:
 		Frames: 164
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1371:
 		Id: 1371
@@ -17741,7 +17745,7 @@ Templates:
 		Frames: 165
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1372:
 		Id: 1372
@@ -17750,7 +17754,7 @@ Templates:
 		Frames: 166
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1373:
 		Id: 1373
@@ -17759,7 +17763,7 @@ Templates:
 		Frames: 167
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1374:
 		Id: 1374
@@ -17768,7 +17772,7 @@ Templates:
 		Frames: 168
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1375:
 		Id: 1375
@@ -17777,7 +17781,7 @@ Templates:
 		Frames: 169
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1376:
 		Id: 1376
@@ -17786,7 +17790,7 @@ Templates:
 		Frames: 170
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1377:
 		Id: 1377
@@ -17795,7 +17799,7 @@ Templates:
 		Frames: 171
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1378:
 		Id: 1378
@@ -17804,7 +17808,7 @@ Templates:
 		Frames: 172
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1379:
 		Id: 1379
@@ -17813,7 +17817,7 @@ Templates:
 		Frames: 173
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1380:
 		Id: 1380
@@ -17822,7 +17826,7 @@ Templates:
 		Frames: 174
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1381:
 		Id: 1381
@@ -17840,7 +17844,7 @@ Templates:
 		Frames: 176
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1383:
 		Id: 1383
@@ -17849,7 +17853,7 @@ Templates:
 		Frames: 177
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1384:
 		Id: 1384
@@ -17858,7 +17862,7 @@ Templates:
 		Frames: 178
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1385:
 		Id: 1385
@@ -17867,7 +17871,7 @@ Templates:
 		Frames: 179
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1386:
 		Id: 1386
@@ -17885,7 +17889,7 @@ Templates:
 		Frames: 181
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1388:
 		Id: 1388
@@ -17894,7 +17898,7 @@ Templates:
 		Frames: 182
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1389:
 		Id: 1389
@@ -17912,7 +17916,7 @@ Templates:
 		Frames: 184
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1391:
 		Id: 1391
@@ -17921,7 +17925,7 @@ Templates:
 		Frames: 185
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1392:
 		Id: 1392
@@ -17948,7 +17952,7 @@ Templates:
 		Frames: 188
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1395:
 		Id: 1395
@@ -17957,7 +17961,7 @@ Templates:
 		Frames: 189
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1396:
 		Id: 1396
@@ -17975,7 +17979,7 @@ Templates:
 		Frames: 191
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1398:
 		Id: 1398
@@ -17984,7 +17988,7 @@ Templates:
 		Frames: 192
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1399:
 		Id: 1399
@@ -17993,7 +17997,7 @@ Templates:
 		Frames: 193
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1400:
 		Id: 1400
@@ -18002,7 +18006,7 @@ Templates:
 		Frames: 194
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1401:
 		Id: 1401
@@ -18011,7 +18015,7 @@ Templates:
 		Frames: 195
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1402:
 		Id: 1402
@@ -18020,7 +18024,7 @@ Templates:
 		Frames: 196
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1403:
 		Id: 1403
@@ -18029,7 +18033,7 @@ Templates:
 		Frames: 197
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1404:
 		Id: 1404
@@ -18038,7 +18042,7 @@ Templates:
 		Frames: 198
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1405:
 		Id: 1405
@@ -18047,7 +18051,7 @@ Templates:
 		Frames: 199
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1406:
 		Id: 1406
@@ -18056,7 +18060,7 @@ Templates:
 		Frames: 200
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1407:
 		Id: 1407
@@ -18065,7 +18069,7 @@ Templates:
 		Frames: 201
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1408:
 		Id: 1408
@@ -18074,7 +18078,7 @@ Templates:
 		Frames: 202
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1409:
 		Id: 1409
@@ -18083,7 +18087,7 @@ Templates:
 		Frames: 203
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1410:
 		Id: 1410
@@ -18092,7 +18096,7 @@ Templates:
 		Frames: 204
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1411:
 		Id: 1411
@@ -18101,7 +18105,7 @@ Templates:
 		Frames: 205
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1412:
 		Id: 1412
@@ -18110,7 +18114,7 @@ Templates:
 		Frames: 206
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1413:
 		Id: 1413
@@ -18119,7 +18123,7 @@ Templates:
 		Frames: 207
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1414:
 		Id: 1414
@@ -18128,7 +18132,7 @@ Templates:
 		Frames: 208
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1415:
 		Id: 1415
@@ -18137,7 +18141,7 @@ Templates:
 		Frames: 209
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1416:
 		Id: 1416
@@ -18146,7 +18150,7 @@ Templates:
 		Frames: 210
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1417:
 		Id: 1417
@@ -18155,7 +18159,7 @@ Templates:
 		Frames: 211
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1418:
 		Id: 1418
@@ -18164,7 +18168,7 @@ Templates:
 		Frames: 212
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1419:
 		Id: 1419
@@ -18173,7 +18177,7 @@ Templates:
 		Frames: 213
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1420:
 		Id: 1420
@@ -18182,7 +18186,7 @@ Templates:
 		Frames: 214
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1421:
 		Id: 1421
@@ -18191,7 +18195,7 @@ Templates:
 		Frames: 215
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1422:
 		Id: 1422
@@ -18209,7 +18213,7 @@ Templates:
 		Frames: 217
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1424:
 		Id: 1424
@@ -18218,7 +18222,7 @@ Templates:
 		Frames: 218
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1425:
 		Id: 1425
@@ -18227,7 +18231,7 @@ Templates:
 		Frames: 219
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1426:
 		Id: 1426
@@ -18245,7 +18249,7 @@ Templates:
 		Frames: 221
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1428:
 		Id: 1428
@@ -18254,7 +18258,7 @@ Templates:
 		Frames: 222
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1429:
 		Id: 1429
@@ -18281,7 +18285,7 @@ Templates:
 		Frames: 225
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1432:
 		Id: 1432
@@ -18290,7 +18294,7 @@ Templates:
 		Frames: 226
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1433:
 		Id: 1433
@@ -18299,7 +18303,7 @@ Templates:
 		Frames: 227
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1434:
 		Id: 1434
@@ -18308,7 +18312,7 @@ Templates:
 		Frames: 228
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1435:
 		Id: 1435
@@ -18317,7 +18321,7 @@ Templates:
 		Frames: 229
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1436:
 		Id: 1436
@@ -18326,7 +18330,7 @@ Templates:
 		Frames: 230
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1437:
 		Id: 1437
@@ -18335,7 +18339,7 @@ Templates:
 		Frames: 231
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1438:
 		Id: 1438
@@ -18344,7 +18348,7 @@ Templates:
 		Frames: 232
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1439:
 		Id: 1439
@@ -18353,7 +18357,7 @@ Templates:
 		Frames: 233
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1440:
 		Id: 1440
@@ -18362,7 +18366,7 @@ Templates:
 		Frames: 234
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1441:
 		Id: 1441
@@ -18371,7 +18375,7 @@ Templates:
 		Frames: 235
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1442:
 		Id: 1442
@@ -18380,7 +18384,7 @@ Templates:
 		Frames: 236
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1443:
 		Id: 1443
@@ -18389,7 +18393,7 @@ Templates:
 		Frames: 237
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1444:
 		Id: 1444
@@ -18398,7 +18402,7 @@ Templates:
 		Frames: 238
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1445:
 		Id: 1445
@@ -18407,7 +18411,7 @@ Templates:
 		Frames: 239
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1446:
 		Id: 1446
@@ -18425,7 +18429,7 @@ Templates:
 		Frames: 241
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1448:
 		Id: 1448
@@ -18452,7 +18456,7 @@ Templates:
 		Frames: 244
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1451:
 		Id: 1451
@@ -18461,7 +18465,7 @@ Templates:
 		Frames: 245
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1452:
 		Id: 1452
@@ -18470,7 +18474,7 @@ Templates:
 		Frames: 246
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1453:
 		Id: 1453
@@ -18479,7 +18483,7 @@ Templates:
 		Frames: 247
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1454:
 		Id: 1454
@@ -18488,7 +18492,7 @@ Templates:
 		Frames: 248
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1455:
 		Id: 1455
@@ -18497,7 +18501,7 @@ Templates:
 		Frames: 249
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1456:
 		Id: 1456
@@ -18515,7 +18519,7 @@ Templates:
 		Frames: 251
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1458:
 		Id: 1458
@@ -18524,7 +18528,7 @@ Templates:
 		Frames: 252
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1459:
 		Id: 1459
@@ -18542,7 +18546,7 @@ Templates:
 		Frames: 254
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1461:
 		Id: 1461
@@ -18551,7 +18555,7 @@ Templates:
 		Frames: 255
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1462:
 		Id: 1462
@@ -18569,7 +18573,7 @@ Templates:
 		Frames: 257
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1464:
 		Id: 1464
@@ -18578,7 +18582,7 @@ Templates:
 		Frames: 258
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1465:
 		Id: 1465
@@ -18587,7 +18591,7 @@ Templates:
 		Frames: 259
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1466:
 		Id: 1466
@@ -18596,7 +18600,7 @@ Templates:
 		Frames: 260
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1467:
 		Id: 1467
@@ -18605,7 +18609,7 @@ Templates:
 		Frames: 261
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1468:
 		Id: 1468
@@ -18614,7 +18618,7 @@ Templates:
 		Frames: 262
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1469:
 		Id: 1469
@@ -18623,7 +18627,7 @@ Templates:
 		Frames: 263
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1470:
 		Id: 1470
@@ -18632,7 +18636,7 @@ Templates:
 		Frames: 264
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1471:
 		Id: 1471
@@ -18641,7 +18645,7 @@ Templates:
 		Frames: 265
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1472:
 		Id: 1472
@@ -18650,7 +18654,7 @@ Templates:
 		Frames: 266
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1473:
 		Id: 1473
@@ -18659,7 +18663,7 @@ Templates:
 		Frames: 267
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1474:
 		Id: 1474
@@ -18668,7 +18672,7 @@ Templates:
 		Frames: 268
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1475:
 		Id: 1475
@@ -18677,7 +18681,7 @@ Templates:
 		Frames: 269
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1476:
 		Id: 1476
@@ -18686,7 +18690,7 @@ Templates:
 		Frames: 270
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1477:
 		Id: 1477
@@ -18695,7 +18699,7 @@ Templates:
 		Frames: 271
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1478:
 		Id: 1478
@@ -18704,7 +18708,7 @@ Templates:
 		Frames: 272
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1479:
 		Id: 1479
@@ -18713,7 +18717,7 @@ Templates:
 		Frames: 273
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1480:
 		Id: 1480
@@ -18722,7 +18726,7 @@ Templates:
 		Frames: 274
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1481:
 		Id: 1481
@@ -18731,7 +18735,7 @@ Templates:
 		Frames: 275
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1482:
 		Id: 1482
@@ -18758,7 +18762,7 @@ Templates:
 		Frames: 278
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1485:
 		Id: 1485
@@ -18767,7 +18771,7 @@ Templates:
 		Frames: 279
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1486:
 		Id: 1486
@@ -18785,7 +18789,7 @@ Templates:
 		Frames: 281
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1488:
 		Id: 1488
@@ -18794,7 +18798,7 @@ Templates:
 		Frames: 282
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1489:
 		Id: 1489
@@ -18803,7 +18807,7 @@ Templates:
 		Frames: 283
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1490:
 		Id: 1490
@@ -18812,7 +18816,7 @@ Templates:
 		Frames: 284
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1491:
 		Id: 1491
@@ -18821,7 +18825,7 @@ Templates:
 		Frames: 285
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1492:
 		Id: 1492
@@ -18830,7 +18834,7 @@ Templates:
 		Frames: 286
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1493:
 		Id: 1493
@@ -18839,7 +18843,7 @@ Templates:
 		Frames: 287
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1494:
 		Id: 1494
@@ -18848,7 +18852,7 @@ Templates:
 		Frames: 288
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1495:
 		Id: 1495
@@ -18857,7 +18861,7 @@ Templates:
 		Frames: 289
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1496:
 		Id: 1496
@@ -18866,7 +18870,7 @@ Templates:
 		Frames: 290
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1497:
 		Id: 1497
@@ -18884,7 +18888,7 @@ Templates:
 		Frames: 292
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1499:
 		Id: 1499
@@ -18893,7 +18897,7 @@ Templates:
 		Frames: 293
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1500:
 		Id: 1500
@@ -18902,7 +18906,7 @@ Templates:
 		Frames: 294
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1501:
 		Id: 1501
@@ -18911,7 +18915,7 @@ Templates:
 		Frames: 295
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1502:
 		Id: 1502
@@ -18920,7 +18924,7 @@ Templates:
 		Frames: 296
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1503:
 		Id: 1503
@@ -18938,7 +18942,7 @@ Templates:
 		Frames: 298
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1505:
 		Id: 1505
@@ -18947,7 +18951,7 @@ Templates:
 		Frames: 299
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1506:
 		Id: 1506
@@ -18956,7 +18960,7 @@ Templates:
 		Frames: 300
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1507:
 		Id: 1507
@@ -18965,7 +18969,7 @@ Templates:
 		Frames: 301
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1508:
 		Id: 1508
@@ -18974,7 +18978,7 @@ Templates:
 		Frames: 302
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1509:
 		Id: 1509
@@ -18983,7 +18987,7 @@ Templates:
 		Frames: 303
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1510:
 		Id: 1510
@@ -18992,7 +18996,7 @@ Templates:
 		Frames: 304
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1511:
 		Id: 1511
@@ -19001,7 +19005,7 @@ Templates:
 		Frames: 305
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1512:
 		Id: 1512
@@ -19010,7 +19014,7 @@ Templates:
 		Frames: 306
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1513:
 		Id: 1513
@@ -19019,7 +19023,7 @@ Templates:
 		Frames: 307
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1514:
 		Id: 1514
@@ -19028,7 +19032,7 @@ Templates:
 		Frames: 308
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1515:
 		Id: 1515
@@ -19037,7 +19041,7 @@ Templates:
 		Frames: 309
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1516:
 		Id: 1516
@@ -19046,7 +19050,7 @@ Templates:
 		Frames: 310
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1517:
 		Id: 1517
@@ -19055,7 +19059,7 @@ Templates:
 		Frames: 311
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1518:
 		Id: 1518
@@ -19064,7 +19068,7 @@ Templates:
 		Frames: 312
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1519:
 		Id: 1519
@@ -19073,7 +19077,7 @@ Templates:
 		Frames: 313
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: Rust
 		Palette: well0008.bmp
 	Template@1520:
 		Id: 1520
@@ -19082,7 +19086,7 @@ Templates:
 		Frames: 314
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: Rust
 		Palette: well0008.bmp
 	Template@1521:
 		Id: 1521
@@ -19091,7 +19095,7 @@ Templates:
 		Frames: 315
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: Rust
 		Palette: well0008.bmp
 	Template@1522:
 		Id: 1522
@@ -19100,7 +19104,7 @@ Templates:
 		Frames: 316
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: Rust
 		Palette: well0008.bmp
 	Template@1523:
 		Id: 1523
@@ -19109,7 +19113,7 @@ Templates:
 		Frames: 317
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: Rust
 		Palette: well0008.bmp
 	Template@1524:
 		Id: 1524
@@ -19118,7 +19122,7 @@ Templates:
 		Frames: 318
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: Rust
 		Palette: well0008.bmp
 	Template@1525:
 		Id: 1525
@@ -19127,7 +19131,7 @@ Templates:
 		Frames: 319
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1526:
 		Id: 1526
@@ -19136,7 +19140,7 @@ Templates:
 		Frames: 320
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1527:
 		Id: 1527
@@ -19145,7 +19149,7 @@ Templates:
 		Frames: 321
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1528:
 		Id: 1528
@@ -19154,7 +19158,7 @@ Templates:
 		Frames: 322
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1529:
 		Id: 1529
@@ -19163,7 +19167,7 @@ Templates:
 		Frames: 323
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1530:
 		Id: 1530
@@ -19172,7 +19176,7 @@ Templates:
 		Frames: 324
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1531:
 		Id: 1531
@@ -19181,7 +19185,7 @@ Templates:
 		Frames: 325
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1532:
 		Id: 1532
@@ -19190,7 +19194,7 @@ Templates:
 		Frames: 326
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1533:
 		Id: 1533
@@ -19199,7 +19203,7 @@ Templates:
 		Frames: 327
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1534:
 		Id: 1534
@@ -19208,7 +19212,7 @@ Templates:
 		Frames: 328
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1535:
 		Id: 1535
@@ -19217,7 +19221,7 @@ Templates:
 		Frames: 329
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1536:
 		Id: 1536
@@ -19226,7 +19230,7 @@ Templates:
 		Frames: 330
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1537:
 		Id: 1537
@@ -19235,7 +19239,7 @@ Templates:
 		Frames: 331
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1538:
 		Id: 1538
@@ -19244,7 +19248,7 @@ Templates:
 		Frames: 332
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1539:
 		Id: 1539
@@ -19253,7 +19257,7 @@ Templates:
 		Frames: 333
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1540:
 		Id: 1540
@@ -19262,7 +19266,7 @@ Templates:
 		Frames: 334
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1541:
 		Id: 1541
@@ -19271,7 +19275,7 @@ Templates:
 		Frames: 335
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1542:
 		Id: 1542
@@ -19280,7 +19284,7 @@ Templates:
 		Frames: 336
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1543:
 		Id: 1543
@@ -19289,7 +19293,7 @@ Templates:
 		Frames: 337
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1544:
 		Id: 1544
@@ -19298,7 +19302,7 @@ Templates:
 		Frames: 338
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1545:
 		Id: 1545
@@ -19307,7 +19311,7 @@ Templates:
 		Frames: 339
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1546:
 		Id: 1546
@@ -19316,7 +19320,7 @@ Templates:
 		Frames: 340
 		Categories: Raw
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0008.bmp
 	Template@1547:
 		Id: 1547
@@ -19667,7 +19671,7 @@ Templates:
 		Frames: 32
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: Junk
 		Palette: well0009.bmp
 	Template@1586:
 		Id: 1586
@@ -19676,7 +19680,7 @@ Templates:
 		Frames: 33
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: Junk
 		Palette: well0009.bmp
 	Template@1587:
 		Id: 1587
@@ -19685,7 +19689,7 @@ Templates:
 		Frames: 34
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: Junk
 		Palette: well0009.bmp
 	Template@1588:
 		Id: 1588
@@ -19694,7 +19698,7 @@ Templates:
 		Frames: 35
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: Junk
 		Palette: well0009.bmp
 	Template@1589:
 		Id: 1589
@@ -19703,7 +19707,7 @@ Templates:
 		Frames: 36
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: Junk
 		Palette: well0009.bmp
 	Template@1590:
 		Id: 1590
@@ -19712,7 +19716,7 @@ Templates:
 		Frames: 37
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: Junk
 		Palette: well0009.bmp
 	Template@1591:
 		Id: 1591
@@ -19721,7 +19725,7 @@ Templates:
 		Frames: 38
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: Junk
 		Palette: well0009.bmp
 	Template@1592:
 		Id: 1592
@@ -19730,7 +19734,7 @@ Templates:
 		Frames: 39
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: Junk
 		Palette: well0009.bmp
 	Template@1593:
 		Id: 1593
@@ -20171,7 +20175,7 @@ Templates:
 		Frames: 88
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1642:
 		Id: 1642
@@ -20180,7 +20184,7 @@ Templates:
 		Frames: 89
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1643:
 		Id: 1643
@@ -20189,7 +20193,7 @@ Templates:
 		Frames: 90
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1644:
 		Id: 1644
@@ -20198,7 +20202,7 @@ Templates:
 		Frames: 91
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1645:
 		Id: 1645
@@ -20207,7 +20211,7 @@ Templates:
 		Frames: 92
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1646:
 		Id: 1646
@@ -20216,7 +20220,7 @@ Templates:
 		Frames: 93
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1647:
 		Id: 1647
@@ -20225,7 +20229,7 @@ Templates:
 		Frames: 94
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1648:
 		Id: 1648
@@ -20234,7 +20238,7 @@ Templates:
 		Frames: 95
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1649:
 		Id: 1649
@@ -20243,7 +20247,7 @@ Templates:
 		Frames: 96
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1650:
 		Id: 1650
@@ -20252,7 +20256,7 @@ Templates:
 		Frames: 97
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1651:
 		Id: 1651
@@ -20261,7 +20265,7 @@ Templates:
 		Frames: 98
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1652:
 		Id: 1652
@@ -20270,7 +20274,7 @@ Templates:
 		Frames: 99
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1653:
 		Id: 1653
@@ -20279,7 +20283,7 @@ Templates:
 		Frames: 100
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1654:
 		Id: 1654
@@ -20297,7 +20301,7 @@ Templates:
 		Frames: 102
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1656:
 		Id: 1656
@@ -20306,7 +20310,7 @@ Templates:
 		Frames: 103
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1657:
 		Id: 1657
@@ -20333,7 +20337,7 @@ Templates:
 		Frames: 106
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1660:
 		Id: 1660
@@ -20342,7 +20346,7 @@ Templates:
 		Frames: 107
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1661:
 		Id: 1661
@@ -20351,7 +20355,7 @@ Templates:
 		Frames: 108
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1662:
 		Id: 1662
@@ -20360,7 +20364,7 @@ Templates:
 		Frames: 109
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1663:
 		Id: 1663
@@ -20369,7 +20373,7 @@ Templates:
 		Frames: 110
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1664:
 		Id: 1664
@@ -20387,7 +20391,7 @@ Templates:
 		Frames: 112
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1666:
 		Id: 1666
@@ -20396,7 +20400,7 @@ Templates:
 		Frames: 113
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1667:
 		Id: 1667
@@ -20405,7 +20409,7 @@ Templates:
 		Frames: 114
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1668:
 		Id: 1668
@@ -20414,7 +20418,7 @@ Templates:
 		Frames: 115
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1669:
 		Id: 1669
@@ -20423,7 +20427,7 @@ Templates:
 		Frames: 116
 		Categories: Raw - Sand - Walls
 		Tiles:
-			0: ClearSand
+			0: RockSand
 		Palette: well0009.bmp
 	Template@1670:
 		Id: 1670
@@ -21512,7 +21516,7 @@ Templates:
 		Frames: 0
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1791:
 		Id: 1791
@@ -21521,7 +21525,7 @@ Templates:
 		Frames: 1
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1792:
 		Id: 1792
@@ -21530,7 +21534,7 @@ Templates:
 		Frames: 2
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1793:
 		Id: 1793
@@ -21539,7 +21543,7 @@ Templates:
 		Frames: 3
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1794:
 		Id: 1794
@@ -21548,7 +21552,7 @@ Templates:
 		Frames: 4
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1795:
 		Id: 1795
@@ -21557,7 +21561,7 @@ Templates:
 		Frames: 5
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1796:
 		Id: 1796
@@ -21566,7 +21570,7 @@ Templates:
 		Frames: 6
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1797:
 		Id: 1797
@@ -21575,7 +21579,7 @@ Templates:
 		Frames: 7
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1798:
 		Id: 1798
@@ -21584,7 +21588,7 @@ Templates:
 		Frames: 8
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1799:
 		Id: 1799
@@ -21593,7 +21597,7 @@ Templates:
 		Frames: 9
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1800:
 		Id: 1800
@@ -21602,7 +21606,7 @@ Templates:
 		Frames: 10
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1801:
 		Id: 1801
@@ -21611,7 +21615,7 @@ Templates:
 		Frames: 11
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1802:
 		Id: 1802
@@ -21620,7 +21624,7 @@ Templates:
 		Frames: 12
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0011.bmp
 	Template@1803:
 		Id: 1803
@@ -21629,7 +21633,7 @@ Templates:
 		Frames: 13
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1804:
 		Id: 1804
@@ -21638,7 +21642,7 @@ Templates:
 		Frames: 14
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1805:
 		Id: 1805
@@ -21647,7 +21651,7 @@ Templates:
 		Frames: 15
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1806:
 		Id: 1806
@@ -21656,7 +21660,7 @@ Templates:
 		Frames: 16
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1807:
 		Id: 1807
@@ -21665,7 +21669,7 @@ Templates:
 		Frames: 17
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1808:
 		Id: 1808
@@ -21674,7 +21678,7 @@ Templates:
 		Frames: 18
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1809:
 		Id: 1809
@@ -21683,7 +21687,7 @@ Templates:
 		Frames: 19
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1810:
 		Id: 1810
@@ -21692,7 +21696,7 @@ Templates:
 		Frames: 20
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1811:
 		Id: 1811
@@ -21701,7 +21705,7 @@ Templates:
 		Frames: 21
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1812:
 		Id: 1812
@@ -21710,7 +21714,7 @@ Templates:
 		Frames: 22
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1813:
 		Id: 1813
@@ -21719,7 +21723,7 @@ Templates:
 		Frames: 23
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1814:
 		Id: 1814
@@ -21728,7 +21732,7 @@ Templates:
 		Frames: 24
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1815:
 		Id: 1815
@@ -21737,7 +21741,7 @@ Templates:
 		Frames: 25
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1816:
 		Id: 1816
@@ -21746,7 +21750,7 @@ Templates:
 		Frames: 26
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1817:
 		Id: 1817
@@ -21755,7 +21759,7 @@ Templates:
 		Frames: 27
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1818:
 		Id: 1818
@@ -21764,7 +21768,7 @@ Templates:
 		Frames: 28
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1819:
 		Id: 1819
@@ -21773,7 +21777,7 @@ Templates:
 		Frames: 29
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1820:
 		Id: 1820
@@ -21782,7 +21786,7 @@ Templates:
 		Frames: 30
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1821:
 		Id: 1821
@@ -21791,7 +21795,7 @@ Templates:
 		Frames: 31
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1822:
 		Id: 1822
@@ -21800,7 +21804,7 @@ Templates:
 		Frames: 32
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1823:
 		Id: 1823
@@ -21809,7 +21813,7 @@ Templates:
 		Frames: 33
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1824:
 		Id: 1824
@@ -21818,7 +21822,7 @@ Templates:
 		Frames: 34
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1825:
 		Id: 1825
@@ -21827,7 +21831,7 @@ Templates:
 		Frames: 35
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1826:
 		Id: 1826
@@ -21836,7 +21840,7 @@ Templates:
 		Frames: 36
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1827:
 		Id: 1827
@@ -21845,7 +21849,7 @@ Templates:
 		Frames: 37
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1828:
 		Id: 1828
@@ -21854,7 +21858,7 @@ Templates:
 		Frames: 38
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1829:
 		Id: 1829
@@ -21863,7 +21867,7 @@ Templates:
 		Frames: 39
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1830:
 		Id: 1830
@@ -21872,7 +21876,7 @@ Templates:
 		Frames: 40
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1831:
 		Id: 1831
@@ -21881,7 +21885,7 @@ Templates:
 		Frames: 41
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1832:
 		Id: 1832
@@ -21890,7 +21894,7 @@ Templates:
 		Frames: 42
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1833:
 		Id: 1833
@@ -21899,7 +21903,7 @@ Templates:
 		Frames: 43
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1834:
 		Id: 1834
@@ -21908,7 +21912,7 @@ Templates:
 		Frames: 44
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1835:
 		Id: 1835
@@ -21917,7 +21921,7 @@ Templates:
 		Frames: 45
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1836:
 		Id: 1836
@@ -21926,7 +21930,7 @@ Templates:
 		Frames: 46
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1837:
 		Id: 1837
@@ -21935,7 +21939,7 @@ Templates:
 		Frames: 47
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1838:
 		Id: 1838
@@ -21944,7 +21948,7 @@ Templates:
 		Frames: 48
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1839:
 		Id: 1839
@@ -21953,7 +21957,7 @@ Templates:
 		Frames: 49
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1840:
 		Id: 1840
@@ -21962,7 +21966,7 @@ Templates:
 		Frames: 50
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1841:
 		Id: 1841
@@ -21971,7 +21975,7 @@ Templates:
 		Frames: 51
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1842:
 		Id: 1842
@@ -21980,7 +21984,7 @@ Templates:
 		Frames: 52
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1843:
 		Id: 1843
@@ -21989,7 +21993,7 @@ Templates:
 		Frames: 53
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1844:
 		Id: 1844
@@ -21998,7 +22002,7 @@ Templates:
 		Frames: 54
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0011.bmp
 	Template@1845:
 		Id: 1845
@@ -22007,7 +22011,7 @@ Templates:
 		Frames: 55
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1846:
 		Id: 1846
@@ -22016,7 +22020,7 @@ Templates:
 		Frames: 56
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1847:
 		Id: 1847
@@ -22025,7 +22029,7 @@ Templates:
 		Frames: 57
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1848:
 		Id: 1848
@@ -22034,7 +22038,7 @@ Templates:
 		Frames: 58
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1849:
 		Id: 1849
@@ -22043,7 +22047,7 @@ Templates:
 		Frames: 59
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1850:
 		Id: 1850
@@ -22052,7 +22056,7 @@ Templates:
 		Frames: 60
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1851:
 		Id: 1851
@@ -22061,7 +22065,7 @@ Templates:
 		Frames: 61
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1852:
 		Id: 1852
@@ -22070,7 +22074,7 @@ Templates:
 		Frames: 62
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1853:
 		Id: 1853
@@ -22079,7 +22083,7 @@ Templates:
 		Frames: 63
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1854:
 		Id: 1854
@@ -22088,7 +22092,7 @@ Templates:
 		Frames: 64
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1855:
 		Id: 1855
@@ -22097,7 +22101,7 @@ Templates:
 		Frames: 65
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1856:
 		Id: 1856
@@ -22106,7 +22110,7 @@ Templates:
 		Frames: 66
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1857:
 		Id: 1857
@@ -22115,7 +22119,7 @@ Templates:
 		Frames: 67
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1858:
 		Id: 1858
@@ -22124,7 +22128,7 @@ Templates:
 		Frames: 68
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1859:
 		Id: 1859
@@ -22133,7 +22137,7 @@ Templates:
 		Frames: 69
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1860:
 		Id: 1860
@@ -22142,7 +22146,7 @@ Templates:
 		Frames: 70
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1861:
 		Id: 1861
@@ -22151,7 +22155,7 @@ Templates:
 		Frames: 71
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1862:
 		Id: 1862
@@ -22160,7 +22164,7 @@ Templates:
 		Frames: 72
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1863:
 		Id: 1863
@@ -22169,7 +22173,7 @@ Templates:
 		Frames: 73
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1864:
 		Id: 1864
@@ -22178,7 +22182,7 @@ Templates:
 		Frames: 74
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1865:
 		Id: 1865
@@ -22187,7 +22191,7 @@ Templates:
 		Frames: 75
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1866:
 		Id: 1866
@@ -22196,7 +22200,7 @@ Templates:
 		Frames: 76
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1867:
 		Id: 1867
@@ -22205,7 +22209,7 @@ Templates:
 		Frames: 77
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1868:
 		Id: 1868
@@ -22214,7 +22218,7 @@ Templates:
 		Frames: 78
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1869:
 		Id: 1869
@@ -22223,7 +22227,7 @@ Templates:
 		Frames: 79
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1870:
 		Id: 1870
@@ -22232,7 +22236,7 @@ Templates:
 		Frames: 80
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1871:
 		Id: 1871
@@ -22241,7 +22245,7 @@ Templates:
 		Frames: 81
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1872:
 		Id: 1872
@@ -22250,7 +22254,7 @@ Templates:
 		Frames: 82
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1873:
 		Id: 1873
@@ -22259,7 +22263,7 @@ Templates:
 		Frames: 83
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1874:
 		Id: 1874
@@ -22268,7 +22272,7 @@ Templates:
 		Frames: 84
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1875:
 		Id: 1875
@@ -22277,7 +22281,7 @@ Templates:
 		Frames: 85
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1876:
 		Id: 1876
@@ -22286,7 +22290,7 @@ Templates:
 		Frames: 86
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1877:
 		Id: 1877
@@ -22295,7 +22299,7 @@ Templates:
 		Frames: 87
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1878:
 		Id: 1878
@@ -22304,7 +22308,7 @@ Templates:
 		Frames: 88
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1879:
 		Id: 1879
@@ -22313,7 +22317,7 @@ Templates:
 		Frames: 89
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1880:
 		Id: 1880
@@ -22322,7 +22326,7 @@ Templates:
 		Frames: 90
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1881:
 		Id: 1881
@@ -22331,7 +22335,7 @@ Templates:
 		Frames: 91
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1882:
 		Id: 1882
@@ -22340,7 +22344,7 @@ Templates:
 		Frames: 92
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1883:
 		Id: 1883
@@ -22349,7 +22353,7 @@ Templates:
 		Frames: 93
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1884:
 		Id: 1884
@@ -22358,7 +22362,7 @@ Templates:
 		Frames: 94
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1885:
 		Id: 1885
@@ -22367,7 +22371,7 @@ Templates:
 		Frames: 95
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: ClearRock
 		Palette: well0011.bmp
 	Template@1886:
 		Id: 1886
@@ -22376,7 +22380,7 @@ Templates:
 		Frames: 96
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1887:
 		Id: 1887
@@ -22385,7 +22389,7 @@ Templates:
 		Frames: 97
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1888:
 		Id: 1888
@@ -22394,7 +22398,7 @@ Templates:
 		Frames: 98
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1889:
 		Id: 1889
@@ -22403,7 +22407,7 @@ Templates:
 		Frames: 99
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1890:
 		Id: 1890
@@ -22412,7 +22416,7 @@ Templates:
 		Frames: 100
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1891:
 		Id: 1891
@@ -22421,7 +22425,7 @@ Templates:
 		Frames: 101
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1892:
 		Id: 1892
@@ -22430,7 +22434,7 @@ Templates:
 		Frames: 102
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1893:
 		Id: 1893
@@ -22439,7 +22443,7 @@ Templates:
 		Frames: 103
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1894:
 		Id: 1894
@@ -22448,7 +22452,7 @@ Templates:
 		Frames: 104
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1895:
 		Id: 1895
@@ -22457,7 +22461,7 @@ Templates:
 		Frames: 105
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1896:
 		Id: 1896
@@ -22466,7 +22470,7 @@ Templates:
 		Frames: 106
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1897:
 		Id: 1897
@@ -22475,7 +22479,7 @@ Templates:
 		Frames: 107
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1898:
 		Id: 1898
@@ -22484,7 +22488,7 @@ Templates:
 		Frames: 108
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1899:
 		Id: 1899
@@ -22493,7 +22497,7 @@ Templates:
 		Frames: 109
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1900:
 		Id: 1900
@@ -22502,7 +22506,7 @@ Templates:
 		Frames: 110
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1901:
 		Id: 1901
@@ -22511,7 +22515,7 @@ Templates:
 		Frames: 111
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1902:
 		Id: 1902
@@ -22520,7 +22524,7 @@ Templates:
 		Frames: 112
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1903:
 		Id: 1903
@@ -22529,7 +22533,7 @@ Templates:
 		Frames: 113
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1904:
 		Id: 1904
@@ -22538,7 +22542,7 @@ Templates:
 		Frames: 114
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1905:
 		Id: 1905
@@ -22547,7 +22551,7 @@ Templates:
 		Frames: 115
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1906:
 		Id: 1906
@@ -22556,7 +22560,7 @@ Templates:
 		Frames: 116
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1907:
 		Id: 1907
@@ -22565,7 +22569,7 @@ Templates:
 		Frames: 117
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1908:
 		Id: 1908
@@ -22574,7 +22578,7 @@ Templates:
 		Frames: 118
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1909:
 		Id: 1909
@@ -22583,7 +22587,7 @@ Templates:
 		Frames: 119
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1910:
 		Id: 1910
@@ -22601,7 +22605,7 @@ Templates:
 		Frames: 121
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1912:
 		Id: 1912
@@ -22610,7 +22614,7 @@ Templates:
 		Frames: 122
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1913:
 		Id: 1913
@@ -22619,7 +22623,7 @@ Templates:
 		Frames: 123
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1914:
 		Id: 1914
@@ -22628,7 +22632,7 @@ Templates:
 		Frames: 124
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1915:
 		Id: 1915
@@ -22655,7 +22659,7 @@ Templates:
 		Frames: 127
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1918:
 		Id: 1918
@@ -22664,7 +22668,7 @@ Templates:
 		Frames: 128
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1919:
 		Id: 1919
@@ -22673,7 +22677,7 @@ Templates:
 		Frames: 129
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1920:
 		Id: 1920
@@ -22682,7 +22686,7 @@ Templates:
 		Frames: 130
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1921:
 		Id: 1921
@@ -22700,7 +22704,7 @@ Templates:
 		Frames: 132
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1923:
 		Id: 1923
@@ -22709,7 +22713,7 @@ Templates:
 		Frames: 133
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1924:
 		Id: 1924
@@ -22718,7 +22722,7 @@ Templates:
 		Frames: 134
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1925:
 		Id: 1925
@@ -22727,7 +22731,7 @@ Templates:
 		Frames: 135
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1926:
 		Id: 1926
@@ -22736,7 +22740,7 @@ Templates:
 		Frames: 136
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1927:
 		Id: 1927
@@ -22745,7 +22749,7 @@ Templates:
 		Frames: 137
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1928:
 		Id: 1928
@@ -22754,7 +22758,7 @@ Templates:
 		Frames: 138
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1929:
 		Id: 1929
@@ -22763,7 +22767,7 @@ Templates:
 		Frames: 139
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1930:
 		Id: 1930
@@ -22772,7 +22776,7 @@ Templates:
 		Frames: 140
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1931:
 		Id: 1931
@@ -22781,7 +22785,7 @@ Templates:
 		Frames: 141
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1932:
 		Id: 1932
@@ -22790,7 +22794,7 @@ Templates:
 		Frames: 142
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1933:
 		Id: 1933
@@ -22799,7 +22803,7 @@ Templates:
 		Frames: 143
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1934:
 		Id: 1934
@@ -22808,7 +22812,7 @@ Templates:
 		Frames: 144
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1935:
 		Id: 1935
@@ -22817,7 +22821,7 @@ Templates:
 		Frames: 145
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1936:
 		Id: 1936
@@ -22826,7 +22830,7 @@ Templates:
 		Frames: 146
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1937:
 		Id: 1937
@@ -22835,7 +22839,7 @@ Templates:
 		Frames: 147
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1938:
 		Id: 1938
@@ -22844,7 +22848,7 @@ Templates:
 		Frames: 148
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1939:
 		Id: 1939
@@ -22853,7 +22857,7 @@ Templates:
 		Frames: 149
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0011.bmp
 	Template@1940:
 		Id: 1940
@@ -22862,7 +22866,7 @@ Templates:
 		Frames: 0
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1941:
 		Id: 1941
@@ -22871,7 +22875,7 @@ Templates:
 		Frames: 1
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1942:
 		Id: 1942
@@ -22880,7 +22884,7 @@ Templates:
 		Frames: 2
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1943:
 		Id: 1943
@@ -22889,7 +22893,7 @@ Templates:
 		Frames: 3
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1944:
 		Id: 1944
@@ -22898,7 +22902,7 @@ Templates:
 		Frames: 4
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1945:
 		Id: 1945
@@ -22907,7 +22911,7 @@ Templates:
 		Frames: 5
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1946:
 		Id: 1946
@@ -22916,7 +22920,7 @@ Templates:
 		Frames: 6
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1947:
 		Id: 1947
@@ -22925,7 +22929,7 @@ Templates:
 		Frames: 7
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1948:
 		Id: 1948
@@ -22934,7 +22938,7 @@ Templates:
 		Frames: 8
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1949:
 		Id: 1949
@@ -22943,7 +22947,7 @@ Templates:
 		Frames: 9
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1950:
 		Id: 1950
@@ -22952,7 +22956,7 @@ Templates:
 		Frames: 10
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1951:
 		Id: 1951
@@ -22961,7 +22965,7 @@ Templates:
 		Frames: 11
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1952:
 		Id: 1952
@@ -22970,7 +22974,7 @@ Templates:
 		Frames: 12
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1953:
 		Id: 1953
@@ -22979,7 +22983,7 @@ Templates:
 		Frames: 13
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1954:
 		Id: 1954
@@ -22988,7 +22992,7 @@ Templates:
 		Frames: 14
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1955:
 		Id: 1955
@@ -22997,7 +23001,7 @@ Templates:
 		Frames: 15
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1956:
 		Id: 1956
@@ -23006,7 +23010,7 @@ Templates:
 		Frames: 16
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1957:
 		Id: 1957
@@ -23015,7 +23019,7 @@ Templates:
 		Frames: 17
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1958:
 		Id: 1958
@@ -23024,7 +23028,7 @@ Templates:
 		Frames: 18
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1959:
 		Id: 1959
@@ -23033,7 +23037,7 @@ Templates:
 		Frames: 19
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1960:
 		Id: 1960
@@ -23042,7 +23046,7 @@ Templates:
 		Frames: 20
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1961:
 		Id: 1961
@@ -23051,7 +23055,7 @@ Templates:
 		Frames: 21
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1962:
 		Id: 1962
@@ -23060,7 +23064,7 @@ Templates:
 		Frames: 22
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1963:
 		Id: 1963
@@ -23069,7 +23073,7 @@ Templates:
 		Frames: 23
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1964:
 		Id: 1964
@@ -23078,7 +23082,7 @@ Templates:
 		Frames: 24
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1965:
 		Id: 1965
@@ -23087,7 +23091,7 @@ Templates:
 		Frames: 25
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1966:
 		Id: 1966
@@ -23096,7 +23100,7 @@ Templates:
 		Frames: 26
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1967:
 		Id: 1967
@@ -23105,7 +23109,7 @@ Templates:
 		Frames: 27
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1968:
 		Id: 1968
@@ -23114,7 +23118,7 @@ Templates:
 		Frames: 28
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1969:
 		Id: 1969
@@ -23123,7 +23127,7 @@ Templates:
 		Frames: 29
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1970:
 		Id: 1970
@@ -23132,7 +23136,7 @@ Templates:
 		Frames: 30
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1971:
 		Id: 1971
@@ -23141,7 +23145,7 @@ Templates:
 		Frames: 31
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1972:
 		Id: 1972
@@ -23150,7 +23154,7 @@ Templates:
 		Frames: 32
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1973:
 		Id: 1973
@@ -23159,7 +23163,7 @@ Templates:
 		Frames: 33
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1974:
 		Id: 1974
@@ -23168,7 +23172,7 @@ Templates:
 		Frames: 34
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1975:
 		Id: 1975
@@ -23177,7 +23181,7 @@ Templates:
 		Frames: 35
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1976:
 		Id: 1976
@@ -23186,7 +23190,7 @@ Templates:
 		Frames: 36
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1977:
 		Id: 1977
@@ -23195,7 +23199,7 @@ Templates:
 		Frames: 37
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1978:
 		Id: 1978
@@ -23204,7 +23208,7 @@ Templates:
 		Frames: 38
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1979:
 		Id: 1979
@@ -23213,7 +23217,7 @@ Templates:
 		Frames: 39
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1980:
 		Id: 1980
@@ -23222,7 +23226,7 @@ Templates:
 		Frames: 40
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1981:
 		Id: 1981
@@ -23231,7 +23235,7 @@ Templates:
 		Frames: 41
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1982:
 		Id: 1982
@@ -23240,7 +23244,7 @@ Templates:
 		Frames: 42
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1983:
 		Id: 1983
@@ -23249,7 +23253,7 @@ Templates:
 		Frames: 43
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1984:
 		Id: 1984
@@ -23258,7 +23262,7 @@ Templates:
 		Frames: 44
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1985:
 		Id: 1985
@@ -23267,7 +23271,7 @@ Templates:
 		Frames: 45
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1986:
 		Id: 1986
@@ -23276,7 +23280,7 @@ Templates:
 		Frames: 46
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1987:
 		Id: 1987
@@ -23285,7 +23289,7 @@ Templates:
 		Frames: 47
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1988:
 		Id: 1988
@@ -23294,7 +23298,7 @@ Templates:
 		Frames: 48
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1989:
 		Id: 1989
@@ -23303,7 +23307,7 @@ Templates:
 		Frames: 49
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1990:
 		Id: 1990
@@ -23312,7 +23316,7 @@ Templates:
 		Frames: 50
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1991:
 		Id: 1991
@@ -23321,7 +23325,7 @@ Templates:
 		Frames: 51
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1992:
 		Id: 1992
@@ -23330,7 +23334,7 @@ Templates:
 		Frames: 52
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1993:
 		Id: 1993
@@ -23339,7 +23343,7 @@ Templates:
 		Frames: 53
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1994:
 		Id: 1994
@@ -23348,7 +23352,7 @@ Templates:
 		Frames: 54
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1995:
 		Id: 1995
@@ -23357,7 +23361,7 @@ Templates:
 		Frames: 55
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1996:
 		Id: 1996
@@ -23366,7 +23370,7 @@ Templates:
 		Frames: 56
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1997:
 		Id: 1997
@@ -23375,7 +23379,7 @@ Templates:
 		Frames: 57
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1998:
 		Id: 1998
@@ -23384,7 +23388,7 @@ Templates:
 		Frames: 58
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@1999:
 		Id: 1999
@@ -23393,7 +23397,7 @@ Templates:
 		Frames: 59
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@2000:
 		Id: 2000
@@ -23402,7 +23406,7 @@ Templates:
 		Frames: 60
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@2001:
 		Id: 2001
@@ -23411,7 +23415,7 @@ Templates:
 		Frames: 61
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@2002:
 		Id: 2002
@@ -23420,7 +23424,7 @@ Templates:
 		Frames: 62
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@2003:
 		Id: 2003
@@ -23438,7 +23442,7 @@ Templates:
 		Frames: 64
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@2005:
 		Id: 2005
@@ -23447,7 +23451,7 @@ Templates:
 		Frames: 65
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@2006:
 		Id: 2006
@@ -23456,7 +23460,7 @@ Templates:
 		Frames: 66
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@2007:
 		Id: 2007
@@ -23465,7 +23469,7 @@ Templates:
 		Frames: 67
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@2008:
 		Id: 2008
@@ -23474,7 +23478,7 @@ Templates:
 		Frames: 68
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@2009:
 		Id: 2009
@@ -23492,7 +23496,7 @@ Templates:
 		Frames: 70
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp
 	Template@2011:
 		Id: 2011
@@ -23501,5 +23505,5 @@ Templates:
 		Frames: 71
 		Categories: Raw
 		Tiles:
-			0: Clear
+			0: Ice
 		Palette: well0012.bmp

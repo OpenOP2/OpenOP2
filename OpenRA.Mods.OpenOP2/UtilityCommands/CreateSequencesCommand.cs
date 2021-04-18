@@ -85,9 +85,15 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				sb.AppendLine($"^{actorRule.Name}-generated:");
 				sb.AppendLine($"\tRenderSprites:");
 				sb.AppendLine($"\t\tImage: {actorRule.Name}");
-				if (actorRule.Palette == "1" || actorRule.Palette == "2" || actorRule.Palette == "5" || actorRule.Palette == "8")
+				if (actorRule.Palette == "1" || actorRule.Palette == "2" || actorRule.Palette == "3" ||
+				    actorRule.Palette == "5" || actorRule.Palette == "6" || actorRule.Palette == "7" || actorRule.Palette == "8")
 				{
-					// Building
+					// player color mapped palettes
+					sb.AppendLine($"\t\tPlayerPalette: playerMapped{actorRule.Palette}");
+				}
+				else
+				{
+					// shadow palette
 					sb.AppendLine($"\t\tPalette: {actorRule.Palette}");
 				}
 
@@ -98,6 +104,13 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					sb.AppendLine($"\t\tSequence: {overlay.SequenceName}");
 					if (!string.IsNullOrWhiteSpace(overlay.Palette))
 					{
+						// if (overlay.Palette != "shadow")
+						// {
+						// 	sb.AppendLine($"\t\tPalette: playerMapped{overlay.Palette}");
+						// 	sb.AppendLine($"\t\tIsPlayerPalette: true");
+						// }
+						// else
+						// {
 						sb.AppendLine($"\t\tPalette: {overlay.Palette}");
 					}
 

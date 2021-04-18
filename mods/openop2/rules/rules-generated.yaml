@@ -4,6 +4,7 @@
 ^eden-robo-dozer-generated:
 	RenderSprites:
 		Image: eden-robo-dozer
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -23,6 +24,7 @@
 ^cargo-truck-generated:
 	RenderSprites:
 		Image: cargo-truck
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -36,12 +38,12 @@
 ^smokingcrater-generated:
 	RenderSprites:
 		Image: smokingcrater
-		Palette: 1
+		PlayerPalette: playerMapped1
 
 ^eden-storage-common-generated:
 	RenderSprites:
 		Image: eden-storage-common
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 5
@@ -52,7 +54,7 @@
 ^eden-command-center-generated:
 	RenderSprites:
 		Image: eden-command-center
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -81,7 +83,7 @@
 ^eden-dirt-generated:
 	RenderSprites:
 		Image: eden-dirt
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 6
@@ -95,7 +97,7 @@
 ^eden-factory-structure-generated:
 	RenderSprites:
 		Image: eden-factory-structure
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -124,7 +126,7 @@
 ^eden-lab-basic-generated:
 	RenderSprites:
 		Image: eden-lab-basic
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 5
@@ -135,7 +137,7 @@
 ^plymouth-agridome-generated:
 	RenderSprites:
 		Image: plymouth-agridome
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -158,7 +160,7 @@
 ^plymouth-command-center-generated:
 	RenderSprites:
 		Image: plymouth-command-center
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -178,7 +180,7 @@
 ^plymouth-dirt-generated:
 	RenderSprites:
 		Image: plymouth-dirt
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -195,7 +197,7 @@
 ^plymouth-factory-structure-generated:
 	RenderSprites:
 		Image: plymouth-factory-structure
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -224,7 +226,7 @@
 ^plymouth-lab-basic-generated:
 	RenderSprites:
 		Image: plymouth-lab-basic
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -235,7 +237,7 @@
 ^plymouth-residence-generated:
 	RenderSprites:
 		Image: plymouth-residence
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 6
@@ -261,7 +263,7 @@
 ^plymouth-robot-command-center-generated:
 	RenderSprites:
 		Image: plymouth-robot-command-center
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -278,7 +280,7 @@
 ^plymouth-smelter-common-generated:
 	RenderSprites:
 		Image: plymouth-smelter-common
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -307,7 +309,7 @@
 ^plymouth-storage-common-generated:
 	RenderSprites:
 		Image: plymouth-storage-common
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -318,7 +320,7 @@
 ^plymouth-tokamak-generated:
 	RenderSprites:
 		Image: plymouth-tokamak
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -362,7 +364,7 @@
 ^plymouth-factory-vehicle-generated:
 	RenderSprites:
 		Image: plymouth-factory-vehicle
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -379,7 +381,7 @@
 ^eden-residence-advanced-generated:
 	RenderSprites:
 		Image: eden-residence-advanced
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -393,7 +395,7 @@
 ^eden-agridome-generated:
 	RenderSprites:
 		Image: eden-agridome
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -413,7 +415,7 @@
 ^eden-unknown-turret-generated:
 	RenderSprites:
 		Image: eden-unknown-turret
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-shadow-id1
 		Palette: shadow
@@ -421,7 +423,7 @@
 ^eden-lab-advanced-generated:
 	RenderSprites:
 		Image: eden-lab-advanced
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -435,7 +437,7 @@
 ^eden-lab-standard-generated:
 	RenderSprites:
 		Image: eden-lab-standard
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -449,7 +451,7 @@
 ^eden-light-tower-generated:
 	RenderSprites:
 		Image: eden-light-tower
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -460,7 +462,7 @@
 ^eden-medical-center-generated:
 	RenderSprites:
 		Image: eden-medical-center
-		Palette: 5
+		PlayerPalette: playerMapped5
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -471,7 +473,7 @@
 ^eden-nursery-generated:
 	RenderSprites:
 		Image: eden-nursery
-		Palette: 5
+		PlayerPalette: playerMapped5
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 5
@@ -506,7 +508,7 @@
 ^eden-recreation-facility-generated:
 	RenderSprites:
 		Image: eden-recreation-facility
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 5
@@ -523,7 +525,7 @@
 ^eden-residence-generated:
 	RenderSprites:
 		Image: eden-residence
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -549,7 +551,7 @@
 ^eden-robot-command-center-generated:
 	RenderSprites:
 		Image: eden-robot-command-center
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -566,6 +568,7 @@
 ^eden-smelter-common-generated:
 	RenderSprites:
 		Image: eden-smelter-common
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -612,7 +615,7 @@
 ^eden-solar-power-array-generated:
 	RenderSprites:
 		Image: eden-solar-power-array
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -638,7 +641,7 @@
 ^eden-tokamak-generated:
 	RenderSprites:
 		Image: eden-tokamak
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -655,7 +658,7 @@
 ^eden-university-generated:
 	RenderSprites:
 		Image: eden-university
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -669,7 +672,7 @@
 ^eden-factory-vehicle-generated:
 	RenderSprites:
 		Image: eden-factory-vehicle
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -695,7 +698,7 @@
 ^plymouth-factory-arachnid-generated:
 	RenderSprites:
 		Image: plymouth-factory-arachnid
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -706,7 +709,7 @@
 ^plymouth-forum-generated:
 	RenderSprites:
 		Image: plymouth-forum
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -717,7 +720,7 @@
 ^plymouth-lab-advanced-generated:
 	RenderSprites:
 		Image: plymouth-lab-advanced
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -731,7 +734,7 @@
 ^plymouth-lab-standard-generated:
 	RenderSprites:
 		Image: plymouth-lab-standard
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -745,7 +748,7 @@
 ^plymouth-recreation-facility-generated:
 	RenderSprites:
 		Image: plymouth-recreation-facility
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 5
@@ -756,7 +759,7 @@
 ^plymouth-residence-reinforced-generated:
 	RenderSprites:
 		Image: plymouth-residence-reinforced
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -767,7 +770,7 @@
 ^plymouth-solar-power-array-generated:
 	RenderSprites:
 		Image: plymouth-solar-power-array
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -790,7 +793,7 @@
 ^plymouth-light-tower-generated:
 	RenderSprites:
 		Image: plymouth-light-tower
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-shadow-id1
 		Palette: shadow
@@ -798,7 +801,7 @@
 ^plymouth-nursery-generated:
 	RenderSprites:
 		Image: plymouth-nursery
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -818,7 +821,7 @@
 ^plymouth-university-generated:
 	RenderSprites:
 		Image: plymouth-university
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -835,7 +838,7 @@
 ^plymouth-light-tower2-generated:
 	RenderSprites:
 		Image: plymouth-light-tower2
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-shadow-id1
 		Palette: shadow
@@ -846,7 +849,7 @@
 ^plymouth-smelter-rare-generated:
 	RenderSprites:
 		Image: plymouth-smelter-rare
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -875,7 +878,7 @@
 ^eden-factory-consumer-generated:
 	RenderSprites:
 		Image: eden-factory-consumer
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 5
@@ -892,7 +895,7 @@
 ^eden-smelter-rare-generated:
 	RenderSprites:
 		Image: eden-smelter-rare
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -921,6 +924,7 @@
 ^plymouth-gorf-generated:
 	RenderSprites:
 		Image: plymouth-gorf
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -952,7 +956,7 @@
 ^eden-gorf-generated:
 	RenderSprites:
 		Image: eden-gorf
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -966,7 +970,7 @@
 ^eden-trade-center-generated:
 	RenderSprites:
 		Image: eden-trade-center
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -977,7 +981,7 @@
 ^plymouth-trade-center-generated:
 	RenderSprites:
 		Image: plymouth-trade-center
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -988,7 +992,7 @@
 ^eden-storage-rare-generated:
 	RenderSprites:
 		Image: eden-storage-rare
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 5
@@ -999,11 +1003,12 @@
 ^plymouth-storage-rare-generated:
 	RenderSprites:
 		Image: plymouth-storage-rare
+		PlayerPalette: playerMapped3
 
 ^eden-observatory-generated:
 	RenderSprites:
 		Image: eden-observatory
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -1014,7 +1019,7 @@
 ^eden-spaceport-generated:
 	RenderSprites:
 		Image: eden-spaceport
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 1
@@ -1052,7 +1057,7 @@
 ^eden-mine-common-generated:
 	RenderSprites:
 		Image: eden-mine-common
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-shadow-id1
 		Palette: shadow
@@ -1066,6 +1071,7 @@
 ^plymouth-mine-common-generated:
 	RenderSprites:
 		Image: plymouth-mine-common
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -1082,7 +1088,7 @@
 ^eden-mine-rare-generated:
 	RenderSprites:
 		Image: eden-mine-rare
-		Palette: 5
+		PlayerPalette: playerMapped5
 	WithIdleOverlay@0:
 		Sequence: idle-shadow-id1
 		Palette: shadow
@@ -1093,7 +1099,7 @@
 ^eden-mine-magma-generated:
 	RenderSprites:
 		Image: eden-mine-magma
-		Palette: 5
+		PlayerPalette: playerMapped5
 	WithIdleOverlay@0:
 		Sequence: idle-shadow-id1
 		Palette: shadow
@@ -1107,7 +1113,7 @@
 ^plymouth-mhd-generator-generated:
 	RenderSprites:
 		Image: plymouth-mhd-generator
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -1121,7 +1127,7 @@
 ^plymouth-medical-center-generated:
 	RenderSprites:
 		Image: plymouth-medical-center
-		Palette: 8
+		PlayerPalette: playerMapped8
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -1135,6 +1141,7 @@
 ^plymouth-mine-rare-generated:
 	RenderSprites:
 		Image: plymouth-mine-rare
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -1151,7 +1158,7 @@
 ^eden-geothermal-plant-generated:
 	RenderSprites:
 		Image: eden-geothermal-plant
-		Palette: 1
+		PlayerPalette: playerMapped1
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 2
@@ -1162,7 +1169,7 @@
 ^plymouth-spaceport-generated:
 	RenderSprites:
 		Image: plymouth-spaceport
-		Palette: 2
+		PlayerPalette: playerMapped2
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -1209,10 +1216,12 @@
 ^explosion1-generated:
 	RenderSprites:
 		Image: explosion1
+		PlayerPalette: playerMapped6
 
 ^explosion2-generated:
 	RenderSprites:
 		Image: explosion2
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 7
@@ -1226,6 +1235,7 @@
 ^eden-combat-chassis-heavy-generated:
 	RenderSprites:
 		Image: eden-combat-chassis-heavy
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -1236,6 +1246,7 @@
 ^eden-combat-chassis-medium-generated:
 	RenderSprites:
 		Image: eden-combat-chassis-medium
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 5
@@ -1246,6 +1257,7 @@
 ^eden-robo-surveyor-generated:
 	RenderSprites:
 		Image: eden-robo-surveyor
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -1262,6 +1274,7 @@
 ^plymouth-robo-surveyor-generated:
 	RenderSprites:
 		Image: plymouth-robo-surveyor
+		PlayerPalette: playerMapped7
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 7
@@ -1278,6 +1291,7 @@
 ^plymouth-evacuation-transport-generated:
 	RenderSprites:
 		Image: plymouth-evacuation-transport
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -1291,6 +1305,7 @@
 ^plymouth-combat-chassis-heavy-generated:
 	RenderSprites:
 		Image: plymouth-combat-chassis-heavy
+		PlayerPalette: playerMapped7
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 7
@@ -1301,6 +1316,7 @@
 ^eden-convec-generated:
 	RenderSprites:
 		Image: eden-convec
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -1314,6 +1330,7 @@
 ^eden-evacuation-transport-generated:
 	RenderSprites:
 		Image: eden-evacuation-transport
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -1324,6 +1341,7 @@
 ^plymouth-convec-generated:
 	RenderSprites:
 		Image: plymouth-convec
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 7
@@ -1337,6 +1355,7 @@
 ^plymouth-combat-chassis-medium-generated:
 	RenderSprites:
 		Image: plymouth-combat-chassis-medium
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 5
@@ -1347,6 +1366,7 @@
 ^plymouth-robo-dozer-generated:
 	RenderSprites:
 		Image: plymouth-robo-dozer
+		PlayerPalette: playerMapped7
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 7
@@ -1363,6 +1383,7 @@
 ^eden-scout-generated:
 	RenderSprites:
 		Image: eden-scout
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -1376,6 +1397,7 @@
 ^plymouth-scout-generated:
 	RenderSprites:
 		Image: plymouth-scout
+		PlayerPalette: playerMapped3
 	WithIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: 3
@@ -1389,18 +1411,20 @@
 ^rallypoint-generated:
 	RenderSprites:
 		Image: rallypoint
-		Palette: 5
+		PlayerPalette: playerMapped5
 
 ^waypoint-generated:
 	RenderSprites:
 		Image: waypoint
+		PlayerPalette: playerMapped3
 
 ^mpspawn-generated:
 	RenderSprites:
 		Image: mpspawn
-		Palette: 5
+		PlayerPalette: playerMapped5
 
 ^clock-generated:
 	RenderSprites:
 		Image: clock
+		PlayerPalette: playerMapped6
 

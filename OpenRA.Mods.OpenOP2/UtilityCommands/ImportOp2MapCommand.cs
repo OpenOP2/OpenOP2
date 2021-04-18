@@ -13,6 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
 using OpenRA.FileSystem;
 
@@ -115,10 +116,10 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					RequiresMod = modData.Manifest.Id,
 				};
 
-				var tiles = new List<uint>();
+				var tiles = new List<int>();
 				for (var i = 0; i < width * height; i++)
 				{
-					var tile = stream.ReadUInt32();
+					var tile = stream.ReadInt32();
 					tiles.Add(tile);
 				}
 
@@ -177,9 +178,6 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				var numTerrainTypes = stream.ReadInt32();
 				var terrains = new TerrainType[numTerrainTypes];
 
-				// for (var i = 0; i < numTerrainTypes; i++)
-				// {
-				// }
 				stream.Seek(numTerrainTypes * 264, SeekOrigin.Current);
 
 				var checkTag = stream.ReadUInt32();
@@ -188,20 +186,36 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					throw new IOException("Format error: Tag did not match header tag.");
 				}
 
+				var checkTag2 = stream.ReadInt32(); // the same all the time?
+				var numActors = stream.ReadInt32(); // I think?
+
+				// TODO: The rest of the tiles
 				// Actually place the tiles
 				for (var y = 0; y < height; y++)
 				{
 					for (var x = 0; x < width; x++)
 					{
-						// All these tile ID's will be completely different to ours - this importer will be broken until there's a mapping
-						// between the OP2 tile IDs and OpenOP2 tile IDs.
 						var tileXUpper = x >> 5;
 						var tileXLower = x & 0x1F;
 						var tileOffset = (((tileXUpper * height) + y) << 5) + tileXLower;
 						var tile = tiles[tileOffset];
 
+						var tile2XUpper = tile >> 5;
+						var tile2XLower = tile & 0x1F;
+
 						// Get the tile mapping index
-						var tileMappingIndex = (tile & 0x0000FFE0) >> 5;
+						var cellType = (tile & 0x1F);
+						var tileMappingIndex = (tile & 0xFFE0) >> 5;
+						var actorMappingIndex = (tile & 0x7FF0000) >> 11;
+						var lava = (tile & 0x00000001) >> 27;
+						var lavaPossible = (tile & 0x00000001) >> 28;
+						var expand = (tile & 0x00000001) >> 29;
+						var microbe = (tile & 0x00000001) >> 30;
+						var wallOrBuilding = (tile & 0x00000001) >> 31;
+						if (actorMappingIndex != 0 || lavaPossible != 0 || wallOrBuilding != 0)
+						{
+							throw new Exception("Actor mapping was " + actorMappingIndex);
+						}
 
 						var thisMapping = mappings[tileMappingIndex];
 						var startIndex = tilesetStartIndices[thisMapping.TileSetIndex];

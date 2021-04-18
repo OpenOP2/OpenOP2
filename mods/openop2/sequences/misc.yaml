@@ -24,3 +24,56 @@ allyrepair:
 	Defaults: bits/blank.png
 		Length: *
 	repair:
+
+wall-mud:
+	idle:
+		Length: 16
+		Combine:
+			well0002.bmp: single-segment-ew
+				Frames: 15
+				Length: 1
+			well0002.bmp: segment-ns-n
+				Frames: 12
+				Length: 1
+			well0002.bmp: segment-ew-e
+				Frames: 13
+				Length: 1
+			well0002.bmp: segment-corner-sw
+				Frames: 5
+				Length: 1
+			well0002.bmp: segment-ns-s
+				Frames: 11
+				Length: 1
+			well0002.bmp: segment-ns
+				Frames: 1
+				Length: 1
+			well0002.bmp: segment-corner-nw
+				Frames: 3
+				Length: 1
+			well0002.bmp: segment-t-e
+				Frames: 10
+				Length: 1
+			well0002.bmp: segment-ew-w
+				Frames: 14
+				Length: 1
+			well0002.bmp: segment-corner-se
+				Frames: 4
+				Length: 1
+			well0002.bmp: segment-ew
+				Frames: 0
+				Length: 1
+			well0002.bmp: segment-t-n
+				Frames: 6
+				Length: 1
+			well0002.bmp: segment-corner-ne
+				Frames: 2
+				Length: 1
+			well0002.bmp: segment-t-w
+				Frames: 9
+				Length: 1
+			well0002.bmp: segment-t-s
+				Frames: 7
+				Length: 1
+			well0002.bmp: segment-x
+				Frames: 8
+				Length: 1
