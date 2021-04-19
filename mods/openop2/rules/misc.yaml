@@ -31,36 +31,3 @@ waypoint:
 		QuantizedFacings: 1
 	MapEditorData:
 		Categories: System
-
-wall-mud:
-	Inherits: ^Wall
-	RenderSprites:
-		Image: wall-mud
-		Palette: well0002.bmp
-	Buildable:
-		Queue: Defense
-		BuildPaletteOrder: 30
-		Prerequisites: ~techlevel.medium
-		Description: Stop units and blocks enemy fire.
-	Valued:
-		Cost: 200
-	CustomSellValue:
-		Value: 0
-	Tooltip:
-		Name: Wall
-	#SoundOnDamageTransition:
-	#	DamagedSounds: crmble2.aud
-	#	DestroyedSounds: kaboom30.aud
-	Health:
-		HP: 40000
-	Armor:
-		Type: Concrete
-	#Crushable:
-	#	CrushClasses: heavywall
-	BlocksProjectiles:
-	LineBuild:
-		NodeTypes: concrete
-	LineBuildNode:
-		Types: concrete
-	WithWallSpriteBody:
-		Type: concrete

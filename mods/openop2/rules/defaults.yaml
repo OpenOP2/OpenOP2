@@ -114,7 +114,8 @@
 	Mobile:
 		PauseOnCondition: being-captured
 		Locomotor: wheeled
-		TurnSpeed: 5
+		Speed: 96
+		TurnSpeed: 10
 	SelectionDecorations:
 	WithSpriteControlGroupDecoration:
 	Selectable:
@@ -181,175 +182,6 @@
 	Inherits: ^Vehicle
 	Mobile:
 		Locomotor: tracked
-
-^Infantry:
-	Inherits@1: ^ExistsInWorld
-	Inherits@4: ^SpriteActor
-	Inherits@bounty: ^GlobalBounty
-	Inherits@selection: ^SelectableCombatUnit
-	Huntable:
-	OwnerLostAction:
-		Action: Kill
-		DeathTypes: DefaultDeath
-	DrawLineToTarget:
-	Health:
-		HP: 2500
-	Armor:
-		Type: None
-	RevealsShroud:
-		Range: 4c0
-	Mobile:
-		Speed: 56
-		Locomotor: foot
-	SelectionDecorations:
-	WithSpriteControlGroupDecoration:
-	Selectable:
-		Bounds: 18,20,0,-6
-		DecorationBounds: 12,18,0,-8
-	#Targetable:
-	#	RequiresCondition: !parachute
-	#	TargetTypes: Ground, Infantry, Disguise
-	#Targetable@HEAL:
-	#	RequiresCondition: !parachute && damaged
-	#	TargetTypes: Heal
-	#GrantConditionOnDamageState@DAMAGED:
-	#	Condition: damaged
-	#	ValidDamageStates: Light, Medium, Heavy, Critical
-	QuantizeFacingsFromSequence:
-		Sequence: stand
-	WithInfantryBody:
-	WithDeathAnimation:
-		DeathTypes:
-			DefaultDeath: 1
-			BulletDeath: 2
-			SmallExplosionDeath: 3
-			ExplosionDeath: 4
-			FireDeath: 5
-			ElectricityDeath: 6
-		CrushedSequence: die-crushed
-	AttackMove:
-	Passenger:
-		CargoType: Infantry
-		CargoCondition: disable-experience
-	GainsExperienceMultiplier:
-		Modifier: 0
-		RequiresCondition: disable-experience
-	HiddenUnderFog:
-	ActorLostNotification:
-	#GpsDot:
-	#	String: Infantry
-	Crushable:
-		CrushSound: squishy2.aud
-	Guard:
-	Guardable:
-	Tooltip:
-		GenericName: Soldier
-	ChangesHealth@HOSPITAL:
-		Step: 500
-		Delay: 100
-		StartIfBelow: 100
-		DamageCooldown: 125
-		RequiresCondition: hospitalheal
-	GrantConditionOnPrerequisite@HOSPITAL:
-		Condition: hospital
-		Prerequisites: hosp
-	#GrantConditionOnDamageState@HOSPITAL:
-	#	Condition: damaged
-	#	ValidDamageStates: Light, Medium, Heavy, Critical
-	GrantCondition@HOSPITAL:
-		RequiresCondition: hospital && damaged
-		Condition: hospitalheal
-	#WithDecoration@REDCROSS:
-	#	Image: pips
-	#	Sequence: medic
-	#	Position: Bottom, Right
-	#	RequiresCondition: hospitalheal
-	#	BlinkInterval: 32
-	#	BlinkPattern: Off, On
-	DeathSounds@NORMAL:
-		DeathTypes: DefaultDeath, BulletDeath, SmallExplosionDeath, ExplosionDeath
-	DeathSounds@BURNED:
-		Voice: Burned
-		DeathTypes: FireDeath
-	DeathSounds@ZAPPED:
-		Voice: Zapped
-		DeathTypes: ElectricityDeath
-	#Parachutable:
-	#	FallRate: 26
-	#	KilledOnImpassableTerrain: true
-	#	GroundCorpseSequence: corpse
-	#	GroundImpactSound: squishy2.aud
-	#	WaterImpactSound: splash9.aud
-	#	WaterCorpseSequence: small_splash
-	#	ParachutingCondition: parachute
-	Cloneable:
-		Types: Infantry
-	Voiced:
-		VoiceSet: GenericVoice
-	#WithParachute:
-	#	ShadowImage: parach-shadow
-	#	ShadowSequence: idle
-	#	Image: parach
-	#	Sequence: idle
-	#	OpeningSequence: open
-	#	Offset: 0,0,427
-	#	RequiresCondition: parachute
-	HitShape:
-		Type: Circle
-			Radius: 128
-	MapEditorData:
-		Categories: Infantry
-	EdibleByLeap:
-	DetectCloaked:
-		CloakTypes: Cloak
-		Range: 1c0
-
-^Soldier:
-	Inherits: ^Infantry
-	UpdatesPlayerStatistics:
-	MustBeDestroyed:
-	ProximityCaptor:
-		Types: Infantry
-	TakeCover:
-		DamageModifiers:
-			Prone50Percent: 50
-		DamageTriggers: TriggerProne
-	WithInfantryBody:
-		IdleSequences: idle1,idle2
-		StandSequences: stand,stand2
-	AttackFrontal:
-
-^CivInfantry:
-	Inherits: ^Infantry
-	Selectable:
-		Class: CivInfantry
-	Valued:
-		Cost: 10
-	Tooltip:
-		Name: Civilian
-		GenericVisibility: None
-	RevealsShroud:
-		Range: 3c0
-	#Passenger:
-	#	PipType: Gray
-	ProximityCaptor:
-		Types: CivilianInfantry
-	ScaredyCat:
-	Voiced:
-		VoiceSet: CivilianMaleVoice
-	Wanders:
-		MinMoveDelay: 150
-		MaxMoveDelay: 750
-	MapEditorData:
-		Categories: Civilian infantry
-
-^ArmedCivilian:
-	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
-	Armament:
-		Weapon: Pistol
-	AttackFrontal:
-	WithInfantryBody:
-		DefaultAttackSequence: shoot
 
 ^Ship:
 	Inherits@1: ^ExistsInWorld
@@ -580,11 +412,6 @@
 		Position: Center
 		Palette: player
 		IsPlayerPalette: True
-
-^ScienceBuilding:
-	Inherits: ^Building
-	#SpawnActorsOnSell:
-	#	ActorTypes: e1,e1,e1,e1,tecn,tecn,tecn,tecn,tecn,tecn,tecn,tecn,tecn,tecn,e6,e6,e6,e6,e6,chan,chan,chan,chan
 
 ^Defense:
 	Inherits: ^Building
@@ -971,13 +798,6 @@
 		Categories: Decoration
 	RequiresSpecificOwners:
 		ValidOwnerNames: Neutral
-
-^DesertCivBuilding:
-	Inherits: ^CivBuilding
-	RenderSprites:
-		Palette: desert
-	MapEditorData:
-		RequireTilesets: DESERT
 
 ^Crate:
 	Inherits@1: ^SpriteActor

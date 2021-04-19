@@ -30,17 +30,21 @@ MapFolders:
 Rules:
 	openop2|rules/palettes.yaml
 	openop2|rules/locomotors.yaml
+	openop2|rules/resources.yaml
 	openop2|rules/world.yaml
 	openop2|rules/player.yaml
 	openop2|rules/defaults.yaml
 	openop2|rules/misc.yaml
-	openop2|rules/structures.yaml
+	openop2|rules/walls.yaml
 	openop2|rules/vehicles.yaml
+	openop2|rules/structures.yaml
 	openop2|rules/rules-generated.yaml
 	openop2|rules/rules-example.yaml
 
 Sequences:
 	openop2|sequences/misc.yaml
+	openop2|sequences/resources.yaml
+	openop2|sequences/walls.yaml
 	openop2|sequences/sequences-generated.yaml
 
 TileSets:

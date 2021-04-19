@@ -40,200 +40,192 @@ eden-robo-dozer:
 	Inherits@generated: ^eden-robo-dozer-generated
 	Inherits: ^StubVehicle
 
-cargo-truck:
-	Inherits@generated: ^cargo-truck-generated
+plymouth-robo-dozer:
+	Inherits@generated: ^plymouth-robo-dozer-generated
 	Inherits: ^StubVehicle
 
-eden-storage-common:
-	Inherits@generated: ^eden-storage-common-generated
-	Inherits: ^StubBuilding
+eden-cargo-truck:
+	Inherits@generated: ^eden-cargo-truck-generated
+	Inherits: ^StubVehicle
 
-eden-dirt:
-	Inherits@generated: ^eden-dirt-generated
-	Inherits: ^StubBuilding
+plymouth-cargo-truck:
+	Inherits@generated: ^plymouth-cargo-truck-generated
+	Inherits: ^StubVehicle
 
-eden-factory-structure:
-	Inherits@generated: ^eden-factory-structure-generated
-	Inherits: ^StubBuilding
+eden-convec:
+	Inherits@generated: ^eden-convec-generated
+	Inherits: ^StubVehicle
 
-eden-lab-basic:
-	Inherits@generated: ^eden-lab-basic-generated
-	Inherits: ^StubBuilding
+plymouth-convec:
+	Inherits@generated: ^plymouth-convec-generated
+	Inherits: ^StubVehicle
 
-plymouth-agridome:
-	Inherits@generated: ^plymouth-agridome-generated
-	Inherits: ^StubBuilding
+eden-evacuation-transport:
+	Inherits@generated: ^eden-evacuation-transport-generated
+	Inherits: ^StubVehicle
 
-plymouth-dirt:
-	Inherits@generated: ^plymouth-dirt-generated
-	Inherits: ^StubBuilding
+plymouth-evacuation-transport:
+	Inherits@generated: ^plymouth-evacuation-transport-generated
+	Inherits: ^StubVehicle
 
-plymouth-factory-structure:
-	Inherits@generated: ^plymouth-factory-structure-generated
-	Inherits: ^StubBuilding
+eden-earthworker:
+	Inherits@generated: ^eden-earthworker-generated
+	Inherits: ^StubVehicle
 
-plymouth-lab-basic:
-	Inherits@generated: ^plymouth-lab-basic-generated
-	Inherits: ^StubBuilding
+plymouth-earthworker:
+	Inherits@generated: ^plymouth-earthworker-generated
+	Inherits: ^StubVehicle
 
-plymouth-residence:
-	Inherits@generated: ^plymouth-residence-generated
-	Inherits: ^StubBuilding
+eden-scout:
+	Inherits@generated: ^eden-scout-generated
+	Inherits: ^StubVehicle
 
-plymouth-robot-command-center:
-	Inherits@generated: ^plymouth-robot-command-center-generated
-	Inherits: ^StubBuilding
+plymouth-scout:
+	Inherits@generated: ^plymouth-scout-generated
+	Inherits: ^StubVehicle
 
-plymouth-smelter-common:
-	Inherits@generated: ^plymouth-smelter-common-generated
-	Inherits: ^StubBuilding
+eden-robo-surveyor:
+	Inherits@generated: ^eden-robo-surveyor-generated
+	Inherits: ^StubVehicle
 
-plymouth-storage-common:
-	Inherits@generated: ^plymouth-storage-common-generated
+plymouth-robo-surveyor:
+	Inherits@generated: ^plymouth-robo-surveyor-generated
+	Inherits: ^StubVehicle
+
+eden-robo-miner:
+	Inherits@generated: ^eden-robo-miner-generated
+	Inherits: ^StubVehicle
+
+plymouth-robo-miner:
+	Inherits@generated: ^plymouth-robo-miner-generated
+	Inherits: ^StubVehicle
+
+eden-combat-chassis-heavy:
+	Inherits@generated: ^eden-combat-chassis-heavy-generated
+	Inherits: ^StubVehicle
+
+plymouth-combat-chassis-heavy:
+	Inherits@generated: ^plymouth-combat-chassis-heavy-generated
+	Inherits: ^StubVehicle
+
+eden-combat-chassis-medium:
+	Inherits@generated: ^eden-combat-chassis-medium-generated
+	Inherits: ^StubVehicle
+
+plymouth-combat-chassis-medium:
+	Inherits@generated: ^plymouth-combat-chassis-medium-generated
+	Inherits: ^StubVehicle
+
+eden-chassis-unknown:
+	Inherits@generated: ^eden-chassis-unknown-generated
+	Inherits: ^StubVehicle
+
+plymouth-chassis-unknown:
+	Inherits@generated: ^plymouth-chassis-unknown-generated
+	Inherits: ^StubVehicle
+
+eden-flyer:
+	Inherits@generated: ^eden-flyer-generated
+	Inherits: ^StubVehicle
+
+plymouth-flyer:
+	Inherits@generated: ^plymouth-flyer-generated
+	Inherits: ^StubVehicle
+
+eden-robo-repair:
+	Inherits@generated: ^eden-robo-repair-generated
+	Inherits: ^StubVehicle
+
+eden-only:
+	Inherits@generated: ^eden-only-generated
+	Inherits: ^StubVehicle
+
+plymouth-arachnid1:
+	Inherits@generated: ^plymouth-arachnid1-generated
+	Inherits: ^StubVehicle
+
+plymouth-arachnid2:
+	Inherits@generated: ^plymouth-arachnid2-generated
+	Inherits: ^StubVehicle
+
+eden-tokamak:
+	Inherits@generated: ^eden-tokamak-generated
 	Inherits: ^StubBuilding
 
 plymouth-tokamak:
 	Inherits@generated: ^plymouth-tokamak-generated
 	Inherits: ^StubBuilding
 
-plymouth-factory-vehicle:
-	Inherits@generated: ^plymouth-factory-vehicle-generated
+eden-residence:
+	Inherits@generated: ^eden-residence-generated
 	Inherits: ^StubBuilding
 
-eden-residence-advanced:
-	Inherits@generated: ^eden-residence-advanced-generated
+plymouth-residence:
+	Inherits@generated: ^plymouth-residence-generated
+	Inherits: ^StubBuilding
+
+eden-factory-structure:
+	Inherits@generated: ^eden-factory-structure-generated
+	Inherits: ^StubBuilding
+
+plymouth-factory-structure:
+	Inherits@generated: ^plymouth-factory-structure-generated
 	Inherits: ^StubBuilding
 
 eden-agridome:
 	Inherits@generated: ^eden-agridome-generated
 	Inherits: ^StubBuilding
 
-eden-unknown-turret:
-	Inherits@generated: ^eden-unknown-turret-generated
-	Inherits: ^StubBuilding
-
-eden-lab-advanced:
-	Inherits@generated: ^eden-lab-advanced-generated
-	Inherits: ^StubBuilding
-
-eden-lab-standard:
-	Inherits@generated: ^eden-lab-standard-generated
-	Inherits: ^StubBuilding
-
-eden-light-tower:
-	Inherits@generated: ^eden-light-tower-generated
-	Inherits: ^StubBuilding
-
-eden-medical-center:
-	Inherits@generated: ^eden-medical-center-generated
-	Inherits: ^StubBuilding
-
-eden-nursery:
-	Inherits@generated: ^eden-nursery-generated
-	Inherits: ^StubBuilding
-
-eden-recreation-facility:
-	Inherits@generated: ^eden-recreation-facility-generated
-	Inherits: ^StubBuilding
-
-eden-residence:
-	Inherits@generated: ^eden-residence-generated
-	Inherits: ^StubBuilding
-
-eden-robot-command-center:
-	Inherits@generated: ^eden-robot-command-center-generated
-	Inherits: ^StubBuilding
-
-eden-smelter-common:
-	Inherits@generated: ^eden-smelter-common-generated
-	Inherits: ^StubBuilding
-
-eden-solar-power-array:
-	Inherits@generated: ^eden-solar-power-array-generated
-	Inherits: ^StubBuilding
-
-eden-tokamak:
-	Inherits@generated: ^eden-tokamak-generated
-	Inherits: ^StubBuilding
-
-eden-university:
-	Inherits@generated: ^eden-university-generated
+plymouth-agridome:
+	Inherits@generated: ^plymouth-agridome-generated
 	Inherits: ^StubBuilding
 
 eden-factory-vehicle:
 	Inherits@generated: ^eden-factory-vehicle-generated
 	Inherits: ^StubBuilding
 
-plymouth-factory-arachnid:
-	Inherits@generated: ^plymouth-factory-arachnid-generated
+plymouth-factory-vehicle:
+	Inherits@generated: ^plymouth-factory-vehicle-generated
 	Inherits: ^StubBuilding
 
-plymouth-forum:
-	Inherits@generated: ^plymouth-forum-generated
+eden-dirt:
+	Inherits@generated: ^eden-dirt-generated
 	Inherits: ^StubBuilding
 
-plymouth-lab-advanced:
-	Inherits@generated: ^plymouth-lab-advanced-generated
+plymouth-dirt:
+	Inherits@generated: ^plymouth-dirt-generated
 	Inherits: ^StubBuilding
 
-plymouth-lab-standard:
-	Inherits@generated: ^plymouth-lab-standard-generated
+eden-lab-basic:
+	Inherits@generated: ^eden-lab-basic-generated
 	Inherits: ^StubBuilding
 
-plymouth-recreation-facility:
-	Inherits@generated: ^plymouth-recreation-facility-generated
+plymouth-lab-basic:
+	Inherits@generated: ^plymouth-lab-basic-generated
 	Inherits: ^StubBuilding
 
-plymouth-residence-reinforced:
-	Inherits@generated: ^plymouth-residence-reinforced-generated
+eden-robot-command-center:
+	Inherits@generated: ^eden-robot-command-center-generated
 	Inherits: ^StubBuilding
 
-plymouth-solar-power-array:
-	Inherits@generated: ^plymouth-solar-power-array-generated
+plymouth-robot-command-center:
+	Inherits@generated: ^plymouth-robot-command-center-generated
 	Inherits: ^StubBuilding
 
-plymouth-light-tower:
-	Inherits@generated: ^plymouth-light-tower-generated
+eden-smelter-common:
+	Inherits@generated: ^eden-smelter-common-generated
 	Inherits: ^StubBuilding
 
-plymouth-nursery:
-	Inherits@generated: ^plymouth-nursery-generated
+plymouth-smelter-common:
+	Inherits@generated: ^plymouth-smelter-common-generated
 	Inherits: ^StubBuilding
 
-plymouth-university:
-	Inherits@generated: ^plymouth-university-generated
+eden-storage-common:
+	Inherits@generated: ^eden-storage-common-generated
 	Inherits: ^StubBuilding
 
-plymouth-light-tower2:
-	Inherits@generated: ^plymouth-light-tower2-generated
-	Inherits: ^StubBuilding
-
-plymouth-smelter-rare:
-	Inherits@generated: ^plymouth-smelter-rare-generated
-	Inherits: ^StubBuilding
-
-eden-factory-consumer:
-	Inherits@generated: ^eden-factory-consumer-generated
-	Inherits: ^StubBuilding
-
-eden-smelter-rare:
-	Inherits@generated: ^eden-smelter-rare-generated
-	Inherits: ^StubBuilding
-
-plymouth-gorf:
-	Inherits@generated: ^plymouth-gorf-generated
-	Inherits: ^StubBuilding
-
-eden-gorf:
-	Inherits@generated: ^eden-gorf-generated
-	Inherits: ^StubBuilding
-
-eden-trade-center:
-	Inherits@generated: ^eden-trade-center-generated
-	Inherits: ^StubBuilding
-
-plymouth-trade-center:
-	Inherits@generated: ^plymouth-trade-center-generated
+plymouth-storage-common:
+	Inherits@generated: ^plymouth-storage-common-generated
 	Inherits: ^StubBuilding
 
 eden-storage-rare:
@@ -244,12 +236,100 @@ plymouth-storage-rare:
 	Inherits@generated: ^plymouth-storage-rare-generated
 	Inherits: ^StubBuilding
 
-eden-observatory:
-	Inherits@generated: ^eden-observatory-generated
+eden-lab-standard:
+	Inherits@generated: ^eden-lab-standard-generated
+	Inherits: ^StubBuilding
+
+plymouth-lab-standard:
+	Inherits@generated: ^plymouth-lab-standard-generated
+	Inherits: ^StubBuilding
+
+eden-lab-advanced:
+	Inherits@generated: ^eden-lab-advanced-generated
+	Inherits: ^StubBuilding
+
+plymouth-lab-advanced:
+	Inherits@generated: ^plymouth-lab-advanced-generated
+	Inherits: ^StubBuilding
+
+eden-residence-advanced:
+	Inherits@generated: ^eden-residence-advanced-generated
+	Inherits: ^StubBuilding
+
+plymouth-residence-reinforced:
+	Inherits@generated: ^plymouth-residence-reinforced-generated
+	Inherits: ^StubBuilding
+
+eden-medical-center:
+	Inherits@generated: ^eden-medical-center-generated
+	Inherits: ^StubBuilding
+
+plymouth-medical-center:
+	Inherits@generated: ^plymouth-medical-center-generated
+	Inherits: ^StubBuilding
+
+eden-nursery:
+	Inherits@generated: ^eden-nursery-generated
+	Inherits: ^StubBuilding
+
+plymouth-nursery:
+	Inherits@generated: ^plymouth-nursery-generated
+	Inherits: ^StubBuilding
+
+eden-recreation-facility:
+	Inherits@generated: ^eden-recreation-facility-generated
+	Inherits: ^StubBuilding
+
+plymouth-recreation-facility:
+	Inherits@generated: ^plymouth-recreation-facility-generated
+	Inherits: ^StubBuilding
+
+eden-solar-power-array:
+	Inherits@generated: ^eden-solar-power-array-generated
+	Inherits: ^StubBuilding
+
+plymouth-solar-power-array:
+	Inherits@generated: ^plymouth-solar-power-array-generated
+	Inherits: ^StubBuilding
+
+eden-university:
+	Inherits@generated: ^eden-university-generated
+	Inherits: ^StubBuilding
+
+plymouth-university:
+	Inherits@generated: ^plymouth-university-generated
+	Inherits: ^StubBuilding
+
+eden-smelter-rare:
+	Inherits@generated: ^eden-smelter-rare-generated
+	Inherits: ^StubBuilding
+
+plymouth-smelter-rare:
+	Inherits@generated: ^plymouth-smelter-rare-generated
+	Inherits: ^StubBuilding
+
+eden-gorf:
+	Inherits@generated: ^eden-gorf-generated
+	Inherits: ^StubBuilding
+
+plymouth-gorf:
+	Inherits@generated: ^plymouth-gorf-generated
+	Inherits: ^StubBuilding
+
+eden-trade-center:
+	Inherits@generated: ^eden-trade-center-generated
+	Inherits: ^StubBuilding
+
+plymouth-trade-center:
+	Inherits@generated: ^plymouth-trade-center-generated
 	Inherits: ^StubBuilding
 
 eden-spaceport:
 	Inherits@generated: ^eden-spaceport-generated
+	Inherits: ^StubBuilding
+
+plymouth-spaceport:
+	Inherits@generated: ^plymouth-spaceport-generated
 	Inherits: ^StubBuilding
 
 eden-mine-common:
@@ -264,6 +344,10 @@ eden-mine-rare:
 	Inherits@generated: ^eden-mine-rare-generated
 	Inherits: ^StubBuilding
 
+plymouth-mine-rare:
+	Inherits@generated: ^plymouth-mine-rare-generated
+	Inherits: ^StubBuilding
+
 eden-mine-magma:
 	Inherits@generated: ^eden-mine-magma-generated
 	Inherits: ^StubBuilding
@@ -272,75 +356,43 @@ plymouth-mhd-generator:
 	Inherits@generated: ^plymouth-mhd-generator-generated
 	Inherits: ^StubBuilding
 
-plymouth-medical-center:
-	Inherits@generated: ^plymouth-medical-center-generated
-	Inherits: ^StubBuilding
-
-plymouth-mine-rare:
-	Inherits@generated: ^plymouth-mine-rare-generated
-	Inherits: ^StubBuilding
-
 eden-geothermal-plant:
 	Inherits@generated: ^eden-geothermal-plant-generated
 	Inherits: ^StubBuilding
 
-plymouth-spaceport:
-	Inherits@generated: ^plymouth-spaceport-generated
+plymouth-factory-arachnid:
+	Inherits@generated: ^plymouth-factory-arachnid-generated
 	Inherits: ^StubBuilding
 
-explosion2:
-	Inherits@generated: ^explosion2-generated
-	Inherits: ^StubVehicle
+plymouth-forum:
+	Inherits@generated: ^plymouth-forum-generated
+	Inherits: ^StubBuilding
 
-eden-combat-chassis-heavy:
-	Inherits@generated: ^eden-combat-chassis-heavy-generated
-	Inherits: ^StubVehicle
+eden-factory-consumer:
+	Inherits@generated: ^eden-factory-consumer-generated
+	Inherits: ^StubBuilding
 
-eden-combat-chassis-medium:
-	Inherits@generated: ^eden-combat-chassis-medium-generated
-	Inherits: ^StubVehicle
+eden-observatory:
+	Inherits@generated: ^eden-observatory-generated
+	Inherits: ^StubBuilding
 
-eden-robo-surveyor:
-	Inherits@generated: ^eden-robo-surveyor-generated
-	Inherits: ^StubVehicle
+eden-light-tower:
+	Inherits@generated: ^eden-light-tower-generated
+	Inherits: ^StubBuilding
 
-plymouth-robo-surveyor:
-	Inherits@generated: ^plymouth-robo-surveyor-generated
-	Inherits: ^StubVehicle
+plymouth-light-tower:
+	Inherits@generated: ^plymouth-light-tower-generated
+	Inherits: ^StubBuilding
 
-plymouth-evacuation-transport:
-	Inherits@generated: ^plymouth-evacuation-transport-generated
-	Inherits: ^StubVehicle
+plymouth-light-tower2:
+	Inherits@generated: ^plymouth-light-tower2-generated
+	Inherits: ^StubBuilding
 
-plymouth-combat-chassis-heavy:
-	Inherits@generated: ^plymouth-combat-chassis-heavy-generated
-	Inherits: ^StubVehicle
+eden-unknown-turret:
+	Inherits@generated: ^eden-unknown-turret-generated
+	Inherits: ^StubBuilding
 
-eden-convec:
-	Inherits@generated: ^eden-convec-generated
-	Inherits: ^StubVehicle
-
-eden-evacuation-transport:
-	Inherits@generated: ^eden-evacuation-transport-generated
-	Inherits: ^StubVehicle
-
-plymouth-convec:
-	Inherits@generated: ^plymouth-convec-generated
-	Inherits: ^StubVehicle
-
-plymouth-combat-chassis-medium:
-	Inherits@generated: ^plymouth-combat-chassis-medium-generated
-	Inherits: ^StubVehicle
-
-plymouth-robo-dozer:
-	Inherits@generated: ^plymouth-robo-dozer-generated
-	Inherits: ^StubVehicle
-
-eden-scout:
-	Inherits@generated: ^eden-scout-generated
-	Inherits: ^StubVehicle
-
-plymouth-scout:
-	Inherits@generated: ^plymouth-scout-generated
+waypoint:
+	Inherits@generated: ^waypoint-generated
 	Inherits: ^StubVehicle
 

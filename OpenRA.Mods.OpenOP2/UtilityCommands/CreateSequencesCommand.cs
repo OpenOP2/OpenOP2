@@ -82,11 +82,17 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 			foreach (var actorRule in actorRules)
 			{
+				if (!actorRule.CreateActor)
+				{
+					continue;
+				}
+
 				sb.AppendLine($"^{actorRule.Name}-generated:");
 				sb.AppendLine($"\tRenderSprites:");
 				sb.AppendLine($"\t\tImage: {actorRule.Name}");
-				if (actorRule.Palette == "1" || actorRule.Palette == "2" || actorRule.Palette == "3" ||
-				    actorRule.Palette == "5" || actorRule.Palette == "6" || actorRule.Palette == "7" || actorRule.Palette == "8")
+				var isPlayerPalette = int.TryParse(actorRule.Palette, out var actorPalette);
+				var playerPalettes = new[] { 1, 2, 3, 5, 6, 7, 8 };
+				if (playerPalettes.Contains(actorPalette))
 				{
 					// player color mapped palettes
 					sb.AppendLine($"\t\tPlayerPalette: playerMapped{actorRule.Palette}");
@@ -100,10 +106,20 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				var overlayIndex = 0;
 				foreach (var overlay in actorRule.Overlays)
 				{
-					sb.AppendLine($"\tWithIdleOverlay@{overlayIndex}:");
+					if (actorRule.ActorType == ActorType.Vehicle)
+					{
+						sb.AppendLine($"\tWithDirectionalIdleOverlay@{overlayIndex}:");
+					}
+					else
+					{
+						sb.AppendLine($"\tWithIdleOverlay@{overlayIndex}:");
+					}
+
 					sb.AppendLine($"\t\tSequence: {overlay.SequenceName}");
 					if (!string.IsNullOrWhiteSpace(overlay.Palette))
 					{
+						var isOverlayPlayerPalette = int.TryParse(overlay.Palette, out var overlayPalette);
+
 						// if (overlay.Palette != "shadow")
 						// {
 						// 	sb.AppendLine($"\t\tPalette: playerMapped{overlay.Palette}");
@@ -111,7 +127,15 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 						// }
 						// else
 						// {
-						sb.AppendLine($"\t\tPalette: {overlay.Palette}");
+						if (playerPalettes.Contains(overlayPalette))
+						{
+							sb.AppendLine($"\t\tPalette: playerMapped{overlay.Palette}");
+							sb.AppendLine($"\t\tIsPlayerPalette: true");
+						}
+						else
+						{
+							sb.AppendLine($"\t\tPalette: {overlay.Palette}");
+						}
 					}
 
 					overlayIndex++;
@@ -169,10 +193,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 			foreach (var actorRule in actorRules)
 			{
-				if (!actorRule.CreateExampleActor)
-					continue;
-
-				if (actorRule.ActorType == ActorType.Effect || actorRule.ActorType == ActorType.Decoration)
+				if (!actorRule.CreateExampleActor || !actorRule.CreateActor)
 					continue;
 
 				var inheritor = "^StubVehicle";
@@ -228,6 +249,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			public string Name;
 			public string Palette;
 			public bool CreateExampleActor = true;
+			public bool CreateActor = true;
 			public ActorType ActorType;
 			public List<ActorOverlay> Overlays = new List<ActorOverlay>();
 		}
@@ -308,7 +330,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 										{
 											Frame = pic.ImgNumber,
 											OffsetX = relX,
-											OffsetY = relY
+											OffsetY = relY,
 										};
 
 										var ourGroup = seqFrame.AnimationFacings[groupIndex];
@@ -333,7 +355,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 									{
 										seqFrame.AnimationFacings[i] = new AnimationFacing
 										{
-											Frames = new AnimationFrame[frameCount]
+											Frames = new AnimationFrame[frameCount],
 										};
 									}
 
@@ -342,7 +364,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 									{
 										Frame = pic.ImgNumber,
 										OffsetX = relX,
-										OffsetY = relY
+										OffsetY = relY,
 									};
 
 									var ourGroup = seqFrame.AnimationFacings[groupIndex];
@@ -373,8 +395,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 					Func<SequenceSet, int, string> getSequenceName = (inGroup, ind) =>
 					{
-						var seqName = $"{groupSequenceSet.Sequence}-{getTypeString(inGroup.FrameType)}" +
-						       (ind == 0 ? "" : $"-id{ind}");
+						var seqName = $"{groupSequenceSet.Sequence}-{getTypeString(inGroup.FrameType)}" + (ind == 0 ? string.Empty : $"-id{ind}");
 						if (inGroup.FrameType == 1 && groupSequenceSet.Sequence == "idle" && ind == 0)
 						{
 							seqName = "idle"; // Hack to have default idle sequence
@@ -453,6 +474,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 								Name = groupSequence.Name,
 								Palette = overlayPalette,
 								ActorType = groupSequence.ActorType,
+								CreateActor = groupSequence.CreateActor,
 								CreateExampleActor = groupSequence.CreateExampleActor,
 							};
 

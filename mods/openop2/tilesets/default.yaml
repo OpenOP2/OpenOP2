@@ -57,9 +57,9 @@ Terrain:
 		Type: Plant
 		Color: 056C49
 		TargetTypes: Plant
-	TerrainType@ResourcePlaceholder:
-		Type: ResourcePlaceholder
-		Color: 192326
+	TerrainType@Ore:
+		Type: Ore
+		Color: FFFFFF
 		TargetTypes: Ground
 
 Templates:

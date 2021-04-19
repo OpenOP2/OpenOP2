@@ -5,11 +5,12 @@
 	ScreenMap:
 	Selection:
 	MusicPlaylist:
-		VictoryMusic: score
-		DefeatMusic: map
+	#	VictoryMusic: score
+	#	DefeatMusic: map
 	TerrainGeometryOverlay:
 	DebugVisualizations:
 	Inherits: ^Locomotors
+	Inherits: ^Resources
 	TerrainRenderer:
 	#ShroudRenderer:
 	#	FogVariants: shroud
@@ -31,19 +32,6 @@
 		Side: Any
 		RandomFactionMembers: eden, plymouth
 		Description: Randomly select Eden or Plymouth.
-	ResourceType@metals:
-		Type: Metals
-		Name: Valuable Metals
-		ResourceType: 1
-		TerrainType: Junk
-		Palette: terrain
-		Sequences: blank
-		MaxDensity: 1
-		ValuePerUnit: 25
-		AllowedTerrainTypes: ClearMud, ClearRock, ClearSand
-		AllowUnderActors: true
-	ResourceRenderer:
-		RenderTypes: Metals
 
 World:
 	Inherits: ^BaseWorld
@@ -108,7 +96,7 @@ World:
 		ClassName: Light
 		Factions: eden
 		BaseActor: eden-command-center
-		SupportActors: eden-robo-dozer, eden-robo-dozer, eden-robo-dozer, cargo-truck
+		SupportActors: eden-robo-dozer, eden-robo-miner, eden-convec, eden-cargo-truck, eden-scout, eden-robo-surveyor, eden-earthworker, eden-evacuation-transport
 		InnerSupportRadius: 2
 		OuterSupportRadius: 4
 	MPStartUnits@light-plymouth:
@@ -116,7 +104,7 @@ World:
 		ClassName: Light
 		Factions: plymouth
 		BaseActor: plymouth-command-center
-		SupportActors: plymouth-robo-dozer, plymouth-robo-dozer, plymouth-robo-dozer, cargo-truck
+		SupportActors: plymouth-robo-dozer, plymouth-robo-miner, plymouth-convec, plymouth-cargo-truck, plymouth-scout, plymouth-robo-surveyor, plymouth-earthworker, plymouth-evacuation-transport
 		InnerSupportRadius: 2
 		OuterSupportRadius: 4
 	SpawnMPUnits:
