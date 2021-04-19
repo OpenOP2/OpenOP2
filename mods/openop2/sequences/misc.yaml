@@ -19,3 +19,15 @@ allyrepair:
 	Defaults: bits/blank.png
 		Length: *
 	repair:
+
+shroud:
+	shroud
+		Length: 16
+		Combine:
+			virmask.raw: shroud1
+				Length: 16
+	shadow
+		Length: 16
+		Combine:
+			virmask.raw: shadow1
+				Length: 16

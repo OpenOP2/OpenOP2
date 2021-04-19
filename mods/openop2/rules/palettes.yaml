@@ -123,6 +123,18 @@
 		G: 0
 		B: 0
 		A: 128
+	PaletteFromRGBA@shroud:
+		Name: shroud
+		R: 0
+		G: 0
+		B: 0
+		A: 255
+	PaletteFromRGBA@fog:
+		Name: fog
+		R: 0
+		G: 0
+		B: 0
+		A: 128
 	PaletteFromRGBA@moveflash:
 		Name: moveflash
 		R: 255
