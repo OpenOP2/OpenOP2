@@ -30,7 +30,7 @@ MapFolders:
 Rules:
 	openop2|rules/palettes.yaml
 	openop2|rules/locomotors.yaml
-	#openop2|rules/resources.yaml
+	openop2|rules/resources.yaml
 	openop2|rules/world.yaml
 	openop2|rules/player.yaml
 	openop2|rules/defaults.yaml

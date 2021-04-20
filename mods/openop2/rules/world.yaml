@@ -1,21 +1,7 @@
 ^BaseWorld:
 	Inherits: ^Palettes
 	Inherits: ^Locomotors
-	#Inherits: ^Resources
-	ResourceType@ore:
-		Type: ore
-		Name: Ore
-		ResourceType: 1
-		TerrainType: Ore
-		Palette: 3
-		Sequences: ore
-		MaxDensity: 1
-		ValuePerUnit: 25
-		AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
-		AllowUnderActors: true
-		AllowUnderBuildings: true
-	ResourceRenderer:
-		RenderTypes: ore
+	Inherits: ^Resources
 	AlwaysVisible:
 	ActorMap:
 	ScreenMap:

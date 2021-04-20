@@ -106,15 +106,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				var overlayIndex = 0;
 				foreach (var overlay in actorRule.Overlays)
 				{
-					if (actorRule.ActorType == ActorType.Vehicle)
-					{
-						sb.AppendLine($"\tWithDirectionalIdleOverlay@{overlayIndex}:");
-					}
-					else
-					{
-						sb.AppendLine($"\tWithIdleOverlay@{overlayIndex}:");
-					}
-
+					sb.AppendLine($"\tWithDirectionalIdleOverlay@{overlayIndex}:");
 					sb.AppendLine($"\t\tSequence: {overlay.SequenceName}");
 					if (!string.IsNullOrWhiteSpace(overlay.Palette))
 					{

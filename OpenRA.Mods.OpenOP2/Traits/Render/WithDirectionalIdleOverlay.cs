@@ -20,9 +20,13 @@ using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenOP2.Traits.Render
 {
-	// A copy-paste of WithIdleOverlay with one addition: to set the angle function for the animation:
+	// A copy-paste of WithIdleOverlay with two additions:
+	//
+	// 1) To set the angle function for the animation:
 	// overlay = new Animation(self.World, image, () => self.Orientation.Yaw, () => IsTraitPaused);
 	// This is OK for our mod because we always have the right number of directions for all overlays.
+	// 2) To allow the actor preview to use a player palette, with this line:
+	// p = init.WorldRenderer.Palette(IsPlayerPalette ? Palette + init.World.WorldActor.Owner.PlayerName : Palette);
 	[Desc("Renders a decorative animation on units and buildings.")]
 	public class WithDirectionalIdleOverlayInfo : PausableConditionalTraitInfo, IRenderActorPreviewSpritesInfo, Requires<RenderSpritesInfo>, Requires<BodyOrientationInfo>
 	{
@@ -57,7 +61,7 @@ namespace OpenRA.Mods.OpenOP2.Traits.Render
 				yield break;
 
 			if (Palette != null)
-				p = init.WorldRenderer.Palette(Palette);
+				p = init.WorldRenderer.Palette(IsPlayerPalette ? Palette + init.World.WorldActor.Owner.PlayerName : Palette);
 
 			Func<WAngle> facing;
 			var dynamicfacingInit = init.GetOrDefault<DynamicFacingInit>();
