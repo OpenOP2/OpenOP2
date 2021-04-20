@@ -3822,7 +3822,7 @@
 			{
 				Name = "waypoint",
 				ActorType = ActorType.Decoration,
-				CreateActor = true,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()

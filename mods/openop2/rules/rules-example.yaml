@@ -392,7 +392,3 @@ eden-unknown-turret:
 	Inherits@generated: ^eden-unknown-turret-generated
 	Inherits: ^StubBuilding
 
-waypoint:
-	Inherits@generated: ^waypoint-generated
-	Inherits: ^StubVehicle
-
