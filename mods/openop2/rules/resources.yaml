@@ -1,0 +1,87 @@
+^Resources:
+	ResourceType@ore:
+		Type: ore
+		Name: Ore
+		ResourceType: 1
+		TerrainType: Ore
+		Palette: 3
+		Sequences: ore
+		MaxDensity: 1
+		ValuePerUnit: 25
+		AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+		AllowUnderActors: true
+		AllowUnderBuildings: true
+	ResourceType@ore-1-low:
+		Type: ore-1-low
+		Name: Common Ore (Low)
+		ResourceType: 2
+		TerrainType: Ore
+		Palette: 3
+		Sequences: ore-1-low
+		MaxDensity: 1
+		ValuePerUnit: 25
+		AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+		AllowUnderActors: true
+		AllowUnderBuildings: true
+	ResourceType@ore-1-medium:
+		Type: ore-1-medium
+		Name: Common Ore (Medium)
+		ResourceType: 3
+		TerrainType: Ore
+		Palette: 3
+		Sequences: ore-1-medium
+		MaxDensity: 1
+		ValuePerUnit: 25
+		AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+		AllowUnderActors: true
+		AllowUnderBuildings: true
+	ResourceType@ore-1-high:
+		Type: ore-1-high
+		Name: Common Ore (High)
+		ResourceType: 4
+		TerrainType: Ore
+		Palette: 3
+		Sequences: ore-1-high
+		MaxDensity: 1
+		ValuePerUnit: 25
+		AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+		AllowUnderActors: true
+		AllowUnderBuildings: true
+	ResourceType@ore-2-low:
+		Type: ore-2-low
+		Name: Rare Ore (Low)
+		ResourceType: 5
+		TerrainType: Ore
+		Palette: 3
+		Sequences: ore-2-low
+		MaxDensity: 1
+		ValuePerUnit: 25
+		AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+		AllowUnderActors: true
+		AllowUnderBuildings: true
+	ResourceType@ore-2-medium:
+		Type: ore-2-medium
+		Name: Rare Ore (Medium)
+		ResourceType: 6
+		TerrainType: Ore
+		Palette: 3
+		Sequences: ore-2-medium
+		MaxDensity: 1
+		ValuePerUnit: 25
+		AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+		AllowUnderActors: true
+		AllowUnderBuildings: true
+	ResourceType@ore-2-high:
+		Type: ore-2-high
+		Name: Rare Ore (High)
+		ResourceType: 7
+		TerrainType: Ore
+		Palette: 3
+		Sequences: ore-2-high
+		MaxDensity: 1
+		ValuePerUnit: 25
+		AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+		AllowUnderActors: true
+		AllowUnderBuildings: true
+	ResourceRenderer: 
+		RenderTypes: ore, ore-1-low, ore-2-low, ore-1-medium, ore-2-medium, ore-1-high, ore-2-high

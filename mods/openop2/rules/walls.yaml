@@ -1,0 +1,494 @@
+lava-wall-mud:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: lava-wall-mud
+		Palette: well0002.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Lava Wall
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
+
+lava-wall-sand:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: lava-wall-sand
+		Palette: well0009.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Lava Wall
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
+
+lava-wall-rock:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: lava-wall-rock
+		Palette: well0005.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Lava Wall
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
+
+microbe-wall-mud:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: microbe-wall-mud
+		Palette: well0002.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Microbe Wall
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
+
+microbe-wall-rock:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: microbe-wall-rock
+		Palette: well0005.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Microbe Wall
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
+
+microbe-wall-sand:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: microbe-wall-sand
+		Palette: well0009.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Microbe Wall
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
+
+concrete-wall-mud:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: concrete-wall-mud
+		Palette: well0002.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Concrete Wall
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
+
+concrete-wall-rock:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: concrete-wall-rock
+		Palette: well0005.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Concrete Wall
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
+
+concrete-wall-sand:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: concrete-wall-sand
+		Palette: well0009.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Concrete Wall
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
+
+concrete-wall-mud-damaged1:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: concrete-wall-mud-damaged1
+		Palette: well0002.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Concrete Wall (Damaged)
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
+
+concrete-wall-rock-damaged1:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: concrete-wall-rock-damaged1
+		Palette: well0005.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Concrete Wall (Damaged)
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
+
+concrete-wall-sand-damaged1:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: concrete-wall-sand-damaged1
+		Palette: well0009.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Concrete Wall (Damaged)
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
+
+concrete-wall-mud-damaged2:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: concrete-wall-mud-damaged2
+		Palette: well0002.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Concrete Wall (Badly Damaged)
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
+
+concrete-wall-rock-damaged2:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: concrete-wall-rock-damaged2
+		Palette: well0005.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Concrete Wall (Badly Damaged)
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
+
+concrete-wall-sand-damaged2:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: concrete-wall-sand-damaged2
+		Palette: well0009.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Concrete Wall (Badly Damaged)
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
