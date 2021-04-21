@@ -8,39 +8,7 @@ lava-wall-mud:
 		BuildPaletteOrder: 30
 		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
-	Valued:
-		Cost: 200
-	CustomSellValue:
-		Value: 0
-	Tooltip:
-		Name: Lava Wall
-	#SoundOnDamageTransition:
-	#	DamagedSounds: crmble2.aud
-	#	DestroyedSounds: kaboom30.aud
-	Health:
-		HP: 40000
-	Armor:
-		Type: Concrete
-	#Crushable:
-	#	CrushClasses: heavywall
-	BlocksProjectiles:
-	LineBuild:
-		NodeTypes: concrete
-	LineBuildNode:
-		Types: concrete
-	WithWallSpriteBody:
-		Type: concrete
-
-lava-wall-sand:
-	Inherits: ^Wall
-	RenderSprites:
-		Image: lava-wall-sand
-		Palette: well0009.bmp
-	Buildable:
-		Queue: Defense
-		BuildPaletteOrder: 30
-		Prerequisites: ~techlevel.medium
-		Description: Stop units and blocks enemy fire.
+		IconPalette: well0002.bmp
 	Valued:
 		Cost: 200
 	CustomSellValue:
@@ -74,6 +42,41 @@ lava-wall-rock:
 		BuildPaletteOrder: 30
 		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
+		IconPalette: well0005.bmp
+	Valued:
+		Cost: 200
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Lava Wall
+	#SoundOnDamageTransition:
+	#	DamagedSounds: crmble2.aud
+	#	DestroyedSounds: kaboom30.aud
+	Health:
+		HP: 40000
+	Armor:
+		Type: Concrete
+	#Crushable:
+	#	CrushClasses: heavywall
+	BlocksProjectiles:
+	LineBuild:
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	WithWallSpriteBody:
+		Type: concrete
+
+lava-wall-sand:
+	Inherits: ^Wall
+	RenderSprites:
+		Image: lava-wall-sand
+		Palette: well0009.bmp
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 30
+		Prerequisites: ~techlevel.medium
+		Description: Stop units and blocks enemy fire.
+		IconPalette: well0009.bmp
 	Valued:
 		Cost: 200
 	CustomSellValue:
@@ -107,6 +110,7 @@ microbe-wall-mud:
 		BuildPaletteOrder: 30
 		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
+		IconPalette: well0002.bmp
 	Valued:
 		Cost: 200
 	CustomSellValue:
@@ -140,6 +144,7 @@ microbe-wall-rock:
 		BuildPaletteOrder: 30
 		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
+		IconPalette: well0005.bmp
 	Valued:
 		Cost: 200
 	CustomSellValue:
@@ -173,6 +178,7 @@ microbe-wall-sand:
 		BuildPaletteOrder: 30
 		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
+		IconPalette: well0009.bmp
 	Valued:
 		Cost: 200
 	CustomSellValue:
@@ -206,6 +212,7 @@ concrete-wall-mud:
 		BuildPaletteOrder: 30
 		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
+		IconPalette: well0002.bmp
 	Valued:
 		Cost: 200
 	CustomSellValue:
@@ -239,6 +246,7 @@ concrete-wall-rock:
 		BuildPaletteOrder: 30
 		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
+		IconPalette: well0005.bmp
 	Valued:
 		Cost: 200
 	CustomSellValue:
@@ -272,6 +280,7 @@ concrete-wall-sand:
 		BuildPaletteOrder: 30
 		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
+		IconPalette: well0009.bmp
 	Valued:
 		Cost: 200
 	CustomSellValue:
@@ -305,6 +314,7 @@ concrete-wall-mud-damaged1:
 		BuildPaletteOrder: 30
 		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
+		IconPalette: well0002.bmp
 	Valued:
 		Cost: 200
 	CustomSellValue:
@@ -338,6 +348,7 @@ concrete-wall-rock-damaged1:
 		BuildPaletteOrder: 30
 		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
+		IconPalette: well0005.bmp
 	Valued:
 		Cost: 200
 	CustomSellValue:
@@ -371,6 +382,7 @@ concrete-wall-sand-damaged1:
 		BuildPaletteOrder: 30
 		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
+		IconPalette: well0009.bmp
 	Valued:
 		Cost: 200
 	CustomSellValue:
@@ -404,6 +416,7 @@ concrete-wall-mud-damaged2:
 		BuildPaletteOrder: 30
 		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
+		IconPalette: well0002.bmp
 	Valued:
 		Cost: 200
 	CustomSellValue:
@@ -437,6 +450,7 @@ concrete-wall-rock-damaged2:
 		BuildPaletteOrder: 30
 		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
+		IconPalette: well0005.bmp
 	Valued:
 		Cost: 200
 	CustomSellValue:
@@ -470,6 +484,7 @@ concrete-wall-sand-damaged2:
 		BuildPaletteOrder: 30
 		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
+		IconPalette: well0009.bmp
 	Valued:
 		Cost: 200
 	CustomSellValue:

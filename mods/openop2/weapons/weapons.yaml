@@ -1,0 +1,42 @@
+####################################################################################################
+#		WEAPONS EDEN
+####################################################################################################
+eden-mobile-laser:
+	ReloadDelay: 30
+	Range: 5c512
+	Report: fireLaser.wav
+	Projectile: LaserZap
+		Width: 40
+		HitAnim: laserfire
+		ZOffset: 2047
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: 4000
+		Versus:
+			Wood: 50
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Scorch
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
+		
+####################################################################################################
+#		WEAPONS PLYMOUTH
+####################################################################################################
+plymouth-mobile-microwave:
+	ReloadDelay: 20
+	Range: 5c512
+	Report: fireMicrowave.wav
+	Projectile: LaserZap
+		Color: FFFFFFFF
+		Width: 40
+		HitAnim: laserfire
+		ZOffset: 2047
+	Warhead@1Dam: SpreadDamage
+		Spread: 42
+		Damage: 3000
+		Versus:
+			Wood: 50
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Scorch
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep

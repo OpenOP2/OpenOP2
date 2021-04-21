@@ -2,11 +2,30 @@
 {
 	public class GroupSequenceSet
 	{
-		public int Offset;
-		public int Length;
-		public int LoopOffset = 0;
+		/// <summary>
+		/// Start ID of the group index.
+		/// </summary>
+		public int Start { get; set; }
 
+		/// <summary>
+		/// The number of groups to include in the sequence.
+		/// Each group is typically a different orientation.
+		/// </summary>
+		public int Length { get; set; }
+
+		/// <summary>
+		/// Start from this group offset.
+		/// Groups will be read from the Start again after the last group.
+		/// </summary>
+		public int StartOffset { get; set; } = 0;
+
+		/// <summary>
+		/// The name of the sequence to write to file.
+		/// </summary>
 		public string Sequence { get; set; }
+
+		public int OffsetX { get; set; }
+		public int OffsetY { get; set; }
 	}
 
 	public enum ActorType
@@ -35,21 +54,28 @@
 			{
 				Name = "eden-robo-dozer",
 				ActorType = ActorType.Vehicle,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 0,
+						Start = 0,
 						Length = 8,
 						Sequence = "idle",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1665,
+						Start = 1665,
 						Length = 8,
 						Sequence = "doze",
-						LoopOffset = 2,
+						StartOffset = 2,
+					},
+					new GroupSequenceSet()
+					{
+						Start = 0,
+						Length = 1,
+						Sequence = "icon",
 					},
 				},
 			},
@@ -57,21 +83,28 @@
 			{
 				Name = "plymouth-robo-dozer",
 				ActorType = ActorType.Vehicle,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 343,
+						Start = 343,
 						Length = 8,
 						Sequence = "idle",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1673,
+						Start = 1673,
 						Length = 8,
 						Sequence = "doze",
-						LoopOffset = 2,
+						StartOffset = 2,
+					},
+					new GroupSequenceSet()
+					{
+						Start = 343,
+						Length = 1,
+						Sequence = "icon",
 					},
 				},
 			},
@@ -79,14 +112,21 @@
 			{
 				Name = "eden-cargo-truck",
 				ActorType = ActorType.Vehicle,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 8,
+						Start = 8,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
+					},
+					new GroupSequenceSet()
+					{
+						Start = 8,
+						Length = 1,
+						Sequence = "icon",
 					},
 				},
 			},
@@ -94,14 +134,21 @@
 			{
 				Name = "plymouth-cargo-truck",
 				ActorType = ActorType.Vehicle,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 24,
+						Start = 24,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
+					},
+					new GroupSequenceSet()
+					{
+						Start = 24,
+						Length = 1,
+						Sequence = "icon",
 					},
 				},
 			},
@@ -113,23 +160,23 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 287,
+						Start = 287,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1695,
+						Start = 1695,
 						Length = 1,
 						Sequence = "build",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1719,
+						Start = 1719,
 						Length = 8,
 						Sequence = "repair",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 				},
 			},
@@ -141,23 +188,23 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 319,
+						Start = 319,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1696,
+						Start = 1696,
 						Length = 1,
 						Sequence = "build",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1727,
+						Start = 1727,
 						Length = 8,
 						Sequence = "repair",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 				},
 			},
@@ -169,10 +216,10 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 303,
+						Start = 303,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 				},
 			},
@@ -184,10 +231,10 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 263,
+						Start = 263,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 				},
 			},
@@ -199,24 +246,24 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1811, // TODO: directions are all out of wack
+						Start = 1811, // TODO: directions are all out of wack
 						Length = 8,
 						Sequence = "idle",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1146,
+						Start = 1146,
 						Length = 8,
 						Sequence = "idle2",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1703,
+						Start = 1703,
 						Length = 8,
 						Sequence = "build",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 				},
 			},
@@ -228,24 +275,24 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1819, // TODO: directions are all out of wack
+						Start = 1819, // TODO: directions are all out of wack
 						Length = 8,
 						Sequence = "idle",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1827,
+						Start = 1827,
 						Length = 8,
-						Sequence = "idle",
-						LoopOffset = 2,
+						Sequence = "idle2",
+						StartOffset = 2,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1711,
+						Start = 1711,
 						Length = 8,
 						Sequence = "build",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 				},
 			},
@@ -257,10 +304,10 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 442,
+						Start = 442,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 				},
 			},
@@ -272,10 +319,10 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 460,
+						Start = 460,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 				},
 			},
@@ -287,17 +334,17 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 247,
+						Start = 247,
 						Length = 8,
 						Sequence = "idle",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1122,
+						Start = 1122,
 						Length = 8,
 						Sequence = "survey",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 				},
 			},
@@ -309,17 +356,17 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 255,
+						Start = 255,
 						Length = 8,
 						Sequence = "idle",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 2025,
+						Start = 2025,
 						Length = 8,
 						Sequence = "survey",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 				},
 			},
@@ -331,20 +378,20 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1170,
+						Start = 1170,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1335,
+						Start = 1335,
 						Length = 1,
 						Sequence = "make",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1336,
+						Start = 1336,
 						Length = 1,
 						Sequence = "make-dildo",
 					},
@@ -358,10 +405,10 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1186,
+						Start = 1186,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 				},
 			},
@@ -373,10 +420,10 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 231,
+						Start = 231,
 						Length = 8,
 						Sequence = "idle",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 				},
 			},
@@ -388,10 +435,10 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 279,
+						Start = 279,
 						Length = 8,
 						Sequence = "idle",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 				},
 			},
@@ -403,10 +450,10 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 239,
+						Start = 239,
 						Length = 8,
 						Sequence = "idle",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 				},
 			},
@@ -418,10 +465,10 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 335,
+						Start = 335,
 						Length = 8,
 						Sequence = "idle",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 				},
 			},
@@ -433,10 +480,10 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1202,
+						Start = 1202,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 				},
 			},
@@ -448,10 +495,10 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1227,
+						Start = 1227,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 				},
 			},
@@ -463,10 +510,10 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1779,
+						Start = 1779,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 				},
 			},
@@ -478,10 +525,10 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1795,
+						Start = 1795,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 				},
 			},
@@ -493,17 +540,17 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1130,
+						Start = 1130,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1625,
+						Start = 1625,
 						Length = 16,
 						Sequence = "repair",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 				},
 			},
@@ -515,10 +562,10 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1154,
+						Start = 1154,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 				},
 			},
@@ -530,17 +577,17 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1633,
+						Start = 1633,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1681,
+						Start = 1681,
 						Length = 8,
 						Sequence = "attack",
-						LoopOffset = 2,
+						StartOffset = 2,
 					},
 				},
 			},
@@ -552,10 +599,10 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1649,
+						Start = 1649,
 						Length = 16,
 						Sequence = "idle",
-						LoopOffset = 4,
+						StartOffset = 4,
 					},
 				},
 			},
@@ -568,7 +615,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 58,
+						Start = 58,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -583,27 +630,39 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1845,
+						Start = 1845,
 						Length = 1,
 						Sequence = "idle",
+						OffsetX = 1,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 61,
+						Start = 61,
 						Length = 1,
 						Sequence = "damaged",
+						OffsetX = 1,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 62,
+						Start = 62,
 						Length = 1,
 						Sequence = "damaged2",
+						OffsetX = 1,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 70,
+						Start = 70,
 						Length = 1,
 						Sequence = "make",
+						OffsetX = 1,
+					},
+					new GroupSequenceSet()
+					{
+						Start = 1108,
+						Length = 1,
+						Sequence = "icon",
+						OffsetX = -23,
+						OffsetY = -23,
 					},
 				},
 			},
@@ -616,27 +675,39 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1854,
+						Start = 1854,
 						Length = 1,
 						Sequence = "idle",
+						OffsetY = 1,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 84,
+						Start = 84,
 						Length = 1,
 						Sequence = "damaged",
+						OffsetY = 1,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 85,
+						Start = 85,
 						Length = 1,
 						Sequence = "damaged2",
+						OffsetY = 1,
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 140,
+						Start = 140,
 						Length = 1,
 						Sequence = "make",
+						OffsetY = 1,
+					},
+					new GroupSequenceSet()
+					{
+						Start = 1108,
+						Length = 1,
+						Sequence = "icon",
+						OffsetX = -23,
+						OffsetY = -23,
 					},
 				},
 			},
@@ -644,31 +715,40 @@
 			{
 				Name = "eden-tokamak",
 				ActorType = ActorType.Building,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 2035,
+						Start = 2035,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 132,
+						Start = 132,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 133,
+						Start = 133,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 76,
+						Start = 76,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 1100,
+						Length = 1,
+						Sequence = "icon",
+						OffsetX = -23,
+						OffsetY = -23,
 					},
 				},
 			},
@@ -676,43 +756,52 @@
 			{
 				Name = "plymouth-tokamak",
 				ActorType = ActorType.Building,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 652,
+						Start = 652,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 653,
+						Start = 653,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 351, // strange offset
+						Start = 351, // strange offset
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 100,
+						Start = 100,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 101,
+						Start = 101,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 151,
+						Start = 151,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 1100,
+						Length = 1,
+						Sequence = "icon",
+						OffsetX = -23,
+						OffsetY = -23,
 					},
 				},
 			},
@@ -724,37 +813,37 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 610,
+						Start = 610,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 611,
+						Start = 611,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1864,
+						Start = 1864,
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 124,
+						Start = 124,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 125,
+						Start = 125,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 77,
+						Start = 77,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -768,37 +857,37 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 612,
+						Start = 612,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 613,
+						Start = 613,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1849,
+						Start = 1849,
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 92,
+						Start = 92,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 93,
+						Start = 93,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 150,
+						Start = 150,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -812,25 +901,25 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 73,
+						Start = 73,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 65,
+						Start = 65,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 66,
+						Start = 66,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 72,
+						Start = 72,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -844,31 +933,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1860,
+						Start = 1860,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1861,
+						Start = 1861,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 88,
+						Start = 88,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 89,
+						Start = 89,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 143,
+						Start = 143,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -882,25 +971,25 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 801,
+						Start = 801,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 108,
+						Start = 108,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 109,
+						Start = 109,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 142,
+						Start = 142,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -914,25 +1003,25 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 646,
+						Start = 646,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 82,
+						Start = 82,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 83,
+						Start = 83,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 138,
+						Start = 138,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -942,37 +1031,46 @@
 			{
 				Name = "eden-factory-vehicle",
 				ActorType = ActorType.Building,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 807,
+						Start = 807,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 2064,
+						Start = 2064,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 136,
+						Start = 136,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 137,
+						Start = 137,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 75,
+						Start = 75,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 1106,
+						Length = 1,
+						Sequence = "icon",
+						OffsetX = -23,
+						OffsetY = -23,
 					},
 				},
 			},
@@ -980,31 +1078,40 @@
 			{
 				Name = "plymouth-factory-vehicle",
 				ActorType = ActorType.Building,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1853,
+						Start = 1853,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 102,
+						Start = 102,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 103,
+						Start = 103,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 354,
+						Start = 354,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 1106,
+						Length = 1,
+						Sequence = "icon",
+						OffsetX = -23,
+						OffsetY = -23,
 					},
 				},
 			},
@@ -1016,37 +1123,37 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 802,
+						Start = 802,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 803,
+						Start = 803,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1846,
+						Start = 1846,
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 63,
+						Start = 63,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 64,
+						Start = 64,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 71,
+						Start = 71,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1060,25 +1167,25 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1862,
+						Start = 1862,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 86,
+						Start = 86,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 87,
+						Start = 87,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 139,
+						Start = 139,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1092,31 +1199,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 642,
+						Start = 642,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1857,
+						Start = 1857,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 67,
+						Start = 67,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 68,
+						Start = 68,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 74,
+						Start = 74,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1130,25 +1237,25 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 2034,
+						Start = 2034,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 90,
+						Start = 90,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 91,
+						Start = 91,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 148,
+						Start = 148,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1162,43 +1269,43 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 647,
+						Start = 647,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 650,
+						Start = 650,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 651,
+						Start = 651,
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1858,
+						Start = 1858,
 						Length = 1,
 						Sequence = "idle4",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 126,
+						Start = 126,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 127,
+						Start = 127,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 78,
+						Start = 78,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1212,31 +1319,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 645,
+						Start = 645,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1852,
+						Start = 1852,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 94,
+						Start = 94,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 95,
+						Start = 95,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 149,
+						Start = 149,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1250,37 +1357,37 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1007,
+						Start = 1007,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1008,
+						Start = 1008,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1855,
+						Start = 1855,
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 128,
+						Start = 128,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 129,
+						Start = 129,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 79,
+						Start = 79,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1294,31 +1401,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1009,
+						Start = 1009,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1859,
+						Start = 1859,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 96,
+						Start = 96,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 97,
+						Start = 97,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 144,
+						Start = 144,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1332,25 +1439,25 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 2059,
+						Start = 2059,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 59,
+						Start = 59,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 60,
+						Start = 60,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 69,
+						Start = 69,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1364,25 +1471,25 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 2061,
+						Start = 2061,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 98,
+						Start = 98,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 99,
+						Start = 99,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 154,
+						Start = 154,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1396,31 +1503,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 2060,
+						Start = 2060,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 391,
+						Start = 391,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 392,
+						Start = 392,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 390,
+						Start = 390,
 						Length = 1,
 						Sequence = "make",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 393,
+						Start = 393,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -1434,43 +1541,43 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 938,
+						Start = 938,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 939,
+						Start = 939,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 2062,
+						Start = 2062,
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 395,
+						Start = 395,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 396,
+						Start = 396,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 394,
+						Start = 394,
 						Length = 1,
 						Sequence = "make",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 397,
+						Start = 397,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -1484,31 +1591,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 669,
+						Start = 669,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 670,
+						Start = 670,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 114,
+						Start = 114,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 115,
+						Start = 115,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 141,
+						Start = 141,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1522,37 +1629,37 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 671,
+						Start = 671,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1735,
+						Start = 1735,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1736,
+						Start = 1736,
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 166,
+						Start = 166,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 167,
+						Start = 167,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 165,
+						Start = 165,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1566,31 +1673,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 600,
+						Start = 600,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 601,
+						Start = 601,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 112,
+						Start = 112,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 113,
+						Start = 113,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 153,
+						Start = 153,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1604,31 +1711,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 643,
+						Start = 643,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 644,
+						Start = 644,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 163,
+						Start = 163,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 164,
+						Start = 164,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 162,
+						Start = 162,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1642,31 +1749,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 622,
+						Start = 622,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 623,
+						Start = 623,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 106,
+						Start = 106,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 107,
+						Start = 107,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 152,
+						Start = 152,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1680,37 +1787,37 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 640,
+						Start = 640,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 641,
+						Start = 641,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1777,
+						Start = 1777,
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 172,
+						Start = 172,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 173,
+						Start = 173,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 171,
+						Start = 171,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1724,25 +1831,25 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 602,
+						Start = 602,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 118,
+						Start = 118,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 119,
+						Start = 119,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 145,
+						Start = 145,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1756,37 +1863,37 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 620,
+						Start = 620,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 621,
+						Start = 621,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 418,
+						Start = 418,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 419,
+						Start = 419,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 417,
+						Start = 417,
 						Length = 1,
 						Sequence = "make",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 420,
+						Start = 420,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -1800,37 +1907,37 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 598,
+						Start = 598,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 596,
+						Start = 596,
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 597,
+						Start = 597,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 120,
+						Start = 120,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 121,
+						Start = 121,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 595,
+						Start = 595,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1844,37 +1951,37 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 606,
+						Start = 606,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 608,
+						Start = 608,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 609,
+						Start = 609,
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 181,
+						Start = 181,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 182,
+						Start = 182,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 607,
+						Start = 607,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1888,43 +1995,43 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 614,
+						Start = 614,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 615,
+						Start = 615,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 616,
+						Start = 616,
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1843,
+						Start = 1843,
 						Length = 1,
 						Sequence = "idle4",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 122,
+						Start = 122,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 123,
+						Start = 123,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 146,
+						Start = 146,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1938,43 +2045,43 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 617,
+						Start = 617,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 618,
+						Start = 618,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 619,
+						Start = 619,
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1850,
+						Start = 1850,
 						Length = 1,
 						Sequence = "idle4",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 169,
+						Start = 169,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 170,
+						Start = 170,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 168,
+						Start = 168,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -1988,25 +2095,25 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 941,
+						Start = 941,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 130,
+						Start = 130,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 131,
+						Start = 131,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 80,
+						Start = 80,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -2020,37 +2127,37 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 942,
+						Start = 942,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 2063,
+						Start = 2063,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1851,
+						Start = 1851,
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 175,
+						Start = 175,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 176,
+						Start = 176,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 174,
+						Start = 174,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -2064,31 +2171,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 667,
+						Start = 667,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 668,
+						Start = 668,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 134,
+						Start = 134,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 135,
+						Start = 135,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 147,
+						Start = 147,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -2102,31 +2209,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 936,
+						Start = 936,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 937,
+						Start = 937,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 184,
+						Start = 184,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 185,
+						Start = 185,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 183,
+						Start = 183,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -2140,31 +2247,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1841,
+						Start = 1841,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 370,
+						Start = 370,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 371,
+						Start = 371,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 369,
+						Start = 369,
 						Length = 1,
 						Sequence = "make",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 372,
+						Start = 372,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -2178,25 +2285,25 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1010,
+						Start = 1010,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 190,
+						Start = 190,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 191,
+						Start = 191,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 189,
+						Start = 189,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -2210,25 +2317,25 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 383,
+						Start = 383,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 384,
+						Start = 384,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 382,
+						Start = 382,
 						Length = 1,
 						Sequence = "make",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 385,
+						Start = 385,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -2242,37 +2349,37 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1737,
+						Start = 1737,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1738,
+						Start = 1738,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 379,
+						Start = 379,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 380,
+						Start = 380,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 378,
+						Start = 378,
 						Length = 1,
 						Sequence = "make",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 381,
+						Start = 381,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -2286,37 +2393,37 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 800,
+						Start = 800,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1838,
+						Start = 1838,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 387,
+						Start = 387,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 388,
+						Start = 388,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 386,
+						Start = 386,
 						Length = 1,
 						Sequence = "make",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 389,
+						Start = 389,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -2330,31 +2437,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 946,
+						Start = 946,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1837,
+						Start = 1837,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 362,
+						Start = 362,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 361,
+						Start = 361,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 363,
+						Start = 363,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -2368,43 +2475,43 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 963,
+						Start = 963,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 964,
+						Start = 964,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1844,
+						Start = 1844,
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 402,
+						Start = 402,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 403,
+						Start = 403,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 425,
+						Start = 425,
 						Length = 1,
 						Sequence = "make",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 404,
+						Start = 404,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -2418,31 +2525,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 965,
+						Start = 965,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 437,
+						Start = 437,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 438,
+						Start = 438,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 439,
+						Start = 439,
 						Length = 1,
 						Sequence = "die",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 440,
+						Start = 440,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -2456,19 +2563,19 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1001,
+						Start = 1001,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1002,
+						Start = 1002,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1003,
+						Start = 1003,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -2482,31 +2589,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1848,
+						Start = 1848,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 998,
+						Start = 998,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 999,
+						Start = 999,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 421,
+						Start = 421,
 						Length = 1,
 						Sequence = "make",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1000,
+						Start = 1000,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -2520,31 +2627,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 407,
+						Start = 407,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 408,
+						Start = 408,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 405,
+						Start = 405,
 						Length = 1,
 						Sequence = "build2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 406,
+						Start = 406,
 						Length = 1,
 						Sequence = "make",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 409,
+						Start = 409,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -2558,31 +2665,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 594,
+						Start = 594,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 422,
+						Start = 422,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 423,
+						Start = 423,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 421,
+						Start = 421,
 						Length = 1,
 						Sequence = "make",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 424,
+						Start = 424,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -2596,25 +2703,25 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 410,
+						Start = 410,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1337,
+						Start = 1337,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 411,
+						Start = 411,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 412,
+						Start = 412,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -2628,37 +2735,37 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 940,
+						Start = 940,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 1863,
+						Start = 1863,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 414,
+						Start = 414,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 415,
+						Start = 415,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 413,
+						Start = 413,
 						Length = 1,
 						Sequence = "make",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 416,
+						Start = 416,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -2672,13 +2779,13 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 427,
+						Start = 427,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 428,
+						Start = 428,
 						Length = 1,
 						Sequence = "damaged",
 					},
@@ -2692,25 +2799,25 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1847,
+						Start = 1847,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 156,
+						Start = 156,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 157,
+						Start = 157,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 158,
+						Start = 158,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -2724,25 +2831,25 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 2033,
+						Start = 2033,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 160,
+						Start = 160,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 161,
+						Start = 161,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 159,
+						Start = 159,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -2756,31 +2863,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1839,
+						Start = 1839,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 366,
+						Start = 366,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 367,
+						Start = 367,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 365,
+						Start = 365,
 						Length = 1,
 						Sequence = "make",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 368,
+						Start = 368,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -2794,43 +2901,43 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 654,
+						Start = 654,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 655,
+						Start = 655,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 656,
+						Start = 656,
 						Length = 1,
 						Sequence = "idle3",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 399,
+						Start = 399,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 400,
+						Start = 400,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 398,
+						Start = 398,
 						Length = 1,
 						Sequence = "make",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 401,
+						Start = 401,
 						Length = 1,
 						Sequence = "die",
 					},
@@ -2844,31 +2951,31 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 648,
+						Start = 648,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 649,
+						Start = 649,
 						Length = 1,
 						Sequence = "idle2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 116,
+						Start = 116,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 117,
+						Start = 117,
 						Length = 1,
 						Sequence = "damaged2",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 155,
+						Start = 155,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -2882,19 +2989,19 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 179,
+						Start = 179,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 180,
+						Start = 180,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 178,
+						Start = 178,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -2908,19 +3015,19 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 187,
+						Start = 187,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 188,
+						Start = 188,
 						Length = 1,
 						Sequence = "damaged",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 186,
+						Start = 186,
 						Length = 1,
 						Sequence = "make",
 					},
@@ -2934,13 +3041,13 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 110,
+						Start = 110,
 						Length = 1,
 						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
-						Offset = 111,
+						Start = 111,
 						Length = 1,
 						Sequence = "damaged",
 					},
@@ -2957,7 +3064,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 230,
+						Start = 230,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -2972,7 +3079,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 603,
+						Start = 603,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -2987,7 +3094,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 604,
+						Start = 604,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3002,7 +3109,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 605,
+						Start = 605,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3017,7 +3124,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 657,
+						Start = 657,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3032,7 +3139,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 659,
+						Start = 659,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3047,7 +3154,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 660,
+						Start = 660,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3062,7 +3169,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 661,
+						Start = 661,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3077,7 +3184,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 662,
+						Start = 662,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3092,7 +3199,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 663,
+						Start = 663,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3107,7 +3214,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 2071,
+						Start = 2071,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3122,7 +3229,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 2072,
+						Start = 2072,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3137,7 +3244,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 2067,
+						Start = 2067,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3152,7 +3259,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 664,
+						Start = 664,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3167,7 +3274,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 665,
+						Start = 665,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3182,7 +3289,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 943,
+						Start = 943,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3197,7 +3304,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 944,
+						Start = 944,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3212,7 +3319,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 945,
+						Start = 945,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3227,7 +3334,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1360,
+						Start = 1360,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3242,7 +3349,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 666,
+						Start = 666,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3257,7 +3364,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1004,
+						Start = 1004,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3272,7 +3379,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1005,
+						Start = 1005,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3287,7 +3394,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1006,
+						Start = 1006,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3302,7 +3409,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1027,
+						Start = 1027,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3317,7 +3424,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1028,
+						Start = 1028,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3332,7 +3439,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1029,
+						Start = 1029,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3347,7 +3454,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1030,
+						Start = 1030,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3362,7 +3469,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1358,
+						Start = 1358,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3377,7 +3484,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1359,
+						Start = 1359,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3392,7 +3499,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1047,
+						Start = 1047,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3407,7 +3514,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1334,
+						Start = 1334,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3422,7 +3529,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1699,
+						Start = 1699,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3437,7 +3544,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1700,
+						Start = 1700,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3452,7 +3559,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1701,
+						Start = 1701,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3467,7 +3574,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1702,
+						Start = 1702,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3482,7 +3589,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1048,
+						Start = 1048,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3497,7 +3604,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1113,
+						Start = 1113,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3512,7 +3619,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1114,
+						Start = 1114,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3527,7 +3634,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1115,
+						Start = 1115,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3542,7 +3649,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1116,
+						Start = 1116,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3557,7 +3664,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1117,
+						Start = 1117,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3572,7 +3679,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1118,
+						Start = 1118,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3587,7 +3694,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1119,
+						Start = 1119,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3602,7 +3709,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1120,
+						Start = 1120,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3617,7 +3724,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1121,
+						Start = 1121,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3632,7 +3739,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1244,
+						Start = 1244,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3647,7 +3754,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1245,
+						Start = 1245,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3662,7 +3769,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1246,
+						Start = 1246,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3677,7 +3784,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1247,
+						Start = 1247,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3692,7 +3799,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1248,
+						Start = 1248,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3707,7 +3814,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1249,
+						Start = 1249,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3722,7 +3829,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1250,
+						Start = 1250,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3737,7 +3844,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1251,
+						Start = 1251,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3752,7 +3859,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1252,
+						Start = 1252,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3767,7 +3874,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1253,
+						Start = 1253,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3782,7 +3889,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1361,
+						Start = 1361,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3797,7 +3904,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1362,
+						Start = 1362,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3812,9 +3919,15 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1759,
+						Start = 1764,
 						Length = 1,
-						Sequence = "idle",
+						Sequence = "flag",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 1764,
+						Length = 1,
+						Sequence = "circles",
 					},
 				},
 			},
@@ -3827,7 +3940,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1856,
+						Start = 1856,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3843,7 +3956,7 @@
 					// Alt mpspawn: 1764, 1111, 1112, 1107
 					new GroupSequenceSet()
 					{
-						Offset = 1107,
+						Start = 1107,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3859,7 +3972,7 @@
 					// Alt clocks: 658, 599
 					new GroupSequenceSet()
 					{
-						Offset = 804,
+						Start = 804,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -3874,7 +3987,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 624,
+						Start = 624,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -3889,7 +4002,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 947,
+						Start = 947,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -3904,7 +4017,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 966,
+						Start = 966,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -3919,7 +4032,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 982,
+						Start = 982,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -3934,7 +4047,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1011,
+						Start = 1011,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -3949,7 +4062,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1031,
+						Start = 1031,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -3964,7 +4077,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1068,
+						Start = 1068,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -3979,7 +4092,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1084,
+						Start = 1084,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -3994,7 +4107,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1254,
+						Start = 1254,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4009,7 +4122,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1270,
+						Start = 1270,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4024,7 +4137,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1286,
+						Start = 1286,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4039,7 +4152,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1302,
+						Start = 1302,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4054,7 +4167,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1318,
+						Start = 1318,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4069,7 +4182,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1363,
+						Start = 1363,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4084,7 +4197,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1379,
+						Start = 1379,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4099,7 +4212,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1395,
+						Start = 1395,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4114,7 +4227,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1411,
+						Start = 1411,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4129,7 +4242,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1427,
+						Start = 1427,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4144,7 +4257,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1443,
+						Start = 1443,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4159,7 +4272,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1461,
+						Start = 1461,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4174,7 +4287,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1477,
+						Start = 1477,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4189,7 +4302,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1493,
+						Start = 1493,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4204,7 +4317,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1509,
+						Start = 1509,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4219,7 +4332,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1525,
+						Start = 1525,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4234,7 +4347,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1541,
+						Start = 1541,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4249,7 +4362,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1557,
+						Start = 1557,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4264,7 +4377,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1573,
+						Start = 1573,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4279,7 +4392,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1589,
+						Start = 1589,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4294,7 +4407,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1605,
+						Start = 1605,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4309,7 +4422,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 2043,
+						Start = 2043,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4324,7 +4437,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1460,
+						Start = 1460,
 						Length = 16,
 						Sequence = "idle",
 					},
@@ -4339,7 +4452,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1100,
+						Start = 1100,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -4354,7 +4467,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1101,
+						Start = 1101,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -4369,7 +4482,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1102,
+						Start = 1102,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -4384,7 +4497,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1103,
+						Start = 1103,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -4399,7 +4512,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1104,
+						Start = 1104,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -4414,7 +4527,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1105,
+						Start = 1105,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -4429,7 +4542,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1106,
+						Start = 1106,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -4444,7 +4557,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1107,
+						Start = 1107,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -4459,7 +4572,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1108,
+						Start = 1108,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -4474,7 +4587,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1109,
+						Start = 1109,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -4489,7 +4602,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1110,
+						Start = 1110,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -4504,7 +4617,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1111,
+						Start = 1111,
 						Length = 1,
 						Sequence = "idle",
 					},
@@ -4519,7 +4632,7 @@
 				{
 					new GroupSequenceSet()
 					{
-						Offset = 1112,
+						Start = 1112,
 						Length = 1,
 						Sequence = "idle",
 					},

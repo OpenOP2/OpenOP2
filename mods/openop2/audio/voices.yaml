@@ -14,9 +14,25 @@ CommandCenterVoice:
 	Voices:
 		Select: commsel.wav
 
+TokamakVoice:
+	DefaultVariant: 
+	Voices:
+		Select: tokamsel.WAV
+
+VehicleFactoryVoice:
+	DefaultVariant: 
+	Voices:
+		Select: repvhc.WAV
+
+RoboDozerVoice:
+	DefaultVariant: 
+	Voices:
+		Select: earthwrk.wav
+		Action: beep2.WAV
+
 CargoTruckVoice:
 	DefaultVariant: 
 	Voices:
 		Select: truk_sel.wav
-		Action: earthwrk.wav
+		Action: beep2.WAV
 		Unload: dump.wav

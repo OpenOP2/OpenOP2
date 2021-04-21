@@ -36,22 +36,6 @@
 
 ## Generated OP2 actors
 
-eden-robo-dozer:
-	Inherits@generated: ^eden-robo-dozer-generated
-	Inherits: ^StubVehicle
-
-plymouth-robo-dozer:
-	Inherits@generated: ^plymouth-robo-dozer-generated
-	Inherits: ^StubVehicle
-
-eden-cargo-truck:
-	Inherits@generated: ^eden-cargo-truck-generated
-	Inherits: ^StubVehicle
-
-plymouth-cargo-truck:
-	Inherits@generated: ^plymouth-cargo-truck-generated
-	Inherits: ^StubVehicle
-
 eden-convec:
 	Inherits@generated: ^eden-convec-generated
 	Inherits: ^StubVehicle
@@ -148,14 +132,6 @@ plymouth-arachnid2:
 	Inherits@generated: ^plymouth-arachnid2-generated
 	Inherits: ^StubVehicle
 
-eden-tokamak:
-	Inherits@generated: ^eden-tokamak-generated
-	Inherits: ^StubBuilding
-
-plymouth-tokamak:
-	Inherits@generated: ^plymouth-tokamak-generated
-	Inherits: ^StubBuilding
-
 eden-residence:
 	Inherits@generated: ^eden-residence-generated
 	Inherits: ^StubBuilding
@@ -178,14 +154,6 @@ eden-agridome:
 
 plymouth-agridome:
 	Inherits@generated: ^plymouth-agridome-generated
-	Inherits: ^StubBuilding
-
-eden-factory-vehicle:
-	Inherits@generated: ^eden-factory-vehicle-generated
-	Inherits: ^StubBuilding
-
-plymouth-factory-vehicle:
-	Inherits@generated: ^plymouth-factory-vehicle-generated
 	Inherits: ^StubBuilding
 
 eden-dirt:

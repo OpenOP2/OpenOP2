@@ -1,14 +1,241 @@
 # Hi Zhall and Zon,
 # You'll want to look in rules-generated.yaml for the building you need, then move it into here and customize it as you need.
 
-eden-command-center:
-	Inherits@generated: ^eden-command-center-generated
-	Inherits: ^StubBuilding
+# Templates start here
+^CommandCenter:
+	Inherits: ^Building
+	Inherits@shape: ^3x3Shape
+	Selectable:
+		Bounds: 96,82,0,-9
+	Building:
+		Footprint: xxx _xx
+		Dimensions: 3,2
+		TerrainTypes: Clear, ClearRock, ClearRock2, ClearSand
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 1000
+		Prerequisites: ~disabled
+		Description: Produces structures (for now).
+		IconPalette: 5
 	Voiced:
 		VoiceSet: CommandCenterVoice
+	ProvidesPrerequisite@eden:
+		Factions: eden
+		Prerequisite: structures.eden
+	ProvidesPrerequisite@plymouth:
+		Factions: plymouth
+		Prerequisite: structures.plymouth
+	Health:
+		HP: 150000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		MinRange: 4c0
+		Range: 5c0
+		RevealGeneratedShroud: False
+	Production:
+		Produces: Building, Defense
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Command Center
+	BaseBuilding:
+	Sellable:
+		RequiresCondition: !build-incomplete && !being-captured && !being-demolished
+	ProductionBar@Building:
+		ProductionType: Building
+	ProductionBar@Defense:
+		ProductionType: Defense
+		Color: 8A8A8A
+	BaseProvider:
+		PauseOnCondition: being-captured
+		Range: 16c0
+	#WithBuildingBib:
+	WithBuildingPlacedAnimation:
+		Sequence: make
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: 0
+	WithDeathAnimation:
+		DeathSequence: die
+		UseDeathTypeSuffix: false
+	ProvidesPrerequisite@structures:
+		Prerequisite: structures
+	HitShape:
+		TargetableOffsets: 1273,939,0, -980,-640,0, -980,640,0
+		Type: Rectangle
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 1536
+
+^Power:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 64,76,0,-6
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+		TerrainTypes: Clear, ClearRock, ClearRock2, ClearSand
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		#Prerequisites: ~techlevel.infonly
+		Prerequisites: ~disabled
+		Description: Produces power for your colony.
+		IconPalette: 5
+	Voiced:
+		VoiceSet: TokamakVoice
+	ProvidesPrerequisite:
+		Prerequisite: anypower
+	Health:
+		HP: 40000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		MinRange: 4c0
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Tokamak
+	WithBuildingPlacedAnimation:
+		Sequence: make
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: 500
+	WithDeathAnimation:
+		DeathSequence: die
+		UseDeathTypeSuffix: false
+	Targetable:
+		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
+	ScalePowerWithHealth:
+	HitShape:
+		TargetableOffsets: 1273,939,0, -980,-640,0, -980,640,0
+		Type: Rectangle
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 1536
+
+^VehicleFactory:
+	Inherits: ^Building
+	Inherits@shape: ^4x3Shape
+	Selectable:
+		Bounds: 128,102,0,-3
+	Building:
+		Footprint: xxxx xxxx xx=x
+		Dimensions: 4,3
+		#LocalCenterOffset: -512,0,0
+		TerrainTypes: Clear, ClearRock, ClearRock2, ClearSand
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 10
+		#Prerequisites: ~techlevel.infonly
+		Prerequisites: ~disabled
+		Description: Produces vehicles.
+		IconPalette: 6
+	Voiced:
+		VoiceSet: VehicleFactoryVoice
+	RallyPoint:
+		Palette: 8
+		IsPlayerPalette: false
+		Path: 2,3
+	ProvidesPrerequisite:
+		Prerequisite: vehicles
+	ProvidesPrerequisite@eden:
+		Factions: eden
+		Prerequisite: vehicles.eden
+	ProvidesPrerequisite@plymouth:
+		Factions: plymouth
+		Prerequisite: vehicles.plymouth
+	Production:
+		Produces: Vehicle
+	ProductionBar:
+		ProductionType: Vehicle
+	Exit@1:
+		SpawnOffset: 512,0,0
+		ExitCell: 2,1
+		ProductionTypes: Vehicle
+	ProductionQueue@Vehicle:
+		Type: Vehicle
+		Group: Vehicle
+		#ReadyAudio: UnitReady
+		#BlockedAudio: NoRoom
+		#QueuedAudio: Building
+		#OnHoldAudio: OnHold
+		#CancelledAudio: Cancelled
+		#BuildDurationModifier: 100
+		LowPowerModifier: 300
+	Health:
+		HP: 60000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		MinRange: 4c0
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Vehicle Factory
+	WithBuildingPlacedAnimation:
+		Sequence: make
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: -100
+	WithDeathAnimation:
+		DeathSequence: die
+		UseDeathTypeSuffix: false
+	Targetable:
+		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
+	HitShape:
+		TargetableOffsets: 1273,939,0, -980,-640,0, -980,640,0
+		Type: Rectangle
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 1536
+
+# Actual buildings start here
+eden-command-center:
+	Inherits@generated: ^eden-command-center-generated
+	Inherits: ^CommandCenter
+	Building:
+		Footprint: xxx _xx
+	Buildable:
+		Prerequisites: ~structures.eden
 
 plymouth-command-center:
 	Inherits@generated: ^plymouth-command-center-generated
-	Inherits: ^StubBuilding
-	Voiced:
-		VoiceSet: CommandCenterVoice
+	Inherits: ^CommandCenter
+	Selectable:
+		Bounds: 96,76,0,-6
+	Building:
+		Footprint: xxx xx_
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-tokamak:
+	Inherits@generated: ^eden-tokamak-generated
+	Inherits: ^Power
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-tokamak:
+	Inherits@generated: ^plymouth-tokamak-generated
+	Inherits: ^Power
+	Selectable:
+		Bounds: 64,66,0,-1
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-factory-vehicle:
+	Inherits@generated: ^eden-factory-vehicle-generated
+	Inherits: ^VehicleFactory
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-factory-vehicle:
+	Inherits@generated: ^plymouth-factory-vehicle-generated
+	Inherits: ^VehicleFactory
+	Building:
+		Footprint: xxxx xxx= xxxx
+		Dimensions: 4,3
+		#LocalCenterOffset: -512,0,0
+	RallyPoint:
+		Path: 4,1
+	Buildable:
+		Prerequisites: ~structures.plymouth

@@ -10,6 +10,7 @@
 			Junk: 40
 			Rust: 40
 			Plant: 75
+			Ore: 100
 	Locomotor@TRACKED:
 		Name: tracked
 		Crushes: mine, crate
@@ -21,6 +22,7 @@
 			Junk: 60
 			Rust: 60
 			Plant: 85
+			Ore: 100
 	Locomotor@NAVAL:
 		Name: naval
 		Crushes: crate

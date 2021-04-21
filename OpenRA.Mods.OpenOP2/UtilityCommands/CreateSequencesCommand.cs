@@ -33,11 +33,28 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			public int OffsetY;
 		}
 
+		class OutputSequence
+		{
+			public string Name;
+			public List<OutputSequenceFrameset> Framesets = new List<OutputSequenceFrameset>();
+		}
+
+		class OutputSequenceFrameset
+		{
+			public string Name;
+			public bool IsBlank;
+			public int OffsetX;
+			public int OffsetY;
+			public List<int> Frames = new List<int>();
+		}
+
 		private const string OutputFilename = "..\\..\\mods\\openop2\\sequences\\sequences-generated.yaml";
 		private const string RulesOutputFilename = "..\\..\\mods\\openop2\\rules\\rules-generated.yaml";
 		private const string RulesExampleOutputFilename = "..\\..\\mods\\openop2\\rules\\rules-example.yaml";
 
 		string IUtilityCommand.Name => "--create-sequences";
+
+		private bool onlyIdleSequence = false;
 		bool IUtilityCommand.ValidateArguments(string[] args) { return ValidateArguments(args); }
 
 		[Desc("FILENAME", "Convert an Outpost 2 map to the OpenRA format.")]
@@ -111,14 +128,6 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					if (!string.IsNullOrWhiteSpace(overlay.Palette))
 					{
 						var isOverlayPlayerPalette = int.TryParse(overlay.Palette, out var overlayPalette);
-
-						// if (overlay.Palette != "shadow")
-						// {
-						// 	sb.AppendLine($"\t\tPalette: playerMapped{overlay.Palette}");
-						// 	sb.AppendLine($"\t\tIsPlayerPalette: true");
-						// }
-						// else
-						// {
 						if (playerPalettes.Contains(overlayPalette))
 						{
 							sb.AppendLine($"\t\tPalette: playerMapped{overlay.Palette}");
@@ -209,7 +218,10 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			public int FrameType;
 			public int Palette;
 			public int PicOrder;
+			public int OffsetX;
+			public int OffsetY;
 			public AnimationFacing[] AnimationFacings;
+			public string Name { get; set; }
 
 			public AnimationFrame[] GetFacingArray(int facing)
 			{
@@ -263,21 +275,21 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				foreach (var groupSequenceSet in groupSequence.Sets)
 				{
 					List<ImageGroup> groups;
-					if (groupSequenceSet.LoopOffset > 0)
+					if (groupSequenceSet.StartOffset > 0)
 					{
 						groups = prtFile.Groups
-							.Skip(groupSequenceSet.Offset + groupSequenceSet.LoopOffset)
-							.Take(groupSequenceSet.Length - groupSequenceSet.LoopOffset)
+							.Skip(groupSequenceSet.Start + groupSequenceSet.StartOffset)
+							.Take(groupSequenceSet.Length - groupSequenceSet.StartOffset)
 							.ToList();
 
 						groups.AddRange(prtFile.Groups
-							.Skip(groupSequenceSet.Offset)
-							.Take(groupSequenceSet.LoopOffset));
+							.Skip(groupSequenceSet.Start)
+							.Take(groupSequenceSet.StartOffset));
 					}
 					else
 					{
 						groups = prtFile.Groups
-							.Skip(groupSequenceSet.Offset)
+							.Skip(groupSequenceSet.Start)
 							.Take(groupSequenceSet.Length)
 							.ToList();
 					}
@@ -337,10 +349,13 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 									// Need a new frameset for this image type
 									var seqFrame = new SequenceSet
 									{
+										Name = groupSequenceSet.Sequence,
 										AnimationFacings = new AnimationFacing[groupSequenceSet.Length],
 										FrameType = rawFrame.ImageType,
 										Palette = rawFrame.Palette,
 										PicOrder = pic.PicOrder,
+										OffsetX = groupSequenceSet.OffsetX,
+										OffsetY = groupSequenceSet.OffsetY,
 									};
 
 									for (var i = 0; i < groupSequenceSet.Length; i++)
@@ -372,7 +387,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 					string[] facings = { "e", "ne", "n", "nw", "w", "sw", "s", "se" };
 
-					typeGroupedFrames = typeGroupedFrames.OrderBy(x => x.FrameType).ToList();
+					typeGroupedFrames = typeGroupedFrames.OrderBy(x => x.FrameType).ThenBy(x => x.PicOrder).ToList();
 
 					Func<int, string> getTypeString = (inFrameType) =>
 					{
@@ -388,9 +403,9 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					Func<SequenceSet, int, string> getSequenceName = (inGroup, ind) =>
 					{
 						var seqName = $"{groupSequenceSet.Sequence}-{getTypeString(inGroup.FrameType)}" + (ind == 0 ? string.Empty : $"-id{ind}");
-						if (inGroup.FrameType == 1 && groupSequenceSet.Sequence == "idle" && ind == 0)
+						if (inGroup.FrameType == 1 && ind == 0)
 						{
-							seqName = "idle"; // Hack to have default idle sequence
+							seqName = groupSequenceSet.Sequence;
 						}
 
 						return seqName;
@@ -404,35 +419,91 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					foreach (var typeGroupedFrame in typeGroupedFrames)
 					{
 						var sequenceName = allSequenceNames[typeIndex];
-						sb.AppendLine($"\t{sequenceName}:");
-						sb.AppendLine($"\t\tLength: {frameCount}");
-						sb.AppendLine($"\t\tFacings: {groupSequenceSet.Length}");
-						sb.AppendLine($"\t\tZOffset: {zIndex}");
-						sb.AppendLine($"\t\tCombine:");
+						var outputSequence = new OutputSequence()
+						{
+							Name = sequenceName,
+						};
+
 						for (var facingIndex = 0; facingIndex < groupSequenceSet.Length; facingIndex++)
 						{
 							var framesArray = typeGroupedFrame.GetFacingArray(facingIndex);
 							var animationGroup = typeGroupedFrame.AnimationFacings[facingIndex];
-							for (var frameIndex = 0; frameIndex < animationGroup.Frames.Length; frameIndex++)
+							var facingFrameCount = animationGroup.Frames.Length;
+							for (var frameIndex = 0; frameIndex < facingFrameCount; frameIndex++)
 							{
 								var frame = framesArray[frameIndex];
+
 								var isBlank = frame == null;
 								var innerSequenceName = $"{groupSequenceSet.Sequence}-facing{facingIndex}-{frameIndex}";
-								if (isBlank)
+
+								Func<OutputSequenceFrameset> getNewFrameset = () =>
 								{
-									sb.AppendLine($"\t\t\tblank.png: {innerSequenceName}");
-									sb.AppendLine($"\t\t\t\tFrames: 0 # blank");
+									var newFrameset = new OutputSequenceFrameset()
+									{
+										Name = innerSequenceName,
+										IsBlank = isBlank,
+									};
+
+									if (frame != null)
+									{
+										newFrameset.OffsetX = frame.OffsetX;
+										newFrameset.OffsetY = frame.OffsetY;
+										newFrameset.Frames.Add(frame.Frame);
+									}
+									else
+									{
+										newFrameset.Frames.Add(0);
+									}
+
+									return newFrameset;
+								};
+
+								var outputFrames = outputSequence.Framesets;
+								var lastFrame = outputFrames.LastOrDefault();
+								if (lastFrame == null)
+								{
+									outputSequence.Framesets.Add(getNewFrameset());
 								}
 								else
 								{
-									sb.AppendLine($"\t\t\top2_art.bmp: {innerSequenceName}");
-									sb.AppendLine($"\t\t\t\tFrames: {frame.Frame}");
-									sb.AppendLine($"\t\t\t\tOffset: {frame.OffsetX}, {frame.OffsetY}");
+									if ((isBlank && lastFrame.IsBlank) ||
+										(!isBlank && !lastFrame.IsBlank && lastFrame.OffsetX == frame.OffsetX && lastFrame.OffsetY == frame.OffsetY))
+									{
+										// It's a match, add our frame
+										lastFrame.Frames.Add(isBlank ? 0 : frame.Frame);
+									}
+									else
+									{
+										// It's not a match; add a new one
+										outputSequence.Framesets.Add(getNewFrameset());
+									}
 								}
-
-								sb.AppendLine($"\t\t\t\tLength: 1");
-								sb.AppendLine($"\t\t\t\tZOffset: {zIndex}");
 							}
+						}
+
+						sb.AppendLine($"\t{sequenceName}:");
+						sb.AppendLine($"\t\tLength: {frameCount}");
+						sb.AppendLine($"\t\tFacings: {groupSequenceSet.Length}");
+						sb.AppendLine($"\t\tOffset: {groupSequenceSet.OffsetX},{groupSequenceSet.OffsetY}");
+						sb.AppendLine($"\t\tZOffset: {zIndex}");
+						sb.AppendLine($"\t\tCombine:");
+
+						foreach (var frameset in outputSequence.Framesets)
+						{
+							var framesString = string.Join(",", frameset.Frames);
+							if (frameset.IsBlank)
+							{
+								sb.AppendLine($"\t\t\tblank.png: {frameset.Name}");
+							}
+							else
+							{
+								sb.AppendLine($"\t\t\top2_art.bmp: {frameset.Name}");
+							}
+
+							sb.AppendLine($"\t\t\t\tFrames: {framesString}");
+							sb.AppendLine($"\t\t\t\tLength: {frameset.Frames.Count}");
+							sb.AppendLine($"\t\t\t\tOffset: {frameset.OffsetX},{frameset.OffsetY}");
+							sb.AppendLine($"\t\t\t\tZOffset: {zIndex}");
 						}
 
 						typeIndex++;
@@ -474,7 +545,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 						}
 
 						var sequenceName = getSequenceName(typeGroupedFrame, actorId);
-						if (sequenceName != "idle")
+						if (sequenceName != "idle" && sequenceName.StartsWith("idle-"))
 						{
 							actorRule.Overlays.Add(new ActorOverlay
 							{
@@ -486,7 +557,10 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 						actorId++;
 					}
 
-					break; // Only do idle set for now
+					if (onlyIdleSequence)
+					{
+						break;
+					}
 				}
 
 				sb.AppendLine(string.Empty);

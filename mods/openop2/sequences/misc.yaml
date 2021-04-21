@@ -4,6 +4,15 @@ pips:
 	blank:
 	groups:
 
+overlay:
+	Defaults: bits/blank.png
+		Length: *
+	build-valid:
+	build-invalid:
+	target-valid:
+	target-select:
+	target-invalid:
+
 editor-overlay:
 	Defaults: bits/blank.png
 		Length: *
@@ -21,12 +30,12 @@ allyrepair:
 	repair:
 
 shroud:
-	shroud
+	shroud:
 		Length: 16
 		Combine:
 			virmask.raw: shroud1
 				Length: 16
-	shadow
+	shadow:
 		Length: 16
 		Combine:
 			virmask.raw: shadow1

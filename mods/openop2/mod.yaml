@@ -51,6 +51,7 @@ TileSets:
 	openop2|tilesets/default.yaml
 
 Weapons:
+	openop2|weapons/weapons.yaml
 
 Cursors:
 	openop2|cursors.yaml

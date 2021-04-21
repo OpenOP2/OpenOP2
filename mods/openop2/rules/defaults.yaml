@@ -46,6 +46,27 @@
 			TopLeft: -1536, -1024
 			BottomRight: 1536, 1024
 
+^3x3Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 1536
+
+^3x4Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			TopLeft: -1536, -2048
+			BottomRight: 1536, 2048
+
+^4x3Shape:
+	HitShape:
+		UseTargetableCellsOffsets: true
+		Type: Rectangle
+			TopLeft: -2048, -1536
+			BottomRight: 2048, 1536
+
 ^AutoTargetGround:
 	AutoTarget:
 		AttackAnythingCondition: stance-attackanything
@@ -341,17 +362,17 @@
 	Building:
 		Dimensions: 1,1
 		Footprint: x
-		TerrainTypes: Clear,Road
+		TerrainTypes: Clear,ClearRock,ClearRock2,ClearSand
 		RequiresBaseProvider: True
-		BuildSounds: placbldg.aud, build5.aud
-		UndeploySounds: cashturn.aud
+		#BuildSounds: placbldg.aud, build5.aud
+		#UndeploySounds: cashturn.aud
 	ActorPreviewPlaceBuildingPreview:
 	#	OverridePalette: placebuilding
 	RequiresBuildableArea:
 		AreaTypes: building
 	SoundOnDamageTransition:
-		DamagedSounds: kaboom1.aud
-		DestroyedSounds: kaboom22.aud
+	#	DamagedSounds: kaboom1.aud
+	#	DestroyedSounds: kaboom22.aud
 	WithSpriteBody:
 	#Explodes:
 	#	Type: Footprint
@@ -445,7 +466,7 @@
 		Dimensions: 1,1
 		Footprint: x
 		#BuildSounds: placbldg.aud
-		TerrainTypes: Clear,Road
+		TerrainTypes: Clear,ClearRock,ClearRock2,ClearSand
 		#UndeploySounds: cashturn.aud
 	FootprintPlaceBuildingPreview:
 	#	LineBuildSegmentPalette: placelinesegment
@@ -688,7 +709,7 @@
 ^Husk:
 	Inherits: ^BasicHusk
 	Husk:
-		AllowedTerrain: Clear, Rough, Road, Ore, Gems, Beach
+		AllowedTerrain: Clear,ClearRock,ClearRock2,ClearSand
 	#Burns:
 	#	Damage: 200
 	OwnerLostAction:
@@ -810,7 +831,7 @@
 		ShowOwnerRow: false
 	Crate:
 		Lifetime: 180
-		TerrainTypes: Clear, Rough, Road, Ore, Beach, Water
+		TerrainTypes: Clear,ClearSand,ClearRock,ClearRock2
 	RenderSprites:
 		Palette: effect
 		Image: scrate
