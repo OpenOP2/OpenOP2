@@ -40,6 +40,7 @@ Rules:
 	openop2|rules/structures.yaml
 	openop2|rules/rules-generated.yaml
 	openop2|rules/rules-example.yaml
+	openop2|rules/ai.yaml
 
 Sequences:
 	openop2|sequences/misc.yaml

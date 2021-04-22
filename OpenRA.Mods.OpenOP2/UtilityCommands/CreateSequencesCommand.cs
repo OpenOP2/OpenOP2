@@ -485,7 +485,16 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 						sb.AppendLine($"\t\tLength: {frameCount}");
 						sb.AppendLine($"\t\tFacings: {groupSequenceSet.Length}");
 						sb.AppendLine($"\t\tOffset: {groupSequenceSet.OffsetX},{groupSequenceSet.OffsetY}");
-						sb.AppendLine($"\t\tZOffset: {zIndex}");
+
+						if (groupSequenceSet.OffsetZ != 0)
+						{
+							sb.AppendLine($"\t\tZOffset: {groupSequenceSet.OffsetZ}");
+						}
+						else
+						{
+							sb.AppendLine($"\t\tZOffset: {zIndex}");
+						}
+
 						sb.AppendLine($"\t\tCombine:");
 
 						foreach (var frameset in outputSequence.Framesets)

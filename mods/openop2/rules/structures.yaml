@@ -13,7 +13,7 @@
 		TerrainTypes: Clear, ClearRock, ClearRock2, ClearSand
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 1000
+		BuildPaletteOrder: 10
 		Prerequisites: ~disabled
 		Description: Produces structures (for now).
 		IconPalette: 5
@@ -78,7 +78,7 @@
 		TerrainTypes: Clear, ClearRock, ClearRock2, ClearSand
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 10
+		BuildPaletteOrder: 20
 		#Prerequisites: ~techlevel.infonly
 		Prerequisites: ~disabled
 		Description: Produces power for your colony.
@@ -114,6 +114,62 @@
 			TopLeft: -1536, -1536
 			BottomRight: 1536, 1536
 
+^OreSmelterCommon:
+	Inherits: ^Building
+	Inherits@shape: ^4x3Shape
+	Selectable:
+		Bounds: 128,102,0,-3
+	Building:
+		Footprint: xxxx xxxx xxx_
+		Dimensions: 4,3
+		#LocalCenterOffset: -512,0,0
+		TerrainTypes: Clear, ClearRock, ClearRock2, ClearSand
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 30
+		#Prerequisites: ~techlevel.infonly
+		Prerequisites: ~disabled
+		Description: Smelts raw common ore into credits.
+		IconPalette: 5
+	Voiced:
+		VoiceSet: OreSmelterVoice
+	ProvidesPrerequisite:
+		Prerequisite: anyrefinery
+	Health:
+		HP: 90000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		MinRange: 4c0
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Ore Smelter (Common)
+	WithBuildingPlacedAnimation:
+		Sequence: make
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: -100
+	WithDeathAnimation:
+		DeathSequence: die
+		UseDeathTypeSuffix: false
+	Targetable:
+		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
+	HitShape:
+		TargetableOffsets: 1273,939,0, -980,-640,0, -980,640,0
+		Type: Rectangle
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 1536
+	Refinery:
+		DockAngle: 0
+		DockOffset: 3,2
+	StoresResources:
+		Capacity: 5000
+	#FreeActor:
+	#	Actor: HARV
+	#	SpawnOffset: 3,2
+	#	Facing: 0
+
 ^VehicleFactory:
 	Inherits: ^Building
 	Inherits@shape: ^4x3Shape
@@ -126,7 +182,7 @@
 		TerrainTypes: Clear, ClearRock, ClearRock2, ClearSand
 	Buildable:
 		Queue: Building
-		BuildPaletteOrder: 10
+		BuildPaletteOrder: 40
 		#Prerequisites: ~techlevel.infonly
 		Prerequisites: ~disabled
 		Description: Produces vehicles.
@@ -189,14 +245,61 @@
 			TopLeft: -1536, -1536
 			BottomRight: 1536, 1536
 
+^MineCommon:
+	Inherits: ^Building
+	WithDirectionalIdleOverlay@deck:
+		Sequence: deck
+		Palette: 8
+		Offset: 0,-512,0
+	Inherits@shape: ^1x1Shape
+	Selectable:
+		Bounds: 36,52,0,-6
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		#LocalCenterOffset: -512,0,0
+		AllowPlacementOnResources: true
+	Voiced:
+		VoiceSet: MineVoice
+	ProvidesPrerequisite:
+		Prerequisite: anymine
+	Health:
+		HP: 180000
+	Armor:
+		Type: Concrete
+	RevealsShroud:
+		MinRange: 4c0
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Mine (Common)
+		GenericName: Mine
+	WithBuildingPlacedAnimation:
+		Sequence: make
+		RequiresCondition: !build-incomplete
+	Power:
+		Amount: -50
+	WithDeathAnimation:
+		DeathSequence: die
+		UseDeathTypeSuffix: false
+	Targetable:
+		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	PlacesResourcesWhenCreated:
+		ResourceType: Ore2
+		Amount: 50000
+
 # Actual buildings start here
 eden-command-center:
 	Inherits@generated: ^eden-command-center-generated
 	Inherits: ^CommandCenter
 	Building:
 		Footprint: xxx _xx
-	Buildable:
-		Prerequisites: ~structures.eden
+	-Buildable:
 
 plymouth-command-center:
 	Inherits@generated: ^plymouth-command-center-generated
@@ -205,8 +308,7 @@ plymouth-command-center:
 		Bounds: 96,76,0,-6
 	Building:
 		Footprint: xxx xx_
-	Buildable:
-		Prerequisites: ~structures.plymouth
+	-Buildable:
 
 eden-tokamak:
 	Inherits@generated: ^eden-tokamak-generated
@@ -219,6 +321,18 @@ plymouth-tokamak:
 	Inherits: ^Power
 	Selectable:
 		Bounds: 64,66,0,-1
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-smelter-common:
+	Inherits@generated: ^eden-smelter-common-generated
+	Inherits: ^OreSmelterCommon
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-smelter-common:
+	Inherits@generated: ^plymouth-smelter-common-generated
+	Inherits: ^OreSmelterCommon
 	Buildable:
 		Prerequisites: ~structures.plymouth
 
@@ -239,3 +353,11 @@ plymouth-factory-vehicle:
 		Path: 4,1
 	Buildable:
 		Prerequisites: ~structures.plymouth
+
+eden-mine-common:
+	Inherits@generated: ^eden-mine-common-generated
+	Inherits: ^MineCommon
+
+plymouth-mine-common:
+	Inherits@generated: ^plymouth-mine-common-generated
+	Inherits: ^MineCommon

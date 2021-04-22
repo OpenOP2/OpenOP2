@@ -1,0 +1,63 @@
+Player:
+	ModularBot@NormalAI:
+		Name: Normal AI
+		Type: normal
+	GrantConditionOnBotOwner@normal:
+		Condition: enable-normal-ai
+		Bots: normal
+	HarvesterBotModule:
+		RequiresCondition: enable-normal-ai
+		HarvesterTypes: eden-cargo-truck, plymouth-cargo-truck
+		RefineryTypes: eden-smelter-common, plymouth-smelter-common
+	BaseBuilderBotModule@normal:
+		RequiresCondition: enable-normal-ai
+		MinimumExcessPower: 60
+		MaximumExcessPower: 200
+		ExcessPowerIncrement: 40
+		ExcessPowerIncreaseThreshold: 4
+		ConstructionYardTypes: eden-command-center, plymouth-command-center
+		RefineryTypes: eden-smelter-common, plymouth-smelter-common
+		PowerTypes: eden-tokamak, plymouth-tokamak
+		#BarracksTypes: eden-factory-vehicle, plymouth-factory-vehicle
+		VehiclesFactoryTypes: eden-factory-vehicle, plymouth-factory-vehicle
+		ProductionTypes: eden-factory-vehicle, plymouth-factory-vehicle
+		#NavalProductionTypes: spen,syrd
+		#SiloTypes: silo
+		BuildingLimits:
+			eden-command-center: 1
+			plymouth-command-center: 1
+			eden-smelter-common: 1
+			plymouth-smelter-common: 1
+			eden-factory-vehicle: 2
+			plymouth-factory-vehicle: 2
+		BuildingFractions:
+			eden-command-center: 10
+			plymouth-command-center: 10
+			eden-smelter-common: 10
+			plymouth-smelter-common: 10
+			eden-factory-vehicle: 10
+			plymouth-factory-vehicle: 10
+	BuildingRepairBotModule:
+		RequiresCondition: enable-normal-ai
+	#McvManagerBotModule:
+	#	RequiresCondition: enable-normal-ai
+	#	McvTypes: mcv
+	#	ConstructionYardTypes: fact
+	#	McvFactoryTypes: weap
+	SquadManagerBotModule@normal:
+		RequiresCondition: enable-normal-ai
+		SquadSize: 40
+		ExcludeFromSquadsTypes: eden-cargo-truck, plymouth-cargo-truck, eden-robo-dozer, plymouth-robo-dozer
+		#NavalUnitsTypes: ss,msub,dd,ca,lst,pt
+		ConstructionYardTypes: eden-command-center, plymouth-command-center
+		#NavalProductionTypes: spen,syrd
+	UnitBuilderBotModule@normal:
+		RequiresCondition: enable-normal-ai
+		UnitsToBuild:
+			eden-lynx: 50
+			plymouth-lynx: 50
+		UnitLimits:
+			eden-cargo-truck: 4
+			plymouth-cargo-truck: 4
+			eden-robo-dozer: 4
+			plymouth-robo-dozer: 4

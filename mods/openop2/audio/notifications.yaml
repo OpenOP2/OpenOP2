@@ -9,7 +9,7 @@ Speech:
 		GameLoaded: 
 		GameSaved: 
 		ConstructionComplete: 
-		NoBuild: 
+		NoBuild: savant97.wav
 		BuildingCannotPlaceAudio: savant97.wav
 		BuildingInProgress: 
 		Building: 
@@ -22,6 +22,8 @@ Speech:
 		SilosNeeded: 
 		BuildingCaptured: 
 		Repairing: 
+		UnitReady: savant6.wav
+		# all original game sounds sounds below
 		ResearchCompleted: savant2.wav
 		OurColonyIsUnderAttack: savant3.wav
 		WeAreUnderAttack: savant4.wav
@@ -89,3 +91,5 @@ Sounds:
 		CashTickUp: 
 		CashTickDown: 
 		Beacon: message2.WAV
+		RadarUp: light.WAV
+		RadarDown: temp.WAV

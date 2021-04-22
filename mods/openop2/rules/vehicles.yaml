@@ -4,6 +4,26 @@
 ^Op2Vehicle:
 	Inherits: ^Vehicle
 
+^TurretedVehicle:
+	Inherits: ^Op2Vehicle
+	Buildable:
+		Queue: Vehicle
+		Prerequisites: ~vehicles
+		IconPalette: 5
+	Turreted:
+		TurnSpeed: 28
+	Armament:
+		Weapon: LaserFire
+		Recoil: 85
+		RecoilRecovery: 25
+		LocalOffset: 768,0,90
+		#MuzzleSequence: muzzle
+	AttackTurreted:
+	#WithMuzzleOverlay:
+	WithSpriteTurret:
+		Sequence: turret2
+		Palette: 3
+
 ^CargoTruck:
 	Inherits: ^Op2Vehicle
 	Buildable:
@@ -25,12 +45,59 @@
 		Range: 7c0
 	Mobile:
 		Speed: 78
+	Harvester:
+		Capacity: 20
+		Resources: ore2
+		BaleUnloadDelay: 1
+		SearchFromProcRadius: 15
+		SearchFromHarvesterRadius: 8
+		HarvestFacings: 8
+		EmptyCondition: no-ore
+	WithHarvestAnimation:
+	WithDockingAnimation:
+		DockSequence: idle
+		DockLoopSequence: idle
+	WithHarvesterPipsDecoration:
+		Position: BottomLeft
+		Margin: 4, 3
+		RequiresSelection: true
+		PipCount: 7
+		ResourceSequences:
+			Ore: pip-yellow
+
+^RoboMiner:
+	Inherits: ^Op2Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		#Prerequisites: ~techlevel.infonly
+		Prerequisites: ~vehicles
+		Description: Constructs mines on valuable mineral deposits.
+		IconPalette: 5
+	Voiced:
+		VoiceSet: RoboMinerVoice
+	Valued:
+		Cost: 400
+	Tooltip:
+		Name: Robo-Miner
+	Health:
+		HP: 100
+	RevealsShroud:
+		Range: 7c0
+	Mobile:
+		Speed: 72
+	Transforms:
+		IntoActor: eden-mine-common
+		Offset: 0,0
+		Facing: 384
+		TransformSounds: mine_2.WAV
+		NoTransformNotification: CannotComply
 
 ^RoboDozer:
 	Inherits: ^Op2Vehicle
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 30
 		#Prerequisites: ~techlevel.infonly
 		Prerequisites: ~vehicles
 		Description: Can clear rough terrain so it can be built upon.
@@ -41,6 +108,28 @@
 		Cost: 400
 	Tooltip:
 		Name: Robo-Dozer
+	Health:
+		HP: 100
+	RevealsShroud:
+		Range: 7c0
+	Mobile:
+		Speed: 72
+
+^Lynx:
+	Inherits: ^TurretedVehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 40
+		#Prerequisites: ~techlevel.infonly
+		Prerequisites: ~vehicles
+		Description: Basic combat vehicle.
+		IconPalette: 5
+	Voiced:
+		VoiceSet: LynxVoice
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Lynx
 	Health:
 		HP: 100
 	RevealsShroud:
@@ -72,6 +161,36 @@ eden-robo-dozer:
 plymouth-robo-dozer:
 	Inherits@generated: ^plymouth-robo-dozer-generated
 	Inherits: ^RoboDozer
+	Buildable:
+		Prerequisites: ~vehicles.plymouth
+		IconPalette: 3
+
+eden-robo-miner:
+	Inherits@generated: ^eden-robo-miner-generated
+	Inherits: ^RoboMiner
+	Buildable:
+		Prerequisites: ~vehicles.eden
+		IconPalette: 3
+
+plymouth-robo-miner:
+	Inherits@generated: ^plymouth-robo-miner-generated
+	Inherits: ^RoboMiner
+	Buildable:
+		Prerequisites: ~vehicles.plymouth
+		IconPalette: 3
+	Transforms:
+		IntoActor: plymouth-mine-common
+
+eden-lynx:
+	Inherits@generated: ^eden-lynx-generated
+	Inherits: ^Lynx
+	Buildable:
+		Prerequisites: ~vehicles.eden
+		IconPalette: 3
+
+plymouth-lynx:
+	Inherits@generated: ^plymouth-lynx-generated
+	Inherits: ^Lynx
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3

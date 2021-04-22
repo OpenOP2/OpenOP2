@@ -76,36 +76,20 @@ plymouth-robo-surveyor:
 	Inherits@generated: ^plymouth-robo-surveyor-generated
 	Inherits: ^StubVehicle
 
-eden-robo-miner:
-	Inherits@generated: ^eden-robo-miner-generated
+eden-tiger:
+	Inherits@generated: ^eden-tiger-generated
 	Inherits: ^StubVehicle
 
-plymouth-robo-miner:
-	Inherits@generated: ^plymouth-robo-miner-generated
+plymouth-tiger:
+	Inherits@generated: ^plymouth-tiger-generated
 	Inherits: ^StubVehicle
 
-eden-combat-chassis-heavy:
-	Inherits@generated: ^eden-combat-chassis-heavy-generated
+eden-panther:
+	Inherits@generated: ^eden-panther-generated
 	Inherits: ^StubVehicle
 
-plymouth-combat-chassis-heavy:
-	Inherits@generated: ^plymouth-combat-chassis-heavy-generated
-	Inherits: ^StubVehicle
-
-eden-combat-chassis-medium:
-	Inherits@generated: ^eden-combat-chassis-medium-generated
-	Inherits: ^StubVehicle
-
-plymouth-combat-chassis-medium:
-	Inherits@generated: ^plymouth-combat-chassis-medium-generated
-	Inherits: ^StubVehicle
-
-eden-chassis-unknown:
-	Inherits@generated: ^eden-chassis-unknown-generated
-	Inherits: ^StubVehicle
-
-plymouth-chassis-unknown:
-	Inherits@generated: ^plymouth-chassis-unknown-generated
+plymouth-panther:
+	Inherits@generated: ^plymouth-panther-generated
 	Inherits: ^StubVehicle
 
 eden-flyer:
@@ -178,14 +162,6 @@ eden-robot-command-center:
 
 plymouth-robot-command-center:
 	Inherits@generated: ^plymouth-robot-command-center-generated
-	Inherits: ^StubBuilding
-
-eden-smelter-common:
-	Inherits@generated: ^eden-smelter-common-generated
-	Inherits: ^StubBuilding
-
-plymouth-smelter-common:
-	Inherits@generated: ^plymouth-smelter-common-generated
 	Inherits: ^StubBuilding
 
 eden-storage-common:
@@ -298,14 +274,6 @@ eden-spaceport:
 
 plymouth-spaceport:
 	Inherits@generated: ^plymouth-spaceport-generated
-	Inherits: ^StubBuilding
-
-eden-mine-common:
-	Inherits@generated: ^eden-mine-common-generated
-	Inherits: ^StubBuilding
-
-plymouth-mine-common:
-	Inherits@generated: ^plymouth-mine-common-generated
 	Inherits: ^StubBuilding
 
 eden-mine-rare:

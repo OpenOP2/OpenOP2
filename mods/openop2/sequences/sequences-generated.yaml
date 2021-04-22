@@ -14703,6 +14703,29 @@ eden-robo-miner:
 				Length: 1
 				Offset: 0,0
 				ZOffset: -3072
+	# All sequences: icon, icon-shadow-id1
+	icon:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 272
+				Length: 1
+				Offset: 3,2
+				ZOffset: 0
+	icon-shadow-id1:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -256
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 4585
+				Length: 1
+				Offset: 1,-1
+				ZOffset: -256
 
 plymouth-robo-miner:
 	# All sequences: idle, idle-sprite-id1, idle-shadow-id2
@@ -14949,8 +14972,62 @@ plymouth-robo-miner:
 				Length: 3
 				Offset: 0,3
 				ZOffset: -512
+	# All sequences: icon, icon-sprite-id1, icon-shadow-id2
+	icon:
+		Length: 3
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 353
+				Length: 1
+				Offset: 2,4
+				ZOffset: 0
+			op2_art.bmp: icon-facing0-1
+				Frames: 4852
+				Length: 1
+				Offset: 6,14
+				ZOffset: 0
+			op2_art.bmp: icon-facing0-2
+				Frames: 353
+				Length: 1
+				Offset: 2,4
+				ZOffset: 0
+	icon-sprite-id1:
+		Length: 3
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -256
+		Combine:
+			blank.png: icon-facing0-0
+				Frames: 0
+				Length: 1
+				Offset: 0,0
+				ZOffset: -256
+			op2_art.bmp: icon-facing0-1
+				Frames: 353
+				Length: 1
+				Offset: 2,4
+				ZOffset: -256
+			blank.png: icon-facing0-2
+				Frames: 0
+				Length: 1
+				Offset: 0,0
+				ZOffset: -256
+	icon-shadow-id2:
+		Length: 3
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -512
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 4585,4585,4585
+				Length: 3
+				Offset: 0,-1
+				ZOffset: -512
 
-eden-combat-chassis-heavy:
+eden-tiger:
 	# All sequences: idle, idle-sprite-id1, idle-shadow-id2
 	idle:
 		Length: 4
@@ -15141,7 +15218,7 @@ eden-combat-chassis-heavy:
 				Offset: -2,0
 				ZOffset: -512
 
-plymouth-combat-chassis-heavy:
+plymouth-tiger:
 	# All sequences: idle, idle-sprite-id1, idle-shadow-id2
 	idle:
 		Length: 4
@@ -15302,7 +15379,7 @@ plymouth-combat-chassis-heavy:
 				Offset: -2,0
 				ZOffset: -512
 
-eden-combat-chassis-medium:
+eden-panther:
 	# All sequences: idle, idle-sprite-id1, idle-shadow-id2
 	idle:
 		Length: 3
@@ -15418,7 +15495,7 @@ eden-combat-chassis-medium:
 				Offset: -4,0
 				ZOffset: -512
 
-plymouth-combat-chassis-medium:
+plymouth-panther:
 	# All sequences: idle, idle-sprite-id1, idle-shadow-id2
 	idle:
 		Length: 3
@@ -15539,7 +15616,7 @@ plymouth-combat-chassis-medium:
 				Offset: -1,2
 				ZOffset: -512
 
-eden-chassis-unknown:
+eden-lynx:
 	# All sequences: idle, idle-sprite-id1, idle-shadow-id2
 	idle:
 		Length: 6
@@ -15799,8 +15876,129 @@ eden-chassis-unknown:
 				Length: 6
 				Offset: -2,0
 				ZOffset: -512
+	# All sequences: icon, icon-sprite-id1, icon-shadow-id2
+	icon:
+		Length: 6
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 2084,2084,2084,2084,2084,2084
+				Length: 6
+				Offset: 1,2
+				ZOffset: 0
+	icon-sprite-id1:
+		Length: 6
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -256
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 2085,2087,2086,2085,2087,2086
+				Length: 6
+				Offset: 1,12
+				ZOffset: -256
+	icon-shadow-id2:
+		Length: 6
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -512
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 3920,3920,3920,3920,3920,3920
+				Length: 6
+				Offset: 3,1
+				ZOffset: -512
+	# All sequences: turret2
+	turret2:
+		Length: 1
+		Facings: 16
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: turret2-facing0-0
+				Frames: 2567
+				Length: 1
+				Offset: 1,-2
+				ZOffset: 0
+			op2_art.bmp: turret2-facing1-0
+				Frames: 2568
+				Length: 1
+				Offset: -1,-1
+				ZOffset: 0
+			op2_art.bmp: turret2-facing2-0
+				Frames: 2569
+				Length: 1
+				Offset: -1,1
+				ZOffset: 0
+			op2_art.bmp: turret2-facing3-0
+				Frames: 2570
+				Length: 1
+				Offset: -3,2
+				ZOffset: 0
+			op2_art.bmp: turret2-facing4-0
+				Frames: 2571
+				Length: 1
+				Offset: -3,3
+				ZOffset: 0
+			op2_art.bmp: turret2-facing5-0
+				Frames: 2572
+				Length: 1
+				Offset: -2,3
+				ZOffset: 0
+			op2_art.bmp: turret2-facing6-0
+				Frames: 2573
+				Length: 1
+				Offset: -2,4
+				ZOffset: 0
+			op2_art.bmp: turret2-facing7-0
+				Frames: 2574
+				Length: 1
+				Offset: 0,5
+				ZOffset: 0
+			op2_art.bmp: turret2-facing8-0
+				Frames: 2575
+				Length: 1
+				Offset: 2,6
+				ZOffset: 0
+			op2_art.bmp: turret2-facing9-0
+				Frames: 2576
+				Length: 1
+				Offset: 1,5
+				ZOffset: 0
+			op2_art.bmp: turret2-facing10-0
+				Frames: 2577
+				Length: 1
+				Offset: 4,4
+				ZOffset: 0
+			op2_art.bmp: turret2-facing11-0
+				Frames: 2578
+				Length: 1
+				Offset: 6,3
+				ZOffset: 0
+			op2_art.bmp: turret2-facing12-0
+				Frames: 2563
+				Length: 1
+				Offset: 6,2
+				ZOffset: 0
+			op2_art.bmp: turret2-facing13-0
+				Frames: 2564
+				Length: 1
+				Offset: 4,2
+				ZOffset: 0
+			op2_art.bmp: turret2-facing14-0
+				Frames: 2565
+				Length: 1
+				Offset: 4,0
+				ZOffset: 0
+			op2_art.bmp: turret2-facing15-0
+				Frames: 2566
+				Length: 1
+				Offset: 2,-1
+				ZOffset: 0
 
-plymouth-chassis-unknown:
+plymouth-lynx:
 	# All sequences: idle, idle-sprite-id1, idle-shadow-id2
 	idle:
 		Length: 6
@@ -16060,6 +16258,127 @@ plymouth-chassis-unknown:
 				Length: 6
 				Offset: -2,0
 				ZOffset: -512
+	# All sequences: icon, icon-sprite-id1, icon-shadow-id2
+	icon:
+		Length: 6
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 2157,2157,2157,2157,2157,2157
+				Length: 6
+				Offset: 1,2
+				ZOffset: 0
+	icon-sprite-id1:
+		Length: 6
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -256
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 2158,2159,2160,2158,2159,2160
+				Length: 6
+				Offset: 1,12
+				ZOffset: -256
+	icon-shadow-id2:
+		Length: 6
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -512
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 3920,3920,3920,3920,3920,3920
+				Length: 6
+				Offset: 3,1
+				ZOffset: -512
+	# All sequences: turret2
+	turret2:
+		Length: 1
+		Facings: 16
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: turret2-facing0-0
+				Frames: 3232
+				Length: 1
+				Offset: 1,-1
+				ZOffset: 0
+			op2_art.bmp: turret2-facing1-0
+				Frames: 3233
+				Length: 1
+				Offset: 0,-1
+				ZOffset: 0
+			op2_art.bmp: turret2-facing2-0
+				Frames: 3234
+				Length: 1
+				Offset: -1,1
+				ZOffset: 0
+			op2_art.bmp: turret2-facing3-0
+				Frames: 3235
+				Length: 1
+				Offset: -2,2
+				ZOffset: 0
+			op2_art.bmp: turret2-facing4-0
+				Frames: 3236
+				Length: 1
+				Offset: -3,3
+				ZOffset: 0
+			op2_art.bmp: turret2-facing5-0
+				Frames: 3237
+				Length: 1
+				Offset: -2,3
+				ZOffset: 0
+			op2_art.bmp: turret2-facing6-0
+				Frames: 3238
+				Length: 1
+				Offset: -2,4
+				ZOffset: 0
+			op2_art.bmp: turret2-facing7-0
+				Frames: 3239
+				Length: 1
+				Offset: 0,5
+				ZOffset: 0
+			op2_art.bmp: turret2-facing8-0
+				Frames: 3240
+				Length: 1
+				Offset: 2,6
+				ZOffset: 0
+			op2_art.bmp: turret2-facing9-0
+				Frames: 3241
+				Length: 1
+				Offset: 2,5
+				ZOffset: 0
+			op2_art.bmp: turret2-facing10-0
+				Frames: 3242
+				Length: 1
+				Offset: 4,4
+				ZOffset: 0
+			op2_art.bmp: turret2-facing11-0
+				Frames: 3243
+				Length: 1
+				Offset: 6,3
+				ZOffset: 0
+			op2_art.bmp: turret2-facing12-0
+				Frames: 3228
+				Length: 1
+				Offset: 6,2
+				ZOffset: 0
+			op2_art.bmp: turret2-facing13-0
+				Frames: 3229
+				Length: 1
+				Offset: 4,2
+				ZOffset: 0
+			op2_art.bmp: turret2-facing14-0
+				Frames: 3230
+				Length: 1
+				Offset: 4,0
+				ZOffset: 0
+			op2_art.bmp: turret2-facing15-0
+				Frames: 3231
+				Length: 1
+				Offset: 2,-1
+				ZOffset: 0
 
 eden-flyer:
 	# All sequences: idle
@@ -67548,6 +67867,18 @@ eden-smelter-common:
 				Length: 1
 				Offset: -33,-20
 				ZOffset: -15616
+	# All sequences: icon
+	icon:
+		Length: 17
+		Facings: 1
+		Offset: -23,-23
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 1703,1703,1709,1709,1709,1709,1709,1708,1708,1707,1707,1706,1706,1705,1705,1704,1704
+				Length: 17
+				Offset: 24,23
+				ZOffset: 0
 
 plymouth-smelter-common:
 	# All sequences: idle, idle-sprite-id1, idle-sprite-id2, idle-sprite-id3, idle-sprite-id4, idle-sprite-id5, idle-shadow-id6, idle-shadow-id7, idle-shadow-id8
@@ -71353,6 +71684,18 @@ plymouth-smelter-common:
 				Length: 1
 				Offset: -45,-43
 				ZOffset: -14080
+	# All sequences: icon
+	icon:
+		Length: 17
+		Facings: 1
+		Offset: -23,-23
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 1703,1703,1709,1709,1709,1709,1709,1708,1708,1707,1707,1706,1706,1705,1705,1704,1704
+				Length: 17
+				Offset: 24,23
+				ZOffset: 0
 
 eden-storage-common:
 	# All sequences: idle, idle-sprite-id1, idle-shadow-id2
@@ -132988,7 +133331,7 @@ eden-mine-common:
 	idle:
 		Length: 1
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: idle-facing0-0
@@ -132999,7 +133342,7 @@ eden-mine-common:
 	idle-shadow-id1:
 		Length: 1
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -256
 		Combine:
 			op2_art.bmp: idle-facing0-0
@@ -133010,7 +133353,7 @@ eden-mine-common:
 	idle-shadow-id2:
 		Length: 1
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -512
 		Combine:
 			op2_art.bmp: idle-facing0-0
@@ -133021,7 +133364,7 @@ eden-mine-common:
 	idle-shadow-id3:
 		Length: 1
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -768
 		Combine:
 			op2_art.bmp: idle-facing0-0
@@ -133033,7 +133376,7 @@ eden-mine-common:
 	damaged:
 		Length: 1
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: damaged-facing0-0
@@ -133044,7 +133387,7 @@ eden-mine-common:
 	damaged-shadow-id1:
 		Length: 1
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -256
 		Combine:
 			op2_art.bmp: damaged-facing0-0
@@ -133055,7 +133398,7 @@ eden-mine-common:
 	damaged-shadow-id2:
 		Length: 1
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -512
 		Combine:
 			op2_art.bmp: damaged-facing0-0
@@ -133066,7 +133409,7 @@ eden-mine-common:
 	damaged-shadow-id3:
 		Length: 1
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -768
 		Combine:
 			op2_art.bmp: damaged-facing0-0
@@ -133078,7 +133421,7 @@ eden-mine-common:
 	die:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: die-facing0-0
@@ -133104,7 +133447,7 @@ eden-mine-common:
 	die-sprite-id1:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -256
 		Combine:
 			op2_art.bmp: die-facing0-0
@@ -133130,7 +133473,7 @@ eden-mine-common:
 	die-sprite-id2:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -512
 		Combine:
 			op2_art.bmp: die-facing0-0
@@ -133156,7 +133499,7 @@ eden-mine-common:
 	die-sprite-id3:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -768
 		Combine:
 			op2_art.bmp: die-facing0-0
@@ -133182,7 +133525,7 @@ eden-mine-common:
 	die-sprite-id4:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -1024
 		Combine:
 			op2_art.bmp: die-facing0-0
@@ -133208,7 +133551,7 @@ eden-mine-common:
 	die-sprite-id5:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -1280
 		Combine:
 			op2_art.bmp: die-facing0-0
@@ -133234,7 +133577,7 @@ eden-mine-common:
 	die-sprite-id6:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -1536
 		Combine:
 			op2_art.bmp: die-facing0-0
@@ -133260,7 +133603,7 @@ eden-mine-common:
 	die-sprite-id7:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -1792
 		Combine:
 			op2_art.bmp: die-facing0-0
@@ -133286,7 +133629,7 @@ eden-mine-common:
 	die-sprite-id8:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -2048
 		Combine:
 			op2_art.bmp: die-facing0-0
@@ -133312,7 +133655,7 @@ eden-mine-common:
 	die-sprite-id9:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -2304
 		Combine:
 			blank.png: die-facing0-0
@@ -133338,7 +133681,7 @@ eden-mine-common:
 	die-sprite-id10:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -2560
 		Combine:
 			blank.png: die-facing0-0
@@ -133361,13 +133704,25 @@ eden-mine-common:
 				Length: 1
 				Offset: 13,-6
 				ZOffset: -2560
+	# All sequences: deck
+	deck:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -1024
+		Combine:
+			op2_art.bmp: deck-facing0-0
+				Frames: 2398
+				Length: 1
+				Offset: -16,0
+				ZOffset: 0
 
 plymouth-mine-common:
 	# All sequences: idle, idle-sprite-id1, idle-sprite-id2, idle-sprite-id3, idle-shadow-id4
 	idle:
 		Length: 33
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: idle-facing0-0
@@ -133378,7 +133733,7 @@ plymouth-mine-common:
 	idle-sprite-id1:
 		Length: 33
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -256
 		Combine:
 			op2_art.bmp: idle-facing0-0
@@ -133389,7 +133744,7 @@ plymouth-mine-common:
 	idle-sprite-id2:
 		Length: 33
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -512
 		Combine:
 			op2_art.bmp: idle-facing0-0
@@ -133400,7 +133755,7 @@ plymouth-mine-common:
 	idle-sprite-id3:
 		Length: 33
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -768
 		Combine:
 			blank.png: idle-facing0-0
@@ -133441,7 +133796,7 @@ plymouth-mine-common:
 	idle-shadow-id4:
 		Length: 33
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -1024
 		Combine:
 			op2_art.bmp: idle-facing0-0
@@ -133453,7 +133808,7 @@ plymouth-mine-common:
 	damaged:
 		Length: 1
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: damaged-facing0-0
@@ -133464,7 +133819,7 @@ plymouth-mine-common:
 	damaged-shadow-id1:
 		Length: 1
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -256
 		Combine:
 			op2_art.bmp: damaged-facing0-0
@@ -133476,7 +133831,7 @@ plymouth-mine-common:
 	damaged2:
 		Length: 1
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: damaged2-facing0-0
@@ -133487,7 +133842,7 @@ plymouth-mine-common:
 	damaged2-shadow-id1:
 		Length: 1
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -256
 		Combine:
 			op2_art.bmp: damaged2-facing0-0
@@ -133499,7 +133854,7 @@ plymouth-mine-common:
 	make:
 		Length: 74
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: make-facing0-0
@@ -133650,7 +134005,7 @@ plymouth-mine-common:
 	make-sprite-id1:
 		Length: 74
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -256
 		Combine:
 			blank.png: make-facing0-0
@@ -133701,7 +134056,7 @@ plymouth-mine-common:
 	make-sprite-id2:
 		Length: 74
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -512
 		Combine:
 			blank.png: make-facing0-0
@@ -133772,7 +134127,7 @@ plymouth-mine-common:
 	make-shadow-id3:
 		Length: 74
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -768
 		Combine:
 			op2_art.bmp: make-facing0-0
@@ -133819,7 +134174,7 @@ plymouth-mine-common:
 	die:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: die-facing0-0
@@ -133845,7 +134200,7 @@ plymouth-mine-common:
 	die-sprite-id1:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -256
 		Combine:
 			op2_art.bmp: die-facing0-0
@@ -133871,7 +134226,7 @@ plymouth-mine-common:
 	die-sprite-id2:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -512
 		Combine:
 			op2_art.bmp: die-facing0-0
@@ -133897,7 +134252,7 @@ plymouth-mine-common:
 	die-sprite-id3:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -768
 		Combine:
 			op2_art.bmp: die-facing0-0
@@ -133923,7 +134278,7 @@ plymouth-mine-common:
 	die-sprite-id4:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -1024
 		Combine:
 			op2_art.bmp: die-facing0-0
@@ -133939,7 +134294,7 @@ plymouth-mine-common:
 	die-sprite-id5:
 		Length: 4
 		Facings: 1
-		Offset: 0,0
+		Offset: -16,6
 		ZOffset: -1280
 		Combine:
 			op2_art.bmp: die-facing0-0
@@ -133952,6 +134307,18 @@ plymouth-mine-common:
 				Length: 3
 				Offset: 0,0
 				ZOffset: -1280
+	# All sequences: deck
+	deck:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -1024
+		Combine:
+			op2_art.bmp: deck-facing0-0
+				Frames: 2398
+				Length: 1
+				Offset: -16,0
+				ZOffset: 0
 
 eden-mine-rare:
 	# All sequences: idle, idle-shadow-id1, idle-shadow-id2
@@ -156792,95 +157159,6 @@ plymouth-turret-missile:
 				Frames: 2273
 				Length: 1
 				Offset: 2,1
-				ZOffset: 0
-
-eden-turret-small:
-	# All sequences: idle
-	idle:
-		Length: 1
-		Facings: 16
-		Offset: 0,0
-		ZOffset: 0
-		Combine:
-			op2_art.bmp: idle-facing0-0
-				Frames: 2563
-				Length: 1
-				Offset: 6,2
-				ZOffset: 0
-			op2_art.bmp: idle-facing1-0
-				Frames: 2564
-				Length: 1
-				Offset: 4,2
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-0
-				Frames: 2565
-				Length: 1
-				Offset: 4,0
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-0
-				Frames: 2566
-				Length: 1
-				Offset: 2,-1
-				ZOffset: 0
-			op2_art.bmp: idle-facing4-0
-				Frames: 2567
-				Length: 1
-				Offset: 1,-2
-				ZOffset: 0
-			op2_art.bmp: idle-facing5-0
-				Frames: 2568
-				Length: 1
-				Offset: -1,-1
-				ZOffset: 0
-			op2_art.bmp: idle-facing6-0
-				Frames: 2569
-				Length: 1
-				Offset: -1,1
-				ZOffset: 0
-			op2_art.bmp: idle-facing7-0
-				Frames: 2570
-				Length: 1
-				Offset: -3,2
-				ZOffset: 0
-			op2_art.bmp: idle-facing8-0
-				Frames: 2571
-				Length: 1
-				Offset: -3,3
-				ZOffset: 0
-			op2_art.bmp: idle-facing9-0
-				Frames: 2572
-				Length: 1
-				Offset: -2,3
-				ZOffset: 0
-			op2_art.bmp: idle-facing10-0
-				Frames: 2573
-				Length: 1
-				Offset: -2,4
-				ZOffset: 0
-			op2_art.bmp: idle-facing11-0
-				Frames: 2574
-				Length: 1
-				Offset: 0,5
-				ZOffset: 0
-			op2_art.bmp: idle-facing12-0
-				Frames: 2575
-				Length: 1
-				Offset: 2,6
-				ZOffset: 0
-			op2_art.bmp: idle-facing13-0
-				Frames: 2576
-				Length: 1
-				Offset: 1,5
-				ZOffset: 0
-			op2_art.bmp: idle-facing14-0
-				Frames: 2577
-				Length: 1
-				Offset: 4,4
-				ZOffset: 0
-			op2_art.bmp: idle-facing15-0
-				Frames: 2578
-				Length: 1
-				Offset: 6,3
 				ZOffset: 0
 
 eden-turret-small-double:

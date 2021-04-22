@@ -19,10 +19,20 @@ TokamakVoice:
 	Voices:
 		Select: tokamsel.WAV
 
+OreSmelterVoice:
+	DefaultVariant: 
+	Voices:
+		Select: smelter1.WAV
+
 VehicleFactoryVoice:
 	DefaultVariant: 
 	Voices:
 		Select: repvhc.WAV
+
+MineVoice:
+	DefaultVariant: 
+	Voices:
+		Select: mine_1.WAV
 
 RoboDozerVoice:
 	DefaultVariant: 
@@ -36,3 +46,15 @@ CargoTruckVoice:
 		Select: truk_sel.wav
 		Action: beep2.WAV
 		Unload: dump.wav
+
+RoboMinerVoice:
+	DefaultVariant: 
+	Voices:
+		Select: robmine.wav
+		Action: beep2.WAV
+
+LynxVoice:
+	DefaultVariant: 
+	Voices:
+		Select: repvhc.WAV
+		Action: beep2.WAV

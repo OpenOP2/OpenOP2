@@ -26,6 +26,7 @@
 
 		public int OffsetX { get; set; }
 		public int OffsetY { get; set; }
+		public int OffsetZ { get; set; }
 	}
 
 	public enum ActorType
@@ -374,6 +375,7 @@
 			{
 				Name = "eden-robo-miner",
 				ActorType = ActorType.Vehicle,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -395,12 +397,19 @@
 						Length = 1,
 						Sequence = "make-dildo",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 1170,
+						Length = 1,
+						Sequence = "icon",
+					},
 				},
 			},
 			new GroupSequence()
 			{
 				Name = "plymouth-robo-miner",
 				ActorType = ActorType.Vehicle,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -410,11 +419,17 @@
 						Sequence = "idle",
 						StartOffset = 4,
 					},
+					new GroupSequenceSet()
+					{
+						Start = 1186,
+						Length = 1,
+						Sequence = "icon",
+					},
 				},
 			},
 			new GroupSequence()
 			{
-				Name = "eden-combat-chassis-heavy",
+				Name = "eden-tiger",
 				ActorType = ActorType.Vehicle,
 				Sets = new[]
 				{
@@ -429,7 +444,7 @@
 			},
 			new GroupSequence()
 			{
-				Name = "plymouth-combat-chassis-heavy",
+				Name = "plymouth-tiger",
 				ActorType = ActorType.Vehicle,
 				Sets = new[]
 				{
@@ -444,7 +459,7 @@
 			},
 			new GroupSequence()
 			{
-				Name = "eden-combat-chassis-medium",
+				Name = "eden-panther",
 				ActorType = ActorType.Vehicle,
 				Sets = new[]
 				{
@@ -459,7 +474,7 @@
 			},
 			new GroupSequence()
 			{
-				Name = "plymouth-combat-chassis-medium",
+				Name = "plymouth-panther",
 				ActorType = ActorType.Vehicle,
 				Sets = new[]
 				{
@@ -474,8 +489,9 @@
 			},
 			new GroupSequence()
 			{
-				Name = "eden-chassis-unknown",
+				Name = "eden-lynx",
 				ActorType = ActorType.Vehicle,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -485,12 +501,26 @@
 						Sequence = "idle",
 						StartOffset = 4,
 					},
+					new GroupSequenceSet()
+					{
+						Start = 1202,
+						Length = 1,
+						Sequence = "icon",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 1270,
+						Length = 16,
+						Sequence = "turret2",
+						StartOffset = 4,
+					},
 				},
 			},
 			new GroupSequence()
 			{
-				Name = "plymouth-chassis-unknown",
+				Name = "plymouth-lynx",
 				ActorType = ActorType.Vehicle,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -498,6 +528,19 @@
 						Start = 1227,
 						Length = 16,
 						Sequence = "idle",
+						StartOffset = 4,
+					},
+					new GroupSequenceSet()
+					{
+						Start = 1227,
+						Length = 1,
+						Sequence = "icon",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 1302,
+						Length = 16,
+						Sequence = "turret2",
 						StartOffset = 4,
 					},
 				},
@@ -1353,6 +1396,7 @@
 			{
 				Name = "eden-smelter-common",
 				ActorType = ActorType.Building,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -1391,12 +1435,21 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 1109,
+						Length = 1,
+						Sequence = "icon",
+						OffsetX = -23,
+						OffsetY = -23,
+					},
 				},
 			},
 			new GroupSequence()
 			{
 				Name = "plymouth-smelter-common",
 				ActorType = ActorType.Building,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -1428,6 +1481,14 @@
 						Start = 144,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 1109,
+						Length = 1,
+						Sequence = "icon",
+						OffsetX = -23,
+						OffsetY = -23,
 					},
 				},
 			},
@@ -2559,6 +2620,7 @@
 			{
 				Name = "eden-mine-common",
 				ActorType = ActorType.Building,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -2566,18 +2628,31 @@
 						Start = 1001,
 						Length = 1,
 						Sequence = "idle",
+						OffsetX = -16,
+						OffsetY = 6,
 					},
 					new GroupSequenceSet()
 					{
 						Start = 1002,
 						Length = 1,
 						Sequence = "damaged",
+						OffsetX = -16,
+						OffsetY = 6,
 					},
 					new GroupSequenceSet()
 					{
 						Start = 1003,
 						Length = 1,
 						Sequence = "die",
+						OffsetX = -16,
+						OffsetY = 6,
+					},
+					new GroupSequenceSet()
+					{
+						Start = 1762,
+						Length = 1,
+						Sequence = "deck",
+						OffsetZ = -1024,
 					},
 				},
 			},
@@ -2585,6 +2660,7 @@
 			{
 				Name = "plymouth-mine-common",
 				ActorType = ActorType.Building,
+				CreateExampleActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -2592,30 +2668,47 @@
 						Start = 1848,
 						Length = 1,
 						Sequence = "idle",
+						OffsetX = -16,
+						OffsetY = 6,
 					},
 					new GroupSequenceSet()
 					{
 						Start = 998,
 						Length = 1,
 						Sequence = "damaged",
+						OffsetX = -16,
+						OffsetY = 6,
 					},
 					new GroupSequenceSet()
 					{
 						Start = 999,
 						Length = 1,
 						Sequence = "damaged2",
+						OffsetX = -16,
+						OffsetY = 6,
 					},
 					new GroupSequenceSet()
 					{
 						Start = 421,
 						Length = 1,
 						Sequence = "make",
+						OffsetX = -16,
+						OffsetY = 6,
 					},
 					new GroupSequenceSet()
 					{
 						Start = 1000,
 						Length = 1,
 						Sequence = "die",
+						OffsetX = -16,
+						OffsetY = 6,
+					},
+					new GroupSequenceSet()
+					{
+						Start = 1762,
+						Length = 1,
+						Sequence = "deck",
+						OffsetZ = -1024,
 					},
 				},
 			},
@@ -4108,21 +4201,6 @@
 					new GroupSequenceSet()
 					{
 						Start = 1254,
-						Length = 16,
-						Sequence = "idle",
-					},
-				},
-			},
-			new GroupSequence()
-			{
-				Name = "eden-turret-small",
-				ActorType = ActorType.Turret,
-				CreateActor = false,
-				Sets = new[]
-				{
-					new GroupSequenceSet()
-					{
-						Start = 1270,
 						Length = 16,
 						Sequence = "idle",
 					},

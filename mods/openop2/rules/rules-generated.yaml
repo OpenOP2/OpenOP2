@@ -271,9 +271,9 @@
 		Sequence: idle-shadow-id2
 		Palette: shadow
 
-^eden-combat-chassis-heavy-generated:
+^eden-tiger-generated:
 	RenderSprites:
-		Image: eden-combat-chassis-heavy
+		Image: eden-tiger
 		PlayerPalette: playerMapped3
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-sprite-id1
@@ -283,9 +283,9 @@
 		Sequence: idle-shadow-id2
 		Palette: shadow
 
-^plymouth-combat-chassis-heavy-generated:
+^plymouth-tiger-generated:
 	RenderSprites:
-		Image: plymouth-combat-chassis-heavy
+		Image: plymouth-tiger
 		PlayerPalette: playerMapped7
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-sprite-id1
@@ -295,9 +295,9 @@
 		Sequence: idle-shadow-id2
 		Palette: shadow
 
-^eden-combat-chassis-medium-generated:
+^eden-panther-generated:
 	RenderSprites:
-		Image: eden-combat-chassis-medium
+		Image: eden-panther
 		PlayerPalette: playerMapped3
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-sprite-id1
@@ -307,9 +307,9 @@
 		Sequence: idle-shadow-id2
 		Palette: shadow
 
-^plymouth-combat-chassis-medium-generated:
+^plymouth-panther-generated:
 	RenderSprites:
-		Image: plymouth-combat-chassis-medium
+		Image: plymouth-panther
 		PlayerPalette: playerMapped3
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-sprite-id1
@@ -319,9 +319,9 @@
 		Sequence: idle-shadow-id2
 		Palette: shadow
 
-^eden-chassis-unknown-generated:
+^eden-lynx-generated:
 	RenderSprites:
-		Image: eden-chassis-unknown
+		Image: eden-lynx
 		PlayerPalette: playerMapped3
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-sprite-id1
@@ -331,9 +331,9 @@
 		Sequence: idle-shadow-id2
 		Palette: shadow
 
-^plymouth-chassis-unknown-generated:
+^plymouth-lynx-generated:
 	RenderSprites:
-		Image: plymouth-chassis-unknown
+		Image: plymouth-lynx
 		PlayerPalette: playerMapped7
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-sprite-id1

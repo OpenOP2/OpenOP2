@@ -1,11 +1,16 @@
 pips:
-	Defaults: bits/blank.png
+	Defaults: bits/pips.png
 		Length: *
 	blank:
 	groups:
+	pip-empty:
+	pip-yellow:
+		Start: 4
+	pip-green:
+		Start: 2
 
 overlay:
-	Defaults: bits/blank.png
+	Defaults: bits/filled.png
 		Length: *
 	build-valid:
 	build-invalid:
@@ -14,18 +19,18 @@ overlay:
 	target-invalid:
 
 editor-overlay:
-	Defaults: bits/blank.png
+	Defaults: bits/filled.png
 		Length: *
 	copy:
 	paste:
 
 moveflsh:
-	Defaults: bits/blank.png
+	Defaults: bits/filled.png
 		Length: *
 	idle:
 
 allyrepair:
-	Defaults: bits/blank.png
+	Defaults: bits/filled.png
 		Length: *
 	repair:
 
