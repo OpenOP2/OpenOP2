@@ -32,7 +32,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		public override object Create(ActorInitializer init) { return new AutoDeployMinersBotModule(init.Self, this); }
 	}
 
-	public class AutoDeployMinersBotModule : ConditionalTrait<AutoDeployMinersBotModuleInfo>, IBotTick, INotifyKilled
+	public class AutoDeployMinersBotModule : ConditionalTrait<AutoDeployMinersBotModuleInfo>, IBotTick
 	{
 		private ResourceLayer resourceLayer;
 		readonly ResourceClaimLayer claimLayer;
@@ -115,11 +115,6 @@ namespace OpenRA.Mods.OpenOP2.Traits
 				return path[0];
 
 			return null;
-		}
-
-		public void Killed(Actor self, AttackInfo e)
-		{
-			claimLayer.RemoveClaim(self);
 		}
 	}
 }
