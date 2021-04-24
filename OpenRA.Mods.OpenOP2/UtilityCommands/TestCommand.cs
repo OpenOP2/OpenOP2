@@ -21,7 +21,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 {
 	class TestingCommand : IUtilityCommand
 	{
-		private const string OutputFilename = "..\\..\\mods\\openop2\\test.txt";
+		private const string OutputFilename = "..\\..\\mods\\openop2\\op2-groups.yaml";
 
 		string IUtilityCommand.Name => "--testing";
 		bool IUtilityCommand.ValidateArguments(string[] args) { return ValidateArguments(args); }
@@ -43,11 +43,25 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 			var sb = new StringBuilder();
 
-			const string mapDir = "..\\..\\mods\\openop2\\maps-import";
-			foreach (var file in Directory.EnumerateFiles(mapDir, "*.map"))
+			foreach (var group in SequencesList.GroupSequenceSets)
 			{
-				sb.AppendLine(
-					$"call OpenRA.Utility.exe %MOD_ID% --import-op2-map {Path.GetFileName(file)}");
+				sb.AppendLine($"{group.Name}:");
+				sb.AppendLine($"\tActorType: {group.ActorType}");
+				sb.AppendLine($"\tCreateActor: {group.CreateActor}");
+				sb.AppendLine($"\tCreateExampleActor: {group.CreateExampleActor}");
+				sb.AppendLine("\tSets:");
+				foreach (var set in group.Sets)
+				{
+					sb.AppendLine($"\t\tSequence: {set.Sequence}");
+					sb.AppendLine($"\t\t\tStart: {set.Start}");
+					sb.AppendLine($"\t\t\tStartOffset: {set.StartOffset}");
+					sb.AppendLine($"\t\t\tLength: {set.Length}");
+					sb.AppendLine($"\t\t\tOffsetX: {set.OffsetX}");
+					sb.AppendLine($"\t\t\tOffsetY: {set.OffsetY}");
+					sb.AppendLine($"\t\t\tOffsetZ: {set.OffsetZ}");
+				}
+
+				sb.AppendLine(string.Empty);
 			}
 
 			try

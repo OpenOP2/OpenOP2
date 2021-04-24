@@ -1,0 +1,5024 @@
+eden-robo-dozer:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 0
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: doze
+			Start: 1665
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: icon
+			Start: 0
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-robo-dozer:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 343
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: doze
+			Start: 1673
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: icon
+			Start: 343
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-cargo-truck:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 8
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: icon
+			Start: 8
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-cargo-truck:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 24
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: icon
+			Start: 24
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-convec:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 287
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: build
+			Start: 1695
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: repair
+			Start: 1719
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-convec:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 319
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: build
+			Start: 1696
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: repair
+			Start: 1727
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-evacuation-transport:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 303
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-evacuation-transport:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 263
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-earthworker:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1811
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 1146
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: build
+			Start: 1703
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-earthworker:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1819
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 1827
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: build
+			Start: 1711
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-scout:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 442
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-scout:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 460
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-robo-surveyor:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 247
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: survey
+			Start: 1122
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-robo-surveyor:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 255
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: survey
+			Start: 2025
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-robo-miner:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 1170
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make-dildo
+			Start: 1336
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: icon
+			Start: 1170
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-robo-miner:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 1186
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: icon
+			Start: 1186
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-tiger:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 231
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-tiger:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 279
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-panther:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 239
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-panther:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 335
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-lynx:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 1202
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: icon
+			Start: 1202
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: turret2
+			Start: 1270
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-lynx:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 1227
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: icon
+			Start: 1227
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: turret2
+			Start: 1302
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-flyer:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1779
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-flyer:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1795
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-robo-repair:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1130
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: repair
+			Start: 1625
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-only:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1154
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-arachnid1:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1633
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: attack
+			Start: 1681
+			StartOffset: 2
+			Length: 8
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-arachnid2:
+	ActorType: Vehicle
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1649
+			StartOffset: 4
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+smokingcrater:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 58
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-command-center:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 1845
+			StartOffset: 0
+			Length: 1
+			OffsetX: 1
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 61
+			StartOffset: 0
+			Length: 1
+			OffsetX: 1
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 62
+			StartOffset: 0
+			Length: 1
+			OffsetX: 1
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 70
+			StartOffset: 0
+			Length: 1
+			OffsetX: 1
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 194
+			StartOffset: 0
+			Length: 1
+			OffsetX: 1
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: icon
+			Start: 1108
+			StartOffset: 0
+			Length: 1
+			OffsetX: -23
+			OffsetY: -23
+			OffsetZ: 0
+
+plymouth-command-center:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 1854
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 1
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 84
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 1
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 85
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 1
+			OffsetZ: 0
+		Sequence: make
+			Start: 140
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 1
+			OffsetZ: 0
+		Sequence: die
+			Start: 211
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 1
+			OffsetZ: 0
+		Sequence: icon
+			Start: 1108
+			StartOffset: 0
+			Length: 1
+			OffsetX: -23
+			OffsetY: -23
+			OffsetZ: 0
+
+eden-tokamak:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 2035
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 132
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 133
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 76
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 373
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: icon
+			Start: 1100
+			StartOffset: 0
+			Length: 1
+			OffsetX: -23
+			OffsetY: -23
+			OffsetZ: 0
+
+plymouth-tokamak:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 652
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 653
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 351
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 100
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 101
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 151
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 359
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: icon
+			Start: 1100
+			StartOffset: 0
+			Length: 1
+			OffsetX: -23
+			OffsetY: -23
+			OffsetZ: 0
+
+eden-residence:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 610
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 611
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 1864
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 124
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 125
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 77
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 201
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-residence:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 612
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 613
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 1849
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 92
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 93
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 150
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 214
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-factory-structure:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 73
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 65
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 66
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 72
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 196
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-factory-structure:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1860
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 1861
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 88
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 89
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 143
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 212
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-agridome:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 801
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 108
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 109
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 142
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 199
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-agridome:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 646
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 82
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 83
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 138
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 210
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-factory-vehicle:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 807
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 2064
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 136
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 137
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 75
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 200
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: icon
+			Start: 1106
+			StartOffset: 0
+			Length: 1
+			OffsetX: -23
+			OffsetY: -23
+			OffsetZ: 0
+
+plymouth-factory-vehicle:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 1853
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 102
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 103
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 354
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 213
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: icon
+			Start: 1106
+			StartOffset: 0
+			Length: 1
+			OffsetX: -23
+			OffsetY: -23
+			OffsetZ: 0
+
+eden-dirt:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 802
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 803
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 1846
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 63
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 64
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 71
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 195
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-dirt:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1862
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 86
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 87
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 139
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 218
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-lab-basic:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 642
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 1857
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 67
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 68
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 74
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 197
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-lab-basic:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 2034
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 90
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 91
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 148
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 216
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-robot-command-center:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 647
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 650
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 651
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle4
+			Start: 1858
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 126
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 127
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 78
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 202
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-robot-command-center:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 645
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 1852
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 94
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 95
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 149
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 215
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-smelter-common:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 1007
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 1008
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 1855
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 128
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 129
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 79
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 203
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: icon
+			Start: 1109
+			StartOffset: 0
+			Length: 1
+			OffsetX: -23
+			OffsetY: -23
+			OffsetZ: 0
+
+plymouth-smelter-common:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 1009
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 1859
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 96
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 97
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 144
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 219
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: icon
+			Start: 1109
+			StartOffset: 0
+			Length: 1
+			OffsetX: -23
+			OffsetY: -23
+			OffsetZ: 0
+
+eden-storage-common:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 2059
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 59
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 60
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 69
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 193
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-storage-common:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 2061
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 98
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 99
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 154
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 223
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-storage-rare:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 2060
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 391
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 392
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 390
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 393
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-storage-rare:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 2062
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 395
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 396
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 394
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 397
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-lab-standard:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 669
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 670
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 114
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 115
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 141
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 192
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-lab-standard:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 671
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 1735
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 1736
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 166
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 167
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 165
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 220
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-lab-advanced:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 600
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 601
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 112
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 113
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 153
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 209
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-lab-advanced:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 643
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 644
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 163
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 164
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 162
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 227
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-residence-advanced:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 622
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 623
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 106
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 107
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 152
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 198
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-residence-reinforced:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 640
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 641
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 1777
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 172
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 173
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 171
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 225
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-medical-center:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 602
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 118
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 119
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 145
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 207
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-medical-center:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 620
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 621
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 418
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 419
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 417
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 420
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-nursery:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 598
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 596
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 597
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 120
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 121
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 595
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 204
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-nursery:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 606
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 608
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 609
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 181
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 182
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 607
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 364
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-recreation-facility:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 614
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 615
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 616
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle4
+			Start: 1843
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 122
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 123
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 146
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 208
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-recreation-facility:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 617
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 618
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 619
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle4
+			Start: 1850
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 169
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 170
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 168
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 226
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-solar-power-array:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 941
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 130
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 131
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 80
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 374
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-solar-power-array:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 942
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 2063
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 1851
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle4
+			Start: 175
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 176
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 177
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 174
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 360
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-university:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 667
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 668
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 134
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 135
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 147
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 205
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-university:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 936
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 937
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 184
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 185
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 183
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 222
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-smelter-rare:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1841
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 370
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 371
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 369
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 372
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-smelter-rare:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1010
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 190
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 191
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 189
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 229
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-gorf:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 383
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 384
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 382
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 385
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-gorf:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1737
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 1738
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 379
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 380
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 378
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 381
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-trade-center:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 800
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 1838
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 387
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 388
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 386
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 389
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-trade-center:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 946
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 1837
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 362
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 361
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 363
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 221
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-spaceport:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 963
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 964
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 1844
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 402
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 403
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 425
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 404
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-spaceport:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 965
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 437
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 438
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 439
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 440
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-mine-common:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 1001
+			StartOffset: 0
+			Length: 1
+			OffsetX: -16
+			OffsetY: 6
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 1002
+			StartOffset: 0
+			Length: 1
+			OffsetX: -16
+			OffsetY: 6
+			OffsetZ: 0
+		Sequence: make
+			Start: 1335
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 1003
+			StartOffset: 0
+			Length: 1
+			OffsetX: -16
+			OffsetY: 6
+			OffsetZ: 0
+		Sequence: deck
+			Start: 1762
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: -1024
+
+plymouth-mine-common:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 1848
+			StartOffset: 0
+			Length: 1
+			OffsetX: -16
+			OffsetY: 6
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 998
+			StartOffset: 0
+			Length: 1
+			OffsetX: -16
+			OffsetY: 6
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 999
+			StartOffset: 0
+			Length: 1
+			OffsetX: -16
+			OffsetY: 6
+			OffsetZ: 0
+		Sequence: make
+			Start: 375
+			StartOffset: 0
+			Length: 1
+			OffsetX: -16
+			OffsetY: 6
+			OffsetZ: 0
+		Sequence: die
+			Start: 1000
+			StartOffset: 0
+			Length: 1
+			OffsetX: -16
+			OffsetY: 6
+			OffsetZ: 0
+		Sequence: deck
+			Start: 1762
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: -1024
+
+eden-mine-rare:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 407
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 408
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: build2
+			Start: 405
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 406
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 409
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-mine-rare:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 594
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 422
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 423
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 421
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 424
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-mine-magma:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 410
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 1337
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 411
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 412
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-mhd-generator:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 940
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 1863
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 414
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 415
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 413
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 416
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-meteor-defense:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 564
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 565
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 566
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 568
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 569
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 567
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 570
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-geothermal-plant:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 427
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 428
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 426
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 429
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-factory-arachnid:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1847
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 156
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 157
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 158
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 217
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-forum:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 2033
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 160
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 161
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 159
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 228
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-factory-consumer:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1839
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 366
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 367
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 365
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 368
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-observatory:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 654
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 655
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle3
+			Start: 656
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 399
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 400
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 398
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 401
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-light-tower:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 648
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: idle2
+			Start: 649
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 116
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged2
+			Start: 117
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 155
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 206
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-light-tower:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 179
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 180
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 178
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 224
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-light-tower2:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 187
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 188
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: make
+			Start: 186
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: die
+			Start: 224
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-unknown-turret:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 110
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: damaged
+			Start: 111
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-unknown-turret2:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1623
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-unknown-turret2-double:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1624
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-unknown-turret2-double:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1621
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-unknown-turret3:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1342
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-unknown-turret3-double:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1622
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-unknown-turret4:
+	ActorType: Building
+	CreateActor: True
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 938
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: fire
+			Start: 939
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+die1:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 571
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+die2:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 572
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+explosion1:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 230
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+puff1:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 603
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+puff2:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 604
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+puff3:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 605
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+explosion2:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 657
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+pulsing-ring:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 659
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+pulsing-ring-hover:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 660
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+pulsing-ring-dissipate:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 661
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+explosion3:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 662
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+explosion4:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 663
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+explosion5:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 2071
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+explosion6:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 2072
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+airburst:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 2067
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+explosion-goo:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 664
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+explosion-goo2:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 665
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+explosion-large:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 943
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+explosion-large-hover:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 944
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+explosion-large-dissipate:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 945
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+explosion-large2:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1360
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+lightning-crackle:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 666
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+cloud-billowing:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1004
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+meteor:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1005
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+meteor-large:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1006
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+meteor2:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1027
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+meteor-ignite:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1028
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+meteor-large-ignite:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1029
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+meteor2-ignite:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1030
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+meteor-splash:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1358
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+meteor-large-splash:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1359
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+mushroom-cloud:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1047
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+mushroom-cloud-small:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1334
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+mushroom-cloud-large1:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1699
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+mushroom-cloud-large2:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1700
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+mushroom-cloud-large3:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1701
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+mushroom-cloud-huge:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1702
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+explosion-goo3:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1048
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+cloud-forming:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1113
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+cloud-dissipating:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1114
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+tornado1:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1115
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+tornado2:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1116
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+tornado-left:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1117
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+tornado-right:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1118
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+tornado-ground-form:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1119
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+tornado-ground:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1120
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+tornado-ground-dissipate:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1121
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+cloud2-form:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1244
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+cloud2-billow:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1245
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+cloud2-dissipate:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1246
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+cloud2-expand-left:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1247
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+cloud2-billow-left:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1248
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+cloud2-dissipate-left:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1249
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+cloud2-expand-right:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1250
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+cloud2-billow-right:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1251
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+cloud2-dissipate-right:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1252
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+lightning1:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1253
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+lightning2:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1361
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+lightning3:
+	ActorType: Effect
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1362
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+rallypoint:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: flag
+			Start: 1764
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+		Sequence: circles
+			Start: 1764
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+waypoint:
+	ActorType: Decoration
+	CreateActor: True
+	CreateExampleActor: False
+	Sets:
+		Sequence: idle
+			Start: 1856
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+mpspawn:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1107
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+clock:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 804
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-turret-1:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 624
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-turret-elec:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 947
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-turret-laser:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 966
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-turret-machinegun:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 982
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-turret-2:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1011
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-turret-3:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1031
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-turret-4:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1068
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-turret-5:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1084
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-turret-missile:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1254
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-turret-small-double:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1286
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-turret-small:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1302
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-turret-small-double:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1318
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-machinegun-small:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1363
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-machinegun-small-double:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1379
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-cannon-small:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1395
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-cannon-small-double:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1411
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-cannon-medium:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1427
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-cannon-medium-double:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1443
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-missile-medium:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1461
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-missile-medium-double:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1477
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-turret-medium-unknown:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1493
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-turret-medium-unknown-double:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1509
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-laser-turret-small:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1525
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-laser-turret-small-double:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1541
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-elec-turret-small:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1557
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-elec-turret-small-double:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1573
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-turret-medium-cannon:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1589
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-turret-medium-cannon-double:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1605
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-turret-5:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 2043
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+lava-ripple:
+	ActorType: Turret
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1460
+			StartOffset: 0
+			Length: 16
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+tokamak-icon:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1100
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+medical-center-icon:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1101
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+seismology-icon:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1102
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+rocket-icon:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1103
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+nuke-icon:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1104
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+agridome-icon:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1105
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+vehicle-icon:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1106
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+residence-icon:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1107
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+structure-factory-icon:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1108
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+smelter-icon:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1109
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+lab-icon:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1110
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+eden-icon:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1111
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
+plymouth-icon:
+	ActorType: Decoration
+	CreateActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 1112
+			StartOffset: 0
+			Length: 1
+			OffsetX: 0
+			OffsetY: 0
+			OffsetZ: 0
+
