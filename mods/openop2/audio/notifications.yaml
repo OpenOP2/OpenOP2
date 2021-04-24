@@ -12,7 +12,8 @@ Speech:
 		NoBuild: savant97.wav
 		BuildingCannotPlaceAudio: savant97.wav
 		BuildingInProgress: 
-		Building: 
+		Training: beep2.WAV
+		Building: beep2.WAV
 		OnHold: 
 		Cancelled: 
 		NewOptions: 

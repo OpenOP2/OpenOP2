@@ -7,8 +7,9 @@ eden-mobile-laser:
 	Report: fireLaser.wav
 	Projectile: LaserZap
 		Width: 40
-		HitAnim: laserfire
 		ZOffset: 2047
+		HitAnimPalette: 3
+		LaunchEffectPalette: 3
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 4000
@@ -29,8 +30,9 @@ plymouth-mobile-microwave:
 	Projectile: LaserZap
 		Color: FFFFFFFF
 		Width: 40
-		HitAnim: laserfire
 		ZOffset: 2047
+		HitAnimPalette: 3
+		LaunchEffectPalette: 3
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 3000
@@ -52,6 +54,8 @@ plymouth-mobile-microwave:
 		SecondaryBeamWidth: 180
 		SecondaryBeamZOffset: 2047
 		SecondaryBeamColor: FF000040
+		HitAnimPalette: 3
+		LaunchEffectPalette: 3
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 250

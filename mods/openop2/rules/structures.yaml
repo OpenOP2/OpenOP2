@@ -60,6 +60,7 @@
 	WithDeathAnimation:
 		DeathSequence: die
 		UseDeathTypeSuffix: false
+		CrushedSequencePalette: 3
 	ProvidesPrerequisite@structures:
 		Prerequisite: structures
 	HitShape:
@@ -105,6 +106,7 @@
 	WithDeathAnimation:
 		DeathSequence: die
 		UseDeathTypeSuffix: false
+		CrushedSequencePalette: 3
 	Targetable:
 		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
 	ScalePowerWithHealth:
@@ -152,6 +154,7 @@
 	WithDeathAnimation:
 		DeathSequence: die
 		UseDeathTypeSuffix: false
+		CrushedSequencePalette: 3
 	Targetable:
 		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
 	HitShape:
@@ -236,6 +239,7 @@
 	WithDeathAnimation:
 		DeathSequence: die
 		UseDeathTypeSuffix: false
+		CrushedSequencePalette: 3
 	Targetable:
 		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
 	HitShape:
@@ -263,7 +267,7 @@
 	ProvidesPrerequisite:
 		Prerequisite: anymine
 	Health:
-		HP: 180000
+		HP: 20000
 	Armor:
 		Type: Concrete
 	RevealsShroud:
@@ -281,6 +285,7 @@
 	WithDeathAnimation:
 		DeathSequence: die
 		UseDeathTypeSuffix: false
+		CrushedSequencePalette: 3
 	Targetable:
 		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
 	HitShape:
