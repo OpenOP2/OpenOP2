@@ -292,6 +292,10 @@ plymouth-mhd-generator:
 	Inherits@generated: ^plymouth-mhd-generator-generated
 	Inherits: ^StubBuilding
 
+eden-meteor-defense:
+	Inherits@generated: ^eden-meteor-defense-generated
+	Inherits: ^StubBuilding
+
 eden-geothermal-plant:
 	Inherits@generated: ^eden-geothermal-plant-generated
 	Inherits: ^StubBuilding
@@ -326,5 +330,29 @@ plymouth-light-tower2:
 
 eden-unknown-turret:
 	Inherits@generated: ^eden-unknown-turret-generated
+	Inherits: ^StubBuilding
+
+eden-unknown-turret2:
+	Inherits@generated: ^eden-unknown-turret2-generated
+	Inherits: ^StubBuilding
+
+eden-unknown-turret2-double:
+	Inherits@generated: ^eden-unknown-turret2-double-generated
+	Inherits: ^StubBuilding
+
+plymouth-unknown-turret2-double:
+	Inherits@generated: ^plymouth-unknown-turret2-double-generated
+	Inherits: ^StubBuilding
+
+plymouth-unknown-turret3:
+	Inherits@generated: ^plymouth-unknown-turret3-generated
+	Inherits: ^StubBuilding
+
+plymouth-unknown-turret3-double:
+	Inherits@generated: ^plymouth-unknown-turret3-double-generated
+	Inherits: ^StubBuilding
+
+plymouth-unknown-turret4:
+	Inherits@generated: ^plymouth-unknown-turret4-generated
 	Inherits: ^StubBuilding
 

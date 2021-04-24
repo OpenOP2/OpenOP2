@@ -19,6 +19,7 @@
 		IconPalette: 5
 	Voiced:
 		VoiceSet: CommandCenterVoice
+	ProvidesRadar:
 	ProvidesPrerequisite@eden:
 		Factions: eden
 		Prerequisite: structures.eden
@@ -62,7 +63,6 @@
 	ProvidesPrerequisite@structures:
 		Prerequisite: structures
 	HitShape:
-		TargetableOffsets: 1273,939,0, -980,-640,0, -980,640,0
 		Type: Rectangle
 			TopLeft: -1536, -1536
 			BottomRight: 1536, 1536
@@ -109,7 +109,6 @@
 		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
 	ScalePowerWithHealth:
 	HitShape:
-		TargetableOffsets: 1273,939,0, -980,-640,0, -980,640,0
 		Type: Rectangle
 			TopLeft: -1536, -1536
 			BottomRight: 1536, 1536
@@ -156,7 +155,6 @@
 	Targetable:
 		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
 	HitShape:
-		TargetableOffsets: 1273,939,0, -980,-640,0, -980,640,0
 		Type: Rectangle
 			TopLeft: -1536, -1536
 			BottomRight: 1536, 1536
@@ -206,6 +204,7 @@
 	ProductionBar:
 		ProductionType: Vehicle
 	Exit@1:
+		Facing: 512
 		SpawnOffset: 512,0,0
 		ExitCell: 2,1
 		ProductionTypes: Vehicle
@@ -240,7 +239,6 @@
 	Targetable:
 		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
 	HitShape:
-		TargetableOffsets: 1273,939,0, -980,-640,0, -980,640,0
 		Type: Rectangle
 			TopLeft: -1536, -1536
 			BottomRight: 1536, 1536
@@ -349,6 +347,8 @@ plymouth-factory-vehicle:
 		Footprint: xxxx xxx= xxxx
 		Dimensions: 4,3
 		#LocalCenterOffset: -512,0,0
+	Exit@1:
+		Facing: -256
 	RallyPoint:
 		Path: 4,1
 	Buildable:

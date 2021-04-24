@@ -968,7 +968,14 @@
 ^plymouth-storage-rare-generated:
 	RenderSprites:
 		Image: plymouth-storage-rare
-		PlayerPalette: playerMapped3
+		PlayerPalette: playerMapped2
+	WithDirectionalIdleOverlay@0:
+		Sequence: idle-sprite-id1
+		Palette: playerMapped2
+		IsPlayerPalette: true
+	WithDirectionalIdleOverlay@1:
+		Sequence: idle-shadow-id2
+		Palette: shadow
 
 ^eden-lab-standard-generated:
 	RenderSprites:
@@ -1610,6 +1617,21 @@
 		Sequence: idle-shadow-id3
 		Palette: shadow
 
+^eden-meteor-defense-generated:
+	RenderSprites:
+		Image: eden-meteor-defense
+		PlayerPalette: playerMapped1
+	WithDirectionalIdleOverlay@0:
+		Sequence: idle-sprite-id1
+		Palette: playerMapped1
+		IsPlayerPalette: true
+	WithDirectionalIdleOverlay@1:
+		Sequence: idle-shadow-id2
+		Palette: shadow
+	WithDirectionalIdleOverlay@2:
+		Sequence: idle-shadow-id3
+		Palette: shadow
+
 ^eden-geothermal-plant-generated:
 	RenderSprites:
 		Image: eden-geothermal-plant
@@ -1716,6 +1738,36 @@
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-shadow-id1
 		Palette: shadow
+
+^eden-unknown-turret2-generated:
+	RenderSprites:
+		Image: eden-unknown-turret2
+		PlayerPalette: playerMapped3
+
+^eden-unknown-turret2-double-generated:
+	RenderSprites:
+		Image: eden-unknown-turret2-double
+		PlayerPalette: playerMapped3
+
+^plymouth-unknown-turret2-double-generated:
+	RenderSprites:
+		Image: plymouth-unknown-turret2-double
+		PlayerPalette: playerMapped8
+
+^plymouth-unknown-turret3-generated:
+	RenderSprites:
+		Image: plymouth-unknown-turret3
+		PlayerPalette: playerMapped8
+
+^plymouth-unknown-turret3-double-generated:
+	RenderSprites:
+		Image: plymouth-unknown-turret3-double
+		PlayerPalette: playerMapped8
+
+^plymouth-unknown-turret4-generated:
+	RenderSprites:
+		Image: plymouth-unknown-turret4
+		PlayerPalette: playerMapped3
 
 ^waypoint-generated:
 	RenderSprites:

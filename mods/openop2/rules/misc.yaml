@@ -31,3 +31,11 @@ waypoint:
 		QuantizedFacings: 1
 	MapEditorData:
 		Categories: System
+
+eden-robo-miner.colorpicker:
+	Inherits: eden-robo-miner
+	-Buildable:
+	-MapEditorData:
+	RenderSprites:
+		Image: eden-robo-miner
+		Palette: 3

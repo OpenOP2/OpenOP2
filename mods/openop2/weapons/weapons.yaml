@@ -54,8 +54,9 @@ plymouth-mobile-microwave:
 		SecondaryBeamColor: FF000040
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
-		Damage: 25000
+		Damage: 250
 		DamageTypes: EnergyDeath
+		ValidTargets: Vehicle, Structure, Ground, Defense
 
 LaserFire:
 	Inherits: ^Laser
@@ -68,4 +69,4 @@ LaserFire:
 		SecondaryBeamWidth: 144
 		SecondaryBeamColor: FF000030
 	Warhead@1Dam: SpreadDamage
-		Damage: 3000
+		Damage: 30

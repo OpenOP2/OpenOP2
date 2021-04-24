@@ -387,12 +387,6 @@
 					},
 					new GroupSequenceSet()
 					{
-						Start = 1335,
-						Length = 1,
-						Sequence = "make",
-					},
-					new GroupSequenceSet()
-					{
 						Start = 1336,
 						Length = 1,
 						Sequence = "make-dildo",
@@ -701,6 +695,13 @@
 					},
 					new GroupSequenceSet()
 					{
+						Start = 194,
+						Length = 1,
+						Sequence = "die",
+						OffsetX = 1,
+					},
+					new GroupSequenceSet()
+					{
 						Start = 1108,
 						Length = 1,
 						Sequence = "icon",
@@ -746,6 +747,13 @@
 					},
 					new GroupSequenceSet()
 					{
+						Start = 211,
+						Length = 1,
+						Sequence = "die",
+						OffsetY = 1,
+					},
+					new GroupSequenceSet()
+					{
 						Start = 1108,
 						Length = 1,
 						Sequence = "icon",
@@ -784,6 +792,12 @@
 						Start = 76,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 373,
+						Length = 1,
+						Sequence = "die",
 					},
 					new GroupSequenceSet()
 					{
@@ -840,6 +854,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Start = 359,
+						Length = 1,
+						Sequence = "die",
+					},
+					new GroupSequenceSet()
+					{
 						Start = 1100,
 						Length = 1,
 						Sequence = "icon",
@@ -890,6 +910,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 201,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -934,6 +960,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 214,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -965,6 +997,12 @@
 						Start = 72,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 196,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -1004,6 +1042,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 212,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -1036,6 +1080,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 199,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -1067,6 +1117,12 @@
 						Start = 138,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 210,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -1109,6 +1165,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Start = 200,
+						Length = 1,
+						Sequence = "die",
+					},
+					new GroupSequenceSet()
+					{
 						Start = 1106,
 						Length = 1,
 						Sequence = "icon",
@@ -1147,6 +1209,12 @@
 						Start = 354,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 213,
+						Length = 1,
+						Sequence = "die",
 					},
 					new GroupSequenceSet()
 					{
@@ -1200,6 +1268,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 195,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -1231,6 +1305,12 @@
 						Start = 139,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 218,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -1270,6 +1350,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 197,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -1301,6 +1387,12 @@
 						Start = 148,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 216,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -1352,6 +1444,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 202,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -1389,6 +1487,12 @@
 						Start = 149,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 215,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -1434,6 +1538,12 @@
 						Start = 79,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 203,
+						Length = 1,
+						Sequence = "die",
 					},
 					new GroupSequenceSet()
 					{
@@ -1484,6 +1594,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Start = 219,
+						Length = 1,
+						Sequence = "die",
+					},
+					new GroupSequenceSet()
+					{
 						Start = 1109,
 						Length = 1,
 						Sequence = "icon",
@@ -1522,6 +1638,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 193,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -1553,6 +1675,12 @@
 						Start = 154,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 223,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -1602,21 +1730,9 @@
 				{
 					new GroupSequenceSet()
 					{
-						Start = 938,
-						Length = 1,
-						Sequence = "idle",
-					},
-					new GroupSequenceSet()
-					{
-						Start = 939,
-						Length = 1,
-						Sequence = "idle2",
-					},
-					new GroupSequenceSet()
-					{
 						Start = 2062,
 						Length = 1,
-						Sequence = "idle3",
+						Sequence = "idle",
 					},
 					new GroupSequenceSet()
 					{
@@ -1680,6 +1796,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 192,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -1724,6 +1846,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 220,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -1761,6 +1889,12 @@
 						Start = 153,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 209,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -1800,6 +1934,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 227,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -1837,6 +1977,12 @@
 						Start = 152,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 198,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -1882,6 +2028,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 225,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -1913,6 +2065,12 @@
 						Start = 145,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 207,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -2002,6 +2160,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 204,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -2045,6 +2209,12 @@
 						Start = 607,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 364,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -2096,6 +2266,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 208,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -2146,6 +2322,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 226,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -2178,6 +2360,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 374,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -2208,11 +2396,17 @@
 					{
 						Start = 175,
 						Length = 1,
-						Sequence = "damaged",
+						Sequence = "idle4",
 					},
 					new GroupSequenceSet()
 					{
 						Start = 176,
+						Length = 1,
+						Sequence = "damaged",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 177,
 						Length = 1,
 						Sequence = "damaged2",
 					},
@@ -2221,6 +2415,12 @@
 						Start = 174,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 360,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -2260,6 +2460,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 205,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -2297,6 +2503,12 @@
 						Start = 183,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 222,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -2367,6 +2579,12 @@
 						Start = 189,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 229,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -2526,6 +2744,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 221,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -2641,6 +2865,12 @@
 					},
 					new GroupSequenceSet()
 					{
+						Start = 1335,
+						Length = 1,
+						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
 						Start = 1003,
 						Length = 1,
 						Sequence = "die",
@@ -2689,7 +2919,7 @@
 					},
 					new GroupSequenceSet()
 					{
-						Start = 421,
+						Start = 375,
 						Length = 1,
 						Sequence = "make",
 						OffsetX = -16,
@@ -2866,6 +3096,56 @@
 			},
 			new GroupSequence()
 			{
+				Name = "eden-meteor-defense",
+				ActorType = ActorType.Building,
+				Sets = new[]
+				{
+					new GroupSequenceSet()
+					{
+						Start = 564,
+						Length = 1,
+						Sequence = "idle",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 565,
+						Length = 1,
+						Sequence = "idle2",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 566,
+						Length = 1,
+						Sequence = "idle3",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 568,
+						Length = 1,
+						Sequence = "damaged",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 569,
+						Length = 1,
+						Sequence = "damaged2",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 567,
+						Length = 1,
+						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 570,
+						Length = 1,
+						Sequence = "die",
+					},
+				},
+			},
+			new GroupSequence()
+			{
 				Name = "eden-geothermal-plant",
 				ActorType = ActorType.Building,
 				Sets = new[]
@@ -2881,6 +3161,18 @@
 						Start = 428,
 						Length = 1,
 						Sequence = "damaged",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 426,
+						Length = 1,
+						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 429,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -2914,6 +3206,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 217,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -2945,6 +3243,12 @@
 						Start = 159,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 228,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -3072,6 +3376,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 206,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -3097,6 +3407,12 @@
 						Start = 178,
 						Length = 1,
 						Sequence = "make",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 224,
+						Length = 1,
+						Sequence = "die",
 					},
 				},
 			},
@@ -3124,6 +3440,12 @@
 						Length = 1,
 						Sequence = "make",
 					},
+					new GroupSequenceSet()
+					{
+						Start = 224,
+						Length = 1,
+						Sequence = "die",
+					},
 				},
 			},
 			new GroupSequence()
@@ -3146,8 +3468,128 @@
 					},
 				},
 			},
+			new GroupSequence()
+			{
+				Name = "eden-unknown-turret2",
+				ActorType = ActorType.Building,
+				Sets = new[]
+				{
+					new GroupSequenceSet()
+					{
+						Start = 1623,
+						Length = 1,
+						Sequence = "idle",
+					},
+				},
+			},
+			new GroupSequence()
+			{
+				Name = "eden-unknown-turret2-double",
+				ActorType = ActorType.Building,
+				Sets = new[]
+				{
+					new GroupSequenceSet()
+					{
+						Start = 1624,
+						Length = 1,
+						Sequence = "idle",
+					},
+				},
+			},
+			new GroupSequence()
+			{
+				Name = "plymouth-unknown-turret2-double",
+				ActorType = ActorType.Building,
+				Sets = new[]
+				{
+					new GroupSequenceSet()
+					{
+						Start = 1621,
+						Length = 1,
+						Sequence = "idle",
+					},
+				},
+			},
+			new GroupSequence()
+			{
+				Name = "plymouth-unknown-turret3",
+				ActorType = ActorType.Building,
+				Sets = new[]
+				{
+					new GroupSequenceSet()
+					{
+						Start = 1342,
+						Length = 16,
+						Sequence = "idle",
+					},
+				},
+			},
+			new GroupSequence()
+			{
+				Name = "plymouth-unknown-turret3-double",
+				ActorType = ActorType.Building,
+				Sets = new[]
+				{
+					new GroupSequenceSet()
+					{
+						Start = 1622,
+						Length = 1,
+						Sequence = "idle",
+					},
+				},
+			},
+			new GroupSequence()
+			{
+				Name = "plymouth-unknown-turret4",
+				ActorType = ActorType.Building,
+				Sets = new[]
+				{
+					new GroupSequenceSet()
+					{
+						Start = 938,
+						Length = 1,
+						Sequence = "idle",
+					},
+					new GroupSequenceSet()
+					{
+						Start = 939,
+						Length = 1,
+						Sequence = "fire",
+					},
+				},
+			},
 
 			// Collapsing buildings 192-229
+			new GroupSequence()
+			{
+				Name = "die1",
+				ActorType = ActorType.Effect,
+				CreateActor = false,
+				Sets = new[]
+				{
+					new GroupSequenceSet()
+					{
+						Start = 571,
+						Length = 1,
+						Sequence = "idle",
+					},
+				},
+			},
+			new GroupSequence()
+			{
+				Name = "die2",
+				ActorType = ActorType.Effect,
+				CreateActor = false,
+				Sets = new[]
+				{
+					new GroupSequenceSet()
+					{
+						Start = 572,
+						Length = 1,
+						Sequence = "idle",
+					},
+				},
+			},
 			new GroupSequence()
 			{
 				Name = "explosion1",

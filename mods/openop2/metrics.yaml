@@ -1,11 +1,11 @@
 # General dumping-ground for UI element sizes, etc.
 
 Metrics:
+	ColorPickerActorType: eden-robo-miner.colorpicker
+	ColorPickerRemapIndices: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
 	ButtonDepth: 0
 	ButtonFont: Bold
 	CheckboxPressedState: true
-	ColorPickerActorType: DummyActor
-	ColorPickerRemapIndices: 1
 	TextfieldColorHighlight: 800000
 	ChatLineSound: ChatLine
 	ClickDisabledSound: ClickDisabledSound

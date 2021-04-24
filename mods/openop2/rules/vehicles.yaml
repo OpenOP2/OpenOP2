@@ -6,12 +6,16 @@
 
 ^TurretedVehicle:
 	Inherits: ^Op2Vehicle
+	#Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	#Inherits@handicaps: ^PlayerHandicaps
 	Buildable:
 		Queue: Vehicle
 		Prerequisites: ~vehicles
 		IconPalette: 5
 	Turreted:
 		TurnSpeed: 28
+		Offset: -48,0,176
 	Armament:
 		Weapon: LaserFire
 		Recoil: 85
@@ -22,7 +26,8 @@
 	#WithMuzzleOverlay:
 	WithSpriteTurret:
 		Sequence: turret2
-		Palette: 3
+		Palette: playerMapped3
+		IsPlayerPalette: true
 
 ^CargoTruck:
 	Inherits: ^Op2Vehicle

@@ -140,16 +140,16 @@
 	SelectionDecorations:
 	WithSpriteControlGroupDecoration:
 	Selectable:
-		Bounds: 24, 24
-	#Targetable:
-	#	RequiresCondition: !parachute
-	#	TargetTypes: Ground, Vehicle
-	#Targetable@REPAIR:
-	#	RequiresCondition: !parachute && damaged
-	#	TargetTypes: Repair
-	#GrantConditionOnDamageState@DAMAGED:
-	#	Condition: damaged
-	#	ValidDamageStates: Light, Medium, Heavy, Critical
+		Bounds: 32, 32
+	Targetable:
+		#RequiresCondition: !parachute
+		TargetTypes: Ground, Vehicle
+	Targetable@REPAIR:
+		RequiresCondition: damaged
+		TargetTypes: Repair
+	GrantConditionOnDamageState@DAMAGED:
+		Condition: damaged
+		ValidDamageStates: Light, Medium, Heavy, Critical
 	#Repairable:
 	#	RepairActors: fix
 	Chronoshiftable:
@@ -407,15 +407,15 @@
 		RepairingNotification: Repairing
 	EngineerRepairable:
 	AcceptsDeliveredCash:
-	#WithMakeAnimation:
-	#	Condition: build-incomplete
-	#CaptureManager:
-	#	BeingCapturedCondition: being-captured
-	#Capturable:
-	#	RequiresCondition: !build-incomplete
-	#	Types: building
-	#CapturableProgressBar:
-	#CapturableProgressBlink:
+	WithMakeAnimation:
+		Condition: build-incomplete
+	CaptureManager:
+		BeingCapturedCondition: being-captured
+	Capturable:
+		RequiresCondition: !build-incomplete
+		Types: building
+	CapturableProgressBar:
+	CapturableProgressBlink:
 	#SpawnActorsOnSell:
 	#	ActorTypes: e1,e1,e1,tecn,tecn
 	MustBeDestroyed:
@@ -425,8 +425,8 @@
 	Demolishable:
 		Condition: being-demolished
 	Sellable:
-		RequiresCondition: !being-demolished # !build-incomplete && !being-captured && 
-		SellSounds: cashturn.aud
+		RequiresCondition: !being-demolished && !being-captured && !build-incomplete
+		#SellSounds: cashturn.aud
 	WithBuildingRepairDecoration:
 		Image: allyrepair
 		Sequence: repair
