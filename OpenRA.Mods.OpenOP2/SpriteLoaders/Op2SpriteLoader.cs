@@ -137,6 +137,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 			// Populate art data
 			const byte shadowTileIndex = 1;
+			var imgIndex = 0;
 			foreach (var img in prtFile.ImageHeader)
 			{
 				var isShadow = img.ImageType == 4 || img.ImageType == 5;
@@ -158,10 +159,28 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					var processedData = new byte[newSize * 8];
 					var paddedWidth = img.Width;
 					const int bitsInAByte = 8;
-					var numRows = (int)img.Height;
+					var numRows = (int)img.Height * 2;
 					if (hasExtraRow)
 					{
 						numRows *= 2;
+					}
+
+					// HACK: HACK HACK HACK
+					// Obviously our rowSize calculation is borked, so correct some things here
+					if (img.ImageType == 5)
+					{
+						if (rowSize == 16)
+						{
+							rowSize = 32;
+						}
+						else if (rowSize == 128)
+						{
+							rowSize = 96;
+						}
+						else if (rowSize == 256)
+						{
+							rowSize = 128;
+						}
 					}
 
 					for (var y = 0; y < numRows; y++)
@@ -179,17 +198,24 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 					var paddedDiff = (int)(img.PaddedWidth - img.Width);
 					var newData = new List<byte>();
+
 					for (var i = 0; i < img.Height; i++)
 					{
 						var startIndex = i * rowSize;
-						if (hasExtraRow)
+
+						if (hasExtraRow && img.ImageType == 4)
 						{
 							startIndex *= 2;
 						}
 
-						var firstX = processedData.Skip(startIndex).Take((int)img.Width);
+						var firstX = processedData.Skip(startIndex).Take((int)img.Width).ToArray();
 						newData.AddRange(firstX);
 						newData.AddRange(Enumerable.Repeat<byte>(0, paddedDiff));
+
+						// if (imgIndex == 1758)
+						// {
+						// 	var ss = imgIndex;
+						// }
 					}
 
 					if (img.PaddedWidth * img.Height > newData.Count)
@@ -212,6 +238,8 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					Type = SpriteFrameType.Indexed,
 				};
 				frameList.Add(img.SpriteFrame);
+
+				imgIndex++;
 			}
 
 			metadata = new TypeDictionary { new EmbeddedSpritePalette(framePalettes: palettes) };

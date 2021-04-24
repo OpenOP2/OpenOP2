@@ -1441,21 +1441,21 @@ eden-smelter-common:
 	CreateExampleActor: False
 	Sets:
 		Sequence: idle
-			Start: 1007
+			Start: 1855
 			StartOffset: 0
 			Length: 1
 			OffsetX: 0
 			OffsetY: 0
 			OffsetZ: 0
 		Sequence: idle2
-			Start: 1008
+			Start: 1007
 			StartOffset: 0
 			Length: 1
 			OffsetX: 0
 			OffsetY: 0
 			OffsetZ: 0
 		Sequence: idle3
-			Start: 1855
+			Start: 1008
 			StartOffset: 0
 			Length: 1
 			OffsetX: 0
@@ -1503,14 +1503,14 @@ plymouth-smelter-common:
 	CreateExampleActor: False
 	Sets:
 		Sequence: idle
-			Start: 1009
+			Start: 1859
 			StartOffset: 0
 			Length: 1
 			OffsetX: 0
 			OffsetY: 0
 			OffsetZ: 0
 		Sequence: idle2
-			Start: 1859
+			Start: 1009
 			StartOffset: 0
 			Length: 1
 			OffsetX: 0
