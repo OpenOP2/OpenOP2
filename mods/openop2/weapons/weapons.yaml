@@ -56,17 +56,18 @@ plymouth-mobile-microwave:
 		Spread: 42
 		Damage: 250
 		DamageTypes: EnergyDeath
-		ValidTargets: Vehicle, Structure, Ground, Defense
 
 LaserFire:
 	Inherits: ^Laser
 	ReloadDelay: 40
 	Range: 5c512
 	Report: laser.WAV
+	ValidTargets: Ground, GroundActor
 	Projectile: LaserZap
 		Width: 36
 		Duration: 8
 		SecondaryBeamWidth: 144
 		SecondaryBeamColor: FF000030
 	Warhead@1Dam: SpreadDamage
-		Damage: 30
+		Damage: 3000
+		ValidTargets: Ground, GroundActor

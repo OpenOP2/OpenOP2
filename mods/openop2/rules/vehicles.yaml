@@ -45,7 +45,7 @@
 	Tooltip:
 		Name: Cargo Truck
 	Health:
-		HP: 200
+		HP: 20000
 	RevealsShroud:
 		Range: 7c0
 	Mobile:
@@ -86,7 +86,7 @@
 	Tooltip:
 		Name: Robo-Miner
 	Health:
-		HP: 100
+		HP: 5000
 	RevealsShroud:
 		Range: 7c0
 	Mobile:
@@ -114,7 +114,7 @@
 	Tooltip:
 		Name: Robo-Dozer
 	Health:
-		HP: 100
+		HP: 5000
 	RevealsShroud:
 		Range: 7c0
 	Mobile:
@@ -136,7 +136,7 @@
 	Tooltip:
 		Name: Lynx
 	Health:
-		HP: 100
+		HP: 10000
 	RevealsShroud:
 		Range: 7c0
 	Mobile:

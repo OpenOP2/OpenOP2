@@ -246,7 +246,9 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 								var relX = (halfWidth - group.CenterX) + pic.PosX;
 								var relY = (halfHeight - group.CenterY) + pic.PosY;
 
-								var matchingSequenceFrames = typeGroupedFrames.Where(x => x.FrameType == rawFrame.ImageType)
+								var matchingSequenceFrames = typeGroupedFrames
+									.Where(x => x.FrameType == rawFrame.ImageType &&
+									            x.Palette == rawFrame.Palette)
 									.ToList();
 
 								var setFrame = false;
@@ -270,7 +272,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 								if (!setFrame)
 								{
-									// Need a new frameset for this image type
+									// Need a new frameset for this image type and palette
 									var seqFrame = new SequenceSet
 									{
 										Name = groupSequenceSet.Sequence,

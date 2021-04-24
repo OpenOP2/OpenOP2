@@ -159,7 +159,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					var processedData = new byte[newSize * 8];
 					var paddedWidth = img.Width;
 					const int bitsInAByte = 8;
-					var numRows = (int)img.Height * 2;
+					var numRows = (int)img.Height * 2; // TODO: This is a hack. Not sure why we need to double this
 					if (hasExtraRow)
 					{
 						numRows *= 2;
@@ -167,13 +167,14 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 					// HACK: HACK HACK HACK
 					// Obviously our rowSize calculation is borked, so correct some things here
+					if (rowSize < 32)
+					{
+						rowSize = 32;
+					}
+
 					if (img.ImageType == 5)
 					{
-						if (rowSize == 16)
-						{
-							rowSize = 32;
-						}
-						else if (rowSize == 128)
+						if (rowSize == 128)
 						{
 							rowSize = 96;
 						}
@@ -202,11 +203,6 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					for (var i = 0; i < img.Height; i++)
 					{
 						var startIndex = i * rowSize;
-
-						if (hasExtraRow && img.ImageType == 4)
-						{
-							startIndex *= 2;
-						}
 
 						var firstX = processedData.Skip(startIndex).Take((int)img.Width).ToArray();
 						newData.AddRange(firstX);
