@@ -38,4 +38,4 @@ eden-robo-miner.colorpicker:
 	-MapEditorData:
 	RenderSprites:
 		Image: eden-robo-miner
-		Palette: 3
+		Palette: colorpicker

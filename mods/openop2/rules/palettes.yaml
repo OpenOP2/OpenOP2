@@ -38,9 +38,6 @@
 	PaletteFromBmpFile@well0012:
 		Name: well0012.bmp
 		Filename: well0012.bmp
-	PaletteFromPng@ColorPicker:
-		Name: colorpicker
-		Filename: bits/blank.png
 	PaletteFromPng@Chrome:
 		Name: chrome
 		Filename: bits/blank.png
@@ -141,3 +138,8 @@
 		G: 255
 		B: 128
 		A: 64
+	PaletteFromPrtFile@colorpicker:
+		Name: colorpicker
+		Number: 3
+		Filename: op2_art.prt
+		AllowModifiers: false
