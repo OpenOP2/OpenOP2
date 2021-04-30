@@ -2,6 +2,7 @@ Metadata:
 	Title: Outpost 2
 	Version: {DEV_VERSION}
 	Website: https://github.com/OpenOP2
+	WebIcon32: https://www.drogoganor.net/op2/openop2_32x32.png
 
 PackageFormats: VolFile
 
