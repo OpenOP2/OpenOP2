@@ -58,3 +58,9 @@ LynxVoice:
 	Voices:
 		Select: repvhc.WAV
 		Action: beep2.WAV
+
+TurretVoice:
+	DefaultVariant: 
+	Voices:
+		Select: guardsel.WAV
+		Action: beep2.WAV

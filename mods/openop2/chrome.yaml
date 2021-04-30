@@ -9,6 +9,11 @@
 	Image2x: glyphs-2x.png
 	Image3x: glyphs-3x.png
 
+^Logo:
+	Image: icon_256x256.png
+	Image2x: icon_512x512.png
+	Image3x: icon_1024x1024.png
+
 ^LoadScreen:
 	Image: loadscreen.png
 	Image2x: loadscreen-2x.png
@@ -530,7 +535,7 @@ scrollheader-selected:
 scrollitem-nohover:
 
 logos:
-	Inherits: ^LoadScreen
+	Inherits: ^Logo
 	Regions:
 		logo: 0, 0, 256, 256
 

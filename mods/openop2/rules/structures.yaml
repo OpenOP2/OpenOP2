@@ -2,165 +2,143 @@
 # You'll want to look in rules-generated.yaml for the building you need, then move it into here and customize it as you need.
 
 # Templates start here
-^CommandCenter:
+
+^Op2Building:
 	Inherits: ^Building
+	Buildable:
+		IconPalette: 5
+	#WithBuildingPlacedAnimation:
+	#	Sequence: make
+	#	RequiresCondition: !build-incomplete
+	#WithDeathAnimation:
+	#	DeathSequence: die
+	#	UseDeathTypeSuffix: false
+	#	CrushedSequencePalette: 3
+
+^CommandCenter:
+	Inherits: ^Op2Building
 	Inherits@shape: ^3x3Shape
+	Tooltip:
+		Name: Command Center
 	Selectable:
 		Bounds: 96,82,0,-9
 	Building:
 		Footprint: xxx _xx
 		Dimensions: 3,2
-		TerrainTypes: Clear, ClearRock, ClearRock2, ClearSand
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 1536
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 10
 		Prerequisites: ~disabled
 		Description: Produces structures (for now).
-		IconPalette: 5
 	Voiced:
 		VoiceSet: CommandCenterVoice
-	ProvidesRadar:
 	ProvidesPrerequisite@eden:
 		Factions: eden
 		Prerequisite: structures.eden
 	ProvidesPrerequisite@plymouth:
 		Factions: plymouth
 		Prerequisite: structures.plymouth
+	ProvidesPrerequisite@structures:
+		Prerequisite: structures
 	Health:
 		HP: 150000
+	Power:
+		Amount: 0
 	Armor:
 		Type: Wood
+	Valued:
+		Cost: 2000
 	RevealsShroud:
 		MinRange: 4c0
 		Range: 5c0
 		RevealGeneratedShroud: False
 	Production:
 		Produces: Building, Defense
-	Valued:
-		Cost: 2000
-	Tooltip:
-		Name: Command Center
-	BaseBuilding:
-	Sellable:
-		RequiresCondition: !build-incomplete && !being-captured && !being-demolished
 	ProductionBar@Building:
 		ProductionType: Building
 	ProductionBar@Defense:
 		ProductionType: Defense
 		Color: 8A8A8A
+	ProvidesRadar:
+	BaseBuilding:
+	Sellable:
+		RequiresCondition: !build-incomplete && !being-captured && !being-demolished
 	BaseProvider:
 		PauseOnCondition: being-captured
 		Range: 16c0
-	#WithBuildingBib:
-	WithBuildingPlacedAnimation:
-		Sequence: make
-		RequiresCondition: !build-incomplete
-	Power:
-		Amount: 0
-	WithDeathAnimation:
-		DeathSequence: die
-		UseDeathTypeSuffix: false
-		CrushedSequencePalette: 3
-	ProvidesPrerequisite@structures:
-		Prerequisite: structures
-	HitShape:
-		Type: Rectangle
-			TopLeft: -1536, -1536
-			BottomRight: 1536, 1536
 
 ^Power:
-	Inherits: ^Building
+	Inherits: ^Op2Building
 	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Tokamak
 	Selectable:
 		Bounds: 64,76,0,-6
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-		TerrainTypes: Clear, ClearRock, ClearRock2, ClearSand
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 1536
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 20
-		#Prerequisites: ~techlevel.infonly
 		Prerequisites: ~disabled
 		Description: Produces power for your colony.
-		IconPalette: 5
 	Voiced:
 		VoiceSet: TokamakVoice
 	ProvidesPrerequisite:
 		Prerequisite: anypower
 	Health:
 		HP: 40000
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		MinRange: 4c0
-	Valued:
-		Cost: 300
-	Tooltip:
-		Name: Tokamak
-	WithBuildingPlacedAnimation:
-		Sequence: make
-		RequiresCondition: !build-incomplete
 	Power:
 		Amount: 500
-	WithDeathAnimation:
-		DeathSequence: die
-		UseDeathTypeSuffix: false
-		CrushedSequencePalette: 3
-	Targetable:
-		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
+	Armor:
+		Type: Wood
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		MinRange: 4c0
 	ScalePowerWithHealth:
-	HitShape:
-		Type: Rectangle
-			TopLeft: -1536, -1536
-			BottomRight: 1536, 1536
 
 ^OreSmelterCommon:
-	Inherits: ^Building
+	Inherits: ^Op2Building
 	Inherits@shape: ^4x3Shape
+	Tooltip:
+		Name: Ore Smelter (Common)
 	Selectable:
 		Bounds: 128,102,0,-3
 	Building:
 		Footprint: xxxx xxxx xxx_
 		Dimensions: 4,3
-		#LocalCenterOffset: -512,0,0
-		TerrainTypes: Clear, ClearRock, ClearRock2, ClearSand
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 1536
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 30
-		#Prerequisites: ~techlevel.infonly
 		Prerequisites: ~disabled
 		Description: Smelts raw common ore into credits.
-		IconPalette: 5
 	Voiced:
 		VoiceSet: OreSmelterVoice
 	ProvidesPrerequisite:
 		Prerequisite: anyrefinery
 	Health:
 		HP: 90000
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		MinRange: 4c0
-	Valued:
-		Cost: 500
-	Tooltip:
-		Name: Ore Smelter (Common)
-	WithBuildingPlacedAnimation:
-		Sequence: make
-		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -100
-	WithDeathAnimation:
-		DeathSequence: die
-		UseDeathTypeSuffix: false
-		CrushedSequencePalette: 3
-	Targetable:
-		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
-	HitShape:
-		Type: Rectangle
-			TopLeft: -1536, -1536
-			BottomRight: 1536, 1536
+	Armor:
+		Type: Wood
+	Valued:
+		Cost: 500
+	RevealsShroud:
+		MinRange: 4c0
 	Refinery:
 		DockAngle: 0
 		DockOffset: 3,2
@@ -172,15 +150,19 @@
 	#	Facing: 0
 
 ^VehicleFactory:
-	Inherits: ^Building
+	Inherits: ^Op2Building
 	Inherits@shape: ^4x3Shape
+	Tooltip:
+		Name: Vehicle Factory
 	Selectable:
 		Bounds: 128,102,0,-3
 	Building:
 		Footprint: xxxx xxxx xx=x
 		Dimensions: 4,3
-		#LocalCenterOffset: -512,0,0
-		TerrainTypes: Clear, ClearRock, ClearRock2, ClearSand
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 1536
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 40
@@ -190,10 +172,6 @@
 		IconPalette: 6
 	Voiced:
 		VoiceSet: VehicleFactoryVoice
-	RallyPoint:
-		Palette: 8
-		IsPlayerPalette: false
-		Path: 2,3
 	ProvidesPrerequisite:
 		Prerequisite: vehicles
 	ProvidesPrerequisite@eden:
@@ -202,15 +180,20 @@
 	ProvidesPrerequisite@plymouth:
 		Factions: plymouth
 		Prerequisite: vehicles.plymouth
+	Health:
+		HP: 60000
+	Power:
+		Amount: -100
+	Armor:
+		Type: Wood
+	Valued:
+		Cost: 600
+	RevealsShroud:
+		MinRange: 4c0
 	Production:
 		Produces: Vehicle
 	ProductionBar:
 		ProductionType: Vehicle
-	Exit@1:
-		Facing: 512
-		SpawnOffset: 512,0,0
-		ExitCell: 2,1
-		ProductionTypes: Vehicle
 	ProductionQueue@Vehicle:
 		Type: Vehicle
 		Group: Vehicle
@@ -221,80 +204,100 @@
 		#CancelledAudio: Cancelled
 		#BuildDurationModifier: 100
 		LowPowerModifier: 300
-	Health:
-		HP: 60000
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		MinRange: 4c0
-	Valued:
-		Cost: 600
-	Tooltip:
-		Name: Vehicle Factory
-	WithBuildingPlacedAnimation:
-		Sequence: make
-		RequiresCondition: !build-incomplete
-	Power:
-		Amount: -100
-	WithDeathAnimation:
-		DeathSequence: die
-		UseDeathTypeSuffix: false
-		CrushedSequencePalette: 3
-	Targetable:
-		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
-	HitShape:
-		Type: Rectangle
-			TopLeft: -1536, -1536
-			BottomRight: 1536, 1536
+	Exit@1:
+		Facing: 512
+		SpawnOffset: 512,0,0
+		ExitCell: 2,1
+		ProductionTypes: Vehicle
+	RallyPoint:
+		Palette: 8
+		IsPlayerPalette: false
+		Path: 2,3
 
 ^MineCommon:
-	Inherits: ^Building
-	WithDirectionalIdleOverlay@deck:
-		Sequence: deck
-		Palette: 8
-		Offset: 0,-512,0
+	Inherits: ^Op2Building
 	Inherits@shape: ^1x1Shape
+	Tooltip:
+		Name: Mine (Common)
+		GenericName: Mine
 	Selectable:
 		Bounds: 36,52,0,-6
 	Building:
 		Footprint: x
 		Dimensions: 1,1
 		TerrainTypes: Ore
-		#LocalCenterOffset: -512,0,0
 		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
 	Voiced:
 		VoiceSet: MineVoice
 	ProvidesPrerequisite:
 		Prerequisite: anymine
 	Health:
 		HP: 20000
-	Armor:
-		Type: Concrete
-	RevealsShroud:
-		MinRange: 4c0
-	Valued:
-		Cost: 300
-	Tooltip:
-		Name: Mine (Common)
-		GenericName: Mine
-	WithBuildingPlacedAnimation:
-		Sequence: make
-		RequiresCondition: !build-incomplete
 	Power:
 		Amount: -50
-	WithDeathAnimation:
-		DeathSequence: die
-		UseDeathTypeSuffix: false
-		CrushedSequencePalette: 3
-	Targetable:
-		TargetTypes: GroundActor, Structure, C4, DetonateAttack, SpyInfiltrate
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		MinRange: 4c0
+	WithDirectionalIdleOverlay@deck:
+		Sequence: deck
+		Palette: 8
+		Offset: 0,-512,0
+	PlacesResourcesWhenCreated:
+		ResourceType: Ore2
+		Amount: 50000
+
+^GuardPost:
+	Inherits: ^Defense
+	Inherits@shape: ^1x1Shape
+	Tooltip:
+		Name: Guard Post
+		GenericName: Guard Post
+	Selectable:
+		Bounds: 36,36,0,0
+	Building:
+		Footprint: x
+		Dimensions: 1,1
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	PlacesResourcesWhenCreated:
-		ResourceType: Ore2
-		Amount: 50000
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 10
+		Prerequisites: ~disabled
+		Description: Basic defense turret.
+		IconPalette: 3
+	Voiced:
+		VoiceSet: TurretVoice
+	Health:
+		HP: 30000
+	Power:
+		Amount: -30
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 500
+	RevealsShroud:
+		MinRange: 4c0
+	Armament:
+		Weapon: LaserFire
+		#Recoil: 85
+		#RecoilRecovery: 25
+		LocalOffset: 768,0,90
+		MuzzlePalette: 3
+	Turreted:
+		TurnSpeed: 64
+	AttackTurreted:
+	WithSpriteTurret:
+	RenderRangeCircle:
+	-WithMakeAnimation:
 
 # Actual buildings start here
 eden-command-center:
@@ -351,13 +354,12 @@ plymouth-factory-vehicle:
 	Building:
 		Footprint: xxxx xxx= xxxx
 		Dimensions: 4,3
-		#LocalCenterOffset: -512,0,0
+	Buildable:
+		Prerequisites: ~structures.plymouth
 	Exit@1:
 		Facing: -256
 	RallyPoint:
 		Path: 4,1
-	Buildable:
-		Prerequisites: ~structures.plymouth
 
 eden-mine-common:
 	Inherits@generated: ^eden-mine-common-generated
@@ -366,3 +368,16 @@ eden-mine-common:
 plymouth-mine-common:
 	Inherits@generated: ^plymouth-mine-common-generated
 	Inherits: ^MineCommon
+
+eden-turret-laser:
+	Inherits@generated: ^eden-turret-laser-generated
+	Inherits: ^GuardPost
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-turret-microwave:
+	Inherits@generated: ^plymouth-turret-microwave-generated
+	Inherits: ^GuardPost
+	Buildable:
+		Prerequisites: ~structures.plymouth
+		IconPalette: 2

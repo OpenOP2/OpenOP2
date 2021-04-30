@@ -47,7 +47,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			{
 				sb.AppendLine($"{group.Name}:");
 				sb.AppendLine($"\tActorType: {group.ActorType}");
-				sb.AppendLine($"\tCreateActor: {group.CreateActor}");
+				sb.AppendLine($"\tCreateActor: {group.CreateBaseActor}");
 				sb.AppendLine($"\tCreateExampleActor: {group.CreateExampleActor}");
 				sb.AppendLine("\tSets:");
 				foreach (var set in group.Sets)

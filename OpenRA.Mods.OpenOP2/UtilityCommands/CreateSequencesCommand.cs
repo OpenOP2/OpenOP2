@@ -151,9 +151,28 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					Name = group.Key,
 					ActorType = (ActorType)Enum.Parse(typeof(ActorType),
 						groupNodes.First(x => x.Key == "ActorType").Value.Value.ToString()),
-					CreateActor = groupNodes.First(x => x.Key == "CreateActor").Value.Value.ToString().ToLowerInvariant() == "true",
-					CreateExampleActor = groupNodes.First(x => x.Key == "CreateExampleActor").Value.Value.ToString().ToLowerInvariant() == "true",
 				};
+
+				var createBaseActor = groupNodes.FirstOrDefault(x => x.Key == "CreateBaseActor")?.Value?.Value
+					?.ToString().ToLowerInvariant();
+				if (!string.IsNullOrWhiteSpace(createBaseActor))
+				{
+					groupSequence.CreateBaseActor = createBaseActor == "true";
+				}
+
+				var createExampleActor = groupNodes.FirstOrDefault(x => x.Key == "CreateExampleActor")?.Value?.Value
+					?.ToString().ToLowerInvariant();
+				if (!string.IsNullOrWhiteSpace(createExampleActor))
+				{
+					groupSequence.CreateExampleActor = createExampleActor == "true";
+				}
+
+				var withBlankIdle = groupNodes.FirstOrDefault(x => x.Key == "WithBlankIdle")?.Value?.Value
+					?.ToString().ToLowerInvariant();
+				if (!string.IsNullOrWhiteSpace(withBlankIdle))
+				{
+					groupSequence.WithBlankIdle = withBlankIdle == "true";
+				}
 
 				var setsNode = group.Value.Nodes.First(x => x.Key == "Sets").Value.Nodes;
 				var sets = new List<GroupSequenceSet>();
@@ -163,13 +182,33 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					var groupSequenceSet = new GroupSequenceSet
 					{
 						Sequence = set.Value.Value,
-						Length = int.Parse(setNodes.First(x => x.Key == "Length").Value.Value.ToString()),
 						Start = int.Parse(setNodes.First(x => x.Key == "Start").Value.Value.ToString()),
-						OffsetX = int.Parse(setNodes.First(x => x.Key == "OffsetX").Value.Value.ToString()),
-						OffsetY = int.Parse(setNodes.First(x => x.Key == "OffsetY").Value.Value.ToString()),
-						OffsetZ = int.Parse(setNodes.First(x => x.Key == "OffsetZ").Value.Value.ToString()),
-						StartOffset = int.Parse(setNodes.First(x => x.Key == "StartOffset").Value.Value.ToString()),
 					};
+
+					if (int.TryParse(setNodes.FirstOrDefault(x => x.Key == "Length")?.Value?.Value?.ToString(), out var length))
+					{
+						groupSequenceSet.Length = length;
+					}
+
+					if (int.TryParse(setNodes.FirstOrDefault(x => x.Key == "OffsetX")?.Value?.Value?.ToString(), out var offsetX))
+					{
+						groupSequenceSet.OffsetX = offsetX;
+					}
+
+					if (int.TryParse(setNodes.FirstOrDefault(x => x.Key == "OffsetY")?.Value?.Value?.ToString(), out var offsetY))
+					{
+						groupSequenceSet.OffsetY = offsetY;
+					}
+
+					if (int.TryParse(setNodes.FirstOrDefault(x => x.Key == "OffsetZ")?.Value?.Value?.ToString(), out var offsetZ))
+					{
+						groupSequenceSet.OffsetZ = offsetZ;
+					}
+
+					if (int.TryParse(setNodes.FirstOrDefault(x => x.Key == "StartOffset")?.Value?.Value?.ToString(), out var startOffset))
+					{
+						groupSequenceSet.StartOffset = startOffset;
+					}
 
 					sets.Add(groupSequenceSet);
 				}
@@ -414,6 +453,17 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 							}
 						}
 
+						if (groupSequence.WithBlankIdle && groupSequenceSet == groupSequence.Sets.First())
+						{
+							sb.AppendLine("\tidle:");
+							sb.AppendLine("\t\tLength: 1");
+							sb.AppendLine("\t\tFacings: 1");
+							sb.AppendLine("\t\tCombine:");
+							sb.AppendLine("\t\t\tblank.png: idle-0");
+							sb.AppendLine("\t\t\t\tFrames: 0");
+							sb.AppendLine("\t\t\t\tLength: 1");
+						}
+
 						sb.AppendLine($"\t{sequenceName}:");
 						sb.AppendLine($"\t\tLength: {frameCount}");
 						sb.AppendLine($"\t\tFacings: {groupSequenceSet.Length}");
@@ -479,7 +529,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 								Name = groupSequence.Name,
 								Palette = overlayPalette,
 								ActorType = groupSequence.ActorType,
-								CreateActor = groupSequence.CreateActor,
+								CreateActor = groupSequence.CreateBaseActor,
 								CreateExampleActor = groupSequence.CreateExampleActor,
 							};
 

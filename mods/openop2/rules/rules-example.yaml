@@ -339,27 +339,27 @@ eden-unknown-turret:
 	Inherits@generated: ^eden-unknown-turret-generated
 	Inherits: ^StubBuilding
 
-eden-unknown-turret2:
-	Inherits@generated: ^eden-unknown-turret2-generated
+eden-turret-starflare:
+	Inherits@generated: ^eden-turret-starflare-generated
 	Inherits: ^StubBuilding
 
-eden-unknown-turret2-double:
-	Inherits@generated: ^eden-unknown-turret2-double-generated
+eden-turret-starflare-double:
+	Inherits@generated: ^eden-turret-starflare-double-generated
 	Inherits: ^StubBuilding
 
-plymouth-unknown-turret2-double:
-	Inherits@generated: ^plymouth-unknown-turret2-double-generated
+plymouth-turret-starflare:
+	Inherits@generated: ^plymouth-turret-starflare-generated
 	Inherits: ^StubBuilding
 
-plymouth-unknown-turret3:
-	Inherits@generated: ^plymouth-unknown-turret3-generated
+plymouth-turret-starflare-double:
+	Inherits@generated: ^plymouth-turret-starflare-double-generated
 	Inherits: ^StubBuilding
 
-plymouth-unknown-turret3-double:
-	Inherits@generated: ^plymouth-unknown-turret3-double-generated
+plymouth-turret-supernova:
+	Inherits@generated: ^plymouth-turret-supernova-generated
 	Inherits: ^StubBuilding
 
-plymouth-unknown-turret4:
-	Inherits@generated: ^plymouth-unknown-turret4-generated
+plymouth-turret-supernova-double:
+	Inherits@generated: ^plymouth-turret-supernova-double-generated
 	Inherits: ^StubBuilding
 

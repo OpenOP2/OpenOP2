@@ -1759,38 +1759,48 @@
 		Sequence: idle-shadow-id1
 		Palette: shadow
 
-^eden-unknown-turret2-generated:
+^eden-turret-starflare-generated:
 	RenderSprites:
-		Image: eden-unknown-turret2
+		Image: eden-turret-starflare
 		PlayerPalette: playerMapped3
 
-^eden-unknown-turret2-double-generated:
+^eden-turret-starflare-double-generated:
 	RenderSprites:
-		Image: eden-unknown-turret2-double
+		Image: eden-turret-starflare-double
 		PlayerPalette: playerMapped3
 
-^plymouth-unknown-turret2-double-generated:
+^plymouth-turret-starflare-generated:
 	RenderSprites:
-		Image: plymouth-unknown-turret2-double
-		PlayerPalette: playerMapped8
-
-^plymouth-unknown-turret3-generated:
-	RenderSprites:
-		Image: plymouth-unknown-turret3
-		PlayerPalette: playerMapped8
-
-^plymouth-unknown-turret3-double-generated:
-	RenderSprites:
-		Image: plymouth-unknown-turret3-double
-		PlayerPalette: playerMapped8
-
-^plymouth-unknown-turret4-generated:
-	RenderSprites:
-		Image: plymouth-unknown-turret4
+		Image: plymouth-turret-starflare
 		PlayerPalette: playerMapped3
+
+^plymouth-turret-starflare-double-generated:
+	RenderSprites:
+		Image: plymouth-turret-starflare-double
+		PlayerPalette: playerMapped8
+
+^plymouth-turret-supernova-generated:
+	RenderSprites:
+		Image: plymouth-turret-supernova
+		PlayerPalette: playerMapped8
+
+^plymouth-turret-supernova-double-generated:
+	RenderSprites:
+		Image: plymouth-turret-supernova-double
+		PlayerPalette: playerMapped8
 
 ^waypoint-generated:
 	RenderSprites:
 		Image: waypoint
+		PlayerPalette: playerMapped3
+
+^eden-turret-laser-generated:
+	RenderSprites:
+		Image: eden-turret-laser
+		PlayerPalette: playerMapped3
+
+^plymouth-turret-microwave-generated:
+	RenderSprites:
+		Image: plymouth-turret-microwave
 		PlayerPalette: playerMapped3
 

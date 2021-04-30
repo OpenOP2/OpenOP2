@@ -179708,7 +179708,7 @@ eden-unknown-turret:
 				Offset: -11,-3
 				ZOffset: -256
 
-eden-unknown-turret2:
+eden-turret-starflare:
 	# All sequences: idle
 	idle:
 		Length: 1
@@ -179722,7 +179722,7 @@ eden-unknown-turret2:
 				Offset: 1,3
 				ZOffset: 0
 
-eden-unknown-turret2-double:
+eden-turret-starflare-double:
 	# All sequences: idle
 	idle:
 		Length: 1
@@ -179736,49 +179736,7 @@ eden-unknown-turret2-double:
 				Offset: 1,2
 				ZOffset: 0
 
-plymouth-unknown-turret2-double:
-	# All sequences: idle
-	idle:
-		Length: 1
-		Facings: 1
-		Offset: 0,0
-		ZOffset: 0
-		Combine:
-			op2_art.bmp: idle-facing0-0
-				Frames: 3314
-				Length: 1
-				Offset: 1,3
-				ZOffset: 0
-
-plymouth-unknown-turret3:
-	# All sequences: idle
-	idle:
-		Length: 1
-		Facings: 16
-		Offset: 0,0
-		ZOffset: 0
-		Combine:
-			op2_art.bmp: idle-facing0-0
-				Frames: 2721,2720,2722,2723,2721,2720,2722,2723,2721,2720,2722,2723,2721,2720,2722,2723
-				Length: 16
-				Offset: 1,4
-				ZOffset: 0
-
-plymouth-unknown-turret3-double:
-	# All sequences: idle
-	idle:
-		Length: 1
-		Facings: 1
-		Offset: 0,0
-		ZOffset: 0
-		Combine:
-			op2_art.bmp: idle-facing0-0
-				Frames: 3315
-				Length: 1
-				Offset: 1,2
-				ZOffset: 0
-
-plymouth-unknown-turret4:
+plymouth-turret-starflare:
 	# All sequences: idle
 	idle:
 		Length: 1
@@ -179802,6 +179760,48 @@ plymouth-unknown-turret4:
 				Frames: 3564
 				Length: 1
 				Offset: 1,4
+				ZOffset: 0
+
+plymouth-turret-starflare-double:
+	# All sequences: idle
+	idle:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 3314
+				Length: 1
+				Offset: 1,3
+				ZOffset: 0
+
+plymouth-turret-supernova:
+	# All sequences: idle
+	idle:
+		Length: 1
+		Facings: 16
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 2721,2720,2722,2723,2721,2720,2722,2723,2721,2720,2722,2723,2721,2720,2722,2723
+				Length: 16
+				Offset: 1,4
+				ZOffset: 0
+
+plymouth-turret-supernova-double:
+	# All sequences: idle
+	idle:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 3315
+				Length: 1
+				Offset: 1,2
 				ZOffset: 0
 
 die1:
@@ -188103,1319 +188103,1548 @@ clock:
 				Offset: -4,0
 				ZOffset: 0
 
-plymouth-turret-1:
-	# All sequences: idle
+plymouth-turret-rpg:
+	# All sequences: turret
 	idle:
+		Length: 1
+		Facings: 1
+		Combine:
+			blank.png: idle-0
+				Frames: 0
+				Length: 1
+	turret:
 		Length: 1
 		Facings: 16
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
-			op2_art.bmp: idle-facing0-0
-				Frames: 758
-				Length: 1
-				Offset: 9,5
-				ZOffset: 0
-			op2_art.bmp: idle-facing1-0
-				Frames: 759
-				Length: 1
-				Offset: 7,4
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-0
-				Frames: 760
-				Length: 1
-				Offset: 3,0
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-0
-				Frames: 761
-				Length: 1
-				Offset: 1,-2
-				ZOffset: 0
-			op2_art.bmp: idle-facing4-0
+			op2_art.bmp: turret-facing0-0
 				Frames: 762
 				Length: 1
 				Offset: 1,-3
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: turret-facing1-0
 				Frames: 763
 				Length: 1
 				Offset: 1,-2
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-0
+			op2_art.bmp: turret-facing2-0
 				Frames: 3565
 				Length: 1
 				Offset: -1,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-0
+			op2_art.bmp: turret-facing3-0
 				Frames: 764
 				Length: 1
 				Offset: -4,4
 				ZOffset: 0
-			op2_art.bmp: idle-facing8-0
+			op2_art.bmp: turret-facing4-0
 				Frames: 765
 				Length: 1
 				Offset: -6,5
 				ZOffset: 0
-			op2_art.bmp: idle-facing9-0
+			op2_art.bmp: turret-facing5-0
 				Frames: 766
 				Length: 1
 				Offset: -4,5
 				ZOffset: 0
-			op2_art.bmp: idle-facing10-0
+			op2_art.bmp: turret-facing6-0
 				Frames: 767
 				Length: 1
 				Offset: -1,6
 				ZOffset: 0
-			op2_art.bmp: idle-facing11-0
+			op2_art.bmp: turret-facing7-0
 				Frames: 768
 				Length: 1
 				Offset: 1,9
 				ZOffset: 0
-			op2_art.bmp: idle-facing12-0
+			op2_art.bmp: turret-facing8-0
 				Frames: 3320
 				Length: 1
 				Offset: 1,10
 				ZOffset: 0
-			op2_art.bmp: idle-facing13-0
+			op2_art.bmp: turret-facing9-0
 				Frames: 769
 				Length: 1
 				Offset: 1,9
 				ZOffset: 0
-			op2_art.bmp: idle-facing14-0
+			op2_art.bmp: turret-facing10-0
 				Frames: 770
 				Length: 1
 				Offset: 5,6
 				ZOffset: 0
-			op2_art.bmp: idle-facing15-0
+			op2_art.bmp: turret-facing11-0
 				Frames: 771
 				Length: 1
 				Offset: 7,5
 				ZOffset: 0
+			op2_art.bmp: turret-facing12-0
+				Frames: 758
+				Length: 1
+				Offset: 9,5
+				ZOffset: 0
+			op2_art.bmp: turret-facing13-0
+				Frames: 759
+				Length: 1
+				Offset: 7,4
+				ZOffset: 0
+			op2_art.bmp: turret-facing14-0
+				Frames: 760
+				Length: 1
+				Offset: 3,0
+				ZOffset: 0
+			op2_art.bmp: turret-facing15-0
+				Frames: 761
+				Length: 1
+				Offset: 1,-2
+				ZOffset: 0
+	# All sequences: icon
+	icon:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 758
+				Length: 1
+				Offset: 9,5
+				ZOffset: 0
 
 eden-turret-elec:
-	# All sequences: idle, idle-sprite-id1
+	# All sequences: turret, turret-sprite-id1
 	idle:
+		Length: 1
+		Facings: 1
+		Combine:
+			blank.png: idle-0
+				Frames: 0
+				Length: 1
+	turret:
 		Length: 8
 		Facings: 16
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
-			blank.png: idle-facing0-0
+			blank.png: turret-facing0-0
 				Frames: 0
 				Length: 1
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-1
-				Frames: 1235
-				Length: 1
-				Offset: 5,12
-				ZOffset: 0
-			op2_art.bmp: idle-facing0-2
-				Frames: 1236
-				Length: 1
-				Offset: 2,15
-				ZOffset: 0
-			op2_art.bmp: idle-facing0-3
-				Frames: 1237
-				Length: 1
-				Offset: -3,18
-				ZOffset: 0
-			op2_art.bmp: idle-facing0-4
-				Frames: 1238
-				Length: 1
-				Offset: 5,17
-				ZOffset: 0
-			op2_art.bmp: idle-facing0-5
-				Frames: 1236
-				Length: 1
-				Offset: 2,15
-				ZOffset: 0
-			op2_art.bmp: idle-facing0-6
-				Frames: 1237
-				Length: 1
-				Offset: -3,18
-				ZOffset: 0
-			op2_art.bmp: idle-facing0-7
-				Frames: 1238
-				Length: 1
-				Offset: 5,17
-				ZOffset: 0
-			blank.png: idle-facing1-0
-				Frames: 0
-				Length: 1
-				Offset: 0,0
-				ZOffset: 0
-			op2_art.bmp: idle-facing1-1
-				Frames: 1239
-				Length: 1
-				Offset: 7,15
-				ZOffset: 0
-			op2_art.bmp: idle-facing1-2
-				Frames: 1240
-				Length: 1
-				Offset: 8,16
-				ZOffset: 0
-			op2_art.bmp: idle-facing1-3
-				Frames: 1241
-				Length: 1
-				Offset: 9,15
-				ZOffset: 0
-			op2_art.bmp: idle-facing1-4
-				Frames: 1242,1240
-				Length: 2
-				Offset: 8,16
-				ZOffset: 0
-			op2_art.bmp: idle-facing1-6
-				Frames: 1241
-				Length: 1
-				Offset: 9,15
-				ZOffset: 0
-			op2_art.bmp: idle-facing1-7
-				Frames: 1242
-				Length: 1
-				Offset: 8,16
-				ZOffset: 0
-			blank.png: idle-facing2-0
-				Frames: 0
-				Length: 1
-				Offset: 0,0
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-1
-				Frames: 1243
-				Length: 1
-				Offset: 13,10
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-2
-				Frames: 1244
-				Length: 1
-				Offset: 14,10
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-3
-				Frames: 1245,1246
-				Length: 2
-				Offset: 13,12
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-5
-				Frames: 1244
-				Length: 1
-				Offset: 14,10
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-6
-				Frames: 1245,1246
-				Length: 2
-				Offset: 13,12
-				ZOffset: 0
-			blank.png: idle-facing3-0
-				Frames: 0
-				Length: 1
-				Offset: 0,0
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-1
-				Frames: 1247
-				Length: 1
-				Offset: 15,7
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-2
-				Frames: 1248
-				Length: 1
-				Offset: 16,7
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-3
-				Frames: 1249
-				Length: 1
-				Offset: 16,6
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-4
-				Frames: 1250
-				Length: 1
-				Offset: 17,7
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-5
-				Frames: 1248
-				Length: 1
-				Offset: 16,7
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-6
-				Frames: 1249
-				Length: 1
-				Offset: 16,6
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-7
-				Frames: 1250
-				Length: 1
-				Offset: 17,7
-				ZOffset: 0
-			blank.png: idle-facing4-0
-				Frames: 0
-				Length: 1
-				Offset: 0,0
-				ZOffset: 0
-			op2_art.bmp: idle-facing4-1
+			op2_art.bmp: turret-facing0-1
 				Frames: 1251
 				Length: 1
 				Offset: 17,1
 				ZOffset: 0
-			op2_art.bmp: idle-facing4-2
+			op2_art.bmp: turret-facing0-2
 				Frames: 1252
 				Length: 1
 				Offset: 17,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing4-3
+			op2_art.bmp: turret-facing0-3
 				Frames: 1253
 				Length: 1
 				Offset: 18,3
 				ZOffset: 0
-			op2_art.bmp: idle-facing4-4
+			op2_art.bmp: turret-facing0-4
 				Frames: 1254
 				Length: 1
 				Offset: 18,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing4-5
+			op2_art.bmp: turret-facing0-5
 				Frames: 1252
 				Length: 1
 				Offset: 17,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing4-6
+			op2_art.bmp: turret-facing0-6
 				Frames: 1253
 				Length: 1
 				Offset: 18,3
 				ZOffset: 0
-			op2_art.bmp: idle-facing4-7
+			op2_art.bmp: turret-facing0-7
 				Frames: 1254
 				Length: 1
 				Offset: 18,2
 				ZOffset: 0
-			blank.png: idle-facing5-0
+			blank.png: turret-facing1-0
 				Frames: 0
 				Length: 1
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-1
+			op2_art.bmp: turret-facing1-1
 				Frames: 1255
 				Length: 1
 				Offset: 15,-2
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-2
+			op2_art.bmp: turret-facing1-2
 				Frames: 1256
 				Length: 1
 				Offset: 16,-2
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-3
+			op2_art.bmp: turret-facing1-3
 				Frames: 1257
 				Length: 1
 				Offset: 16,-1
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-4
+			op2_art.bmp: turret-facing1-4
 				Frames: 1258
 				Length: 1
 				Offset: 17,-2
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-5
+			op2_art.bmp: turret-facing1-5
 				Frames: 1256
 				Length: 1
 				Offset: 16,-2
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-6
+			op2_art.bmp: turret-facing1-6
 				Frames: 1257
 				Length: 1
 				Offset: 16,-1
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-7
+			op2_art.bmp: turret-facing1-7
 				Frames: 1258
 				Length: 1
 				Offset: 17,-2
 				ZOffset: 0
-			blank.png: idle-facing6-0
+			blank.png: turret-facing2-0
 				Frames: 0
 				Length: 1
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-1
+			op2_art.bmp: turret-facing2-1
 				Frames: 1259
 				Length: 1
 				Offset: 12,-6
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-2
+			op2_art.bmp: turret-facing2-2
 				Frames: 1260,1261
 				Length: 2
 				Offset: 13,-6
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-4
+			op2_art.bmp: turret-facing2-4
 				Frames: 1262
 				Length: 1
 				Offset: 13,-7
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-5
+			op2_art.bmp: turret-facing2-5
 				Frames: 1260,1261
 				Length: 2
 				Offset: 13,-6
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-7
+			op2_art.bmp: turret-facing2-7
 				Frames: 1262
 				Length: 1
 				Offset: 13,-7
 				ZOffset: 0
-			blank.png: idle-facing7-0
+			blank.png: turret-facing3-0
 				Frames: 0
 				Length: 1
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-1
+			op2_art.bmp: turret-facing3-1
 				Frames: 1263
 				Length: 1
 				Offset: 5,-10
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-2
+			op2_art.bmp: turret-facing3-2
 				Frames: 1264
 				Length: 1
 				Offset: 7,-9
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-3
+			op2_art.bmp: turret-facing3-3
 				Frames: 1265
 				Length: 1
 				Offset: 7,-8
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-4
+			op2_art.bmp: turret-facing3-4
 				Frames: 1266,1264
 				Length: 2
 				Offset: 7,-9
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-6
+			op2_art.bmp: turret-facing3-6
 				Frames: 1265
 				Length: 1
 				Offset: 7,-8
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-7
+			op2_art.bmp: turret-facing3-7
 				Frames: 1266
 				Length: 1
 				Offset: 7,-9
 				ZOffset: 0
-			blank.png: idle-facing8-0
+			blank.png: turret-facing4-0
 				Frames: 0
 				Length: 1
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing8-1
+			op2_art.bmp: turret-facing4-1
 				Frames: 1267
 				Length: 1
 				Offset: 2,-10
 				ZOffset: 0
-			op2_art.bmp: idle-facing8-2
+			op2_art.bmp: turret-facing4-2
 				Frames: 1268
 				Length: 1
 				Offset: 1,-11
 				ZOffset: 0
-			op2_art.bmp: idle-facing8-3
+			op2_art.bmp: turret-facing4-3
 				Frames: 1269
 				Length: 1
 				Offset: 1,-10
 				ZOffset: 0
-			op2_art.bmp: idle-facing8-4
+			op2_art.bmp: turret-facing4-4
 				Frames: 1270
 				Length: 1
 				Offset: 2,-11
 				ZOffset: 0
-			op2_art.bmp: idle-facing8-5
+			op2_art.bmp: turret-facing4-5
 				Frames: 1268
 				Length: 1
 				Offset: 1,-11
 				ZOffset: 0
-			op2_art.bmp: idle-facing8-6
+			op2_art.bmp: turret-facing4-6
 				Frames: 1269
 				Length: 1
 				Offset: 1,-10
 				ZOffset: 0
-			op2_art.bmp: idle-facing8-7
+			op2_art.bmp: turret-facing4-7
 				Frames: 1270
 				Length: 1
 				Offset: 2,-11
 				ZOffset: 0
-			blank.png: idle-facing9-0
+			blank.png: turret-facing5-0
 				Frames: 0
 				Length: 1
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing9-1
+			op2_art.bmp: turret-facing5-1
 				Frames: 1271
 				Length: 1
 				Offset: -4,-8
 				ZOffset: 0
-			op2_art.bmp: idle-facing9-2
+			op2_art.bmp: turret-facing5-2
 				Frames: 1272
 				Length: 1
 				Offset: -4,-9
 				ZOffset: 0
-			op2_art.bmp: idle-facing9-3
+			op2_art.bmp: turret-facing5-3
 				Frames: 1273
 				Length: 1
 				Offset: -3,-10
 				ZOffset: 0
-			op2_art.bmp: idle-facing9-4
+			op2_art.bmp: turret-facing5-4
 				Frames: 1274
 				Length: 1
 				Offset: -4,-10
 				ZOffset: 0
-			op2_art.bmp: idle-facing9-5
+			op2_art.bmp: turret-facing5-5
 				Frames: 1272
 				Length: 1
 				Offset: -4,-9
 				ZOffset: 0
-			op2_art.bmp: idle-facing9-6
+			op2_art.bmp: turret-facing5-6
 				Frames: 1273
 				Length: 1
 				Offset: -3,-10
 				ZOffset: 0
-			op2_art.bmp: idle-facing9-7
+			op2_art.bmp: turret-facing5-7
 				Frames: 1274
 				Length: 1
 				Offset: -4,-10
 				ZOffset: 0
-			blank.png: idle-facing10-0
+			blank.png: turret-facing6-0
 				Frames: 0
 				Length: 1
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing10-1
+			op2_art.bmp: turret-facing6-1
 				Frames: 1275
 				Length: 1
 				Offset: -8,-6
 				ZOffset: 0
-			op2_art.bmp: idle-facing10-2
+			op2_art.bmp: turret-facing6-2
 				Frames: 1276
 				Length: 1
 				Offset: -10,-7
 				ZOffset: 0
-			op2_art.bmp: idle-facing10-3
+			op2_art.bmp: turret-facing6-3
 				Frames: 1277
 				Length: 1
 				Offset: -10,-6
 				ZOffset: 0
-			op2_art.bmp: idle-facing10-4
+			op2_art.bmp: turret-facing6-4
 				Frames: 1278
 				Length: 1
 				Offset: -8,-7
 				ZOffset: 0
-			op2_art.bmp: idle-facing10-5
+			op2_art.bmp: turret-facing6-5
 				Frames: 1276
 				Length: 1
 				Offset: -10,-7
 				ZOffset: 0
-			op2_art.bmp: idle-facing10-6
+			op2_art.bmp: turret-facing6-6
 				Frames: 1277
 				Length: 1
 				Offset: -10,-6
 				ZOffset: 0
-			op2_art.bmp: idle-facing10-7
+			op2_art.bmp: turret-facing6-7
 				Frames: 1278
 				Length: 1
 				Offset: -8,-7
 				ZOffset: 0
-			blank.png: idle-facing11-0
+			blank.png: turret-facing7-0
 				Frames: 0
 				Length: 1
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing11-1
+			op2_art.bmp: turret-facing7-1
 				Frames: 1279,1280
 				Length: 2
 				Offset: -11,-3
 				ZOffset: 0
-			op2_art.bmp: idle-facing11-3
+			op2_art.bmp: turret-facing7-3
 				Frames: 1281,1282
 				Length: 2
 				Offset: -12,-3
 				ZOffset: 0
-			op2_art.bmp: idle-facing11-5
+			op2_art.bmp: turret-facing7-5
 				Frames: 1280
 				Length: 1
 				Offset: -11,-3
 				ZOffset: 0
-			op2_art.bmp: idle-facing11-6
+			op2_art.bmp: turret-facing7-6
 				Frames: 1281,1282
 				Length: 2
 				Offset: -12,-3
 				ZOffset: 0
-			blank.png: idle-facing12-0
+			blank.png: turret-facing8-0
 				Frames: 0
 				Length: 1
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing12-1
+			op2_art.bmp: turret-facing8-1
 				Frames: 1283
 				Length: 1
 				Offset: -15,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing12-2
+			op2_art.bmp: turret-facing8-2
 				Frames: 1284
 				Length: 1
 				Offset: -13,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing12-3
+			op2_art.bmp: turret-facing8-3
 				Frames: 1285
 				Length: 1
 				Offset: -13,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing12-4
+			op2_art.bmp: turret-facing8-4
 				Frames: 1286,1284
 				Length: 2
 				Offset: -13,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing12-6
+			op2_art.bmp: turret-facing8-6
 				Frames: 1285
 				Length: 1
 				Offset: -13,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing12-7
+			op2_art.bmp: turret-facing8-7
 				Frames: 1286
 				Length: 1
 				Offset: -13,2
 				ZOffset: 0
-			blank.png: idle-facing13-0
+			blank.png: turret-facing9-0
 				Frames: 0
 				Length: 1
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing13-1
+			op2_art.bmp: turret-facing9-1
 				Frames: 1287,1288
 				Length: 2
 				Offset: -12,7
 				ZOffset: 0
-			op2_art.bmp: idle-facing13-3
+			op2_art.bmp: turret-facing9-3
 				Frames: 1289
 				Length: 1
 				Offset: -12,6
 				ZOffset: 0
-			op2_art.bmp: idle-facing13-4
+			op2_art.bmp: turret-facing9-4
 				Frames: 1290
 				Length: 1
 				Offset: -13,7
 				ZOffset: 0
-			op2_art.bmp: idle-facing13-5
+			op2_art.bmp: turret-facing9-5
 				Frames: 1288
 				Length: 1
 				Offset: -12,7
 				ZOffset: 0
-			op2_art.bmp: idle-facing13-6
+			op2_art.bmp: turret-facing9-6
 				Frames: 1289
 				Length: 1
 				Offset: -12,6
 				ZOffset: 0
-			op2_art.bmp: idle-facing13-7
+			op2_art.bmp: turret-facing9-7
 				Frames: 1290
 				Length: 1
 				Offset: -13,7
 				ZOffset: 0
-			blank.png: idle-facing14-0
+			blank.png: turret-facing10-0
 				Frames: 0
 				Length: 1
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing14-1
+			op2_art.bmp: turret-facing10-1
 				Frames: 1291
 				Length: 1
 				Offset: -8,13
 				ZOffset: 0
-			op2_art.bmp: idle-facing14-2
+			op2_art.bmp: turret-facing10-2
 				Frames: 1292
 				Length: 1
 				Offset: -11,11
 				ZOffset: 0
-			op2_art.bmp: idle-facing14-3
+			op2_art.bmp: turret-facing10-3
 				Frames: 1293
 				Length: 1
 				Offset: -9,10
 				ZOffset: 0
-			op2_art.bmp: idle-facing14-4
+			op2_art.bmp: turret-facing10-4
 				Frames: 1294
 				Length: 1
 				Offset: -9,11
 				ZOffset: 0
-			op2_art.bmp: idle-facing14-5
+			op2_art.bmp: turret-facing10-5
 				Frames: 1292
 				Length: 1
 				Offset: -11,11
 				ZOffset: 0
-			op2_art.bmp: idle-facing14-6
+			op2_art.bmp: turret-facing10-6
 				Frames: 1293
 				Length: 1
 				Offset: -9,10
 				ZOffset: 0
-			op2_art.bmp: idle-facing14-7
+			op2_art.bmp: turret-facing10-7
 				Frames: 1294
 				Length: 1
 				Offset: -9,11
 				ZOffset: 0
-			blank.png: idle-facing15-0
+			blank.png: turret-facing11-0
 				Frames: 0
 				Length: 1
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing15-1
+			op2_art.bmp: turret-facing11-1
 				Frames: 1295
 				Length: 1
 				Offset: -6,11
 				ZOffset: 0
-			op2_art.bmp: idle-facing15-2
+			op2_art.bmp: turret-facing11-2
 				Frames: 1296
 				Length: 1
 				Offset: -5,15
 				ZOffset: 0
-			op2_art.bmp: idle-facing15-3
+			op2_art.bmp: turret-facing11-3
 				Frames: 1297
 				Length: 1
 				Offset: -2,16
 				ZOffset: 0
-			op2_art.bmp: idle-facing15-4
+			op2_art.bmp: turret-facing11-4
 				Frames: 1298
 				Length: 1
 				Offset: -4,13
 				ZOffset: 0
-			op2_art.bmp: idle-facing15-5
+			op2_art.bmp: turret-facing11-5
 				Frames: 1296
 				Length: 1
 				Offset: -5,15
 				ZOffset: 0
-			op2_art.bmp: idle-facing15-6
+			op2_art.bmp: turret-facing11-6
 				Frames: 1297
 				Length: 1
 				Offset: -2,16
 				ZOffset: 0
-			op2_art.bmp: idle-facing15-7
+			op2_art.bmp: turret-facing11-7
 				Frames: 1298
 				Length: 1
 				Offset: -4,13
 				ZOffset: 0
-	idle-sprite-id1:
+			blank.png: turret-facing12-0
+				Frames: 0
+				Length: 1
+				Offset: 0,0
+				ZOffset: 0
+			op2_art.bmp: turret-facing12-1
+				Frames: 1235
+				Length: 1
+				Offset: 5,12
+				ZOffset: 0
+			op2_art.bmp: turret-facing12-2
+				Frames: 1236
+				Length: 1
+				Offset: 2,15
+				ZOffset: 0
+			op2_art.bmp: turret-facing12-3
+				Frames: 1237
+				Length: 1
+				Offset: -3,18
+				ZOffset: 0
+			op2_art.bmp: turret-facing12-4
+				Frames: 1238
+				Length: 1
+				Offset: 5,17
+				ZOffset: 0
+			op2_art.bmp: turret-facing12-5
+				Frames: 1236
+				Length: 1
+				Offset: 2,15
+				ZOffset: 0
+			op2_art.bmp: turret-facing12-6
+				Frames: 1237
+				Length: 1
+				Offset: -3,18
+				ZOffset: 0
+			op2_art.bmp: turret-facing12-7
+				Frames: 1238
+				Length: 1
+				Offset: 5,17
+				ZOffset: 0
+			blank.png: turret-facing13-0
+				Frames: 0
+				Length: 1
+				Offset: 0,0
+				ZOffset: 0
+			op2_art.bmp: turret-facing13-1
+				Frames: 1239
+				Length: 1
+				Offset: 7,15
+				ZOffset: 0
+			op2_art.bmp: turret-facing13-2
+				Frames: 1240
+				Length: 1
+				Offset: 8,16
+				ZOffset: 0
+			op2_art.bmp: turret-facing13-3
+				Frames: 1241
+				Length: 1
+				Offset: 9,15
+				ZOffset: 0
+			op2_art.bmp: turret-facing13-4
+				Frames: 1242,1240
+				Length: 2
+				Offset: 8,16
+				ZOffset: 0
+			op2_art.bmp: turret-facing13-6
+				Frames: 1241
+				Length: 1
+				Offset: 9,15
+				ZOffset: 0
+			op2_art.bmp: turret-facing13-7
+				Frames: 1242
+				Length: 1
+				Offset: 8,16
+				ZOffset: 0
+			blank.png: turret-facing14-0
+				Frames: 0
+				Length: 1
+				Offset: 0,0
+				ZOffset: 0
+			op2_art.bmp: turret-facing14-1
+				Frames: 1243
+				Length: 1
+				Offset: 13,10
+				ZOffset: 0
+			op2_art.bmp: turret-facing14-2
+				Frames: 1244
+				Length: 1
+				Offset: 14,10
+				ZOffset: 0
+			op2_art.bmp: turret-facing14-3
+				Frames: 1245,1246
+				Length: 2
+				Offset: 13,12
+				ZOffset: 0
+			op2_art.bmp: turret-facing14-5
+				Frames: 1244
+				Length: 1
+				Offset: 14,10
+				ZOffset: 0
+			op2_art.bmp: turret-facing14-6
+				Frames: 1245,1246
+				Length: 2
+				Offset: 13,12
+				ZOffset: 0
+			blank.png: turret-facing15-0
+				Frames: 0
+				Length: 1
+				Offset: 0,0
+				ZOffset: 0
+			op2_art.bmp: turret-facing15-1
+				Frames: 1247
+				Length: 1
+				Offset: 15,7
+				ZOffset: 0
+			op2_art.bmp: turret-facing15-2
+				Frames: 1248
+				Length: 1
+				Offset: 16,7
+				ZOffset: 0
+			op2_art.bmp: turret-facing15-3
+				Frames: 1249
+				Length: 1
+				Offset: 16,6
+				ZOffset: 0
+			op2_art.bmp: turret-facing15-4
+				Frames: 1250
+				Length: 1
+				Offset: 17,7
+				ZOffset: 0
+			op2_art.bmp: turret-facing15-5
+				Frames: 1248
+				Length: 1
+				Offset: 16,7
+				ZOffset: 0
+			op2_art.bmp: turret-facing15-6
+				Frames: 1249
+				Length: 1
+				Offset: 16,6
+				ZOffset: 0
+			op2_art.bmp: turret-facing15-7
+				Frames: 1250
+				Length: 1
+				Offset: 17,7
+				ZOffset: 0
+	idle:
+		Length: 1
+		Facings: 1
+		Combine:
+			blank.png: idle-0
+				Frames: 0
+				Length: 1
+	turret-sprite-id1:
 		Length: 8
 		Facings: 16
 		Offset: 0,0
 		ZOffset: -256
 		Combine:
-			op2_art.bmp: idle-facing0-0
-				Frames: 1212,1212,1212,1212,1212,1212,1212,1212
-				Length: 8
-				Offset: 1,6
-				ZOffset: -256
-			op2_art.bmp: idle-facing1-0
-				Frames: 1213,1213,1213,1213,1213,1213,1213,1213
-				Length: 8
-				Offset: 1,5
-				ZOffset: -256
-			op2_art.bmp: idle-facing2-0
-				Frames: 1214,1214,1214,1214,1214,1214,1214,1214
-				Length: 8
-				Offset: 1,4
-				ZOffset: -256
-			op2_art.bmp: idle-facing3-0
-				Frames: 1215,1215,1215,1215,1215,1215,1215,1215
-				Length: 8
-				Offset: 3,5
-				ZOffset: -256
-			op2_art.bmp: idle-facing4-0
+			op2_art.bmp: turret-facing0-0
 				Frames: 1200,1200,1200,1200,1200,1200,1200,1200
 				Length: 8
 				Offset: 3,6
 				ZOffset: -256
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: turret-facing1-0
 				Frames: 1201,1201,1201,1201,1201,1201,1201,1201
 				Length: 8
 				Offset: 3,5
 				ZOffset: -256
-			op2_art.bmp: idle-facing6-0
+			op2_art.bmp: turret-facing2-0
 				Frames: 1202,1202,1202,1202,1202,1202,1202,1202
 				Length: 8
 				Offset: 1,3
 				ZOffset: -256
-			op2_art.bmp: idle-facing7-0
+			op2_art.bmp: turret-facing3-0
 				Frames: 1203,1203,1203,1203,1203,1203,1203,1203,1204,1204,1204,1204,1204,1204,1204,1204,1205,1205,1205,1205,1205,1205,1205,1205
 				Length: 24
 				Offset: 1,2
 				ZOffset: -256
-			op2_art.bmp: idle-facing10-0
+			op2_art.bmp: turret-facing6-0
 				Frames: 1207,1207,1207,1207,1207,1207,1207,1207
 				Length: 8
 				Offset: 1,3
 				ZOffset: -256
-			op2_art.bmp: idle-facing11-0
+			op2_art.bmp: turret-facing7-0
 				Frames: 1206,1206,1206,1206,1206,1206,1206,1206
 				Length: 8
 				Offset: 1,5
 				ZOffset: -256
-			op2_art.bmp: idle-facing12-0
+			op2_art.bmp: turret-facing8-0
 				Frames: 1208,1208,1208,1208,1208,1208,1208,1208
 				Length: 8
 				Offset: -1,6
 				ZOffset: -256
-			op2_art.bmp: idle-facing13-0
+			op2_art.bmp: turret-facing9-0
 				Frames: 1209,1209,1209,1209,1209,1209,1209,1209
 				Length: 8
 				Offset: 0,5
 				ZOffset: -256
-			op2_art.bmp: idle-facing14-0
+			op2_art.bmp: turret-facing10-0
 				Frames: 1210,1210,1210,1210,1210,1210,1210,1210
 				Length: 8
 				Offset: 1,4
 				ZOffset: -256
-			op2_art.bmp: idle-facing15-0
-				Frames: 1211,1211,1211,1211,1211,1211,1211,1211
+			op2_art.bmp: turret-facing11-0
+				Frames: 1211,1211,1211,1211,1211,1211,1211,1211,1212,1212,1212,1212,1212,1212,1212,1212
+				Length: 16
+				Offset: 1,6
+				ZOffset: -256
+			op2_art.bmp: turret-facing13-0
+				Frames: 1213,1213,1213,1213,1213,1213,1213,1213
+				Length: 8
+				Offset: 1,5
+				ZOffset: -256
+			op2_art.bmp: turret-facing14-0
+				Frames: 1214,1214,1214,1214,1214,1214,1214,1214
+				Length: 8
+				Offset: 1,4
+				ZOffset: -256
+			op2_art.bmp: turret-facing15-0
+				Frames: 1215,1215,1215,1215,1215,1215,1215,1215
+				Length: 8
+				Offset: 3,5
+				ZOffset: -256
+	# All sequences: icon, icon-sprite-id1
+	icon:
+		Length: 8
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			blank.png: icon-facing0-0
+				Frames: 0
+				Length: 1
+				Offset: 0,0
+				ZOffset: 0
+			op2_art.bmp: icon-facing0-1
+				Frames: 1235
+				Length: 1
+				Offset: 5,12
+				ZOffset: 0
+			op2_art.bmp: icon-facing0-2
+				Frames: 1236
+				Length: 1
+				Offset: 2,15
+				ZOffset: 0
+			op2_art.bmp: icon-facing0-3
+				Frames: 1237
+				Length: 1
+				Offset: -3,18
+				ZOffset: 0
+			op2_art.bmp: icon-facing0-4
+				Frames: 1238
+				Length: 1
+				Offset: 5,17
+				ZOffset: 0
+			op2_art.bmp: icon-facing0-5
+				Frames: 1236
+				Length: 1
+				Offset: 2,15
+				ZOffset: 0
+			op2_art.bmp: icon-facing0-6
+				Frames: 1237
+				Length: 1
+				Offset: -3,18
+				ZOffset: 0
+			op2_art.bmp: icon-facing0-7
+				Frames: 1238
+				Length: 1
+				Offset: 5,17
+				ZOffset: 0
+	icon-sprite-id1:
+		Length: 8
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -256
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 1212,1212,1212,1212,1212,1212,1212,1212
 				Length: 8
 				Offset: 1,6
 				ZOffset: -256
 
 eden-turret-laser:
-	# All sequences: idle
+	# All sequences: turret
 	idle:
+		Length: 1
+		Facings: 1
+		Combine:
+			blank.png: idle-0
+				Frames: 0
+				Length: 1
+	turret:
 		Length: 1
 		Facings: 16
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
-			op2_art.bmp: idle-facing0-0
-				Frames: 1316
-				Length: 1
-				Offset: 2,4
-				ZOffset: 0
-			op2_art.bmp: idle-facing1-0
-				Frames: 1317
-				Length: 1
-				Offset: 2,2
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-0
-				Frames: 1318,1319,1320,1321
-				Length: 4
+			op2_art.bmp: turret-facing0-0
+				Frames: 1320,1321
+				Length: 2
 				Offset: 2,1
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-0
+			op2_art.bmp: turret-facing2-0
 				Frames: 1322
 				Length: 1
 				Offset: 1,1
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-0
+			op2_art.bmp: turret-facing3-0
 				Frames: 1323
 				Length: 1
 				Offset: 2,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing8-0
+			op2_art.bmp: turret-facing4-0
 				Frames: 1324
 				Length: 1
 				Offset: 2,4
 				ZOffset: 0
-			op2_art.bmp: idle-facing9-0
+			op2_art.bmp: turret-facing5-0
 				Frames: 1325
 				Length: 1
 				Offset: 2,5
 				ZOffset: 0
-			op2_art.bmp: idle-facing10-0
+			op2_art.bmp: turret-facing6-0
 				Frames: 1326
 				Length: 1
 				Offset: 2,4
 				ZOffset: 0
-			op2_art.bmp: idle-facing11-0
+			op2_art.bmp: turret-facing7-0
 				Frames: 1327
 				Length: 1
 				Offset: 1,4
 				ZOffset: 0
-			op2_art.bmp: idle-facing12-0
+			op2_art.bmp: turret-facing8-0
 				Frames: 1328
 				Length: 1
 				Offset: 2,3
 				ZOffset: 0
-			op2_art.bmp: idle-facing13-0
+			op2_art.bmp: turret-facing9-0
 				Frames: 1329
 				Length: 1
 				Offset: 2,4
 				ZOffset: 0
-			op2_art.bmp: idle-facing14-0
+			op2_art.bmp: turret-facing10-0
 				Frames: 1330,1331
 				Length: 2
 				Offset: 2,5
 				ZOffset: 0
+			op2_art.bmp: turret-facing12-0
+				Frames: 1316
+				Length: 1
+				Offset: 2,4
+				ZOffset: 0
+			op2_art.bmp: turret-facing13-0
+				Frames: 1317
+				Length: 1
+				Offset: 2,2
+				ZOffset: 0
+			op2_art.bmp: turret-facing14-0
+				Frames: 1318,1319
+				Length: 2
+				Offset: 2,1
+				ZOffset: 0
+	# All sequences: icon
+	icon:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 1316
+				Length: 1
+				Offset: 2,4
+				ZOffset: 0
 
 eden-turret-machinegun:
-	# All sequences: idle
+	# All sequences: turret
 	idle:
+		Length: 1
+		Facings: 1
+		Combine:
+			blank.png: idle-0
+				Frames: 0
+				Length: 1
+	turret:
 		Length: 1
 		Facings: 16
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
-			op2_art.bmp: idle-facing0-0
-				Frames: 1332
+			op2_art.bmp: turret-facing0-0
+				Frames: 1336
 				Length: 1
-				Offset: 10,1
-				ZOffset: 0
-			op2_art.bmp: idle-facing1-0
-				Frames: 1333
-				Length: 1
-				Offset: 8,1
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-0
-				Frames: 1334
-				Length: 1
-				Offset: 4,0
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-0
-				Frames: 1335,1336
-				Length: 2
 				Offset: 1,-3
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: turret-facing1-0
 				Frames: 1337
 				Length: 1
 				Offset: 1,-2
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-0
+			op2_art.bmp: turret-facing2-0
 				Frames: 1338
 				Length: 1
 				Offset: -1,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-0
+			op2_art.bmp: turret-facing3-0
 				Frames: 1339
 				Length: 1
 				Offset: -6,1
 				ZOffset: 0
-			op2_art.bmp: idle-facing8-0
+			op2_art.bmp: turret-facing4-0
 				Frames: 1340
 				Length: 1
 				Offset: -7,1
 				ZOffset: 0
-			op2_art.bmp: idle-facing9-0
+			op2_art.bmp: turret-facing5-0
 				Frames: 1341
 				Length: 1
 				Offset: -6,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing10-0
+			op2_art.bmp: turret-facing6-0
 				Frames: 1342
 				Length: 1
 				Offset: -2,3
 				ZOffset: 0
-			op2_art.bmp: idle-facing11-0
+			op2_art.bmp: turret-facing7-0
 				Frames: 1343
 				Length: 1
 				Offset: 2,8
 				ZOffset: 0
-			op2_art.bmp: idle-facing12-0
+			op2_art.bmp: turret-facing8-0
 				Frames: 1344
 				Length: 1
 				Offset: 1,11
 				ZOffset: 0
-			op2_art.bmp: idle-facing13-0
+			op2_art.bmp: turret-facing9-0
 				Frames: 1345
 				Length: 1
 				Offset: 0,8
 				ZOffset: 0
-			op2_art.bmp: idle-facing14-0
+			op2_art.bmp: turret-facing10-0
 				Frames: 1346
 				Length: 1
 				Offset: 6,4
 				ZOffset: 0
-			op2_art.bmp: idle-facing15-0
+			op2_art.bmp: turret-facing11-0
 				Frames: 1347
 				Length: 1
 				Offset: 8,0
 				ZOffset: 0
+			op2_art.bmp: turret-facing12-0
+				Frames: 1332
+				Length: 1
+				Offset: 10,1
+				ZOffset: 0
+			op2_art.bmp: turret-facing13-0
+				Frames: 1333
+				Length: 1
+				Offset: 8,1
+				ZOffset: 0
+			op2_art.bmp: turret-facing14-0
+				Frames: 1334
+				Length: 1
+				Offset: 4,0
+				ZOffset: 0
+			op2_art.bmp: turret-facing15-0
+				Frames: 1335
+				Length: 1
+				Offset: 1,-3
+				ZOffset: 0
+	# All sequences: icon
+	icon:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 1332
+				Length: 1
+				Offset: 10,1
+				ZOffset: 0
 
-plymouth-turret-2:
-	# All sequences: idle
+plymouth-turret-microwave:
+	# All sequences: turret
 	idle:
+		Length: 1
+		Facings: 1
+		Combine:
+			blank.png: idle-0
+				Frames: 0
+				Length: 1
+	turret:
 		Length: 1
 		Facings: 16
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
-			op2_art.bmp: idle-facing0-0
-				Frames: 3566
-				Length: 1
-				Offset: 3,2
-				ZOffset: 0
-			op2_art.bmp: idle-facing1-0
-				Frames: 3567
-				Length: 1
-				Offset: 1,2
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-0
-				Frames: 3568
-				Length: 1
-				Offset: 0,2
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-0
-				Frames: 3569
-				Length: 1
-				Offset: 0,1
-				ZOffset: 0
-			op2_art.bmp: idle-facing4-0
+			op2_art.bmp: turret-facing0-0
 				Frames: 3570
 				Length: 1
 				Offset: 1,1
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: turret-facing1-0
 				Frames: 3571
 				Length: 1
 				Offset: 3,1
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-0
+			op2_art.bmp: turret-facing2-0
 				Frames: 3572
 				Length: 1
 				Offset: 3,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-0
+			op2_art.bmp: turret-facing3-0
 				Frames: 3573
 				Length: 1
 				Offset: 2,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing8-0
+			op2_art.bmp: turret-facing4-0
 				Frames: 3574,3575
 				Length: 2
 				Offset: 1,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing10-0
+			op2_art.bmp: turret-facing6-0
 				Frames: 3576
 				Length: 1
 				Offset: 0,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing11-0
+			op2_art.bmp: turret-facing7-0
 				Frames: 3577
 				Length: 1
 				Offset: 1,3
 				ZOffset: 0
-			op2_art.bmp: idle-facing12-0
+			op2_art.bmp: turret-facing8-0
 				Frames: 3578
 				Length: 1
 				Offset: 1,4
 				ZOffset: 0
-			op2_art.bmp: idle-facing13-0
+			op2_art.bmp: turret-facing9-0
 				Frames: 3579
 				Length: 1
 				Offset: 1,3
 				ZOffset: 0
-			op2_art.bmp: idle-facing14-0
+			op2_art.bmp: turret-facing10-0
 				Frames: 3580
 				Length: 1
 				Offset: 0,3
 				ZOffset: 0
-			op2_art.bmp: idle-facing15-0
+			op2_art.bmp: turret-facing11-0
 				Frames: 3581
 				Length: 1
 				Offset: 0,2
 				ZOffset: 0
+			op2_art.bmp: turret-facing12-0
+				Frames: 3566
+				Length: 1
+				Offset: 3,2
+				ZOffset: 0
+			op2_art.bmp: turret-facing13-0
+				Frames: 3567
+				Length: 1
+				Offset: 1,2
+				ZOffset: 0
+			op2_art.bmp: turret-facing14-0
+				Frames: 3568
+				Length: 1
+				Offset: 0,2
+				ZOffset: 0
+			op2_art.bmp: turret-facing15-0
+				Frames: 3569
+				Length: 1
+				Offset: 0,1
+				ZOffset: 0
+	# All sequences: icon
+	icon:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 3566
+				Length: 1
+				Offset: 3,2
+				ZOffset: 0
 
-plymouth-turret-3:
-	# All sequences: idle
+plymouth-turret-stickyfoam:
+	# All sequences: turret
 	idle:
+		Length: 1
+		Facings: 1
+		Combine:
+			blank.png: idle-0
+				Frames: 0
+				Length: 1
+	turret:
 		Length: 1
 		Facings: 16
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
-			op2_art.bmp: idle-facing0-0
-				Frames: 1434,1435
-				Length: 2
-				Offset: 5,2
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-0
-				Frames: 1436
-				Length: 1
-				Offset: 2,2
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-0
-				Frames: 1437
-				Length: 1
-				Offset: 1,-1
-				ZOffset: 0
-			op2_art.bmp: idle-facing4-0
+			op2_art.bmp: turret-facing0-0
 				Frames: 1438
 				Length: 1
 				Offset: 1,-2
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: turret-facing1-0
 				Frames: 1439
 				Length: 1
 				Offset: 2,-1
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-0
+			op2_art.bmp: turret-facing2-0
 				Frames: 1440
 				Length: 1
 				Offset: 1,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-0
+			op2_art.bmp: turret-facing3-0
 				Frames: 1441
 				Length: 1
 				Offset: -2,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing8-0
+			op2_art.bmp: turret-facing4-0
 				Frames: 1442
 				Length: 1
 				Offset: -4,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing9-0
+			op2_art.bmp: turret-facing5-0
 				Frames: 1443
 				Length: 1
 				Offset: -3,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing10-0
+			op2_art.bmp: turret-facing6-0
 				Frames: 1444
 				Length: 1
 				Offset: 1,1
 				ZOffset: 0
-			op2_art.bmp: idle-facing11-0
+			op2_art.bmp: turret-facing7-0
 				Frames: 1445
 				Length: 1
 				Offset: 3,5
 				ZOffset: 0
-			op2_art.bmp: idle-facing12-0
+			op2_art.bmp: turret-facing8-0
 				Frames: 1446
 				Length: 1
 				Offset: 1,7
 				ZOffset: 0
-			op2_art.bmp: idle-facing13-0
+			op2_art.bmp: turret-facing9-0
 				Frames: 1447
 				Length: 1
 				Offset: 0,6
 				ZOffset: 0
-			op2_art.bmp: idle-facing14-0
+			op2_art.bmp: turret-facing10-0
 				Frames: 1448
 				Length: 1
 				Offset: 3,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing15-0
+			op2_art.bmp: turret-facing11-0
 				Frames: 1449
 				Length: 1
 				Offset: 5,1
 				ZOffset: 0
+			op2_art.bmp: turret-facing12-0
+				Frames: 1434,1435
+				Length: 2
+				Offset: 5,2
+				ZOffset: 0
+			op2_art.bmp: turret-facing14-0
+				Frames: 1436
+				Length: 1
+				Offset: 2,2
+				ZOffset: 0
+			op2_art.bmp: turret-facing15-0
+				Frames: 1437
+				Length: 1
+				Offset: 1,-1
+				ZOffset: 0
+	# All sequences: icon
+	icon:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 1434
+				Length: 1
+				Offset: 5,2
+				ZOffset: 0
 
 eden-turret-4:
-	# All sequences: idle
+	# All sequences: turret
 	idle:
+		Length: 1
+		Facings: 1
+		Combine:
+			blank.png: idle-0
+				Frames: 0
+				Length: 1
+	turret:
 		Length: 1
 		Facings: 16
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
-			op2_art.bmp: idle-facing0-0
-				Frames: 1592
+			op2_art.bmp: turret-facing0-0
+				Frames: 1596
 				Length: 1
-				Offset: 9,5
-				ZOffset: 0
-			op2_art.bmp: idle-facing1-0
-				Frames: 1593
-				Length: 1
-				Offset: 7,4
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-0
-				Frames: 1594
-				Length: 1
-				Offset: 5,1
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-0
-				Frames: 1595,1596
-				Length: 2
 				Offset: 1,-2
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: turret-facing1-0
 				Frames: 1597
 				Length: 1
 				Offset: 1,-1
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-0
+			op2_art.bmp: turret-facing2-0
 				Frames: 1598
 				Length: 1
 				Offset: -1,1
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-0
+			op2_art.bmp: turret-facing3-0
 				Frames: 1599
 				Length: 1
 				Offset: -5,4
 				ZOffset: 0
-			op2_art.bmp: idle-facing8-0
+			op2_art.bmp: turret-facing4-0
 				Frames: 1600
 				Length: 1
 				Offset: -6,5
 				ZOffset: 0
-			op2_art.bmp: idle-facing9-0
+			op2_art.bmp: turret-facing5-0
 				Frames: 1601
 				Length: 1
 				Offset: -5,6
 				ZOffset: 0
-			op2_art.bmp: idle-facing10-0
+			op2_art.bmp: turret-facing6-0
 				Frames: 1602
 				Length: 1
 				Offset: -3,9
 				ZOffset: 0
-			op2_art.bmp: idle-facing11-0
+			op2_art.bmp: turret-facing7-0
 				Frames: 1603
 				Length: 1
 				Offset: 1,11
 				ZOffset: 0
-			op2_art.bmp: idle-facing12-0
+			op2_art.bmp: turret-facing8-0
 				Frames: 1604
 				Length: 1
 				Offset: 1,13
 				ZOffset: 0
-			op2_art.bmp: idle-facing13-0
+			op2_art.bmp: turret-facing9-0
 				Frames: 1605
 				Length: 1
 				Offset: 1,11
 				ZOffset: 0
-			op2_art.bmp: idle-facing14-0
+			op2_art.bmp: turret-facing10-0
 				Frames: 1606
 				Length: 1
 				Offset: 5,8
 				ZOffset: 0
-			op2_art.bmp: idle-facing15-0
+			op2_art.bmp: turret-facing11-0
 				Frames: 1607
 				Length: 1
 				Offset: 9,6
 				ZOffset: 0
+			op2_art.bmp: turret-facing12-0
+				Frames: 1592
+				Length: 1
+				Offset: 9,5
+				ZOffset: 0
+			op2_art.bmp: turret-facing13-0
+				Frames: 1593
+				Length: 1
+				Offset: 7,4
+				ZOffset: 0
+			op2_art.bmp: turret-facing14-0
+				Frames: 1594
+				Length: 1
+				Offset: 5,1
+				ZOffset: 0
+			op2_art.bmp: turret-facing15-0
+				Frames: 1595
+				Length: 1
+				Offset: 1,-2
+				ZOffset: 0
+	# All sequences: icon
+	icon:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 1592
+				Length: 1
+				Offset: 9,5
+				ZOffset: 0
 
-eden-turret-5:
-	# All sequences: idle
+eden-turret-emp:
+	# All sequences: turret
 	idle:
+		Length: 1
+		Facings: 1
+		Combine:
+			blank.png: idle-0
+				Frames: 0
+				Length: 1
+	turret:
 		Length: 1
 		Facings: 16
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
-			op2_art.bmp: idle-facing0-0
-				Frames: 1608
-				Length: 1
-				Offset: 9,2
-				ZOffset: 0
-			op2_art.bmp: idle-facing1-0
-				Frames: 1609
-				Length: 1
-				Offset: 7,3
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-0
-				Frames: 1610
-				Length: 1
-				Offset: 3,1
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-0
-				Frames: 1611
-				Length: 1
-				Offset: 1,-1
-				ZOffset: 0
-			op2_art.bmp: idle-facing4-0
+			op2_art.bmp: turret-facing0-0
 				Frames: 1612
 				Length: 1
 				Offset: 1,-2
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: turret-facing1-0
 				Frames: 1613
 				Length: 1
 				Offset: 1,-1
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-0
+			op2_art.bmp: turret-facing2-0
 				Frames: 1614
 				Length: 1
 				Offset: -1,1
 				ZOffset: 0
-			op2_art.bmp: idle-facing7-0
+			op2_art.bmp: turret-facing3-0
 				Frames: 1615
 				Length: 1
 				Offset: -6,3
 				ZOffset: 0
-			op2_art.bmp: idle-facing8-0
+			op2_art.bmp: turret-facing4-0
 				Frames: 1616
 				Length: 1
 				Offset: -5,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing9-0
+			op2_art.bmp: turret-facing5-0
 				Frames: 1617
 				Length: 1
 				Offset: -5,3
 				ZOffset: 0
-			op2_art.bmp: idle-facing10-0
+			op2_art.bmp: turret-facing6-0
 				Frames: 1618
 				Length: 1
 				Offset: -3,4
 				ZOffset: 0
-			op2_art.bmp: idle-facing11-0
+			op2_art.bmp: turret-facing7-0
 				Frames: 1619
 				Length: 1
 				Offset: 1,7
 				ZOffset: 0
-			op2_art.bmp: idle-facing12-0
+			op2_art.bmp: turret-facing8-0
 				Frames: 1620
 				Length: 1
 				Offset: 1,9
 				ZOffset: 0
-			op2_art.bmp: idle-facing13-0
+			op2_art.bmp: turret-facing9-0
 				Frames: 1621
 				Length: 1
 				Offset: 1,7
 				ZOffset: 0
-			op2_art.bmp: idle-facing14-0
+			op2_art.bmp: turret-facing10-0
 				Frames: 1622
 				Length: 1
 				Offset: 5,4
 				ZOffset: 0
-			op2_art.bmp: idle-facing15-0
+			op2_art.bmp: turret-facing11-0
 				Frames: 1623
 				Length: 1
 				Offset: 7,2
 				ZOffset: 0
+			op2_art.bmp: turret-facing12-0
+				Frames: 1608
+				Length: 1
+				Offset: 9,2
+				ZOffset: 0
+			op2_art.bmp: turret-facing13-0
+				Frames: 1609
+				Length: 1
+				Offset: 7,3
+				ZOffset: 0
+			op2_art.bmp: turret-facing14-0
+				Frames: 1610
+				Length: 1
+				Offset: 3,1
+				ZOffset: 0
+			op2_art.bmp: turret-facing15-0
+				Frames: 1611
+				Length: 1
+				Offset: 1,-1
+				ZOffset: 0
+	# All sequences: icon
+	icon:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 1608
+				Length: 1
+				Offset: 9,2
+				ZOffset: 0
 
-plymouth-turret-missile:
-	# All sequences: idle
+plymouth-turret-esg:
+	# All sequences: turret
 	idle:
+		Length: 1
+		Facings: 1
+		Combine:
+			blank.png: idle-0
+				Frames: 0
+				Length: 1
+	turret:
 		Length: 1
 		Facings: 16
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
-			op2_art.bmp: idle-facing0-0
-				Frames: 2258,2259
-				Length: 2
-				Offset: 2,1
-				ZOffset: 0
-			op2_art.bmp: idle-facing2-0
-				Frames: 2260
-				Length: 1
-				Offset: 3,0
-				ZOffset: 0
-			op2_art.bmp: idle-facing3-0
-				Frames: 2261
-				Length: 1
-				Offset: 3,1
-				ZOffset: 0
-			op2_art.bmp: idle-facing4-0
+			op2_art.bmp: turret-facing0-0
 				Frames: 2262
 				Length: 1
 				Offset: 2,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: turret-facing1-0
 				Frames: 2263
 				Length: 1
 				Offset: 3,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing6-0
+			op2_art.bmp: turret-facing2-0
 				Frames: 2264,2265,2266,2267
 				Length: 4
 				Offset: 2,1
 				ZOffset: 0
-			op2_art.bmp: idle-facing10-0
+			op2_art.bmp: turret-facing6-0
 				Frames: 2268,2269
 				Length: 2
 				Offset: 3,1
 				ZOffset: 0
-			op2_art.bmp: idle-facing12-0
+			op2_art.bmp: turret-facing8-0
 				Frames: 2270
 				Length: 1
 				Offset: 2,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing13-0
+			op2_art.bmp: turret-facing9-0
 				Frames: 2271
 				Length: 1
 				Offset: 2,1
 				ZOffset: 0
-			op2_art.bmp: idle-facing14-0
+			op2_art.bmp: turret-facing10-0
 				Frames: 2272
 				Length: 1
 				Offset: 2,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing15-0
-				Frames: 2273
+			op2_art.bmp: turret-facing11-0
+				Frames: 2273,2258,2259
+				Length: 3
+				Offset: 2,1
+				ZOffset: 0
+			op2_art.bmp: turret-facing14-0
+				Frames: 2260
+				Length: 1
+				Offset: 3,0
+				ZOffset: 0
+			op2_art.bmp: turret-facing15-0
+				Frames: 2261
+				Length: 1
+				Offset: 3,1
+				ZOffset: 0
+	# All sequences: icon
+	icon:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: icon-facing0-0
+				Frames: 2258
 				Length: 1
 				Offset: 2,1
 				ZOffset: 0
@@ -191023,7 +191252,7 @@ plymouth-turret-medium-cannon-double:
 				Offset: 3,1
 				ZOffset: 0
 
-plymouth-turret-5:
+plymouth-turret-emp:
 	# All sequences: idle
 	idle:
 		Length: 1

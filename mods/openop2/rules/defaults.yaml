@@ -438,7 +438,7 @@
 	Inherits: ^Building
 	Inherits@selection: ^SelectableCombatBuilding
 	Selectable:
-		Bounds: 24,24
+		Bounds: 32,32
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, Defense
 	MustBeDestroyed:
@@ -446,10 +446,10 @@
 	-GivesBuildableArea:
 	-AcceptsDeliveredCash:
 	DrawLineToTarget:
-	RenderRangeCircle:
-	Explodes:
-		Weapon: SmallBuildingExplode
-		EmptyWeapon: SmallBuildingExplode
+	#RenderRangeCircle:
+	#Explodes:
+	#	Weapon: SmallBuildingExplode
+	#	EmptyWeapon: SmallBuildingExplode
 	MapEditorData:
 		Categories: Defense
 	-CommandBarBlacklist:

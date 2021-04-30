@@ -11,7 +11,7 @@
 		/// The number of groups to include in the sequence.
 		/// Each group is typically a different orientation.
 		/// </summary>
-		public int Length { get; set; }
+		public int Length { get; set; } = 1;
 
 		/// <summary>
 		/// Start from this group offset.
@@ -24,9 +24,9 @@
 		/// </summary>
 		public string Sequence { get; set; }
 
-		public int OffsetX { get; set; }
-		public int OffsetY { get; set; }
-		public int OffsetZ { get; set; }
+		public int OffsetX { get; set; } = 0;
+		public int OffsetY { get; set; } = 0;
+		public int OffsetZ { get; set; } = 0;
 	}
 
 	public enum ActorType
@@ -43,8 +43,9 @@
 		public string Name;
 		public ActorType ActorType;
 		public GroupSequenceSet[] Sets;
-		public bool CreateActor = true;
+		public bool CreateBaseActor = true;
 		public bool CreateExampleActor = true;
+		public bool WithBlankIdle = false;
 	}
 
 	public static class SequencesList
@@ -647,7 +648,7 @@
 			{
 				Name = "smokingcrater",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3564,7 +3565,7 @@
 			{
 				Name = "die1",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3579,7 +3580,7 @@
 			{
 				Name = "die2",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3594,7 +3595,7 @@
 			{
 				Name = "explosion1",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3609,7 +3610,7 @@
 			{
 				Name = "puff1",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3624,7 +3625,7 @@
 			{
 				Name = "puff2",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3639,7 +3640,7 @@
 			{
 				Name = "puff3",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3654,7 +3655,7 @@
 			{
 				Name = "explosion2",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3669,7 +3670,7 @@
 			{
 				Name = "pulsing-ring",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3684,7 +3685,7 @@
 			{
 				Name = "pulsing-ring-hover",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3699,7 +3700,7 @@
 			{
 				Name = "pulsing-ring-dissipate",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3714,7 +3715,7 @@
 			{
 				Name = "explosion3",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3729,7 +3730,7 @@
 			{
 				Name = "explosion4",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3744,7 +3745,7 @@
 			{
 				Name = "explosion5",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3759,7 +3760,7 @@
 			{
 				Name = "explosion6",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3774,7 +3775,7 @@
 			{
 				Name = "airburst",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3789,7 +3790,7 @@
 			{
 				Name = "explosion-goo",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3804,7 +3805,7 @@
 			{
 				Name = "explosion-goo2",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3819,7 +3820,7 @@
 			{
 				Name = "explosion-large",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3834,7 +3835,7 @@
 			{
 				Name = "explosion-large-hover",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3849,7 +3850,7 @@
 			{
 				Name = "explosion-large-dissipate",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3864,7 +3865,7 @@
 			{
 				Name = "explosion-large2",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3879,7 +3880,7 @@
 			{
 				Name = "lightning-crackle",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3894,7 +3895,7 @@
 			{
 				Name = "cloud-billowing",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3909,7 +3910,7 @@
 			{
 				Name = "meteor",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3924,7 +3925,7 @@
 			{
 				Name = "meteor-large",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3939,7 +3940,7 @@
 			{
 				Name = "meteor2",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3954,7 +3955,7 @@
 			{
 				Name = "meteor-ignite",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3969,7 +3970,7 @@
 			{
 				Name = "meteor-large-ignite",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3984,7 +3985,7 @@
 			{
 				Name = "meteor2-ignite",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -3999,7 +4000,7 @@
 			{
 				Name = "meteor-splash",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4014,7 +4015,7 @@
 			{
 				Name = "meteor-large-splash",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4029,7 +4030,7 @@
 			{
 				Name = "mushroom-cloud",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4044,7 +4045,7 @@
 			{
 				Name = "mushroom-cloud-small",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4059,7 +4060,7 @@
 			{
 				Name = "mushroom-cloud-large1",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4074,7 +4075,7 @@
 			{
 				Name = "mushroom-cloud-large2",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4089,7 +4090,7 @@
 			{
 				Name = "mushroom-cloud-large3",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4104,7 +4105,7 @@
 			{
 				Name = "mushroom-cloud-huge",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4119,7 +4120,7 @@
 			{
 				Name = "explosion-goo3",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4134,7 +4135,7 @@
 			{
 				Name = "cloud-forming",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4149,7 +4150,7 @@
 			{
 				Name = "cloud-dissipating",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4164,7 +4165,7 @@
 			{
 				Name = "tornado1",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4179,7 +4180,7 @@
 			{
 				Name = "tornado2",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4194,7 +4195,7 @@
 			{
 				Name = "tornado-left",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4209,7 +4210,7 @@
 			{
 				Name = "tornado-right",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4224,7 +4225,7 @@
 			{
 				Name = "tornado-ground-form",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4239,7 +4240,7 @@
 			{
 				Name = "tornado-ground",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4254,7 +4255,7 @@
 			{
 				Name = "tornado-ground-dissipate",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4269,7 +4270,7 @@
 			{
 				Name = "cloud2-form",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4284,7 +4285,7 @@
 			{
 				Name = "cloud2-billow",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4299,7 +4300,7 @@
 			{
 				Name = "cloud2-dissipate",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4314,7 +4315,7 @@
 			{
 				Name = "cloud2-expand-left",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4329,7 +4330,7 @@
 			{
 				Name = "cloud2-billow-left",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4344,7 +4345,7 @@
 			{
 				Name = "cloud2-dissipate-left",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4359,7 +4360,7 @@
 			{
 				Name = "cloud2-expand-right",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4374,7 +4375,7 @@
 			{
 				Name = "cloud2-billow-right",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4389,7 +4390,7 @@
 			{
 				Name = "cloud2-dissipate-right",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4404,7 +4405,7 @@
 			{
 				Name = "lightning1",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4419,7 +4420,7 @@
 			{
 				Name = "lightning2",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4434,7 +4435,7 @@
 			{
 				Name = "lightning3",
 				ActorType = ActorType.Effect,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4449,7 +4450,7 @@
 			{
 				Name = "rallypoint",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4485,7 +4486,7 @@
 			{
 				Name = "mpspawn",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					// Alt mpspawn: 1764, 1111, 1112, 1107
@@ -4501,7 +4502,7 @@
 			{
 				Name = "clock",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					// Alt clocks: 658, 599
@@ -4517,7 +4518,7 @@
 			{
 				Name = "plymouth-turret-1",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4532,7 +4533,7 @@
 			{
 				Name = "eden-turret-elec",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4547,7 +4548,7 @@
 			{
 				Name = "eden-turret-laser",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4562,7 +4563,7 @@
 			{
 				Name = "eden-turret-machinegun",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4577,7 +4578,7 @@
 			{
 				Name = "plymouth-turret-2",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4592,7 +4593,7 @@
 			{
 				Name = "plymouth-turret-3",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4607,7 +4608,7 @@
 			{
 				Name = "eden-turret-4",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4622,7 +4623,7 @@
 			{
 				Name = "eden-turret-5",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4637,7 +4638,7 @@
 			{
 				Name = "plymouth-turret-missile",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4652,7 +4653,7 @@
 			{
 				Name = "eden-turret-small-double",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4667,7 +4668,7 @@
 			{
 				Name = "plymouth-turret-small",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4682,7 +4683,7 @@
 			{
 				Name = "plymouth-turret-small-double",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4697,7 +4698,7 @@
 			{
 				Name = "eden-machinegun-small",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4712,7 +4713,7 @@
 			{
 				Name = "eden-machinegun-small-double",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4727,7 +4728,7 @@
 			{
 				Name = "plymouth-cannon-small",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4742,7 +4743,7 @@
 			{
 				Name = "plymouth-cannon-small-double",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4757,7 +4758,7 @@
 			{
 				Name = "plymouth-cannon-medium",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4772,7 +4773,7 @@
 			{
 				Name = "plymouth-cannon-medium-double",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4787,7 +4788,7 @@
 			{
 				Name = "plymouth-missile-medium",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4802,7 +4803,7 @@
 			{
 				Name = "plymouth-missile-medium-double",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4817,7 +4818,7 @@
 			{
 				Name = "plymouth-turret-medium-unknown",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4832,7 +4833,7 @@
 			{
 				Name = "plymouth-turret-medium-unknown-double",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4847,7 +4848,7 @@
 			{
 				Name = "eden-laser-turret-small",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4862,7 +4863,7 @@
 			{
 				Name = "eden-laser-turret-small-double",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4877,7 +4878,7 @@
 			{
 				Name = "eden-elec-turret-small",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4892,7 +4893,7 @@
 			{
 				Name = "eden-elec-turret-small-double",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4907,7 +4908,7 @@
 			{
 				Name = "plymouth-turret-medium-cannon",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4922,7 +4923,7 @@
 			{
 				Name = "plymouth-turret-medium-cannon-double",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4937,7 +4938,7 @@
 			{
 				Name = "plymouth-turret-5",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4952,7 +4953,7 @@
 			{
 				Name = "lava-ripple",
 				ActorType = ActorType.Turret,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4967,7 +4968,7 @@
 			{
 				Name = "tokamak-icon",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4982,7 +4983,7 @@
 			{
 				Name = "medical-center-icon",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -4997,7 +4998,7 @@
 			{
 				Name = "seismology-icon",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -5012,7 +5013,7 @@
 			{
 				Name = "rocket-icon",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -5027,7 +5028,7 @@
 			{
 				Name = "nuke-icon",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -5042,7 +5043,7 @@
 			{
 				Name = "agridome-icon",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -5057,7 +5058,7 @@
 			{
 				Name = "vehicle-icon",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -5072,7 +5073,7 @@
 			{
 				Name = "residence-icon",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -5087,7 +5088,7 @@
 			{
 				Name = "structure-factory-icon",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -5102,7 +5103,7 @@
 			{
 				Name = "smelter-icon",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -5117,7 +5118,7 @@
 			{
 				Name = "lab-icon",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -5132,7 +5133,7 @@
 			{
 				Name = "eden-icon",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
@@ -5147,7 +5148,7 @@
 			{
 				Name = "plymouth-icon",
 				ActorType = ActorType.Decoration,
-				CreateActor = false,
+				CreateBaseActor = false,
 				Sets = new[]
 				{
 					new GroupSequenceSet()
