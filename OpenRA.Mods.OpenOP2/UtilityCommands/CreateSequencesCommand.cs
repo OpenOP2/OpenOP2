@@ -657,7 +657,6 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 		HP: 100
 	RevealsShroud:
 		Range: 8c0
-	-WithMakeAnimation:
 	-Capturable:
 	-Sellable:
 	-CaptureManager:

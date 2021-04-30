@@ -66,7 +66,7 @@
 	ProvidesRadar:
 	BaseBuilding:
 	Sellable:
-		RequiresCondition: !build-incomplete && !being-captured && !being-demolished
+		RequiresCondition: !being-captured && !being-demolished
 	BaseProvider:
 		PauseOnCondition: being-captured
 		Range: 16c0
@@ -215,7 +215,7 @@
 		Path: 2,3
 
 ^MineCommon:
-	Inherits: ^Op2Building
+	Inherits: ^Building
 	Inherits@shape: ^1x1Shape
 	Tooltip:
 		Name: Mine (Common)
@@ -297,7 +297,6 @@
 	AttackTurreted:
 	WithSpriteTurret:
 	RenderRangeCircle:
-	-WithMakeAnimation:
 
 # Actual buildings start here
 eden-command-center:

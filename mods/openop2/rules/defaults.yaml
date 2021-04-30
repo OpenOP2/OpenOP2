@@ -407,12 +407,12 @@
 		RepairingNotification: Repairing
 	EngineerRepairable:
 	AcceptsDeliveredCash:
-	WithMakeAnimation:
-		Condition: build-incomplete
+	#WithMakeAnimation:
+	#	Condition: build-incomplete
 	CaptureManager:
 		BeingCapturedCondition: being-captured
 	Capturable:
-		RequiresCondition: !build-incomplete
+		#RequiresCondition: !build-incomplete
 		Types: building
 	CapturableProgressBar:
 	CapturableProgressBlink:
@@ -425,7 +425,7 @@
 	Demolishable:
 		Condition: being-demolished
 	Sellable:
-		RequiresCondition: !being-demolished && !being-captured && !build-incomplete
+		RequiresCondition: !being-demolished && !being-captured # && !build-incomplete
 		#SellSounds: cashturn.aud
 	WithBuildingRepairDecoration:
 		Image: allyrepair
