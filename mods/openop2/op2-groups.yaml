@@ -380,6 +380,7 @@ eden-command-center:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1845
@@ -411,6 +412,7 @@ plymouth-command-center:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1854
@@ -442,6 +444,7 @@ eden-tokamak:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 2035
@@ -468,6 +471,7 @@ plymouth-tokamak:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 652
@@ -641,6 +645,7 @@ eden-factory-vehicle:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 807
@@ -670,6 +675,7 @@ plymouth-factory-vehicle:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1853

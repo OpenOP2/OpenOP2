@@ -19050,112 +19050,201 @@ smokingcrater:
 				ZOffset: 0
 
 eden-command-center:
-	# All sequences: idle, idle-sprite-id1, idle-sprite-id2, idle-sprite-id3, idle-shadow-id4, idle-shadow-id5, idle-shadow-id6, idle-shadow-id7, idle-shadow-id8
+	# All sequences: idle, idle-sprite-id1, idle-sprite-id2, idle-shadow-id3, idle-shadow-id4, idle-shadow-id5, idle-shadow-id6, idle-shadow-id7
 	idle:
-		Length: 87
+		Length: 1
 		Facings: 1
 		Offset: 1,0
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872
-				Length: 87
+				Frames: 4872
+				Length: 1
 				Offset: -32,16
 				ZOffset: 0
 	idle-sprite-id1:
-		Length: 87
+		Length: 1
 		Facings: 1
 		Offset: 1,0
 		ZOffset: -256
 		Combine:
-			blank.png: idle-facing0-0
-				Frames: 0
+			op2_art.bmp: idle-facing0-0
+				Frames: 477
 				Length: 1
-				Offset: 0,0
-				ZOffset: -256
-			op2_art.bmp: idle-facing0-1
-				Frames: 4299,4300,4301,4302,4303,4304,4305,4305,4305,4305,4305,4306,4307,4308,4309,4310,4311,4312,4313,4314,4315,4316,4316,4316,4316,4316,4316,4317,4319,4318,4316,4318,4319,4317,4316,4317,4319,4318,4316,4318,4319,4317,4316,4316,4316,4316,4316,4316,4315,4314,4313,4312,4311,4310,4309,4308,4307,4306,4305,4305,4305,4305,4305,4305,4304,4303,4302,4301,4300,4299
-				Length: 70
-				Offset: -4,-33
-				ZOffset: -256
-			blank.png: idle-facing0-71
-				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-				Length: 16
-				Offset: 0,0
+				Offset: 24,-38
 				ZOffset: -256
 	idle-sprite-id2:
-		Length: 87
+		Length: 1
 		Facings: 1
 		Offset: 1,0
 		ZOffset: -512
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477
-				Length: 87
-				Offset: 24,-38
+				Frames: 46
+				Length: 1
+				Offset: -1,-13
 				ZOffset: -512
-	idle-sprite-id3:
-		Length: 87
+	idle-shadow-id3:
+		Length: 1
 		Facings: 1
 		Offset: 1,0
 		ZOffset: -768
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46
-				Length: 87
-				Offset: -1,-13
+				Frames: 1756
+				Length: 1
+				Offset: 28,25
 				ZOffset: -768
 	idle-shadow-id4:
-		Length: 87
+		Length: 1
 		Facings: 1
 		Offset: 1,0
 		ZOffset: -1024
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756
-				Length: 87
-				Offset: 28,25
+				Frames: 1756
+				Length: 1
+				Offset: 18,12
 				ZOffset: -1024
 	idle-shadow-id5:
-		Length: 87
+		Length: 1
 		Facings: 1
 		Offset: 1,0
 		ZOffset: -1280
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756
-				Length: 87
-				Offset: 18,12
+				Frames: 1756
+				Length: 1
+				Offset: 30,-26
 				ZOffset: -1280
 	idle-shadow-id6:
-		Length: 87
+		Length: 1
 		Facings: 1
 		Offset: 1,0
 		ZOffset: -1536
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756
-				Length: 87
-				Offset: 30,-26
+				Frames: 1755
+				Length: 1
+				Offset: 7,-47
 				ZOffset: -1536
 	idle-shadow-id7:
-		Length: 87
+		Length: 1
 		Facings: 1
 		Offset: 1,0
 		ZOffset: -1792
 		Combine:
 			op2_art.bmp: idle-facing0-0
+				Frames: 1754
+				Length: 1
+				Offset: -24,-35
+				ZOffset: -1792
+	# All sequences: idle2, idle2-sprite-id1, idle2-sprite-id2, idle2-sprite-id3, idle2-shadow-id4, idle2-shadow-id5, idle2-shadow-id6, idle2-shadow-id7, idle2-shadow-id8
+	idle2:
+		Length: 87
+		Facings: 1
+		Offset: 1,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: idle2-facing0-0
+				Frames: 4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872,4872
+				Length: 87
+				Offset: -32,16
+				ZOffset: 0
+	idle2-sprite-id1:
+		Length: 87
+		Facings: 1
+		Offset: 1,0
+		ZOffset: -256
+		Combine:
+			blank.png: idle2-facing0-0
+				Frames: 0
+				Length: 1
+				Offset: 0,0
+				ZOffset: -256
+			op2_art.bmp: idle2-facing0-1
+				Frames: 4299,4300,4301,4302,4303,4304,4305,4305,4305,4305,4305,4306,4307,4308,4309,4310,4311,4312,4313,4314,4315,4316,4316,4316,4316,4316,4316,4317,4319,4318,4316,4318,4319,4317,4316,4317,4319,4318,4316,4318,4319,4317,4316,4316,4316,4316,4316,4316,4315,4314,4313,4312,4311,4310,4309,4308,4307,4306,4305,4305,4305,4305,4305,4305,4304,4303,4302,4301,4300,4299
+				Length: 70
+				Offset: -4,-33
+				ZOffset: -256
+			blank.png: idle2-facing0-71
+				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+				Length: 16
+				Offset: 0,0
+				ZOffset: -256
+	idle2-sprite-id2:
+		Length: 87
+		Facings: 1
+		Offset: 1,0
+		ZOffset: -512
+		Combine:
+			op2_art.bmp: idle2-facing0-0
+				Frames: 477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477
+				Length: 87
+				Offset: 24,-38
+				ZOffset: -512
+	idle2-sprite-id3:
+		Length: 87
+		Facings: 1
+		Offset: 1,0
+		ZOffset: -768
+		Combine:
+			op2_art.bmp: idle2-facing0-0
+				Frames: 46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46
+				Length: 87
+				Offset: -1,-13
+				ZOffset: -768
+	idle2-shadow-id4:
+		Length: 87
+		Facings: 1
+		Offset: 1,0
+		ZOffset: -1024
+		Combine:
+			op2_art.bmp: idle2-facing0-0
+				Frames: 1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756
+				Length: 87
+				Offset: 28,25
+				ZOffset: -1024
+	idle2-shadow-id5:
+		Length: 87
+		Facings: 1
+		Offset: 1,0
+		ZOffset: -1280
+		Combine:
+			op2_art.bmp: idle2-facing0-0
+				Frames: 1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756
+				Length: 87
+				Offset: 18,12
+				ZOffset: -1280
+	idle2-shadow-id6:
+		Length: 87
+		Facings: 1
+		Offset: 1,0
+		ZOffset: -1536
+		Combine:
+			op2_art.bmp: idle2-facing0-0
+				Frames: 1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756,1756
+				Length: 87
+				Offset: 30,-26
+				ZOffset: -1536
+	idle2-shadow-id7:
+		Length: 87
+		Facings: 1
+		Offset: 1,0
+		ZOffset: -1792
+		Combine:
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755,1755
 				Length: 87
 				Offset: 7,-47
 				ZOffset: -1792
-	idle-shadow-id8:
+	idle2-shadow-id8:
 		Length: 87
 		Facings: 1
 		Offset: 1,0
 		ZOffset: -2048
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754,1754
 				Length: 87
 				Offset: -24,-35
@@ -21903,99 +21992,155 @@ eden-command-center:
 				ZOffset: 0
 
 plymouth-command-center:
-	# All sequences: idle, idle-sprite-id1, idle-sprite-id2, idle-sprite-id3, idle-shadow-id4, idle-shadow-id5
+	# All sequences: idle, idle-sprite-id1, idle-sprite-id2, idle-shadow-id3, idle-shadow-id4
 	idle:
-		Length: 56
+		Length: 1
 		Facings: 1
 		Offset: 0,1
 		ZOffset: 0
 		Combine:
-			blank.png: idle-facing0-0
-				Frames: 0,0
-				Length: 2
-				Offset: 0,0
-				ZOffset: 0
-			op2_art.bmp: idle-facing0-2
-				Frames: 4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873
-				Length: 32
+			op2_art.bmp: idle-facing0-0
+				Frames: 4873
+				Length: 1
 				Offset: 32,16
 				ZOffset: 0
-			blank.png: idle-facing0-34
-				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-				Length: 22
-				Offset: 0,0
-				ZOffset: 0
 	idle-sprite-id1:
-		Length: 56
+		Length: 1
 		Facings: 1
 		Offset: 0,1
 		ZOffset: -256
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 4873,4873
-				Length: 2
-				Offset: 32,16
-				ZOffset: -256
-			op2_art.bmp: idle-facing0-2
-				Frames: 477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477
-				Length: 32
+				Frames: 477
+				Length: 1
 				Offset: 3,-36
 				ZOffset: -256
-			op2_art.bmp: idle-facing0-34
-				Frames: 4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873
-				Length: 22
-				Offset: 32,16
-				ZOffset: -256
 	idle-sprite-id2:
-		Length: 56
+		Length: 1
 		Facings: 1
 		Offset: 0,1
 		ZOffset: -512
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 477,477
-				Length: 2
-				Offset: 3,-36
+				Frames: 303
+				Length: 1
+				Offset: 0,-5
 				ZOffset: -512
-			op2_art.bmp: idle-facing0-2
-				Frames: 4414,4415,4416,4417,4418,4419,4420,4421,4422,4423,4424,4425,4426,4427,4428,4428,4428,4428,4428,4428,4428,4428,4427,4426,4425,4424,4423,4422,4421,4420,4419,4418
-				Length: 32
-				Offset: -8,-25
-				ZOffset: -512
-			op2_art.bmp: idle-facing0-34
-				Frames: 477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477
-				Length: 22
-				Offset: 3,-36
-				ZOffset: -512
-	idle-sprite-id3:
-		Length: 56
+	idle-shadow-id3:
+		Length: 1
 		Facings: 1
 		Offset: 0,1
 		ZOffset: -768
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303
-				Length: 56
-				Offset: 0,-5
+				Frames: 1758
+				Length: 1
+				Offset: 29,-17
 				ZOffset: -768
 	idle-shadow-id4:
-		Length: 56
+		Length: 1
 		Facings: 1
 		Offset: 0,1
 		ZOffset: -1024
 		Combine:
 			op2_art.bmp: idle-facing0-0
+				Frames: 1757
+				Length: 1
+				Offset: -44,-3
+				ZOffset: -1024
+	# All sequences: idle2, idle2-sprite-id1, idle2-sprite-id2, idle2-sprite-id3, idle2-shadow-id4, idle2-shadow-id5
+	idle2:
+		Length: 56
+		Facings: 1
+		Offset: 0,1
+		ZOffset: 0
+		Combine:
+			blank.png: idle2-facing0-0
+				Frames: 0,0
+				Length: 2
+				Offset: 0,0
+				ZOffset: 0
+			op2_art.bmp: idle2-facing0-2
+				Frames: 4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873
+				Length: 32
+				Offset: 32,16
+				ZOffset: 0
+			blank.png: idle2-facing0-34
+				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+				Length: 22
+				Offset: 0,0
+				ZOffset: 0
+	idle2-sprite-id1:
+		Length: 56
+		Facings: 1
+		Offset: 0,1
+		ZOffset: -256
+		Combine:
+			op2_art.bmp: idle2-facing0-0
+				Frames: 4873,4873
+				Length: 2
+				Offset: 32,16
+				ZOffset: -256
+			op2_art.bmp: idle2-facing0-2
+				Frames: 477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477
+				Length: 32
+				Offset: 3,-36
+				ZOffset: -256
+			op2_art.bmp: idle2-facing0-34
+				Frames: 4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873,4873
+				Length: 22
+				Offset: 32,16
+				ZOffset: -256
+	idle2-sprite-id2:
+		Length: 56
+		Facings: 1
+		Offset: 0,1
+		ZOffset: -512
+		Combine:
+			op2_art.bmp: idle2-facing0-0
+				Frames: 477,477
+				Length: 2
+				Offset: 3,-36
+				ZOffset: -512
+			op2_art.bmp: idle2-facing0-2
+				Frames: 4414,4415,4416,4417,4418,4419,4420,4421,4422,4423,4424,4425,4426,4427,4428,4428,4428,4428,4428,4428,4428,4428,4427,4426,4425,4424,4423,4422,4421,4420,4419,4418
+				Length: 32
+				Offset: -8,-25
+				ZOffset: -512
+			op2_art.bmp: idle2-facing0-34
+				Frames: 477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477
+				Length: 22
+				Offset: 3,-36
+				ZOffset: -512
+	idle2-sprite-id3:
+		Length: 56
+		Facings: 1
+		Offset: 0,1
+		ZOffset: -768
+		Combine:
+			op2_art.bmp: idle2-facing0-0
+				Frames: 303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303,303
+				Length: 56
+				Offset: 0,-5
+				ZOffset: -768
+	idle2-shadow-id4:
+		Length: 56
+		Facings: 1
+		Offset: 0,1
+		ZOffset: -1024
+		Combine:
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758,1758
 				Length: 56
 				Offset: 29,-17
 				ZOffset: -1024
-	idle-shadow-id5:
+	idle2-shadow-id5:
 		Length: 56
 		Facings: 1
 		Offset: 0,1
 		ZOffset: -1280
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757,1757
 				Length: 56
 				Offset: -44,-3
@@ -24631,68 +24776,113 @@ plymouth-command-center:
 				ZOffset: 0
 
 eden-tokamak:
-	# All sequences: idle, idle-sprite-id1, idle-sprite-id2, idle-shadow-id3, idle-shadow-id4
+	# All sequences: idle, idle-sprite-id1, idle-shadow-id2, idle-shadow-id3
 	idle:
-		Length: 62
+		Length: 1
 		Facings: 1
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477
-				Length: 62
+				Frames: 477
+				Length: 1
 				Offset: 27,-39
 				ZOffset: 0
 	idle-sprite-id1:
-		Length: 62
+		Length: 1
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -256
 		Combine:
-			blank.png: idle-facing0-0
-				Frames: 0,0,0,0
-				Length: 4
-				Offset: 0,0
+			op2_art.bmp: idle-facing0-0
+				Frames: 71
+				Length: 1
+				Offset: 1,-4
 				ZOffset: -256
-			op2_art.bmp: idle-facing0-4
-				Frames: 4795,4796,4797,4798,4799,4798,4797,4796,4795,4800,4801,4802,4803,4804,4805,4806,4807,4808,4809,4808,4807,4806,4805,4804,4803,4802,4801,4800,4795,4796,4797,4798,4799,4798,4797,4796,4795
-				Length: 37
-				Offset: -2,-3
-				ZOffset: -256
-			blank.png: idle-facing0-41
-				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-				Length: 21
-				Offset: 0,0
-				ZOffset: -256
-	idle-sprite-id2:
-		Length: 62
+	idle-shadow-id2:
+		Length: 1
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -512
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71
-				Length: 62
-				Offset: 1,-4
+				Frames: 1859
+				Length: 1
+				Offset: -26,-9
 				ZOffset: -512
 	idle-shadow-id3:
-		Length: 62
+		Length: 1
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -768
 		Combine:
 			op2_art.bmp: idle-facing0-0
+				Frames: 1858
+				Length: 1
+				Offset: -30,24
+				ZOffset: -768
+	# All sequences: idle2, idle2-sprite-id1, idle2-sprite-id2, idle2-shadow-id3, idle2-shadow-id4
+	idle2:
+		Length: 62
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: idle2-facing0-0
+				Frames: 477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477
+				Length: 62
+				Offset: 27,-39
+				ZOffset: 0
+	idle2-sprite-id1:
+		Length: 62
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -256
+		Combine:
+			blank.png: idle2-facing0-0
+				Frames: 0,0,0,0
+				Length: 4
+				Offset: 0,0
+				ZOffset: -256
+			op2_art.bmp: idle2-facing0-4
+				Frames: 4795,4796,4797,4798,4799,4798,4797,4796,4795,4800,4801,4802,4803,4804,4805,4806,4807,4808,4809,4808,4807,4806,4805,4804,4803,4802,4801,4800,4795,4796,4797,4798,4799,4798,4797,4796,4795
+				Length: 37
+				Offset: -2,-3
+				ZOffset: -256
+			blank.png: idle2-facing0-41
+				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+				Length: 21
+				Offset: 0,0
+				ZOffset: -256
+	idle2-sprite-id2:
+		Length: 62
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -512
+		Combine:
+			op2_art.bmp: idle2-facing0-0
+				Frames: 71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71,71
+				Length: 62
+				Offset: 1,-4
+				ZOffset: -512
+	idle2-shadow-id3:
+		Length: 62
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -768
+		Combine:
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859,1859
 				Length: 62
 				Offset: -26,-9
 				ZOffset: -768
-	idle-shadow-id4:
+	idle2-shadow-id4:
 		Length: 62
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1024
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858,1858
 				Length: 62
 				Offset: -30,24
@@ -26488,2630 +26678,2774 @@ eden-tokamak:
 				ZOffset: 0
 
 plymouth-tokamak:
-	# All sequences: idle, idle-sprite-id1, idle-sprite-id2, idle-sprite-id3, idle-sprite-id4, idle-sprite-id5, idle-sprite-id6, idle-sprite-id7, idle-sprite-id8, idle-sprite-id9, idle-sprite-id10, idle-sprite-id11, idle-sprite-id12, idle-sprite-id13, idle-shadow-id14
+	# All sequences: idle, idle-sprite-id1, idle-sprite-id2, idle-sprite-id3, idle-sprite-id4, idle-sprite-id5, idle-sprite-id6, idle-sprite-id7, idle-sprite-id8, idle-sprite-id9, idle-sprite-id10, idle-sprite-id11, idle-shadow-id12
 	idle:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 477
+				Length: 1
+				Offset: 8,-19
+				ZOffset: 0
+	idle-sprite-id1:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -256
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 332
+				Length: 1
+				Offset: 2,24
+				ZOffset: -256
+	idle-sprite-id2:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -512
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 340
+				Length: 1
+				Offset: -13,18
+				ZOffset: -512
+	idle-sprite-id3:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -768
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 339
+				Length: 1
+				Offset: 2,22
+				ZOffset: -768
+	idle-sprite-id4:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -1024
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 338
+				Length: 1
+				Offset: 18,16
+				ZOffset: -1024
+	idle-sprite-id5:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -1280
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 333
+				Length: 1
+				Offset: 1,5
+				ZOffset: -1280
+	idle-sprite-id6:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -1536
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 335
+				Length: 1
+				Offset: 23,-9
+				ZOffset: -1536
+	idle-sprite-id7:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -1792
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 334
+				Length: 1
+				Offset: 1,-13
+				ZOffset: -1792
+	idle-sprite-id8:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -2048
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 1216
+				Length: 1
+				Offset: 4,19
+				ZOffset: -2048
+	idle-sprite-id9:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -2304
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 341
+				Length: 1
+				Offset: 15,-22
+				ZOffset: -2304
+	idle-sprite-id10:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -2560
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 342
+				Length: 1
+				Offset: -13,-22
+				ZOffset: -2560
+	idle-sprite-id11:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -2816
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 331
+				Length: 1
+				Offset: 2,-25
+				ZOffset: -2816
+	idle-shadow-id12:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -3072
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 1752
+				Length: 1
+				Offset: -26,-1
+				ZOffset: -3072
+	# All sequences: idle2, idle2-sprite-id1, idle2-sprite-id2, idle2-sprite-id3, idle2-sprite-id4, idle2-sprite-id5, idle2-sprite-id6, idle2-sprite-id7, idle2-sprite-id8, idle2-sprite-id9, idle2-sprite-id10, idle2-sprite-id11, idle2-sprite-id12, idle2-sprite-id13, idle2-shadow-id14
+	idle2:
 		Length: 183
 		Facings: 1
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
-			blank.png: idle-facing0-0
+			blank.png: idle2-facing0-0
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 37
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-37
+			op2_art.bmp: idle2-facing0-37
 				Frames: 1217
 				Length: 1
 				Offset: 23,-5
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-38
+			op2_art.bmp: idle2-facing0-38
 				Frames: 1218
 				Length: 1
 				Offset: 22,-5
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-39
+			op2_art.bmp: idle2-facing0-39
 				Frames: 1219
 				Length: 1
 				Offset: 21,-7
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-40
+			op2_art.bmp: idle2-facing0-40
 				Frames: 1220
 				Length: 1
 				Offset: 22,-7
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-41
+			op2_art.bmp: idle2-facing0-41
 				Frames: 1221
 				Length: 1
 				Offset: 24,-8
 				ZOffset: 0
-			blank.png: idle-facing0-42
+			blank.png: idle2-facing0-42
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 70
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-112
+			op2_art.bmp: idle2-facing0-112
 				Frames: 1217
 				Length: 1
 				Offset: -13,18
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-113
+			op2_art.bmp: idle2-facing0-113
 				Frames: 1218
 				Length: 1
 				Offset: -14,18
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-114
+			op2_art.bmp: idle2-facing0-114
 				Frames: 1219
 				Length: 1
 				Offset: -15,14
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-115
+			op2_art.bmp: idle2-facing0-115
 				Frames: 1220
 				Length: 1
 				Offset: -14,15
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-116
+			op2_art.bmp: idle2-facing0-116
 				Frames: 1221
 				Length: 1
 				Offset: -13,14
 				ZOffset: 0
-			blank.png: idle-facing0-117
+			blank.png: idle2-facing0-117
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 66
 				Offset: 0,0
 				ZOffset: 0
-	idle-sprite-id1:
+	idle2-sprite-id1:
 		Length: 183
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -256
 		Combine:
-			blank.png: idle-facing0-0
+			blank.png: idle2-facing0-0
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 42
 				Offset: 0,0
 				ZOffset: -256
-			op2_art.bmp: idle-facing0-42
+			op2_art.bmp: idle2-facing0-42
 				Frames: 1222,1223
 				Length: 2
 				Offset: 24,-9
 				ZOffset: -256
-			op2_art.bmp: idle-facing0-44
+			op2_art.bmp: idle2-facing0-44
 				Frames: 1224
 				Length: 1
 				Offset: 26,-10
 				ZOffset: -256
-			op2_art.bmp: idle-facing0-45
+			op2_art.bmp: idle2-facing0-45
 				Frames: 1225
 				Length: 1
 				Offset: 25,-13
 				ZOffset: -256
-			blank.png: idle-facing0-46
+			blank.png: idle2-facing0-46
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 71
 				Offset: 0,0
 				ZOffset: -256
-			op2_art.bmp: idle-facing0-117
+			op2_art.bmp: idle2-facing0-117
 				Frames: 1222
 				Length: 1
 				Offset: -13,14
 				ZOffset: -256
-			op2_art.bmp: idle-facing0-118
+			op2_art.bmp: idle2-facing0-118
 				Frames: 1223
 				Length: 1
 				Offset: -13,13
 				ZOffset: -256
-			op2_art.bmp: idle-facing0-119
+			op2_art.bmp: idle2-facing0-119
 				Frames: 1224
 				Length: 1
 				Offset: -12,12
 				ZOffset: -256
-			op2_art.bmp: idle-facing0-120
+			op2_art.bmp: idle2-facing0-120
 				Frames: 1225
 				Length: 1
 				Offset: -12,10
 				ZOffset: -256
-			blank.png: idle-facing0-121
+			blank.png: idle2-facing0-121
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 62
 				Offset: 0,0
 				ZOffset: -256
-	idle-sprite-id2:
+	idle2-sprite-id2:
 		Length: 183
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -512
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477
 				Length: 183
 				Offset: 8,-19
 				ZOffset: -512
-	idle-sprite-id3:
+	idle2-sprite-id3:
 		Length: 183
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -768
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332
 				Length: 183
 				Offset: 2,24
 				ZOffset: -768
-	idle-sprite-id4:
+	idle2-sprite-id4:
 		Length: 183
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1024
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340
 				Length: 103
 				Offset: -13,18
 				ZOffset: -1024
-			op2_art.bmp: idle-facing0-103
+			op2_art.bmp: idle2-facing0-103
 				Frames: 340
 				Length: 1
 				Offset: -13,17
 				ZOffset: -1024
-			op2_art.bmp: idle-facing0-104
+			op2_art.bmp: idle2-facing0-104
 				Frames: 340
 				Length: 1
 				Offset: -13,16
 				ZOffset: -1024
-			op2_art.bmp: idle-facing0-105
+			op2_art.bmp: idle2-facing0-105
 				Frames: 340
 				Length: 1
 				Offset: -13,15
 				ZOffset: -1024
-			op2_art.bmp: idle-facing0-106
+			op2_art.bmp: idle2-facing0-106
 				Frames: 340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340
 				Length: 43
 				Offset: -13,14
 				ZOffset: -1024
-			op2_art.bmp: idle-facing0-149
+			op2_art.bmp: idle2-facing0-149
 				Frames: 340
 				Length: 1
 				Offset: -13,15
 				ZOffset: -1024
-			op2_art.bmp: idle-facing0-150
+			op2_art.bmp: idle2-facing0-150
 				Frames: 340
 				Length: 1
 				Offset: -13,16
 				ZOffset: -1024
-			op2_art.bmp: idle-facing0-151
+			op2_art.bmp: idle2-facing0-151
 				Frames: 340
 				Length: 1
 				Offset: -13,17
 				ZOffset: -1024
-			op2_art.bmp: idle-facing0-152
+			op2_art.bmp: idle2-facing0-152
 				Frames: 340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340
 				Length: 31
 				Offset: -13,18
 				ZOffset: -1024
-	idle-sprite-id5:
+	idle2-sprite-id5:
 		Length: 183
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1280
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339
 				Length: 183
 				Offset: 2,22
 				ZOffset: -1280
-	idle-sprite-id6:
+	idle2-sprite-id6:
 		Length: 183
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1536
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338
 				Length: 183
 				Offset: 18,16
 				ZOffset: -1536
-	idle-sprite-id7:
+	idle2-sprite-id7:
 		Length: 183
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1792
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333
 				Length: 183
 				Offset: 1,5
 				ZOffset: -1792
-	idle-sprite-id8:
+	idle2-sprite-id8:
 		Length: 183
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -2048
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 335,335,335,335,335
 				Length: 5
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-5
+			op2_art.bmp: idle2-facing0-5
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-6
+			op2_art.bmp: idle2-facing0-6
 				Frames: 335,335,335,335,335,335,335,335,335,335,335,335
 				Length: 12
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-18
+			op2_art.bmp: idle2-facing0-18
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-20
+			op2_art.bmp: idle2-facing0-20
 				Frames: 335,335,335
 				Length: 3
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-23
+			op2_art.bmp: idle2-facing0-23
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-24
+			op2_art.bmp: idle2-facing0-24
 				Frames: 335
 				Length: 1
 				Offset: 23,-10
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-25
+			op2_art.bmp: idle2-facing0-25
 				Frames: 335
 				Length: 1
 				Offset: 23,-11
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-26
+			op2_art.bmp: idle2-facing0-26
 				Frames: 335
 				Length: 1
 				Offset: 23,-12
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-27
+			op2_art.bmp: idle2-facing0-27
 				Frames: 335,335,335,335
 				Length: 4
 				Offset: 23,-13
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-31
+			op2_art.bmp: idle2-facing0-31
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-32
+			op2_art.bmp: idle2-facing0-32
 				Frames: 335,335,335,335,335,335,335
 				Length: 7
 				Offset: 23,-13
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-39
+			op2_art.bmp: idle2-facing0-39
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-40
+			op2_art.bmp: idle2-facing0-40
 				Frames: 335,335
 				Length: 2
 				Offset: 23,-13
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-42
+			op2_art.bmp: idle2-facing0-42
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-43
+			op2_art.bmp: idle2-facing0-43
 				Frames: 335,335,335,335
 				Length: 4
 				Offset: 23,-13
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-47
+			op2_art.bmp: idle2-facing0-47
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-48
+			op2_art.bmp: idle2-facing0-48
 				Frames: 335,335,335,335,335
 				Length: 5
 				Offset: 23,-13
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-53
+			op2_art.bmp: idle2-facing0-53
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-54
+			op2_art.bmp: idle2-facing0-54
 				Frames: 335,335
 				Length: 2
 				Offset: 23,-13
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-56
+			op2_art.bmp: idle2-facing0-56
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-57
+			op2_art.bmp: idle2-facing0-57
 				Frames: 335,335
 				Length: 2
 				Offset: 23,-13
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-59
+			op2_art.bmp: idle2-facing0-59
 				Frames: 1216,1216,1216,1216
 				Length: 4
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-63
+			op2_art.bmp: idle2-facing0-63
 				Frames: 335,335,335,335
 				Length: 4
 				Offset: 23,-13
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-67
+			op2_art.bmp: idle2-facing0-67
 				Frames: 1216,1216,1216
 				Length: 3
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-70
+			op2_art.bmp: idle2-facing0-70
 				Frames: 335
 				Length: 1
 				Offset: 23,-13
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-71
+			op2_art.bmp: idle2-facing0-71
 				Frames: 335
 				Length: 1
 				Offset: 23,-12
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-72
+			op2_art.bmp: idle2-facing0-72
 				Frames: 335
 				Length: 1
 				Offset: 23,-11
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-73
+			op2_art.bmp: idle2-facing0-73
 				Frames: 335
 				Length: 1
 				Offset: 23,-10
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-74
+			op2_art.bmp: idle2-facing0-74
 				Frames: 335,335,335,335,335
 				Length: 5
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-79
+			op2_art.bmp: idle2-facing0-79
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-80
+			op2_art.bmp: idle2-facing0-80
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-81
+			op2_art.bmp: idle2-facing0-81
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-82
+			op2_art.bmp: idle2-facing0-82
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-83
+			op2_art.bmp: idle2-facing0-83
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-84
+			op2_art.bmp: idle2-facing0-84
 				Frames: 335,335,335
 				Length: 3
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-87
+			op2_art.bmp: idle2-facing0-87
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-89
+			op2_art.bmp: idle2-facing0-89
 				Frames: 335,335
 				Length: 2
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-91
+			op2_art.bmp: idle2-facing0-91
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-92
+			op2_art.bmp: idle2-facing0-92
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-93
+			op2_art.bmp: idle2-facing0-93
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-94
+			op2_art.bmp: idle2-facing0-94
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-95
+			op2_art.bmp: idle2-facing0-95
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-96
+			op2_art.bmp: idle2-facing0-96
 				Frames: 335,335,335
 				Length: 3
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-99
+			op2_art.bmp: idle2-facing0-99
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-100
+			op2_art.bmp: idle2-facing0-100
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-101
+			op2_art.bmp: idle2-facing0-101
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-102
+			op2_art.bmp: idle2-facing0-102
 				Frames: 335,335
 				Length: 2
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-104
+			op2_art.bmp: idle2-facing0-104
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 12
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-116
+			op2_art.bmp: idle2-facing0-116
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-117
+			op2_art.bmp: idle2-facing0-117
 				Frames: 1216,1216,1216
 				Length: 3
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-120
+			op2_art.bmp: idle2-facing0-120
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-121
+			op2_art.bmp: idle2-facing0-121
 				Frames: 1216,1216,1216,1216,1216
 				Length: 5
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-126
+			op2_art.bmp: idle2-facing0-126
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-127
+			op2_art.bmp: idle2-facing0-127
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-128
+			op2_art.bmp: idle2-facing0-128
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-129
+			op2_art.bmp: idle2-facing0-129
 				Frames: 1216,1216,1216,1216,1216,1216,1216
 				Length: 7
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-136
+			op2_art.bmp: idle2-facing0-136
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-137
+			op2_art.bmp: idle2-facing0-137
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 9
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-146
+			op2_art.bmp: idle2-facing0-146
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-147
+			op2_art.bmp: idle2-facing0-147
 				Frames: 1216,1216,1216
 				Length: 3
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-150
+			op2_art.bmp: idle2-facing0-150
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-151
+			op2_art.bmp: idle2-facing0-151
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 8
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-159
+			op2_art.bmp: idle2-facing0-159
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-160
+			op2_art.bmp: idle2-facing0-160
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,19
 				ZOffset: -2048
-			op2_art.bmp: idle-facing0-162
+			op2_art.bmp: idle2-facing0-162
 				Frames: 335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335
 				Length: 21
 				Offset: 23,-9
 				ZOffset: -2048
-	idle-sprite-id9:
+	idle2-sprite-id9:
 		Length: 183
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -2304
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 334,334
 				Length: 2
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-2
+			op2_art.bmp: idle2-facing0-2
 				Frames: 1216,1216,1216
 				Length: 3
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-5
+			op2_art.bmp: idle2-facing0-5
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-6
+			op2_art.bmp: idle2-facing0-6
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-7
+			op2_art.bmp: idle2-facing0-7
 				Frames: 334,334,334
 				Length: 3
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-10
+			op2_art.bmp: idle2-facing0-10
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-12
+			op2_art.bmp: idle2-facing0-12
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-13
+			op2_art.bmp: idle2-facing0-13
 				Frames: 1216,1216,1216,1216,1216
 				Length: 5
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-18
+			op2_art.bmp: idle2-facing0-18
 				Frames: 335,335
 				Length: 2
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-20
+			op2_art.bmp: idle2-facing0-20
 				Frames: 1216,1216,1216
 				Length: 3
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-23
+			op2_art.bmp: idle2-facing0-23
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-24
+			op2_art.bmp: idle2-facing0-24
 				Frames: 1216,1216,1216,1216,1216
 				Length: 5
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-29
+			op2_art.bmp: idle2-facing0-29
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-30
+			op2_art.bmp: idle2-facing0-30
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-31
+			op2_art.bmp: idle2-facing0-31
 				Frames: 335
 				Length: 1
 				Offset: 23,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-32
+			op2_art.bmp: idle2-facing0-32
 				Frames: 1216,1216,1216,1216
 				Length: 4
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-36
+			op2_art.bmp: idle2-facing0-36
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-37
+			op2_art.bmp: idle2-facing0-37
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-39
+			op2_art.bmp: idle2-facing0-39
 				Frames: 335
 				Length: 1
 				Offset: 23,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-40
+			op2_art.bmp: idle2-facing0-40
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-41
+			op2_art.bmp: idle2-facing0-41
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-42
+			op2_art.bmp: idle2-facing0-42
 				Frames: 335
 				Length: 1
 				Offset: 23,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-43
+			op2_art.bmp: idle2-facing0-43
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-44
+			op2_art.bmp: idle2-facing0-44
 				Frames: 1216,1216,1216
 				Length: 3
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-47
+			op2_art.bmp: idle2-facing0-47
 				Frames: 335
 				Length: 1
 				Offset: 23,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-48
+			op2_art.bmp: idle2-facing0-48
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-50
+			op2_art.bmp: idle2-facing0-50
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-51
+			op2_art.bmp: idle2-facing0-51
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-53
+			op2_art.bmp: idle2-facing0-53
 				Frames: 335
 				Length: 1
 				Offset: 23,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-54
+			op2_art.bmp: idle2-facing0-54
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-56
+			op2_art.bmp: idle2-facing0-56
 				Frames: 335
 				Length: 1
 				Offset: 23,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-57
+			op2_art.bmp: idle2-facing0-57
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-59
+			op2_art.bmp: idle2-facing0-59
 				Frames: 335,335,335,335
 				Length: 4
 				Offset: 23,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-63
+			op2_art.bmp: idle2-facing0-63
 				Frames: 1216,1216,1216,1216
 				Length: 4
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-67
+			op2_art.bmp: idle2-facing0-67
 				Frames: 335,335,335
 				Length: 3
 				Offset: 23,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-70
+			op2_art.bmp: idle2-facing0-70
 				Frames: 1216,1216,1216
 				Length: 3
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-73
+			op2_art.bmp: idle2-facing0-73
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-74
+			op2_art.bmp: idle2-facing0-74
 				Frames: 1216,1216,1216,1216,1216
 				Length: 5
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-79
+			op2_art.bmp: idle2-facing0-79
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-80
+			op2_art.bmp: idle2-facing0-80
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-81
+			op2_art.bmp: idle2-facing0-81
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-82
+			op2_art.bmp: idle2-facing0-82
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-83
+			op2_art.bmp: idle2-facing0-83
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-84
+			op2_art.bmp: idle2-facing0-84
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-86
+			op2_art.bmp: idle2-facing0-86
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-87
+			op2_art.bmp: idle2-facing0-87
 				Frames: 335,335
 				Length: 2
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-89
+			op2_art.bmp: idle2-facing0-89
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-90
+			op2_art.bmp: idle2-facing0-90
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-91
+			op2_art.bmp: idle2-facing0-91
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-92
+			op2_art.bmp: idle2-facing0-92
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-93
+			op2_art.bmp: idle2-facing0-93
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-94
+			op2_art.bmp: idle2-facing0-94
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-95
+			op2_art.bmp: idle2-facing0-95
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-96
+			op2_art.bmp: idle2-facing0-96
 				Frames: 1216,1216,1216
 				Length: 3
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-99
+			op2_art.bmp: idle2-facing0-99
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-100
+			op2_art.bmp: idle2-facing0-100
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-101
+			op2_art.bmp: idle2-facing0-101
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-102
+			op2_art.bmp: idle2-facing0-102
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-104
+			op2_art.bmp: idle2-facing0-104
 				Frames: 335,335,335,335,335,335,335,335,335,335,335,335
 				Length: 12
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-116
+			op2_art.bmp: idle2-facing0-116
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-117
+			op2_art.bmp: idle2-facing0-117
 				Frames: 335,335,335
 				Length: 3
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-120
+			op2_art.bmp: idle2-facing0-120
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-121
+			op2_art.bmp: idle2-facing0-121
 				Frames: 335,335,335,335,335
 				Length: 5
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-126
+			op2_art.bmp: idle2-facing0-126
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-127
+			op2_art.bmp: idle2-facing0-127
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-128
+			op2_art.bmp: idle2-facing0-128
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-129
+			op2_art.bmp: idle2-facing0-129
 				Frames: 335,335,335,335,335,335,335
 				Length: 7
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-136
+			op2_art.bmp: idle2-facing0-136
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-137
+			op2_art.bmp: idle2-facing0-137
 				Frames: 335,335,335,335,335,335,335,335,335
 				Length: 9
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-146
+			op2_art.bmp: idle2-facing0-146
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-147
+			op2_art.bmp: idle2-facing0-147
 				Frames: 335,335,335
 				Length: 3
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-150
+			op2_art.bmp: idle2-facing0-150
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-151
+			op2_art.bmp: idle2-facing0-151
 				Frames: 335,335,335,335,335,335,335,335
 				Length: 8
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-159
+			op2_art.bmp: idle2-facing0-159
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-160
+			op2_art.bmp: idle2-facing0-160
 				Frames: 335,335
 				Length: 2
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-162
+			op2_art.bmp: idle2-facing0-162
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-163
+			op2_art.bmp: idle2-facing0-163
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-164
+			op2_art.bmp: idle2-facing0-164
 				Frames: 1216,1216,1216,1216
 				Length: 4
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-168
+			op2_art.bmp: idle2-facing0-168
 				Frames: 334,334,334,334,334,334,334
 				Length: 7
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-175
+			op2_art.bmp: idle2-facing0-175
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-176
+			op2_art.bmp: idle2-facing0-176
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-177
+			op2_art.bmp: idle2-facing0-177
 				Frames: 1216,1216,1216
 				Length: 3
 				Offset: 4,19
 				ZOffset: -2304
-			op2_art.bmp: idle-facing0-180
+			op2_art.bmp: idle2-facing0-180
 				Frames: 334,334,334
 				Length: 3
 				Offset: 1,-13
 				ZOffset: -2304
-	idle-sprite-id10:
+	idle2-sprite-id10:
 		Length: 183
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -2560
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-2
+			op2_art.bmp: idle2-facing0-2
 				Frames: 334,334,334,334,334
 				Length: 5
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-7
+			op2_art.bmp: idle2-facing0-7
 				Frames: 1216,1216,1216
 				Length: 3
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-10
+			op2_art.bmp: idle2-facing0-10
 				Frames: 334,334
 				Length: 2
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-12
+			op2_art.bmp: idle2-facing0-12
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-13
+			op2_art.bmp: idle2-facing0-13
 				Frames: 334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334
 				Length: 16
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-29
+			op2_art.bmp: idle2-facing0-29
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-30
+			op2_art.bmp: idle2-facing0-30
 				Frames: 334,334,334,334,334,334
 				Length: 6
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-36
+			op2_art.bmp: idle2-facing0-36
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-37
+			op2_art.bmp: idle2-facing0-37
 				Frames: 334,334,334,334
 				Length: 4
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-41
+			op2_art.bmp: idle2-facing0-41
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-42
+			op2_art.bmp: idle2-facing0-42
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-43
+			op2_art.bmp: idle2-facing0-43
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-44
+			op2_art.bmp: idle2-facing0-44
 				Frames: 334,334,334,334,334,334
 				Length: 6
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-50
+			op2_art.bmp: idle2-facing0-50
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-51
+			op2_art.bmp: idle2-facing0-51
 				Frames: 334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334
 				Length: 22
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-73
+			op2_art.bmp: idle2-facing0-73
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-74
+			op2_art.bmp: idle2-facing0-74
 				Frames: 334,334,334,334,334,334,334,334,334,334,334,334
 				Length: 12
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-86
+			op2_art.bmp: idle2-facing0-86
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-87
+			op2_art.bmp: idle2-facing0-87
 				Frames: 334,334
 				Length: 2
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-89
+			op2_art.bmp: idle2-facing0-89
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-90
+			op2_art.bmp: idle2-facing0-90
 				Frames: 334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334
 				Length: 26
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-116
+			op2_art.bmp: idle2-facing0-116
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-117
+			op2_art.bmp: idle2-facing0-117
 				Frames: 334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334
 				Length: 33
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-150
+			op2_art.bmp: idle2-facing0-150
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-151
+			op2_art.bmp: idle2-facing0-151
 				Frames: 334,334,334,334,334,334,334,334,334,334,334,334
 				Length: 12
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-163
+			op2_art.bmp: idle2-facing0-163
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-164
+			op2_art.bmp: idle2-facing0-164
 				Frames: 334,334,334,334
 				Length: 4
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-168
+			op2_art.bmp: idle2-facing0-168
 				Frames: 1216,1216,1216,1216,1216,1216,1216
 				Length: 7
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-175
+			op2_art.bmp: idle2-facing0-175
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-176
+			op2_art.bmp: idle2-facing0-176
 				Frames: 1216
 				Length: 1
 				Offset: 4,19
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-177
+			op2_art.bmp: idle2-facing0-177
 				Frames: 334,334,334
 				Length: 3
 				Offset: 1,-13
 				ZOffset: -2560
-			op2_art.bmp: idle-facing0-180
+			op2_art.bmp: idle2-facing0-180
 				Frames: 1216,1216,1216
 				Length: 3
 				Offset: 4,19
 				ZOffset: -2560
-	idle-sprite-id11:
+	idle2-sprite-id11:
 		Length: 183
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -2816
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341
 				Length: 183
 				Offset: 15,-22
 				ZOffset: -2816
-	idle-sprite-id12:
+	idle2-sprite-id12:
 		Length: 183
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -3072
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342
 				Length: 183
 				Offset: -13,-22
 				ZOffset: -3072
-	idle-sprite-id13:
+	idle2-sprite-id13:
 		Length: 183
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -3328
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331
 				Length: 183
 				Offset: 2,-25
 				ZOffset: -3328
-	idle-shadow-id14:
+	idle2-shadow-id14:
 		Length: 183
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -3584
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752
 				Length: 183
 				Offset: -26,-1
 				ZOffset: -3584
-	# All sequences: idle2, idle2-sprite-id1, idle2-sprite-id2, idle2-sprite-id3, idle2-sprite-id4, idle2-sprite-id5, idle2-sprite-id6, idle2-sprite-id7, idle2-sprite-id8, idle2-sprite-id9, idle2-sprite-id10, idle2-sprite-id11, idle2-sprite-id12, idle2-sprite-id13, idle2-shadow-id14
-	idle2:
+	# All sequences: idle3, idle3-sprite-id1, idle3-sprite-id2, idle3-sprite-id3, idle3-sprite-id4, idle3-sprite-id5, idle3-sprite-id6, idle3-sprite-id7, idle3-sprite-id8, idle3-sprite-id9, idle3-sprite-id10, idle3-sprite-id11, idle3-sprite-id12, idle3-sprite-id13, idle3-shadow-id14
+	idle3:
 		Length: 172
 		Facings: 1
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
-			blank.png: idle2-facing0-0
+			blank.png: idle3-facing0-0
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 34
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle2-facing0-34
+			op2_art.bmp: idle3-facing0-34
 				Frames: 1217,1218
 				Length: 2
 				Offset: 17,17
 				ZOffset: 0
-			op2_art.bmp: idle2-facing0-36
+			op2_art.bmp: idle3-facing0-36
 				Frames: 1219
 				Length: 1
 				Offset: 17,14
 				ZOffset: 0
-			op2_art.bmp: idle2-facing0-37
+			op2_art.bmp: idle3-facing0-37
 				Frames: 1220
 				Length: 1
 				Offset: 18,15
 				ZOffset: 0
-			op2_art.bmp: idle2-facing0-38
+			op2_art.bmp: idle3-facing0-38
 				Frames: 1221
 				Length: 1
 				Offset: 20,13
 				ZOffset: 0
-			blank.png: idle2-facing0-39
+			blank.png: idle3-facing0-39
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 70
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle2-facing0-109
+			op2_art.bmp: idle3-facing0-109
 				Frames: 1226
 				Length: 1
 				Offset: -10,-23
 				ZOffset: 0
-			op2_art.bmp: idle2-facing0-110
+			op2_art.bmp: idle3-facing0-110
 				Frames: 1227
 				Length: 1
 				Offset: -12,-26
 				ZOffset: 0
-			op2_art.bmp: idle2-facing0-111
+			op2_art.bmp: idle3-facing0-111
 				Frames: 1228
 				Length: 1
 				Offset: -13,-28
 				ZOffset: 0
-			op2_art.bmp: idle2-facing0-112
+			op2_art.bmp: idle3-facing0-112
 				Frames: 1229
 				Length: 1
 				Offset: -11,-28
 				ZOffset: 0
-			op2_art.bmp: idle2-facing0-113
+			op2_art.bmp: idle3-facing0-113
 				Frames: 1230
 				Length: 1
 				Offset: -11,-31
 				ZOffset: 0
-			blank.png: idle2-facing0-114
+			blank.png: idle3-facing0-114
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 58
 				Offset: 0,0
 				ZOffset: 0
-	idle2-sprite-id1:
+	idle3-sprite-id1:
 		Length: 172
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -256
 		Combine:
-			blank.png: idle2-facing0-0
+			blank.png: idle3-facing0-0
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 39
 				Offset: 0,0
 				ZOffset: -256
-			op2_art.bmp: idle2-facing0-39
+			op2_art.bmp: idle3-facing0-39
 				Frames: 1222
 				Length: 1
 				Offset: 21,13
 				ZOffset: -256
-			op2_art.bmp: idle2-facing0-40
+			op2_art.bmp: idle3-facing0-40
 				Frames: 1223
 				Length: 1
 				Offset: 21,12
 				ZOffset: -256
-			op2_art.bmp: idle2-facing0-41
+			op2_art.bmp: idle3-facing0-41
 				Frames: 1224
 				Length: 1
 				Offset: 22,10
 				ZOffset: -256
-			op2_art.bmp: idle2-facing0-42
+			op2_art.bmp: idle3-facing0-42
 				Frames: 1225
 				Length: 1
 				Offset: 21,8
 				ZOffset: -256
-			blank.png: idle2-facing0-43
+			blank.png: idle3-facing0-43
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 71
 				Offset: 0,0
 				ZOffset: -256
-			op2_art.bmp: idle2-facing0-114
+			op2_art.bmp: idle3-facing0-114
 				Frames: 1231
 				Length: 1
 				Offset: -10,-31
 				ZOffset: -256
-			op2_art.bmp: idle2-facing0-115
+			op2_art.bmp: idle3-facing0-115
 				Frames: 1232
 				Length: 1
 				Offset: -11,-34
 				ZOffset: -256
-			op2_art.bmp: idle2-facing0-116
+			op2_art.bmp: idle3-facing0-116
 				Frames: 1233
 				Length: 1
 				Offset: -6,-34
 				ZOffset: -256
-			op2_art.bmp: idle2-facing0-117
+			op2_art.bmp: idle3-facing0-117
 				Frames: 1234
 				Length: 1
 				Offset: -5,-34
 				ZOffset: -256
-			blank.png: idle2-facing0-118
+			blank.png: idle3-facing0-118
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 54
 				Offset: 0,0
 				ZOffset: -256
-	idle2-sprite-id2:
+	idle3-sprite-id2:
 		Length: 172
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -512
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477
 				Length: 172
 				Offset: 8,-19
 				ZOffset: -512
-	idle2-sprite-id3:
+	idle3-sprite-id3:
 		Length: 172
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -768
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332
 				Length: 172
 				Offset: 2,24
 				ZOffset: -768
-	idle2-sprite-id4:
+	idle3-sprite-id4:
 		Length: 172
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1024
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340
 				Length: 172
 				Offset: -13,18
 				ZOffset: -1024
-	idle2-sprite-id5:
+	idle3-sprite-id5:
 		Length: 172
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1280
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339
 				Length: 172
 				Offset: 2,22
 				ZOffset: -1280
-	idle2-sprite-id6:
+	idle3-sprite-id6:
 		Length: 172
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1536
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338
 				Length: 20
 				Offset: 18,16
 				ZOffset: -1536
-			op2_art.bmp: idle2-facing0-20
+			op2_art.bmp: idle3-facing0-20
 				Frames: 338
 				Length: 1
 				Offset: 18,15
 				ZOffset: -1536
-			op2_art.bmp: idle2-facing0-21
+			op2_art.bmp: idle3-facing0-21
 				Frames: 338
 				Length: 1
 				Offset: 18,14
 				ZOffset: -1536
-			op2_art.bmp: idle2-facing0-22
+			op2_art.bmp: idle3-facing0-22
 				Frames: 338
 				Length: 1
 				Offset: 18,13
 				ZOffset: -1536
-			op2_art.bmp: idle2-facing0-23
+			op2_art.bmp: idle3-facing0-23
 				Frames: 338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338
 				Length: 41
 				Offset: 18,12
 				ZOffset: -1536
-			op2_art.bmp: idle2-facing0-64
+			op2_art.bmp: idle3-facing0-64
 				Frames: 338
 				Length: 1
 				Offset: 18,13
 				ZOffset: -1536
-			op2_art.bmp: idle2-facing0-65
+			op2_art.bmp: idle3-facing0-65
 				Frames: 338
 				Length: 1
 				Offset: 18,14
 				ZOffset: -1536
-			op2_art.bmp: idle2-facing0-66
+			op2_art.bmp: idle3-facing0-66
 				Frames: 338
 				Length: 1
 				Offset: 18,15
 				ZOffset: -1536
-			op2_art.bmp: idle2-facing0-67
+			op2_art.bmp: idle3-facing0-67
 				Frames: 338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338
 				Length: 105
 				Offset: 18,16
 				ZOffset: -1536
-	idle2-sprite-id7:
+	idle3-sprite-id7:
 		Length: 172
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1792
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333
 				Length: 172
 				Offset: 1,5
 				ZOffset: -1792
-	idle2-sprite-id8:
+	idle3-sprite-id8:
 		Length: 172
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -2048
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-1
+			op2_art.bmp: idle3-facing0-1
 				Frames: 1216
 				Length: 1
 				Offset: 3,20
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-2
+			op2_art.bmp: idle3-facing0-2
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-3
+			op2_art.bmp: idle3-facing0-3
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 29
 				Offset: 3,20
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-32
+			op2_art.bmp: idle3-facing0-32
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-33
+			op2_art.bmp: idle3-facing0-33
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 15
 				Offset: 3,20
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-48
+			op2_art.bmp: idle3-facing0-48
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-49
+			op2_art.bmp: idle3-facing0-49
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 8
 				Offset: 3,20
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-57
+			op2_art.bmp: idle3-facing0-57
 				Frames: 335,335,335,335,335,335,335,335,335,335
 				Length: 10
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-67
+			op2_art.bmp: idle3-facing0-67
 				Frames: 1216
 				Length: 1
 				Offset: 3,20
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-68
+			op2_art.bmp: idle3-facing0-68
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-69
+			op2_art.bmp: idle3-facing0-69
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 9
 				Offset: 3,20
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-78
+			op2_art.bmp: idle3-facing0-78
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-79
+			op2_art.bmp: idle3-facing0-79
 				Frames: 1216,1216,1216,1216
 				Length: 4
 				Offset: 3,20
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-83
+			op2_art.bmp: idle3-facing0-83
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-84
+			op2_art.bmp: idle3-facing0-84
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 15
 				Offset: 3,20
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-99
+			op2_art.bmp: idle3-facing0-99
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-100
+			op2_art.bmp: idle3-facing0-100
 				Frames: 1216,1216,1216,1216,1216
 				Length: 5
 				Offset: 3,20
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-105
+			op2_art.bmp: idle3-facing0-105
 				Frames: 1216
 				Length: 1
 				Offset: 3,19
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-106
+			op2_art.bmp: idle3-facing0-106
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 9
 				Offset: 3,20
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-115
+			op2_art.bmp: idle3-facing0-115
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-116
+			op2_art.bmp: idle3-facing0-116
 				Frames: 1216
 				Length: 1
 				Offset: 3,20
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-117
+			op2_art.bmp: idle3-facing0-117
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-118
+			op2_art.bmp: idle3-facing0-118
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 24
 				Offset: 3,20
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-142
+			op2_art.bmp: idle3-facing0-142
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2048
-			op2_art.bmp: idle2-facing0-143
+			op2_art.bmp: idle3-facing0-143
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 29
 				Offset: 3,20
 				ZOffset: -2048
-	idle2-sprite-id9:
+	idle3-sprite-id9:
 		Length: 172
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -2304
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-1
+			op2_art.bmp: idle3-facing0-1
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-2
+			op2_art.bmp: idle3-facing0-2
 				Frames: 1216
 				Length: 1
 				Offset: 3,20
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-3
+			op2_art.bmp: idle3-facing0-3
 				Frames: 335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335
 				Length: 29
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-32
+			op2_art.bmp: idle3-facing0-32
 				Frames: 1216
 				Length: 1
 				Offset: 3,20
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-33
+			op2_art.bmp: idle3-facing0-33
 				Frames: 335,335,335,335,335,335,335,335,335,335,335,335,335,335,335
 				Length: 15
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-48
+			op2_art.bmp: idle3-facing0-48
 				Frames: 1216
 				Length: 1
 				Offset: 3,20
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-49
+			op2_art.bmp: idle3-facing0-49
 				Frames: 335,335,335,335,335,335,335,335
 				Length: 8
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-57
+			op2_art.bmp: idle3-facing0-57
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 10
 				Offset: 3,20
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-67
+			op2_art.bmp: idle3-facing0-67
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-68
+			op2_art.bmp: idle3-facing0-68
 				Frames: 1216
 				Length: 1
 				Offset: 3,20
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-69
+			op2_art.bmp: idle3-facing0-69
 				Frames: 335,335,335,335,335,335,335,335,335
 				Length: 9
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-78
+			op2_art.bmp: idle3-facing0-78
 				Frames: 1216
 				Length: 1
 				Offset: 3,20
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-79
+			op2_art.bmp: idle3-facing0-79
 				Frames: 335,335,335,335
 				Length: 4
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-83
+			op2_art.bmp: idle3-facing0-83
 				Frames: 1216
 				Length: 1
 				Offset: 3,20
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-84
+			op2_art.bmp: idle3-facing0-84
 				Frames: 335,335,335,335,335,335,335,335,335,335,335,335,335,335,335
 				Length: 15
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-99
+			op2_art.bmp: idle3-facing0-99
 				Frames: 1216
 				Length: 1
 				Offset: 3,20
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-100
+			op2_art.bmp: idle3-facing0-100
 				Frames: 335,335,335,335,335,335,335,335,335,335,335,335,335,335,335
 				Length: 15
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-115
+			op2_art.bmp: idle3-facing0-115
 				Frames: 1216
 				Length: 1
 				Offset: 3,20
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-116
+			op2_art.bmp: idle3-facing0-116
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-117
+			op2_art.bmp: idle3-facing0-117
 				Frames: 1216
 				Length: 1
 				Offset: 3,20
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-118
+			op2_art.bmp: idle3-facing0-118
 				Frames: 335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335
 				Length: 24
 				Offset: 23,-9
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-142
+			op2_art.bmp: idle3-facing0-142
 				Frames: 1216
 				Length: 1
 				Offset: 3,20
 				ZOffset: -2304
-			op2_art.bmp: idle2-facing0-143
+			op2_art.bmp: idle3-facing0-143
 				Frames: 335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335
 				Length: 29
 				Offset: 23,-9
 				ZOffset: -2304
-	idle2-sprite-id10:
+	idle3-sprite-id10:
 		Length: 172
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -2560
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 1216
 				Length: 1
 				Offset: 3,20
 				ZOffset: -2560
-			op2_art.bmp: idle2-facing0-1
+			op2_art.bmp: idle3-facing0-1
 				Frames: 334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334
 				Length: 171
 				Offset: 1,-13
 				ZOffset: -2560
-	idle2-sprite-id11:
+	idle3-sprite-id11:
 		Length: 172
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -2816
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341
 				Length: 172
 				Offset: 15,-22
 				ZOffset: -2816
-	idle2-sprite-id12:
+	idle3-sprite-id12:
 		Length: 172
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -3072
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342
 				Length: 98
 				Offset: -13,-22
 				ZOffset: -3072
-			op2_art.bmp: idle2-facing0-98
+			op2_art.bmp: idle3-facing0-98
 				Frames: 342
 				Length: 1
 				Offset: -13,-23
 				ZOffset: -3072
-			op2_art.bmp: idle2-facing0-99
+			op2_art.bmp: idle3-facing0-99
 				Frames: 342
 				Length: 1
 				Offset: -13,-24
 				ZOffset: -3072
-			op2_art.bmp: idle2-facing0-100
+			op2_art.bmp: idle3-facing0-100
 				Frames: 342
 				Length: 1
 				Offset: -13,-25
 				ZOffset: -3072
-			op2_art.bmp: idle2-facing0-101
+			op2_art.bmp: idle3-facing0-101
 				Frames: 342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342
 				Length: 43
 				Offset: -13,-26
 				ZOffset: -3072
-			op2_art.bmp: idle2-facing0-144
+			op2_art.bmp: idle3-facing0-144
 				Frames: 342
 				Length: 1
 				Offset: -13,-25
 				ZOffset: -3072
-			op2_art.bmp: idle2-facing0-145
+			op2_art.bmp: idle3-facing0-145
 				Frames: 342
 				Length: 1
 				Offset: -13,-24
 				ZOffset: -3072
-			op2_art.bmp: idle2-facing0-146
+			op2_art.bmp: idle3-facing0-146
 				Frames: 342
 				Length: 1
 				Offset: -13,-23
 				ZOffset: -3072
-			op2_art.bmp: idle2-facing0-147
+			op2_art.bmp: idle3-facing0-147
 				Frames: 342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342
 				Length: 25
 				Offset: -13,-22
 				ZOffset: -3072
-	idle2-sprite-id13:
+	idle3-sprite-id13:
 		Length: 172
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -3328
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331
 				Length: 172
 				Offset: 2,-25
 				ZOffset: -3328
-	idle2-shadow-id14:
+	idle3-shadow-id14:
 		Length: 172
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -3584
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752
 				Length: 172
 				Offset: -26,-1
 				ZOffset: -3584
-	# All sequences: idle3, idle3-sprite-id1, idle3-sprite-id2, idle3-sprite-id3, idle3-sprite-id4, idle3-sprite-id5, idle3-sprite-id6, idle3-sprite-id7, idle3-sprite-id8, idle3-sprite-id9, idle3-sprite-id10, idle3-sprite-id11, idle3-sprite-id12, idle3-sprite-id13, idle3-shadow-id14
-	idle3:
+	# All sequences: idle4, idle4-sprite-id1, idle4-sprite-id2, idle4-sprite-id3, idle4-sprite-id4, idle4-sprite-id5, idle4-sprite-id6, idle4-sprite-id7, idle4-sprite-id8, idle4-sprite-id9, idle4-sprite-id10, idle4-sprite-id11, idle4-sprite-id12, idle4-sprite-id13, idle4-shadow-id14
+	idle4:
 		Length: 154
 		Facings: 1
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
-			op2_art.bmp: idle3-facing0-0
+			op2_art.bmp: idle4-facing0-0
 				Frames: 477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477
 				Length: 84
 				Offset: 8,-19
 				ZOffset: 0
-			op2_art.bmp: idle3-facing0-84
+			op2_art.bmp: idle4-facing0-84
 				Frames: 332
 				Length: 1
 				Offset: 2,24
 				ZOffset: 0
-			op2_art.bmp: idle3-facing0-85
+			op2_art.bmp: idle4-facing0-85
 				Frames: 477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477
 				Length: 28
 				Offset: 8,-19
 				ZOffset: 0
-			blank.png: idle3-facing0-113
+			blank.png: idle4-facing0-113
 				Frames: 0,0
 				Length: 2
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle3-facing0-115
+			op2_art.bmp: idle4-facing0-115
 				Frames: 477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477,477
 				Length: 39
 				Offset: 8,-19
 				ZOffset: 0
-	idle3-sprite-id1:
+	idle4-sprite-id1:
 		Length: 154
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -256
 		Combine:
-			op2_art.bmp: idle3-facing0-0
+			op2_art.bmp: idle4-facing0-0
 				Frames: 332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332
 				Length: 84
 				Offset: 2,24
 				ZOffset: -256
-			op2_art.bmp: idle3-facing0-84
+			op2_art.bmp: idle4-facing0-84
 				Frames: 340
 				Length: 1
 				Offset: -13,18
 				ZOffset: -256
-			op2_art.bmp: idle3-facing0-85
+			op2_art.bmp: idle4-facing0-85
 				Frames: 332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332
 				Length: 28
 				Offset: 2,24
 				ZOffset: -256
-			op2_art.bmp: idle3-facing0-113
+			op2_art.bmp: idle4-facing0-113
 				Frames: 477,477
 				Length: 2
 				Offset: 8,-19
 				ZOffset: -256
-			op2_art.bmp: idle3-facing0-115
+			op2_art.bmp: idle4-facing0-115
 				Frames: 332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332,332
 				Length: 39
 				Offset: 2,24
 				ZOffset: -256
-	idle3-sprite-id2:
+	idle4-sprite-id2:
 		Length: 154
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -512
 		Combine:
-			op2_art.bmp: idle3-facing0-0
+			op2_art.bmp: idle4-facing0-0
 				Frames: 340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340
 				Length: 84
 				Offset: -13,18
 				ZOffset: -512
-			op2_art.bmp: idle3-facing0-84
+			op2_art.bmp: idle4-facing0-84
 				Frames: 477
 				Length: 1
 				Offset: 8,-19
 				ZOffset: -512
-			op2_art.bmp: idle3-facing0-85
+			op2_art.bmp: idle4-facing0-85
 				Frames: 340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340
 				Length: 28
 				Offset: -13,18
 				ZOffset: -512
-			op2_art.bmp: idle3-facing0-113
+			op2_art.bmp: idle4-facing0-113
 				Frames: 332,332
 				Length: 2
 				Offset: 2,24
 				ZOffset: -512
-			op2_art.bmp: idle3-facing0-115
+			op2_art.bmp: idle4-facing0-115
 				Frames: 340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340,340
 				Length: 39
 				Offset: -13,18
 				ZOffset: -512
-	idle3-sprite-id3:
+	idle4-sprite-id3:
 		Length: 154
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -768
 		Combine:
-			op2_art.bmp: idle3-facing0-0
+			op2_art.bmp: idle4-facing0-0
 				Frames: 339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339
 				Length: 99
 				Offset: 2,22
 				ZOffset: -768
-			op2_art.bmp: idle3-facing0-99
+			op2_art.bmp: idle4-facing0-99
 				Frames: 339
 				Length: 1
 				Offset: 2,21
 				ZOffset: -768
-			op2_art.bmp: idle3-facing0-100
+			op2_art.bmp: idle4-facing0-100
 				Frames: 339
 				Length: 1
 				Offset: 2,20
 				ZOffset: -768
-			op2_art.bmp: idle3-facing0-101
+			op2_art.bmp: idle4-facing0-101
 				Frames: 339
 				Length: 1
 				Offset: 2,19
 				ZOffset: -768
-			op2_art.bmp: idle3-facing0-102
+			op2_art.bmp: idle4-facing0-102
 				Frames: 339,339,339,339,339,339,339,339,339,339,339
 				Length: 11
 				Offset: 2,18
 				ZOffset: -768
-			op2_art.bmp: idle3-facing0-113
+			op2_art.bmp: idle4-facing0-113
 				Frames: 340,340
 				Length: 2
 				Offset: -13,18
 				ZOffset: -768
-			op2_art.bmp: idle3-facing0-115
+			op2_art.bmp: idle4-facing0-115
 				Frames: 339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339,339
 				Length: 30
 				Offset: 2,18
 				ZOffset: -768
-			op2_art.bmp: idle3-facing0-145
+			op2_art.bmp: idle4-facing0-145
 				Frames: 339
 				Length: 1
 				Offset: 2,19
 				ZOffset: -768
-			op2_art.bmp: idle3-facing0-146
+			op2_art.bmp: idle4-facing0-146
 				Frames: 339
 				Length: 1
 				Offset: 2,20
 				ZOffset: -768
-			op2_art.bmp: idle3-facing0-147
+			op2_art.bmp: idle4-facing0-147
 				Frames: 339
 				Length: 1
 				Offset: 2,21
 				ZOffset: -768
-			op2_art.bmp: idle3-facing0-148
+			op2_art.bmp: idle4-facing0-148
 				Frames: 339,339,339,339,339,339
 				Length: 6
 				Offset: 2,22
 				ZOffset: -768
-	idle3-sprite-id4:
+	idle4-sprite-id4:
 		Length: 154
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1024
 		Combine:
-			op2_art.bmp: idle3-facing0-0
+			op2_art.bmp: idle4-facing0-0
 				Frames: 338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338
 				Length: 113
 				Offset: 18,16
 				ZOffset: -1024
-			op2_art.bmp: idle3-facing0-113
+			op2_art.bmp: idle4-facing0-113
 				Frames: 339,339
 				Length: 2
 				Offset: 2,18
 				ZOffset: -1024
-			op2_art.bmp: idle3-facing0-115
+			op2_art.bmp: idle4-facing0-115
 				Frames: 338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338,338
 				Length: 39
 				Offset: 18,16
 				ZOffset: -1024
-	idle3-sprite-id5:
+	idle4-sprite-id5:
 		Length: 154
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1280
 		Combine:
-			op2_art.bmp: idle3-facing0-0
+			op2_art.bmp: idle4-facing0-0
 				Frames: 333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333
 				Length: 113
 				Offset: 1,5
 				ZOffset: -1280
-			op2_art.bmp: idle3-facing0-113
+			op2_art.bmp: idle4-facing0-113
 				Frames: 338,338
 				Length: 2
 				Offset: 18,16
 				ZOffset: -1280
-			op2_art.bmp: idle3-facing0-115
+			op2_art.bmp: idle4-facing0-115
 				Frames: 333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333,333
 				Length: 39
 				Offset: 1,5
 				ZOffset: -1280
-	idle3-sprite-id6:
+	idle4-sprite-id6:
 		Length: 154
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1536
 		Combine:
-			op2_art.bmp: idle3-facing0-0
+			op2_art.bmp: idle4-facing0-0
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 18
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-18
+			op2_art.bmp: idle4-facing0-18
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-19
+			op2_art.bmp: idle4-facing0-19
 				Frames: 1216,1216,1216,1216,1216,1216
 				Length: 6
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-25
+			op2_art.bmp: idle4-facing0-25
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-26
+			op2_art.bmp: idle4-facing0-26
 				Frames: 1216,1216,1216
 				Length: 3
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-29
+			op2_art.bmp: idle4-facing0-29
 				Frames: 335,335
 				Length: 2
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-31
+			op2_art.bmp: idle4-facing0-31
 				Frames: 1216,1216,1216,1216
 				Length: 4
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-35
+			op2_art.bmp: idle4-facing0-35
 				Frames: 335,335
 				Length: 2
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-37
+			op2_art.bmp: idle4-facing0-37
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 8
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-45
+			op2_art.bmp: idle4-facing0-45
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-46
+			op2_art.bmp: idle4-facing0-46
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-47
+			op2_art.bmp: idle4-facing0-47
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-48
+			op2_art.bmp: idle4-facing0-48
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-50
+			op2_art.bmp: idle4-facing0-50
 				Frames: 335,335,335
 				Length: 3
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-53
+			op2_art.bmp: idle4-facing0-53
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-55
+			op2_art.bmp: idle4-facing0-55
 				Frames: 335,335
 				Length: 2
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-57
+			op2_art.bmp: idle4-facing0-57
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 22
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-79
+			op2_art.bmp: idle4-facing0-79
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-80
+			op2_art.bmp: idle4-facing0-80
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-81
+			op2_art.bmp: idle4-facing0-81
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-82
+			op2_art.bmp: idle4-facing0-82
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-83
+			op2_art.bmp: idle4-facing0-83
 				Frames: 335,335,335,335
 				Length: 4
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-87
+			op2_art.bmp: idle4-facing0-87
 				Frames: 1216,1216,1216,1216,1216,1216
 				Length: 6
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-93
+			op2_art.bmp: idle4-facing0-93
 				Frames: 335,335
 				Length: 2
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-95
+			op2_art.bmp: idle4-facing0-95
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 18
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-113
+			op2_art.bmp: idle4-facing0-113
 				Frames: 333,333
 				Length: 2
 				Offset: 1,5
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-115
+			op2_art.bmp: idle4-facing0-115
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-116
+			op2_art.bmp: idle4-facing0-116
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 9
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-125
+			op2_art.bmp: idle4-facing0-125
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-126
+			op2_art.bmp: idle4-facing0-126
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 10
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-136
+			op2_art.bmp: idle4-facing0-136
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-137
+			op2_art.bmp: idle4-facing0-137
 				Frames: 1216,1216,1216,1216,1216,1216,1216,1216,1216,1216
 				Length: 10
 				Offset: 4,20
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-147
+			op2_art.bmp: idle4-facing0-147
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -1536
-			op2_art.bmp: idle3-facing0-148
+			op2_art.bmp: idle4-facing0-148
 				Frames: 1216,1216,1216,1216,1216,1216
 				Length: 6
 				Offset: 4,20
 				ZOffset: -1536
-	idle3-sprite-id7:
+	idle4-sprite-id7:
 		Length: 154
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1792
 		Combine:
-			op2_art.bmp: idle3-facing0-0
+			op2_art.bmp: idle4-facing0-0
 				Frames: 335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335
 				Length: 18
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-18
+			op2_art.bmp: idle4-facing0-18
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-19
+			op2_art.bmp: idle4-facing0-19
 				Frames: 335,335,335,335,335,335
 				Length: 6
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-25
+			op2_art.bmp: idle4-facing0-25
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-26
+			op2_art.bmp: idle4-facing0-26
 				Frames: 335,335,335
 				Length: 3
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-29
+			op2_art.bmp: idle4-facing0-29
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-30
+			op2_art.bmp: idle4-facing0-30
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-31
+			op2_art.bmp: idle4-facing0-31
 				Frames: 335,335,335,335
 				Length: 4
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-35
+			op2_art.bmp: idle4-facing0-35
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,20
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-37
+			op2_art.bmp: idle4-facing0-37
 				Frames: 335,335,335,335,335,335,335,335
 				Length: 8
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-45
+			op2_art.bmp: idle4-facing0-45
 				Frames: 334
 				Length: 1
 				Offset: 1,-13
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-46
+			op2_art.bmp: idle4-facing0-46
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-47
+			op2_art.bmp: idle4-facing0-47
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-48
+			op2_art.bmp: idle4-facing0-48
 				Frames: 335,335
 				Length: 2
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-50
+			op2_art.bmp: idle4-facing0-50
 				Frames: 1216,1216,1216
 				Length: 3
 				Offset: 4,20
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-53
+			op2_art.bmp: idle4-facing0-53
 				Frames: 335,335
 				Length: 2
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-55
+			op2_art.bmp: idle4-facing0-55
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,20
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-57
+			op2_art.bmp: idle4-facing0-57
 				Frames: 335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335
 				Length: 22
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-79
+			op2_art.bmp: idle4-facing0-79
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-80
+			op2_art.bmp: idle4-facing0-80
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-81
+			op2_art.bmp: idle4-facing0-81
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-82
+			op2_art.bmp: idle4-facing0-82
 				Frames: 335
 				Length: 1
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-83
+			op2_art.bmp: idle4-facing0-83
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-84
+			op2_art.bmp: idle4-facing0-84
 				Frames: 334,334
 				Length: 2
 				Offset: 1,-13
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-86
+			op2_art.bmp: idle4-facing0-86
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-87
+			op2_art.bmp: idle4-facing0-87
 				Frames: 335,335,335,335,335,335
 				Length: 6
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-93
+			op2_art.bmp: idle4-facing0-93
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,20
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-95
+			op2_art.bmp: idle4-facing0-95
 				Frames: 335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335,335
 				Length: 20
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-115
+			op2_art.bmp: idle4-facing0-115
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-116
+			op2_art.bmp: idle4-facing0-116
 				Frames: 335,335,335,335,335,335,335,335,335
 				Length: 9
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-125
+			op2_art.bmp: idle4-facing0-125
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-126
+			op2_art.bmp: idle4-facing0-126
 				Frames: 335,335,335,335,335,335,335,335,335,335
 				Length: 10
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-136
+			op2_art.bmp: idle4-facing0-136
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-137
+			op2_art.bmp: idle4-facing0-137
 				Frames: 335,335,335,335,335,335,335,335,335,335
 				Length: 10
 				Offset: 23,-9
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-147
+			op2_art.bmp: idle4-facing0-147
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -1792
-			op2_art.bmp: idle3-facing0-148
+			op2_art.bmp: idle4-facing0-148
 				Frames: 335,335,335,335,335,335
 				Length: 6
 				Offset: 23,-9
 				ZOffset: -1792
-	idle3-sprite-id8:
+	idle4-sprite-id8:
 		Length: 154
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -2048
 		Combine:
-			op2_art.bmp: idle3-facing0-0
+			op2_art.bmp: idle4-facing0-0
 				Frames: 334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334
 				Length: 18
 				Offset: 1,-13
 				ZOffset: -2048
-			op2_art.bmp: idle3-facing0-18
+			op2_art.bmp: idle4-facing0-18
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -2048
-			op2_art.bmp: idle3-facing0-19
+			op2_art.bmp: idle4-facing0-19
 				Frames: 334,334,334,334,334,334,334,334,334,334,334
 				Length: 11
 				Offset: 1,-13
 				ZOffset: -2048
-			op2_art.bmp: idle3-facing0-30
+			op2_art.bmp: idle4-facing0-30
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -2048
-			op2_art.bmp: idle3-facing0-31
+			op2_art.bmp: idle4-facing0-31
 				Frames: 334,334,334,334,334,334,334,334,334,334,334,334,334,334
 				Length: 14
 				Offset: 1,-13
 				ZOffset: -2048
-			op2_art.bmp: idle3-facing0-45
+			op2_art.bmp: idle4-facing0-45
 				Frames: 1216
 				Length: 1
 				Offset: 4,20
 				ZOffset: -2048
-			op2_art.bmp: idle3-facing0-46
+			op2_art.bmp: idle4-facing0-46
 				Frames: 334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334
 				Length: 38
 				Offset: 1,-13
 				ZOffset: -2048
-			op2_art.bmp: idle3-facing0-84
+			op2_art.bmp: idle4-facing0-84
 				Frames: 1216,1216
 				Length: 2
 				Offset: 4,20
 				ZOffset: -2048
-			op2_art.bmp: idle3-facing0-86
+			op2_art.bmp: idle4-facing0-86
 				Frames: 334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334,334
 				Length: 68
 				Offset: 1,-13
 				ZOffset: -2048
-	idle3-sprite-id9:
+	idle4-sprite-id9:
 		Length: 154
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -2304
 		Combine:
-			op2_art.bmp: idle3-facing0-0
+			op2_art.bmp: idle4-facing0-0
 				Frames: 341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341
 				Length: 21
 				Offset: 15,-22
 				ZOffset: -2304
-			op2_art.bmp: idle3-facing0-21
+			op2_art.bmp: idle4-facing0-21
 				Frames: 341
 				Length: 1
 				Offset: 15,-23
 				ZOffset: -2304
-			op2_art.bmp: idle3-facing0-22
+			op2_art.bmp: idle4-facing0-22
 				Frames: 341
 				Length: 1
 				Offset: 15,-24
 				ZOffset: -2304
-			op2_art.bmp: idle3-facing0-23
+			op2_art.bmp: idle4-facing0-23
 				Frames: 341
 				Length: 1
 				Offset: 15,-25
 				ZOffset: -2304
-			op2_art.bmp: idle3-facing0-24
+			op2_art.bmp: idle4-facing0-24
 				Frames: 341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341
 				Length: 44
 				Offset: 15,-26
 				ZOffset: -2304
-			op2_art.bmp: idle3-facing0-68
+			op2_art.bmp: idle4-facing0-68
 				Frames: 341
 				Length: 1
 				Offset: 15,-25
 				ZOffset: -2304
-			op2_art.bmp: idle3-facing0-69
+			op2_art.bmp: idle4-facing0-69
 				Frames: 341
 				Length: 1
 				Offset: 15,-24
 				ZOffset: -2304
-			op2_art.bmp: idle3-facing0-70
+			op2_art.bmp: idle4-facing0-70
 				Frames: 341
 				Length: 1
 				Offset: 15,-23
 				ZOffset: -2304
-			op2_art.bmp: idle3-facing0-71
+			op2_art.bmp: idle4-facing0-71
 				Frames: 341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341,341
 				Length: 83
 				Offset: 15,-22
 				ZOffset: -2304
-	idle3-sprite-id10:
+	idle4-sprite-id10:
 		Length: 154
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -2560
 		Combine:
-			blank.png: idle3-facing0-0
+			blank.png: idle4-facing0-0
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 39
 				Offset: 0,0
 				ZOffset: -2560
-			op2_art.bmp: idle3-facing0-39
+			op2_art.bmp: idle4-facing0-39
 				Frames: 1231
 				Length: 1
 				Offset: 19,-30
 				ZOffset: -2560
-			op2_art.bmp: idle3-facing0-40
+			op2_art.bmp: idle4-facing0-40
 				Frames: 1232
 				Length: 1
 				Offset: 19,-33
 				ZOffset: -2560
-			op2_art.bmp: idle3-facing0-41
+			op2_art.bmp: idle4-facing0-41
 				Frames: 1233
 				Length: 1
 				Offset: 24,-34
 				ZOffset: -2560
-			op2_art.bmp: idle3-facing0-42
+			op2_art.bmp: idle4-facing0-42
 				Frames: 1234
 				Length: 1
 				Offset: 26,-35
 				ZOffset: -2560
-			blank.png: idle3-facing0-43
+			blank.png: idle4-facing0-43
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 72
 				Offset: 0,0
 				ZOffset: -2560
-			op2_art.bmp: idle3-facing0-115
+			op2_art.bmp: idle4-facing0-115
 				Frames: 1222
 				Length: 1
 				Offset: 3,18
 				ZOffset: -2560
-			op2_art.bmp: idle3-facing0-116
+			op2_art.bmp: idle4-facing0-116
 				Frames: 1223
 				Length: 1
 				Offset: 3,17
 				ZOffset: -2560
-			op2_art.bmp: idle3-facing0-117
+			op2_art.bmp: idle4-facing0-117
 				Frames: 1224
 				Length: 1
 				Offset: 3,15
 				ZOffset: -2560
-			op2_art.bmp: idle3-facing0-118
+			op2_art.bmp: idle4-facing0-118
 				Frames: 1225
 				Length: 1
 				Offset: 4,13
 				ZOffset: -2560
-			blank.png: idle3-facing0-119
+			blank.png: idle4-facing0-119
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 35
 				Offset: 0,0
 				ZOffset: -2560
-	idle3-sprite-id11:
+	idle4-sprite-id11:
 		Length: 154
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -2816
 		Combine:
-			op2_art.bmp: idle3-facing0-0
+			op2_art.bmp: idle4-facing0-0
 				Frames: 342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342,342
 				Length: 154
 				Offset: -13,-22
 				ZOffset: -2816
-	idle3-sprite-id12:
+	idle4-sprite-id12:
 		Length: 154
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -3072
 		Combine:
-			blank.png: idle3-facing0-0
+			blank.png: idle4-facing0-0
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 34
 				Offset: 0,0
 				ZOffset: -3072
-			op2_art.bmp: idle3-facing0-34
+			op2_art.bmp: idle4-facing0-34
 				Frames: 1226
 				Length: 1
 				Offset: 16,-24
 				ZOffset: -3072
-			op2_art.bmp: idle3-facing0-35
+			op2_art.bmp: idle4-facing0-35
 				Frames: 1227
 				Length: 1
 				Offset: 15,-26
 				ZOffset: -3072
-			op2_art.bmp: idle3-facing0-36
+			op2_art.bmp: idle4-facing0-36
 				Frames: 1228
 				Length: 1
 				Offset: 16,-29
 				ZOffset: -3072
-			op2_art.bmp: idle3-facing0-37
+			op2_art.bmp: idle4-facing0-37
 				Frames: 1229
 				Length: 1
 				Offset: 16,-32
 				ZOffset: -3072
-			op2_art.bmp: idle3-facing0-38
+			op2_art.bmp: idle4-facing0-38
 				Frames: 1230
 				Length: 1
 				Offset: 17,-32
 				ZOffset: -3072
-			blank.png: idle3-facing0-39
+			blank.png: idle4-facing0-39
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 71
 				Offset: 0,0
 				ZOffset: -3072
-			op2_art.bmp: idle3-facing0-110
+			op2_art.bmp: idle4-facing0-110
 				Frames: 1217
 				Length: 1
 				Offset: 2,23
 				ZOffset: -3072
-			op2_art.bmp: idle3-facing0-111
+			op2_art.bmp: idle4-facing0-111
 				Frames: 1218
 				Length: 1
 				Offset: 1,23
 				ZOffset: -3072
-			op2_art.bmp: idle3-facing0-112
+			op2_art.bmp: idle4-facing0-112
 				Frames: 1219
 				Length: 1
 				Offset: 1,20
 				ZOffset: -3072
-			op2_art.bmp: idle3-facing0-113
+			op2_art.bmp: idle4-facing0-113
 				Frames: 1220
 				Length: 1
 				Offset: 2,20
 				ZOffset: -3072
-			op2_art.bmp: idle3-facing0-114
+			op2_art.bmp: idle4-facing0-114
 				Frames: 1221
 				Length: 1
 				Offset: 3,18
 				ZOffset: -3072
-			blank.png: idle3-facing0-115
+			blank.png: idle4-facing0-115
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 39
 				Offset: 0,0
 				ZOffset: -3072
-	idle3-sprite-id13:
+	idle4-sprite-id13:
 		Length: 154
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -3328
 		Combine:
-			op2_art.bmp: idle3-facing0-0
+			op2_art.bmp: idle4-facing0-0
 				Frames: 331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331,331
 				Length: 154
 				Offset: 2,-25
 				ZOffset: -3328
-	idle3-shadow-id14:
+	idle4-shadow-id14:
 		Length: 154
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -3584
 		Combine:
-			op2_art.bmp: idle3-facing0-0
+			op2_art.bmp: idle4-facing0-0
 				Frames: 1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752,1752
 				Length: 154
 				Offset: -26,-1
@@ -53681,219 +54015,308 @@ plymouth-agridome:
 eden-factory-vehicle:
 	# All sequences: idle, idle-sprite-id1, idle-shadow-id2, idle-shadow-id3, idle-shadow-id4, idle-shadow-id5, idle-shadow-id6, idle-shadow-id7
 	idle:
-		Length: 43
+		Length: 1
 		Facings: 1
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: idle-facing0-0
+				Frames: 1143
+				Length: 1
+				Offset: 46,-13
+				ZOffset: 0
+	idle-sprite-id1:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -256
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 72
+				Length: 1
+				Offset: -2,-5
+				ZOffset: -256
+	idle-shadow-id2:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -512
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 1777
+				Length: 1
+				Offset: 35,-33
+				ZOffset: -512
+	idle-shadow-id3:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -768
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 1776
+				Length: 1
+				Offset: 12,-35
+				ZOffset: -768
+	idle-shadow-id4:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -1024
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 1775
+				Length: 1
+				Offset: -8,-38
+				ZOffset: -1024
+	idle-shadow-id5:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -1280
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 1774
+				Length: 1
+				Offset: -51,-33
+				ZOffset: -1280
+	idle-shadow-id6:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -1536
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 1773
+				Length: 1
+				Offset: -64,-2
+				ZOffset: -1536
+	idle-shadow-id7:
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -1792
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 1772
+				Length: 1
+				Offset: -63,28
+				ZOffset: -1792
+	# All sequences: idle2, idle2-sprite-id1, idle2-shadow-id2, idle2-shadow-id3, idle2-shadow-id4, idle2-shadow-id5, idle2-shadow-id6, idle2-shadow-id7
+	idle2:
+		Length: 43
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1143,1144,1145,1146,1147,1147,1147,1147,1146,1145,1144,1143
 				Length: 12
 				Offset: 46,-13
 				ZOffset: 0
-			blank.png: idle-facing0-12
+			blank.png: idle2-facing0-12
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 31
 				Offset: 0,0
 				ZOffset: 0
-	idle-sprite-id1:
+	idle2-sprite-id1:
 		Length: 43
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -256
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72
 				Length: 43
 				Offset: -2,-5
 				ZOffset: -256
-	idle-shadow-id2:
+	idle2-shadow-id2:
 		Length: 43
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -512
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777
 				Length: 43
 				Offset: 35,-33
 				ZOffset: -512
-	idle-shadow-id3:
+	idle2-shadow-id3:
 		Length: 43
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -768
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776
 				Length: 43
 				Offset: 12,-35
 				ZOffset: -768
-	idle-shadow-id4:
+	idle2-shadow-id4:
 		Length: 43
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1024
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775
 				Length: 43
 				Offset: -8,-38
 				ZOffset: -1024
-	idle-shadow-id5:
+	idle2-shadow-id5:
 		Length: 43
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1280
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774
 				Length: 43
 				Offset: -51,-33
 				ZOffset: -1280
-	idle-shadow-id6:
+	idle2-shadow-id6:
 		Length: 43
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1536
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773
 				Length: 43
 				Offset: -64,-2
 				ZOffset: -1536
-	idle-shadow-id7:
+	idle2-shadow-id7:
 		Length: 43
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1792
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772
 				Length: 43
 				Offset: -63,28
 				ZOffset: -1792
-	# All sequences: idle2, idle2-sprite-id1, idle2-sprite-id2, idle2-shadow-id3, idle2-shadow-id4, idle2-shadow-id5, idle2-shadow-id6, idle2-shadow-id7, idle2-shadow-id8
-	idle2:
+	# All sequences: idle3, idle3-sprite-id1, idle3-sprite-id2, idle3-shadow-id3, idle3-shadow-id4, idle3-shadow-id5, idle3-shadow-id6, idle3-shadow-id7, idle3-shadow-id8
+	idle3:
 		Length: 28
 		Facings: 1
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
-			blank.png: idle2-facing0-0
+			blank.png: idle3-facing0-0
 				Frames: 0
 				Length: 1
 				Offset: 0,0
 				ZOffset: 0
-			op2_art.bmp: idle2-facing0-1
+			op2_art.bmp: idle3-facing0-1
 				Frames: 4907
 				Length: 1
 				Offset: -9,-15
 				ZOffset: 0
-			blank.png: idle2-facing0-2
+			blank.png: idle3-facing0-2
 				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 				Length: 26
 				Offset: 0,0
 				ZOffset: 0
-	idle2-sprite-id1:
+	idle3-sprite-id1:
 		Length: 28
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -256
 		Combine:
-			blank.png: idle2-facing0-0
+			blank.png: idle3-facing0-0
 				Frames: 0
 				Length: 1
 				Offset: 0,0
 				ZOffset: -256
-			op2_art.bmp: idle2-facing0-1
+			op2_art.bmp: idle3-facing0-1
 				Frames: 1144
 				Length: 1
 				Offset: 46,-13
 				ZOffset: -256
-			op2_art.bmp: idle2-facing0-2
+			op2_art.bmp: idle3-facing0-2
 				Frames: 4908,4909,4910,4911,4912,4913,4914,4915,4916,4917,4918,4919,4920,4921,4922,4923
 				Length: 16
 				Offset: -9,-15
 				ZOffset: -256
-			blank.png: idle2-facing0-18
+			blank.png: idle3-facing0-18
 				Frames: 0,0,0,0,0,0,0,0,0,0
 				Length: 10
 				Offset: 0,0
 				ZOffset: -256
-	idle2-sprite-id2:
+	idle3-sprite-id2:
 		Length: 28
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -512
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72,72
 				Length: 28
 				Offset: -2,-5
 				ZOffset: -512
-	idle2-shadow-id3:
+	idle3-shadow-id3:
 		Length: 28
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -768
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777,1777
 				Length: 28
 				Offset: 35,-33
 				ZOffset: -768
-	idle2-shadow-id4:
+	idle3-shadow-id4:
 		Length: 28
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1024
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776,1776
 				Length: 28
 				Offset: 12,-35
 				ZOffset: -1024
-	idle2-shadow-id5:
+	idle3-shadow-id5:
 		Length: 28
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1280
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775,1775
 				Length: 28
 				Offset: -8,-38
 				ZOffset: -1280
-	idle2-shadow-id6:
+	idle3-shadow-id6:
 		Length: 28
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1536
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774,1774
 				Length: 28
 				Offset: -51,-33
 				ZOffset: -1536
-	idle2-shadow-id7:
+	idle3-shadow-id7:
 		Length: 28
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1792
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773,1773
 				Length: 28
 				Offset: -64,-2
 				ZOffset: -1792
-	idle2-shadow-id8:
+	idle3-shadow-id8:
 		Length: 28
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -2048
 		Combine:
-			op2_art.bmp: idle2-facing0-0
+			op2_art.bmp: idle3-facing0-0
 				Frames: 1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772,1772
 				Length: 28
 				Offset: -63,28
@@ -58557,68 +58980,113 @@ eden-factory-vehicle:
 				ZOffset: 0
 
 plymouth-factory-vehicle:
-	# All sequences: idle, idle-sprite-id1, idle-shadow-id2, idle-shadow-id3, idle-shadow-id4
+	# All sequences: idle, idle-shadow-id1, idle-shadow-id2, idle-shadow-id3
 	idle:
-		Length: 41
+		Length: 1
 		Facings: 1
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
-			blank.png: idle-facing0-0
-				Frames: 0
+			op2_art.bmp: idle-facing0-0
+				Frames: 100
 				Length: 1
-				Offset: 0,0
+				Offset: 0,-9
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-1
-				Frames: 4408,4409,4410,4411,4412,4413,4413,4413,4413,4413,4413,4412,4411,4410,4409
-				Length: 15
-				Offset: -10,-11
-				ZOffset: 0
-			blank.png: idle-facing0-16
-				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-				Length: 25
-				Offset: 0,0
-				ZOffset: 0
-	idle-sprite-id1:
-		Length: 41
+	idle-shadow-id1:
+		Length: 1
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -256
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100
-				Length: 41
-				Offset: 0,-9
+				Frames: 1780
+				Length: 1
+				Offset: -62,-32
 				ZOffset: -256
 	idle-shadow-id2:
-		Length: 41
+		Length: 1
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -512
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780
-				Length: 41
-				Offset: -62,-32
+				Frames: 1779
+				Length: 1
+				Offset: -43,-3
 				ZOffset: -512
 	idle-shadow-id3:
-		Length: 41
+		Length: 1
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -768
 		Combine:
 			op2_art.bmp: idle-facing0-0
+				Frames: 1778
+				Length: 1
+				Offset: -62,29
+				ZOffset: -768
+	# All sequences: idle2, idle2-sprite-id1, idle2-shadow-id2, idle2-shadow-id3, idle2-shadow-id4
+	idle2:
+		Length: 41
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			blank.png: idle2-facing0-0
+				Frames: 0
+				Length: 1
+				Offset: 0,0
+				ZOffset: 0
+			op2_art.bmp: idle2-facing0-1
+				Frames: 4408,4409,4410,4411,4412,4413,4413,4413,4413,4413,4413,4412,4411,4410,4409
+				Length: 15
+				Offset: -10,-11
+				ZOffset: 0
+			blank.png: idle2-facing0-16
+				Frames: 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+				Length: 25
+				Offset: 0,0
+				ZOffset: 0
+	idle2-sprite-id1:
+		Length: 41
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -256
+		Combine:
+			op2_art.bmp: idle2-facing0-0
+				Frames: 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100
+				Length: 41
+				Offset: 0,-9
+				ZOffset: -256
+	idle2-shadow-id2:
+		Length: 41
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -512
+		Combine:
+			op2_art.bmp: idle2-facing0-0
+				Frames: 1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780,1780
+				Length: 41
+				Offset: -62,-32
+				ZOffset: -512
+	idle2-shadow-id3:
+		Length: 41
+		Facings: 1
+		Offset: 0,0
+		ZOffset: -768
+		Combine:
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779,1779
 				Length: 41
 				Offset: -43,-3
 				ZOffset: -768
-	idle-shadow-id4:
+	idle2-shadow-id4:
 		Length: 41
 		Facings: 1
 		Offset: 0,0
 		ZOffset: -1024
 		Combine:
-			op2_art.bmp: idle-facing0-0
+			op2_art.bmp: idle2-facing0-0
 				Frames: 1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778,1778
 				Length: 41
 				Offset: -62,29
