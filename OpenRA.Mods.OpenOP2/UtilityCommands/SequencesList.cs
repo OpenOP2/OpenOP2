@@ -55,5 +55,10 @@
 		/// This will split out an "idle" sequence using just the first frame and do the rest of the animation in "idle2".
 		/// </summary>
 		public bool WithSingleFrameIdle { get; set; }
+
+		/// <summary>
+		/// Reorder the group IDs in this order, from 0 to N
+		/// </summary>
+		public int[] GroupIndexRemapping { get; set; }
 	}
 }
