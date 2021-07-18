@@ -43,27 +43,6 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 			var sb = new StringBuilder();
 
-			foreach (var group in SequencesList.GroupSequenceSets)
-			{
-				sb.AppendLine($"{group.Name}:");
-				sb.AppendLine($"\tActorType: {group.ActorType}");
-				sb.AppendLine($"\tCreateActor: {group.CreateBaseActor}");
-				sb.AppendLine($"\tCreateExampleActor: {group.CreateExampleActor}");
-				sb.AppendLine("\tSets:");
-				foreach (var set in group.Sets)
-				{
-					sb.AppendLine($"\t\tSequence: {set.Sequence}");
-					sb.AppendLine($"\t\t\tStart: {set.Start}");
-					sb.AppendLine($"\t\t\tStartOffset: {set.StartOffset}");
-					sb.AppendLine($"\t\t\tLength: {set.Length}");
-					sb.AppendLine($"\t\t\tOffsetX: {set.OffsetX}");
-					sb.AppendLine($"\t\t\tOffsetY: {set.OffsetY}");
-					sb.AppendLine($"\t\t\tOffsetZ: {set.OffsetZ}");
-				}
-
-				sb.AppendLine(string.Empty);
-			}
-
 			try
 			{
 				using var sw = new StreamWriter(OutputFilename);

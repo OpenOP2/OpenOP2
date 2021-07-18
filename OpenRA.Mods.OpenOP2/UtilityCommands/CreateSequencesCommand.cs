@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using OpenRA.Mods.OpenOP2.FileSystem;
 using OpenRA.Primitives;
 
@@ -174,6 +175,13 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					groupSequence.WithBlankIdle = withBlankIdle == "true";
 				}
 
+				var withSingleFrameIdle = groupNodes.FirstOrDefault(x => x.Key == "WithSingleFrameIdle")?.Value?.Value
+					?.ToString().ToLowerInvariant();
+				if (!string.IsNullOrWhiteSpace(withSingleFrameIdle))
+				{
+					groupSequence.WithSingleFrameIdle = withSingleFrameIdle == "true";
+				}
+
 				var setsNode = group.Value.Nodes.First(x => x.Key == "Sets").Value.Nodes;
 				var sets = new List<GroupSequenceSet>();
 				foreach (var set in setsNode)
@@ -210,6 +218,11 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 						groupSequenceSet.StartOffset = startOffset;
 					}
 
+					if (int.TryParse(setNodes.FirstOrDefault(x => x.Key == "Tick")?.Value?.Value?.ToString(), out var tick))
+					{
+						groupSequenceSet.Tick = tick;
+					}
+
 					sets.Add(groupSequenceSet);
 				}
 
@@ -218,6 +231,42 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			}
 
 			return groupSequences;
+		}
+
+		private GroupSequenceSet[] AddSingleFrameIdle(GroupSequenceSet[] groupSequenceSets)
+		{
+			const string idleString = "^idle[2-9]*$";
+			var regex = new Regex(idleString);
+			var originalIdle = groupSequenceSets.FirstOrDefault(t => t.Sequence == "idle");
+			if (originalIdle == null)
+			{
+				return groupSequenceSets;
+			}
+
+			var newIdle = new GroupSequenceSet()
+			{
+				Length = originalIdle.Length,
+				Sequence = originalIdle.Sequence,
+				Start = originalIdle.Start,
+				Tick = originalIdle.Tick,
+				OffsetX = originalIdle.OffsetX,
+				OffsetY = originalIdle.OffsetY,
+				OffsetZ = originalIdle.OffsetZ,
+				StartOffset = originalIdle.StartOffset,
+			};
+
+			var idleSets = groupSequenceSets.Where(t => regex.IsMatch(t.Sequence)).OrderBy(x => x.Sequence);
+			var nonIdleSets = groupSequenceSets.Where(x => !idleSets.Contains(x));
+			var renumberedIdleSets = idleSets.Select((x, ind) =>
+			{
+				x.Sequence = "idle" + (ind + 2).ToString();
+				return x;
+			}).ToList();
+
+			var result = new List<GroupSequenceSet>() { newIdle };
+			result.AddRange(renumberedIdleSets);
+			result.AddRange(nonIdleSets);
+			return result.ToArray();
 		}
 
 		private void WriteSequences()
@@ -235,7 +284,14 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			foreach (var groupSequence in groupSequences)
 			{
 				sb.AppendLine($"{groupSequence.Name}:");
-				foreach (var groupSequenceSet in groupSequence.Sets)
+
+				var sets = groupSequence.Sets;
+				if (groupSequence.WithSingleFrameIdle)
+				{
+					sets = AddSingleFrameIdle(sets);
+				}
+
+				foreach (var groupSequenceSet in sets)
 				{
 					List<ImageGroup> groups;
 					if (groupSequenceSet.StartOffset > 0)
@@ -259,6 +315,11 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 					var typeGroupedFrames = new List<SequenceSet>();
 					var frameCount = groups.Max(x => x.FrameCount);
+
+					if (groupSequenceSet.Sequence == "idle" && groupSequence.WithSingleFrameIdle)
+					{
+						frameCount = 1;
+					}
 
 					for (var frameIndex = 0; frameIndex < frameCount; frameIndex++)
 					{
@@ -453,7 +514,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 							}
 						}
 
-						if (groupSequence.WithBlankIdle && groupSequenceSet == groupSequence.Sets.First())
+						if (groupSequence.WithBlankIdle && groupSequenceSet == sets.First())
 						{
 							sb.AppendLine("\tidle:");
 							sb.AppendLine("\t\tLength: 1");
@@ -476,6 +537,11 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 						else
 						{
 							sb.AppendLine($"\t\tZOffset: {zIndex}");
+						}
+
+						if (groupSequenceSet.Tick.HasValue)
+						{
+							sb.AppendLine($"\t\tTick: {groupSequenceSet.Tick.Value}");
 						}
 
 						sb.AppendLine($"\t\tCombine:");
