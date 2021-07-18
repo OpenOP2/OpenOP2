@@ -1,0 +1,8 @@
+Put the lines below in a file named the same as your image but with the .yaml extension i.e.: "eden-robo-dozer-icon.yaml" for "eden-robo-dozer-icon.png".
+Then run the included batch file.
+
+FrameSize: 64,48
+FrameAmount: 1
+Offset: 0,0
+Author: 
+License: CC-BY-3.0-US

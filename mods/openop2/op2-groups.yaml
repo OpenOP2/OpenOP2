@@ -850,6 +850,7 @@ eden-smelter-common:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1855
@@ -882,6 +883,7 @@ plymouth-smelter-common:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1859
