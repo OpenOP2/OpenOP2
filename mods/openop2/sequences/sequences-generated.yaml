@@ -1296,56 +1296,10 @@ eden-robo-dozer:
 				Length: 95
 				Offset: 0,0
 				ZOffset: -1280
-	# All sequences: icon, icon-sprite-id1, icon-shadow-id2, icon-shadow-id3
-	icon:
-		Length: 3
-		Facings: 1
+	icon: eden-robo-dozer-icon.png
+		Start: 0
+		Length: 1
 		Offset: 0,0
-		ZOffset: 0
-		Combine:
-			op2_art.bmp: icon-facing0-0
-				Frames: 2917
-				Length: 1
-				Offset: -3,10
-				ZOffset: 0
-			op2_art.bmp: icon-facing0-1
-				Frames: 2918,2919
-				Length: 2
-				Offset: -2,10
-				ZOffset: 0
-	icon-sprite-id1:
-		Length: 3
-		Facings: 1
-		Offset: 0,0
-		ZOffset: -256
-		Combine:
-			op2_art.bmp: icon-facing0-0
-				Frames: 2916,2916,2916
-				Length: 3
-				Offset: 2,-1
-				ZOffset: -256
-	icon-shadow-id2:
-		Length: 3
-		Facings: 1
-		Offset: 0,0
-		ZOffset: -512
-		Combine:
-			op2_art.bmp: icon-facing0-0
-				Frames: 4973,4973,4973
-				Length: 3
-				Offset: -8,-2
-				ZOffset: -512
-	icon-shadow-id3:
-		Length: 3
-		Facings: 1
-		Offset: 0,0
-		ZOffset: -768
-		Combine:
-			op2_art.bmp: icon-facing0-0
-				Frames: 4972,4972,4972
-				Length: 3
-				Offset: 7,-2
-				ZOffset: -768
 
 plymouth-robo-dozer:
 	# All sequences: idle, idle-sprite-id1, idle-shadow-id2, idle-shadow-id3, idle-shadow-id4
