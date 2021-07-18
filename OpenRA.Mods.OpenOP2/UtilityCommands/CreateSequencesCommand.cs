@@ -239,42 +239,6 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			return groupSequences;
 		}
 
-		private GroupSequenceSet[] AddSingleFrameIdle(GroupSequenceSet[] groupSequenceSets)
-		{
-			const string idleString = "^idle[2-9]*$";
-			var regex = new Regex(idleString);
-			var originalIdle = groupSequenceSets.FirstOrDefault(t => t.Sequence == "idle");
-			if (originalIdle == null)
-			{
-				return groupSequenceSets;
-			}
-
-			var newIdle = new GroupSequenceSet()
-			{
-				Length = originalIdle.Length,
-				Sequence = originalIdle.Sequence,
-				Start = originalIdle.Start,
-				Tick = originalIdle.Tick,
-				OffsetX = originalIdle.OffsetX,
-				OffsetY = originalIdle.OffsetY,
-				OffsetZ = originalIdle.OffsetZ,
-				StartOffset = originalIdle.StartOffset,
-			};
-
-			var idleSets = groupSequenceSets.Where(t => regex.IsMatch(t.Sequence)).OrderBy(x => x.Sequence);
-			var nonIdleSets = groupSequenceSets.Where(x => !idleSets.Contains(x));
-			var renumberedIdleSets = idleSets.Select((x, ind) =>
-			{
-				x.Sequence = "idle" + (ind + 2).ToString();
-				return x;
-			}).ToList();
-
-			var result = new List<GroupSequenceSet>() { newIdle };
-			result.AddRange(renumberedIdleSets);
-			result.AddRange(nonIdleSets);
-			return result.ToArray();
-		}
-
 		private void WriteSequences()
 		{
 			// Load from yaml
@@ -307,148 +271,22 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 						continue;
 					}
 
-					List<ImageGroup> groups;
-					if (groupSequenceSet.StartOffset > 0)
-					{
-						groups = prtFile.Groups
-							.Skip(groupSequenceSet.Start + groupSequenceSet.StartOffset)
-							.Take(groupSequenceSet.Length - groupSequenceSet.StartOffset)
-							.ToList();
-
-						groups.AddRange(prtFile.Groups
-							.Skip(groupSequenceSet.Start)
-							.Take(groupSequenceSet.StartOffset));
-					}
-					else
-					{
-						groups = prtFile.Groups
-							.Skip(groupSequenceSet.Start)
-							.Take(groupSequenceSet.Length)
-							.ToList();
-					}
-
-					var typeGroupedFrames = new List<SequenceSet>();
-					var frameCount = groups.Max(x => x.FrameCount);
-
-					if (groupSequenceSet.Sequence == "idle" && groupSequence.WithSingleFrameIdle)
-					{
-						frameCount = 1;
-					}
-
-					for (var frameIndex = 0; frameIndex < frameCount; frameIndex++)
-					{
-						var groupIndex = 0;
-						foreach (var group in groups)
-						{
-							Op2Frame frame;
-							if (frameIndex >= group.Frames.Length)
-							{
-								// Hack it - just repeat the first one
-								frame = group.Frames[0];
-							}
-							else
-							{
-								frame = group.Frames[frameIndex];
-							}
-
-							var pics = frame.Pictures.OrderBy(x => x.PicOrder);
-							foreach (var pic in pics)
-							{
-								var rawFrame = prtFile.ImageHeader[pic.ImgNumber];
-								var halfWidth = (int)Math.Ceiling(rawFrame.PaddedWidth / 2.0);
-								var halfHeight = (int)Math.Ceiling(rawFrame.Height / 2.0);
-								var relX = (halfWidth - group.CenterX) + pic.PosX;
-								var relY = (halfHeight - group.CenterY) + pic.PosY;
-
-								var matchingSequenceFrames = typeGroupedFrames
-									.Where(x => x.FrameType == rawFrame.ImageType &&
-									            x.Palette == rawFrame.Palette)
-									.ToList();
-
-								var setFrame = false;
-								foreach (var seqFrame in matchingSequenceFrames)
-								{
-									if (seqFrame.AnimationFacings[groupIndex].Frames[frameIndex] == null)
-									{
-										var animation = new AnimationFrame()
-										{
-											Frame = pic.ImgNumber,
-											OffsetX = relX,
-											OffsetY = relY,
-										};
-
-										var ourGroup = seqFrame.AnimationFacings[groupIndex];
-										ourGroup.Frames[frameIndex] = animation;
-										setFrame = true;
-										break;
-									}
-								}
-
-								if (!setFrame)
-								{
-									// Need a new frameset for this image type and palette
-									var seqFrame = new SequenceSet
-									{
-										Name = groupSequenceSet.Sequence,
-										AnimationFacings = new AnimationFacing[groupSequenceSet.Length],
-										FrameType = rawFrame.ImageType,
-										Palette = rawFrame.Palette,
-										PicOrder = pic.PicOrder,
-										OffsetX = groupSequenceSet.OffsetX,
-										OffsetY = groupSequenceSet.OffsetY,
-									};
-
-									for (var i = 0; i < groupSequenceSet.Length; i++)
-									{
-										seqFrame.AnimationFacings[i] = new AnimationFacing
-										{
-											Frames = new AnimationFrame[frameCount],
-										};
-									}
-
-									// Populate it too
-									var animation = new AnimationFrame()
-									{
-										Frame = pic.ImgNumber,
-										OffsetX = relX,
-										OffsetY = relY,
-									};
-
-									var ourGroup = seqFrame.AnimationFacings[groupIndex];
-									ourGroup.Frames[frameIndex] = animation;
-
-									typeGroupedFrames.Add(seqFrame);
-								}
-							}
-
-							groupIndex++;
-						}
-					}
-
-					typeGroupedFrames = typeGroupedFrames.OrderByDescending(x => x.PicOrder).ToList();
-
-					// Put the non-shadow frames before the shadow frames
-					var shadowFrames =
-						typeGroupedFrames.Where(x => x.FrameType == 4 || x.FrameType == 5);
-					var nonShadowFrames =
-						typeGroupedFrames.Where(x => x.FrameType != 4 && x.FrameType != 5);
-
-					typeGroupedFrames = nonShadowFrames.ToList();
-					typeGroupedFrames.AddRange(shadowFrames);
-
-					Func<int, string> getTypeString = (inFrameType) =>
-					{
-						return inFrameType switch
-						{
-							1 => "sprite",
-							4 => "shadow",
-							5 => "shadow",
-							_ => "unknown"
-						};
-					};
+					var typeGroupedFrames = GetTypedGroupFrames(groupSequence, groupSequenceSet, out var frameCount);
 
 					Func<SequenceSet, int, string> getSequenceName = (inGroup, ind) =>
 					{
+						Func<int, string> getTypeString = (inFrameType) =>
+						{
+							return inFrameType switch
+							{
+								1 => "sprite",
+								4 => "shadow",
+								5 => "shadow",
+								_ => "unknown"
+							};
+						};
+
+						//////////////////////
 						var seqName = $"{groupSequenceSet.Sequence}-{getTypeString(inGroup.FrameType)}" + (ind == 0 ? string.Empty : $"-id{ind}");
 						if (inGroup.FrameType == 1 && ind == 0)
 						{
@@ -466,67 +304,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					foreach (var typeGroupedFrame in typeGroupedFrames)
 					{
 						var sequenceName = allSequenceNames[typeIndex];
-						var outputSequence = new OutputSequence()
-						{
-							Name = sequenceName,
-						};
-
-						for (var facingIndex = 0; facingIndex < groupSequenceSet.Length; facingIndex++)
-						{
-							var framesArray = typeGroupedFrame.GetFacingArray(facingIndex);
-							var animationGroup = typeGroupedFrame.AnimationFacings[facingIndex];
-							var facingFrameCount = animationGroup.Frames.Length;
-							for (var frameIndex = 0; frameIndex < facingFrameCount; frameIndex++)
-							{
-								var frame = framesArray[frameIndex];
-
-								var isBlank = frame == null;
-								var innerSequenceName = $"{groupSequenceSet.Sequence}-facing{facingIndex}-{frameIndex}";
-
-								Func<OutputSequenceFrameset> getNewFrameset = () =>
-								{
-									var newFrameset = new OutputSequenceFrameset()
-									{
-										Name = innerSequenceName,
-										IsBlank = isBlank,
-									};
-
-									if (frame != null)
-									{
-										newFrameset.OffsetX = frame.OffsetX;
-										newFrameset.OffsetY = frame.OffsetY;
-										newFrameset.Frames.Add(frame.Frame);
-									}
-									else
-									{
-										newFrameset.Frames.Add(0);
-									}
-
-									return newFrameset;
-								};
-
-								var outputFrames = outputSequence.Framesets;
-								var lastFrame = outputFrames.LastOrDefault();
-								if (lastFrame == null)
-								{
-									outputSequence.Framesets.Add(getNewFrameset());
-								}
-								else
-								{
-									if ((isBlank && lastFrame.IsBlank) ||
-										(!isBlank && !lastFrame.IsBlank && lastFrame.OffsetX == frame.OffsetX && lastFrame.OffsetY == frame.OffsetY))
-									{
-										// It's a match, add our frame
-										lastFrame.Frames.Add(isBlank ? 0 : frame.Frame);
-									}
-									else
-									{
-										// It's not a match; add a new one
-										outputSequence.Framesets.Add(getNewFrameset());
-									}
-								}
-							}
-						}
+						var outputSequence = GetOutputSequence(sequenceName, groupSequenceSet, typeGroupedFrame);
 
 						if (groupSequence.WithBlankIdle && groupSequenceSet == sets.First())
 						{
@@ -652,6 +430,258 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 			using var sw = new StreamWriter(OutputFilename);
 			sw.Write(sb.ToString());
+		}
+
+		private GroupSequenceSet[] AddSingleFrameIdle(GroupSequenceSet[] groupSequenceSets)
+		{
+			const string idleString = "^idle[2-9]*$";
+			var regex = new Regex(idleString);
+			var originalIdle = groupSequenceSets.FirstOrDefault(t => t.Sequence == "idle");
+			if (originalIdle == null)
+			{
+				return groupSequenceSets;
+			}
+
+			var newIdle = new GroupSequenceSet()
+			{
+				Length = originalIdle.Length,
+				Sequence = originalIdle.Sequence,
+				Start = originalIdle.Start,
+				Tick = originalIdle.Tick,
+				OffsetX = originalIdle.OffsetX,
+				OffsetY = originalIdle.OffsetY,
+				OffsetZ = originalIdle.OffsetZ,
+				StartOffset = originalIdle.StartOffset,
+			};
+
+			var idleSets = groupSequenceSets.Where(t => regex.IsMatch(t.Sequence)).OrderBy(x => x.Sequence);
+			var nonIdleSets = groupSequenceSets.Where(x => !idleSets.Contains(x));
+			var renumberedIdleSets = idleSets.Select((x, ind) =>
+			{
+				x.Sequence = "idle" + (ind + 2).ToString();
+				return x;
+			}).ToList();
+
+			var result = new List<GroupSequenceSet>() { newIdle };
+			result.AddRange(renumberedIdleSets);
+			result.AddRange(nonIdleSets);
+			return result.ToArray();
+		}
+
+		/// <summary>
+		/// Further specialize output sequences by shared offsets
+		/// </summary>
+		/// <param name="sequenceName"></param>
+		/// <param name="groupSequenceSet"></param>
+		/// <param name="typeGroupedFrame"></param>
+		/// <returns></returns>
+		private OutputSequence GetOutputSequence(string sequenceName, GroupSequenceSet groupSequenceSet, SequenceSet typeGroupedFrame)
+		{
+			var outputSequence = new OutputSequence()
+			{
+				Name = sequenceName,
+			};
+
+			for (var facingIndex = 0; facingIndex < groupSequenceSet.Length; facingIndex++)
+			{
+				var framesArray = typeGroupedFrame.GetFacingArray(facingIndex);
+				var animationGroup = typeGroupedFrame.AnimationFacings[facingIndex];
+				var facingFrameCount = animationGroup.Frames.Length;
+				for (var frameIndex = 0; frameIndex < facingFrameCount; frameIndex++)
+				{
+					var frame = framesArray[frameIndex];
+
+					var isBlank = frame == null;
+					var innerSequenceName = $"{groupSequenceSet.Sequence}-facing{facingIndex}-{frameIndex}";
+
+					Func<OutputSequenceFrameset> getNewFrameset = () =>
+					{
+						var newFrameset = new OutputSequenceFrameset()
+						{
+							Name = innerSequenceName,
+							IsBlank = isBlank,
+						};
+
+						if (frame != null)
+						{
+							newFrameset.OffsetX = frame.OffsetX;
+							newFrameset.OffsetY = frame.OffsetY;
+							newFrameset.Frames.Add(frame.Frame);
+						}
+						else
+						{
+							newFrameset.Frames.Add(0);
+						}
+
+						return newFrameset;
+					};
+
+					var outputFrames = outputSequence.Framesets;
+					var lastFrame = outputFrames.LastOrDefault();
+					if (lastFrame == null)
+					{
+						outputSequence.Framesets.Add(getNewFrameset());
+					}
+					else
+					{
+						if ((isBlank && lastFrame.IsBlank) ||
+						    (!isBlank && !lastFrame.IsBlank && lastFrame.OffsetX == frame.OffsetX && lastFrame.OffsetY == frame.OffsetY))
+						{
+							// It's a match, add our frame
+							lastFrame.Frames.Add(isBlank ? 0 : frame.Frame);
+						}
+						else
+						{
+							// It's not a match; add a new one
+							outputSequence.Framesets.Add(getNewFrameset());
+						}
+					}
+				}
+			}
+
+			return outputSequence;
+		}
+
+		/// <summary>
+		/// The frame types of each picture for each facing might not be in the same order for all facings, nor the same number of pictures for each frame type per facing.
+		/// Create "buckets" for each frame type and deposit each picture into each bucket, expanding the number of buckets as necessary.
+		/// </summary>
+		/// <param name="groupSequence"></param>
+		/// <param name="groupSequenceSet"></param>
+		/// <param name="frameCount"></param>
+		/// <returns></returns>
+		private List<SequenceSet> GetTypedGroupFrames(GroupSequence groupSequence, GroupSequenceSet groupSequenceSet, out int frameCount)
+		{
+			var typeGroupedFrames = new List<SequenceSet>();
+
+			List<ImageGroup> groups;
+			if (groupSequenceSet.StartOffset > 0)
+			{
+				groups = prtFile.Groups
+					.Skip(groupSequenceSet.Start + groupSequenceSet.StartOffset)
+					.Take(groupSequenceSet.Length - groupSequenceSet.StartOffset)
+					.ToList();
+
+				groups.AddRange(prtFile.Groups
+					.Skip(groupSequenceSet.Start)
+					.Take(groupSequenceSet.StartOffset));
+			}
+			else
+			{
+				groups = prtFile.Groups
+					.Skip(groupSequenceSet.Start)
+					.Take(groupSequenceSet.Length)
+					.ToList();
+			}
+
+			frameCount = groups.Max(x => x.FrameCount);
+
+			if (groupSequenceSet.Sequence == "idle" && groupSequence.WithSingleFrameIdle)
+			{
+				frameCount = 1;
+			}
+
+			for (var frameIndex = 0; frameIndex < frameCount; frameIndex++)
+			{
+				var groupIndex = 0;
+				foreach (var group in groups)
+				{
+					Op2Frame frame;
+					if (frameIndex >= group.Frames.Length)
+					{
+						// Hack it - just repeat the first one
+						frame = group.Frames[0];
+					}
+					else
+					{
+						frame = group.Frames[frameIndex];
+					}
+
+					var pics = frame.Pictures.OrderBy(x => x.PicOrder);
+					foreach (var pic in pics)
+					{
+						var rawFrame = prtFile.ImageHeader[pic.ImgNumber];
+						var halfWidth = (int)Math.Ceiling(rawFrame.PaddedWidth / 2.0);
+						var halfHeight = (int)Math.Ceiling(rawFrame.Height / 2.0);
+						var relX = (halfWidth - group.CenterX) + pic.PosX;
+						var relY = (halfHeight - group.CenterY) + pic.PosY;
+
+						var matchingSequenceFrames = typeGroupedFrames
+							.Where(x => x.FrameType == rawFrame.ImageType &&
+							            x.Palette == rawFrame.Palette)
+							.ToList();
+
+						var setFrame = false;
+						foreach (var seqFrame in matchingSequenceFrames)
+						{
+							if (seqFrame.AnimationFacings[groupIndex].Frames[frameIndex] == null)
+							{
+								var animation = new AnimationFrame()
+								{
+									Frame = pic.ImgNumber,
+									OffsetX = relX,
+									OffsetY = relY,
+								};
+
+								var ourGroup = seqFrame.AnimationFacings[groupIndex];
+								ourGroup.Frames[frameIndex] = animation;
+								setFrame = true;
+								break;
+							}
+						}
+
+						if (!setFrame)
+						{
+							// Need a new frameset for this image type and palette
+							var seqFrame = new SequenceSet
+							{
+								Name = groupSequenceSet.Sequence,
+								AnimationFacings = new AnimationFacing[groupSequenceSet.Length],
+								FrameType = rawFrame.ImageType,
+								Palette = rawFrame.Palette,
+								PicOrder = pic.PicOrder,
+								OffsetX = groupSequenceSet.OffsetX,
+								OffsetY = groupSequenceSet.OffsetY,
+							};
+
+							for (var i = 0; i < groupSequenceSet.Length; i++)
+							{
+								seqFrame.AnimationFacings[i] = new AnimationFacing
+								{
+									Frames = new AnimationFrame[frameCount],
+								};
+							}
+
+							// Populate it too
+							var animation = new AnimationFrame()
+							{
+								Frame = pic.ImgNumber,
+								OffsetX = relX,
+								OffsetY = relY,
+							};
+
+							var ourGroup = seqFrame.AnimationFacings[groupIndex];
+							ourGroup.Frames[frameIndex] = animation;
+
+							typeGroupedFrames.Add(seqFrame);
+						}
+					}
+
+					groupIndex++;
+				}
+			}
+
+			typeGroupedFrames = typeGroupedFrames.OrderByDescending(x => x.PicOrder).ToList();
+
+			// Put the non-shadow frames before the shadow frames
+			var shadowFrames =
+				typeGroupedFrames.Where(x => x.FrameType == 4 || x.FrameType == 5);
+			var nonShadowFrames =
+				typeGroupedFrames.Where(x => x.FrameType != 4 && x.FrameType != 5);
+
+			typeGroupedFrames = nonShadowFrames.ToList();
+			typeGroupedFrames.AddRange(shadowFrames);
+			return typeGroupedFrames;
 		}
 
 		private void WriteActors()

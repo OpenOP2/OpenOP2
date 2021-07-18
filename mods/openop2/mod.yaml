@@ -22,6 +22,7 @@ Packages:
 	~music.zip
 	~voices.zip
 	openop2|bits
+	openop2|bits/icons
 	openop2|uibits
 
 MapFolders:
