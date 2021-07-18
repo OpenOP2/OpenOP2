@@ -51,7 +51,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			resourceLayer.AddResource(resourceType, deployLocation, Info.Amount);
 		}
 
-		public void RemovedFromWorld(Actor self)
+		void INotifyRemovedFromWorld.RemovedFromWorld(Actor self)
 		{
 			resourceLayer.Destroy(deployLocation);
 		}
