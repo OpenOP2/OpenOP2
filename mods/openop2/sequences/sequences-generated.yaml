@@ -6960,9 +6960,9 @@ eden-earthworker:
 				Offset: 0,0
 				ZOffset: -256
 			op2_art.bmp: idle-facing0-2
-				Frames: 4209,4209
+				Frames: 4208,4208
 				Length: 2
-				Offset: -3,9
+				Offset: 1,7
 				ZOffset: -256
 			blank.png: idle-facing1-0
 				Frames: 0,0
@@ -6980,9 +6980,9 @@ eden-earthworker:
 				Offset: 0,0
 				ZOffset: -256
 			op2_art.bmp: idle-facing2-2
-				Frames: 4211,4211
+				Frames: 4213,4213
 				Length: 2
-				Offset: 1,-2
+				Offset: 6,4
 				ZOffset: -256
 			blank.png: idle-facing3-0
 				Frames: 0,0
@@ -6990,9 +6990,9 @@ eden-earthworker:
 				Offset: 0,0
 				ZOffset: -256
 			op2_art.bmp: idle-facing3-2
-				Frames: 4212,4212
+				Frames: 4214,4214
 				Length: 2
-				Offset: -2,3
+				Offset: 7,4
 				ZOffset: -256
 			blank.png: idle-facing4-0
 				Frames: 0,0
@@ -7000,9 +7000,9 @@ eden-earthworker:
 				Offset: 0,0
 				ZOffset: -256
 			op2_art.bmp: idle-facing4-2
-				Frames: 4213,4213
+				Frames: 4212,4212
 				Length: 2
-				Offset: 6,4
+				Offset: -2,3
 				ZOffset: -256
 			blank.png: idle-facing5-0
 				Frames: 0,0
@@ -7010,9 +7010,9 @@ eden-earthworker:
 				Offset: 0,0
 				ZOffset: -256
 			op2_art.bmp: idle-facing5-2
-				Frames: 4214,4214
+				Frames: 4211,4211
 				Length: 2
-				Offset: 7,4
+				Offset: 1,-2
 				ZOffset: -256
 			blank.png: idle-facing6-0
 				Frames: 0
@@ -7035,9 +7035,9 @@ eden-earthworker:
 				Offset: 0,0
 				ZOffset: -256
 			op2_art.bmp: idle-facing7-2
-				Frames: 4208,4208
+				Frames: 4209,4209
 				Length: 2
-				Offset: 1,7
+				Offset: -3,9
 				ZOffset: -256
 	idle-sprite-id2:
 		Length: 4
@@ -7046,9 +7046,9 @@ eden-earthworker:
 		ZOffset: -512
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 3591,3591,3591,3591
+				Frames: 3599,3599,3599,3599
 				Length: 4
-				Offset: 8,-3
+				Offset: 7,-7
 				ZOffset: -512
 			op2_art.bmp: idle-facing1-0
 				Frames: 3607,3607,3607,3607
@@ -7056,24 +7056,24 @@ eden-earthworker:
 				Offset: 1,-10
 				ZOffset: -512
 			op2_art.bmp: idle-facing2-0
-				Frames: 3639,3639,3639,3639
-				Length: 4
-				Offset: -6,-1
-				ZOffset: -512
-			op2_art.bmp: idle-facing3-0
-				Frames: 3631,3631,3631,3631
-				Length: 4
-				Offset: -1,2
-				ZOffset: -512
-			op2_art.bmp: idle-facing4-0
 				Frames: 3623,3623,3623,3623
 				Length: 4
 				Offset: -8,-4
 				ZOffset: -512
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: idle-facing3-0
 				Frames: 3615,3615,3615,3615
 				Length: 4
 				Offset: -4,-6
+				ZOffset: -512
+			op2_art.bmp: idle-facing4-0
+				Frames: 3631,3631,3631,3631
+				Length: 4
+				Offset: -1,2
+				ZOffset: -512
+			op2_art.bmp: idle-facing5-0
+				Frames: 3639,3639,3639,3639
+				Length: 4
+				Offset: -6,-1
 				ZOffset: -512
 			op2_art.bmp: idle-facing6-0
 				Frames: 3583,3583
@@ -7086,9 +7086,9 @@ eden-earthworker:
 				Offset: -5,1
 				ZOffset: -512
 			op2_art.bmp: idle-facing7-0
-				Frames: 3599,3599,3599,3599
+				Frames: 3591,3591,3591,3591
 				Length: 4
-				Offset: 7,-7
+				Offset: 8,-3
 				ZOffset: -512
 	idle-sprite-id3:
 		Length: 4
@@ -7097,9 +7097,9 @@ eden-earthworker:
 		ZOffset: -768
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 3590,3590,3590,3590
+				Frames: 3598,3598,3598,3598
 				Length: 4
-				Offset: -3,4
+				Offset: 1,3
 				ZOffset: -768
 			op2_art.bmp: idle-facing1-0
 				Frames: 3606,3606,3606,3606
@@ -7107,24 +7107,24 @@ eden-earthworker:
 				Offset: 3,5
 				ZOffset: -768
 			op2_art.bmp: idle-facing2-0
-				Frames: 3638,3638,3638,3638
-				Length: 4
-				Offset: 0,-6
-				ZOffset: -768
-			op2_art.bmp: idle-facing3-0
-				Frames: 3630,3630,3630,3630
-				Length: 4
-				Offset: -3,-3
-				ZOffset: -768
-			op2_art.bmp: idle-facing4-0
 				Frames: 3622,3622,3622,3622
 				Length: 4
 				Offset: 8,-1
 				ZOffset: -768
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: idle-facing3-0
 				Frames: 3614,3614,3614,3614
 				Length: 4
 				Offset: 8,2
+				ZOffset: -768
+			op2_art.bmp: idle-facing4-0
+				Frames: 3630,3630,3630,3630
+				Length: 4
+				Offset: -3,-3
+				ZOffset: -768
+			op2_art.bmp: idle-facing5-0
+				Frames: 3638,3638,3638,3638
+				Length: 4
+				Offset: 0,-6
 				ZOffset: -768
 			op2_art.bmp: idle-facing6-0
 				Frames: 3582,3582
@@ -7137,9 +7137,9 @@ eden-earthworker:
 				Offset: -4,-4
 				ZOffset: -768
 			op2_art.bmp: idle-facing7-0
-				Frames: 3598,3598,3598,3598
+				Frames: 3590,3590,3590,3590
 				Length: 4
-				Offset: 1,3
+				Offset: -3,4
 				ZOffset: -768
 	idle-shadow-id4:
 		Length: 4
@@ -7148,9 +7148,9 @@ eden-earthworker:
 		ZOffset: -1024
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 4579,4579,4579,4579
+				Frames: 4578,4578,4578,4578
 				Length: 4
-				Offset: -2,2
+				Offset: 0,0
 				ZOffset: -1024
 			op2_art.bmp: idle-facing1-0
 				Frames: 4580,4580,4580,4580
@@ -7158,24 +7158,24 @@ eden-earthworker:
 				Offset: -1,-1
 				ZOffset: -1024
 			op2_art.bmp: idle-facing2-0
-				Frames: 4581,4581,4581,4581
-				Length: 4
-				Offset: -1,-7
-				ZOffset: -1024
-			op2_art.bmp: idle-facing3-0
-				Frames: 4582,4582,4582,4582
-				Length: 4
-				Offset: -1,-5
-				ZOffset: -1024
-			op2_art.bmp: idle-facing4-0
 				Frames: 4583,4583,4583,4583
 				Length: 4
 				Offset: 0,-4
 				ZOffset: -1024
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: idle-facing3-0
 				Frames: 4584,4584,4584,4584
 				Length: 4
 				Offset: 0,0
+				ZOffset: -1024
+			op2_art.bmp: idle-facing4-0
+				Frames: 4582,4582,4582,4582
+				Length: 4
+				Offset: -1,-5
+				ZOffset: -1024
+			op2_art.bmp: idle-facing5-0
+				Frames: 4581,4581,4581,4581
+				Length: 4
+				Offset: -1,-7
 				ZOffset: -1024
 			op2_art.bmp: idle-facing6-0
 				Frames: 4577,4577,4577,4577
@@ -7183,9 +7183,9 @@ eden-earthworker:
 				Offset: -1,-2
 				ZOffset: -1024
 			op2_art.bmp: idle-facing7-0
-				Frames: 4578,4578,4578,4578
+				Frames: 4579,4579,4579,4579
 				Length: 4
-				Offset: 0,0
+				Offset: -2,2
 				ZOffset: -1024
 	idle-shadow-id5:
 		Length: 4
@@ -7194,9 +7194,9 @@ eden-earthworker:
 		ZOffset: -1280
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 4987,4987,4987,4987
+				Frames: 4994,4994,4994,4994
 				Length: 4
-				Offset: -3,-5
+				Offset: -3,-6
 				ZOffset: -1280
 			op2_art.bmp: idle-facing1-0
 				Frames: 5000,5000,5000,5000
@@ -7204,24 +7204,24 @@ eden-earthworker:
 				Offset: -1,-7
 				ZOffset: -1280
 			op2_art.bmp: idle-facing2-0
-				Frames: 5021,5021,5021,5021
-				Length: 4
-				Offset: -2,3
-				ZOffset: -1280
-			op2_art.bmp: idle-facing3-0
-				Frames: 5028,5028,5028,5028
-				Length: 4
-				Offset: -2,2
-				ZOffset: -1280
-			op2_art.bmp: idle-facing4-0
 				Frames: 5014,5014,5014,5014
 				Length: 4
 				Offset: -3,-5
 				ZOffset: -1280
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: idle-facing3-0
 				Frames: 5007,5007,5007,5007
 				Length: 4
 				Offset: -2,-3
+				ZOffset: -1280
+			op2_art.bmp: idle-facing4-0
+				Frames: 5028,5028,5028,5028
+				Length: 4
+				Offset: -2,2
+				ZOffset: -1280
+			op2_art.bmp: idle-facing5-0
+				Frames: 5021,5021,5021,5021
+				Length: 4
+				Offset: -2,3
 				ZOffset: -1280
 			op2_art.bmp: idle-facing6-0
 				Frames: 4980,4980,4980,4980
@@ -7229,9 +7229,9 @@ eden-earthworker:
 				Offset: -3,0
 				ZOffset: -1280
 			op2_art.bmp: idle-facing7-0
-				Frames: 4994,4994,4994,4994
+				Frames: 4987,4987,4987,4987
 				Length: 4
-				Offset: -3,-6
+				Offset: -3,-5
 				ZOffset: -1280
 	# All sequences: idle2, idle2-shadow-id1
 	idle2:
@@ -7241,9 +7241,9 @@ eden-earthworker:
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: idle2-facing0-0
-				Frames: 2039
+				Frames: 2038
 				Length: 1
-				Offset: 2,-1
+				Offset: 0,-1
 				ZOffset: 0
 			op2_art.bmp: idle2-facing1-0
 				Frames: 2040
@@ -7251,24 +7251,24 @@ eden-earthworker:
 				Offset: 4,0
 				ZOffset: 0
 			op2_art.bmp: idle2-facing2-0
-				Frames: 2041
-				Length: 1
-				Offset: 2,0
-				ZOffset: 0
-			op2_art.bmp: idle2-facing3-0
-				Frames: 2042
-				Length: 1
-				Offset: 1,-3
-				ZOffset: 0
-			op2_art.bmp: idle2-facing4-0
 				Frames: 2043
 				Length: 1
 				Offset: -1,-3
 				ZOffset: 0
-			op2_art.bmp: idle2-facing5-0
+			op2_art.bmp: idle2-facing3-0
 				Frames: 2044
 				Length: 1
 				Offset: -1,-1
+				ZOffset: 0
+			op2_art.bmp: idle2-facing4-0
+				Frames: 2042
+				Length: 1
+				Offset: 1,-3
+				ZOffset: 0
+			op2_art.bmp: idle2-facing5-0
+				Frames: 2041
+				Length: 1
+				Offset: 2,0
 				ZOffset: 0
 			op2_art.bmp: idle2-facing6-0
 				Frames: 2037
@@ -7276,9 +7276,9 @@ eden-earthworker:
 				Offset: 1,2
 				ZOffset: 0
 			op2_art.bmp: idle2-facing7-0
-				Frames: 2038
+				Frames: 2039
 				Length: 1
-				Offset: 0,-1
+				Offset: 2,-1
 				ZOffset: 0
 	idle2-shadow-id1:
 		Length: 1
@@ -7287,7 +7287,7 @@ eden-earthworker:
 		ZOffset: -256
 		Combine:
 			op2_art.bmp: idle2-facing0-0
-				Frames: 4627
+				Frames: 4626
 				Length: 1
 				Offset: -1,-3
 				ZOffset: -256
@@ -7297,19 +7297,19 @@ eden-earthworker:
 				Offset: 0,-3
 				ZOffset: -256
 			op2_art.bmp: idle2-facing2-0
-				Frames: 4629
-				Length: 1
-				Offset: -1,-3
+				Frames: 4631,4632
+				Length: 2
+				Offset: -1,-5
 				ZOffset: -256
-			op2_art.bmp: idle2-facing3-0
+			op2_art.bmp: idle2-facing4-0
 				Frames: 4630
 				Length: 1
 				Offset: 1,-7
 				ZOffset: -256
-			op2_art.bmp: idle2-facing4-0
-				Frames: 4631,4632
-				Length: 2
-				Offset: -1,-5
+			op2_art.bmp: idle2-facing5-0
+				Frames: 4629
+				Length: 1
+				Offset: -1,-3
 				ZOffset: -256
 			op2_art.bmp: idle2-facing6-0
 				Frames: 4625
@@ -7317,7 +7317,7 @@ eden-earthworker:
 				Offset: -2,-1
 				ZOffset: -256
 			op2_art.bmp: idle2-facing7-0
-				Frames: 4626
+				Frames: 4627
 				Length: 1
 				Offset: -1,-3
 				ZOffset: -256
@@ -7329,19 +7329,39 @@ eden-earthworker:
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: build-facing0-0
-				Frames: 3599,3600,3601
-				Length: 3
-				Offset: 7,-7
+				Frames: 3591,3592
+				Length: 2
+				Offset: 8,-3
+				ZOffset: 0
+			op2_art.bmp: build-facing0-2
+				Frames: 3593
+				Length: 1
+				Offset: 8,-1
 				ZOffset: 0
 			op2_art.bmp: build-facing0-3
-				Frames: 3602,3603,3604
-				Length: 3
-				Offset: 7,-6
+				Frames: 3594
+				Length: 1
+				Offset: 8,0
+				ZOffset: 0
+			op2_art.bmp: build-facing0-4
+				Frames: 3595
+				Length: 1
+				Offset: 8,-1
+				ZOffset: 0
+			op2_art.bmp: build-facing0-5
+				Frames: 3596
+				Length: 1
+				Offset: 6,-1
 				ZOffset: 0
 			op2_art.bmp: build-facing0-6
-				Frames: 3605,3599,3599,3599,3599,3599
-				Length: 6
-				Offset: 7,-7
+				Frames: 3597
+				Length: 1
+				Offset: 8,-2
+				ZOffset: 0
+			op2_art.bmp: build-facing0-7
+				Frames: 3591,3591,3591,3591,3591
+				Length: 5
+				Offset: 8,-3
 				ZOffset: 0
 			op2_art.bmp: build-facing1-0
 				Frames: 3607
@@ -7364,109 +7384,109 @@ eden-earthworker:
 				Offset: 1,-10
 				ZOffset: 0
 			op2_art.bmp: build-facing2-0
-				Frames: 3615
-				Length: 1
-				Offset: -4,-6
-				ZOffset: 0
-			op2_art.bmp: build-facing2-1
-				Frames: 3616,3617
-				Length: 2
-				Offset: -3,-6
-				ZOffset: 0
-			op2_art.bmp: build-facing2-3
-				Frames: 3618
-				Length: 1
-				Offset: -4,-5
-				ZOffset: 0
-			op2_art.bmp: build-facing2-4
-				Frames: 3619
-				Length: 1
-				Offset: -3,-4
-				ZOffset: 0
-			op2_art.bmp: build-facing2-5
-				Frames: 3620
-				Length: 1
-				Offset: -2,-4
-				ZOffset: 0
-			op2_art.bmp: build-facing2-6
-				Frames: 3621
-				Length: 1
-				Offset: -3,-5
-				ZOffset: 0
-			op2_art.bmp: build-facing2-7
-				Frames: 3615,3615,3615,3615,3615
-				Length: 5
-				Offset: -4,-6
-				ZOffset: 0
-			op2_art.bmp: build-facing3-0
-				Frames: 3623
-				Length: 1
-				Offset: -8,-4
-				ZOffset: 0
-			op2_art.bmp: build-facing3-1
-				Frames: 3624
-				Length: 1
-				Offset: -8,-3
-				ZOffset: 0
-			op2_art.bmp: build-facing3-2
-				Frames: 3625
-				Length: 1
-				Offset: -5,-2
-				ZOffset: 0
-			op2_art.bmp: build-facing3-3
-				Frames: 3626,3627,3628
-				Length: 3
-				Offset: -5,-3
-				ZOffset: 0
-			op2_art.bmp: build-facing3-6
-				Frames: 3629
-				Length: 1
-				Offset: -7,-5
-				ZOffset: 0
-			op2_art.bmp: build-facing3-7
-				Frames: 3623,3623,3623,3623,3623
-				Length: 5
-				Offset: -8,-4
-				ZOffset: 0
-			op2_art.bmp: build-facing4-0
 				Frames: 3639
 				Length: 1
 				Offset: -6,-1
 				ZOffset: 0
-			op2_art.bmp: build-facing4-1
+			op2_art.bmp: build-facing2-1
 				Frames: 3640,3641,3642
 				Length: 3
 				Offset: -6,-2
 				ZOffset: 0
-			op2_art.bmp: build-facing4-4
+			op2_art.bmp: build-facing2-4
 				Frames: 3643,3644,3645,3639,3639,3639,3639,3639
 				Length: 8
 				Offset: -6,-1
 				ZOffset: 0
-			op2_art.bmp: build-facing5-0
+			op2_art.bmp: build-facing3-0
 				Frames: 3631,3632,3633
 				Length: 3
 				Offset: -1,2
 				ZOffset: 0
-			op2_art.bmp: build-facing5-3
+			op2_art.bmp: build-facing3-3
 				Frames: 3634
 				Length: 1
 				Offset: -1,3
 				ZOffset: 0
-			op2_art.bmp: build-facing5-4
+			op2_art.bmp: build-facing3-4
 				Frames: 3637
 				Length: 1
 				Offset: -1,2
 				ZOffset: 0
-			op2_art.bmp: build-facing5-5
+			op2_art.bmp: build-facing3-5
 				Frames: 3636
 				Length: 1
 				Offset: -1,1
 				ZOffset: 0
-			op2_art.bmp: build-facing5-6
+			op2_art.bmp: build-facing3-6
 				Frames: 3635,3631,3631,3631,3631,3631
 				Length: 6
 				Offset: -1,2
+				ZOffset: 0
+			op2_art.bmp: build-facing4-0
+				Frames: 3623
+				Length: 1
+				Offset: -8,-4
+				ZOffset: 0
+			op2_art.bmp: build-facing4-1
+				Frames: 3624
+				Length: 1
+				Offset: -8,-3
+				ZOffset: 0
+			op2_art.bmp: build-facing4-2
+				Frames: 3625
+				Length: 1
+				Offset: -5,-2
+				ZOffset: 0
+			op2_art.bmp: build-facing4-3
+				Frames: 3626,3627,3628
+				Length: 3
+				Offset: -5,-3
+				ZOffset: 0
+			op2_art.bmp: build-facing4-6
+				Frames: 3629
+				Length: 1
+				Offset: -7,-5
+				ZOffset: 0
+			op2_art.bmp: build-facing4-7
+				Frames: 3623,3623,3623,3623,3623
+				Length: 5
+				Offset: -8,-4
+				ZOffset: 0
+			op2_art.bmp: build-facing5-0
+				Frames: 3615
+				Length: 1
+				Offset: -4,-6
+				ZOffset: 0
+			op2_art.bmp: build-facing5-1
+				Frames: 3616,3617
+				Length: 2
+				Offset: -3,-6
+				ZOffset: 0
+			op2_art.bmp: build-facing5-3
+				Frames: 3618
+				Length: 1
+				Offset: -4,-5
+				ZOffset: 0
+			op2_art.bmp: build-facing5-4
+				Frames: 3619
+				Length: 1
+				Offset: -3,-4
+				ZOffset: 0
+			op2_art.bmp: build-facing5-5
+				Frames: 3620
+				Length: 1
+				Offset: -2,-4
+				ZOffset: 0
+			op2_art.bmp: build-facing5-6
+				Frames: 3621
+				Length: 1
+				Offset: -3,-5
+				ZOffset: 0
+			op2_art.bmp: build-facing5-7
+				Frames: 3615,3615,3615,3615,3615
+				Length: 5
+				Offset: -4,-6
 				ZOffset: 0
 			op2_art.bmp: build-facing6-0
 				Frames: 3583,3584,3585
@@ -7484,39 +7504,19 @@ eden-earthworker:
 				Offset: 7,2
 				ZOffset: 0
 			op2_art.bmp: build-facing7-0
-				Frames: 3591,3592
-				Length: 2
-				Offset: 8,-3
-				ZOffset: 0
-			op2_art.bmp: build-facing7-2
-				Frames: 3593
-				Length: 1
-				Offset: 8,-1
+				Frames: 3599,3600,3601
+				Length: 3
+				Offset: 7,-7
 				ZOffset: 0
 			op2_art.bmp: build-facing7-3
-				Frames: 3594
-				Length: 1
-				Offset: 8,0
-				ZOffset: 0
-			op2_art.bmp: build-facing7-4
-				Frames: 3595
-				Length: 1
-				Offset: 8,-1
-				ZOffset: 0
-			op2_art.bmp: build-facing7-5
-				Frames: 3596
-				Length: 1
-				Offset: 6,-1
+				Frames: 3602,3603,3604
+				Length: 3
+				Offset: 7,-6
 				ZOffset: 0
 			op2_art.bmp: build-facing7-6
-				Frames: 3597
-				Length: 1
-				Offset: 8,-2
-				ZOffset: 0
-			op2_art.bmp: build-facing7-7
-				Frames: 3591,3591,3591,3591,3591
-				Length: 5
-				Offset: 8,-3
+				Frames: 3605,3599,3599,3599,3599,3599
+				Length: 6
+				Offset: 7,-7
 				ZOffset: 0
 	build-sprite-id1:
 		Length: 12
@@ -7525,9 +7525,9 @@ eden-earthworker:
 		ZOffset: -256
 		Combine:
 			op2_art.bmp: build-facing0-0
-				Frames: 3598,3598,3598,3598,3598,3598,3598,3598,3598,3598,3598,3598
+				Frames: 3590,3590,3590,3590,3590,3590,3590,3590,3590,3590,3590,3590
 				Length: 12
-				Offset: 1,3
+				Offset: -3,4
 				ZOffset: -256
 			op2_art.bmp: build-facing1-0
 				Frames: 3606,3606,3606,3606,3606,3606,3606,3606,3606,3606,3606,3606
@@ -7535,24 +7535,24 @@ eden-earthworker:
 				Offset: 3,5
 				ZOffset: -256
 			op2_art.bmp: build-facing2-0
-				Frames: 3614,3614,3614,3614,3614,3614,3614,3614,3614,3614,3614,3614
-				Length: 12
-				Offset: 8,2
-				ZOffset: -256
-			op2_art.bmp: build-facing3-0
-				Frames: 3622,3622,3622,3622,3622,3622,3622,3622,3622,3622,3622,3622
-				Length: 12
-				Offset: 8,-1
-				ZOffset: -256
-			op2_art.bmp: build-facing4-0
 				Frames: 3638,3638,3638,3638,3638,3638,3638,3638,3638,3638,3638,3638
 				Length: 12
 				Offset: 0,-6
 				ZOffset: -256
-			op2_art.bmp: build-facing5-0
+			op2_art.bmp: build-facing3-0
 				Frames: 3630,3630,3630,3630,3630,3630,3630,3630,3630,3630,3630,3630
 				Length: 12
 				Offset: -3,-3
+				ZOffset: -256
+			op2_art.bmp: build-facing4-0
+				Frames: 3622,3622,3622,3622,3622,3622,3622,3622,3622,3622,3622,3622
+				Length: 12
+				Offset: 8,-1
+				ZOffset: -256
+			op2_art.bmp: build-facing5-0
+				Frames: 3614,3614,3614,3614,3614,3614,3614,3614,3614,3614,3614,3614
+				Length: 12
+				Offset: 8,2
 				ZOffset: -256
 			op2_art.bmp: build-facing6-0
 				Frames: 3582,3582,3582,3582,3582,3582,3582,3582,3582,3582,3582,3582
@@ -7560,9 +7560,9 @@ eden-earthworker:
 				Offset: -5,1
 				ZOffset: -256
 			op2_art.bmp: build-facing7-0
-				Frames: 3590,3590,3590,3590,3590,3590,3590,3590,3590,3590,3590,3590
+				Frames: 3598,3598,3598,3598,3598,3598,3598,3598,3598,3598,3598,3598
 				Length: 12
-				Offset: -3,4
+				Offset: 1,3
 				ZOffset: -256
 	build-shadow-id2:
 		Length: 12
@@ -7571,9 +7571,9 @@ eden-earthworker:
 		ZOffset: -512
 		Combine:
 			op2_art.bmp: build-facing0-0
-				Frames: 4578,4578,4578,4578,4578,4578,4578,4578,4578,4578,4578,4578
+				Frames: 4579,4579,4579,4579,4579,4579,4579,4579,4579,4579,4579,4579
 				Length: 12
-				Offset: 0,0
+				Offset: -2,2
 				ZOffset: -512
 			op2_art.bmp: build-facing1-0
 				Frames: 4580,4580,4580,4580,4580,4580,4580,4580,4580,4580,4580,4580
@@ -7581,24 +7581,24 @@ eden-earthworker:
 				Offset: -1,-1
 				ZOffset: -512
 			op2_art.bmp: build-facing2-0
-				Frames: 4584,4584,4584,4584,4584,4584,4584,4584,4584,4584,4584,4584
-				Length: 12
-				Offset: 0,0
-				ZOffset: -512
-			op2_art.bmp: build-facing3-0
-				Frames: 4583,4583,4583,4583,4583,4583,4583,4583,4583,4583,4583,4583
-				Length: 12
-				Offset: 0,-4
-				ZOffset: -512
-			op2_art.bmp: build-facing4-0
 				Frames: 4581,4581,4581,4581,4581,4581,4581,4581,4581,4581,4581,4581
 				Length: 12
 				Offset: -1,-7
 				ZOffset: -512
-			op2_art.bmp: build-facing5-0
+			op2_art.bmp: build-facing3-0
 				Frames: 4582,4582,4582,4582,4582,4582,4582,4582,4582,4582,4582,4582
 				Length: 12
 				Offset: -1,-5
+				ZOffset: -512
+			op2_art.bmp: build-facing4-0
+				Frames: 4583,4583,4583,4583,4583,4583,4583,4583,4583,4583,4583,4583
+				Length: 12
+				Offset: 0,-4
+				ZOffset: -512
+			op2_art.bmp: build-facing5-0
+				Frames: 4584,4584,4584,4584,4584,4584,4584,4584,4584,4584,4584,4584
+				Length: 12
+				Offset: 0,0
 				ZOffset: -512
 			op2_art.bmp: build-facing6-0
 				Frames: 4577,4577,4577,4577,4577,4577,4577,4577,4577,4577,4577,4577
@@ -7606,9 +7606,9 @@ eden-earthworker:
 				Offset: -1,-2
 				ZOffset: -512
 			op2_art.bmp: build-facing7-0
-				Frames: 4579,4579,4579,4579,4579,4579,4579,4579,4579,4579,4579,4579
+				Frames: 4578,4578,4578,4578,4578,4578,4578,4578,4578,4578,4578,4578
 				Length: 12
-				Offset: -2,2
+				Offset: 0,0
 				ZOffset: -512
 	build-shadow-id3:
 		Length: 12
@@ -7617,19 +7617,34 @@ eden-earthworker:
 		ZOffset: -768
 		Combine:
 			op2_art.bmp: build-facing0-0
-				Frames: 4994,4994,4995
-				Length: 3
-				Offset: -3,-6
-				ZOffset: -768
-			op2_art.bmp: build-facing0-3
-				Frames: 4996
-				Length: 1
+				Frames: 4987,4988
+				Length: 2
 				Offset: -3,-5
 				ZOffset: -768
+			op2_art.bmp: build-facing0-2
+				Frames: 4989
+				Length: 1
+				Offset: -3,-3
+				ZOffset: -768
+			op2_art.bmp: build-facing0-3
+				Frames: 4990
+				Length: 1
+				Offset: -3,-2
+				ZOffset: -768
 			op2_art.bmp: build-facing0-4
-				Frames: 4997,4998,4999,4994,4994,4994,4994,4994
-				Length: 8
-				Offset: -3,-6
+				Frames: 4991,4992
+				Length: 2
+				Offset: -3,-3
+				ZOffset: -768
+			op2_art.bmp: build-facing0-6
+				Frames: 4993
+				Length: 1
+				Offset: -3,-4
+				ZOffset: -768
+			op2_art.bmp: build-facing0-7
+				Frames: 4987,4987,4987,4987,4987
+				Length: 5
+				Offset: -3,-5
 				ZOffset: -768
 			op2_art.bmp: build-facing1-0
 				Frames: 5000
@@ -7662,114 +7677,114 @@ eden-earthworker:
 				Offset: -1,-7
 				ZOffset: -768
 			op2_art.bmp: build-facing2-0
-				Frames: 5007,5008,5009
-				Length: 3
-				Offset: -2,-3
-				ZOffset: -768
-			op2_art.bmp: build-facing2-3
-				Frames: 5010
-				Length: 1
-				Offset: -2,-2
-				ZOffset: -768
-			op2_art.bmp: build-facing2-4
-				Frames: 5011
-				Length: 1
-				Offset: -2,-1
-				ZOffset: -768
-			op2_art.bmp: build-facing2-5
-				Frames: 5012
-				Length: 1
-				Offset: -1,-2
-				ZOffset: -768
-			op2_art.bmp: build-facing2-6
-				Frames: 5013
-				Length: 1
-				Offset: -2,-2
-				ZOffset: -768
-			op2_art.bmp: build-facing2-7
-				Frames: 5007,5007,5007,5007,5007
-				Length: 5
-				Offset: -2,-3
-				ZOffset: -768
-			op2_art.bmp: build-facing3-0
-				Frames: 5014
-				Length: 1
-				Offset: -3,-5
-				ZOffset: -768
-			op2_art.bmp: build-facing3-1
-				Frames: 5015
-				Length: 1
-				Offset: -3,-3
-				ZOffset: -768
-			op2_art.bmp: build-facing3-2
-				Frames: 5016
-				Length: 1
-				Offset: -2,-3
-				ZOffset: -768
-			op2_art.bmp: build-facing3-3
-				Frames: 5017,5018,5019
-				Length: 3
-				Offset: -2,-4
-				ZOffset: -768
-			op2_art.bmp: build-facing3-6
-				Frames: 5020
-				Length: 1
-				Offset: -3,-6
-				ZOffset: -768
-			op2_art.bmp: build-facing3-7
-				Frames: 5014,5014,5014,5014,5014
-				Length: 5
-				Offset: -3,-5
-				ZOffset: -768
-			op2_art.bmp: build-facing4-0
 				Frames: 5021,5022
 				Length: 2
 				Offset: -2,3
 				ZOffset: -768
-			op2_art.bmp: build-facing4-2
+			op2_art.bmp: build-facing2-2
 				Frames: 5023
 				Length: 1
 				Offset: -2,2
 				ZOffset: -768
-			op2_art.bmp: build-facing4-3
+			op2_art.bmp: build-facing2-3
 				Frames: 5024,5025
 				Length: 2
 				Offset: -1,2
 				ZOffset: -768
-			op2_art.bmp: build-facing4-5
+			op2_art.bmp: build-facing2-5
 				Frames: 5026,5027
 				Length: 2
 				Offset: -1,3
 				ZOffset: -768
-			op2_art.bmp: build-facing4-7
+			op2_art.bmp: build-facing2-7
 				Frames: 5021,5021,5021,5021,5021
 				Length: 5
 				Offset: -2,3
 				ZOffset: -768
-			op2_art.bmp: build-facing5-0
+			op2_art.bmp: build-facing3-0
 				Frames: 5028,5029,5030
 				Length: 3
 				Offset: -2,2
 				ZOffset: -768
-			op2_art.bmp: build-facing5-3
+			op2_art.bmp: build-facing3-3
 				Frames: 5031
 				Length: 1
 				Offset: -1,3
 				ZOffset: -768
-			op2_art.bmp: build-facing5-4
+			op2_art.bmp: build-facing3-4
 				Frames: 5032
 				Length: 1
 				Offset: -2,2
 				ZOffset: -768
-			op2_art.bmp: build-facing5-5
+			op2_art.bmp: build-facing3-5
 				Frames: 5033
 				Length: 1
 				Offset: -2,1
 				ZOffset: -768
-			op2_art.bmp: build-facing5-6
+			op2_art.bmp: build-facing3-6
 				Frames: 5034,5028,5028,5028,5028,5028
 				Length: 6
 				Offset: -2,2
+				ZOffset: -768
+			op2_art.bmp: build-facing4-0
+				Frames: 5014
+				Length: 1
+				Offset: -3,-5
+				ZOffset: -768
+			op2_art.bmp: build-facing4-1
+				Frames: 5015
+				Length: 1
+				Offset: -3,-3
+				ZOffset: -768
+			op2_art.bmp: build-facing4-2
+				Frames: 5016
+				Length: 1
+				Offset: -2,-3
+				ZOffset: -768
+			op2_art.bmp: build-facing4-3
+				Frames: 5017,5018,5019
+				Length: 3
+				Offset: -2,-4
+				ZOffset: -768
+			op2_art.bmp: build-facing4-6
+				Frames: 5020
+				Length: 1
+				Offset: -3,-6
+				ZOffset: -768
+			op2_art.bmp: build-facing4-7
+				Frames: 5014,5014,5014,5014,5014
+				Length: 5
+				Offset: -3,-5
+				ZOffset: -768
+			op2_art.bmp: build-facing5-0
+				Frames: 5007,5008,5009
+				Length: 3
+				Offset: -2,-3
+				ZOffset: -768
+			op2_art.bmp: build-facing5-3
+				Frames: 5010
+				Length: 1
+				Offset: -2,-2
+				ZOffset: -768
+			op2_art.bmp: build-facing5-4
+				Frames: 5011
+				Length: 1
+				Offset: -2,-1
+				ZOffset: -768
+			op2_art.bmp: build-facing5-5
+				Frames: 5012
+				Length: 1
+				Offset: -1,-2
+				ZOffset: -768
+			op2_art.bmp: build-facing5-6
+				Frames: 5013
+				Length: 1
+				Offset: -2,-2
+				ZOffset: -768
+			op2_art.bmp: build-facing5-7
+				Frames: 5007,5007,5007,5007,5007
+				Length: 5
+				Offset: -2,-3
 				ZOffset: -768
 			op2_art.bmp: build-facing6-0
 				Frames: 4980,4981,4982,4983
@@ -7787,34 +7802,19 @@ eden-earthworker:
 				Offset: -3,0
 				ZOffset: -768
 			op2_art.bmp: build-facing7-0
-				Frames: 4987,4988
-				Length: 2
-				Offset: -3,-5
-				ZOffset: -768
-			op2_art.bmp: build-facing7-2
-				Frames: 4989
-				Length: 1
-				Offset: -3,-3
+				Frames: 4994,4994,4995
+				Length: 3
+				Offset: -3,-6
 				ZOffset: -768
 			op2_art.bmp: build-facing7-3
-				Frames: 4990
+				Frames: 4996
 				Length: 1
-				Offset: -3,-2
+				Offset: -3,-5
 				ZOffset: -768
 			op2_art.bmp: build-facing7-4
-				Frames: 4991,4992
-				Length: 2
-				Offset: -3,-3
-				ZOffset: -768
-			op2_art.bmp: build-facing7-6
-				Frames: 4993
-				Length: 1
-				Offset: -3,-4
-				ZOffset: -768
-			op2_art.bmp: build-facing7-7
-				Frames: 4987,4987,4987,4987,4987
-				Length: 5
-				Offset: -3,-5
+				Frames: 4997,4998,4999,4994,4994,4994,4994,4994
+				Length: 8
+				Offset: -3,-6
 				ZOffset: -768
 
 plymouth-earthworker:
@@ -7831,9 +7831,9 @@ plymouth-earthworker:
 				Offset: 0,0
 				ZOffset: 0
 			op2_art.bmp: idle-facing0-2
-				Frames: 4209,4209
+				Frames: 4208,4208
 				Length: 2
-				Offset: -2,10
+				Offset: 2,8
 				ZOffset: 0
 			blank.png: idle-facing1-0
 				Frames: 0,0
@@ -7851,9 +7851,9 @@ plymouth-earthworker:
 				Offset: 0,0
 				ZOffset: 0
 			op2_art.bmp: idle-facing2-2
-				Frames: 4211,4211
+				Frames: 4214,4214
 				Length: 2
-				Offset: 2,-1
+				Offset: 6,5
 				ZOffset: 0
 			blank.png: idle-facing3-0
 				Frames: 0,0
@@ -7861,9 +7861,9 @@ plymouth-earthworker:
 				Offset: 0,0
 				ZOffset: 0
 			op2_art.bmp: idle-facing3-2
-				Frames: 4212,4212
+				Frames: 4213,4213
 				Length: 2
-				Offset: -1,4
+				Offset: 7,5
 				ZOffset: 0
 			blank.png: idle-facing4-0
 				Frames: 0,0
@@ -7871,9 +7871,9 @@ plymouth-earthworker:
 				Offset: 0,0
 				ZOffset: 0
 			op2_art.bmp: idle-facing4-2
-				Frames: 4214,4214
+				Frames: 4212,4212
 				Length: 2
-				Offset: 6,5
+				Offset: -1,4
 				ZOffset: 0
 			blank.png: idle-facing5-0
 				Frames: 0,0
@@ -7881,9 +7881,9 @@ plymouth-earthworker:
 				Offset: 0,0
 				ZOffset: 0
 			op2_art.bmp: idle-facing5-2
-				Frames: 4213,4213
+				Frames: 4211,4211
 				Length: 2
-				Offset: 7,5
+				Offset: 2,-1
 				ZOffset: 0
 			blank.png: idle-facing6-0
 				Frames: 0,0
@@ -7901,9 +7901,9 @@ plymouth-earthworker:
 				Offset: 0,0
 				ZOffset: 0
 			op2_art.bmp: idle-facing7-2
-				Frames: 4208,4208
+				Frames: 4209,4209
 				Length: 2
-				Offset: 2,8
+				Offset: -2,10
 				ZOffset: 0
 	idle-sprite-id1:
 		Length: 4
@@ -7912,9 +7912,9 @@ plymouth-earthworker:
 		ZOffset: -256
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 3655,3655,3655,3655
+				Frames: 3663,3663,3663,3663
 				Length: 4
-				Offset: 9,-2
+				Offset: 8,-6
 				ZOffset: -256
 			op2_art.bmp: idle-facing1-0
 				Frames: 3671,3671,3671,3671
@@ -7922,24 +7922,24 @@ plymouth-earthworker:
 				Offset: 2,-9
 				ZOffset: -256
 			op2_art.bmp: idle-facing2-0
-				Frames: 3695,3695,3695,3695
-				Length: 4
-				Offset: -5,0
-				ZOffset: -256
-			op2_art.bmp: idle-facing3-0
-				Frames: 3703,3703,3703,3703
-				Length: 4
-				Offset: 0,3
-				ZOffset: -256
-			op2_art.bmp: idle-facing4-0
 				Frames: 3679,3679,3679,3679
 				Length: 4
 				Offset: -5,-5
 				ZOffset: -256
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: idle-facing3-0
 				Frames: 3687,3687,3687,3687
 				Length: 4
 				Offset: -7,-3
+				ZOffset: -256
+			op2_art.bmp: idle-facing4-0
+				Frames: 3703,3703,3703,3703
+				Length: 4
+				Offset: 0,3
+				ZOffset: -256
+			op2_art.bmp: idle-facing5-0
+				Frames: 3695,3695,3695,3695
+				Length: 4
+				Offset: -5,0
 				ZOffset: -256
 			op2_art.bmp: idle-facing6-0
 				Frames: 3647,3647,3647,3647
@@ -7947,9 +7947,9 @@ plymouth-earthworker:
 				Offset: 8,3
 				ZOffset: -256
 			op2_art.bmp: idle-facing7-0
-				Frames: 3663,3663,3663,3663
+				Frames: 3655,3655,3655,3655
 				Length: 4
-				Offset: 8,-6
+				Offset: 9,-2
 				ZOffset: -256
 	idle-sprite-id2:
 		Length: 4
@@ -7979,9 +7979,9 @@ plymouth-earthworker:
 		ZOffset: -768
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 3654,3654,3654,3654
+				Frames: 3662,3662,3662,3662
 				Length: 4
-				Offset: -2,5
+				Offset: 2,4
 				ZOffset: -768
 			op2_art.bmp: idle-facing1-0
 				Frames: 3670,3670,3670,3670
@@ -7989,24 +7989,24 @@ plymouth-earthworker:
 				Offset: 4,6
 				ZOffset: -768
 			op2_art.bmp: idle-facing2-0
-				Frames: 3694,3694,3694,3694
-				Length: 4
-				Offset: 1,-5
-				ZOffset: -768
-			op2_art.bmp: idle-facing3-0
-				Frames: 3702,3702,3702,3702
-				Length: 4
-				Offset: -2,-2
-				ZOffset: -768
-			op2_art.bmp: idle-facing4-0
 				Frames: 3678,3678,3678,3678
 				Length: 4
 				Offset: 7,3
 				ZOffset: -768
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: idle-facing3-0
 				Frames: 3686,3686,3686,3686
 				Length: 4
 				Offset: 9,0
+				ZOffset: -768
+			op2_art.bmp: idle-facing4-0
+				Frames: 3702,3702,3702,3702
+				Length: 4
+				Offset: -2,-2
+				ZOffset: -768
+			op2_art.bmp: idle-facing5-0
+				Frames: 3694,3694,3694,3694
+				Length: 4
+				Offset: 1,-5
 				ZOffset: -768
 			op2_art.bmp: idle-facing6-0
 				Frames: 3646,3646,3646,3646
@@ -8014,9 +8014,9 @@ plymouth-earthworker:
 				Offset: -4,2
 				ZOffset: -768
 			op2_art.bmp: idle-facing7-0
-				Frames: 3662,3662,3662,3662
+				Frames: 3654,3654,3654,3654
 				Length: 4
-				Offset: 2,4
+				Offset: -2,5
 				ZOffset: -768
 	idle-shadow-id4:
 		Length: 4
@@ -8025,9 +8025,9 @@ plymouth-earthworker:
 		ZOffset: -1024
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 4579,4579,4579,4579
+				Frames: 4578,4578,4578,4578
 				Length: 4
-				Offset: 0,3
+				Offset: 1,1
 				ZOffset: -1024
 			op2_art.bmp: idle-facing1-0
 				Frames: 4580,4580,4580,4580
@@ -8035,24 +8035,24 @@ plymouth-earthworker:
 				Offset: 0,1
 				ZOffset: -1024
 			op2_art.bmp: idle-facing2-0
-				Frames: 4581,4581,4581,4581
-				Length: 4
-				Offset: 0,-6
-				ZOffset: -1024
-			op2_art.bmp: idle-facing3-0
-				Frames: 4582,4582,4582,4582
-				Length: 4
-				Offset: 1,-4
-				ZOffset: -1024
-			op2_art.bmp: idle-facing4-0
 				Frames: 4584,4584,4584,4584
 				Length: 4
 				Offset: -1,1
 				ZOffset: -1024
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: idle-facing3-0
 				Frames: 4583,4583,4583,4583
 				Length: 4
 				Offset: 1,-3
+				ZOffset: -1024
+			op2_art.bmp: idle-facing4-0
+				Frames: 4582,4582,4582,4582
+				Length: 4
+				Offset: 1,-4
+				ZOffset: -1024
+			op2_art.bmp: idle-facing5-0
+				Frames: 4581,4581,4581,4581
+				Length: 4
+				Offset: 0,-6
 				ZOffset: -1024
 			op2_art.bmp: idle-facing6-0
 				Frames: 4577,4577,4577,4577
@@ -8060,9 +8060,9 @@ plymouth-earthworker:
 				Offset: 0,-1
 				ZOffset: -1024
 			op2_art.bmp: idle-facing7-0
-				Frames: 4578,4578,4578,4578
+				Frames: 4579,4579,4579,4579
 				Length: 4
-				Offset: 1,1
+				Offset: 0,3
 				ZOffset: -1024
 	idle-shadow-id5:
 		Length: 4
@@ -8071,9 +8071,9 @@ plymouth-earthworker:
 		ZOffset: -1280
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 4987,4987,4987,4987
+				Frames: 4994,4994,4994,4994
 				Length: 4
-				Offset: -2,-4
+				Offset: -2,-5
 				ZOffset: -1280
 			op2_art.bmp: idle-facing1-0
 				Frames: 5000,5000,5000,5000
@@ -8081,24 +8081,24 @@ plymouth-earthworker:
 				Offset: 0,-6
 				ZOffset: -1280
 			op2_art.bmp: idle-facing2-0
-				Frames: 5021,5021,5021,5021
-				Length: 4
-				Offset: -1,4
-				ZOffset: -1280
-			op2_art.bmp: idle-facing3-0
-				Frames: 5028,5028,5028,5028
-				Length: 4
-				Offset: -1,3
-				ZOffset: -1280
-			op2_art.bmp: idle-facing4-0
 				Frames: 5007,5007,5007,5007
 				Length: 4
 				Offset: -2,-2
 				ZOffset: -1280
-			op2_art.bmp: idle-facing5-0
+			op2_art.bmp: idle-facing3-0
 				Frames: 5014,5014,5014,5014
 				Length: 4
 				Offset: -2,-4
+				ZOffset: -1280
+			op2_art.bmp: idle-facing4-0
+				Frames: 5028,5028,5028,5028
+				Length: 4
+				Offset: -1,3
+				ZOffset: -1280
+			op2_art.bmp: idle-facing5-0
+				Frames: 5021,5021,5021,5021
+				Length: 4
+				Offset: -1,4
 				ZOffset: -1280
 			op2_art.bmp: idle-facing6-0
 				Frames: 4980,4980,4980,4980
@@ -8106,9 +8106,9 @@ plymouth-earthworker:
 				Offset: -2,1
 				ZOffset: -1280
 			op2_art.bmp: idle-facing7-0
-				Frames: 4994,4994,4994,4994
+				Frames: 4987,4987,4987,4987
 				Length: 4
-				Offset: -2,-5
+				Offset: -2,-4
 				ZOffset: -1280
 	# All sequences: idle2, idle2-shadow-id1
 	idle2:
@@ -8118,9 +8118,9 @@ plymouth-earthworker:
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: idle2-facing0-0
-				Frames: 2213
+				Frames: 2212
 				Length: 1
-				Offset: 2,-1
+				Offset: 0,-1
 				ZOffset: 0
 			op2_art.bmp: idle2-facing1-0
 				Frames: 2214
@@ -8128,24 +8128,24 @@ plymouth-earthworker:
 				Offset: 4,0
 				ZOffset: 0
 			op2_art.bmp: idle2-facing2-0
-				Frames: 2215
-				Length: 1
-				Offset: 2,0
-				ZOffset: 0
-			op2_art.bmp: idle2-facing3-0
-				Frames: 2216
-				Length: 1
-				Offset: 1,-3
-				ZOffset: 0
-			op2_art.bmp: idle2-facing4-0
 				Frames: 2217
 				Length: 1
 				Offset: -1,-3
 				ZOffset: 0
-			op2_art.bmp: idle2-facing5-0
+			op2_art.bmp: idle2-facing3-0
 				Frames: 2218
 				Length: 1
 				Offset: -1,-1
+				ZOffset: 0
+			op2_art.bmp: idle2-facing4-0
+				Frames: 2216
+				Length: 1
+				Offset: 1,-3
+				ZOffset: 0
+			op2_art.bmp: idle2-facing5-0
+				Frames: 2215
+				Length: 1
+				Offset: 2,0
 				ZOffset: 0
 			op2_art.bmp: idle2-facing6-0
 				Frames: 2211
@@ -8153,9 +8153,9 @@ plymouth-earthworker:
 				Offset: 1,2
 				ZOffset: 0
 			op2_art.bmp: idle2-facing7-0
-				Frames: 2212
+				Frames: 2213
 				Length: 1
-				Offset: 0,-1
+				Offset: 2,-1
 				ZOffset: 0
 	idle2-shadow-id1:
 		Length: 1
@@ -8164,7 +8164,7 @@ plymouth-earthworker:
 		ZOffset: -256
 		Combine:
 			op2_art.bmp: idle2-facing0-0
-				Frames: 4627
+				Frames: 4626
 				Length: 1
 				Offset: 0,-3
 				ZOffset: -256
@@ -8174,24 +8174,24 @@ plymouth-earthworker:
 				Offset: -1,-2
 				ZOffset: -256
 			op2_art.bmp: idle2-facing2-0
-				Frames: 4629
-				Length: 1
-				Offset: -1,-3
-				ZOffset: -256
-			op2_art.bmp: idle2-facing3-0
-				Frames: 4630
-				Length: 1
-				Offset: 0,-6
-				ZOffset: -256
-			op2_art.bmp: idle2-facing4-0
 				Frames: 4631
 				Length: 1
 				Offset: -1,-5
 				ZOffset: -256
-			op2_art.bmp: idle2-facing5-0
+			op2_art.bmp: idle2-facing3-0
 				Frames: 4632
 				Length: 1
 				Offset: -2,-5
+				ZOffset: -256
+			op2_art.bmp: idle2-facing4-0
+				Frames: 4630
+				Length: 1
+				Offset: 0,-6
+				ZOffset: -256
+			op2_art.bmp: idle2-facing5-0
+				Frames: 4629
+				Length: 1
+				Offset: -1,-3
 				ZOffset: -256
 			op2_art.bmp: idle2-facing6-0
 				Frames: 4625
@@ -8199,7 +8199,7 @@ plymouth-earthworker:
 				Offset: -2,-1
 				ZOffset: -256
 			op2_art.bmp: idle2-facing7-0
-				Frames: 4626
+				Frames: 4627
 				Length: 1
 				Offset: 0,-3
 				ZOffset: -256
@@ -8211,19 +8211,34 @@ plymouth-earthworker:
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: build-facing0-0
-				Frames: 3663,3663,3663,3663,3663,3663,3664,3665
-				Length: 8
-				Offset: 8,-6
+				Frames: 3655,3655,3655,3655,3655,3655,3656
+				Length: 7
+				Offset: 9,-2
+				ZOffset: 0
+			op2_art.bmp: build-facing0-7
+				Frames: 3657
+				Length: 1
+				Offset: 9,0
 				ZOffset: 0
 			op2_art.bmp: build-facing0-8
-				Frames: 3666,3667,3668
-				Length: 3
-				Offset: 8,-5
+				Frames: 3658
+				Length: 1
+				Offset: 9,1
+				ZOffset: 0
+			op2_art.bmp: build-facing0-9
+				Frames: 3659
+				Length: 1
+				Offset: 9,0
+				ZOffset: 0
+			op2_art.bmp: build-facing0-10
+				Frames: 3660
+				Length: 1
+				Offset: 7,0
 				ZOffset: 0
 			op2_art.bmp: build-facing0-11
-				Frames: 3669
+				Frames: 3661
 				Length: 1
-				Offset: 8,-6
+				Offset: 9,-1
 				ZOffset: 0
 			op2_art.bmp: build-facing1-0
 				Frames: 3671,3671,3671,3671,3671,3671
@@ -8241,99 +8256,99 @@ plymouth-earthworker:
 				Offset: 3,-7
 				ZOffset: 0
 			op2_art.bmp: build-facing2-0
-				Frames: 3679,3679,3679,3679,3679,3679
-				Length: 6
-				Offset: -5,-5
-				ZOffset: 0
-			op2_art.bmp: build-facing2-6
-				Frames: 3680,3681
-				Length: 2
-				Offset: -4,-5
-				ZOffset: 0
-			op2_art.bmp: build-facing2-8
-				Frames: 3682
-				Length: 1
-				Offset: -5,-4
-				ZOffset: 0
-			op2_art.bmp: build-facing2-9
-				Frames: 3683
-				Length: 1
-				Offset: -4,-3
-				ZOffset: 0
-			op2_art.bmp: build-facing2-10
-				Frames: 3684
-				Length: 1
-				Offset: -3,-3
-				ZOffset: 0
-			op2_art.bmp: build-facing2-11
-				Frames: 3685
-				Length: 1
-				Offset: -4,-4
-				ZOffset: 0
-			op2_art.bmp: build-facing3-0
-				Frames: 3687,3687,3687,3687,3687,3687
-				Length: 6
-				Offset: -7,-3
-				ZOffset: 0
-			op2_art.bmp: build-facing3-6
-				Frames: 3688
-				Length: 1
-				Offset: -7,-2
-				ZOffset: 0
-			op2_art.bmp: build-facing3-7
-				Frames: 3689
-				Length: 1
-				Offset: -4,-1
-				ZOffset: 0
-			op2_art.bmp: build-facing3-8
-				Frames: 3690,3691,3692
-				Length: 3
-				Offset: -4,-2
-				ZOffset: 0
-			op2_art.bmp: build-facing3-11
-				Frames: 3693
-				Length: 1
-				Offset: -6,-4
-				ZOffset: 0
-			op2_art.bmp: build-facing4-0
 				Frames: 3695,3695,3695,3695,3695,3695
 				Length: 6
 				Offset: -5,0
 				ZOffset: 0
-			op2_art.bmp: build-facing4-6
+			op2_art.bmp: build-facing2-6
 				Frames: 3696,3697,3698
 				Length: 3
 				Offset: -5,-1
 				ZOffset: 0
-			op2_art.bmp: build-facing4-9
+			op2_art.bmp: build-facing2-9
 				Frames: 3699,3700,3701
 				Length: 3
 				Offset: -5,0
 				ZOffset: 0
-			op2_art.bmp: build-facing5-0
+			op2_art.bmp: build-facing3-0
 				Frames: 3703,3703,3703,3703,3703,3703,3704,3705
 				Length: 8
 				Offset: 0,3
 				ZOffset: 0
-			op2_art.bmp: build-facing5-8
+			op2_art.bmp: build-facing3-8
 				Frames: 3706
 				Length: 1
 				Offset: 0,4
 				ZOffset: 0
-			op2_art.bmp: build-facing5-9
+			op2_art.bmp: build-facing3-9
 				Frames: 3707
 				Length: 1
 				Offset: 0,3
 				ZOffset: 0
-			op2_art.bmp: build-facing5-10
+			op2_art.bmp: build-facing3-10
 				Frames: 3708
 				Length: 1
 				Offset: 0,2
 				ZOffset: 0
-			op2_art.bmp: build-facing5-11
+			op2_art.bmp: build-facing3-11
 				Frames: 3709
 				Length: 1
 				Offset: 0,3
+				ZOffset: 0
+			op2_art.bmp: build-facing4-0
+				Frames: 3687,3687,3687,3687,3687,3687
+				Length: 6
+				Offset: -7,-3
+				ZOffset: 0
+			op2_art.bmp: build-facing4-6
+				Frames: 3688
+				Length: 1
+				Offset: -7,-2
+				ZOffset: 0
+			op2_art.bmp: build-facing4-7
+				Frames: 3689
+				Length: 1
+				Offset: -4,-1
+				ZOffset: 0
+			op2_art.bmp: build-facing4-8
+				Frames: 3690,3691,3692
+				Length: 3
+				Offset: -4,-2
+				ZOffset: 0
+			op2_art.bmp: build-facing4-11
+				Frames: 3693
+				Length: 1
+				Offset: -6,-4
+				ZOffset: 0
+			op2_art.bmp: build-facing5-0
+				Frames: 3679,3679,3679,3679,3679,3679
+				Length: 6
+				Offset: -5,-5
+				ZOffset: 0
+			op2_art.bmp: build-facing5-6
+				Frames: 3680,3681
+				Length: 2
+				Offset: -4,-5
+				ZOffset: 0
+			op2_art.bmp: build-facing5-8
+				Frames: 3682
+				Length: 1
+				Offset: -5,-4
+				ZOffset: 0
+			op2_art.bmp: build-facing5-9
+				Frames: 3683
+				Length: 1
+				Offset: -4,-3
+				ZOffset: 0
+			op2_art.bmp: build-facing5-10
+				Frames: 3684
+				Length: 1
+				Offset: -3,-3
+				ZOffset: 0
+			op2_art.bmp: build-facing5-11
+				Frames: 3685
+				Length: 1
+				Offset: -4,-4
 				ZOffset: 0
 			op2_art.bmp: build-facing6-0
 				Frames: 3647,3647,3647,3647,3647,3648,3649
@@ -8351,34 +8366,19 @@ plymouth-earthworker:
 				Offset: 8,3
 				ZOffset: 0
 			op2_art.bmp: build-facing7-0
-				Frames: 3655,3655,3655,3655,3655,3655,3656
-				Length: 7
-				Offset: 9,-2
-				ZOffset: 0
-			op2_art.bmp: build-facing7-7
-				Frames: 3657
-				Length: 1
-				Offset: 9,0
+				Frames: 3663,3663,3663,3663,3663,3663,3664,3665
+				Length: 8
+				Offset: 8,-6
 				ZOffset: 0
 			op2_art.bmp: build-facing7-8
-				Frames: 3658
-				Length: 1
-				Offset: 9,1
-				ZOffset: 0
-			op2_art.bmp: build-facing7-9
-				Frames: 3659
-				Length: 1
-				Offset: 9,0
-				ZOffset: 0
-			op2_art.bmp: build-facing7-10
-				Frames: 3660
-				Length: 1
-				Offset: 7,0
+				Frames: 3666,3667,3668
+				Length: 3
+				Offset: 8,-5
 				ZOffset: 0
 			op2_art.bmp: build-facing7-11
-				Frames: 3661
+				Frames: 3669
 				Length: 1
-				Offset: 9,-1
+				Offset: 8,-6
 				ZOffset: 0
 	build-sprite-id1:
 		Length: 12
@@ -8387,9 +8387,9 @@ plymouth-earthworker:
 		ZOffset: -256
 		Combine:
 			op2_art.bmp: build-facing0-0
-				Frames: 3662,3662,3662,3662,3662,3662,3662,3662,3662,3662,3662,3662
+				Frames: 3654,3654,3654,3654,3654,3654,3654,3654,3654,3654,3654,3654
 				Length: 12
-				Offset: 2,4
+				Offset: -2,5
 				ZOffset: -256
 			op2_art.bmp: build-facing1-0
 				Frames: 3670,3670,3670,3670,3670,3670,3670,3670,3670,3670,3670,3670
@@ -8397,24 +8397,24 @@ plymouth-earthworker:
 				Offset: 4,6
 				ZOffset: -256
 			op2_art.bmp: build-facing2-0
-				Frames: 3678,3678,3678,3678,3678,3678,3678,3678,3678,3678,3678,3678
-				Length: 12
-				Offset: 7,3
-				ZOffset: -256
-			op2_art.bmp: build-facing3-0
-				Frames: 3686,3686,3686,3686,3686,3686,3686,3686,3686,3686,3686,3686
-				Length: 12
-				Offset: 9,0
-				ZOffset: -256
-			op2_art.bmp: build-facing4-0
 				Frames: 3694,3694,3694,3694,3694,3694,3694,3694,3694,3694,3694,3694
 				Length: 12
 				Offset: 1,-5
 				ZOffset: -256
-			op2_art.bmp: build-facing5-0
+			op2_art.bmp: build-facing3-0
 				Frames: 3702,3702,3702,3702,3702,3702,3702,3702,3702,3702,3702,3702
 				Length: 12
 				Offset: -2,-2
+				ZOffset: -256
+			op2_art.bmp: build-facing4-0
+				Frames: 3686,3686,3686,3686,3686,3686,3686,3686,3686,3686,3686,3686
+				Length: 12
+				Offset: 9,0
+				ZOffset: -256
+			op2_art.bmp: build-facing5-0
+				Frames: 3678,3678,3678,3678,3678,3678,3678,3678,3678,3678,3678,3678
+				Length: 12
+				Offset: 7,3
 				ZOffset: -256
 			op2_art.bmp: build-facing6-0
 				Frames: 3646,3646,3646,3646,3646,3646,3646,3646,3646,3646,3646,3646
@@ -8422,9 +8422,9 @@ plymouth-earthworker:
 				Offset: -4,2
 				ZOffset: -256
 			op2_art.bmp: build-facing7-0
-				Frames: 3654,3654,3654,3654,3654,3654,3654,3654,3654,3654,3654,3654
+				Frames: 3662,3662,3662,3662,3662,3662,3662,3662,3662,3662,3662,3662
 				Length: 12
-				Offset: -2,5
+				Offset: 2,4
 				ZOffset: -256
 	build-shadow-id2:
 		Length: 12
@@ -8433,9 +8433,9 @@ plymouth-earthworker:
 		ZOffset: -512
 		Combine:
 			op2_art.bmp: build-facing0-0
-				Frames: 4578,4578,4578,4578,4578,4578,4578,4578,4578,4578,4578,4578
+				Frames: 4579,4579,4579,4579,4579,4579,4579,4579,4579,4579,4579,4579
 				Length: 12
-				Offset: 1,1
+				Offset: 0,3
 				ZOffset: -512
 			op2_art.bmp: build-facing1-0
 				Frames: 4580,4580,4580,4580,4580,4580,4580,4580,4580,4580,4580,4580
@@ -8443,24 +8443,24 @@ plymouth-earthworker:
 				Offset: 0,1
 				ZOffset: -512
 			op2_art.bmp: build-facing2-0
-				Frames: 4584,4584,4584,4584,4584,4584,4584,4584,4584,4584,4584,4584
-				Length: 12
-				Offset: -1,1
-				ZOffset: -512
-			op2_art.bmp: build-facing3-0
-				Frames: 4583,4583,4583,4583,4583,4583,4583,4583,4583,4583,4583,4583
-				Length: 12
-				Offset: 1,-3
-				ZOffset: -512
-			op2_art.bmp: build-facing4-0
 				Frames: 4581,4581,4581,4581,4581,4581,4581,4581,4581,4581,4581,4581
 				Length: 12
 				Offset: 0,-6
 				ZOffset: -512
-			op2_art.bmp: build-facing5-0
+			op2_art.bmp: build-facing3-0
 				Frames: 4582,4582,4582,4582,4582,4582,4582,4582,4582,4582,4582,4582
 				Length: 12
 				Offset: 1,-4
+				ZOffset: -512
+			op2_art.bmp: build-facing4-0
+				Frames: 4583,4583,4583,4583,4583,4583,4583,4583,4583,4583,4583,4583
+				Length: 12
+				Offset: 1,-3
+				ZOffset: -512
+			op2_art.bmp: build-facing5-0
+				Frames: 4584,4584,4584,4584,4584,4584,4584,4584,4584,4584,4584,4584
+				Length: 12
+				Offset: -1,1
 				ZOffset: -512
 			op2_art.bmp: build-facing6-0
 				Frames: 4577,4577,4577,4577,4577,4577,4577,4577,4577,4577,4577,4577
@@ -8468,9 +8468,9 @@ plymouth-earthworker:
 				Offset: 0,-1
 				ZOffset: -512
 			op2_art.bmp: build-facing7-0
-				Frames: 4579,4579,4579,4579,4579,4579,4579,4579,4579,4579,4579,4579
+				Frames: 4578,4578,4578,4578,4578,4578,4578,4578,4578,4578,4578,4578
 				Length: 12
-				Offset: 0,3
+				Offset: 1,1
 				ZOffset: -512
 	build-shadow-id3:
 		Length: 12
@@ -8479,19 +8479,29 @@ plymouth-earthworker:
 		ZOffset: -768
 		Combine:
 			op2_art.bmp: build-facing0-0
-				Frames: 4994,4994,4994,4994,4994,4994,4994,4995
-				Length: 8
-				Offset: -2,-5
-				ZOffset: -768
-			op2_art.bmp: build-facing0-8
-				Frames: 4996
-				Length: 1
+				Frames: 4987,4987,4987,4987,4987,4987,4988
+				Length: 7
 				Offset: -2,-4
 				ZOffset: -768
+			op2_art.bmp: build-facing0-7
+				Frames: 4989
+				Length: 1
+				Offset: -2,-2
+				ZOffset: -768
+			op2_art.bmp: build-facing0-8
+				Frames: 4990
+				Length: 1
+				Offset: -2,-1
+				ZOffset: -768
 			op2_art.bmp: build-facing0-9
-				Frames: 4997,4998,4999
-				Length: 3
-				Offset: -2,-5
+				Frames: 4991,4992
+				Length: 2
+				Offset: -2,-2
+				ZOffset: -768
+			op2_art.bmp: build-facing0-11
+				Frames: 4993
+				Length: 1
+				Offset: -2,-3
 				ZOffset: -768
 			op2_art.bmp: build-facing1-0
 				Frames: 5000,5000,5000,5000,5000,5000
@@ -8519,99 +8529,99 @@ plymouth-earthworker:
 				Offset: -1,-5
 				ZOffset: -768
 			op2_art.bmp: build-facing2-0
-				Frames: 5007,5007,5007,5007,5007,5007,5008,5009
-				Length: 8
-				Offset: -2,-2
-				ZOffset: -768
-			op2_art.bmp: build-facing2-8
-				Frames: 5010
-				Length: 1
-				Offset: -2,-1
-				ZOffset: -768
-			op2_art.bmp: build-facing2-9
-				Frames: 5011
-				Length: 1
-				Offset: -2,0
-				ZOffset: -768
-			op2_art.bmp: build-facing2-10
-				Frames: 5012
-				Length: 1
-				Offset: -1,-1
-				ZOffset: -768
-			op2_art.bmp: build-facing2-11
-				Frames: 5013
-				Length: 1
-				Offset: -2,-1
-				ZOffset: -768
-			op2_art.bmp: build-facing3-0
-				Frames: 5014,5014,5014,5014,5014,5014
-				Length: 6
-				Offset: -2,-4
-				ZOffset: -768
-			op2_art.bmp: build-facing3-6
-				Frames: 5015
-				Length: 1
-				Offset: -2,-2
-				ZOffset: -768
-			op2_art.bmp: build-facing3-7
-				Frames: 5016
-				Length: 1
-				Offset: -1,-2
-				ZOffset: -768
-			op2_art.bmp: build-facing3-8
-				Frames: 5017,5018,5019
-				Length: 3
-				Offset: -1,-3
-				ZOffset: -768
-			op2_art.bmp: build-facing3-11
-				Frames: 5020
-				Length: 1
-				Offset: -2,-5
-				ZOffset: -768
-			op2_art.bmp: build-facing4-0
 				Frames: 5021,5021,5021,5021,5021,5021,5022
 				Length: 7
 				Offset: -1,4
 				ZOffset: -768
-			op2_art.bmp: build-facing4-7
+			op2_art.bmp: build-facing2-7
 				Frames: 5023
 				Length: 1
 				Offset: -1,3
 				ZOffset: -768
-			op2_art.bmp: build-facing4-8
+			op2_art.bmp: build-facing2-8
 				Frames: 5024,5025
 				Length: 2
 				Offset: 0,3
 				ZOffset: -768
-			op2_art.bmp: build-facing4-10
+			op2_art.bmp: build-facing2-10
 				Frames: 5026,5027
 				Length: 2
 				Offset: 0,4
 				ZOffset: -768
-			op2_art.bmp: build-facing5-0
+			op2_art.bmp: build-facing3-0
 				Frames: 5028,5028,5028,5028,5028,5028,5029,5030
 				Length: 8
 				Offset: -1,3
 				ZOffset: -768
-			op2_art.bmp: build-facing5-8
+			op2_art.bmp: build-facing3-8
 				Frames: 5031
 				Length: 1
 				Offset: 0,4
 				ZOffset: -768
-			op2_art.bmp: build-facing5-9
+			op2_art.bmp: build-facing3-9
 				Frames: 5032
 				Length: 1
 				Offset: -1,3
 				ZOffset: -768
-			op2_art.bmp: build-facing5-10
+			op2_art.bmp: build-facing3-10
 				Frames: 5033
 				Length: 1
 				Offset: -1,2
 				ZOffset: -768
-			op2_art.bmp: build-facing5-11
+			op2_art.bmp: build-facing3-11
 				Frames: 5034
 				Length: 1
 				Offset: -1,3
+				ZOffset: -768
+			op2_art.bmp: build-facing4-0
+				Frames: 5014,5014,5014,5014,5014,5014
+				Length: 6
+				Offset: -2,-4
+				ZOffset: -768
+			op2_art.bmp: build-facing4-6
+				Frames: 5015
+				Length: 1
+				Offset: -2,-2
+				ZOffset: -768
+			op2_art.bmp: build-facing4-7
+				Frames: 5016
+				Length: 1
+				Offset: -1,-2
+				ZOffset: -768
+			op2_art.bmp: build-facing4-8
+				Frames: 5017,5018,5019
+				Length: 3
+				Offset: -1,-3
+				ZOffset: -768
+			op2_art.bmp: build-facing4-11
+				Frames: 5020
+				Length: 1
+				Offset: -2,-5
+				ZOffset: -768
+			op2_art.bmp: build-facing5-0
+				Frames: 5007,5007,5007,5007,5007,5007,5008,5009
+				Length: 8
+				Offset: -2,-2
+				ZOffset: -768
+			op2_art.bmp: build-facing5-8
+				Frames: 5010
+				Length: 1
+				Offset: -2,-1
+				ZOffset: -768
+			op2_art.bmp: build-facing5-9
+				Frames: 5011
+				Length: 1
+				Offset: -2,0
+				ZOffset: -768
+			op2_art.bmp: build-facing5-10
+				Frames: 5012
+				Length: 1
+				Offset: -1,-1
+				ZOffset: -768
+			op2_art.bmp: build-facing5-11
+				Frames: 5013
+				Length: 1
+				Offset: -2,-1
 				ZOffset: -768
 			op2_art.bmp: build-facing6-0
 				Frames: 4980,4980,4980,4980,4980,4981,4982,4983
@@ -8629,29 +8639,19 @@ plymouth-earthworker:
 				Offset: -2,1
 				ZOffset: -768
 			op2_art.bmp: build-facing7-0
-				Frames: 4987,4987,4987,4987,4987,4987,4988
-				Length: 7
-				Offset: -2,-4
-				ZOffset: -768
-			op2_art.bmp: build-facing7-7
-				Frames: 4989
-				Length: 1
-				Offset: -2,-2
+				Frames: 4994,4994,4994,4994,4994,4994,4994,4995
+				Length: 8
+				Offset: -2,-5
 				ZOffset: -768
 			op2_art.bmp: build-facing7-8
-				Frames: 4990
+				Frames: 4996
 				Length: 1
-				Offset: -2,-1
+				Offset: -2,-4
 				ZOffset: -768
 			op2_art.bmp: build-facing7-9
-				Frames: 4991,4992
-				Length: 2
-				Offset: -2,-2
-				ZOffset: -768
-			op2_art.bmp: build-facing7-11
-				Frames: 4993
-				Length: 1
-				Offset: -2,-3
+				Frames: 4997,4998,4999
+				Length: 3
+				Offset: -2,-5
 				ZOffset: -768
 
 eden-scout:

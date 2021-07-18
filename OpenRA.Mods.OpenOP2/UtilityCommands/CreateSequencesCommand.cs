@@ -182,6 +182,15 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					groupSequence.WithSingleFrameIdle = withSingleFrameIdle == "true";
 				}
 
+				var groupIndexRemapping = groupNodes.FirstOrDefault(x => x.Key == "GroupIndexRemapping")?.Value?.Value
+					?.ToString();
+				if (!string.IsNullOrWhiteSpace(groupIndexRemapping))
+				{
+					var indexStrings = groupIndexRemapping.Split(',');
+					var parsedIndices = indexStrings.Select(x => int.Parse(x)).ToArray();
+					groupSequence.GroupIndexRemapping = parsedIndices;
+				}
+
 				var setsNode = group.Value.Nodes.First(x => x.Key == "Sets").Value.Nodes;
 				var sets = new List<GroupSequenceSet>();
 				foreach (var set in setsNode)
@@ -554,24 +563,37 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 		{
 			var typeGroupedFrames = new List<SequenceSet>();
 
-			List<ImageGroup> groups;
-			if (groupSequenceSet.StartOffset > 0)
-			{
-				groups = prtFile.Groups
-					.Skip(groupSequenceSet.Start + groupSequenceSet.StartOffset)
-					.Take(groupSequenceSet.Length - groupSequenceSet.StartOffset)
-					.ToList();
-
-				groups.AddRange(prtFile.Groups
-					.Skip(groupSequenceSet.Start)
-					.Take(groupSequenceSet.StartOffset));
-			}
-			else
-			{
-				groups = prtFile.Groups
+			var groups = prtFile.Groups
 					.Skip(groupSequenceSet.Start)
 					.Take(groupSequenceSet.Length)
 					.ToList();
+
+			if (groupSequence.GroupIndexRemapping != null)
+			{
+				var numGroups = groups.Count;
+				var newArray = new ImageGroup[numGroups];
+
+				for (var groupIndex = 0; groupIndex < numGroups; groupIndex++)
+				{
+					var remappedIndex = groupSequence.GroupIndexRemapping[groupIndex];
+					var targetGroup = groups[remappedIndex];
+					newArray[groupIndex] = targetGroup;
+				}
+
+				groups = newArray.ToList();
+			}
+
+			if (groupSequenceSet.StartOffset > 0)
+			{
+				var newGroups = groups
+					.Skip(groupSequenceSet.StartOffset)
+					.Take(groupSequenceSet.Length - groupSequenceSet.StartOffset)
+					.ToList();
+
+				newGroups.AddRange(groups
+					.Take(groupSequenceSet.StartOffset));
+
+				groups = newGroups;
 			}
 
 			frameCount = groups.Max(x => x.FrameCount);

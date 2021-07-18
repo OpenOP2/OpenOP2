@@ -28,10 +28,11 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		public override object Create(ActorInitializer init) { return new PlacesResourcesWhenCreated(init.Self, this); }
 	}
 
-	public class PlacesResourcesWhenCreated : ConditionalTrait<PlacesResourcesWhenCreatedInfo>
+	public class PlacesResourcesWhenCreated : ConditionalTrait<PlacesResourcesWhenCreatedInfo>, INotifyRemovedFromWorld
 	{
 		private ResourceLayer resourceLayer;
 		private ResourceType resourceType;
+		private CPos deployLocation;
 		public PlacesResourcesWhenCreated(Actor self, PlacesResourcesWhenCreatedInfo info)
 			: base(info)
 		{
@@ -46,8 +47,13 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 		protected override void Created(Actor self)
 		{
-			var resourcePoint = self.World.Map.CellContaining(self.CenterPosition) + new CVec(-1, 0);
-			resourceLayer.AddResource(resourceType, resourcePoint, Info.Amount);
+			deployLocation = self.World.Map.CellContaining(self.CenterPosition) + new CVec(-1, 0);
+			resourceLayer.AddResource(resourceType, deployLocation, Info.Amount);
+		}
+
+		public void RemovedFromWorld(Actor self)
+		{
+			resourceLayer.Destroy(deployLocation);
 		}
 	}
 }

@@ -12,7 +12,7 @@ Player:
 		Type: Building
 		DisplayOrder: 0
 		LowPowerModifier: 300
-		ReadyAudio: ConstructionComplete
+		ReadyAudio: StructureKitManufactured
 		BlockedAudio: NoBuild
 		LimitedAudio: BuildingInProgress
 		QueuedAudio: Building
@@ -23,7 +23,7 @@ Player:
 		Type: Defense
 		DisplayOrder: 1
 		LowPowerModifier: 300
-		ReadyAudio: ConstructionComplete
+		ReadyAudio: StructureKitManufactured
 		BlockedAudio: NoBuild
 		LimitedAudio: BuildingInProgress
 		QueuedAudio: Building
@@ -34,7 +34,7 @@ Player:
 		Type: Vehicle
 		DisplayOrder: 3
 		LowPowerModifier: 300
-		ReadyAudio: UnitReady
+		ReadyAudio: VehicleReady
 		BlockedAudio: NoBuild
 		LimitedAudio: BuildingInProgress
 		QueuedAudio: Building
@@ -46,7 +46,7 @@ Player:
 		Type: Infantry
 		DisplayOrder: 2
 		LowPowerModifier: 300
-		ReadyAudio: UnitReady
+		ReadyAudio: VehicleReady
 		BlockedAudio: NoBuild
 		LimitedAudio: BuildingInProgress
 		QueuedAudio: Training
@@ -57,7 +57,7 @@ Player:
 		Type: Ship
 		DisplayOrder: 5
 		LowPowerModifier: 300
-		ReadyAudio: UnitReady
+		ReadyAudio: VehicleReady
 		BlockedAudio: NoBuild
 		LimitedAudio: BuildingInProgress
 		QueuedAudio: Building
@@ -68,7 +68,7 @@ Player:
 		Type: Aircraft
 		DisplayOrder: 4
 		LowPowerModifier: 300
-		ReadyAudio: UnitReady
+		ReadyAudio: VehicleReady
 		BlockedAudio: NoBuild
 		LimitedAudio: BuildingInProgress
 		QueuedAudio: Building
