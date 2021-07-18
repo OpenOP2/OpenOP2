@@ -223,6 +223,12 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 						groupSequenceSet.Tick = tick;
 					}
 
+					var useFile = setNodes.FirstOrDefault(x => x.Key == "UseFile")?.Value?.Value?.ToString();
+					if (!string.IsNullOrEmpty(useFile))
+					{
+						groupSequenceSet.UseFile = useFile;
+					}
+
 					sets.Add(groupSequenceSet);
 				}
 
@@ -291,8 +297,16 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					sets = AddSingleFrameIdle(sets);
 				}
 
+				var literalGroupSequenceSets = new List<GroupSequenceSet>();
+
 				foreach (var groupSequenceSet in sets)
 				{
+					if (!string.IsNullOrWhiteSpace(groupSequenceSet.UseFile))
+					{
+						literalGroupSequenceSets.Add(groupSequenceSet);
+						continue;
+					}
+
 					List<ImageGroup> groups;
 					if (groupSequenceSet.StartOffset > 0)
 					{
@@ -619,6 +633,16 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					{
 						break;
 					}
+				}
+
+				// Hack in our literal sequences
+				// Used for icons only for now
+				foreach (var seq in literalGroupSequenceSets)
+				{
+					sb.AppendLine($"\t{seq.Sequence}: {seq.UseFile}");
+					sb.AppendLine($"\t\tStart: {seq.Start}");
+					sb.AppendLine($"\t\tLength: {seq.Length}");
+					sb.AppendLine($"\t\tOffset: {seq.OffsetX},{seq.OffsetY}");
 				}
 
 				sb.AppendLine(string.Empty);

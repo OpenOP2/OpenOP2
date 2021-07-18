@@ -2,6 +2,8 @@
 {
 	public class GroupSequenceSet
 	{
+		public string UseFile { get; set; }
+
 		/// <summary>
 		/// Start ID of the group index.
 		/// </summary>
