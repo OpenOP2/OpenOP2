@@ -12,6 +12,7 @@ eden-robo-dozer:
 			StartOffset: 2
 			Length: 8
 		Sequence: icon
+			UseFile: chromeedenrobodozer
 			Start: 0
 			Length: 1
 
