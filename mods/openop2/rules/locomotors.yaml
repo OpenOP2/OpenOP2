@@ -47,12 +47,12 @@
 			ClearSand: 90
 			ClearRock: 100
 			ClearRock2: 100
-			Junk: 60
-			Rust: 50
-			Plant: 80
+			Junk: 90
+			Rust: 80
+			Plant: 90
 			Ore: 100
 			#Lava: 0
-			RockMud: 20
-			RockSand: 20
-			RockRock: 20
+			RockMud: 70
+			RockSand: 65
+			RockRock: 70
 			Ice: 0
