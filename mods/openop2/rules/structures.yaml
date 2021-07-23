@@ -72,6 +72,8 @@
 	BaseProvider:
 		PauseOnCondition: being-captured
 		Range: 16c0
+	RepelsBlight: # Just for testing, have the HQ repel blight to some radius
+		Radius: 14c0
 
 ^Power:
 	Inherits: ^Op2Building

@@ -133,26 +133,27 @@ World:
 	#		2: WarningTwoMinutesRemaining
 	#		1: WarningOneMinuteRemaining
 	BlightOverlay:
-		StartPosition: 20, 20
-		RequiresCondition: blight
+		#RequiresCondition: blight
 		Palette: blight
 		ImageName: shroud
 		Sequence: shroud
 		Frames: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
 		Locomotor: blight
-		TickEvery: 5
-		SpreadChance: 10
+		TickEvery: 2
 		TilesToSpreadFraction: 10
 		TilesToSpreadMax: 40
-		Damage: 10
+		SpreadChance: 10
 		FuzzPivot: 6
 		FuzzMax: 12
 		DamageEvery: 2
+		Damage: 10
 		ActorsToDamageMin: 4
 		ActorsToDamageMax: 8
 		RandomDamageDelay: 6
 		RandomSearchEvery: 8
-		RandomActorSearchMax: 8
+		RandomSearchMax: 8
+		StartDelayRandom: 8
+		StartVoice: TheBlightIsApproaching
 
 EditorWorld:
 	Inherits: ^BaseWorld
