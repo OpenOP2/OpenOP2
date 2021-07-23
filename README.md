@@ -9,11 +9,11 @@ This mod is a work-in-progress. Many features are missing or incomplete at this 
 Join the [OpenOP2 Discord channel](https://discord.gg/XdsJWKJwmw)
 
 Thanks to 
-David Wilson (drogoganor)
-Matthias Mailänder (Mailaender)
-Zhall
-Zon
-KOYK (ELoyros)
+David Wilson (drogoganor),
+Matthias Mailänder (Mailaender),
+Zhall,
+Zon,
+KOYK (ELoyros),
 and the OpenRA developer team.
 
 ### Running from a local cloned repository
