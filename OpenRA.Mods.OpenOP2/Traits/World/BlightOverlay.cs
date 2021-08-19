@@ -100,7 +100,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		public override object Create(ActorInitializer init) { return new BlightOverlay(init.World, this); }
 	}
 
-	public class BlightOverlay : ConditionalTrait<BlightOverlayInfo>, IWorldLoaded, INotifyActorDisposing, IRenderOverlay, ITick
+	public class BlightOverlay : ConditionalTrait<BlightOverlayInfo>, IWorldLoaded, INotifyActorDisposing, IRenderAboveWorld, ITick
 	{
 		public class FrontierCell
 		{
@@ -170,7 +170,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			terrainCostMap.Add(pos, locomotorWeighting);
 		}
 
-		public void Render(WorldRenderer wr)
+		public void RenderAboveWorld(Actor self, WorldRenderer wr)
 		{
 			blightLayer.Draw(wr.Viewport);
 		}
@@ -190,11 +190,6 @@ namespace OpenRA.Mods.OpenOP2.Traits
 					if (startDelayCount <= 0)
 					{
 						started = true;
-
-						if (!string.IsNullOrWhiteSpace(info.StartVoice))
-						{
-							Game.Sound.PlayNotification(world.Map.Rules, world.LocalPlayer, "Speech", info.StartVoice, null);
-						}
 					}
 					else
 					{
@@ -206,6 +201,11 @@ namespace OpenRA.Mods.OpenOP2.Traits
 				// Spawn from each actor when ready
 				if (blightSpawnActors.Count > 0)
 				{
+					if (!string.IsNullOrWhiteSpace(info.StartVoice))
+					{
+						Game.Sound.PlayNotification(world.Map.Rules, world.LocalPlayer, "Speech", info.StartVoice, null);
+					}
+
 					var removedSpawnActors = new List<TraitPair<SpawnsBlight>>();
 					var readySpawnActors = blightSpawnActors.Where(x => x.Trait.IsReady);
 					foreach (var actor in readySpawnActors)

@@ -7,7 +7,7 @@ mpspawn:
 		OccupiesSpace: false
 	WithSpriteBody:
 	RenderSpritesEditorOnly:
-		Image: mpspawn
+		Image: rallypoint
 		Palette: 5
 	BodyOrientation:
 		QuantizedFacings: 1
@@ -43,8 +43,7 @@ blight-spawn:
 		OccupiesSpace: false
 	WithSpriteBody:
 	RenderSpritesEditorOnly:
-		Image: mpspawn
-		Palette: 5
+		Image: blight-spawn
 	BodyOrientation:
 		QuantizedFacings: 1
 	MapEditorData:

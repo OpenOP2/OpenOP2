@@ -9,6 +9,11 @@ pips:
 	pip-green:
 		Start: 2
 
+blight-spawn:
+	Defaults: bits/icons/blight.png
+		Length: 1
+	idle:
+
 overlay:
 	Defaults: bits/filled.png
 		Length: *

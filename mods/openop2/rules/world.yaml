@@ -134,6 +134,7 @@ World:
 	#		1: WarningOneMinuteRemaining
 	BlightOverlay:
 		#RequiresCondition: blight
+		StartVoice: TheBlightIsApproaching
 		Palette: blight
 		ImageName: shroud
 		Sequence: shroud
@@ -153,7 +154,6 @@ World:
 		RandomSearchEvery: 8
 		RandomSearchMax: 8
 		StartDelayRandom: 8
-		StartVoice: TheBlightIsApproaching
 
 EditorWorld:
 	Inherits: ^BaseWorld

@@ -26,11 +26,89 @@ Players:
 		Name: Creeps
 		NonCombatant: True
 		Faction: eden
+	PlayerReference@Eden:
+		Name: Eden
+		Faction: eden
+		Color: 1C73FF
+		Enemies: Plymouth
+	PlayerReference@Plymouth:
+		Name: Plymouth
+		Faction: plymouth
+		Color: FE1100
+		Enemies: Eden
 
 Actors:
-	Actor0: eden-robo-dozer
-		Owner: Neutral
-		Location: 30,35
-		Facing: 0
+	Actor0: plymouth-command-center
+		Owner: Plymouth
+		Location: 28,34
+	Actor1: plymouth-tokamak
+		Owner: Plymouth
+		Location: 25,38
+	Actor2: plymouth-smelter-common
+		Owner: Plymouth
+		Location: 25,29
+	Actor3: plymouth-mine-common
+		Owner: Plymouth
+		Location: 40,24
+	Actor4: plymouth-mine-common
+		Owner: Plymouth
+		Location: 19,30
+	Actor5: plymouth-convec
+		Owner: Plymouth
+		Location: 24,36
+		Facing: 824
+	Actor6: plymouth-factory-vehicle
+		Owner: Plymouth
+		Location: 25,22
+	Actor7: plymouth-factory-structure
+		Owner: Plymouth
+		Location: 35,37
+	Actor8: plymouth-residence
+		Owner: Plymouth
+		Location: 20,25
+	Actor9: plymouth-agridome
+		Owner: Plymouth
+		Location: 33,29
+	Actor10: plymouth-agridome
+		Owner: Plymouth
+		Location: 16,27
+	Actor11: plymouth-evacuation-transport
+		Owner: Plymouth
+		Location: 36,31
+		Facing: 753
+	Actor12: plymouth-evacuation-transport
+		Owner: Plymouth
+		Location: 38,33
+		Facing: 618
+	Actor13: plymouth-evacuation-transport
+		Owner: Plymouth
+		Location: 37,28
+		Facing: 705
+	Actor14: plymouth-robo-dozer
+		Owner: Plymouth
+		Facing: 384
+		Location: 31,22
+	Actor15: plymouth-cargo-truck
+		Owner: Plymouth
+		Location: 24,33
+		Facing: 372
+	Actor16: plymouth-cargo-truck
+		Owner: Plymouth
+		Location: 37,25
+		Facing: 880
+	Actor17: plymouth-lynx
+		Owner: Plymouth
+		Location: 31,25
+		Facing: 832
+		TurretFacing: 761
+	Actor18: plymouth-lynx
+		Owner: Plymouth
+		Location: 34,24
+		TurretFacing: 0
+		Facing: 745
+	Actor19: plymouth-earthworker
+		Owner: Plymouth
+		Location: 22,22
+		Facing: 586
 
 Rules: rules.yaml
