@@ -83,7 +83,10 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		[Desc("Play this notification from the Speech section when the blight is triggered.")]
 		public readonly string StartVoice;
 
-		[Desc("Wait up to this many random ticks before activating.")]
+		[Desc("Wait this many ticks before activating.")]
+		public readonly int StartDelay = 0;
+
+		[Desc("Add this many random ticks before activation.")]
 		public readonly int StartDelayRandom = 0;
 
 		[Desc("If we couldn't expand to a tile, put it on the blacklist for this many cycles so we don't check it again.")]
@@ -137,7 +140,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 		void IWorldLoaded.WorldLoaded(World world, WorldRenderer wr)
 		{
-			startDelayCount = world.SharedRandom.Next(0, info.StartDelayRandom);
+			startDelayCount = info.StartDelay + world.SharedRandom.Next(0, info.StartDelayRandom);
 
 			locomotor = world.WorldActor.TraitsImplementing<Locomotor>()
 				.Single(l => l.Info.Name == info.Locomotor);

@@ -39,7 +39,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			resourceLayer = self.World.WorldActor.Trait<ResourceLayer>();
 			var resourceTypes = self.World.WorldActor.TraitsImplementing<ResourceType>().ToArray();
 			resourceType = resourceTypes.FirstOrDefault(a =>
-				string.Equals(a.Info.Name, info.ResourceType, StringComparison.InvariantCultureIgnoreCase));
+				string.Equals(a.Info.Type, info.ResourceType, StringComparison.InvariantCultureIgnoreCase));
 
 			if (resourceType == null)
 				throw new ArgumentException($"Couldn't find resource type: {info.ResourceType}");

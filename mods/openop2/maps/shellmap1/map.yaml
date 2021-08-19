@@ -38,77 +38,77 @@ Players:
 		Enemies: Eden
 
 Actors:
-	Actor0: plymouth-command-center
+	Actor0: plymouth-earthworker
 		Owner: Plymouth
-		Location: 28,34
-	Actor1: plymouth-tokamak
+		Facing: 586
+		Location: 26,22
+	Actor1: plymouth-factory-vehicle
 		Owner: Plymouth
-		Location: 25,38
-	Actor2: plymouth-smelter-common
-		Owner: Plymouth
-		Location: 25,29
-	Actor3: plymouth-mine-common
-		Owner: Plymouth
-		Location: 40,24
-	Actor4: plymouth-mine-common
-		Owner: Plymouth
-		Location: 19,30
-	Actor5: plymouth-convec
-		Owner: Plymouth
-		Location: 24,36
-		Facing: 824
-	Actor6: plymouth-factory-vehicle
-		Owner: Plymouth
-		Location: 25,22
-	Actor7: plymouth-factory-structure
-		Owner: Plymouth
-		Location: 35,37
-	Actor8: plymouth-residence
-		Owner: Plymouth
-		Location: 20,25
-	Actor9: plymouth-agridome
-		Owner: Plymouth
-		Location: 33,29
-	Actor10: plymouth-agridome
-		Owner: Plymouth
-		Location: 16,27
-	Actor11: plymouth-evacuation-transport
-		Owner: Plymouth
-		Location: 36,31
-		Facing: 753
-	Actor12: plymouth-evacuation-transport
-		Owner: Plymouth
-		Location: 38,33
-		Facing: 618
-	Actor13: plymouth-evacuation-transport
-		Owner: Plymouth
-		Location: 37,28
-		Facing: 705
-	Actor14: plymouth-robo-dozer
+		Location: 29,22
+	Actor2: plymouth-robo-dozer
 		Owner: Plymouth
 		Facing: 384
-		Location: 31,22
-	Actor15: plymouth-cargo-truck
+		Location: 35,22
+	Actor3: plymouth-lynx
 		Owner: Plymouth
-		Location: 24,33
-		Facing: 372
-	Actor16: plymouth-cargo-truck
-		Owner: Plymouth
-		Location: 37,25
-		Facing: 880
-	Actor17: plymouth-lynx
-		Owner: Plymouth
-		Location: 31,25
-		Facing: 832
-		TurretFacing: 761
-	Actor18: plymouth-lynx
-		Owner: Plymouth
-		Location: 34,24
 		TurretFacing: 0
 		Facing: 745
-	Actor19: plymouth-earthworker
+		Location: 38,24
+	Actor4: plymouth-mine-common
 		Owner: Plymouth
-		Location: 22,22
-		Facing: 586
+		Location: 44,24
+	Actor5: plymouth-residence
+		Owner: Plymouth
+		Location: 24,25
+	Actor6: plymouth-lynx
+		Owner: Plymouth
+		Facing: 832
+		TurretFacing: 761
+		Location: 35,25
+	Actor7: plymouth-cargo-truck
+		Owner: Plymouth
+		Facing: 880
+		Location: 41,25
+	Actor8: plymouth-agridome
+		Owner: Plymouth
+		Location: 20,27
+	Actor9: plymouth-evacuation-transport
+		Owner: Plymouth
+		Facing: 705
+		Location: 41,28
+	Actor10: plymouth-smelter-common
+		Owner: Plymouth
+		Location: 29,29
+	Actor11: plymouth-agridome
+		Owner: Plymouth
+		Location: 37,29
+	Actor12: plymouth-mine-common
+		Owner: Plymouth
+		Location: 23,30
+	Actor13: plymouth-evacuation-transport
+		Owner: Plymouth
+		Facing: 753
+		Location: 40,31
+	Actor14: plymouth-cargo-truck
+		Owner: Plymouth
+		Facing: 372
+		Location: 28,33
+	Actor15: plymouth-evacuation-transport
+		Owner: Plymouth
+		Facing: 618
+		Location: 42,33
+	Actor16: plymouth-command-center
+		Owner: Plymouth
+		Location: 32,34
+	Actor17: plymouth-convec
+		Owner: Plymouth
+		Facing: 824
+		Location: 28,36
+	Actor18: plymouth-factory-structure
+		Owner: Plymouth
+		Location: 39,37
+	Actor19: plymouth-tokamak
+		Owner: Plymouth
+		Location: 29,38
 
 Rules: rules.yaml

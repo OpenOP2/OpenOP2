@@ -44,15 +44,15 @@
 		Name: blight
 		TerrainSpeeds:
 			Clear: 100
-			ClearSand: 90
+			ClearSand: 100
 			ClearRock: 100
 			ClearRock2: 100
-			Junk: 90
-			Rust: 80
-			Plant: 90
+			Junk: 95
+			Rust: 95
+			Plant: 100
 			Ore: 100
 			#Lava: 0
-			RockMud: 70
-			RockSand: 65
-			RockRock: 70
-			Ice: 0
+			RockMud: 95
+			RockSand: 95
+			RockRock: 95
+			#Ice: 0

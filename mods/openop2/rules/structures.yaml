@@ -72,8 +72,6 @@
 	BaseProvider:
 		PauseOnCondition: being-captured
 		Range: 16c0
-	RepelsBlight: # Just for testing, have the HQ repel blight to some radius
-		Radius: 14c0
 
 ^Power:
 	Inherits: ^Op2Building
@@ -244,7 +242,7 @@
 		Palette: 8
 		Offset: 0,-512,0
 	PlacesResourcesWhenCreated:
-		ResourceType: Ore2
+		ResourceType: ore.mine
 		Amount: 50000
 
 ^GuardPost:
