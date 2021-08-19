@@ -81,7 +81,8 @@ Speech:
 		CannotDeploy: savant97.wav
 		CommandControlInitiated: savant98.wav
 		SavantSeriesDemoSpiel: savant99.wav
-		CannotComply: savant100.wav
+		CannotComply: savnt100.wav
+		TheBlightIsApproaching: savnt278.wav
 
 Sounds:
 	DefaultVariant: 

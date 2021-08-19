@@ -11,9 +11,9 @@
 		AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 		AllowUnderActors: true
 		AllowUnderBuildings: true
-	ResourceType@ore2:
-		Type: ore2
-		Name: Ore2
+	ResourceType@ore.mine:
+		Type: ore.mine
+		Name: Ore Mine (placed by miner; do not use)
 		ResourceType: 2
 		TerrainType: Ore
 		Palette: 3
@@ -96,4 +96,4 @@
 	#	AllowUnderActors: true
 	#	AllowUnderBuildings: true
 	ResourceRenderer: 
-		RenderTypes: ore, ore2
+		RenderTypes: ore, ore.mine

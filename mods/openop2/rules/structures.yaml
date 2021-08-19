@@ -242,7 +242,7 @@
 		Palette: 8
 		Offset: 0,-512,0
 	PlacesResourcesWhenCreated:
-		ResourceType: Ore2
+		ResourceType: ore.mine
 		Amount: 50000
 
 ^GuardPost:

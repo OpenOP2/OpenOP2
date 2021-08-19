@@ -53,7 +53,7 @@
 		Speed: 78
 	Harvester:
 		Capacity: 20
-		Resources: ore2
+		Resources: ore.mine
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 15
 		SearchFromHarvesterRadius: 8

@@ -7,8 +7,8 @@ mpspawn:
 		OccupiesSpace: false
 	WithSpriteBody:
 	RenderSpritesEditorOnly:
-		Image: mpspawn
-		Palette: 5
+		Image: rallypoint
+		Palette: 8
 	BodyOrientation:
 		QuantizedFacings: 1
 	MapEditorData:
@@ -27,6 +27,23 @@ waypoint:
 	RenderSpritesEditorOnly:
 		Image: waypoint
 		Palette: 3
+	BodyOrientation:
+		QuantizedFacings: 1
+	MapEditorData:
+		Categories: System
+
+blight-spawn:
+	Interactable:
+	SpawnsBlight:
+		After: 0
+	EditorOnlyTooltip:
+		Name: Blight Spawn
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+		Image: blight-spawn
 	BodyOrientation:
 		QuantizedFacings: 1
 	MapEditorData:

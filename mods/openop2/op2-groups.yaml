@@ -2530,6 +2530,9 @@ rallypoint:
 	CreateBaseActor: False
 	CreateExampleActor: True
 	Sets:
+		Sequence: idle
+			Start: 1764
+			Length: 1
 		Sequence: flag
 			Start: 1764
 			Length: 1
