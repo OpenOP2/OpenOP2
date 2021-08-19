@@ -8,7 +8,7 @@ mpspawn:
 	WithSpriteBody:
 	RenderSpritesEditorOnly:
 		Image: rallypoint
-		Palette: 5
+		Palette: 8
 	BodyOrientation:
 		QuantizedFacings: 1
 	MapEditorData:

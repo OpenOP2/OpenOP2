@@ -188568,6 +188568,28 @@ lightning3:
 				ZOffset: 0
 
 rallypoint:
+	# All sequences: idle
+	idle:
+		Length: 17
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			op2_art.bmp: idle-facing0-0
+				Frames: 3998,3999,3999,3999
+				Length: 4
+				Offset: 2,1
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-4
+				Frames: 4000,4000
+				Length: 2
+				Offset: 1,1
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-6
+				Frames: 3999,3999,3999,3998,3998,3998,3998,3998,3998,3998,3998
+				Length: 11
+				Offset: 2,1
+				ZOffset: 0
 	# All sequences: flag
 	flag:
 		Length: 17
