@@ -55,7 +55,6 @@
 	Valued:
 		Cost: 2000
 	RevealsShroud:
-		MinRange: 4c0
 		Range: 5c0
 		RevealGeneratedShroud: False
 	Production:
@@ -105,7 +104,7 @@
 	Valued:
 		Cost: 300
 	RevealsShroud:
-		MinRange: 4c0
+		Range: 4c0
 	ScalePowerWithHealth:
 
 ^OreSmelterCommon:
@@ -140,7 +139,7 @@
 	Valued:
 		Cost: 500
 	RevealsShroud:
-		MinRange: 4c0
+		Range: 4c0
 	Refinery:
 		DockAngle: 0
 		DockOffset: 3,2
@@ -191,7 +190,7 @@
 	Valued:
 		Cost: 600
 	RevealsShroud:
-		MinRange: 4c0
+		Range: 4c0
 	Production:
 		Produces: Vehicle
 	ProductionBar:
@@ -236,7 +235,7 @@
 	Valued:
 		Cost: 300
 	RevealsShroud:
-		MinRange: 4c0
+		Range: 4c0
 	WithDirectionalIdleOverlay@deck:
 		Sequence: deck
 		Palette: 8
@@ -277,7 +276,7 @@
 	Valued:
 		Cost: 500
 	RevealsShroud:
-		MinRange: 4c0
+		Range: 4c0
 	Armament:
 		Weapon: LaserFire
 		#Recoil: 85
