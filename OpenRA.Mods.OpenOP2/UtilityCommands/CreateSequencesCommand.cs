@@ -94,9 +94,9 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			public List<ActorOverlay> Overlays = new List<ActorOverlay>();
 		}
 
-		private const string OutputFilename = "..\\..\\mods\\openop2\\sequences\\sequences-generated.yaml";
-		private const string RulesOutputFilename = "..\\..\\mods\\openop2\\rules\\rules-generated.yaml";
-		private const string RulesExampleOutputFilename = "..\\..\\mods\\openop2\\rules\\rules-example.yaml";
+		private const string OutputFilename = "..\\mods\\openop2\\sequences\\sequences-generated.yaml";
+		private const string RulesOutputFilename = "..\\mods\\openop2\\rules\\rules-generated.yaml";
+		private const string RulesExampleOutputFilename = "..\\mods\\openop2\\rules\\rules-example.yaml";
 
 		string IUtilityCommand.Name => "--create-sequences";
 

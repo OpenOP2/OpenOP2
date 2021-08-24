@@ -1,11 +1,9 @@
 @echo off
-set MOD_ID=openop2
-set MOD_SEARCH_PATHS=./../../mods,./../mods
-set ENGINE_DIR=./..
-set ENGINE_BIN_DIR=./engine/bin
-set TEMPLATE_DIR=%CD%
-cd %ENGINE_BIN_DIR%
+set MOD_SEARCH_PATHS=./../mods,./mods
+set ENGINE_DIR=..
+cd engine
 
-call OpenRA.Utility.exe %MOD_ID% --create-sequences
+bin\OpenRA.Utility.exe openop2 --create-sequences
+
 pause
 exit /b
