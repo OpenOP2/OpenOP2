@@ -7,6 +7,8 @@
 	Inherits: ^Building
 	Buildable:
 		IconPalette: 5
+	ActorLostNotification:
+		Notification: StructureDestroyed
 	#WithBuildingPlacedAnimation:
 	#	Sequence: make
 	#	RequiresCondition: !build-incomplete
@@ -193,16 +195,6 @@
 		Produces: Vehicle
 	ProductionBar:
 		ProductionType: Vehicle
-	ProductionQueue@Vehicle:
-		Type: Vehicle
-		Group: Vehicle
-		#ReadyAudio: UnitReady
-		#BlockedAudio: NoRoom
-		#QueuedAudio: Building
-		#OnHoldAudio: OnHold
-		#CancelledAudio: Cancelled
-		#BuildDurationModifier: 100
-		LowPowerModifier: 300
 	Exit@1:
 		Facing: 512
 		SpawnOffset: 512,0,0
@@ -249,7 +241,7 @@
 		Palette: 8
 		Offset: 0,-512,0
 	PlacesResourcesWhenCreated:
-		ResourceType: Ore2
+		ResourceType: ore.mine
 		Amount: 50000
 
 ^GuardPost:

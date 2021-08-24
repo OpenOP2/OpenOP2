@@ -1,6 +1,6 @@
 Metadata:
 	Title: Outpost 2
-	Version: {DEV_VERSION}
+	Version: {release-20210823}
 	Website: https://github.com/OpenOP2
 	WebIcon32: https://www.drogoganor.net/op2/openop2_32x32.png
 
@@ -22,6 +22,7 @@ Packages:
 	~music.zip
 	~voices.zip
 	openop2|bits
+	openop2|bits/icons
 	openop2|uibits
 
 MapFolders:
@@ -193,7 +194,7 @@ SupportsMapsFrom: openop2
 
 SoundFormats: Aud, Wav
 
-SpriteFormats: ShpTD, PngSheet, Op2Sprite, Op2TileSet, Op2Raw
+SpriteFormats: PngSheet, Op2Sprite, Op2TileSet, Op2Raw
 
 SpriteSequenceFormat: DefaultSpriteSequence
 

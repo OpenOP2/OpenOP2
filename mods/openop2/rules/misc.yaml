@@ -7,8 +7,8 @@ mpspawn:
 		OccupiesSpace: false
 	WithSpriteBody:
 	RenderSpritesEditorOnly:
-		Image: mpspawn
-		Palette: 5
+		Image: rallypoint
+		Palette: 8
 	BodyOrientation:
 		QuantizedFacings: 1
 	MapEditorData:
@@ -32,10 +32,27 @@ waypoint:
 	MapEditorData:
 		Categories: System
 
+blight-spawn:
+	Interactable:
+	SpawnsBlight:
+		After: 0
+	EditorOnlyTooltip:
+		Name: Blight Spawn
+	AlwaysVisible:
+	Immobile:
+		OccupiesSpace: false
+	WithSpriteBody:
+	RenderSpritesEditorOnly:
+		Image: blight-spawn
+	BodyOrientation:
+		QuantizedFacings: 1
+	MapEditorData:
+		Categories: System
+
 eden-robo-miner.colorpicker:
 	Inherits: eden-robo-miner
 	-Buildable:
 	-MapEditorData:
 	RenderSprites:
 		Image: eden-robo-miner
-		Palette: 3
+		Palette: colorpicker

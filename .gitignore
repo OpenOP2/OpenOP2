@@ -22,3 +22,5 @@ utils/
 BACKUP/
 mods/common/
 mods/openop2/maps-import/
+packaging/sourceart/*.png
+packaging/sourceart/*.ico
