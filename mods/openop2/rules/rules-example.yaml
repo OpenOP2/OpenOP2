@@ -334,31 +334,11 @@ plymouth-light-tower2:
 	Inherits@generated: ^plymouth-light-tower2-generated
 	Inherits: ^StubBuilding
 
-eden-unknown-turret:
-	Inherits@generated: ^eden-unknown-turret-generated
+eden-unknown:
+	Inherits@generated: ^eden-unknown-generated
 	Inherits: ^StubBuilding
 
-eden-turret-starflare:
-	Inherits@generated: ^eden-turret-starflare-generated
-	Inherits: ^StubBuilding
-
-eden-turret-starflare-double:
-	Inherits@generated: ^eden-turret-starflare-double-generated
-	Inherits: ^StubBuilding
-
-plymouth-turret-starflare:
-	Inherits@generated: ^plymouth-turret-starflare-generated
-	Inherits: ^StubBuilding
-
-plymouth-turret-starflare-double:
-	Inherits@generated: ^plymouth-turret-starflare-double-generated
-	Inherits: ^StubBuilding
-
-plymouth-turret-supernova:
-	Inherits@generated: ^plymouth-turret-supernova-generated
-	Inherits: ^StubBuilding
-
-plymouth-turret-supernova-double:
-	Inherits@generated: ^plymouth-turret-supernova-double-generated
+plymouth-supernova-guardpost:
+	Inherits@generated: ^plymouth-supernova-guardpost-generated
 	Inherits: ^StubBuilding
 

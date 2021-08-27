@@ -1751,43 +1751,18 @@
 		Sequence: idle-shadow-id2
 		Palette: shadow
 
-^eden-unknown-turret-generated:
+^eden-unknown-generated:
 	RenderSprites:
-		Image: eden-unknown-turret
+		Image: eden-unknown
 		PlayerPalette: playerMapped1
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-shadow-id1
 		Palette: shadow
 
-^eden-turret-starflare-generated:
+^plymouth-supernova-guardpost-generated:
 	RenderSprites:
-		Image: eden-turret-starflare
+		Image: plymouth-supernova-guardpost
 		PlayerPalette: playerMapped3
-
-^eden-turret-starflare-double-generated:
-	RenderSprites:
-		Image: eden-turret-starflare-double
-		PlayerPalette: playerMapped3
-
-^plymouth-turret-starflare-generated:
-	RenderSprites:
-		Image: plymouth-turret-starflare
-		PlayerPalette: playerMapped3
-
-^plymouth-turret-starflare-double-generated:
-	RenderSprites:
-		Image: plymouth-turret-starflare-double
-		PlayerPalette: playerMapped8
-
-^plymouth-turret-supernova-generated:
-	RenderSprites:
-		Image: plymouth-turret-supernova
-		PlayerPalette: playerMapped8
-
-^plymouth-turret-supernova-double-generated:
-	RenderSprites:
-		Image: plymouth-turret-supernova-double
-		PlayerPalette: playerMapped8
 
 ^waypoint-generated:
 	RenderSprites:

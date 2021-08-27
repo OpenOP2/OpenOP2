@@ -268,6 +268,30 @@ eden-tiger:
 			Start: 231
 			StartOffset: 2
 			Length: 8
+		Sequence: laser
+			Start: 1541
+			StartOffset: 4
+			Length: 16
+		Sequence: emp
+			Start: 1286
+			StartOffset: 4
+			Length: 16
+		Sequence: acidcloud
+			Start: 1605
+			StartOffset: 4
+			Length: 16
+		Sequence: starflare
+			Start: 1624
+			StartOffset: 4
+			Length: 1
+		Sequence: thor
+			Start: 1573
+			StartOffset: 4
+			Length: 16
+		Sequence: railgun
+			Start: 1379
+			StartOffset: 4
+			Length: 16
 
 plymouth-tiger:
 	ActorType: Vehicle
@@ -278,6 +302,34 @@ plymouth-tiger:
 			Start: 279
 			StartOffset: 2
 			Length: 8
+		Sequence: microwave
+			Start: 1509
+			StartOffset: 4
+			Length: 16
+		Sequence: emp
+			Start: 1318
+			StartOffset: 4
+			Length: 16
+		Sequence: rpg
+			Start: 1411
+			StartOffset: 4
+			Length: 16
+		Sequence: starflare
+			Start: 1621
+			StartOffset: 4
+			Length: 1
+		Sequence: esg
+			Start: 1477
+			StartOffset: 4
+			Length: 16
+		Sequence: stickyfoam
+			Start: 1443
+			StartOffset: 4
+			Length: 16
+		Sequence: supernova
+			Start: 1622
+			StartOffset: 4
+			Length: 1
 
 eden-panther:
 	ActorType: Vehicle
@@ -288,6 +340,30 @@ eden-panther:
 			Start: 239
 			StartOffset: 2
 			Length: 8
+		Sequence: laser
+			Start: 1525
+			StartOffset: 4
+			Length: 16
+		Sequence: emp
+			Start: 1270
+			StartOffset: 4
+			Length: 16
+		Sequence: acidcloud
+			Start: 1589
+			StartOffset: 4
+			Length: 16
+		Sequence: starflare
+			Start: 1623
+			StartOffset: 4
+			Length: 1
+		Sequence: thor
+			Start: 1557
+			StartOffset: 4
+			Length: 16
+		Sequence: railgun
+			Start: 1363
+			StartOffset: 4
+			Length: 16
 
 plymouth-panther:
 	ActorType: Vehicle
@@ -298,6 +374,34 @@ plymouth-panther:
 			Start: 335
 			StartOffset: 2
 			Length: 8
+		Sequence: microwave
+			Start: 1493
+			StartOffset: 4
+			Length: 16
+		Sequence: emp
+			Start: 1302
+			StartOffset: 4
+			Length: 16
+		Sequence: rpg
+			Start: 1395
+			StartOffset: 4
+			Length: 16
+		Sequence: starflare
+			Start: 1341
+			StartOffset: 4
+			Length: 1
+		Sequence: esg
+			Start: 1461
+			StartOffset: 4
+			Length: 16
+		Sequence: stickyfoam
+			Start: 1427
+			StartOffset: 4
+			Length: 16
+		Sequence: supernova
+			Start: 1342
+			StartOffset: 4
+			Length: 1
 
 eden-lynx:
 	ActorType: Vehicle
@@ -311,12 +415,28 @@ eden-lynx:
 		Sequence: icon
 			Start: 1202
 			Length: 1
+		Sequence: laser
+			Start: 1525
+			StartOffset: 4
+			Length: 16
 		Sequence: emp
 			Start: 1270
 			StartOffset: 4
 			Length: 16
-		Sequence: laser
-			Start: 1525
+		Sequence: acidcloud
+			Start: 1589
+			StartOffset: 4
+			Length: 16
+		Sequence: starflare
+			Start: 1623
+			StartOffset: 4
+			Length: 1
+		Sequence: thor
+			Start: 1557
+			StartOffset: 4
+			Length: 16
+		Sequence: railgun
+			Start: 1363
 			StartOffset: 4
 			Length: 16
 
@@ -332,10 +452,34 @@ plymouth-lynx:
 		Sequence: icon
 			Start: 1227
 			Length: 1
+		Sequence: microwave
+			Start: 1493
+			StartOffset: 4
+			Length: 16
 		Sequence: emp
 			Start: 1302
 			StartOffset: 4
 			Length: 16
+		Sequence: rpg
+			Start: 1395
+			StartOffset: 4
+			Length: 16
+		Sequence: starflare
+			Start: 1341
+			StartOffset: 4
+			Length: 1
+		Sequence: esg
+			Start: 1461
+			StartOffset: 4
+			Length: 16
+		Sequence: stickyfoam
+			Start: 1427
+			StartOffset: 4
+			Length: 16
+		Sequence: supernova
+			Start: 1342
+			StartOffset: 4
+			Length: 1
 
 eden-flyer:
 	ActorType: Vehicle
@@ -1946,7 +2090,7 @@ plymouth-light-tower2:
 			Start: 224
 			Length: 1
 
-eden-unknown-turret:
+eden-unknown:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
@@ -1958,61 +2102,16 @@ eden-unknown-turret:
 			Start: 111
 			Length: 1
 
-eden-turret-starflare:
+plymouth-supernova-guardpost:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
 	Sets:
 		Sequence: idle
-			Start: 1623
-			Length: 1
-
-eden-turret-starflare-double:
-	ActorType: Building
-	CreateBaseActor: True
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1624
-			Length: 1
-
-plymouth-turret-starflare:
-	ActorType: Building
-	CreateBaseActor: True
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 938
+			Start: 939
 			Length: 1
 		Sequence: fire
 			Start: 939
-			Length: 1
-
-plymouth-turret-starflare-double:
-	ActorType: Building
-	CreateBaseActor: True
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1621
-			Length: 1
-
-plymouth-turret-supernova:
-	ActorType: Building
-	CreateBaseActor: True
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1342
-			Length: 16
-
-plymouth-turret-supernova-double:
-	ActorType: Building
-	CreateBaseActor: True
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1622
 			Length: 1
 
 die1:
@@ -2715,177 +2814,6 @@ plymouth-turret-esg-guardpost:
 		Sequence: icon
 			Start: 1254
 			Length: 1
-
-eden-turret-emp-double:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1286
-			Length: 16
-
-plymouth-turret-emp:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1302
-			Length: 16
-
-plymouth-turret-emp-double:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1318
-			Length: 16
-
-eden-turret-railgun:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1363
-			Length: 16
-
-eden-turret-railgun-double:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1379
-			Length: 16
-
-plymouth-turret-rpg:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1395
-			Length: 16
-
-plymouth-turret-rpg-double:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1411
-			Length: 16
-
-plymouth-turret-stickyfoam:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1427
-			Length: 16
-
-plymouth-turret-stickyfoam-double:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1443
-			Length: 16
-
-plymouth-turret-esg:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1461
-			Length: 16
-
-plymouth-turret-esg-double:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1477
-			Length: 16
-
-plymouth-turret-microwave:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1493
-			Length: 16
-
-plymouth-turret-microwave-double:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1509
-			Length: 16
-
-eden-turret-laser:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1525
-			Length: 16
-
-eden-turret-laser-double:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1541
-			Length: 16
-
-eden-turret-thor:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1557
-			Length: 16
-
-eden-turret-thor-double:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1573
-			Length: 16
-
-plymouth-turret-acidcloud:
-	ActorType: Turret
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1589
-			Length: 16
-
-plymouth-turret-acidcloud-double:
-	ActorType: Decoration
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 1605
-			Length: 16
 
 plymouth-turret-emp-guardpost:
 	ActorType: Decoration
