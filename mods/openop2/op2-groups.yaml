@@ -299,7 +299,7 @@ plymouth-panther:
 			StartOffset: 2
 			Length: 8
 
-eden-lynx-laser:
+eden-lynx:
 	ActorType: Vehicle
 	CreateBaseActor: True
 	CreateExampleActor: False
@@ -315,21 +315,8 @@ eden-lynx-laser:
 			Start: 1270
 			StartOffset: 4
 			Length: 16
-
-eden-lynx-emp:
-	ActorType: Vehicle
-	CreateBaseActor: True
-	CreateExampleActor: False
-	Sets:
-		Sequence: idle
-			Start: 1202
-			StartOffset: 4
-			Length: 16
-		Sequence: icon
-			Start: 1202
-			Length: 1
-		Sequence: emp
-			Start: 1270
+		Sequence: laser
+			Start: 1525
 			StartOffset: 4
 			Length: 16
 

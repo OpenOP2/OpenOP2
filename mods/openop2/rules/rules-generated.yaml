@@ -327,21 +327,9 @@
 		Sequence: idle-shadow-id2
 		Palette: shadow
 
-^eden-lynx-laser-generated:
+^eden-lynx-generated:
 	RenderSprites:
-		Image: eden-lynx-laser
-		PlayerPalette: playerMapped3
-	WithDirectionalIdleOverlay@0:
-		Sequence: idle-sprite-id1
-		Palette: playerMapped3
-		IsPlayerPalette: true
-	WithDirectionalIdleOverlay@1:
-		Sequence: idle-shadow-id2
-		Palette: shadow
-
-^eden-lynx-emp-generated:
-	RenderSprites:
-		Image: eden-lynx-emp
+		Image: eden-lynx
 		PlayerPalette: playerMapped3
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-sprite-id1
