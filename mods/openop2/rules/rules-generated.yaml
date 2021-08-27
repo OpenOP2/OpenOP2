@@ -327,9 +327,21 @@
 		Sequence: idle-shadow-id2
 		Palette: shadow
 
-^eden-lynx-generated:
+^eden-lynx-laser-generated:
 	RenderSprites:
-		Image: eden-lynx
+		Image: eden-lynx-laser
+		PlayerPalette: playerMapped3
+	WithDirectionalIdleOverlay@0:
+		Sequence: idle-sprite-id1
+		Palette: playerMapped3
+		IsPlayerPalette: true
+	WithDirectionalIdleOverlay@1:
+		Sequence: idle-shadow-id2
+		Palette: shadow
+
+^eden-lynx-emp-generated:
+	RenderSprites:
+		Image: eden-lynx-emp
 		PlayerPalette: playerMapped3
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-sprite-id1
@@ -415,15 +427,16 @@
 		PlayerPalette: playerMapped1
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-sprite-id1
-		Palette: playerMapped2
+		Palette: playerMapped5
 		IsPlayerPalette: true
 	WithDirectionalIdleOverlay@1:
 		Sequence: idle-sprite-id2
-		Palette: playerMapped1
+		Palette: playerMapped2
 		IsPlayerPalette: true
 	WithDirectionalIdleOverlay@2:
-		Sequence: idle-shadow-id3
-		Palette: shadow
+		Sequence: idle-sprite-id3
+		Palette: playerMapped1
+		IsPlayerPalette: true
 	WithDirectionalIdleOverlay@3:
 		Sequence: idle-shadow-id4
 		Palette: shadow
@@ -435,6 +448,9 @@
 		Palette: shadow
 	WithDirectionalIdleOverlay@6:
 		Sequence: idle-shadow-id7
+		Palette: shadow
+	WithDirectionalIdleOverlay@7:
+		Sequence: idle-shadow-id8
 		Palette: shadow
 
 ^plymouth-command-center-generated:
@@ -450,10 +466,14 @@
 		Palette: playerMapped2
 		IsPlayerPalette: true
 	WithDirectionalIdleOverlay@2:
-		Sequence: idle-shadow-id3
-		Palette: shadow
+		Sequence: idle-sprite-id3
+		Palette: playerMapped2
+		IsPlayerPalette: true
 	WithDirectionalIdleOverlay@3:
 		Sequence: idle-shadow-id4
+		Palette: shadow
+	WithDirectionalIdleOverlay@4:
+		Sequence: idle-shadow-id5
 		Palette: shadow
 
 ^eden-tokamak-generated:
@@ -462,22 +482,26 @@
 		PlayerPalette: playerMapped2
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-sprite-id1
-		Palette: playerMapped1
+		Palette: playerMapped5
 		IsPlayerPalette: true
 	WithDirectionalIdleOverlay@1:
-		Sequence: idle-shadow-id2
-		Palette: shadow
+		Sequence: idle-sprite-id2
+		Palette: playerMapped1
+		IsPlayerPalette: true
 	WithDirectionalIdleOverlay@2:
 		Sequence: idle-shadow-id3
+		Palette: shadow
+	WithDirectionalIdleOverlay@3:
+		Sequence: idle-shadow-id4
 		Palette: shadow
 
 ^plymouth-tokamak-generated:
 	RenderSprites:
 		Image: plymouth-tokamak
-		PlayerPalette: playerMapped2
+		PlayerPalette: playerMapped3
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-sprite-id1
-		Palette: playerMapped2
+		Palette: playerMapped1
 		IsPlayerPalette: true
 	WithDirectionalIdleOverlay@1:
 		Sequence: idle-sprite-id2
@@ -520,7 +544,15 @@
 		Palette: playerMapped2
 		IsPlayerPalette: true
 	WithDirectionalIdleOverlay@11:
-		Sequence: idle-shadow-id12
+		Sequence: idle-sprite-id12
+		Palette: playerMapped2
+		IsPlayerPalette: true
+	WithDirectionalIdleOverlay@12:
+		Sequence: idle-sprite-id13
+		Palette: playerMapped2
+		IsPlayerPalette: true
+	WithDirectionalIdleOverlay@13:
+		Sequence: idle-shadow-id14
 		Palette: shadow
 
 ^eden-residence-generated:
@@ -729,13 +761,17 @@
 		Image: plymouth-factory-vehicle
 		PlayerPalette: playerMapped2
 	WithDirectionalIdleOverlay@0:
-		Sequence: idle-shadow-id1
-		Palette: shadow
+		Sequence: idle-sprite-id1
+		Palette: playerMapped2
+		IsPlayerPalette: true
 	WithDirectionalIdleOverlay@1:
 		Sequence: idle-shadow-id2
 		Palette: shadow
 	WithDirectionalIdleOverlay@2:
 		Sequence: idle-shadow-id3
+		Palette: shadow
+	WithDirectionalIdleOverlay@3:
+		Sequence: idle-shadow-id4
 		Palette: shadow
 
 ^eden-dirt-generated:
@@ -889,7 +925,7 @@
 		PlayerPalette: playerMapped2
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-sprite-id1
-		Palette: playerMapped3
+		Palette: playerMapped2
 		IsPlayerPalette: true
 	WithDirectionalIdleOverlay@1:
 		Sequence: idle-sprite-id2
@@ -904,13 +940,17 @@
 		Palette: playerMapped3
 		IsPlayerPalette: true
 	WithDirectionalIdleOverlay@4:
-		Sequence: idle-shadow-id5
-		Palette: shadow
+		Sequence: idle-sprite-id5
+		Palette: playerMapped3
+		IsPlayerPalette: true
 	WithDirectionalIdleOverlay@5:
 		Sequence: idle-shadow-id6
 		Palette: shadow
 	WithDirectionalIdleOverlay@6:
 		Sequence: idle-shadow-id7
+		Palette: shadow
+	WithDirectionalIdleOverlay@7:
+		Sequence: idle-shadow-id8
 		Palette: shadow
 
 ^eden-storage-common-generated:
@@ -1766,13 +1806,13 @@
 		Image: waypoint
 		PlayerPalette: playerMapped3
 
-^eden-turret-laser-generated:
+^eden-turret-laser-guardpost-generated:
 	RenderSprites:
-		Image: eden-turret-laser
+		Image: eden-turret-laser-guardpost
 		PlayerPalette: playerMapped3
 
-^plymouth-turret-microwave-generated:
+^plymouth-turret-microwave-guardpost-generated:
 	RenderSprites:
-		Image: plymouth-turret-microwave
+		Image: plymouth-turret-microwave-guardpost
 		PlayerPalette: playerMapped3
 

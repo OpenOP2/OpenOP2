@@ -26,7 +26,7 @@
 	AttackTurreted:
 	#WithMuzzleOverlay:
 	WithSpriteTurret:
-		Sequence: turret2
+		Sequence: emp
 		Palette: playerMapped3
 		IsPlayerPalette: true
 
@@ -53,7 +53,7 @@
 		Speed: 78
 	Harvester:
 		Capacity: 20
-		Resources: ore.mine
+		Resources: ore2
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 15
 		SearchFromHarvesterRadius: 8
@@ -187,12 +187,23 @@ plymouth-robo-miner:
 	Transforms:
 		IntoActor: plymouth-mine-common
 
-eden-lynx:
-	Inherits@generated: ^eden-lynx-generated
+eden-lynx-laser:
+	Inherits@generated:	^eden-lynx-laser-generated
 	Inherits: ^Lynx
 	Buildable:
 		Prerequisites: ~vehicles.eden
 		IconPalette: 3
+	WithSpriteTurret:
+		Sequence: eden-turret-laser
+
+eden-lynx-emp:
+	Inherits@generated: ^eden-lynx-emp-generated
+	Inherits: ^Lynx
+	Buildable:
+		Prerequisites: ~vehicles.eden
+		IconPalette: 4
+	WithSpriteTurret:
+		Sequence: emp
 
 plymouth-lynx:
 	Inherits@generated: ^plymouth-lynx-generated

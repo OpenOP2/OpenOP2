@@ -360,13 +360,13 @@ plymouth-mine-common:
 	Inherits: ^MineCommon
 
 eden-turret-laser:
-	Inherits@generated: ^eden-turret-laser-generated
+	Inherits@generated: ^eden-turret-laser-guardpost-generated
 	Inherits: ^GuardPost
 	Buildable:
 		Prerequisites: ~structures.eden
 
 plymouth-turret-microwave:
-	Inherits@generated: ^plymouth-turret-microwave-generated
+	Inherits@generated: ^plymouth-turret-microwave-guardpost-generated
 	Inherits: ^GuardPost
 	Buildable:
 		Prerequisites: ~structures.plymouth
