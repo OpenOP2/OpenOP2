@@ -1,16 +1,18 @@
 ####################################################################################################
-#		WEAPONS EDEN
+#		WEAPONS EDEN + WEAPONS PLYMOUTH
 ####################################################################################################
-eden-mobile-laser:
+
+laser:
 	ReloadDelay: 30
 	Range: 5c512
-	Report: fireLaser.wav
+	Report: laser.wav
 	Projectile: LaserZap
 		Width: 40
 		ZOffset: 2047
 		HitAnimPalette: 3
 		LaunchEffectPalette: 3
 	Warhead@1Dam: SpreadDamage
+		Color: FF000080
 		Spread: 42
 		Damage: 4000
 		Versus:
@@ -19,14 +21,11 @@ eden-mobile-laser:
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Scorch
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
-		
-####################################################################################################
-#		WEAPONS PLYMOUTH
-####################################################################################################
-plymouth-mobile-microwave:
+
+microwave:
 	ReloadDelay: 20
 	Range: 5c512
-	Report: fireMicrowave.wav
+	Report: microwve.wav
 	Projectile: LaserZap
 		Color: FFFFFFFF
 		Width: 40
@@ -44,7 +43,7 @@ plymouth-mobile-microwave:
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
 
 
-^Laser:
+laser2:
 	Projectile: LaserZap
 		Width: 72
 		Duration: 15
@@ -62,10 +61,10 @@ plymouth-mobile-microwave:
 		DamageTypes: EnergyDeath
 
 LaserFire:
-	Inherits: ^Laser
+	Inherits: laser
 	ReloadDelay: 40
 	Range: 5c512
-	Report: laser.WAV
+	Report: laser.wav
 	ValidTargets: Ground, GroundActor
 	Projectile: LaserZap
 		Width: 36
@@ -75,3 +74,9 @@ LaserFire:
 	Warhead@1Dam: SpreadDamage
 		Damage: 3000
 		ValidTargets: Ground, GroundActor
+
+Emp:
+	Inherits: laser
+	ReloadDelay: 60
+	Range: 7c512
+	Report: 

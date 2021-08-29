@@ -17,7 +17,7 @@
 		TurnSpeed: 28
 		Offset: -48,0,176
 	Armament:
-		Weapon: LaserFire
+		Weapon: laser
 		Recoil: 85
 		RecoilRecovery: 25
 		LocalOffset: 768,0,90
@@ -195,6 +195,10 @@ eden-lynx-laser:
 		IconPalette: 3
 	WithSpriteTurret:
 		Sequence: laser
+	Armament:
+		Weapon:	laser
+		Recoil: 85
+		RecoilRecovery: 25
 
 eden-lynx-emp:
 	Inherits@generated: ^eden-lynx-generated
@@ -211,3 +215,7 @@ plymouth-lynx:
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3
+	Armament:
+		Weapon: microwave
+		Recoil: 85
+		RecoilRecovery: 25
