@@ -15,6 +15,8 @@
 		/// </summary>
 		public int Length { get; set; } = 1;
 
+		public int FacingsOverride { get; set; } = 0;
+
 		/// <summary>
 		/// Start from this group offset.
 		/// Groups will be read from the Start again after the last group.
