@@ -144,8 +144,6 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			var groupSequences = new List<GroupSequence>();
 			foreach (var group in yamlDefs)
 			{
-				var fart = group.Value.Nodes.First(x => x.Key == "ActorType").Value;
-
 				var groupNodes = group.Value.Nodes;
 				var groupSequence = new GroupSequence
 				{
@@ -225,6 +223,11 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					if (int.TryParse(setNodes.FirstOrDefault(x => x.Key == "StartOffset")?.Value?.Value?.ToString(), out var startOffset))
 					{
 						groupSequenceSet.StartOffset = startOffset;
+					}
+
+					if (int.TryParse(setNodes.FirstOrDefault(x => x.Key == "FacingsOverride")?.Value?.Value?.ToString(), out var facingsOverride))
+					{
+						groupSequenceSet.FacingsOverride = facingsOverride;
 					}
 
 					if (int.TryParse(setNodes.FirstOrDefault(x => x.Key == "Tick")?.Value?.Value?.ToString(), out var tick))
@@ -328,7 +331,16 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 						sb.AppendLine($"\t{sequenceName}:");
 						sb.AppendLine($"\t\tLength: {frameCount}");
-						sb.AppendLine($"\t\tFacings: {groupSequenceSet.Length}");
+
+						if (groupSequenceSet.FacingsOverride > 0)
+						{
+							sb.AppendLine($"\t\tFacings: {groupSequenceSet.FacingsOverride}");
+						}
+						else
+						{
+							sb.AppendLine($"\t\tFacings: {groupSequenceSet.Length}");
+						}
+
 						sb.AppendLine($"\t\tOffset: {groupSequenceSet.OffsetX},{groupSequenceSet.OffsetY}");
 
 						if (groupSequenceSet.OffsetZ != 0)
