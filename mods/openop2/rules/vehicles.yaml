@@ -1,4 +1,4 @@
-j# Hi Zhall and Zon,
+# Hi Zhall and Zon,
 # You'll want to look in rules-generated.yaml for the vehicle you need, then move it into here and customize it as you need.
 
 ^Op2Vehicle:
@@ -209,7 +209,7 @@ eden-lynx-emp:
 	WithSpriteTurret:
 		Sequence: emp
 	Armament:
-		Weapon:	rpg
+		Weapon: rpg
 		Recoil: 85
 		RecoilRecovery: 25
 

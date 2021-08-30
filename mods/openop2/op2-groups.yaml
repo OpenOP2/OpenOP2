@@ -2953,8 +2953,8 @@ plymouth-icon:
 
 missile:
 	ActorType: Decoration
-	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateBaseActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 599

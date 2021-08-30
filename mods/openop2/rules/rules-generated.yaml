@@ -1779,3 +1779,8 @@
 		Image: plymouth-turret-microwave-guardpost
 		PlayerPalette: playerMapped3
 
+^missile-generated:
+	RenderSprites:
+		Image: missile
+		PlayerPalette: playerMapped5
+
