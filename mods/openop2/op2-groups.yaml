@@ -2952,10 +2952,11 @@ plymouth-icon:
 			Length: 1
 
 missile:
-	ActorType: Effect
-	CreateBaseActor: True
-	CreateExampleActor: False
-	Sets:
-		Sequence: idle
-			Start: 599
-			Length: 32
+  ActorType: Effect
+  CreateBaseActor: True
+  CreateExampleActor: False
+  Sets:
+    Sequence: idle
+      Start: 599
+      Length: 1
+      FacingsOverride: 32
