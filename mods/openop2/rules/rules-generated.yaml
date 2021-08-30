@@ -1732,9 +1732,9 @@
 		Sequence: idle-shadow-id2
 		Palette: shadow
 
-^plymouth-light-tower-generated:
+^plymouth-unused-generated:
 	RenderSprites:
-		Image: plymouth-light-tower
+		Image: plymouth-unused
 		PlayerPalette: playerMapped2
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-shadow-id1

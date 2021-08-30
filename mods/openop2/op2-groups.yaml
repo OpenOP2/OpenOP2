@@ -2054,7 +2054,7 @@ eden-light-tower:
 			Start: 206
 			Length: 1
 
-plymouth-light-tower:
+plymouth-unused:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
@@ -2678,6 +2678,7 @@ mpspawn:
 			Start: 1107
 			Length: 1
 
+#railgun projectile
 clock:
 	ActorType: Decoration
 	CreateBaseActor: False
@@ -2824,7 +2825,7 @@ plymouth-turret-emp-guardpost:
 			Start: 2043
 			Length: 16
 
-lava-ripple:
+esg-ripple:
 	ActorType: Decoration
 	CreateBaseActor: False
 	CreateExampleActor: True
@@ -2950,3 +2951,11 @@ plymouth-icon:
 			Start: 1112
 			Length: 1
 
+missile:
+	ActorType: Decoration
+	CreateBaseActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 599
+			Length: 1

@@ -326,8 +326,8 @@ eden-light-tower:
 	Inherits@generated: ^eden-light-tower-generated
 	Inherits: ^StubBuilding
 
-plymouth-light-tower:
-	Inherits@generated: ^plymouth-light-tower-generated
+plymouth-unused:
+	Inherits@generated: ^plymouth-unused-generated
 	Inherits: ^StubBuilding
 
 plymouth-light-tower2:

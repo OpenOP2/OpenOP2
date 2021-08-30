@@ -1,13 +1,10 @@
-####################################################################################################
-#		WEAPONS EDEN + WEAPONS PLYMOUTH
-####################################################################################################
 
 laser:
 	ReloadDelay: 30
 	Range: 5c512
-	Report: laser.wav
+	Report: laser.WAV
 	Projectile: LaserZap
-		Width: 40
+		Width: 60
 		ZOffset: 2047
 		HitAnimPalette: 3
 		LaunchEffectPalette: 3
@@ -28,7 +25,7 @@ microwave:
 	Report: microwve.wav
 	Projectile: LaserZap
 		Color: FFFFFFFF
-		Width: 40
+		Width: 60
 		ZOffset: 2047
 		HitAnimPalette: 3
 		LaunchEffectPalette: 3
@@ -42,41 +39,42 @@ microwave:
 		SmudgeType: Scorch
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
 
-
-laser2:
-	Projectile: LaserZap
-		Width: 72
-		Duration: 15
-		ZOffset: 2047
-		Color: FF000080
-		SecondaryBeam: true
-		SecondaryBeamWidth: 180
-		SecondaryBeamZOffset: 2047
-		SecondaryBeamColor: FF000040
-		HitAnimPalette: 3
-		LaunchEffectPalette: 3
+rpg:
+	ReloadDelay: 50
+	Range: 5c0
+	MinRange: 0c512
+	Report: missile6.aud
+	ValidTargets: Ground, Water, GroundActor, WaterActor
+	Projectile: Missile
+		Speed: 213
+		Arm: 2
+		Blockable: false
+		ContrailLength: 10
+		Inaccuracy: 128
+		Image: DRAGON
+		Shadow: True
+		HorizontalRateOfTurn: 20
+		RangeLimit: 6c0
 	Warhead@1Dam: SpreadDamage
-		Spread: 42
-		Damage: 250
-		DamageTypes: EnergyDeath
-
-LaserFire:
-	Inherits: laser
-	ReloadDelay: 40
-	Range: 5c512
-	Report: laser.wav
-	ValidTargets: Ground, GroundActor
-	Projectile: LaserZap
-		Width: 36
-		Duration: 8
-		SecondaryBeamWidth: 144
-		SecondaryBeamColor: FF000030
-	Warhead@1Dam: SpreadDamage
-		Damage: 3000
-		ValidTargets: Ground, GroundActor
-
-Emp:
-	Inherits: laser
-	ReloadDelay: 60
-	Range: 7c512
-	Report: 
+		Spread: 128
+		Damage: 5000
+		ValidTargets: GroundActor, WaterActor, AirborneActor
+		Versus:
+			None: 10
+			Wood: 74
+			Light: 34
+			Heavy: 100
+			Concrete: 50
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+		ValidTargets: Ground, Infantry
+	Warhead@3Eff: CreateEffect
+		Explosions: med_explosion
+		ImpactSounds: kaboom25.aud
+		ValidTargets: Ground, Air, GroundActor, AirborneActor, WaterActor, Trees
+	Warhead@4EffWater: CreateEffect
+		Explosions: med_splash
+		ImpactSounds: splash9.aud
+		ValidTargets: Water, Underwater
+		InvalidTargets: Bridge
