@@ -330,14 +330,15 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 						}
 
 						sb.AppendLine($"\t{sequenceName}:");
-						sb.AppendLine($"\t\tLength: {frameCount}");
 
 						if (groupSequenceSet.FacingsOverride > 0)
 						{
+							sb.AppendLine($"\t\tLength: 1");
 							sb.AppendLine($"\t\tFacings: {groupSequenceSet.FacingsOverride}");
 						}
 						else
 						{
+							sb.AppendLine($"\t\tLength: {frameCount}");
 							sb.AppendLine($"\t\tFacings: {groupSequenceSet.Length}");
 						}
 
