@@ -192372,148 +192372,148 @@ missile:
 	# All sequences: idle
 	idle:
 		Length: 1
-		Facings: 1
+		Facings: 32
 		Offset: 0,0
 		ZOffset: 0
 		Combine:
 			op2_art.bmp: idle-facing0-0
-				Frames: 665
-				Length: 1
-				Offset: -3,2
-				ZOffset: 0
-			op2_art.bmp: idle-facing0-1
-				Frames: 666
-				Length: 1
-				Offset: -3,3
-				ZOffset: 0
-			op2_art.bmp: idle-facing0-2
-				Frames: 667
-				Length: 1
-				Offset: -4,4
-				ZOffset: 0
-			op2_art.bmp: idle-facing0-3
-				Frames: 668
-				Length: 1
-				Offset: -2,5
-				ZOffset: 0
-			op2_art.bmp: idle-facing0-4
-				Frames: 669
-				Length: 1
-				Offset: -1,6
-				ZOffset: 0
-			op2_art.bmp: idle-facing0-5
-				Frames: 670,671
-				Length: 2
-				Offset: 0,6
-				ZOffset: 0
-			op2_art.bmp: idle-facing0-7
-				Frames: 672
-				Length: 1
-				Offset: 1,6
-				ZOffset: 0
-			op2_art.bmp: idle-facing0-8
 				Frames: 673,674
 				Length: 2
 				Offset: 2,6
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-10
+			op2_art.bmp: idle-facing0-2
 				Frames: 675
 				Length: 1
 				Offset: 3,6
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-11
+			op2_art.bmp: idle-facing0-3
 				Frames: 676
 				Length: 1
 				Offset: 5,6
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-12
+			op2_art.bmp: idle-facing0-4
 				Frames: 677
 				Length: 1
 				Offset: 7,6
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-13
+			op2_art.bmp: idle-facing0-5
 				Frames: 678
 				Length: 1
 				Offset: 7,5
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-14
+			op2_art.bmp: idle-facing0-6
 				Frames: 679
 				Length: 1
 				Offset: 7,4
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-15
+			op2_art.bmp: idle-facing0-7
 				Frames: 680
 				Length: 1
 				Offset: 9,3
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-16
+			op2_art.bmp: idle-facing0-8
 				Frames: 681
 				Length: 1
 				Offset: 9,2
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-17
+			op2_art.bmp: idle-facing0-9
 				Frames: 682
 				Length: 1
 				Offset: 9,0
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-18
+			op2_art.bmp: idle-facing0-10
 				Frames: 683,684
 				Length: 2
 				Offset: 7,-1
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-20
+			op2_art.bmp: idle-facing0-12
 				Frames: 685
 				Length: 1
 				Offset: 7,-2
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-21
+			op2_art.bmp: idle-facing0-13
 				Frames: 686,687
 				Length: 2
 				Offset: 5,-3
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-23
+			op2_art.bmp: idle-facing0-15
 				Frames: 688
 				Length: 1
 				Offset: 3,-2
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-24
+			op2_art.bmp: idle-facing0-16
 				Frames: 689
 				Length: 1
 				Offset: 2,-2
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-25
+			op2_art.bmp: idle-facing0-17
 				Frames: 690
 				Length: 1
 				Offset: 0,-2
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-26
+			op2_art.bmp: idle-facing0-18
 				Frames: 691
 				Length: 1
 				Offset: 1,-3
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-27
+			op2_art.bmp: idle-facing0-19
 				Frames: 692
 				Length: 1
 				Offset: -1,-3
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-28
+			op2_art.bmp: idle-facing0-20
 				Frames: 693
 				Length: 1
 				Offset: -1,-2
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-29
+			op2_art.bmp: idle-facing0-21
 				Frames: 694
 				Length: 1
 				Offset: -2,-1
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-30
+			op2_art.bmp: idle-facing0-22
 				Frames: 695
 				Length: 1
 				Offset: -4,-1
 				ZOffset: 0
-			op2_art.bmp: idle-facing0-31
+			op2_art.bmp: idle-facing0-23
 				Frames: 696
 				Length: 1
 				Offset: -3,0
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-24
+				Frames: 665
+				Length: 1
+				Offset: -3,2
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-25
+				Frames: 666
+				Length: 1
+				Offset: -3,3
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-26
+				Frames: 667
+				Length: 1
+				Offset: -4,4
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-27
+				Frames: 668
+				Length: 1
+				Offset: -2,5
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-28
+				Frames: 669
+				Length: 1
+				Offset: -1,6
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-29
+				Frames: 670,671
+				Length: 2
+				Offset: 0,6
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-31
+				Frames: 672
+				Length: 1
+				Offset: 1,6
 				ZOffset: 0
 

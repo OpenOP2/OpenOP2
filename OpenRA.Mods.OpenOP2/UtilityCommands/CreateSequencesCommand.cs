@@ -16,7 +16,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using OpenRA.Mods.OpenOP2.FileSystem;
-using OpenRA.Primitives;
+using Color = OpenRA.Primitives.Color;
 
 namespace OpenRA.Mods.OpenOP2.UtilityCommands
 {
@@ -474,6 +474,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				OffsetY = originalIdle.OffsetY,
 				OffsetZ = originalIdle.OffsetZ,
 				StartOffset = originalIdle.StartOffset,
+				FacingsOverride = originalIdle.FacingsOverride,
 			};
 
 			var idleSets = groupSequenceSets.Where(t => regex.IsMatch(t.Sequence)).OrderBy(x => x.Sequence);
@@ -493,10 +494,10 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 		/// <summary>
 		/// Further specialize output sequences by shared offsets
 		/// </summary>
-		/// <param name="sequenceName"></param>
-		/// <param name="groupSequenceSet"></param>
-		/// <param name="typeGroupedFrame"></param>
-		/// <returns></returns>
+		/// <param name="sequenceName">The sequence name</param>
+		/// <param name="groupSequenceSet">The group sequence set</param>
+		/// <param name="typeGroupedFrame">The sequence set grouped by type</param>
+		/// <returns>The output sequence to write to sequences.</returns>
 		private OutputSequence GetOutputSequence(string sequenceName, GroupSequenceSet groupSequenceSet, SequenceSet typeGroupedFrame)
 		{
 			var outputSequence = new OutputSequence()
@@ -568,18 +569,18 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 		/// The frame types of each picture for each facing might not be in the same order for all facings, nor the same number of pictures for each frame type per facing.
 		/// Create "buckets" for each frame type and deposit each picture into each bucket, expanding the number of buckets as necessary.
 		/// </summary>
-		/// <param name="groupSequence"></param>
-		/// <param name="groupSequenceSet"></param>
-		/// <param name="frameCount"></param>
-		/// <returns></returns>
+		/// <param name="groupSequence">The group sequence</param>
+		/// <param name="groupSequenceSet">The group sequence set</param>
+		/// <param name="frameCount">Output of the frame count</param>
+		/// <returns>A list of sequence sets.</returns>
 		private List<SequenceSet> GetTypedGroupFrames(GroupSequence groupSequence, GroupSequenceSet groupSequenceSet, out int frameCount)
 		{
 			var typeGroupedFrames = new List<SequenceSet>();
 
 			var groups = prtFile.Groups
-					.Skip(groupSequenceSet.Start)
-					.Take(groupSequenceSet.Length)
-					.ToList();
+				.Skip(groupSequenceSet.Start)
+				.Take(groupSequenceSet.Length)
+				.ToList();
 
 			if (groupSequence.GroupIndexRemapping != null)
 			{
@@ -618,6 +619,14 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 			for (var frameIndex = 0; frameIndex < frameCount; frameIndex++)
 			{
+				// For groups 599 and 804, we have all the directions as individual frames in one group instead of separate groups.
+				// So, remap the frame we're reading from.
+				var remappedFrameIndex = frameIndex;
+				if (groupSequenceSet.FacingsOverride > 0 && groupSequenceSet.StartOffset > 0)
+				{
+					remappedFrameIndex = (frameIndex + groupSequenceSet.StartOffset) % frameCount;
+				}
+
 				var groupIndex = 0;
 				foreach (var group in groups)
 				{
@@ -629,7 +638,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					}
 					else
 					{
-						frame = group.Frames[frameIndex];
+						frame = group.Frames[remappedFrameIndex];
 					}
 
 					var pics = frame.Pictures.OrderBy(x => x.PicOrder);
