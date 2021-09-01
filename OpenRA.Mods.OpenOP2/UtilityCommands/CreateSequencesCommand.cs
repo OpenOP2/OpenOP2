@@ -20,20 +20,49 @@ using OpenRA.Primitives;
 
 namespace OpenRA.Mods.OpenOP2.UtilityCommands
 {
+	public class SequenceSet
+	{
+		public int FrameType;
+		public int Palette;
+		public int PicOrder;
+		public int OffsetX;
+		public int OffsetY;
+		public AnimationFacing[] AnimationFacings;
+		public string Name { get; set; }
+
+		public AnimationFrame[] GetFacingArray(int facing)
+		{
+			var frames = AnimationFacings[facing].Frames;
+			var isEvenNumberOfFrames = frames.Length % 2 == 0;
+			if (isEvenNumberOfFrames)
+			{
+				var halfFrames = frames.Length / 2;
+				var isFirstHalfPopulated = frames.Take(halfFrames).All(x => x != null);
+				var isSecondHalfUnpopulated = frames.Skip(halfFrames).Take(halfFrames).All(x => x == null);
+				if (isFirstHalfPopulated && isSecondHalfUnpopulated)
+				{
+					frames = frames.Take(halfFrames).Concat(frames.Take(halfFrames)).ToArray();
+				}
+			}
+
+			return AnimationFacings[facing].Frames.ToArray();
+		}
+	}
+
+	public class AnimationFacing
+	{
+		public AnimationFrame[] Frames;
+	}
+
+	public class AnimationFrame
+	{
+		public int Frame;
+		public int OffsetX;
+		public int OffsetY;
+	}
+
 	class CreateSequencesCommand : IUtilityCommand
 	{
-		class AnimationFacing
-		{
-			public AnimationFrame[] Frames;
-		}
-
-		class AnimationFrame
-		{
-			public int Frame;
-			public int OffsetX;
-			public int OffsetY;
-		}
-
 		class OutputSequence
 		{
 			public string Name;
@@ -47,35 +76,6 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			public int OffsetX;
 			public int OffsetY;
 			public List<int> Frames = new List<int>();
-		}
-
-		class SequenceSet
-		{
-			public int FrameType;
-			public int Palette;
-			public int PicOrder;
-			public int OffsetX;
-			public int OffsetY;
-			public AnimationFacing[] AnimationFacings;
-			public string Name { get; set; }
-
-			public AnimationFrame[] GetFacingArray(int facing)
-			{
-				var frames = AnimationFacings[facing].Frames;
-				var isEvenNumberOfFrames = frames.Length % 2 == 0;
-				if (isEvenNumberOfFrames)
-				{
-					var halfFrames = frames.Length / 2;
-					var isFirstHalfPopulated = frames.Take(halfFrames).All(x => x != null);
-					var isSecondHalfUnpopulated = frames.Skip(halfFrames).Take(halfFrames).All(x => x == null);
-					if (isFirstHalfPopulated && isSecondHalfUnpopulated)
-					{
-						frames = frames.Take(halfFrames).Concat(frames.Take(halfFrames)).ToArray();
-					}
-				}
-
-				return AnimationFacings[facing].Frames.ToArray();
-			}
 		}
 
 		class ActorOverlay

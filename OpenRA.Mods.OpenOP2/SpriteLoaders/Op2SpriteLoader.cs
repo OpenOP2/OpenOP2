@@ -133,6 +133,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			var prt = Game.ModData.DefaultFileSystem.Open("op2_art.prt");
 			framePalettes = LoadPalettes(prt);
 			prtFile = LoadImageHeader(prt, out var palettes);
+
 			var frameList = new List<ISpriteFrame>();
 
 			// Populate art data
@@ -233,8 +234,8 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					Data = data,
 					Type = SpriteFrameType.Indexed,
 				};
-				frameList.Add(img.SpriteFrame);
 
+				frameList.Add(img.SpriteFrame);
 				imgIndex++;
 			}
 
@@ -243,6 +244,25 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			frames = frameList.ToArray();
 
 			return true;
+		}
+
+		private List<ISpriteFrame> MergeSpriteData()
+		{
+			var groups = new GroupsFile();
+
+			foreach (var group in groups.Groups)
+			{
+				foreach (var set in group.Sets)
+				{
+					var typeGroupedFrames = groups.GetTypedGroupFrames(prtFile, group, set, out var frameCount);
+
+					foreach (var typeGroupedFrame in typeGroupedFrames)
+					{
+					}
+				}
+			}
+
+			return null;
 		}
 	}
 }
