@@ -182759,7 +182759,7 @@ die2:
 				Offset: -17,18
 				ZOffset: -5376
 
-explosion1:
+rpghit:
 	# All sequences: idle
 	idle:
 		Length: 12
@@ -182900,7 +182900,7 @@ puff3:
 				Offset: 2,0
 				ZOffset: 0
 
-explosion2:
+laserhit:
 	# All sequences: idle
 	idle:
 		Length: 11

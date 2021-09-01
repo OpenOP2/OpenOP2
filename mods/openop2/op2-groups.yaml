@@ -2132,10 +2132,10 @@ die2:
 			Start: 572
 			Length: 1
 
-explosion1:
+rpghit:
 	ActorType: Effect
-	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateBaseActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 230
@@ -2168,10 +2168,10 @@ puff3:
 			Start: 605
 			Length: 1
 
-explosion2:
+laserhit:
 	ActorType: Effect
-	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateBaseActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 657

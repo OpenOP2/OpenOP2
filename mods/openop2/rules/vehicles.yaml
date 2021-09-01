@@ -53,7 +53,7 @@
 		Speed: 78
 	Harvester:
 		Capacity: 20
-		Resources: ore2
+		Resources: ore.mine
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 15
 		SearchFromHarvesterRadius: 8
@@ -205,7 +205,7 @@ eden-lynx-emp:
 	Inherits: ^Lynx
 	Buildable:
 		Prerequisites: ~vehicles.eden
-		IconPalette: 4
+		IconPalette: 3
 	WithSpriteTurret:
 		Sequence: emp
 	Armament:
@@ -213,13 +213,28 @@ eden-lynx-emp:
 		Recoil: 85
 		RecoilRecovery: 25
 
-plymouth-lynx:
+plymouth-lynx-microwave:
 	Inherits@generated: ^plymouth-lynx-generated
 	Inherits: ^Lynx
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3
+	WithSpriteTurret:
+		Sequence: microwave
 	Armament:
 		Weapon: microwave
+		Recoil: 85
+		RecoilRecovery: 25
+
+plymouth-lynx-rpg:
+	Inherits@generated: ^plymouth-lynx-generated
+	Inherits: ^Lynx
+	Buildable:
+		Prerequisites: ~vehicles.plymouth
+		IconPalette: 3
+	WithSpriteTurret:
+		Sequence: rpg
+	Armament:
+		Weapon: rpg
 		Recoil: 85
 		RecoilRecovery: 25

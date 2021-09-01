@@ -6,8 +6,9 @@ laser:
 	Projectile: LaserZap
 		Width: 60
 		ZOffset: 2047
-		HitAnimPalette: 3
 		LaunchEffectPalette: 3
+		HitAnim: laserhit
+		HitAnimPalette: 6
 	Warhead@1Dam: SpreadDamage
 		Color: FF000080
 		Spread: 42
@@ -20,42 +21,36 @@ laser:
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
 
 microwave:
-	ReloadDelay: 20
-	Range: 5c512
+	Inherits: laser
+	Range: 5c0
+	ReloadDelay: 15
 	Report: microwve.wav
 	Projectile: LaserZap
 		Color: FFFFFFFF
-		Width: 60
-		ZOffset: 2047
-		HitAnimPalette: 3
-		LaunchEffectPalette: 3
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
-		Damage: 3000
+		Damage: 2500
 		Versus:
 			Wood: 50
-		DamageTypes: Prone50Percent, TriggerProne, FireDeath
-	Warhead@2Smu: LeaveSmudge
-		SmudgeType: Scorch
-		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
 
 rpg:
 	ReloadDelay: 50
-	Range: 6c0
+	Range: 7c0
 	Report: mis_fire.WAV
 	Projectile: Bullet
 		Palette: 5
-		Speed: 213
+		Speed: 300
 		Blockable: false
 		Inaccuracy: 128
 		Image: missile
 		Shadow: True
-		LaunchAngle: 62
-		HitAnimPalette: 3
+		LaunchAngle: 0
+		HitAnim: rpghit
+		HitAnimPalette: 6
 		LaunchEffectPalette: 3
 	Warhead@1Dam: SpreadDamage
-		Spread: 42
-		Damage: 3000
+		Spread: 80
+		Damage: 6000
 		Versus:
 			Wood: 50
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath

@@ -1764,6 +1764,16 @@
 		Image: plymouth-supernova-guardpost
 		PlayerPalette: playerMapped3
 
+^rpghit-generated:
+	RenderSprites:
+		Image: rpghit
+		PlayerPalette: playerMapped6
+
+^laserhit-generated:
+	RenderSprites:
+		Image: laserhit
+		PlayerPalette: playerMapped6
+
 ^waypoint-generated:
 	RenderSprites:
 		Image: waypoint
