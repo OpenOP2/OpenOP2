@@ -19,7 +19,7 @@ laser:
 		SmudgeType: Scorch
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
 	Warhead@1Eff: CreateEffect
-		ImpactSounds: smalxp2.wav
+		ImpactSounds: medexp1.WAV
 		ValidTargets: Ground, Vehicle
 
 microwave:
@@ -48,6 +48,9 @@ rpg:
 		LaunchAngle: 0
 		HitAnimPalette: 6
 		LaunchEffectPalette: 3
+		TrailImage: trail1
+		TrailPalette: 1
+		TrailInterval: 1
 	Warhead@1Dam: SpreadDamage
 		Spread: 80
 		Damage: 6000
@@ -59,7 +62,8 @@ rpg:
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
 		ValidTargets: Ground
 	Warhead@3Eff: CreateEffect
+		ExplosionPalette: 6
 		Image: rpghit
 		Explosions: idle
-		ImpactSounds: smalxp2.wav
 		ValidTargets: Ground
+		ImpactSounds: medexp2.WAV

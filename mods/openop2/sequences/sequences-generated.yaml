@@ -182808,7 +182808,7 @@ rpghit:
 				Offset: 10,7
 				ZOffset: 0
 
-puff1:
+trail1:
 	# All sequences: idle
 	idle:
 		Length: 6
@@ -182837,7 +182837,7 @@ puff1:
 				Offset: 0,-3
 				ZOffset: 0
 
-puff2:
+trail2:
 	# All sequences: idle
 	idle:
 		Length: 6
@@ -182871,7 +182871,7 @@ puff2:
 				Offset: 4,0
 				ZOffset: 0
 
-puff3:
+trail3:
 	# All sequences: idle
 	idle:
 		Length: 6

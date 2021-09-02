@@ -2141,7 +2141,7 @@ rpghit:
 			Start: 230
 			Length: 1
 
-puff1:
+trail1:
 	ActorType: Effect
 	CreateBaseActor: False
 	CreateExampleActor: True
@@ -2150,7 +2150,7 @@ puff1:
 			Start: 603
 			Length: 1
 
-puff2:
+trail2:
 	ActorType: Effect
 	CreateBaseActor: False
 	CreateExampleActor: True
@@ -2159,7 +2159,7 @@ puff2:
 			Start: 604
 			Length: 1
 
-puff3:
+trail3:
 	ActorType: Effect
 	CreateBaseActor: False
 	CreateExampleActor: True

@@ -221,10 +221,10 @@ plymouth-lynx-microwave:
 		IconPalette: 3
 	WithSpriteTurret:
 		Sequence: microwave
+		Palette: playerMapped8
+		IsPlayerPalette: True
 	Armament:
 		Weapon: microwave
-		Recoil: 85
-		RecoilRecovery: 25
 
 plymouth-lynx-rpg:
 	Inherits@generated: ^plymouth-lynx-generated
