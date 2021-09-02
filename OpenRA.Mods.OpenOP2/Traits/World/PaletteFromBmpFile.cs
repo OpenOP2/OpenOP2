@@ -70,9 +70,6 @@ namespace OpenRA.Mods.OpenOP2.Traits
 					var blue = s.ReadByte();
 					paletteData[c] = Color.FromArgb(red, green, blue);
 					var reserved = s.ReadByte();
-
-					// var un = s.ReadUInt32();
-					// framePalettes[c] = un;
 				}
 
 				return new ImmutablePalette(paletteData.Select(d => (uint)d.ToArgb()).ToArray());

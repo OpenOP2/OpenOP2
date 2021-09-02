@@ -9,6 +9,10 @@ pips:
 	pip-green:
 		Start: 2
 
+clock:
+	idle: clock.shp
+		Length: *
+
 blight-spawn:
 	Defaults: bits/icons/blight.png
 		Length: 1

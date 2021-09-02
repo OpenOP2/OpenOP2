@@ -48,7 +48,7 @@ Sequences:
 	openop2|sequences/misc.yaml
 	openop2|sequences/resources.yaml
 	openop2|sequences/walls.yaml
-	openop2|sequences/sequences-generated.yaml
+	openop2|op2-groups.yaml
 
 TileSets:
 	openop2|tilesets/default.yaml
@@ -194,9 +194,9 @@ SupportsMapsFrom: openop2
 
 SoundFormats: Aud, Wav
 
-SpriteFormats: PngSheet, Op2Sprite, Op2TileSet, Op2Raw
+SpriteFormats: ShpTD, PngSheet, Op2Sprite, Op2TileSet, Op2Raw
 
-SpriteSequenceFormat: DefaultSpriteSequence
+SpriteSequenceFormat: Op2SpriteSequence
 
 ModelSequenceFormat: PlaceholderModelSequence
 

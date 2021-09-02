@@ -16,6 +16,7 @@ Container@PLAYER_WIDGETS:
 					HoldText: ON HOLD
 					HotkeyPrefix: SupportPower
 					HotkeyCount: 6
+					ClockPalette: clock
 				Container@PALETTE_FOREGROUND:
 					Children:
 						Image@ICON_TEMPLATE:
@@ -449,6 +450,7 @@ Container@PLAYER_WIDGETS:
 					HotkeyPrefix: Production
 					HotkeyCount: 24
 					SelectProductionBuildingHotkey: SelectProductionBuilding
+					ClockPalette: clock
 				Container@PALETTE_FOREGROUND:
 					Children:
 						Image@ROW_TEMPLATE:

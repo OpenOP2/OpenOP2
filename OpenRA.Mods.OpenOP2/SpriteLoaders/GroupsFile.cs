@@ -1,13 +1,72 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using OpenRA.Mods.OpenOP2.FileSystem;
 using OpenRA.Mods.OpenOP2.UtilityCommands;
 
 namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 {
+	public class SequenceSet
+	{
+		public int FrameType;
+		public int Palette;
+		public int PicOrder;
+		public int OffsetX;
+		public int OffsetY;
+		public AnimationFacing[] AnimationFacings;
+		public string Name { get; set; }
+
+		public AnimationFrame[] GetFacingArray(int facing)
+		{
+			var frames = AnimationFacings[facing].Frames;
+			var isEvenNumberOfFrames = frames.Length % 2 == 0;
+			if (isEvenNumberOfFrames)
+			{
+				var halfFrames = frames.Length / 2;
+				var isFirstHalfPopulated = frames.Take(halfFrames).All(x => x != null);
+				var isSecondHalfUnpopulated = frames.Skip(halfFrames).Take(halfFrames).All(x => x == null);
+				if (isFirstHalfPopulated && isSecondHalfUnpopulated)
+				{
+					frames = frames.Take(halfFrames).Concat(frames.Take(halfFrames)).ToArray();
+				}
+			}
+
+			return AnimationFacings[facing].Frames.ToArray();
+		}
+	}
+
+	public class AnimationFacing
+	{
+		public AnimationFrame[] Frames;
+	}
+
+	public class AnimationFrame
+	{
+		public int Frame;
+		public int OffsetX;
+		public int OffsetY;
+	}
+
+	public class OutputSequence
+	{
+		public string Name;
+		public List<OutputSequenceFrameset> Framesets = new List<OutputSequenceFrameset>();
+	}
+
+	public class OutputSequenceFrameset
+	{
+		public string Name;
+		public bool IsBlank;
+		public int OffsetX;
+		public int OffsetY;
+		public List<int> Frames = new List<int>();
+	}
+
 	public class GroupsFile
 	{
+		public const int EmptySprite = 5390;
+
 		public List<GroupSequence> Groups { get; private set; }
 
 		public GroupsFile()
@@ -132,7 +191,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 		/// <param name="groupSequenceSet">The group sequence set</param>
 		/// <param name="frameCount">The output frame count</param>
 		/// <returns>The list of sequence sets</returns>
-		public List<SequenceSet> GetTypedGroupFrames(PrtFile prtFile, GroupSequence groupSequence, GroupSequenceSet groupSequenceSet, out int frameCount)
+		public static List<SequenceSet> GetTypedGroupFrames(PrtFile prtFile, GroupSequence groupSequence, GroupSequenceSet groupSequenceSet, out int frameCount)
 		{
 			var typeGroupedFrames = new List<SequenceSet>();
 
@@ -277,6 +336,116 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			typeGroupedFrames = nonShadowFrames.ToList();
 			typeGroupedFrames.AddRange(shadowFrames);
 			return typeGroupedFrames;
+		}
+
+		public static GroupSequenceSet[] AddSingleFrameIdle(GroupSequenceSet[] groupSequenceSets)
+		{
+			const string idleString = "^idle[2-9]*$";
+			var regex = new Regex(idleString);
+			var originalIdle = groupSequenceSets.FirstOrDefault(t => t.Sequence == "idle");
+			if (originalIdle == null)
+			{
+				return groupSequenceSets;
+			}
+
+			var newIdle = new GroupSequenceSet()
+			{
+				Length = originalIdle.Length,
+				Sequence = originalIdle.Sequence,
+				Start = originalIdle.Start,
+				Tick = originalIdle.Tick,
+				OffsetX = originalIdle.OffsetX,
+				OffsetY = originalIdle.OffsetY,
+				OffsetZ = originalIdle.OffsetZ,
+				StartOffset = originalIdle.StartOffset,
+			};
+
+			var idleSets = groupSequenceSets.Where(t => regex.IsMatch(t.Sequence)).OrderBy(x => x.Sequence);
+			var nonIdleSets = groupSequenceSets.Where(x => !idleSets.Contains(x));
+			var renumberedIdleSets = idleSets.Select((x, ind) =>
+			{
+				x.Sequence = "idle" + (ind + 2).ToString();
+				return x;
+			}).ToList();
+
+			var result = new List<GroupSequenceSet>() { newIdle };
+			result.AddRange(renumberedIdleSets);
+			result.AddRange(nonIdleSets);
+			return result.ToArray();
+		}
+
+		/// <summary>
+		/// Further specialize output sequences by shared offsets
+		/// </summary>
+		/// <param name="sequenceName"></param>
+		/// <param name="groupSequenceSet"></param>
+		/// <param name="typeGroupedFrame"></param>
+		/// <returns></returns>
+		public static OutputSequence GetOutputSequence(string sequenceName, GroupSequenceSet groupSequenceSet, SequenceSet typeGroupedFrame)
+		{
+			var outputSequence = new OutputSequence()
+			{
+				Name = sequenceName,
+			};
+
+			for (var facingIndex = 0; facingIndex < groupSequenceSet.Length; facingIndex++)
+			{
+				var framesArray = typeGroupedFrame.GetFacingArray(facingIndex);
+				var animationGroup = typeGroupedFrame.AnimationFacings[facingIndex];
+				var facingFrameCount = animationGroup.Frames.Length;
+				for (var frameIndex = 0; frameIndex < facingFrameCount; frameIndex++)
+				{
+					var frame = framesArray[frameIndex];
+
+					var isBlank = frame == null;
+					var innerSequenceName = $"{groupSequenceSet.Sequence}-facing{facingIndex}-{frameIndex}";
+
+					Func<OutputSequenceFrameset> getNewFrameset = () =>
+					{
+						var newFrameset = new OutputSequenceFrameset()
+						{
+							Name = innerSequenceName,
+							IsBlank = isBlank,
+						};
+
+						if (frame != null)
+						{
+							newFrameset.OffsetX = frame.OffsetX;
+							newFrameset.OffsetY = frame.OffsetY;
+							newFrameset.Frames.Add(frame.Frame);
+						}
+						else
+						{
+							newFrameset.Frames.Add(EmptySprite);
+						}
+
+						return newFrameset;
+					};
+
+					var outputFrames = outputSequence.Framesets;
+					var lastFrame = outputFrames.LastOrDefault();
+					if (lastFrame == null)
+					{
+						outputSequence.Framesets.Add(getNewFrameset());
+					}
+					else
+					{
+						if ((isBlank && lastFrame.IsBlank) ||
+						    (!isBlank && !lastFrame.IsBlank && lastFrame.OffsetX == frame.OffsetX && lastFrame.OffsetY == frame.OffsetY))
+						{
+							// It's a match, add our frame
+							lastFrame.Frames.Add(isBlank ? EmptySprite : frame.Frame);
+						}
+						else
+						{
+							// It's not a match; add a new one
+							outputSequence.Framesets.Add(getNewFrameset());
+						}
+					}
+				}
+			}
+
+			return outputSequence;
 		}
 	}
 }
