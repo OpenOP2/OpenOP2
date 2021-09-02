@@ -20,11 +20,13 @@
 		InternalName: eden
 		Side: Eden
 		Selectable: True
+		Description: Eden\nA technological driven colony, with the purpose of\nterraforming the planet and claim dominance over it.\n\nSpecialty: Thors hammer tank, [insert units and techs here]
 	Faction@Plymouth:
 		Name: Plymouth
 		InternalName: plymouth
 		Side: Plymouth
 		Selectable: True
+		Description: Plymouth\nThe splinter colony, outcasts and rebellious,\nforced by planetary events to live a nomadic lifestyle.\n\nSpecialty: [insert units and techs here]
 	Faction@Any:
 		Name: Any
 		InternalName: Random
