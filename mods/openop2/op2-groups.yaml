@@ -2132,7 +2132,7 @@ die2:
 			Start: 572
 			Length: 1
 
-rpghit:
+explosion1:
 	ActorType: Effect
 	CreateBaseActor: True
 	CreateExampleActor: False

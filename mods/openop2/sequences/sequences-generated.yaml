@@ -182759,7 +182759,7 @@ die2:
 				Offset: -17,18
 				ZOffset: -5376
 
-rpghit:
+explosion1:
 	# All sequences: idle
 	idle:
 		Length: 12

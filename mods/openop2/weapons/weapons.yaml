@@ -40,12 +40,11 @@ rpg:
 	Projectile: Bullet
 		Palette: 5
 		Speed: 300
-		Blockable: false
 		Inaccuracy: 128
 		Image: missile
 		Shadow: True
 		LaunchAngle: 0
-		HitAnim: rpghit
+		HitAnim: explosion1
 		HitAnimPalette: 6
 		LaunchEffectPalette: 3
 	Warhead@1Dam: SpreadDamage
@@ -57,3 +56,7 @@ rpg:
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Scorch
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
+	Warhead@3Eff: CreateEffect
+		Explosions: explosion1
+		ImpactSounds: mis_fire.WAV
+		ValidTargets: Ground
