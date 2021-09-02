@@ -108,7 +108,6 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 									new CombineSequenceDTO()
 									{
 										IsBlank = true,
-										Name = "idle-0",
 										Frames = new int[] { 0 },
 										Length = 1
 									}
@@ -135,7 +134,6 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 							var dto = new CombineSequenceDTO()
 							{
 								IsBlank = frameset.IsBlank,
-								Name = frameset.Name,
 								Frames = frameset.Frames.ToArray(),
 								Length = frameset.Frames.Count,
 								Offset = new float3(frameset.OffsetX, frameset.OffsetY, 0),
