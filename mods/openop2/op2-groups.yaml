@@ -2935,12 +2935,3 @@ missile:
 			Length: 1
 			StartOffset: 8
 			FacingsOverride: 32
-
-clock:
-	ActorType: Decoration
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 658
-			Length: 1

@@ -71,8 +71,8 @@ rpg:
 railGun:
 	Inherits: rpg
 	Projectile: Bullet
-		Pallete: 6
-		Speed: 1
+		Palette: 6
+		Speed: 450
 		Image: rail
 		Shadow: False
 		TrailImage: railtrail
