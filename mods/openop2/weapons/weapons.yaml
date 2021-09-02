@@ -46,7 +46,6 @@ rpg:
 		Image: missile
 		Shadow: True
 		LaunchAngle: 0
-		HitAnim: explosion1
 		HitAnimPalette: 6
 		LaunchEffectPalette: 3
 	Warhead@1Dam: SpreadDamage
@@ -58,3 +57,8 @@ rpg:
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Scorch
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
+		ValidTargets: Ground
+	Warhead@3Eff: CreateEffect
+		Explosions: rpghit
+		ImpactSounds: smalxp2.wav
+		ValidTargets: Ground
