@@ -54,3 +54,70 @@ shroud:
 		Combine:
 			virmask.raw: shadow1
 				Length: 16
+
+railtrail: #groups 659-660-661
+	# All sequences: idle
+	idle:
+		Length: 41
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+		Combine:
+			# Start
+			op2_art.bmp: idle-facing0-0
+				Frames: 883
+				Length: 1
+				Offset: 2,0
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-1
+				Frames: 884
+				Length: 1
+				Offset: 0,0
+				ZOffset: 0
+			# Hover
+			op2_art.bmp: idle-facing0-0
+				Frames: 885,886,887,888,889
+				Length: 5
+				Offset: 1,1
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-5
+				Frames: 890,891,892,893,894,895,896
+				Length: 7
+				Offset: 2,1
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-12
+				Frames: 897,898,899,900,899,898,897
+				Length: 7
+				Offset: 1,1
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-19
+				Frames: 896,895,894,893,892,891,890
+				Length: 7
+				Offset: 2,1
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-26
+				Frames: 889,888,887,886,901
+				Length: 5
+				Offset: 1,1
+				ZOffset: 0
+			# Dissipate
+			op2_art.bmp: idle-facing0-0
+				Frames: 4889
+				Length: 1
+				Offset: 0,1
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-1
+				Frames: 4890,4891,4892,4893
+				Length: 4
+				Offset: 1,1
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-5
+				Frames: 4894
+				Length: 1
+				Offset: 2,2
+				ZOffset: 0
+			op2_art.bmp: idle-facing0-6
+				Frames: 4895,4896
+				Length: 2
+				Offset: 2,1
+				ZOffset: 0

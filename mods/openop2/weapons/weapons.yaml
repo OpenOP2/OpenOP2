@@ -25,7 +25,7 @@ laser:
 microwave:
 	Inherits: laser
 	Range: 5c0
-	ReloadDelay: 15
+	ReloadDelay: 20
 	Report: microwve.wav
 	Projectile: LaserZap
 		Color: FFFFFFFF
@@ -67,3 +67,14 @@ rpg:
 		Explosions: idle
 		ValidTargets: Ground
 		ImpactSounds: medexp2.WAV
+
+railGun:
+	Inherits: rpg
+	Projectile: Bullet
+		Pallete: 6
+		Speed: 1
+		Image: rail
+		Shadow: False
+		TrailImage: railtrail
+		TrailPalette: 6
+		TrailInterval: 1

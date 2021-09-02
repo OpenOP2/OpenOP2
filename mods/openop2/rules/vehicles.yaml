@@ -18,8 +18,6 @@
 		Offset: -48,0,176
 	Armament:
 		Weapon: laser
-		Recoil: 85
-		RecoilRecovery: 25
 		LocalOffset: 768,0,90
 		#MuzzleSequence: muzzle
 		MuzzlePalette: 3
@@ -197,21 +195,19 @@ eden-lynx-laser:
 		Sequence: laser
 	Armament:
 		Weapon:	laser
-		Recoil: 85
-		RecoilRecovery: 25
 
-eden-lynx-emp:
+eden-lynx-railgun:
 	Inherits@generated: ^eden-lynx-generated
 	Inherits: ^Lynx
 	Buildable:
 		Prerequisites: ~vehicles.eden
 		IconPalette: 3
 	WithSpriteTurret:
-		Sequence: emp
+		Sequence: railgun
 	Armament:
-		Weapon: rpg
-		Recoil: 85
-		RecoilRecovery: 25
+		Weapon: railgun
+			Valued:
+		Cost: 900
 
 plymouth-lynx-microwave:
 	Inherits@generated: ^plymouth-lynx-generated
@@ -234,7 +230,14 @@ plymouth-lynx-rpg:
 		IconPalette: 3
 	WithSpriteTurret:
 		Sequence: rpg
+		Palette: playerMapped8
+		IsPlayerPalette: True
 	Armament:
 		Weapon: rpg
-		Recoil: 85
-		RecoilRecovery: 25
+	Valued:
+		Cost: 900
+
+#RenderSprites:
+##PlayerPalette: playerMapped8
+##IsPlayerPalette:True
+#example for me do not remove - shpooky
