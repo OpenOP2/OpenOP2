@@ -18,7 +18,7 @@ Player:
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
-		SpeedUp: True
+		SpeedUp: False
 	ClassicProductionQueue@Defense:
 		Type: Defense
 		DisplayOrder: 1
@@ -29,7 +29,7 @@ Player:
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
-		SpeedUp: True
+		SpeedUp: False
 	ClassicProductionQueue@Vehicle:
 		Type: Vehicle
 		DisplayOrder: 3
@@ -40,8 +40,7 @@ Player:
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
-		SpeedUp: True
-		BuildTimeSpeedReduction: 100, 75, 60, 50
+		SpeedUp: False
 	ClassicProductionQueue@Infantry:
 		Type: Infantry
 		DisplayOrder: 2
@@ -52,7 +51,7 @@ Player:
 		QueuedAudio: Training
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
-		SpeedUp: True
+		SpeedUp: False
 	ClassicProductionQueue@Ship:
 		Type: Ship
 		DisplayOrder: 5
@@ -63,7 +62,7 @@ Player:
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
-		SpeedUp: True
+		SpeedUp: False
 	ClassicProductionQueue@Aircraft:
 		Type: Aircraft
 		DisplayOrder: 4
@@ -74,7 +73,7 @@ Player:
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
-		SpeedUp: True
+		SpeedUp: False
 	PlaceBuilding:
 		NewOptionsNotification: NewOptions
 		CannotPlaceNotification: BuildingCannotPlaceAudio
