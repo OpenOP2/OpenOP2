@@ -56,6 +56,7 @@ rpg:
 		SmudgeType: Scorch
 		ValidTargets: Ground
 	Warhead@3Eff: CreateEffect
-		Explosions: rpghit
+		Image: rpghit
+		Explosions: idle
 		ImpactSounds: smalxp2.wav
 		ValidTargets: Ground
