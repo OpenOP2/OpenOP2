@@ -2186,33 +2186,6 @@ pulsing-ring:
 			Start: 659
 			Length: 1
 
-pulsing-ring-hover:
-	ActorType: Effect
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 660
-			Length: 1
-
-pulsing-ring-dissipate:
-	ActorType: Effect
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 661
-			Length: 1
-
-explosion3:
-	ActorType: Effect
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 662
-			Length: 1
-
 explosion4:
 	ActorType: Effect
 	CreateBaseActor: False
@@ -2678,6 +2651,17 @@ mpspawn:
 			Start: 1107
 			Length: 1
 
+rail:
+	ActorType: Effect
+	CreateBaseActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 804
+			Length: 1
+			StartOffset: 8
+			FacingsOverride: 32
+
 plymouth-turret-rpg-guardpost:
 	ActorType: Turret
 	CreateBaseActor: False
@@ -2951,3 +2935,12 @@ missile:
 			Length: 1
 			StartOffset: 8
 			FacingsOverride: 32
+
+clock:
+	ActorType: Decoration
+	CreateBaseActor: False
+	CreateExampleActor: True
+	Sets:
+		Sequence: idle
+			Start: 658
+			Length: 1
