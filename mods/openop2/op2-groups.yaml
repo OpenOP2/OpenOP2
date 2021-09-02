@@ -2678,16 +2678,6 @@ mpspawn:
 			Start: 1107
 			Length: 1
 
-#railgun projectile
-clock:
-	ActorType: Decoration
-	CreateBaseActor: False
-	CreateExampleActor: True
-	Sets:
-		Sequence: idle
-			Start: 804
-			Length: 1
-
 plymouth-turret-rpg-guardpost:
 	ActorType: Turret
 	CreateBaseActor: False

@@ -194,7 +194,7 @@ SupportsMapsFrom: openop2
 
 SoundFormats: Aud, Wav
 
-SpriteFormats: PngSheet, Op2Sprite, Op2TileSet, Op2Raw
+SpriteFormats: ShpTD, PngSheet, Op2Sprite, Op2TileSet, Op2Raw
 
 SpriteSequenceFormat: DefaultSpriteSequence
 
