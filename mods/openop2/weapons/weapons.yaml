@@ -1,4 +1,3 @@
-
 laser:
 	ReloadDelay: 30
 	Range: 5c512
@@ -19,6 +18,9 @@ laser:
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Scorch
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
+	Warhead@1Eff: CreateEffect
+		ImpactSounds: smalxp2.wav
+		ValidTargets: Ground, Vehicle
 
 microwave:
 	Inherits: laser
@@ -56,7 +58,3 @@ rpg:
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Scorch
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
-	Warhead@3Eff: CreateEffect
-		Explosions: explosion1
-		ImpactSounds: mis_fire.WAV
-		ValidTargets: Ground
