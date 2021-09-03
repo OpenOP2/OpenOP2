@@ -1,15 +1,14 @@
-####################################################################################################
-#		WEAPONS EDEN
-####################################################################################################
-eden-mobile-laser:
+laser:
 	ReloadDelay: 30
-	Range: 5c512
-	Report: fireLaser.wav
+	Range: 6c0
+	Report: laser.WAV
 	Projectile: LaserZap
-		Width: 40
+		Color: FF000080
+		Width: 60
 		ZOffset: 2047
-		HitAnimPalette: 3
 		LaunchEffectPalette: 3
+		HitAnim: laserhit
+		HitAnimPalette: 6
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 4000
@@ -19,59 +18,62 @@ eden-mobile-laser:
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Scorch
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
-		
-####################################################################################################
-#		WEAPONS PLYMOUTH
-####################################################################################################
-plymouth-mobile-microwave:
+	Warhead@1Eff: CreateEffect
+		ImpactSounds: medexp1.WAV
+		ValidTargets: Ground, Vehicle
+
+microwave:
+	Inherits: laser
+	Range: 5c0
 	ReloadDelay: 20
-	Range: 5c512
-	Report: fireMicrowave.wav
+	Report: microwve.wav
 	Projectile: LaserZap
 		Color: FFFFFFFF
-		Width: 40
-		ZOffset: 2047
-		HitAnimPalette: 3
-		LaunchEffectPalette: 3
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
-		Damage: 3000
+		Damage: 2500
+		Versus:
+			Wood: 50
+
+rpg:
+	ReloadDelay: 50
+	Range: 8c0
+	Report: mis_fire.WAV
+	Projectile: Bullet
+		Palette: 5
+		Speed: 300
+		Inaccuracy: 128
+		Image: missile
+		Shadow: True
+		LaunchAngle: 0
+		TrailImage: trail1
+		TrailPalette: 1
+		TrailInterval: 1
+	Warhead@1Dam: SpreadDamage
+		Spread: 80
+		Damage: 6000
 		Versus:
 			Wood: 50
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Scorch
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
+		ValidTargets: Ground
+	Warhead@3Eff: CreateEffect
+		ExplosionPalette: 6
+		Image: rpghit
+		Explosions: idle
+		ValidTargets: Ground
+		ImpactSounds: medexp2.WAV
 
-
-^Laser:
-	Projectile: LaserZap
-		Width: 72
-		Duration: 15
-		ZOffset: 2047
-		Color: FF000080
-		SecondaryBeam: true
-		SecondaryBeamWidth: 180
-		SecondaryBeamZOffset: 2047
-		SecondaryBeamColor: FF000040
-		HitAnimPalette: 3
-		LaunchEffectPalette: 3
-	Warhead@1Dam: SpreadDamage
-		Spread: 42
-		Damage: 250
-		DamageTypes: EnergyDeath
-
-LaserFire:
-	Inherits: ^Laser
-	ReloadDelay: 40
-	Range: 5c512
-	Report: laser.WAV
-	ValidTargets: Ground, GroundActor
-	Projectile: LaserZap
-		Width: 36
-		Duration: 8
-		SecondaryBeamWidth: 144
-		SecondaryBeamColor: FF000030
-	Warhead@1Dam: SpreadDamage
-		Damage: 3000
-		ValidTargets: Ground, GroundActor
+railGun:
+	Inherits: rpg
+	Range: 7c0
+	Projectile: Bullet
+		Palette: 6
+		Speed: 450
+		Image: rail
+		Shadow: False
+		TrailImage: railtrail
+		TrailPalette: 6
+		TrailInterval: 1

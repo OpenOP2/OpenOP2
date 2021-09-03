@@ -49,22 +49,12 @@ Actors:
 		Owner: Plymouth
 		Facing: 384
 		Location: 35,22
-	Actor3: plymouth-lynx
-		Owner: Plymouth
-		TurretFacing: 0
-		Facing: 745
-		Location: 38,24
 	Actor4: plymouth-mine-common
 		Owner: Plymouth
 		Location: 44,24
 	Actor5: plymouth-residence
 		Owner: Plymouth
 		Location: 24,25
-	Actor6: plymouth-lynx
-		Owner: Plymouth
-		Facing: 832
-		TurretFacing: 761
-		Location: 35,25
 	Actor7: plymouth-cargo-truck
 		Owner: Plymouth
 		Facing: 880

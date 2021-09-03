@@ -41,6 +41,12 @@
 	PaletteFromPng@Chrome:
 		Name: chrome
 		Filename: bits/blank.png
+	PaletteFromRGBA@clock:
+		Name: clock
+		R: 0
+		G: 0
+		B: 0
+		A: 160
 	PaletteFromPrtFile@player:
 		Name: player
 		Number: 3
