@@ -20,11 +20,13 @@
 		InternalName: eden
 		Side: Eden
 		Selectable: True
+		Description: Eden\nBackground: A technology-driven colony, their purpose is\nto terraform the planet and claim dominance over it.\n\nDoctrine: Can exploit the local landscape to their benefit,\nmore efficient.\n\nSpecialty: Thor, GeoCon/Thermal Vents, Consumer Factory,\nSULV, Blight Walls, Meteor Defense.
 	Faction@Plymouth:
 		Name: Plymouth
 		InternalName: plymouth
 		Side: Plymouth
 		Selectable: True
+		Description: Plymouth\nBackground: The splinter colony: outcasts and rebels,\nforced by planetary events to live a nomadic lifestyle.\n\nDoctrine: Higher variety of weapons, more resistant to natural\ndisasters.\n\nSpecialty: Stickyfoam, Arachnids, ESG, Magma well, Lava Walls,\nSuper Nova, EMP SULV.
 	Faction@Any:
 		Name: Any
 		InternalName: Random
