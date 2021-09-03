@@ -141,7 +141,7 @@
 	RevealsShroud:
 		Range: 4c0
 	Refinery:
-		DockAngle: 0
+		DockAngle: 270
 		DockOffset: 3,2
 	StoresResources:
 		Capacity: 5000
