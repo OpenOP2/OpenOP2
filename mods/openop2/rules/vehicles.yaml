@@ -206,7 +206,7 @@ eden-lynx-railgun:
 		Sequence: railgun
 	Armament:
 		Weapon: railgun
-			Valued:
+	Valued:
 		Cost: 900
 
 plymouth-lynx-microwave:

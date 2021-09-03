@@ -3,13 +3,13 @@ laser:
 	Range: 6c0
 	Report: laser.WAV
 	Projectile: LaserZap
+		Color: FF000080
 		Width: 60
 		ZOffset: 2047
 		LaunchEffectPalette: 3
 		HitAnim: laserhit
 		HitAnimPalette: 6
 	Warhead@1Dam: SpreadDamage
-		Color: FF000080
 		Spread: 42
 		Damage: 4000
 		Versus:
@@ -46,8 +46,6 @@ rpg:
 		Image: missile
 		Shadow: True
 		LaunchAngle: 0
-		HitAnimPalette: 6
-		LaunchEffectPalette: 3
 		TrailImage: trail1
 		TrailPalette: 1
 		TrailInterval: 1
