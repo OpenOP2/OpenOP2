@@ -196,7 +196,7 @@ eden-lynx-laser:
 	Armament:
 		Weapon:	laser
 
-eden-lynx-railgun:
+eden-lynx-RailGun:
 	Inherits@generated: ^eden-lynx-generated
 	Inherits: ^Lynx
 	Buildable:

@@ -31,10 +31,10 @@ Player:
 		BuildingLimits:
 			eden-command-center: 1
 			plymouth-command-center: 1
-			eden-smelter-common: 1
-			plymouth-smelter-common: 1
-			eden-factory-vehicle: 2
-			plymouth-factory-vehicle: 2
+			eden-smelter-common: 2
+			plymouth-smelter-common: 2
+			eden-factory-vehicle: 1
+			plymouth-factory-vehicle: 1
 		BuildingFractions:
 			eden-command-center: 10
 			plymouth-command-center: 10
@@ -59,8 +59,10 @@ Player:
 	UnitBuilderBotModule@normal:
 		RequiresCondition: enable-normal-ai
 		UnitsToBuild:
-			eden-lynx: 50
-			plymouth-lynx: 50
+			eden-lynx-laser: 50
+			eden-lynx-RailGun: 50
+			plymouth-lynx-microwave: 50
+			plymouth-lynx-rpg: 50
 			eden-cargo-truck: 50
 			plymouth-cargo-truck: 50
 			eden-robo-miner: 5
