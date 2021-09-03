@@ -1,6 +1,6 @@
 laser:
 	ReloadDelay: 30
-	Range: 5c512
+	Range: 6c0
 	Report: laser.WAV
 	Projectile: LaserZap
 		Width: 60
@@ -37,7 +37,7 @@ microwave:
 
 rpg:
 	ReloadDelay: 50
-	Range: 7c0
+	Range: 8c0
 	Report: mis_fire.WAV
 	Projectile: Bullet
 		Palette: 5
@@ -70,6 +70,7 @@ rpg:
 
 railGun:
 	Inherits: rpg
+	Range: 7c0
 	Projectile: Bullet
 		Palette: 6
 		Speed: 450
