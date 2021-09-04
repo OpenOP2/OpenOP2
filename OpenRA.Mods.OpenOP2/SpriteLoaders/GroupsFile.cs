@@ -240,6 +240,14 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 				var groupIndex = 0;
 				foreach (var group in groups)
 				{
+					// For groups 599 and 804, we have all the directions as individual frames in one group instead of separate groups.
+					// So, remap the frame we're reading from.
+					var remappedFrameIndex = frameIndex;
+					if (groupSequenceSet.FacingsOverride > 0 && groupSequenceSet.StartOffset > 0)
+					{
+						remappedFrameIndex = (frameIndex + groupSequenceSet.StartOffset) % frameCount;
+					}
+
 					Op2Frame frame;
 					if (frameIndex >= group.Frames.Length)
 					{
@@ -248,7 +256,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					}
 					else
 					{
-						frame = group.Frames[frameIndex];
+						frame = group.Frames[remappedFrameIndex];
 					}
 
 					var pics = frame.Pictures.OrderBy(x => x.PicOrder);
