@@ -35,7 +35,6 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		[Desc("Don't load palette for these tileset IDs.")]
 		public readonly HashSet<string> ExcludeTilesets = new HashSet<string>();
 
-		[FieldLoader.Require]
 		[Desc("Name of the file to load.")]
 		public readonly string Filename = null;
 
