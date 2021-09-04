@@ -110,17 +110,10 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 							{
 								Image = group.Name,
 								Name = "idle",
+								IsBlank = true,
 								Length = 1,
 								Facings = 1,
-								Combine = new List<CombineSequenceDTO>()
-								{
-									new CombineSequenceDTO()
-									{
-										IsBlank = true,
-										Frames = new int[] { 0 },
-										Length = 1
-									}
-								}
+								Start = GroupsFile.EmptySprite,
 							};
 
 							addSequence(result);

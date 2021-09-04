@@ -562,6 +562,7 @@ eden-command-center:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1845
@@ -593,6 +594,7 @@ plymouth-command-center:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1854
@@ -624,6 +626,7 @@ eden-tokamak:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 2035
@@ -649,6 +652,7 @@ plymouth-tokamak:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 652
@@ -680,6 +684,7 @@ eden-residence:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 610
@@ -707,6 +712,7 @@ plymouth-residence:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 612
@@ -734,6 +740,7 @@ eden-factory-structure:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 73
@@ -755,6 +762,7 @@ plymouth-factory-structure:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1860
@@ -779,6 +787,7 @@ eden-agridome:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 801
@@ -800,6 +809,7 @@ plymouth-agridome:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 646
@@ -821,6 +831,7 @@ eden-factory-vehicle:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 807
@@ -849,6 +860,7 @@ plymouth-factory-vehicle:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1853
@@ -874,6 +886,7 @@ eden-dirt:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 802
@@ -901,6 +914,7 @@ plymouth-dirt:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1862
@@ -922,6 +936,7 @@ eden-lab-basic:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 642
@@ -946,6 +961,7 @@ plymouth-lab-basic:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 2034
@@ -967,6 +983,7 @@ eden-robot-command-center:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 647
@@ -997,6 +1014,7 @@ plymouth-robot-command-center:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 645
@@ -1021,6 +1039,7 @@ eden-smelter-common:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1855
@@ -1052,6 +1071,7 @@ plymouth-smelter-common:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1859
@@ -1080,6 +1100,7 @@ eden-storage-common:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 2059
@@ -1101,6 +1122,7 @@ plymouth-storage-common:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 2061
@@ -1122,6 +1144,7 @@ eden-storage-rare:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 2060
@@ -1143,6 +1166,7 @@ plymouth-storage-rare:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 2062
@@ -1164,6 +1188,7 @@ eden-lab-standard:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 669
@@ -1188,6 +1213,7 @@ plymouth-lab-standard:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 671
@@ -1215,6 +1241,7 @@ eden-lab-advanced:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 600
@@ -1239,6 +1266,7 @@ plymouth-lab-advanced:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 643
@@ -1263,6 +1291,7 @@ eden-residence-advanced:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 622
@@ -1287,6 +1316,7 @@ plymouth-residence-reinforced:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 640
@@ -1314,6 +1344,7 @@ eden-medical-center:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 602
@@ -1335,6 +1366,7 @@ plymouth-medical-center:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 620
@@ -1359,6 +1391,7 @@ eden-nursery:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 598
@@ -1386,6 +1419,7 @@ plymouth-nursery:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 606
@@ -1413,6 +1447,7 @@ eden-recreation-facility:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 614
@@ -1443,6 +1478,7 @@ plymouth-recreation-facility:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 617
@@ -1473,6 +1509,7 @@ eden-solar-power-array:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 941
@@ -1494,6 +1531,7 @@ plymouth-solar-power-array:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 942
@@ -1524,6 +1562,7 @@ eden-university:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 667
@@ -1548,6 +1587,7 @@ plymouth-university:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 936
@@ -1572,6 +1612,7 @@ eden-smelter-rare:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1841
@@ -1593,6 +1634,7 @@ plymouth-smelter-rare:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1010
@@ -1614,6 +1656,7 @@ eden-gorf:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 383
@@ -1632,6 +1675,7 @@ plymouth-gorf:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1737
@@ -1656,6 +1700,7 @@ eden-trade-center:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 800
@@ -1680,6 +1725,7 @@ plymouth-trade-center:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 946
@@ -1704,6 +1750,7 @@ eden-spaceport:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 963
@@ -1731,6 +1778,7 @@ plymouth-spaceport:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 965
@@ -1752,6 +1800,7 @@ eden-mine-common:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1001
@@ -1780,6 +1829,7 @@ plymouth-mine-common:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: False
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1848
@@ -1815,6 +1865,7 @@ eden-mine-rare:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 407
@@ -1836,6 +1887,7 @@ plymouth-mine-rare:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 594
@@ -1857,6 +1909,7 @@ eden-mine-magma:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 410
@@ -1875,6 +1928,7 @@ plymouth-mhd-generator:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 940
@@ -1899,6 +1953,7 @@ eden-meteor-defense:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 564
@@ -1926,6 +1981,7 @@ eden-geothermal-plant:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 427
@@ -1944,6 +2000,7 @@ plymouth-factory-arachnid:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1847
@@ -1965,6 +2022,7 @@ plymouth-forum:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 2033
@@ -1986,6 +2044,7 @@ eden-factory-consumer:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 1839
@@ -2007,6 +2066,7 @@ eden-observatory:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 654
@@ -2034,6 +2094,7 @@ eden-light-tower:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
+	WithSingleFrameIdle: True
 	Sets:
 		Sequence: idle
 			Start: 648
@@ -2117,7 +2178,7 @@ plymouth-supernova-guardpost:
 die1:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 571
@@ -2126,7 +2187,7 @@ die1:
 die2:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 572
@@ -2144,7 +2205,7 @@ rpghit:
 trail1:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 603
@@ -2153,7 +2214,7 @@ trail1:
 trail2:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 604
@@ -2162,7 +2223,7 @@ trail2:
 trail3:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 605
@@ -2180,7 +2241,7 @@ laserhit:
 pulsing-ring:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 659
@@ -2189,7 +2250,7 @@ pulsing-ring:
 explosion4:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 663
@@ -2198,7 +2259,7 @@ explosion4:
 explosion5:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 2071
@@ -2207,7 +2268,7 @@ explosion5:
 explosion6:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 2072
@@ -2216,7 +2277,7 @@ explosion6:
 airburst:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 2067
@@ -2225,7 +2286,7 @@ airburst:
 explosion-goo:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 664
@@ -2234,7 +2295,7 @@ explosion-goo:
 explosion-goo2:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 665
@@ -2243,7 +2304,7 @@ explosion-goo2:
 explosion-large:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 943
@@ -2252,7 +2313,7 @@ explosion-large:
 explosion-large-hover:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 944
@@ -2261,7 +2322,7 @@ explosion-large-hover:
 explosion-large-dissipate:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 945
@@ -2270,7 +2331,7 @@ explosion-large-dissipate:
 explosion-large2:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1360
@@ -2279,7 +2340,7 @@ explosion-large2:
 lightning-crackle:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 666
@@ -2288,7 +2349,7 @@ lightning-crackle:
 cloud-billowing:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1004
@@ -2297,7 +2358,7 @@ cloud-billowing:
 meteor:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1005
@@ -2306,7 +2367,7 @@ meteor:
 meteor-large:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1006
@@ -2315,7 +2376,7 @@ meteor-large:
 meteor2:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1027
@@ -2324,7 +2385,7 @@ meteor2:
 meteor-ignite:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1028
@@ -2333,7 +2394,7 @@ meteor-ignite:
 meteor-large-ignite:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1029
@@ -2342,7 +2403,7 @@ meteor-large-ignite:
 meteor2-ignite:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1030
@@ -2351,7 +2412,7 @@ meteor2-ignite:
 meteor-splash:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1358
@@ -2360,7 +2421,7 @@ meteor-splash:
 meteor-large-splash:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1359
@@ -2369,7 +2430,7 @@ meteor-large-splash:
 mushroom-cloud:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1047
@@ -2378,7 +2439,7 @@ mushroom-cloud:
 mushroom-cloud-small:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1334
@@ -2387,7 +2448,7 @@ mushroom-cloud-small:
 mushroom-cloud-large1:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1699
@@ -2396,7 +2457,7 @@ mushroom-cloud-large1:
 mushroom-cloud-large2:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1700
@@ -2405,7 +2466,7 @@ mushroom-cloud-large2:
 mushroom-cloud-large3:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1701
@@ -2414,7 +2475,7 @@ mushroom-cloud-large3:
 mushroom-cloud-huge:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1702
@@ -2423,7 +2484,7 @@ mushroom-cloud-huge:
 explosion-goo3:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1048
@@ -2432,7 +2493,7 @@ explosion-goo3:
 cloud-forming:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1113
@@ -2441,7 +2502,7 @@ cloud-forming:
 cloud-dissipating:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1114
@@ -2450,7 +2511,7 @@ cloud-dissipating:
 tornado1:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1115
@@ -2459,7 +2520,7 @@ tornado1:
 tornado2:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1116
@@ -2468,7 +2529,7 @@ tornado2:
 tornado-left:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1117
@@ -2477,7 +2538,7 @@ tornado-left:
 tornado-right:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1118
@@ -2486,7 +2547,7 @@ tornado-right:
 tornado-ground-form:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1119
@@ -2495,7 +2556,7 @@ tornado-ground-form:
 tornado-ground:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1120
@@ -2504,7 +2565,7 @@ tornado-ground:
 tornado-ground-dissipate:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1121
@@ -2513,7 +2574,7 @@ tornado-ground-dissipate:
 cloud2-form:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1244
@@ -2522,7 +2583,7 @@ cloud2-form:
 cloud2-billow:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1245
@@ -2531,7 +2592,7 @@ cloud2-billow:
 cloud2-dissipate:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1246
@@ -2540,7 +2601,7 @@ cloud2-dissipate:
 cloud2-expand-left:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1247
@@ -2549,7 +2610,7 @@ cloud2-expand-left:
 cloud2-billow-left:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1248
@@ -2558,7 +2619,7 @@ cloud2-billow-left:
 cloud2-dissipate-left:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1249
@@ -2567,7 +2628,7 @@ cloud2-dissipate-left:
 cloud2-expand-right:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1250
@@ -2576,7 +2637,7 @@ cloud2-expand-right:
 cloud2-billow-right:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1251
@@ -2585,7 +2646,7 @@ cloud2-billow-right:
 cloud2-dissipate-right:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1252
@@ -2594,7 +2655,7 @@ cloud2-dissipate-right:
 lightning1:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1253
@@ -2603,7 +2664,7 @@ lightning1:
 lightning2:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1361
@@ -2612,7 +2673,7 @@ lightning2:
 lightning3:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1362
@@ -2621,7 +2682,7 @@ lightning3:
 rallypoint:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1764
@@ -2645,7 +2706,7 @@ waypoint:
 mpspawn:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1107
@@ -2654,7 +2715,7 @@ mpspawn:
 rail:
 	ActorType: Effect
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 804
@@ -2665,7 +2726,7 @@ rail:
 plymouth-turret-rpg-guardpost:
 	ActorType: Turret
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	WithBlankIdle: True
 	Sets:
 		Sequence: turret
@@ -2679,7 +2740,7 @@ plymouth-turret-rpg-guardpost:
 eden-turret-thor-guardpost:
 	ActorType: Turret
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	WithBlankIdle: True
 	Sets:
 		Sequence: turret
@@ -2708,7 +2769,7 @@ eden-turret-laser-guardpost:
 eden-turret-railgun-guardpost:
 	ActorType: Turret
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	WithBlankIdle: True
 	Sets:
 		Sequence: turret
@@ -2737,7 +2798,7 @@ plymouth-turret-microwave-guardpost:
 plymouth-turret-stickyfoam-guardpost:
 	ActorType: Turret
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	WithBlankIdle: True
 	Sets:
 		Sequence: turret
@@ -2751,7 +2812,7 @@ plymouth-turret-stickyfoam-guardpost:
 eden-turret-acidcloud-guardpost:
 	ActorType: Turret
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	WithBlankIdle: True
 	Sets:
 		Sequence: turret
@@ -2765,7 +2826,7 @@ eden-turret-acidcloud-guardpost:
 eden-turret-emp-guardpost:
 	ActorType: Turret
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	WithBlankIdle: True
 	Sets:
 		Sequence: turret
@@ -2779,7 +2840,7 @@ eden-turret-emp-guardpost:
 plymouth-turret-esg-guardpost:
 	ActorType: Turret
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	WithBlankIdle: True
 	Sets:
 		Sequence: turret
@@ -2793,7 +2854,7 @@ plymouth-turret-esg-guardpost:
 plymouth-turret-emp-guardpost:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 2043
@@ -2802,7 +2863,7 @@ plymouth-turret-emp-guardpost:
 esg-ripple:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1460
@@ -2811,7 +2872,7 @@ esg-ripple:
 tokamak-icon:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1100
@@ -2820,7 +2881,7 @@ tokamak-icon:
 medical-center-icon:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1101
@@ -2829,7 +2890,7 @@ medical-center-icon:
 seismology-icon:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1102
@@ -2838,7 +2899,7 @@ seismology-icon:
 rocket-icon:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1103
@@ -2847,7 +2908,7 @@ rocket-icon:
 nuke-icon:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1104
@@ -2856,7 +2917,7 @@ nuke-icon:
 agridome-icon:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1105
@@ -2865,7 +2926,7 @@ agridome-icon:
 vehicle-icon:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1106
@@ -2874,7 +2935,7 @@ vehicle-icon:
 residence-icon:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1107
@@ -2883,7 +2944,7 @@ residence-icon:
 structure-factory-icon:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1108
@@ -2892,7 +2953,7 @@ structure-factory-icon:
 smelter-icon:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1109
@@ -2901,7 +2962,7 @@ smelter-icon:
 lab-icon:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1110
@@ -2910,7 +2971,7 @@ lab-icon:
 eden-icon:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1111
@@ -2919,7 +2980,7 @@ eden-icon:
 plymouth-icon:
 	ActorType: Decoration
 	CreateBaseActor: False
-	CreateExampleActor: True
+	CreateExampleActor: False
 	Sets:
 		Sequence: idle
 			Start: 1112
