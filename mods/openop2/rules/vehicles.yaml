@@ -17,16 +17,14 @@
 		TurnSpeed: 28
 		Offset: -48,0,176
 	Armament:
-		Weapon: LaserFire
-		Recoil: 85
-		RecoilRecovery: 25
+		Weapon: laser
 		LocalOffset: 768,0,90
 		#MuzzleSequence: muzzle
 		MuzzlePalette: 3
 	AttackTurreted:
 	#WithMuzzleOverlay:
 	WithSpriteTurret:
-		Sequence: turret2
+		Sequence: emp
 		Palette: playerMapped3
 		IsPlayerPalette: true
 
@@ -187,16 +185,59 @@ plymouth-robo-miner:
 	Transforms:
 		IntoActor: plymouth-mine-common
 
-eden-lynx:
+eden-lynx-laser:
+	Inherits@generated:	^eden-lynx-generated
+	Inherits: ^Lynx
+	Buildable:
+		Prerequisites: ~vehicles.eden
+		IconPalette: 3
+	WithSpriteTurret:
+		Sequence: laser
+	Armament:
+		Weapon:	laser
+
+eden-lynx-RailGun:
 	Inherits@generated: ^eden-lynx-generated
 	Inherits: ^Lynx
 	Buildable:
 		Prerequisites: ~vehicles.eden
 		IconPalette: 3
+	WithSpriteTurret:
+		Sequence: railgun
+	Armament:
+		Weapon: railgun
+	Valued:
+		Cost: 900
 
-plymouth-lynx:
+plymouth-lynx-microwave:
 	Inherits@generated: ^plymouth-lynx-generated
 	Inherits: ^Lynx
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3
+	WithSpriteTurret:
+		Sequence: microwave
+		Palette: playerMapped8
+		IsPlayerPalette: True
+	Armament:
+		Weapon: microwave
+
+plymouth-lynx-rpg:
+	Inherits@generated: ^plymouth-lynx-generated
+	Inherits: ^Lynx
+	Buildable:
+		Prerequisites: ~vehicles.plymouth
+		IconPalette: 3
+	WithSpriteTurret:
+		Sequence: rpg
+		Palette: playerMapped8
+		IsPlayerPalette: True
+	Armament:
+		Weapon: rpg
+	Valued:
+		Cost: 900
+
+#RenderSprites:
+##PlayerPalette: playerMapped8
+##IsPlayerPalette:True
+#example for me do not remove - shpooky

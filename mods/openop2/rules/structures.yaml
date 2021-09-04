@@ -141,7 +141,7 @@
 	RevealsShroud:
 		Range: 4c0
 	Refinery:
-		DockAngle: 0
+		DockAngle: 270
 		DockOffset: 3,2
 	StoresResources:
 		Capacity: 5000
@@ -278,7 +278,7 @@
 	RevealsShroud:
 		Range: 4c0
 	Armament:
-		Weapon: LaserFire
+		Weapon: laser
 		#Recoil: 85
 		#RecoilRecovery: 25
 		LocalOffset: 768,0,90
@@ -360,14 +360,16 @@ plymouth-mine-common:
 	Inherits: ^MineCommon
 
 eden-turret-laser:
-	Inherits@generated: ^eden-turret-laser-generated
+	Inherits@generated: ^eden-turret-laser-guardpost-generated
 	Inherits: ^GuardPost
 	Buildable:
 		Prerequisites: ~structures.eden
 
 plymouth-turret-microwave:
-	Inherits@generated: ^plymouth-turret-microwave-generated
+	Inherits@generated: ^plymouth-turret-microwave-guardpost-generated
 	Inherits: ^GuardPost
 	Buildable:
 		Prerequisites: ~structures.plymouth
 		IconPalette: 2
+	Armament:
+		Weapon: microwave
