@@ -90,16 +90,8 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					sets = GroupsFile.AddSingleFrameIdle(sets);
 				}
 
-				var literalGroupSequenceSets = new List<GroupSequenceSet>();
-
 				foreach (var groupSequenceSet in sets)
 				{
-					if (!string.IsNullOrWhiteSpace(groupSequenceSet.UseFile))
-					{
-						literalGroupSequenceSets.Add(groupSequenceSet);
-						continue;
-					}
-
 					var typeGroupedFrames = GroupsFile.GetTypedGroupFrames(prtFile, groupSequence, groupSequenceSet, out var frameCount);
 
 					Func<SequenceSet, int, string> getSequenceName = (inGroup, ind) =>

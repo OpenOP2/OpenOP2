@@ -32,6 +32,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 	public class SequenceDTO : CombineSequenceDTO
 	{
+		public string UseFile { get; set; }
 		public string Name { get; set; }
 		public string Image { get; set; }
 		public int Stride { get; set; }
@@ -143,6 +144,11 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 		public Rectangle Bounds { get; private set; }
 		public bool IgnoreWorldTint { get; private set; }
 
+		protected string GetSpriteSrc(string useFile)
+		{
+			return useFile ?? ImageName;
+		}
+
 		protected static Rectangle FlipRectangle(Rectangle rect, bool flipX, bool flipY)
 		{
 			var left = flipX ? rect.Right : rect.Left;
@@ -160,7 +166,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			SequenceDTO dto)
 		{
 			this.sequence = sequence;
-			Name = dto.Image;
+			Name = dto.Name;
 			this.loader = loader;
 			Start = dto.Start;
 			ShadowStart = -1;
@@ -266,7 +272,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			{
 				// Apply offset to each sprite in the sequence
 				// Different sequences may apply different offsets to the same frame
-				sprites = cache[ImageName, getUsedFrames].Select(
+				sprites = cache[GetSpriteSrc(dto.UseFile), getUsedFrames].Select(
 					s => s != null ? new Sprite(s.Sheet,
 						s.Bounds, ZRamp, // FlipRectangle(s.Bounds, subFlipX, subFlipY)
 						s.Offset + offset,

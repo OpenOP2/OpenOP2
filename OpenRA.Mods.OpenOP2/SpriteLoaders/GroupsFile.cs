@@ -377,10 +377,10 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 		/// <summary>
 		/// Further specialize output sequences by shared offsets
 		/// </summary>
-		/// <param name="sequenceName"></param>
-		/// <param name="groupSequenceSet"></param>
-		/// <param name="typeGroupedFrame"></param>
-		/// <returns></returns>
+		/// <param name="sequenceName">a</param>
+		/// <param name="groupSequenceSet">b</param>
+		/// <param name="typeGroupedFrame">c</param>
+		/// <returns>d</returns>
 		public static OutputSequence GetOutputSequence(string sequenceName, GroupSequenceSet groupSequenceSet, SequenceSet typeGroupedFrame)
 		{
 			var outputSequence = new OutputSequence()

@@ -46,11 +46,32 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 		private Dictionary<string, List<SequenceDTO>> BuildSequences(PrtFile prtFile)
 		{
 			var results = new Dictionary<string, List<SequenceDTO>>();
+
+			Action<SequenceDTO> addSequence = (seq) =>
+			{
+				if (results.ContainsKey(seq.Image))
+				{
+					results[seq.Image].Add(seq);
+				}
+				else
+				{
+					results.Add(seq.Image, new List<SequenceDTO> { seq });
+				}
+			};
+
 			var groups = new GroupsFile();
 			foreach (var group in groups.Groups)
 			{
+				var literalGroupSequenceSets = new List<GroupSequenceSet>();
+
 				foreach (var set in group.Sets)
 				{
+					if (!string.IsNullOrWhiteSpace(set.UseFile))
+					{
+						literalGroupSequenceSets.Add(set);
+						continue;
+					}
+
 					var typeGroupedFrames = GroupsFile.GetTypedGroupFrames(prtFile, group, set, out var frameCount);
 					Func<SequenceSet, int, string> getSequenceName = (inGroup, ind) =>
 					{
@@ -73,18 +94,6 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						}
 
 						return seqName;
-					};
-
-					Action<SequenceDTO> addSequence = (seq) =>
-					{
-						if (results.ContainsKey(seq.Image))
-						{
-							results[seq.Image].Add(seq);
-						}
-						else
-						{
-							results.Add(seq.Image, new List<SequenceDTO> { seq });
-						}
 					};
 
 					var allSequenceNames = typeGroupedFrames.Select((x, index) => getSequenceName(x, index)).ToArray();
@@ -148,6 +157,26 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						typeIndex++;
 						zIndex -= 256;
 					}
+				}
+
+				// Hack in our literal sequences
+				// Used for icons only for now
+				foreach (var seq in literalGroupSequenceSets)
+				{
+					var seqDto = new SequenceDTO()
+					{
+						Image = group.Name,
+						UseFile = seq.UseFile,
+						Name = seq.Sequence,
+						Length = seq.Length,
+						Start = seq.Start,
+						Facings = 1,
+						Offset = new float3(seq.OffsetX, seq.OffsetY, 0),
+						ZOffset = seq.OffsetZ,
+						Tick = seq.Tick ?? 40,
+					};
+
+					addSequence(seqDto);
 				}
 			}
 
