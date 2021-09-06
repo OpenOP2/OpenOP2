@@ -361,12 +361,14 @@ plymouth-mine-common:
 
 eden-turret-laser:
 	Inherits@generated: ^eden-turret-laser-guardpost-generated
+	Inherits@AUTOTARGET: ^AutoTargetGround
 	Inherits: ^GuardPost
 	Buildable:
 		Prerequisites: ~structures.eden
 
 plymouth-turret-microwave:
 	Inherits@generated: ^plymouth-turret-microwave-guardpost-generated
+	Inherits@AUTOTARGET: ^AutoTargetGround
 	Inherits: ^GuardPost
 	Buildable:
 		Prerequisites: ~structures.plymouth

@@ -59,8 +59,8 @@
 		#EmptyCondition: no-ore
 	#WithHarvestAnimation:
 	WithDockingAnimation:
-		DockSequence: idle
-		DockLoopSequence: idle
+		DockSequence: unload
+		DockLoopSequence: unload
 	WithHarvesterPipsDecoration:
 		Position: BottomLeft
 		Margin: 4, 3

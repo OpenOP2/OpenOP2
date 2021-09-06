@@ -39,6 +39,9 @@ eden-cargo-truck:
 	CreateBaseActor: True
 	CreateExampleActor: False
 	Sets:
+		Sequence: unload
+			Start: 497
+			Length: 1
 		Sequence: idle
 			Start: 8
 			StartOffset: 4
@@ -53,6 +56,9 @@ plymouth-cargo-truck:
 	CreateBaseActor: True
 	CreateExampleActor: False
 	Sets:
+		Sequence: unload
+			Start: 500
+			Length: 1
 		Sequence: idle
 			Start: 24
 			StartOffset: 4
@@ -61,6 +67,7 @@ plymouth-cargo-truck:
 			UseFile: ptruck.png
 			Start: 0
 			Length: 1
+
 
 eden-convec:
 	ActorType: Vehicle
