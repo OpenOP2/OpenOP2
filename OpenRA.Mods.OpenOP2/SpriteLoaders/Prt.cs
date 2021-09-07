@@ -87,8 +87,9 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						};
 
 						//////////////////////
-						var seqName = $"{set.Sequence}-{getTypeString(inGroup.FrameType)}" + (ind == 0 ? string.Empty : $"-id{ind}");
-						if (inGroup.FrameType == 1 && ind == 0)
+						var frameTypeString = getTypeString(inGroup.FrameType);
+						var seqName = $"{set.Sequence}-{frameTypeString}" + (ind == 0 ? string.Empty : $"-id{ind}");
+						if ((inGroup.FrameType == 0 || inGroup.FrameType == 1) && ind == 0)
 						{
 							seqName = set.Sequence;
 						}
