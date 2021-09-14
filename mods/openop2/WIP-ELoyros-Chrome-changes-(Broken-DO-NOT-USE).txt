@@ -1,0 +1,32 @@
+WIP-ELoyros-Chrome-changes-(Broken-DO-NOT-USE)
+
+TEMPORARY-HEADSUP-README.
+
+ive kept in this branch the old files for now, I will remove them before final upload.
+files to remove are left overs from uibits and chrome folders, along with this readme file.
+
+The new folder under chrome\ named "from_common" houses the "mainmenu.yaml" file from the engine, with a temp fix. 
+For some reason I get errors by using the cnc equivalent yaml file, so I used the one from the common folder.
+I had to comment out some lines as a temp solution in mainmenu.yaml since it gave me errors as well:
+		#Image@LOGO:
+		#	X: WINDOW_RIGHT - 296
+		#	Y: 30
+		#	ImageCollection: logos
+		#	ImageName: logo
+
+
+An other problem I am facing is with "ingame.yaml" as I keep getting errors like these:
+
+Exception of type `System.Collections.Generic.KeyNotFoundException`: The given key was not present in the dictionary.
+   at System.ThrowHelper.ThrowKeyNotFoundException()
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at OpenRA.Mods.Common.Widgets.Logic.ProductionTabsLogic.<>c__DisplayClass2_0.<SetupProductionGroupButton>b__1() in X:\Workstation\OpenRa_Repositories\Op
+enOP2\engine\OpenRA.Mods.Common\Widgets\Logic\Ingame\ProductionTabsLogic.cs:line 38
+   at OpenRA.Mods.Common.Widgets.ButtonWidget.Draw() in X:\Workstation\OpenRa_Repositories\OpenOP2\engine\OpenRA.Mods.Common\Widgets\ButtonWidget.cs:line 2
+39
+
+Possible reasons on why I get those errors came to my mind, but nothing concrete other than vague assumptions.
+
+The faster I solve those game-breaking problems, the better, so I can focus on bringing the art style from the original game and also do some "artistic" changes on the in-game chrome yaml. And then procced with adding certain game mechanics after finishing with this branch.
+
+Also whats up with all those icons and yamls in the chrome folder?
