@@ -68,50 +68,45 @@ Assemblies:
 	^BinDir|OpenRA.Mods.Cnc.dll
 
 ChromeLayout:
-	common|chrome/ingame.yaml
-	common|chrome/ingame-chat.yaml
-	common|chrome/ingame-fmvplayer.yaml
-	common|chrome/ingame-info.yaml
-	common|chrome/ingame-infoscripterror.yaml
-	common|chrome/ingame-infobriefing.yaml
-	common|chrome/ingame-infoobjectives.yaml
-	common|chrome/ingame-infostats.yaml
-	common|chrome/ingame-menu.yaml
-	openop2|chrome/ingame-observer.yaml
-	openop2|chrome/ingame-player.yaml
-	common|chrome/ingame-perf.yaml
-	common|chrome/ingame-debug.yaml
-	common|chrome/ingame-debuginfo.yaml
-	common|chrome/ingame-infochat.yaml
 	common|chrome/mainmenu.yaml
-	common|chrome/mainmenu-prompts.yaml
-	common|chrome/settings.yaml
-	common|chrome/credits.yaml
-	common|chrome/lobby.yaml
-	common|chrome/lobby-mappreview.yaml
-	common|chrome/lobby-players.yaml
-	common|chrome/lobby-options.yaml
-	common|chrome/lobby-music.yaml
-	common|chrome/lobby-servers.yaml
-	common|chrome/lobby-kickdialogs.yaml
-	common|chrome/color-picker.yaml
-	common|chrome/map-chooser.yaml
-	common|chrome/multiplayer-browser.yaml
-	common|chrome/multiplayer-browserpanels.yaml
-	common|chrome/multiplayer-createserver.yaml
-	common|chrome/multiplayer-directconnect.yaml
-	common|chrome/connection.yaml
-	common|chrome/replaybrowser.yaml
-	common|chrome/gamesave-browser.yaml
+	openop2|chrome/mainmenu-prompts.yaml
+	openop2|chrome/playerprofile.yaml
+	openop2|chrome/multiplayer-browser.yaml
+	openop2|chrome/multiplayer-browserpanels.yaml
+	openop2|chrome/multiplayer-createserver.yaml
+	openop2|chrome/multiplayer-directconnect.yaml
+	openop2|chrome/lobby.yaml
+	openop2|chrome/lobby-mappreview.yaml
+	openop2|chrome/lobby-players.yaml
+	openop2|chrome/lobby-options.yaml
+	openop2|chrome/lobby-music.yaml
+	openop2|chrome/lobby-servers.yaml
+	openop2|chrome/lobby-kickdialogs.yaml
+	openop2|chrome/connection.yaml
+	openop2|chrome/color-picker.yaml
+	openop2|chrome/mapchooser.yaml
+	openop2|chrome/replaybrowser.yaml
+	openop2|chrome/gamesave-browser.yaml
 	openop2|chrome/gamesave-loading.yaml
-	common|chrome/dropdowns.yaml
-	common|chrome/musicplayer.yaml
-	common|chrome/tooltips.yaml
-	common|chrome/assetbrowser.yaml
-	common|chrome/missionbrowser.yaml
-	common|chrome/confirmation-dialogs.yaml
-	common|chrome/editor.yaml
-	common|chrome/playerprofile.yaml
+	openop2|chrome/ingame.yaml
+	openop2|chrome/ingame-chat.yaml
+	openop2|chrome/ingame-menu.yaml
+	openop2|chrome/ingame-debug.yaml
+	openop2|chrome/ingame-infochat.yaml
+	openop2|chrome/ingame-info.yaml
+	openop2|chrome/ingame-infobriefing.yaml
+	openop2|chrome/ingame-infoscripterror.yaml
+	openop2|chrome/ingame-infoobjectives.yaml
+	openop2|chrome/ingame-infostats.yaml
+	openop2|chrome/ingame-debuginfo.yaml
+	openop2|chrome/music.yaml
+	openop2|chrome/settings.yaml
+	openop2|chrome/credits.yaml
+	openop2|chrome/dialogs.yaml
+	openop2|chrome/tooltips.yaml
+	openop2|chrome/assetbrowser.yaml
+	openop2|chrome/missionbrowser.yaml
+	openop2|chrome/editor.yaml
 
 Voices:
 	openop2|audio/voices.yaml
@@ -134,11 +129,11 @@ Hotkeys:
 	common|hotkeys/viewport.yaml
 	openop2|hotkeys.yaml
 
-LoadScreen: LogoStripeLoadScreen
-	Image: openop2|uibits/loadscreen.png
-	Image2x: openop2|uibits/loadscreen-2x.png
-	Image3x: openop2|uibits/loadscreen-3x.png
-	Text: Filling Crates..., Charging Capacitors..., Reticulating Splines..., Planting Trees..., Building Bridges..., Aging Empires..., Compiling EVA..., Constructing Pylons..., Activating Skynet..., Splitting Atoms...
+LoadScreen: CncLoadScreen
+	Image: openop2|uibits/chrome.png
+	Image2x: openop2|uibits/chrome-2x.png
+	Image3x: openop2|uibits/chrome-3x.png
+	Text: Loading...
 
 ServerTraits:
 	LobbyCommands

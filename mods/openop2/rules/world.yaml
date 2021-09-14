@@ -15,15 +15,17 @@
 	ShroudRenderer:
 		FogVariants: shroud
 		Index: 0, 13, 14, 12, 11, 9, 0, 8, 7, 0, 6, 4, 3, 1, 2, 0
+	#Eloyros: Keep GDI and Nod "InternalName" for minimal changes when update is needed in chrome
+	#Eloyros: Plymouth = Nod (both red)
 	Faction@Eden:
 		Name: Eden
-		InternalName: eden
+		InternalName: gdi
 		Side: Eden
 		Selectable: True
 		Description: Eden\nBackground: A technology-driven colony, their purpose is\nto terraform the planet and claim dominance over it.\n\nDoctrine: Can exploit the local landscape to their benefit,\nmore efficient.\n\nSpecialty: Thor, GeoCon/Thermal Vents, Consumer Factory,\nSULV, Blight Walls, Meteor Defense.
 	Faction@Plymouth:
 		Name: Plymouth
-		InternalName: plymouth
+		InternalName: nod
 		Side: Plymouth
 		Selectable: True
 		Description: Plymouth\nBackground: The splinter colony: outcasts and rebels,\nforced by planetary events to live a nomadic lifestyle.\n\nDoctrine: Higher variety of weapons, more resistant to natural\ndisasters.\n\nSpecialty: Stickyfoam, Arachnids, ESG, Magma well, Lava Walls,\nSuper Nova, EMP SULV.
@@ -31,7 +33,7 @@
 		Name: Any
 		InternalName: Random
 		Side: Any
-		RandomFactionMembers: eden, plymouth
+		RandomFactionMembers: gdi, nod
 		Description: Randomly select Eden or Plymouth.
 
 World:
@@ -44,7 +46,7 @@ World:
 	ScreenShaker:
 	BuildingInfluence:
 	ProductionQueueFromSelection:
-		ProductionPaletteWidget: PRODUCTION_PALETTE
+		ProductionTabsWidget: PRODUCTION_TABS
 	#LegacyBridgeLayer:
 	#	Bridges: bridge1, bridge2, bridge3, bridge4, br1, br2, br3, sbridge1, sbridge2, sbridge3, sbridge4
 	CustomTerrainDebugOverlay:
@@ -85,17 +87,17 @@ World:
 	MPStartUnits@cc-eden:
 		Class: none
 		ClassName: Command Center
-		Factions: eden
+		Factions: gdi
 		BaseActor: eden-command-center
 	MPStartUnits@cc-plymouth:
 		Class: none
 		ClassName: Command Center
-		Factions: plymouth
+		Factions: nod
 		BaseActor: plymouth-command-center
 	MPStartUnits@light-eden:
 		Class: light
 		ClassName: Light
-		Factions: eden
+		Factions: gdi
 		BaseActor: eden-command-center
 		SupportActors: eden-robo-dozer, eden-robo-miner, eden-robo-surveyor, eden-earthworker
 		InnerSupportRadius: 2
@@ -103,7 +105,7 @@ World:
 	MPStartUnits@light-plymouth:
 		Class: light
 		ClassName: Light
-		Factions: plymouth
+		Factions: nod
 		BaseActor: plymouth-command-center
 		SupportActors: plymouth-robo-dozer, plymouth-robo-miner, plymouth-robo-surveyor, plymouth-earthworker
 		InnerSupportRadius: 2

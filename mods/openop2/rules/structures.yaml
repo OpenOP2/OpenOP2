@@ -58,11 +58,64 @@
 		Range: 5c0
 		RevealGeneratedShroud: False
 	Production:
-		Produces: Building, Defense
-	ProductionBar@Building:
-		ProductionType: Building
-	ProductionBar@Defense:
-		ProductionType: Defense
+		Produces: Building.GDI, Building.Nod, Defence.GDI, Defence.Nod
+	ProductionQueue@GDIBuilding:
+		Type: Building.GDI
+		DisplayOrder: 0
+		Factions: gdi
+		Group: Building
+		LowPowerModifier: 150
+		ReadyAudio: ConstructionComplete
+		BlockedAudio: NoBuild
+		LimitedAudio: BuildingInProgress
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+	ProductionQueue@NodBuilding:
+		Type: Building.Nod
+		DisplayOrder: 0
+		Factions: nod
+		Group: Building
+		LowPowerModifier: 150
+		ReadyAudio: ConstructionComplete
+		BlockedAudio: NoBuild
+		LimitedAudio: BuildingInProgress
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+	ProductionQueue@GDIDefense:
+		Type: Defence.GDI
+		DisplayOrder: 1
+		Factions: gdi
+		Group: Defence
+		LowPowerModifier: 150
+		ReadyAudio: ConstructionComplete
+		BlockedAudio: NoBuild
+		LimitedAudio: BuildingInProgress
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+	ProductionQueue@NodDefense:
+		Type: Defence.Nod
+		DisplayOrder: 1
+		Factions: nod
+		Group: Defence
+		LowPowerModifier: 150
+		ReadyAudio: ConstructionComplete
+		BlockedAudio: NoBuild
+		LimitedAudio: BuildingInProgress
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+	ProductionBar@BuildingGDI:
+		ProductionType: Building.GDI
+	ProductionBar@BuildingNod:
+		ProductionType: Building.Nod
+	ProductionBar@DefenceGDI:
+		ProductionType: Defence.GDI
+		Color: 8A8A8A
+	ProductionBar@DefenceNod:
+		ProductionType: Defence.Nod
 		Color: 8A8A8A
 	ProvidesRadar:
 	BaseBuilding:
@@ -191,10 +244,34 @@
 		Cost: 600
 	RevealsShroud:
 		Range: 4c0
+	ProductionQueue@Nod:
+		Type: Vehicle.Nod
+		DisplayOrder: 3
+		Group: Vehicle
+		LowPowerModifier: 150
+		ReadyAudio: UnitReady
+		BlockedAudio: NoBuild
+		LimitedAudio: BuildingInProgress
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+	ProductionQueue@GDI:
+		Type: Vehicle.GDI
+		DisplayOrder: 3
+		Group: Vehicle
+		LowPowerModifier: 150
+		ReadyAudio: UnitReady
+		BlockedAudio: NoBuild
+		LimitedAudio: BuildingInProgress
+		QueuedAudio: Training
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+	ProductionBar@Nod:
+		ProductionType: Vehicle.Nod
+	ProductionBar@GDI:
+		ProductionType: Vehicle.GDI
 	Production:
-		Produces: Vehicle
-	ProductionBar:
-		ProductionType: Vehicle
+		Produces: Vehicle.GDI, Vehicle.Nod
 	Exit@1:
 		Facing: 512
 		SpawnOffset: 512,0,0
