@@ -68,7 +68,7 @@ Assemblies:
 	^BinDir|OpenRA.Mods.Cnc.dll
 
 ChromeLayout:
-	common|chrome/mainmenu.yaml
+	openop2|chrome/from_common/mainmenu.yaml
 	openop2|chrome/mainmenu-prompts.yaml
 	openop2|chrome/playerprofile.yaml
 	openop2|chrome/multiplayer-browser.yaml
