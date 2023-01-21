@@ -64,7 +64,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					Size = size,
 					FrameSize = size,
 					Data = unpackedBytes,
-					Type = SpriteFrameType.Indexed,
+					Type = SpriteFrameType.Indexed8,
 				};
 
 				frames.Add(tile);
@@ -75,7 +75,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			return frames.ToArray();
 		}
 
-		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
+		public bool TryParseSprite(Stream s, string filename, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
 			metadata = null;
 			if (!IsRaw(s))

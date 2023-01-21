@@ -23,7 +23,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 {
 	public class Op2SpriteLoader : ISpriteLoader
 	{
-		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
+		public bool TryParseSprite(Stream s, string filename, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
 			var start = s.Position;
 
@@ -137,7 +137,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					Size = dataSize,
 					FrameSize = frameSize,
 					Data = data,
-					Type = SpriteFrameType.Indexed,
+					Type = SpriteFrameType.Indexed8,
 				};
 
 				frameList.Add(img.SpriteFrame);
@@ -153,7 +153,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 				Size = blankDataSize,
 				FrameSize = blankFrameSize,
 				Data = Enumerable.Repeat((byte)0, 4).ToArray(),
-				Type = SpriteFrameType.Indexed,
+				Type = SpriteFrameType.Indexed8,
 			};
 
 			frameList.Add(blankFrame);

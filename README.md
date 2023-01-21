@@ -6,6 +6,12 @@ You must own [Outpost 2 on GOG](https://www.gog.com/game/outpost_2_divided_desti
 
 This mod is a work-in-progress. Many features are missing or incomplete at this stage.
 
+To run in Visual Studio run OpenRA.Launcher and set the command line args to:
+
+```
+Engine.EngineDir=".." Engine.ModSearchPaths="..\\..\\mods" Game.Mod=openop2
+```
+
 Join the [OpenOP2 Discord channel](https://discord.gg/XdsJWKJwmw)
 
 Thanks to 

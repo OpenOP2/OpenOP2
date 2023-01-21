@@ -90,13 +90,17 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					{
 						Func<int, string> getTypeString = (inFrameType) =>
 						{
-							return inFrameType switch
+							switch (inFrameType)
 							{
-								1 => "sprite",
-								4 => "shadow",
-								5 => "shadow",
-								_ => "unknown"
-							};
+								case 1:
+									return "sprite";
+								case 4:
+									return "shadow";
+								case 5:
+									return "shadow";
+								default:
+									return "unknown";
+							}
 						};
 
 						//////////////////////
@@ -202,8 +206,10 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				sb.AppendLine(string.Empty);
 			}
 
-			using var sw = new StreamWriter(OutputFilename);
-			sw.Write(sb.ToString());
+			using (var sw = new StreamWriter(OutputFilename))
+			{
+				sw.Write(sb.ToString());
+			}
 		}
 	}
 }
