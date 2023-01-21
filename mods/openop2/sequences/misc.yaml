@@ -59,6 +59,14 @@ shroud:
 			virmask.raw: shadow1
 				Length: 16
 
+beacon:
+	Defaults: bits/filled.png
+		Length: *
+		ZOffset: 2535
+	arrow:
+	circles: 
+	clock:
+
 railtrail: #groups 659-660-661
 	# All sequences: idle
 	idle:

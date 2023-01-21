@@ -12,7 +12,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using OpenRA.Mods.Common.Pathfinder;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
 
@@ -34,9 +33,8 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 	public class AutoDeployMinersBotModule : ConditionalTrait<AutoDeployMinersBotModuleInfo>, IBotTick
 	{
-		private ResourceLayer resourceLayer;
+		private IResourceLayer resourceLayer;
 		readonly ResourceClaimLayer claimLayer;
-		readonly DomainIndex domainIndex;
 		readonly IPathFinder pathFinder;
 		private readonly int tickEvery = 50;
 
@@ -49,16 +47,17 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			world = self.World;
 			player = self.Owner;
 
-			resourceLayer = self.World.WorldActor.Trait<ResourceLayer>();
+			resourceLayer = self.World.WorldActor.Trait<IResourceLayer>();
 			claimLayer = self.World.WorldActor.Trait<ResourceClaimLayer>();
 			pathFinder = self.World.WorldActor.Trait<IPathFinder>();
-			domainIndex = self.World.WorldActor.Trait<DomainIndex>();
-			var resourceTypes = self.World.WorldActor.TraitsImplementing<ResourceType>().ToArray();
-			var resourceType = resourceTypes.FirstOrDefault(a =>
-				string.Equals(a.Info.Type, info.TargetResourceType, StringComparison.InvariantCultureIgnoreCase));
+			//var resourceTypes = self.World.WorldActor.TraitsImplementing<IResourceLayer>().ToArray();
 
-			if (resourceType == null)
-				throw new ArgumentException($"Couldn't find resource type: {info.TargetResourceType}");
+			//var resource = resourceLayer.GetResource(self.Location);
+			//var resourceType = resourceTypes.FirstOrDefault(a =>
+			//	string.Equals(resource.Type, info.TargetResourceType, StringComparison.InvariantCultureIgnoreCase));
+
+			//if (resourceType == null)
+			//	throw new ArgumentException($"Couldn't find resource type: {info.TargetResourceType}");
 		}
 
 		void IBotTick.BotTick(IBot bot)
@@ -95,8 +94,8 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			// Determine where to search from and how far to search:
 			Func<CPos, bool> canHarvest = pos =>
 			{
-				var resType = resourceLayer.GetResourceType(pos);
-				if (resType != null && string.Compare(resType.Info.Name, Info.TargetResourceType, StringComparison.OrdinalIgnoreCase) == 0)
+				var resType = resourceLayer.GetResource(pos);
+				if (string.Compare(resType.Type, Info.TargetResourceType, StringComparison.OrdinalIgnoreCase) == 0)
 				{
 					return true;
 				}
@@ -105,11 +104,12 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			};
 
 			// Find any harvestable resources:
-			List<CPos> path;
-			using (var search = PathSearch.Search(self.World, mobile.Locomotor, self, BlockedByActor.Stationary, loc =>
-					domainIndex.IsPassable(self.Location, loc, mobile.Locomotor) && canHarvest(loc) && claimLayer.CanClaimCell(self, loc))
-				.FromPoint(self.Location))
-				path = pathFinder.FindPath(search);
+			var path = mobile.PathFinder.FindPathToTargetCellByPredicate(
+				self,
+				new[] { self.Location },
+				loc =>
+					claimLayer.CanClaimCell(self, loc),
+				BlockedByActor.Stationary);
 
 			if (path.Count > 0)
 				return path[0];

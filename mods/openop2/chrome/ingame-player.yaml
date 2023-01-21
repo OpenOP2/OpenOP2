@@ -1,7 +1,16 @@
 Container@PLAYER_WIDGETS:
+	Logic: LoadIngameChatLogic
 	Children:
-		LogicKeyListener@CONTROLGROUP_KEYHANDLER:
-			Logic: ControlGroupLogic
+		Container@CHAT_ROOT:
+		LogicKeyListener@PLAYER_KEYHANDLER:
+			Logic: RemoveFromControlGroupHotkeyLogic
+				RemoveFromControlGroupKey: RemoveFromControlGroup
+		ControlGroups@CONTROLGROUPS:
+			SelectGroupKeyPrefix: ControlGroupSelect
+			CreateGroupKeyPrefix: ControlGroupCreate
+			AddToGroupKeyPrefix: ControlGroupAddTo
+			CombineWithGroupKeyPrefix: ControlGroupCombineWith
+			JumpToGroupKeyPrefix: ControlGroupJumpTo
 		LogicTicker@SIDEBAR_TICKER:
 		Container@SUPPORT_POWERS:
 			Logic: SupportPowerBinLogic
@@ -16,7 +25,6 @@ Container@PLAYER_WIDGETS:
 					HoldText: ON HOLD
 					HotkeyPrefix: SupportPower
 					HotkeyCount: 6
-					ClockPalette: clock
 				Container@PALETTE_FOREGROUND:
 					Children:
 						Image@ICON_TEMPLATE:
@@ -168,7 +176,7 @@ Container@PLAYER_WIDGETS:
 					DisableKeyRepeat: true
 					DisableKeySound: true
 					TooltipText: Stop
-					TooltipDesc: Selected units will stop their current activity.\n\nActs immediately on selected units.
+					TooltipDesc: Selected units will stop their current activity.\nSelected buildings will reset their rally point.\n\nActs immediately on selected targets.
 					TooltipContainer: TOOLTIP_CONTAINER
 					Children:
 						Image@ICON:
@@ -407,7 +415,7 @@ Container@PLAYER_WIDGETS:
 							SoundUp: RadarUp
 							SoundDown: RadarDown
 							Children:
-						VqaPlayer@PLAYER:
+						VideoPlayer@PLAYER:
 							X: 1
 							Y: 1
 							Width: 220
@@ -450,7 +458,6 @@ Container@PLAYER_WIDGETS:
 					HotkeyPrefix: Production
 					HotkeyCount: 24
 					SelectProductionBuildingHotkey: SelectProductionBuilding
-					ClockPalette: clock
 				Container@PALETTE_FOREGROUND:
 					Children:
 						Image@ROW_TEMPLATE:
@@ -596,7 +603,7 @@ Container@PLAYER_WIDGETS:
 			X: WINDOW_RIGHT - 250
 			Y: 272
 			Width: 238
-			Height: 27
+			Height: 28
 			ImageCollection: sidebar
 			ImageName: background-moneybin
 			ClickThrough: false
@@ -642,3 +649,8 @@ Container@PLAYER_WIDGETS:
 							Y: 4
 							ImageCollection: power-icons
 							ImageName: power-normal
+		Container@HPF_ROOT:
+			Logic: LoadIngameHierarchicalPathFinderOverlayLogic
+			X: WINDOW_RIGHT - WIDTH - 260
+			Y: 40
+			Width: 175

@@ -15,8 +15,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
-using OpenRA.FileSystem;
 
 namespace OpenRA.Mods.OpenOP2.UtilityCommands
 {
@@ -56,8 +54,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				{
 					var restOfLine = ln.Replace(framesTemplate, string.Empty);
 					var frameStrArray = restOfLine.Split(new char[] { ',' });
-					var frames = frameStrArray.Select(x => int.Parse(x.Trim())).ToArray();
-					return frames;
+					return frameStrArray.Select(x => int.Parse(x.Trim())).ToArray();
 				};
 
 				const string idTemplate = "\t\tId: ";
@@ -191,8 +188,10 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			var destFile = Path.Combine(tilesetsPath, $"{filenameOnly}-propagated.yaml");
 			try
 			{
-				using var sw = new StreamWriter(destFile);
-				sw.Write(sb.ToString());
+				using (var sw = new StreamWriter(destFile))
+				{
+					sw.Write(sb.ToString());
+				}
 			}
 			catch (Exception ex)
 			{

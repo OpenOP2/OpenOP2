@@ -341,4 +341,3 @@ eden-unknown:
 plymouth-supernova-guardpost:
 	Inherits@generated: ^plymouth-supernova-guardpost-generated
 	Inherits: ^StubBuilding
-

@@ -45,8 +45,10 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 			try
 			{
-				using var sw = new StreamWriter(OutputFilename);
-				sw.Write(sb.ToString());
+				using (var sw = new StreamWriter(OutputFilename))
+				{
+					sw.Write(sb.ToString());
+				}
 			}
 			catch (Exception ex)
 			{

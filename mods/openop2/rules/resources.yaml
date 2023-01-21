@@ -1,27 +1,11 @@
 ^Resources:
-	ResourceType@ore:
-		Type: ore
-		Name: Ore
-		ResourceType: 1
-		TerrainType: Ore
-		Palette: 3
-		Sequences: ore
-		MaxDensity: 1
-		ValuePerUnit: 1
-		AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
-		AllowUnderActors: true
-		AllowUnderBuildings: true
-	ResourceType@ore.mine:
-		Type: ore.mine
-		Name: Ore Mine (placed by miner; do not use)
-		ResourceType: 2
-		TerrainType: Ore
-		Palette: 3
-		Sequences: ore
-		MaxDensity: 120000
-		ValuePerUnit: 20
-		AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
-		AllowUnderActors: true
-		AllowUnderBuildings: true
-	ResourceRenderer: 
-		RenderTypes: ore, ore.mine
+	ResourceRenderer:
+		ResourceTypes:
+			ore:
+				Sequences: ore, ore-1-high, ore-2-high
+				Palette: 3
+				Name: Ore
+			ore.mine:
+				Sequences: ore, ore-1-high, ore-2-high
+				Palette: 3
+				Name: Ore Mine

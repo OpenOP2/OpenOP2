@@ -109,7 +109,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				var width = 1 << lgTileWidth; // Calculate map width
 				var height = newHeight;
 
-				map = new Map(modData, modData.DefaultTileSets["default"], width + 2, (int)height + 2)
+				map = new Map(modData, modData.DefaultTerrainInfo["default"], width + 2, (int)height + 2)
 				{
 					Title = Path.GetFileNameWithoutExtension(filename),
 					Author = "OpenOP2",
@@ -227,7 +227,6 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 			mapPlayers = new MapPlayers(map.Rules, 0);
 			map.PlayerDefinitions = mapPlayers.ToMiniYaml();
-			map.FixOpenAreas();
 
 			var dest = Path.GetFileNameWithoutExtension(args[1]) + ".oramap";
 			var mapLocations = Game.ModData.Manifest.MapFolders;

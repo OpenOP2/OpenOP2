@@ -29,16 +29,19 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 	public class PlacesResourcesWhenCreated : ConditionalTrait<PlacesResourcesWhenCreatedInfo>, INotifyRemovedFromWorld
 	{
-		private ResourceLayer resourceLayer;
-		private ResourceType resourceType;
+		readonly PlacesResourcesWhenCreatedInfo info;
+		private IResourceLayer resourceLayer;
+		private IResourceLayer resourceType;
 		private CPos deployLocation;
+
 		public PlacesResourcesWhenCreated(Actor self, PlacesResourcesWhenCreatedInfo info)
 			: base(info)
 		{
+			this.info = info;
 			resourceLayer = self.World.WorldActor.Trait<ResourceLayer>();
-			var resourceTypes = self.World.WorldActor.TraitsImplementing<ResourceType>().ToArray();
+			var resourceTypes = self.World.WorldActor.TraitsImplementing<IResourceLayer>().ToArray();
 			resourceType = resourceTypes.FirstOrDefault(a =>
-				string.Equals(a.Info.Type, info.ResourceType, StringComparison.InvariantCultureIgnoreCase));
+				string.Equals(info.ResourceType, info.ResourceType, StringComparison.InvariantCultureIgnoreCase));
 
 			if (resourceType == null)
 				throw new ArgumentException($"Couldn't find resource type: {info.ResourceType}");
@@ -47,12 +50,12 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		protected override void Created(Actor self)
 		{
 			deployLocation = self.World.Map.CellContaining(self.CenterPosition) + new CVec(-1, 0);
-			resourceLayer.AddResource(resourceType, deployLocation, Info.Amount);
+			resourceLayer.AddResource(info.ResourceType, deployLocation, Info.Amount);
 		}
 
 		void INotifyRemovedFromWorld.RemovedFromWorld(Actor self)
 		{
-			resourceLayer.Destroy(deployLocation);
+			resourceLayer.ClearResources(deployLocation);
 		}
 	}
 }

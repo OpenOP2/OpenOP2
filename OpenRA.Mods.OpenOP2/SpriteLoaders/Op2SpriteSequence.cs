@@ -145,6 +145,10 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 		public Rectangle Bounds { get; private set; }
 		public bool IgnoreWorldTint { get; private set; }
 
+		public int InterpolatedFacings => -1;
+
+		public float Scale => 1f;
+
 		protected string GetSpriteSrc(string useFile)
 		{
 			return useFile ?? ImageName;
@@ -341,6 +345,22 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 		protected virtual int GetFacingFrameOffset(WAngle facing)
 		{
 			return Util.IndexFacing(facing, Facings);
+		}
+
+		public (Sprite, WAngle) GetSpriteWithRotation(int frame, WAngle facing)
+		{
+			var rotation = WAngle.Zero;
+
+			// Note: Error checking is not done here as it is done on load
+			if (InterpolatedFacings != -1)
+				rotation = Util.GetInterpolatedFacing(facing, Math.Abs(Facings), InterpolatedFacings);
+
+			return (GetSprite(Start, frame, facing), rotation);
+		}
+
+		public float GetAlpha(int frame)
+		{
+			return 1f;
 		}
 	}
 }

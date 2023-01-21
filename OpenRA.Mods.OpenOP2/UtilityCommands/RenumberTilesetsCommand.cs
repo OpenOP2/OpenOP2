@@ -81,8 +81,10 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			var destFile = Path.Combine(tilesetsPath, $"{filenameOnly}-renumbered.yaml");
 			try
 			{
-				using var sw = new StreamWriter(destFile);
-				sw.Write(sb.ToString());
+				using (var sw = new StreamWriter(destFile))
+				{
+					sw.Write(sb.ToString());
+				}
 			}
 			catch (Exception ex)
 			{

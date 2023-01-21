@@ -155,7 +155,8 @@ namespace OpenRA.Mods.OpenOP2.Traits
 				.ToArray();
 
 			var shroudSheet = blightSprites[0].Sheet;
-			blightLayer = new TerrainSpriteLayer(world, wr, shroudSheet, BlendMode.Alpha, wr.Palette(info.Palette), false);
+			var emptySprite = new Sprite(shroudSheet, Rectangle.Empty, TextureChannel.Alpha);
+			blightLayer = new TerrainSpriteLayer(world, wr, emptySprite, BlendMode.Alpha, false);
 			foreach (var cell in map.AllCells)
 				UpdateCell(cell);
 
@@ -443,9 +444,10 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 		private void AddBlightSpriteToLayer(CPos pos, int tileIndex)
 		{
-			var sprite = blightSprites[tileIndex];
+			//var sprite = blightSprites[tileIndex];
 			var paletteReference = worldRenderer.Palette(info.Palette);
-			blightLayer.Update(pos, sprite, false);
+			var sequenceProvider = map.Rules.Sequences;
+			blightLayer.Update(pos, sequenceProvider.GetSequence(info.ImageName, info.Sequence), paletteReference, tileIndex);
 		}
 
 		private bool GetSpriteForTile(CPos pos, out int result)

@@ -31,8 +31,10 @@ namespace OpenRA.Mods.OpenOP2.Traits
 				}
 
 				var palPath = Path.Combine(outDir, $"{i}.PAL");
-				using var stream = new StreamWriter(palPath);
-				stream.Write(sb.ToString());
+				using (var stream = new StreamWriter(palPath))
+				{
+					stream.Write(sb.ToString());
+				}
 			}
 		}
 	}

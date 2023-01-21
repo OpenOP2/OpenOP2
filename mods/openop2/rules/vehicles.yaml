@@ -186,7 +186,7 @@ plymouth-robo-miner:
 		IntoActor: plymouth-mine-common
 
 eden-lynx-laser:
-	Inherits@generated:	^eden-lynx-generated
+	Inherits@generated: ^eden-lynx-generated
 	Inherits: ^Lynx
 	Buildable:
 		Prerequisites: ~vehicles.eden
@@ -194,7 +194,7 @@ eden-lynx-laser:
 	WithSpriteTurret:
 		Sequence: laser
 	Armament:
-		Weapon:	laser
+		Weapon: laser
 
 eden-lynx-RailGun:
 	Inherits@generated: ^eden-lynx-generated
