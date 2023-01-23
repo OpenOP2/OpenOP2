@@ -1,7 +1,5 @@
-﻿using System;
-using OpenRA.Graphics;
+﻿using OpenRA.Graphics;
 using OpenRA.Mods.Common.Graphics;
-using Util = OpenRA.Mods.Common.Util;
 
 namespace OpenRA.Mods.OpenOP2.Graphics
 {

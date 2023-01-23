@@ -186,8 +186,8 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					throw new IOException("Format error: Tag did not match header tag.");
 				}
 
-				var checkTag2 = stream.ReadInt32(); // the same all the time?
-				var numActors = stream.ReadInt32(); // I think?
+				var checkTag2 = stream.ReadInt32(); // 4113 - the same all the time?
+				var numActors = stream.ReadInt32(); // 218
 
 				// TODO: The rest of the tiles
 				// Actually place the tiles
@@ -200,13 +200,10 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 						var tileOffset = (((tileXUpper * height) + y) << 5) + tileXLower;
 						var tile = tiles[tileOffset];
 
-						var tile2XUpper = tile >> 5;
-						var tile2XLower = tile & 0x1F;
-
 						// Get the tile mapping index
 						var cellType = (tile & 0x1F);
 						var tileMappingIndex = (tile & 0xFFE0) >> 5;
-						var actorMappingIndex = (tile & 0x7FF0000) >> 11;
+						var actorMappingIndex = (tile & 0x7FF00000) >> 11;
 						var lava = (tile & 0x00000001) >> 27;
 						var lavaPossible = (tile & 0x00000001) >> 28;
 						var expand = (tile & 0x00000001) >> 29;
@@ -223,6 +220,45 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 						map.Tiles[new CPos(x + 1, y + 1)] = new TerrainTile((ushort)(startIndex + thisMapping.TileIndex), 0);
 					}
 				}
+
+
+				var numSomething = stream.ReadInt32(); // always 217
+				var aftertiles1 = stream.ReadInt32(); // always 1
+				var aftertiles2 = stream.ReadInt32(); // always 1
+				var aftertiles3 = stream.ReadInt32(); // always 0
+				var aftertiles4 = stream.ReadInt32(); // always 4
+				var checkString = stream.ReadASCII(4); // always BLUE
+				var aftertiles5 = stream.ReadInt32(); // always 4
+				var aftertiles6 = stream.ReadInt32(); // always 4
+
+				// always digits 1 - 16
+				for (var i = 0; i < 16; i++)
+				{
+					var digit = stream.ReadInt32();
+					//Console.WriteLine($"{digit}");
+				}
+
+
+				for (var y = 0; y < numSomething - 1; y++)
+				{
+					var actorNameLength = stream.ReadInt32();
+					var actorName = stream.ReadASCII(actorNameLength);
+					var sizeX = stream.ReadInt32();
+					var sizeY = stream.ReadInt32();
+
+					// var actorBlob = stream.ReadASCII(12);
+					//Console.WriteLine($"{actorName} ({sizeX} {sizeY})");
+
+					for (var x = 0; x < sizeX * sizeY; x++)
+					{
+						var tileDigit = stream.ReadInt32();
+						//Console.WriteLine($"{tileDigit}");
+					}
+				}
+
+
+				var checkString2 = stream.ReadASCII(11);
+				Console.WriteLine($"{checkString2}");
 			}
 
 			mapPlayers = new MapPlayers(map.Rules, 0);

@@ -185,6 +185,8 @@ EditorWorld:
 	Inherits: ^BaseWorld
 	EditorActorLayer:
 	EditorCursorLayer:
+	BuildableTerrainOverlay:
+		AllowedTerrainTypes: Clear, Road
 	EditorResourceLayer:
 		#RecalculateResourceDensity: true
 		ResourceTypes:

@@ -12,7 +12,7 @@ MapSize: 66,66
 
 Bounds: 1,1,62,62
 
-Visibility: Lobby, Shellmap
+Visibility: Shellmap
 
 Categories: Maps
 

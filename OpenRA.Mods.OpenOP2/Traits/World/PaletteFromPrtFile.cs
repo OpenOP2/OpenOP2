@@ -12,6 +12,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using OpenRA.FileFormats;
 using OpenRA.FileSystem;
 using OpenRA.Graphics;
 using OpenRA.Mods.Common.Traits;
@@ -63,44 +64,83 @@ namespace OpenRA.Mods.OpenOP2.Traits
 				if (cpal != "CPAL")
 					throw new InvalidDataException();
 
-				var framePalettes = new List<uint[]>();
+				uint[] framePalettes;
 				var paletteCount = s.ReadUInt32();
-				for (var p = 0; p < paletteCount; p++)
+				s.Seek(1052 * Number, SeekOrigin.Current);
+
+				var ppal = s.ReadASCII(4);
+				if (ppal != "PPAL")
+					throw new InvalidDataException();
+
+				var offset = s.ReadUInt32();
+
+				var head = s.ReadASCII(4);
+				if (head != "head")
+					throw new InvalidDataException();
+
+				var bytesPerEntry = s.ReadUInt32();
+				var unknown = s.ReadUInt32();
+
+				var data = s.ReadASCII(4);
+				if (data != "data")
+					throw new InvalidDataException();
+
+				var paletteSize = s.ReadUInt32();
+				var colors = paletteSize / bytesPerEntry;
+				var paletteData = new Color[colors];
+				for (var c = 0; c < colors; c++)
 				{
-					var ppal = s.ReadASCII(4);
-					if (ppal != "PPAL")
-						throw new InvalidDataException();
-
-					var offset = s.ReadUInt32();
-
-					var head = s.ReadASCII(4);
-					if (head != "head")
-						throw new InvalidDataException();
-
-					var bytesPerEntry = s.ReadUInt32();
-					var unknown = s.ReadUInt32();
-
-					var data = s.ReadASCII(4);
-					if (data != "data")
-						throw new InvalidDataException();
-
-					var paletteSize = s.ReadUInt32();
-					var colors = paletteSize / bytesPerEntry;
-					var paletteData = new Color[colors];
-					for (var c = 0; c < colors; c++)
-					{
-						var red = s.ReadByte();
-						var green = s.ReadByte();
-						var blue = s.ReadByte();
-						paletteData[c] = Color.FromArgb(red, green, blue);
-						var reserved = s.ReadByte();
-					}
-
-					framePalettes.Add(paletteData.Select(d => (uint)d.ToArgb()).ToArray());
+					var red = s.ReadByte();
+					var green = s.ReadByte();
+					var blue = s.ReadByte();
+					paletteData[c] = Color.FromArgb(red, green, blue);
+					var reserved = s.ReadByte();
 				}
 
-				return new ImmutablePalette(Enumerable.Range(0, Palette.Size).Select(i => (i == TransparentIndex) ? 0 : framePalettes[Number][i]));
+				WritePaletteToPng(paletteData, Number);
+
+				framePalettes = paletteData.Select(d => (uint)d.ToArgb()).ToArray();
+
+				return new ImmutablePalette(Enumerable.Range(0, Palette.Size).Select(i => (i == TransparentIndex) ? 0 : framePalettes[i]));
 			}
+		}
+
+		void WritePaletteToPng(Color[] colors, int number)
+		{
+			var blockSize = 8;
+			var colorMap = new Color[16 * blockSize, 16 * blockSize];
+			for (var y = 0; y < 16; y++)
+			{
+				for (var x = 0; x < 16; x++)
+				{
+					var color = colors[(y * 16) + x];
+					for (var blockY = 0; blockY < blockSize; blockY++)
+					{
+						for (var blockX = 0; blockX < blockSize; blockX++)
+						{
+							colorMap[(x * blockSize) + blockX, (y * blockSize) + blockY] = color;
+						}
+					}
+				}
+			}
+
+			var bytes = new byte[256 * blockSize * blockSize * 4];
+			var i = 0;
+			for (var y = 0; y < 16 * blockSize; y++)
+			{
+				for (var x = 0; x < 16 * blockSize; x++)
+				{
+					var thisColor = colorMap[x, y];
+					bytes[i] = thisColor.R;
+					bytes[i + 1] = thisColor.G;
+					bytes[i + 2] = thisColor.B;
+					bytes[i + 3] = thisColor.A;
+					i += 4;
+				}
+			}
+
+			var png = new Png(bytes, SpriteFrameType.Rgba32, 16 * blockSize, 16 * blockSize);
+			png.Save($"..\\..\\palette{number}.png");
 		}
 	}
 
