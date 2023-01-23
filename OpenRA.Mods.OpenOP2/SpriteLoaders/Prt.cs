@@ -10,9 +10,9 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 {
 	public class Prt
 	{
-		private const string PrtFilename = "op2_art.prt";
+		const string PrtFilename = "op2_art.prt";
 
-		private static Prt instance;
+		static Prt instance;
 		public static Prt Instance
 		{
 			get
@@ -43,7 +43,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			Sequences = BuildSequences(PrtFile);
 		}
 
-		private Dictionary<string, List<SequenceDTO>> BuildSequences(PrtFile prtFile)
+		Dictionary<string, List<SequenceDTO>> BuildSequences(PrtFile prtFile)
 		{
 			var results = new Dictionary<string, List<SequenceDTO>>();
 
@@ -181,7 +181,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			return results;
 		}
 
-		private List<uint[]> LoadPalettes(Stream s)
+		List<uint[]> LoadPalettes(Stream s)
 		{
 			var cpal = s.ReadASCII(4);
 			if (cpal != "CPAL")

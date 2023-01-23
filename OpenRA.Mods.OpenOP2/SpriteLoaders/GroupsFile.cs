@@ -348,8 +348,8 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 		public static GroupSequenceSet[] AddSingleFrameIdle(GroupSequenceSet[] groupSequenceSets)
 		{
-			const string idleString = "^idle[2-9]*$";
-			var regex = new Regex(idleString);
+			const string IdleString = "^idle[2-9]*$";
+			var regex = new Regex(IdleString);
 			var originalIdle = groupSequenceSets.FirstOrDefault(t => t.Sequence == "idle");
 			if (originalIdle == null)
 			{

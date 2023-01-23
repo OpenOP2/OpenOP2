@@ -33,10 +33,9 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 	public class AutoDeployMinersBotModule : ConditionalTrait<AutoDeployMinersBotModuleInfo>, IBotTick
 	{
-		private IResourceLayer resourceLayer;
+		readonly IResourceLayer resourceLayer;
 		readonly ResourceClaimLayer claimLayer;
-		readonly IPathFinder pathFinder;
-		private readonly int tickEvery = 50;
+		readonly int tickEvery = 50;
 
 		readonly World world;
 		readonly Player player;
@@ -49,15 +48,6 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 			resourceLayer = self.World.WorldActor.Trait<IResourceLayer>();
 			claimLayer = self.World.WorldActor.Trait<ResourceClaimLayer>();
-			pathFinder = self.World.WorldActor.Trait<IPathFinder>();
-			//var resourceTypes = self.World.WorldActor.TraitsImplementing<IResourceLayer>().ToArray();
-
-			//var resource = resourceLayer.GetResource(self.Location);
-			//var resourceType = resourceTypes.FirstOrDefault(a =>
-			//	string.Equals(resource.Type, info.TargetResourceType, StringComparison.InvariantCultureIgnoreCase));
-
-			//if (resourceType == null)
-			//	throw new ArgumentException($"Couldn't find resource type: {info.TargetResourceType}");
 		}
 
 		void IBotTick.BotTick(IBot bot)

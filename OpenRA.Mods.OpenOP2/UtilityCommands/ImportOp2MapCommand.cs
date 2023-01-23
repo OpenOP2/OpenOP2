@@ -13,8 +13,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
 using OpenRA.FileSystem;
 
 namespace OpenRA.Mods.OpenOP2.UtilityCommands
@@ -68,16 +66,16 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 		[Desc("FILENAME", "Convert an Outpost 2 map to the OpenRA format.")]
 		void IUtilityCommand.Run(Utility utility, string[] args) { Run(utility, args); }
 
-		private ModData modData;
-		private Map map;
-		private MapPlayers mapPlayers;
+		ModData modData;
+		Map map;
+		MapPlayers mapPlayers;
 
 		public bool ValidateArguments(IReadOnlyCollection<string> args)
 		{
 			return args.Count >= 2;
 		}
 
-		private void Run(Utility utility, string[] args)
+		void Run(Utility utility, string[] args)
 		{
 			// HACK: The engine code assumes that Game.modData is set.
 			Game.ModData = modData = utility.ModData;
@@ -221,7 +219,6 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					}
 				}
 
-
 				var numSomething = stream.ReadInt32(); // always 217
 				var aftertiles1 = stream.ReadInt32(); // always 1
 				var aftertiles2 = stream.ReadInt32(); // always 1
@@ -235,9 +232,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				for (var i = 0; i < 16; i++)
 				{
 					var digit = stream.ReadInt32();
-					//Console.WriteLine($"{digit}");
 				}
-
 
 				for (var y = 0; y < numSomething - 1; y++)
 				{
@@ -246,16 +241,11 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					var sizeX = stream.ReadInt32();
 					var sizeY = stream.ReadInt32();
 
-					// var actorBlob = stream.ReadASCII(12);
-					//Console.WriteLine($"{actorName} ({sizeX} {sizeY})");
-
 					for (var x = 0; x < sizeX * sizeY; x++)
 					{
 						var tileDigit = stream.ReadInt32();
-						//Console.WriteLine($"{tileDigit}");
 					}
 				}
-
 
 				var checkString2 = stream.ReadASCII(11);
 				Console.WriteLine($"{checkString2}");

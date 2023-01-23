@@ -97,8 +97,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 					var reserved = s.ReadByte();
 				}
 
-				WritePaletteToPng(paletteData, Number);
-
+				// WritePaletteToPng(paletteData, Number);
 				framePalettes = paletteData.Select(d => (uint)d.ToArgb()).ToArray();
 
 				return new ImmutablePalette(Enumerable.Range(0, Palette.Size).Select(i => (i == TransparentIndex) ? 0 : framePalettes[i]));
