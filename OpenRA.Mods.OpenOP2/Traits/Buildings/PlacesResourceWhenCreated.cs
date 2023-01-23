@@ -30,9 +30,9 @@ namespace OpenRA.Mods.OpenOP2.Traits
 	public class PlacesResourcesWhenCreated : ConditionalTrait<PlacesResourcesWhenCreatedInfo>, INotifyRemovedFromWorld
 	{
 		readonly PlacesResourcesWhenCreatedInfo info;
-		private IResourceLayer resourceLayer;
-		private IResourceLayer resourceType;
-		private CPos deployLocation;
+		readonly IResourceLayer resourceLayer;
+		readonly IResourceLayer resourceType;
+		CPos deployLocation;
 
 		public PlacesResourcesWhenCreated(Actor self, PlacesResourcesWhenCreatedInfo info)
 			: base(info)

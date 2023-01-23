@@ -10,9 +10,9 @@ using Util = OpenRA.Mods.Common.Util;
 
 namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 {
-	internal class Op2SpriteUtil
+	public class Op2SpriteUtil
 	{
-		internal static T LoadField<T>(Dictionary<string, MiniYaml> d, string key, T fallback)
+		public static T LoadField<T>(Dictionary<string, MiniYaml> d, string key, T fallback)
 		{
 			if (d.TryGetValue(key, out var value))
 				return FieldLoader.GetValue<T>(key, value.Value);
@@ -48,6 +48,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 	public class Op2SpriteSequenceLoader : ISpriteSequenceLoader
 	{
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0060:Remove unused parameter", Justification = "Unknown")]
 		public Op2SpriteSequenceLoader(ModData modData) { }
 
 		public IReadOnlyDictionary<string, ISpriteSequence> ParseSequences(ModData modData, string tileSet, SpriteCache cache, MiniYamlNode node)
@@ -112,7 +113,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					var sequenceDtos = prt.Sequences[node.Key];
 					foreach (var sequenceDto in sequenceDtos)
 					{
-						sequences.Add(sequenceDto.Name, new Op2SpriteSequence(cache, this, node.Key, sequenceDto));
+						sequences.Add(sequenceDto.Name, new Op2SpriteSequence(cache, node.Key, sequenceDto));
 					}
 				}
 			}
@@ -123,13 +124,11 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 	public class Op2SpriteSequence : ISpriteSequence
 	{
-		private const string ImageName = "op2_art.bmp";
-		private static readonly WDist DefaultShadowSpriteZOffset = new WDist(-5);
-		private readonly Sprite[] sprites;
-		private readonly bool reverseFacings, transpose;
-		private readonly string sequence;
-
-		private readonly ISpriteSequenceLoader loader;
+		const string ImageName = "op2_art.bmp";
+		static readonly WDist DefaultShadowSpriteZOffset = new WDist(-5);
+		readonly Sprite[] sprites;
+		readonly bool reverseFacings, transpose;
+		readonly string sequence;
 
 		public string Name { get; private set; }
 		public int Start { get; private set; }
@@ -166,13 +165,11 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 		public Op2SpriteSequence(
 			SpriteCache cache,
-			ISpriteSequenceLoader loader,
 			string sequence,
 			SequenceDTO dto)
 		{
 			this.sequence = sequence;
 			Name = dto.Name;
-			this.loader = loader;
 			Start = dto.Start;
 			ShadowStart = -1;
 			ShadowZOffset = DefaultShadowSpriteZOffset.Length;
@@ -185,7 +182,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			Facings = dto.Facings;
 			reverseFacings = false;
 			var offset = dto.Offset;
-			const BlendMode blendMode = BlendMode.Alpha;
+			const BlendMode BlendMode = BlendMode.Alpha;
 
 			Func<int, IEnumerable<int>> getUsedFrames = frameCount =>
 			{
@@ -262,7 +259,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 								? new Sprite(s.Sheet,
 									s.Bounds, ZRamp, // FlipRectangle(s.Bounds, subFlipX, subFlipY)
 									s.Offset + subOffset + offset,
-									s.Channel, blendMode)
+									s.Channel, BlendMode)
 								: null).ToList();
 
 						var frames = subFrames != null ? subFrames.Skip(subStart).Take(subLength).ToArray() : Exts.MakeArray(subLength, i => subStart + i);
@@ -281,7 +278,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					s => s != null ? new Sprite(s.Sheet,
 						s.Bounds, ZRamp, // FlipRectangle(s.Bounds, subFlipX, subFlipY)
 						s.Offset + offset,
-						s.Channel, blendMode) : null).ToArray();
+						s.Channel, BlendMode) : null).ToArray();
 			}
 
 			var boundSprites = SpriteBounds(sprites, Frames, Start, Facings, Length, Stride, transpose);

@@ -14,8 +14,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
-using OpenRA.FileSystem;
 
 namespace OpenRA.Mods.OpenOP2.UtilityCommands
 {
@@ -27,49 +25,47 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 		[Desc("FILENAME", "START", "Resequences a tileset yaml file from a certain number onward.")]
 		void IUtilityCommand.Run(Utility utility, string[] args) { Run(utility, args); }
 
-		private ModData modData;
-
 		public bool ValidateArguments(IReadOnlyCollection<string> args)
 		{
 			return args.Count >= 3;
 		}
 
-		private void Run(Utility utility, string[] args)
+		void Run(Utility utility, string[] args)
 		{
 			// HACK: The engine code assumes that Game.modData is set.
-			Game.ModData = modData = utility.ModData;
+			Game.ModData = utility.ModData;
 
-			const string tilesetsPath = "..\\..\\mods\\openop2\\tilesets";
+			const string TilesetsPath = "..\\..\\mods\\openop2\\tilesets";
 			var filename = args[1];
 			var startIndexStr = args[2];
 			if (!int.TryParse(startIndexStr, out var startIndex))
 				throw new IOException($"'{startIndexStr}' wasn't a valid number.");
 
-			var fullFilepath = Path.Combine(tilesetsPath, filename);
+			var fullFilepath = Path.Combine(TilesetsPath, filename);
 
 			var sb = new StringBuilder();
 			using (var stream = File.OpenRead(fullFilepath))
 			{
 				var lines = stream.ReadAllLines().ToArray();
-				const string templateTemplate = "\tTemplate@";
-				const string idTemplate = "\t\tId: ";
+				const string TemplateTemplate = "\tTemplate@";
+				const string IdTemplate = "\t\tId: ";
 				var templateIndex = startIndex;
 				foreach (var line in lines)
 				{
 					var newLine = line;
-					if (line.StartsWith(templateTemplate))
+					if (line.StartsWith(TemplateTemplate))
 					{
-						var restOfLine = line.Replace(templateTemplate, string.Empty);
+						var restOfLine = line.Replace(TemplateTemplate, string.Empty);
 						restOfLine = restOfLine.Substring(0, restOfLine.Length - 1); // trim :
 
 						if (int.TryParse(restOfLine, out var templateNumber))
 						{
-							newLine = templateTemplate + templateIndex + ":";
+							newLine = TemplateTemplate + templateIndex + ":";
 						}
 					}
-					else if (line.StartsWith(idTemplate))
+					else if (line.StartsWith(IdTemplate))
 					{
-						newLine = idTemplate + templateIndex;
+						newLine = IdTemplate + templateIndex;
 						templateIndex++;
 					}
 
@@ -78,7 +74,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			}
 
 			var filenameOnly = Path.GetFileNameWithoutExtension(filename);
-			var destFile = Path.Combine(tilesetsPath, $"{filenameOnly}-renumbered.yaml");
+			var destFile = Path.Combine(TilesetsPath, $"{filenameOnly}-renumbered.yaml");
 			try
 			{
 				using (var sw = new StreamWriter(destFile))

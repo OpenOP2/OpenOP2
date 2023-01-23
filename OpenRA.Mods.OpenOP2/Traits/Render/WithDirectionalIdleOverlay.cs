@@ -73,8 +73,11 @@ namespace OpenRA.Mods.OpenOP2.Traits.Render
 				facing = () => f;
 			}
 
-			var anim = new Animation(init.World, Image ?? image, facing);
-			anim.IsDecoration = IsDecoration;
+			var anim = new Animation(init.World, Image ?? image, facing)
+			{
+				IsDecoration = IsDecoration
+			};
+
 			anim.PlayRepeating(RenderSprites.NormalizeSequence(anim, init.GetDamageState(), Sequence));
 
 			var body = init.Actor.TraitInfo<BodyOrientationInfo>();
@@ -101,8 +104,11 @@ namespace OpenRA.Mods.OpenOP2.Traits.Render
 			var body = self.Trait<BodyOrientation>();
 
 			var image = info.Image ?? rs.GetImage(self);
-			overlay = new Animation(self.World, image, () => self.Orientation.Yaw, () => IsTraitPaused);
-			overlay.IsDecoration = info.IsDecoration;
+			overlay = new Animation(self.World, image, () => self.Orientation.Yaw, () => IsTraitPaused)
+			{
+				IsDecoration = info.IsDecoration
+			};
+
 			if (info.StartSequence != null)
 				overlay.PlayThen(RenderSprites.NormalizeSequence(overlay, self.GetDamageState(), info.StartSequence),
 					() => overlay.PlayRepeating(RenderSprites.NormalizeSequence(overlay, self.GetDamageState(), info.Sequence)));

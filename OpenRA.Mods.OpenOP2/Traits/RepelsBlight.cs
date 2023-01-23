@@ -39,11 +39,11 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 	public class RepelsBlight : ConditionalTrait<RepelsBlightInfo>, ITick, INotifyRemovedFromWorld
 	{
-		private CPos lastPosition;
-		private World world;
-		private Actor actor;
-		private RepelsBlightInfo info;
-		private HashSet<CPos> repellingCells = new HashSet<CPos>();
+		CPos lastPosition;
+		readonly World world;
+		Actor actor;
+		readonly RepelsBlightInfo info;
+		HashSet<CPos> repellingCells = new HashSet<CPos>();
 		public List<CPos> RandomSamples { get; private set; } = new List<CPos>();
 		public RepelsBlight(Actor self, RepelsBlightInfo info)
 			: base(info)
@@ -65,7 +65,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			RandomSamples.Clear();
 		}
 
-		private void UpdateCellsIfMoved()
+		void UpdateCellsIfMoved()
 		{
 			if (lastPosition != actor.Location)
 			{
@@ -75,7 +75,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			}
 		}
 
-		private void UpdateCells()
+		void UpdateCells()
 		{
 			repellingCells.Clear();
 			repellingCells = world.Map.FindTilesInCircle(actor.Location, (info.Radius.Length + 1023) / 1024).ToHashSet();
@@ -117,7 +117,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			repellingCells.Clear();
 		}
 
-		private void UpdateRandomSamples()
+		void UpdateRandomSamples()
 		{
 			var radiusLength = info.Radius.Length;
 

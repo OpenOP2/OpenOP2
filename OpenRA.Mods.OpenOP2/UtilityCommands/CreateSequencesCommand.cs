@@ -21,39 +21,36 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 {
 	class CreateSequencesCommand : IUtilityCommand
 	{
-		private const string OutputFilename = "..\\mods\\openop2\\sequences\\sequences-generated.yaml";
+		const string OutputFilename = "..\\mods\\openop2\\sequences\\sequences-generated.yaml";
 
 		string IUtilityCommand.Name => "--create-sequences";
 
-		private bool onlyIdleSequence = false;
+		readonly bool onlyIdleSequence = false;
 		bool IUtilityCommand.ValidateArguments(string[] args) { return ValidateArguments(args); }
 
 		[Desc("FILENAME", "Write out the sequences that our sequence loader uses.")]
-		void IUtilityCommand.Run(Utility utility, string[] args) { Run(utility, args); }
+		void IUtilityCommand.Run(Utility utility, string[] args) { Run(utility); }
 
-		private ModData modData;
-		private PrtFile prtFile;
-		private List<uint[]> framePalettes;
+		PrtFile prtFile;
 
 		public bool ValidateArguments(IReadOnlyCollection<string> args)
 		{
 			return args.Count >= 1;
 		}
 
-		private void Run(Utility utility, string[] args)
+		void Run(Utility utility)
 		{
 			// HACK: The engine code assumes that Game.modData is set.
-			Game.ModData = modData = utility.ModData;
+			Game.ModData = utility.ModData;
 
 			var prt = Prt.Instance;
 			prtFile = prt.PrtFile;
-			framePalettes = prt.FramePalettes;
 
 			WriteSequences();
 			Console.WriteLine($"Wrote sequences file: {OutputFilename}");
 		}
 
-		private void WriteSequences()
+		void WriteSequences()
 		{
 			// Load from yaml
 			var groupsFile = new GroupsFile();
