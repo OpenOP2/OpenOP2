@@ -107,13 +107,17 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			}
 			else
 			{
-				using (new Support.PerfTimer("new Op2Sequence(\"{0}\")".F(node.Key), 20))
+				// Skip loading this sequence if we don't have a PRT File
+				if (node != null && Prt.Instance != null)
 				{
-					var prt = Prt.Instance;
-					var sequenceDtos = prt.Sequences[node.Key];
-					foreach (var sequenceDto in sequenceDtos)
+					using (new Support.PerfTimer("new Op2Sequence(\"{0}\")".F(node.Key), 20))
 					{
-						sequences.Add(sequenceDto.Name, new Op2SpriteSequence(cache, node.Key, sequenceDto));
+						var prt = Prt.Instance;
+						var sequenceDtos = prt.Sequences[node.Key];
+						foreach (var sequenceDto in sequenceDtos)
+						{
+							sequences.Add(sequenceDto.Name, new Op2SpriteSequence(cache, node.Key, sequenceDto));
+						}
 					}
 				}
 			}
