@@ -34,6 +34,11 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 		public Prt()
 		{
+			if (!Game.ModData.DefaultFileSystem.Exists(PrtFilename))
+			{
+				return;
+			}
+
 			using (var stream = Game.ModData.DefaultFileSystem.Open(PrtFilename))
 			{
 				FramePalettes = LoadPalettes(stream);
