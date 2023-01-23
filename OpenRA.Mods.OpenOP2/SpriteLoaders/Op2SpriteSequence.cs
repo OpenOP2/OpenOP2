@@ -108,7 +108,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			else
 			{
 				// Skip loading this sequence if we don't have a PRT File
-				if (node != null && Prt.Instance != null)
+				if (!string.IsNullOrWhiteSpace(node.Key) && Prt.Instance != null)
 				{
 					using (new Support.PerfTimer("new Op2Sequence(\"{0}\")".F(node.Key), 20))
 					{
