@@ -48,6 +48,8 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 	public class Op2SpriteSequenceLoader : ISpriteSequenceLoader
 	{
+		const string PrtFilename = "op2_art.prt";
+
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0060:Remove unused parameter", Justification = "Unknown")]
 		public Op2SpriteSequenceLoader(ModData modData) { }
 
@@ -56,6 +58,11 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			var sequences = new Dictionary<string, ISpriteSequence>();
 			var nodes = node.Value.ToDictionary();
 			var isOp2Sequence = false;
+
+			if (!Game.ModData.DefaultFileSystem.Exists(PrtFilename))
+			{
+				return new ReadOnlyDictionary<string, ISpriteSequence>(sequences);
+			}
 
 			try
 			{
@@ -107,17 +114,13 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			}
 			else
 			{
-				// Skip loading this sequence if we don't have a PRT File
-				if (Prt.Instance != null && Prt.Instance.Sequences.ContainsKey(node.Key))
+				using (new Support.PerfTimer("new Op2Sequence(\"{0}\")".F(node.Key), 20))
 				{
-					using (new Support.PerfTimer("new Op2Sequence(\"{0}\")".F(node.Key), 20))
+					var prt = Prt.Instance;
+					var sequenceDtos = prt.Sequences[node.Key];
+					foreach (var sequenceDto in sequenceDtos)
 					{
-						var prt = Prt.Instance;
-						var sequenceDtos = prt.Sequences[node.Key];
-						foreach (var sequenceDto in sequenceDtos)
-						{
-							sequences.Add(sequenceDto.Name, new Op2SpriteSequence(cache, node.Key, sequenceDto));
-						}
+						sequences.Add(sequenceDto.Name, new Op2SpriteSequence(cache, node.Key, sequenceDto));
 					}
 				}
 			}
