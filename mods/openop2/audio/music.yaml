@@ -1,12 +1,24 @@
-op2music01: Menu Music
-op2music02: New Terra
-op2music03: Cold Dry Nearly Airless
-op2music04: Build Grow and Thrive
-op2music05: Biotechnology
-op2music06: Live in Harmony
-op2music07: Surveyor
-op2music08: Scouting
-op2music09: Uplink
-op2music10: Lynx
-op2music11: Panther
-op2music12: Tiger
+Plymth22: Menu Music
+	Extension: wav
+Static01: New Terra
+	Extension: wav
+Static02: Cold Dry Nearly Airless
+	Extension: wav
+EDEN11: Build Grow and Thrive
+	Extension: wav
+EDEN31: Biotechnology
+	Extension: wav
+EDEN32: Live in Harmony # same as previous?
+	Extension: wav
+Static05: Surveyor
+	Extension: wav
+Static04: Scouting
+	Extension: wav
+Plymth11: Uplink
+	Extension: wav
+EDEN21: Lynx
+	Extension: wav
+EP61: Panther
+	Extension: wav
+EP42: Tiger
+	Extension: wav
