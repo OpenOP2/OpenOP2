@@ -140,7 +140,7 @@
 	SelectionDecorations:
 	WithSpriteControlGroupDecoration:
 	Selectable:
-		Bounds: 32, 32
+		Bounds: 1024, 1024
 	Targetable:
 		#RequiresCondition: !parachute
 		TargetTypes: Ground, Vehicle
@@ -438,7 +438,7 @@
 	Inherits: ^Building
 	Inherits@selection: ^SelectableCombatBuilding
 	Selectable:
-		Bounds: 32,32
+		Bounds: 1024,1024
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, Defense
 	MustBeDestroyed:

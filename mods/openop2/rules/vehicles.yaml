@@ -1,6 +1,3 @@
-# Hi Zhall and Zon,
-# You'll want to look in rules-generated.yaml for the vehicle you need, then move it into here and customize it as you need.
-
 ^Op2Vehicle:
 	Inherits: ^Vehicle
 
