@@ -364,7 +364,7 @@
 		Footprint: x
 		TerrainTypes: Clear,ClearRock,ClearRock2,ClearSand
 		RequiresBaseProvider: True
-		#BuildSounds: placbldg.aud, build5.aud
+		BuildSounds: bld_make.WAV
 		#UndeploySounds: cashturn.aud
 	ActorPreviewPlaceBuildingPreview:
 	#	OverridePalette: placebuilding

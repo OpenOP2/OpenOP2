@@ -47,6 +47,12 @@ CargoTruckVoice:
 		Action: beep2.WAV
 		Unload: dump.wav
 
+RoboSurveyorVoice:
+	DefaultVariant: 
+	Voices:
+		Select: robosel.WAV
+		Action: beep2.WAV
+
 RoboMinerVoice:
 	DefaultVariant: 
 	Voices:

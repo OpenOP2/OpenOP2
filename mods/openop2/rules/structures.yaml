@@ -241,8 +241,8 @@
 		Palette: 8
 		Offset: 0,-512,0
 	PlacesResourcesWhenCreated:
-		ResourceType: ore.mine
-		Amount: 50000
+		ResourceType: ore.depot
+		Amount: 1200000
 
 ^GuardPost:
 	Inherits: ^Defense

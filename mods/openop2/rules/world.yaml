@@ -76,15 +76,22 @@ World:
 	ResourceLayer:
 		#RecalculateResourceDensity: true
 		ResourceTypes:
-			ore:
+			ore.unsurveyed:
 				ResourceIndex: 1
 				TerrainType: Ore
 				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 				AllowUnderActors: true
 				AllowUnderBuildings: true
 				MaxDensity: 1
-			ore.mine:
+			ore.common1:
 				ResourceIndex: 2
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.depot:
+				ResourceIndex: 3
 				TerrainType: Ore
 				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 				AllowUnderActors: true
@@ -190,15 +197,22 @@ EditorWorld:
 	EditorResourceLayer:
 		#RecalculateResourceDensity: true
 		ResourceTypes:
-			ore:
+			ore.unsurveyed:
 				ResourceIndex: 1
 				TerrainType: Ore
 				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 				AllowUnderActors: true
 				AllowUnderBuildings: true
 				MaxDensity: 1
-			ore.mine:
+			ore.common1:
 				ResourceIndex: 2
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.depot:
+				ResourceIndex: 3
 				TerrainType: Ore
 				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 				AllowUnderActors: true

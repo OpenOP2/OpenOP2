@@ -48,12 +48,12 @@
 		Speed: 78
 	Harvester:
 		Capacity: 20
-		Resources: ore.mine
+		Resources: ore.depot
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 15
 		SearchFromHarvesterRadius: 8
 		HarvestFacings: 8
-		#EmptyCondition: no-ore
+		EmptyCondition: no-ore
 	#WithHarvestAnimation:
 	WithDockingAnimation:
 		DockSequence: unload
@@ -65,6 +65,33 @@
 		PipCount: 7
 		ResourceSequences:
 			Ore: pip-yellow
+
+^RoboSurveyor:
+	Inherits: ^Op2Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		#Prerequisites: ~techlevel.infonly
+		Prerequisites: ~vehicles
+		Description: Surveys mineral deposits.
+		IconPalette: 5
+	Voiced:
+		VoiceSet: RoboSurveyorVoice
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: Robo-Surveyor
+	Health:
+		HP: 5000
+	RevealsShroud:
+		Range: 7c0
+	Mobile:
+		Speed: 64
+	SurveysOre:
+		RemoveResourceType: ore.unsurveyed
+		PlaceResourceType: ore.common1
+		Amount: 120000
+		PlaysNotification: MiningLocationSurveyed
 
 ^RoboMiner:
 	Inherits: ^Op2Vehicle
@@ -162,6 +189,20 @@ eden-robo-dozer:
 plymouth-robo-dozer:
 	Inherits@generated: ^plymouth-robo-dozer-generated
 	Inherits: ^RoboDozer
+	Buildable:
+		Prerequisites: ~vehicles.plymouth
+		IconPalette: 3
+
+eden-robo-surveyor:
+	Inherits@generated: ^eden-robo-surveyor-generated
+	Inherits: ^RoboSurveyor
+	Buildable:
+		Prerequisites: ~vehicles.eden
+		IconPalette: 3
+
+plymouth-robo-surveyor:
+	Inherits@generated: ^plymouth-robo-surveyor-generated
+	Inherits: ^RoboSurveyor
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3

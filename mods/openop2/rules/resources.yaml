@@ -1,11 +1,15 @@
 ^Resources:
 	ResourceRenderer:
 		ResourceTypes:
-			ore:
-				Sequences: ore, ore-1-high, ore-2-high
+			ore.unsurveyed:
+				Sequences: ore
 				Palette: 3
-				Name: Ore
-			ore.mine:
-				Sequences: ore, ore-1-high, ore-2-high
+				Name: Ore (Unsurveyed)
+			ore.common1:
+				Sequences: ore-1-high
 				Palette: 3
-				Name: Ore Mine
+				Name: Ore (Common 1)
+			ore.depot:
+				Sequences: ore
+				Palette: 3
+				Name: Ore Pickup

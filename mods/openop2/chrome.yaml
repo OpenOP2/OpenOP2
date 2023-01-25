@@ -385,20 +385,10 @@ strategic:
 flags:
 	Inherits: ^Glyphs
 	Regions:
-		england: 226, 49, 30, 15
-		germany: 226, 65, 30, 15
-		france: 226, 81, 30, 15
-		spain: 226, 97, 30, 15
-		turkey: 226, 113, 30, 15
-		greece: 226, 129, 30, 15
-		ukraine: 226, 145, 30, 15
-		russia: 226, 161, 30, 15
-		eden: 226, 177, 30, 15
-		plymouth: 226, 193, 30, 15
-		Randomplymouth: 226, 209, 30, 15
-		Randomeden: 226, 225, 30, 15
-		Random: 226, 241, 30, 15
-		spectator: 226, 241, 30, 15
+		eden: 223, 220, 32, 17
+		plymouth: 223, 203, 32, 17
+		Random: 223, 238, 32, 17
+		spectator: 223, 238, 32, 17
 
 music:
 	Inherits: ^Glyphs
