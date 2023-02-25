@@ -419,9 +419,6 @@ eden-lynx:
 			Start: 1202
 			StartOffset: 4
 			Length: 16
-		Sequence: icon
-			Start: 1202
-			Length: 1
 		Sequence: laser
 			Start: 1525
 			StartOffset: 4
@@ -446,6 +443,14 @@ eden-lynx:
 			Start: 1363
 			StartOffset: 4
 			Length: 16
+		Sequence: icon
+			UseFile: elaserl.png
+			Start: 0
+			Length: 1
+		Sequence: iconrail
+			UseFile: eraill.png
+			Start: 0
+			Length: 1
 
 plymouth-lynx:
 	ActorType: Vehicle
@@ -456,9 +461,6 @@ plymouth-lynx:
 			Start: 1227
 			StartOffset: 4
 			Length: 16
-		Sequence: icon
-			Start: 1227
-			Length: 1
 		Sequence: microwave
 			Start: 1493
 			StartOffset: 4
@@ -486,6 +488,14 @@ plymouth-lynx:
 		Sequence: supernova
 			Start: 1342
 			StartOffset: 4
+			Length: 1
+		Sequence: icon
+			Usefile: pmicrol.png
+			Start: 0
+			Length: 1
+		Sequence: iconrpg
+			Usefile: prpgl.png
+			Start: 0
 			Length: 1
 
 eden-flyer:

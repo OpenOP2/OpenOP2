@@ -60,7 +60,7 @@
 ^plymouth-cargo-truck-generated:
 	RenderSprites:
 		Image: plymouth-cargo-truck
-		Palette: 
+		PlayerPalette: playerMapped7
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: playerMapped3

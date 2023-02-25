@@ -47,13 +47,13 @@
 	ProvidesPrerequisite@structures:
 		Prerequisite: structures
 	Health:
-		HP: 150000
+		HP: 2500
 	Power:
-		Amount: 0
+		Amount: 50
 	Armor:
-		Type: Wood
+		Type: Heavy
 	Valued:
-		Cost: 2000
+		Cost: 2800
 	RevealsShroud:
 		Range: 5c0
 		RevealGeneratedShroud: False
@@ -96,13 +96,13 @@
 	ProvidesPrerequisite:
 		Prerequisite: anypower
 	Health:
-		HP: 40000
+		HP: 1500
 	Power:
-		Amount: 500
+		Amount: 300
 	Armor:
-		Type: Wood
+		Type: Heavy
 	Valued:
-		Cost: 300
+		Cost: 1100
 	RevealsShroud:
 		Range: 4c0
 	ScalePowerWithHealth:
@@ -131,13 +131,13 @@
 	ProvidesPrerequisite:
 		Prerequisite: anyrefinery
 	Health:
-		HP: 90000
+		HP: 2000
 	Power:
-		Amount: -100
+		Amount: -50
 	Armor:
-		Type: Wood
+		Type: Heavy
 	Valued:
-		Cost: 500
+		Cost: 2000
 	RevealsShroud:
 		Range: 4c0
 	Refinery:
@@ -182,13 +182,13 @@
 		Factions: plymouth
 		Prerequisite: vehicles.plymouth
 	Health:
-		HP: 60000
+		HP: 3000
 	Power:
-		Amount: -100
+		Amount: -50
 	Armor:
-		Type: Wood
+		Type: Medium
 	Valued:
-		Cost: 600
+		Cost: 2000
 	RevealsShroud:
 		Range: 4c0
 	Production:
@@ -227,9 +227,9 @@
 	ProvidesPrerequisite:
 		Prerequisite: anymine
 	Health:
-		HP: 20000
-	Power:
-		Amount: -50
+		HP: 1000
+	Armor:
+		Type: Medium
 	Armor:
 		Type: Concrete
 	Valued:
@@ -268,13 +268,15 @@
 	Voiced:
 		VoiceSet: TurretVoice
 	Health:
-		HP: 30000
+		HP: 500
+	Armor:
+		Type: Heavy
 	Power:
-		Amount: -30
+		Amount: -10
 	Armor:
 		Type: Concrete
 	Valued:
-		Cost: 500
+		Cost: 700
 	RevealsShroud:
 		Range: 4c0
 	Armament:

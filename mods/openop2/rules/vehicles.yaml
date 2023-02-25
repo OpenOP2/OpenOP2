@@ -44,13 +44,15 @@
 	Tooltip:
 		Name: Cargo Truck
 	Health:
-		HP: 20000
+		HP: 400
+	Armor:
+		Type: Light
 	RevealsShroud:
 		Range: 7c0
 	Mobile:
 		Speed: 78
 	Harvester:
-		Capacity: 20
+		Capacity: 1
 		Resources: ore.mine
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 15
@@ -65,7 +67,7 @@
 		Position: BottomLeft
 		Margin: 4, 3
 		RequiresSelection: true
-		PipCount: 7
+		PipCount: 1
 		ResourceSequences:
 			Ore: pip-yellow
 
@@ -81,11 +83,13 @@
 	Voiced:
 		VoiceSet: RoboMinerVoice
 	Valued:
-		Cost: 400
+		Cost: 700
 	Tooltip:
 		Name: Robo-Miner
 	Health:
-		HP: 5000
+		HP: 400
+	Armor:
+		Type: none
 	RevealsShroud:
 		Range: 7c0
 	Mobile:
@@ -113,7 +117,9 @@
 	Tooltip:
 		Name: Robo-Dozer
 	Health:
-		HP: 5000
+		HP: 250
+	Armor:
+		Type: none
 	RevealsShroud:
 		Range: 7c0
 	Mobile:
@@ -131,11 +137,13 @@
 	Voiced:
 		VoiceSet: LynxVoice
 	Valued:
-		Cost: 600
+		Cost: 750
 	Tooltip:
 		Name: Lynx
 	Health:
-		HP: 10000
+		HP: 300
+	Armor:
+		Type: Light
 	RevealsShroud:
 		Range: 7c0
 	Mobile:
@@ -202,12 +210,13 @@ eden-lynx-RailGun:
 	Buildable:
 		Prerequisites: ~vehicles.eden
 		IconPalette: 3
+		Icon: iconrail
 	WithSpriteTurret:
 		Sequence: railgun
 	Armament:
 		Weapon: railgun
 	Valued:
-		Cost: 900
+		Cost: 1150
 
 plymouth-lynx-microwave:
 	Inherits@generated: ^plymouth-lynx-generated
@@ -228,6 +237,7 @@ plymouth-lynx-rpg:
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3
+		Icon: iconrpg
 	WithSpriteTurret:
 		Sequence: rpg
 		Palette: playerMapped8
@@ -235,7 +245,8 @@ plymouth-lynx-rpg:
 	Armament:
 		Weapon: rpg
 	Valued:
-		Cost: 900
+		Cost: 1150
+#note for zon check costs of microwave and rpg lynx in OG game
 
 #RenderSprites:
 ##PlayerPalette: playerMapped8

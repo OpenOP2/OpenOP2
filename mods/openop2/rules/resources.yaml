@@ -19,7 +19,7 @@
 		Palette: 3
 		Sequences: ore
 		MaxDensity: 120000
-		ValuePerUnit: 20
+		ValuePerUnit: 500
 		AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 		AllowUnderActors: true
 		AllowUnderBuildings: true
