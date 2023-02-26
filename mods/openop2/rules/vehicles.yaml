@@ -88,10 +88,27 @@
 	Mobile:
 		Speed: 64
 	SurveysOre:
-		RemoveResourceType: ore.unsurveyed
-		PlaceResourceType: ore.common1
 		Amount: 120000
 		PlaysNotification: MiningLocationSurveyed
+		Replacements:
+			Replacement@common1:
+				RemoveResourceType: ore.unsurveyed.common1
+				PlaceResourceType: ore.common1
+			Replacement@common2:
+				RemoveResourceType: ore.unsurveyed.common2
+				PlaceResourceType: ore.common2
+			Replacement@common3:
+				RemoveResourceType: ore.unsurveyed.common3
+				PlaceResourceType: ore.common3
+			Replacement@rare1:
+				RemoveResourceType: ore.unsurveyed.rare1
+				PlaceResourceType: ore.rare1
+			Replacement@rare2:
+				RemoveResourceType: ore.unsurveyed.rare2
+				PlaceResourceType: ore.rare2
+			Replacement@rare3:
+				RemoveResourceType: ore.unsurveyed.rare3
+				PlaceResourceType: ore.rare3
 
 ^RoboMiner:
 	Inherits: ^Op2Vehicle
