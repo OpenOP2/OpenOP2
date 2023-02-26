@@ -2483,8 +2483,8 @@ eden-light-tower:
 			Start: 206
 			Length: 1
 		Sequence: icon
-			UseFile: buildings.png
-			Start: 
+			UseFile: towers.png
+			Start: 0
 			Length: 1
 
 plymouth-unknown:
