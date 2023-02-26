@@ -33,7 +33,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		[FieldLoader.LoadUsing("LoadReplacements")]
 		public Dictionary<string, OreSurveyReplacementInfo> Replacements;
 
-		static object LoadELoadReplacementsdges(MiniYaml yaml)
+		static object LoadReplacements(MiniYaml yaml)
 		{
 			var retList = new Dictionary<string, OreSurveyReplacementInfo>();
 			var replacements = yaml.Nodes.First(x => x.Key == "Replacements");

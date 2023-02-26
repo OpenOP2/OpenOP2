@@ -82,7 +82,6 @@ ChromeLayout:
 	openop2|chrome/ingame-player.yaml
 	common|chrome/ingame-perf.yaml
 	common|chrome/ingame-debug.yaml
-	common|chrome/ingame-debug-hpf.yaml
 	common|chrome/ingame-debuginfo.yaml
 	common|chrome/ingame-infochat.yaml
 	common|chrome/mainmenu.yaml
@@ -222,27 +221,27 @@ GameSpeeds:
 	DefaultSpeed: default
 	Speeds:
 		slowest:
-			Name: options-game-speed.slowest
+			Name: slowest
 			Timestep: 80
 			OrderLatency: 2
 		slower:
-			Name: options-game-speed.slower
+			Name: slower
 			Timestep: 50
 			OrderLatency: 3
 		default:
-			Name: options-game-speed.normal
+			Name: normal
 			Timestep: 40
 			OrderLatency: 3
 		fast:
-			Name: options-game-speed.fast
+			Name: fast
 			Timestep: 35
 			OrderLatency: 4
 		faster:
-			Name: options-game-speed.faster
+			Name: faster
 			Timestep: 30
 			OrderLatency: 4
 		fastest:
-			Name: options-game-speed.fastest
+			Name: fastest
 			Timestep: 20
 			OrderLatency: 6
 
