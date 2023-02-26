@@ -199,6 +199,7 @@ eden-lynx-laser:
 	Buildable:
 		Prerequisites: ~vehicles.eden
 		IconPalette: 3
+		Icon: iconlaser
 	WithSpriteTurret:
 		Sequence: laser
 	Armament:
@@ -224,6 +225,7 @@ plymouth-lynx-microwave:
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3
+		Icon: iconmicro
 	WithSpriteTurret:
 		Sequence: microwave
 		Palette: playerMapped8

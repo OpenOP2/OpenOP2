@@ -12,8 +12,8 @@ eden-robo-dozer:
 			StartOffset: 2
 			Length: 8
 		Sequence: icon
-			UseFile: edozer.png
-			Start: 0
+			UseFile: units.png
+			Start: 12
 			Length: 1
 
 plymouth-robo-dozer:
@@ -30,8 +30,8 @@ plymouth-robo-dozer:
 			StartOffset: 2
 			Length: 8
 		Sequence: icon
-			UseFile: pdozer.png
-			Start: 0
+			UseFile: units.png
+			Start: 13
 			Length: 1
 
 eden-cargo-truck:
@@ -47,7 +47,7 @@ eden-cargo-truck:
 			Start: 497
 			Length: 1
 		Sequence: icon
-			UseFile: etruck.png
+			UseFile: units.png
 			Start: 0
 			Length: 1
 
@@ -64,8 +64,8 @@ plymouth-cargo-truck:
 			Start: 500
 			Length: 1
 		Sequence: icon
-			UseFile: ptruck.png
-			Start: 0
+			UseFile: units.png
+			Start: 1
 			Length: 1
 
 
@@ -85,6 +85,10 @@ eden-convec:
 			Start: 1719
 			StartOffset: 2
 			Length: 8
+		Sequence: icon
+			UseFile: units.png
+			Start: 2
+			Length: 1
 
 plymouth-convec:
 	ActorType: Vehicle
@@ -102,6 +106,10 @@ plymouth-convec:
 			Start: 1727
 			StartOffset: 2
 			Length: 8
+		Sequence: icon
+			UseFile: units.png
+			Start: 3
+			Length: 1
 
 eden-evacuation-transport:
 	ActorType: Vehicle
@@ -113,8 +121,8 @@ eden-evacuation-transport:
 			StartOffset: 4
 			Length: 16
 		Sequence: icon
-			UseFile: eevac.png
-			Start: 0
+			UseFile: units.png
+			Start: 6
 			Length: 1
 
 plymouth-evacuation-transport:
@@ -126,6 +134,10 @@ plymouth-evacuation-transport:
 			Start: 263
 			StartOffset: 4
 			Length: 16
+		Sequence: icon
+			UseFile: units.png
+			Start: 7
+			Length: 8
 
 eden-earthworker:
 	ActorType: Vehicle
@@ -145,8 +157,8 @@ eden-earthworker:
 			StartOffset: 2
 			Length: 8
 		Sequence: icon
-			UseFile: eworker.png
-			Start: 0
+			UseFile: units.png
+			Start: 8
 			Length: 1
 
 plymouth-earthworker:
@@ -167,8 +179,8 @@ plymouth-earthworker:
 			StartOffset: 2
 			Length: 8
 		Sequence: icon
-			UseFile: pworker.png
-			Start: 0
+			UseFile: units.png
+			Start: 9
 			Length: 1
 
 eden-scout:
@@ -181,8 +193,8 @@ eden-scout:
 			StartOffset: 4
 			Length: 16
 		Sequence: icon
-			UseFile: escout.png
-			Start: 0
+			UseFile: units.png
+			Start: 14
 			Length: 1
 
 plymouth-scout:
@@ -195,8 +207,8 @@ plymouth-scout:
 			StartOffset: 4
 			Length: 16
 		Sequence: icon
-			UseFile: pscout.png
-			Start: 0
+			UseFile: units.png
+			Start: 15
 			Length: 1
 
 eden-robo-surveyor:
@@ -213,8 +225,8 @@ eden-robo-surveyor:
 			StartOffset: 2
 			Length: 8
 		Sequence: icon
-			UseFile: esurv.png
-			Start: 0
+			UseFile: units.png
+			Start: 10
 			Length: 1
 
 plymouth-robo-surveyor:
@@ -231,8 +243,8 @@ plymouth-robo-surveyor:
 			StartOffset: 2
 			Length: 8
 		Sequence: icon
-			UseFile: psurv.png
-			Start: 0
+			UseFile: units.png
+			Start: 11
 			Length: 1
 
 eden-robo-miner:
@@ -248,8 +260,8 @@ eden-robo-miner:
 			Start: 1336
 			Length: 1
 		Sequence: icon
-			UseFile: emine.png
-			Start: 0
+			UseFile: units.png
+			Start: 4
 			Length: 1
 
 plymouth-robo-miner:
@@ -262,8 +274,8 @@ plymouth-robo-miner:
 			StartOffset: 4
 			Length: 16
 		Sequence: icon
-			UseFile: pmine.png
-			Start: 0
+			UseFile: units.png
+			Start: 5
 			Length: 1
 
 eden-tiger:
@@ -283,11 +295,11 @@ eden-tiger:
 			Start: 1286
 			StartOffset: 4
 			Length: 16
-		Sequence: acidcloud
+		Sequence: acid
 			Start: 1605
 			StartOffset: 4
 			Length: 16
-		Sequence: starflare
+		Sequence: star
 			Start: 1624
 			StartOffset: 4
 			Length: 1
@@ -295,10 +307,34 @@ eden-tiger:
 			Start: 1573
 			StartOffset: 4
 			Length: 16
-		Sequence: railgun
+		Sequence: rail
 			Start: 1379
 			StartOffset: 4
 			Length: 16
+		Sequence: iconlaser
+			UseFile: units.png
+			Start: 42
+			Length: 1
+		Sequence: iconemp
+			UseFile: units.png
+			Start: 44
+			Length: 1
+		Sequence: iconacid
+			UseFile: units.png
+			Start: 50
+			Length: 1
+		Sequence: iconstar
+			UseFile: units.png
+			Start: 47
+			Length: 1
+		Sequence: iconthor
+			UseFile: units.png
+			Start: 52
+			Length: 1
+		Sequence: iconrail
+			UseFile: units.png
+			Start: 46
+			Length: 1
 
 plymouth-tiger:
 	ActorType: Vehicle
@@ -309,7 +345,7 @@ plymouth-tiger:
 			Start: 279
 			StartOffset: 2
 			Length: 8
-		Sequence: microwave
+		Sequence: micro
 			Start: 1509
 			StartOffset: 4
 			Length: 16
@@ -321,7 +357,7 @@ plymouth-tiger:
 			Start: 1411
 			StartOffset: 4
 			Length: 16
-		Sequence: starflare
+		Sequence: star
 			Start: 1621
 			StartOffset: 4
 			Length: 1
@@ -329,13 +365,41 @@ plymouth-tiger:
 			Start: 1477
 			StartOffset: 4
 			Length: 16
-		Sequence: stickyfoam
+		Sequence: foam
 			Start: 1443
 			StartOffset: 4
 			Length: 16
-		Sequence: supernova
+		Sequence: nova
 			Start: 1622
 			StartOffset: 4
+			Length: 1
+		Sequence: iconmicro
+			UseFile: units.png
+			Start: 43
+			Length: 1
+		Sequence: iconemp
+			UseFile: units.png
+			Start: 45
+			Length: 1
+		Sequence: iconrpg
+			UseFile: units.png
+			Start: 47
+			Length: 1
+		Sequence: iconstar
+			UseFile: units.png
+			Start: 49
+			Length: 1
+		Sequence: iconesg
+			UseFile: units.png
+			Start: 41
+			Length: 1
+		Sequence: iconfoam
+			UseFile: units.png
+			Start: 51
+			Length: 1
+		Sequence: iconnova
+			UseFile: units.png
+			Start: 58
 			Length: 1
 
 eden-panther:
@@ -355,11 +419,11 @@ eden-panther:
 			Start: 1270
 			StartOffset: 4
 			Length: 16
-		Sequence: acidcloud
+		Sequence: acid
 			Start: 1589
 			StartOffset: 4
 			Length: 16
-		Sequence: starflare
+		Sequence: star
 			Start: 1623
 			StartOffset: 4
 			Length: 1
@@ -367,10 +431,34 @@ eden-panther:
 			Start: 1557
 			StartOffset: 4
 			Length: 16
-		Sequence: railgun
+		Sequence: rail
 			Start: 1363
 			StartOffset: 4
 			Length: 16
+		Sequence: iconlaser
+			UseFile: units.png
+			Start: 30
+			Length: 1
+		Sequence: iconemp
+			UseFile: units.png
+			Start: 32
+			Length: 1
+		Sequence: iconacid
+			UseFile: units.png
+			Start: 38
+			Length: 1
+		Sequence: iconstar
+			UseFile: units.png
+			Start: 36
+			Length: 1
+		Sequence: iconthor
+			UseFile: units.png
+			Start: 40
+			Length: 1
+		Sequence: iconrail
+			UseFile: units.png
+			Start: 34
+			Length: 1
 
 plymouth-panther:
 	ActorType: Vehicle
@@ -409,6 +497,34 @@ plymouth-panther:
 			Start: 1342
 			StartOffset: 4
 			Length: 1
+		Sequence: iconmico
+			UseFile: units.png
+			Start: 31
+			Length: 1
+		Sequence: iconemp
+			UseFile: units.png
+			Start: 33
+			Length: 1
+		Sequence: iconrpg
+			UseFile: units.png
+			Start: 35
+			Length: 1
+		Sequence: iconstar
+			UseFile: units.png
+			Start: 37
+			Length: 1
+		Sequence: iconesg
+			UseFile: units.png
+			Start: 41
+			Length: 1
+		Sequence: iconfoam
+			UseFile: units.png
+			Start: 39
+			Length: 1
+		Sequence: iconnova
+			UseFile: units.png
+			Start: 57
+			Length: 1
 
 eden-lynx:
 	ActorType: Vehicle
@@ -439,18 +555,35 @@ eden-lynx:
 			Start: 1557
 			StartOffset: 4
 			Length: 16
-		Sequence: railgun
+		Sequence: rail
 			Start: 1363
 			StartOffset: 4
 			Length: 16
-		Sequence: icon
-			UseFile: elaserl.png
-			Start: 0
+		Sequence: iconlaser
+			UseFile: units.png
+			Start: 18
+			Length: 1
+		Sequence: iconemp
+			UseFile: units.png
+			Start: 20
+			Length: 1
+		Sequence: iconacid
+			UseFile: units.png
+			Start: 26
+			Length: 1
+		Sequence: iconstar
+			UseFile: units.png
+			Start: 24
+			Length: 1
+		Sequence: iconthor
+			UseFile: units.png
+			Start: 28
 			Length: 1
 		Sequence: iconrail
-			UseFile: eraill.png
-			Start: 0
+			UseFile: units.png
+			Start: 22
 			Length: 1
+
 
 plymouth-lynx:
 	ActorType: Vehicle
@@ -489,13 +622,33 @@ plymouth-lynx:
 			Start: 1342
 			StartOffset: 4
 			Length: 1
-		Sequence: icon
+		Sequence: iconmicro
 			Usefile: pmicrol.png
-			Start: 0
+			Start: 19
+			Length: 1
+		Sequence: iconemp
+			UseFile: units.png
+			Start: 21
 			Length: 1
 		Sequence: iconrpg
-			Usefile: prpgl.png
-			Start: 0
+			UseFile: units.png
+			Start: 23
+			Length: 1
+		Sequence: iconstar
+			UseFile: units.png
+			Start: 25
+			Length: 1
+		Sequence: iconesg
+			UseFile: units.png
+			Start: 29
+			Length: 1
+		Sequence: iconfoam
+			UseFile: units.png
+			Start: 27
+			Length: 1
+		Sequence: iconnova
+			UseFile: units.png
+			Start: 56
 			Length: 1
 
 eden-flyer:
@@ -531,8 +684,12 @@ eden-robo-repair:
 			Start: 1625
 			StartOffset: 4
 			Length: 16
+		Sequence: icon
+			UseFile: units.png
+			Start: 16
+			Length: 1
 
-eden-only:
+eden-geocom:
 	ActorType: Vehicle
 	CreateBaseActor: True
 	CreateExampleActor: True
@@ -541,8 +698,12 @@ eden-only:
 			Start: 1154
 			StartOffset: 4
 			Length: 16
+		Sequence: icon
+			UseFile: units.png
+			Start: 54
+			Length: 1
 
-plymouth-arachnid1:
+plymouth-spider:
 	ActorType: Vehicle
 	CreateBaseActor: True
 	CreateExampleActor: True
@@ -555,8 +716,12 @@ plymouth-arachnid1:
 			Start: 1681
 			StartOffset: 2
 			Length: 8
+		Sequence: icon
+			UseFile: units.png
+			Start: 17
+			Length: 1
 
-plymouth-arachnid2:
+plymouth-scorpion:
 	ActorType: Vehicle
 	CreateBaseActor: True
 	CreateExampleActor: True
@@ -565,6 +730,10 @@ plymouth-arachnid2:
 			Start: 1649
 			StartOffset: 4
 			Length: 16
+		Sequence: icon
+			UseFile: units.png
+			Start: 55
+			Length: 1
 
 smokingcrater:
 	ActorType: Decoration
@@ -602,10 +771,9 @@ eden-command-center:
 			Length: 1
 			OffsetX: 1
 		Sequence: icon
-			Start: 1108
+			UseFile: buildings.png
+			Start: 0
 			Length: 1
-			OffsetX: -23
-			OffsetY: -23
 
 plymouth-command-center:
 	ActorType: Building
@@ -634,10 +802,9 @@ plymouth-command-center:
 			Length: 1
 			OffsetY: 1
 		Sequence: icon
-			Start: 1108
+			UseFile: buildings.png
+			Start: 1
 			Length: 1
-			OffsetX: -23
-			OffsetY: -23
 
 eden-tokamak:
 	ActorType: Building
@@ -661,8 +828,8 @@ eden-tokamak:
 			Start: 373
 			Length: 1
 		Sequence: icon
-			UseFile: etok.png
-			Start: 0
+			UseFile: buildings.png
+			Start: 4
 			Length: 1
 
 plymouth-tokamak:
@@ -693,8 +860,8 @@ plymouth-tokamak:
 			Start: 359
 			Length: 1
 		Sequence: icon
-			UseFile: ptok.png
-			Start: 0
+			UseFile: buildings.png
+			Start: 5
 			Length: 1
 
 eden-residence:
@@ -724,6 +891,10 @@ eden-residence:
 		Sequence: die
 			Start: 201
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 10
+			Length: 1
 
 plymouth-residence:
 	ActorType: Building
@@ -752,6 +923,10 @@ plymouth-residence:
 		Sequence: die
 			Start: 214
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 11
+			Length: 1
 
 eden-factory-structure:
 	ActorType: Building
@@ -773,6 +948,10 @@ eden-factory-structure:
 			Length: 1
 		Sequence: die
 			Start: 196
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 2
 			Length: 1
 
 plymouth-factory-structure:
@@ -799,6 +978,10 @@ plymouth-factory-structure:
 		Sequence: die
 			Start: 212
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 3
+			Length: 1
 
 eden-agridome:
 	ActorType: Building
@@ -821,6 +1004,10 @@ eden-agridome:
 		Sequence: die
 			Start: 199
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 16
+			Length: 1
 
 plymouth-agridome:
 	ActorType: Building
@@ -842,6 +1029,10 @@ plymouth-agridome:
 			Length: 1
 		Sequence: die
 			Start: 210
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 17
 			Length: 1
 
 eden-factory-vehicle:
@@ -869,8 +1060,8 @@ eden-factory-vehicle:
 			Start: 200
 			Length: 1
 		Sequence: icon
-			UseFile: eveh.png
-			Start: 0
+			UseFile: buildings.png
+			Start: 14
 			Length: 1
 
 plymouth-factory-vehicle:
@@ -895,8 +1086,8 @@ plymouth-factory-vehicle:
 			Start: 213
 			Length: 1
 		Sequence: icon
-			UseFile: pveh.png
-			Start: 0
+			UseFile: buildings.png
+			Start: 15
 			Length: 1
 
 eden-dirt:
@@ -926,6 +1117,10 @@ eden-dirt:
 		Sequence: die
 			Start: 195
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 30
+			Length: 1
 
 plymouth-dirt:
 	ActorType: Building
@@ -947,6 +1142,10 @@ plymouth-dirt:
 			Length: 1
 		Sequence: die
 			Start: 218
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 31
 			Length: 1
 
 eden-lab-basic:
@@ -973,6 +1172,10 @@ eden-lab-basic:
 		Sequence: die
 			Start: 197
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 22
+			Length: 1
 
 plymouth-lab-basic:
 	ActorType: Building
@@ -994,6 +1197,10 @@ plymouth-lab-basic:
 			Length: 1
 		Sequence: die
 			Start: 216
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 23
 			Length: 1
 
 eden-robot-command-center:
@@ -1026,6 +1233,10 @@ eden-robot-command-center:
 		Sequence: die
 			Start: 202
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 34
+			Length: 1
 
 plymouth-robot-command-center:
 	ActorType: Building
@@ -1050,6 +1261,10 @@ plymouth-robot-command-center:
 			Length: 1
 		Sequence: die
 			Start: 215
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 35
 			Length: 1
 
 eden-smelter-common:
@@ -1080,8 +1295,8 @@ eden-smelter-common:
 			Start: 203
 			Length: 1
 		Sequence: icon
-			UseFile: ecommon.png
-			Start: 0
+			UseFile: buildings.png
+			Start: 6
 			Length: 1
 
 plymouth-smelter-common:
@@ -1109,8 +1324,8 @@ plymouth-smelter-common:
 			Start: 219
 			Length: 1
 		Sequence: icon
-			UseFile: pcommon.png
-			Start: 0
+			UseFile: buildings.png
+			Start: 7
 			Length: 1
 
 eden-storage-common:
@@ -1134,6 +1349,10 @@ eden-storage-common:
 		Sequence: die
 			Start: 193
 			Length: 1
+		Sequence: icon
+			UseFile: towers.png
+			Start: 2
+			Length: 1
 
 plymouth-storage-common:
 	ActorType: Building
@@ -1155,6 +1374,10 @@ plymouth-storage-common:
 			Length: 1
 		Sequence: die
 			Start: 223
+			Length: 1
+		Sequence: icon
+			UseFile: towers.png
+			Start: 3
 			Length: 1
 
 eden-storage-rare:
@@ -1178,6 +1401,10 @@ eden-storage-rare:
 		Sequence: die
 			Start: 393
 			Length: 1
+		Sequence: icon
+			UseFile: towers.png
+			Start: 4
+			Length: 1
 
 plymouth-storage-rare:
 	ActorType: Building
@@ -1199,6 +1426,10 @@ plymouth-storage-rare:
 			Length: 1
 		Sequence: die
 			Start: 397
+			Length: 1
+		Sequence: icon
+			UseFile: towers.png
+			Start: 5
 			Length: 1
 
 eden-lab-standard:
@@ -1224,6 +1455,10 @@ eden-lab-standard:
 			Length: 1
 		Sequence: die
 			Start: 192
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 24
 			Length: 1
 
 plymouth-lab-standard:
@@ -1253,6 +1488,10 @@ plymouth-lab-standard:
 		Sequence: die
 			Start: 220
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 25
+			Length: 1
 
 eden-lab-advanced:
 	ActorType: Building
@@ -1277,6 +1516,10 @@ eden-lab-advanced:
 			Length: 1
 		Sequence: die
 			Start: 209
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 26
 			Length: 1
 
 plymouth-lab-advanced:
@@ -1303,6 +1546,10 @@ plymouth-lab-advanced:
 		Sequence: die
 			Start: 227
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 27
+			Length: 1
 
 eden-residence-advanced:
 	ActorType: Building
@@ -1327,6 +1574,10 @@ eden-residence-advanced:
 			Length: 1
 		Sequence: die
 			Start: 198
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 12
 			Length: 1
 
 plymouth-residence-reinforced:
@@ -1356,6 +1607,10 @@ plymouth-residence-reinforced:
 		Sequence: die
 			Start: 225
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 13
+			Length: 1
 
 eden-medical-center:
 	ActorType: Building
@@ -1377,6 +1632,10 @@ eden-medical-center:
 			Length: 1
 		Sequence: die
 			Start: 207
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 20
 			Length: 1
 
 plymouth-medical-center:
@@ -1402,6 +1661,10 @@ plymouth-medical-center:
 			Length: 1
 		Sequence: die
 			Start: 420
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 21
 			Length: 1
 
 eden-nursery:
@@ -1431,6 +1694,10 @@ eden-nursery:
 		Sequence: die
 			Start: 204
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 18
+			Length: 1
 
 plymouth-nursery:
 	ActorType: Building
@@ -1458,6 +1725,10 @@ plymouth-nursery:
 			Length: 1
 		Sequence: die
 			Start: 364
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 19
 			Length: 1
 
 eden-recreation-facility:
@@ -1490,6 +1761,10 @@ eden-recreation-facility:
 		Sequence: die
 			Start: 208
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 40
+			Length: 1
 
 plymouth-recreation-facility:
 	ActorType: Building
@@ -1521,6 +1796,10 @@ plymouth-recreation-facility:
 		Sequence: die
 			Start: 226
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 41
+			Length: 1
 
 eden-solar-power-array:
 	ActorType: Building
@@ -1542,6 +1821,10 @@ eden-solar-power-array:
 			Length: 1
 		Sequence: die
 			Start: 374
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 46
 			Length: 1
 
 plymouth-solar-power-array:
@@ -1574,6 +1857,10 @@ plymouth-solar-power-array:
 		Sequence: die
 			Start: 360
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 47
+			Length: 1
 
 eden-university:
 	ActorType: Building
@@ -1598,6 +1885,10 @@ eden-university:
 			Length: 1
 		Sequence: die
 			Start: 205
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 28
 			Length: 1
 
 plymouth-university:
@@ -1624,6 +1915,10 @@ plymouth-university:
 		Sequence: die
 			Start: 222
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 29
+			Length: 1
 
 eden-smelter-rare:
 	ActorType: Building
@@ -1645,6 +1940,10 @@ eden-smelter-rare:
 			Length: 1
 		Sequence: die
 			Start: 372
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 8
 			Length: 1
 
 plymouth-smelter-rare:
@@ -1668,6 +1967,10 @@ plymouth-smelter-rare:
 		Sequence: die
 			Start: 229
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 9
+			Length: 1
 
 eden-gorf:
 	ActorType: Building
@@ -1686,6 +1989,10 @@ eden-gorf:
 			Length: 1
 		Sequence: die
 			Start: 385
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 36
 			Length: 1
 
 plymouth-gorf:
@@ -1712,6 +2019,10 @@ plymouth-gorf:
 		Sequence: die
 			Start: 381
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 37
+			Length: 1
 
 eden-trade-center:
 	ActorType: Building
@@ -1737,6 +2048,10 @@ eden-trade-center:
 		Sequence: die
 			Start: 389
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 38
+			Length: 1
 
 plymouth-trade-center:
 	ActorType: Building
@@ -1761,6 +2076,10 @@ plymouth-trade-center:
 			Length: 1
 		Sequence: die
 			Start: 221
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 39
 			Length: 1
 
 eden-spaceport:
@@ -1790,6 +2109,10 @@ eden-spaceport:
 		Sequence: die
 			Start: 404
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 42
+			Length: 1
 
 plymouth-spaceport:
 	ActorType: Building
@@ -1811,6 +2134,10 @@ plymouth-spaceport:
 			Length: 1
 		Sequence: make
 			Start: 440
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 43
 			Length: 1
 
 eden-mine-common:
@@ -1965,6 +2292,10 @@ plymouth-mhd-generator:
 		Sequence: die
 			Start: 416
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 51
+			Length: 1
 
 eden-meteor-defense:
 	ActorType: Building
@@ -1992,6 +2323,10 @@ eden-meteor-defense:
 			Length: 1
 		Sequence: die
 			Start: 570
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 48
 			Length: 1
 
 eden-geothermal-plant:
@@ -2034,6 +2369,10 @@ plymouth-factory-arachnid:
 		Sequence: die
 			Start: 217
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 49
+			Length: 1
 
 plymouth-forum:
 	ActorType: Building
@@ -2056,6 +2395,10 @@ plymouth-forum:
 		Sequence: die
 			Start: 228
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 45
+			Length: 1
 
 eden-factory-consumer:
 	ActorType: Building
@@ -2077,6 +2420,10 @@ eden-factory-consumer:
 			Length: 1
 		Sequence: die
 			Start: 368
+			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 44
 			Length: 1
 
 eden-observatory:
@@ -2106,6 +2453,10 @@ eden-observatory:
 		Sequence: die
 			Start: 401
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 50
+			Length: 1
 
 eden-light-tower:
 	ActorType: Building
@@ -2131,8 +2482,12 @@ eden-light-tower:
 		Sequence: die
 			Start: 206
 			Length: 1
+		Sequence: icon
+			UseFile: buildings.png
+			Start: 
+			Length: 1
 
-plymouth-unused:
+plymouth-unknown:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
@@ -2150,7 +2505,7 @@ plymouth-unused:
 			Start: 224
 			Length: 1
 
-plymouth-light-tower2:
+plymouth-light-tower:
 	ActorType: Building
 	CreateBaseActor: True
 	CreateExampleActor: True
@@ -2166,6 +2521,10 @@ plymouth-light-tower2:
 			Length: 1
 		Sequence: die
 			Start: 224
+			Length: 1
+		Sequence: icon
+			UseFile: towers.png
+			Start: 1
 			Length: 1
 
 eden-unknown:
@@ -2190,6 +2549,10 @@ plymouth-supernova-guardpost:
 			Length: 1
 		Sequence: fire
 			Start: 939
+			Length: 1
+		Sequence: icon
+			UseFile: towers.png
+			Start: 18
 			Length: 1
 
 die1:
@@ -2751,7 +3114,8 @@ plymouth-turret-rpg-guardpost:
 			Length: 16
 			StartOffset: 4
 		Sequence: icon
-			Start: 624
+			UseFile: towers.png
+			Start: 11
 			Length: 1
 
 eden-turret-thor-guardpost:
@@ -2765,7 +3129,8 @@ eden-turret-thor-guardpost:
 			Length: 16
 			StartOffset: 4
 		Sequence: icon
-			Start: 947
+			UseFile: towers.png
+			Start: 16
 			Length: 1
 
 eden-turret-laser-guardpost:
@@ -2779,8 +3144,8 @@ eden-turret-laser-guardpost:
 			Length: 16
 			StartOffset: 4
 		Sequence: icon
-			UseFile: eglaser.png
-			Start: 0
+			UseFile: towers.png
+			Start: 6
 			Length: 1
 
 eden-turret-railgun-guardpost:
@@ -2794,7 +3159,8 @@ eden-turret-railgun-guardpost:
 			Length: 16
 			StartOffset: 4
 		Sequence: icon
-			Start: 982
+			UseFile: towers.png
+			Start: 10
 			Length: 1
 
 plymouth-turret-microwave-guardpost:
@@ -2808,8 +3174,8 @@ plymouth-turret-microwave-guardpost:
 			Length: 16
 			StartOffset: 4
 		Sequence: icon
-			UseFile: pgmicro.png
-			Start: 0
+			UseFile: towers.png
+			Start: 7
 			Length: 1
 
 plymouth-turret-stickyfoam-guardpost:
@@ -2823,7 +3189,8 @@ plymouth-turret-stickyfoam-guardpost:
 			Length: 16
 			StartOffset: 4
 		Sequence: icon
-			Start: 1031
+			UseFile: towers.png
+			Start: 15
 			Length: 1
 
 eden-turret-acidcloud-guardpost:
@@ -2837,7 +3204,8 @@ eden-turret-acidcloud-guardpost:
 			Length: 16
 			StartOffset: 4
 		Sequence: icon
-			Start: 1068
+			UseFile: towers.png
+			Start: 14
 			Length: 1
 
 eden-turret-emp-guardpost:
@@ -2851,7 +3219,8 @@ eden-turret-emp-guardpost:
 			Length: 16
 			StartOffset: 4
 		Sequence: icon
-			Start: 1084
+			UseFile: towers.png
+			Start: 12
 			Length: 1
 
 plymouth-turret-esg-guardpost:
@@ -2865,7 +3234,8 @@ plymouth-turret-esg-guardpost:
 			Length: 16
 			StartOffset: 4
 		Sequence: icon
-			Start: 1254
+			UseFile: towers.png
+			Start: 17
 			Length: 1
 
 plymouth-turret-emp-guardpost:
@@ -2876,6 +3246,10 @@ plymouth-turret-emp-guardpost:
 		Sequence: idle
 			Start: 2043
 			Length: 16
+		Sequence: icon
+			UseFile: towers.png
+			Start: 13
+			Length: 1
 
 esg-ripple:
 	ActorType: Decoration
