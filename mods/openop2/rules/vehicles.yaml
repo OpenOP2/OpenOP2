@@ -213,7 +213,7 @@ eden-lynx-RailGun:
 		IconPalette: 3
 		Icon: iconrail
 	WithSpriteTurret:
-		Sequence: railgun
+		Sequence: rail
 	Armament:
 		Weapon: railgun
 	Valued:
