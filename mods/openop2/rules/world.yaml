@@ -110,17 +110,17 @@ World:
 	CreateMapPlayers:
 	StartingUnits@cc-eden:
 		Class: none
-		ClassName: options-starting-units.command-center
+		ClassName: Command Center
 		Factions: eden
 		BaseActor: eden-command-center
 	StartingUnits@cc-plymouth:
 		Class: none
-		ClassName: options-starting-units.command-center
+		ClassName: Command Center
 		Factions: plymouth
 		BaseActor: plymouth-command-center
 	StartingUnits@light-eden:
 		Class: light
-		ClassName: options-starting-units.light
+		ClassName: Light
 		Factions: eden
 		BaseActor: eden-command-center
 		SupportActors: eden-robo-dozer, eden-robo-miner, eden-robo-surveyor, eden-earthworker
@@ -128,7 +128,7 @@ World:
 		OuterSupportRadius: 4
 	StartingUnits@light-plymouth:
 		Class: light
-		ClassName: options-starting-units.light
+		ClassName: Light
 		Factions: plymouth
 		BaseActor: plymouth-command-center
 		SupportActors: plymouth-robo-dozer, plymouth-robo-miner, plymouth-robo-surveyor, plymouth-earthworker
