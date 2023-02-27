@@ -225,7 +225,7 @@ plymouth-lynx-microwave:
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3
-		Icon: iconmicro
+		Icon: iconmicrowave
 	WithSpriteTurret:
 		Sequence: microwave
 		Palette: playerMapped8

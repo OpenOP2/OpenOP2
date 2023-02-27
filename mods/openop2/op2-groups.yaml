@@ -622,8 +622,8 @@ plymouth-lynx:
 			Start: 1342
 			StartOffset: 4
 			Length: 1
-		Sequence: iconmicro
-			Usefile: pmicrol.png
+		Sequence: iconmicrowave
+			Usefile: units.png
 			Start: 19
 			Length: 1
 		Sequence: iconemp
