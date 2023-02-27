@@ -60,7 +60,7 @@
 ^plymouth-cargo-truck-generated:
 	RenderSprites:
 		Image: plymouth-cargo-truck
-		Palette:
+		PlayerPalette: playerMapped7
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-sprite-id1
 		Palette: playerMapped3
@@ -377,9 +377,9 @@
 		Sequence: idle-shadow-id3
 		Palette: shadow
 
-^eden-only-generated:
+^eden-geocom-generated:
 	RenderSprites:
-		Image: eden-only
+		Image: eden-geocom
 		PlayerPalette: playerMapped6
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-sprite-id1
@@ -393,17 +393,17 @@
 		Sequence: idle-shadow-id3
 		Palette: shadow
 
-^plymouth-arachnid1-generated:
+^plymouth-spider-generated:
 	RenderSprites:
-		Image: plymouth-arachnid1
+		Image: plymouth-spider
 		PlayerPalette: playerMapped5
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-shadow-id1
 		Palette: shadow
 
-^plymouth-arachnid2-generated:
+^plymouth-scorpion-generated:
 	RenderSprites:
-		Image: plymouth-arachnid2
+		Image: plymouth-scorpion
 		PlayerPalette: playerMapped5
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-shadow-id1
@@ -1496,17 +1496,17 @@
 		Sequence: idle-shadow-id1
 		Palette: shadow
 
-^plymouth-unused-generated:
+^plymouth-unknown-generated:
 	RenderSprites:
-		Image: plymouth-unused
+		Image: plymouth-unknown
 		PlayerPalette: playerMapped2
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-shadow-id1
 		Palette: shadow
 
-^plymouth-light-tower2-generated:
+^plymouth-light-tower-generated:
 	RenderSprites:
-		Image: plymouth-light-tower2
+		Image: plymouth-light-tower
 		PlayerPalette: playerMapped2
 	WithDirectionalIdleOverlay@0:
 		Sequence: idle-shadow-id1
@@ -1557,3 +1557,4 @@
 	RenderSprites:
 		Image: missile
 		PlayerPalette: playerMapped5
+

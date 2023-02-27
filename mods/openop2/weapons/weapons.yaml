@@ -11,9 +11,11 @@ laser:
 		HitAnimPalette: 6
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
-		Damage: 4000
+		Damage: 40
 		Versus:
-			Wood: 50
+			light: 80
+			Medium: 60
+			Heavy: 40
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Scorch
@@ -31,9 +33,11 @@ microwave:
 		Color: FFFFFFFF
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
-		Damage: 2500
+		Damage: 40
 		Versus:
-			Wood: 50
+			light: 80
+			Medium: 60
+			Heavy: 40
 
 rpg:
 	ReloadDelay: 50
@@ -51,9 +55,11 @@ rpg:
 		TrailInterval: 1
 	Warhead@1Dam: SpreadDamage
 		Spread: 80
-		Damage: 6000
+		Damage: 80
 		Versus:
-			Wood: 50
+			light: 80
+			Medium: 60
+			Heavy: 40
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Scorch

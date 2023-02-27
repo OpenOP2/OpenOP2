@@ -1,3 +1,6 @@
+# Hi Zhall and Zon,
+# You'll want to look in rules-generated.yaml for the vehicle you need, then move it into here and customize it as you need.
+
 ^Op2Vehicle:
 	Inherits: ^Vehicle
 
@@ -41,19 +44,21 @@
 	Tooltip:
 		Name: Cargo Truck
 	Health:
-		HP: 20000
+		HP: 400
+	Armor:
+		Type: Light
 	RevealsShroud:
 		Range: 7c0
 	Mobile:
 		Speed: 78
 	Harvester:
-		Capacity: 20
-		Resources: ore.depot
+		Capacity: 1
+		Resources: ore.mine
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 15
 		SearchFromHarvesterRadius: 8
 		HarvestFacings: 8
-		EmptyCondition: no-ore
+		#EmptyCondition: no-ore
 	#WithHarvestAnimation:
 	WithDockingAnimation:
 		DockSequence: unload
@@ -62,53 +67,9 @@
 		Position: BottomLeft
 		Margin: 4, 3
 		RequiresSelection: true
-		PipCount: 7
+		PipCount: 1
 		ResourceSequences:
 			Ore: pip-yellow
-
-^RoboSurveyor:
-	Inherits: ^Op2Vehicle
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 20
-		#Prerequisites: ~techlevel.infonly
-		Prerequisites: ~vehicles
-		Description: Surveys mineral deposits.
-		IconPalette: 5
-	Voiced:
-		VoiceSet: RoboSurveyorVoice
-	Valued:
-		Cost: 200
-	Tooltip:
-		Name: Robo-Surveyor
-	Health:
-		HP: 5000
-	RevealsShroud:
-		Range: 7c0
-	Mobile:
-		Speed: 64
-	SurveysOre:
-		Amount: 120000
-		PlaysNotification: MiningLocationSurveyed
-		Replacements:
-			Replacement@common1:
-				RemoveResourceType: ore.unsurveyed.common1
-				PlaceResourceType: ore.common1
-			Replacement@common2:
-				RemoveResourceType: ore.unsurveyed.common2
-				PlaceResourceType: ore.common2
-			Replacement@common3:
-				RemoveResourceType: ore.unsurveyed.common3
-				PlaceResourceType: ore.common3
-			Replacement@rare1:
-				RemoveResourceType: ore.unsurveyed.rare1
-				PlaceResourceType: ore.rare1
-			Replacement@rare2:
-				RemoveResourceType: ore.unsurveyed.rare2
-				PlaceResourceType: ore.rare2
-			Replacement@rare3:
-				RemoveResourceType: ore.unsurveyed.rare3
-				PlaceResourceType: ore.rare3
 
 ^RoboMiner:
 	Inherits: ^Op2Vehicle
@@ -122,11 +83,13 @@
 	Voiced:
 		VoiceSet: RoboMinerVoice
 	Valued:
-		Cost: 400
+		Cost: 700
 	Tooltip:
 		Name: Robo-Miner
 	Health:
-		HP: 5000
+		HP: 400
+	Armor:
+		Type: none
 	RevealsShroud:
 		Range: 7c0
 	Mobile:
@@ -154,7 +117,9 @@
 	Tooltip:
 		Name: Robo-Dozer
 	Health:
-		HP: 5000
+		HP: 250
+	Armor:
+		Type: none
 	RevealsShroud:
 		Range: 7c0
 	Mobile:
@@ -172,11 +137,13 @@
 	Voiced:
 		VoiceSet: LynxVoice
 	Valued:
-		Cost: 600
+		Cost: 750
 	Tooltip:
 		Name: Lynx
 	Health:
-		HP: 10000
+		HP: 300
+	Armor:
+		Type: Light
 	RevealsShroud:
 		Range: 7c0
 	Mobile:
@@ -210,20 +177,6 @@ plymouth-robo-dozer:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3
 
-eden-robo-surveyor:
-	Inherits@generated: ^eden-robo-surveyor-generated
-	Inherits: ^RoboSurveyor
-	Buildable:
-		Prerequisites: ~vehicles.eden
-		IconPalette: 3
-
-plymouth-robo-surveyor:
-	Inherits@generated: ^plymouth-robo-surveyor-generated
-	Inherits: ^RoboSurveyor
-	Buildable:
-		Prerequisites: ~vehicles.plymouth
-		IconPalette: 3
-
 eden-robo-miner:
 	Inherits@generated: ^eden-robo-miner-generated
 	Inherits: ^RoboMiner
@@ -241,15 +194,16 @@ plymouth-robo-miner:
 		IntoActor: plymouth-mine-common
 
 eden-lynx-laser:
-	Inherits@generated: ^eden-lynx-generated
+	Inherits@generated:	^eden-lynx-generated
 	Inherits: ^Lynx
 	Buildable:
 		Prerequisites: ~vehicles.eden
 		IconPalette: 3
+		Icon: iconlaser
 	WithSpriteTurret:
 		Sequence: laser
 	Armament:
-		Weapon: laser
+		Weapon:	laser
 
 eden-lynx-RailGun:
 	Inherits@generated: ^eden-lynx-generated
@@ -257,12 +211,13 @@ eden-lynx-RailGun:
 	Buildable:
 		Prerequisites: ~vehicles.eden
 		IconPalette: 3
+		Icon: iconrail
 	WithSpriteTurret:
-		Sequence: railgun
+		Sequence: rail
 	Armament:
 		Weapon: railgun
 	Valued:
-		Cost: 900
+		Cost: 1150
 
 plymouth-lynx-microwave:
 	Inherits@generated: ^plymouth-lynx-generated
@@ -270,6 +225,7 @@ plymouth-lynx-microwave:
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3
+		Icon: iconmicrowave
 	WithSpriteTurret:
 		Sequence: microwave
 		Palette: playerMapped8
@@ -283,6 +239,7 @@ plymouth-lynx-rpg:
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3
+		Icon: iconrpg
 	WithSpriteTurret:
 		Sequence: rpg
 		Palette: playerMapped8
@@ -290,7 +247,8 @@ plymouth-lynx-rpg:
 	Armament:
 		Weapon: rpg
 	Valued:
-		Cost: 900
+		Cost: 1150
+#note for zon check costs of microwave and rpg lynx in OG game
 
 #RenderSprites:
 ##PlayerPalette: playerMapped8

@@ -402,7 +402,7 @@
 	GivesBuildableArea:
 		AreaTypes: building, fake
 	RepairableBuilding:
-		RepairStep: 700
+		RepairStep: 10
 		PlayerExperience: 25
 		RepairingNotification: Repairing
 	EngineerRepairable:

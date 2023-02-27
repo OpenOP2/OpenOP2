@@ -102,16 +102,16 @@ eden-robo-repair:
 	Inherits@generated: ^eden-robo-repair-generated
 	Inherits: ^StubVehicle
 
-eden-only:
-	Inherits@generated: ^eden-only-generated
+eden-geocom:
+	Inherits@generated: ^eden-geocom-generated
 	Inherits: ^StubVehicle
 
-plymouth-arachnid1:
-	Inherits@generated: ^plymouth-arachnid1-generated
+plymouth-spider:
+	Inherits@generated: ^plymouth-spider-generated
 	Inherits: ^StubVehicle
 
-plymouth-arachnid2:
-	Inherits@generated: ^plymouth-arachnid2-generated
+plymouth-scorpion:
+	Inherits@generated: ^plymouth-scorpion-generated
 	Inherits: ^StubVehicle
 
 eden-residence:
@@ -318,12 +318,12 @@ eden-light-tower:
 	Inherits@generated: ^eden-light-tower-generated
 	Inherits: ^StubBuilding
 
-plymouth-unused:
-	Inherits@generated: ^plymouth-unused-generated
+plymouth-unknown:
+	Inherits@generated: ^plymouth-unknown-generated
 	Inherits: ^StubBuilding
 
-plymouth-light-tower2:
-	Inherits@generated: ^plymouth-light-tower2-generated
+plymouth-light-tower:
+	Inherits@generated: ^plymouth-light-tower-generated
 	Inherits: ^StubBuilding
 
 eden-unknown:
