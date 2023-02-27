@@ -623,7 +623,7 @@ plymouth-lynx:
 			StartOffset: 4
 			Length: 1
 		Sequence: iconmicrowave
-			Usefile: units.png
+			UseFile: units.png
 			Start: 19
 			Length: 1
 		Sequence: iconemp
