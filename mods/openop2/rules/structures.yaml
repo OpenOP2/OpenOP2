@@ -23,7 +23,7 @@
 	Tooltip:
 		Name: Command Center
 	Selectable:
-		Bounds: 96,82,0,-9
+		Bounds: 3072,2624,0,-288
 	Building:
 		Footprint: xxx _xx
 		Dimensions: 3,2
@@ -78,7 +78,7 @@
 	Tooltip:
 		Name: Tokamak
 	Selectable:
-		Bounds: 64,76,0,-6
+		Bounds: 2048,2432,0,-192
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -113,7 +113,7 @@
 	Tooltip:
 		Name: Ore Smelter (Common)
 	Selectable:
-		Bounds: 128,102,0,-3
+		Bounds: 4096,3264,0,-96
 	Building:
 		Footprint: xxxx xxxx xxx_
 		Dimensions: 4,3
@@ -156,7 +156,7 @@
 	Tooltip:
 		Name: Vehicle Factory
 	Selectable:
-		Bounds: 128,102,0,-3
+		Bounds: 4096,3264,0,-96
 	Building:
 		Footprint: xxxx xxxx xx=x
 		Dimensions: 4,3
@@ -212,7 +212,7 @@
 		Name: Mine (Common)
 		GenericName: Mine
 	Selectable:
-		Bounds: 36,52,0,-6
+		Bounds: 1152,1664,0,-192
 	Building:
 		Footprint: x
 		Dimensions: 1,1
@@ -241,8 +241,8 @@
 		Palette: 8
 		Offset: 0,-512,0
 	PlacesResourcesWhenCreated:
-		ResourceType: ore.mine
-		Amount: 50000
+		ResourceType: ore.depot
+		Amount: 1200000
 
 ^GuardPost:
 	Inherits: ^Defense
@@ -251,7 +251,7 @@
 		Name: Guard Post
 		GenericName: Guard Post
 	Selectable:
-		Bounds: 36,36,0,0
+		Bounds: 1152,1152,0,0
 	Building:
 		Footprint: x
 		Dimensions: 1,1
@@ -301,7 +301,7 @@ plymouth-command-center:
 	Inherits@generated: ^plymouth-command-center-generated
 	Inherits: ^CommandCenter
 	Selectable:
-		Bounds: 96,76,0,-6
+		Bounds: 3072,2432,0,-192
 	Building:
 		Footprint: xxx xx_
 	-Buildable:
@@ -316,7 +316,7 @@ plymouth-tokamak:
 	Inherits@generated: ^plymouth-tokamak-generated
 	Inherits: ^Power
 	Selectable:
-		Bounds: 64,66,0,-1
+		Bounds: 2048,2112,0,-32
 	Buildable:
 		Prerequisites: ~structures.plymouth
 
@@ -361,12 +361,14 @@ plymouth-mine-common:
 
 eden-turret-laser:
 	Inherits@generated: ^eden-turret-laser-guardpost-generated
+	Inherits@AUTOTARGET: ^AutoTargetGround
 	Inherits: ^GuardPost
 	Buildable:
 		Prerequisites: ~structures.eden
 
 plymouth-turret-microwave:
 	Inherits@generated: ^plymouth-turret-microwave-guardpost-generated
+	Inherits@AUTOTARGET: ^AutoTargetGround
 	Inherits: ^GuardPost
 	Buildable:
 		Prerequisites: ~structures.plymouth

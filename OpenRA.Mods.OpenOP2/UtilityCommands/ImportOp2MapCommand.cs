@@ -13,8 +13,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
 using OpenRA.FileSystem;
 
 namespace OpenRA.Mods.OpenOP2.UtilityCommands
@@ -68,16 +66,16 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 		[Desc("FILENAME", "Convert an Outpost 2 map to the OpenRA format.")]
 		void IUtilityCommand.Run(Utility utility, string[] args) { Run(utility, args); }
 
-		private ModData modData;
-		private Map map;
-		private MapPlayers mapPlayers;
+		ModData modData;
+		Map map;
+		MapPlayers mapPlayers;
 
 		public bool ValidateArguments(IReadOnlyCollection<string> args)
 		{
 			return args.Count >= 2;
 		}
 
-		private void Run(Utility utility, string[] args)
+		void Run(Utility utility, string[] args)
 		{
 			// HACK: The engine code assumes that Game.modData is set.
 			Game.ModData = modData = utility.ModData;
@@ -109,7 +107,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				var width = 1 << lgTileWidth; // Calculate map width
 				var height = newHeight;
 
-				map = new Map(modData, modData.DefaultTileSets["default"], width + 2, (int)height + 2)
+				map = new Map(modData, modData.DefaultTerrainInfo["default"], width + 2, (int)height + 2)
 				{
 					Title = Path.GetFileNameWithoutExtension(filename),
 					Author = "OpenOP2",
@@ -186,8 +184,8 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					throw new IOException("Format error: Tag did not match header tag.");
 				}
 
-				var checkTag2 = stream.ReadInt32(); // the same all the time?
-				var numActors = stream.ReadInt32(); // I think?
+				var checkTag2 = stream.ReadInt32(); // 4113 - the same all the time?
+				var numActors = stream.ReadInt32(); // 218
 
 				// TODO: The rest of the tiles
 				// Actually place the tiles
@@ -200,13 +198,10 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 						var tileOffset = (((tileXUpper * height) + y) << 5) + tileXLower;
 						var tile = tiles[tileOffset];
 
-						var tile2XUpper = tile >> 5;
-						var tile2XLower = tile & 0x1F;
-
 						// Get the tile mapping index
 						var cellType = (tile & 0x1F);
 						var tileMappingIndex = (tile & 0xFFE0) >> 5;
-						var actorMappingIndex = (tile & 0x7FF0000) >> 11;
+						var actorMappingIndex = (tile & 0x7FF00000) >> 11;
 						var lava = (tile & 0x00000001) >> 27;
 						var lavaPossible = (tile & 0x00000001) >> 28;
 						var expand = (tile & 0x00000001) >> 29;
@@ -223,11 +218,41 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 						map.Tiles[new CPos(x + 1, y + 1)] = new TerrainTile((ushort)(startIndex + thisMapping.TileIndex), 0);
 					}
 				}
+
+				var numSomething = stream.ReadInt32(); // always 217
+				var aftertiles1 = stream.ReadInt32(); // always 1
+				var aftertiles2 = stream.ReadInt32(); // always 1
+				var aftertiles3 = stream.ReadInt32(); // always 0
+				var aftertiles4 = stream.ReadInt32(); // always 4
+				var checkString = stream.ReadASCII(4); // always BLUE
+				var aftertiles5 = stream.ReadInt32(); // always 4
+				var aftertiles6 = stream.ReadInt32(); // always 4
+
+				// always digits 1 - 16
+				for (var i = 0; i < 16; i++)
+				{
+					var digit = stream.ReadInt32();
+				}
+
+				for (var y = 0; y < numSomething - 1; y++)
+				{
+					var actorNameLength = stream.ReadInt32();
+					var actorName = stream.ReadASCII(actorNameLength);
+					var sizeX = stream.ReadInt32();
+					var sizeY = stream.ReadInt32();
+
+					for (var x = 0; x < sizeX * sizeY; x++)
+					{
+						var tileDigit = stream.ReadInt32();
+					}
+				}
+
+				var checkString2 = stream.ReadASCII(11);
+				Console.WriteLine($"{checkString2}");
 			}
 
 			mapPlayers = new MapPlayers(map.Rules, 0);
 			map.PlayerDefinitions = mapPlayers.ToMiniYaml();
-			map.FixOpenAreas();
 
 			var dest = Path.GetFileNameWithoutExtension(args[1]) + ".oramap";
 			var mapLocations = Game.ModData.Manifest.MapFolders;

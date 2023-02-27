@@ -9,7 +9,6 @@
  */
 #endregion
 
-using System;
 using System.Collections.Generic;
 using System.IO;
 using OpenRA.Graphics;
@@ -20,19 +19,19 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 {
 	public class Op2TileSetLoader : ISpriteLoader
 	{
-		private static bool IsBmp(Stream s)
+		static bool IsBmp(Stream s)
 		{
 			var header = s.ReadASCII(4);
 			return header == "BM88" || header == "PBMP";
 		}
 
-		private static BitmapSpriteFrame[] ParseFrames(Stream s)
+		static BitmapSpriteFrame[] ParseFrames(Stream s)
 		{
 			var start = s.Position;
 			var frames = new List<BitmapSpriteFrame>();
-			const int tileWidth = 32;
-			var dataSize = new Size(tileWidth * 8, tileWidth * 8);
-			var size = new Size(tileWidth, tileWidth);
+			const int TileWidth = 32;
+			var dataSize = new Size(TileWidth * 8, TileWidth * 8);
+			var size = new Size(TileWidth, TileWidth);
 			var frameSize = new Size(0, 0);
 			s.Seek(12, SeekOrigin.Begin);
 			var something = s.ReadDouble();
@@ -45,13 +44,13 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			var blockSize = s.ReadUInt32();
 			for (var i = 0; i < numTiles; i++)
 			{
-				var bytes = s.ReadBytes(tileWidth * tileWidth);
+				var bytes = s.ReadBytes(TileWidth * TileWidth);
 				var tile = new BitmapSpriteFrame
 				{
 					Size = size,
 					FrameSize = size,
 					Data = bytes,
-					Type = SpriteFrameType.Indexed,
+					Type = SpriteFrameType.Indexed8,
 				};
 
 				frames.Add(tile);
@@ -62,7 +61,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			return frames.ToArray();
 		}
 
-		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
+		public bool TryParseSprite(Stream s, string filename, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
 			metadata = null;
 			if (!IsBmp(s))

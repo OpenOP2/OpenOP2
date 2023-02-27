@@ -15,8 +15,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
-using OpenRA.FileSystem;
 
 namespace OpenRA.Mods.OpenOP2.UtilityCommands
 {
@@ -28,22 +26,20 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 		[Desc("FILENAME", "Copies the tile terrain types from the grouped sets into the raw tile definitions used by imported maps.")]
 		void IUtilityCommand.Run(Utility utility, string[] args) { Run(utility, args); }
 
-		private ModData modData;
-
 		public bool ValidateArguments(IReadOnlyCollection<string> args)
 		{
 			return args.Count >= 2;
 		}
 
-		private void Run(Utility utility, string[] args)
+		void Run(Utility utility, string[] args)
 		{
-			// HACK: The engine code assumes that Game.modData is set.
-			Game.ModData = modData = utility.ModData;
+			const string TilesetsPath = "..\\..\\mods\\openop2\\tilesets";
 
-			const string tilesetsPath = "..\\..\\mods\\openop2\\tilesets";
+			// HACK: The engine code assumes that Game.modData is set.
+			Game.ModData = utility.ModData;
 			var filename = args[1];
 
-			var fullFilepath = Path.Combine(tilesetsPath, filename);
+			var fullFilepath = Path.Combine(TilesetsPath, filename);
 
 			var sb = new StringBuilder();
 			var dict = new Dictionary<string, Dictionary<int, string>>();
@@ -51,28 +47,27 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			{
 				var lines = stream.ReadAllLines().ToArray();
 
-				const string framesTemplate = "\t\tFrames: ";
+				const string FramesTemplate = "\t\tFrames: ";
 				Func<string, int[]> extractFrames = (ln) =>
 				{
-					var restOfLine = ln.Replace(framesTemplate, string.Empty);
+					var restOfLine = ln.Replace(FramesTemplate, string.Empty);
 					var frameStrArray = restOfLine.Split(new char[] { ',' });
-					var frames = frameStrArray.Select(x => int.Parse(x.Trim())).ToArray();
-					return frames;
+					return frameStrArray.Select(x => int.Parse(x.Trim())).ToArray();
 				};
 
-				const string idTemplate = "\t\tId: ";
-				const string imagesTemplate = "\t\tImages: ";
-				const string tilesTemplate = "\t\tTiles:";
-				const string tileTerrainRegex = @"^\s\s\s(0?\d|\d\d):\s";
+				const string IdTemplate = "\t\tId: ";
+				const string ImagesTemplate = "\t\tImages: ";
+				const string TilesTemplate = "\t\tTiles:";
+				const string TileTerrainRegex = @"^\s\s\s(0?\d|\d\d):\s";
 				var currentImage = string.Empty;
 				var lineIndex = 0;
-				int[] frames = new int[0];
+				int[] frames = Array.Empty<int>();
 				foreach (var line in lines)
 				{
 					var newLine = line;
-					if (line.StartsWith(idTemplate))
+					if (line.StartsWith(IdTemplate))
 					{
-						var restOfLine = line.Replace(idTemplate, string.Empty);
+						var restOfLine = line.Replace(IdTemplate, string.Empty);
 						if (int.TryParse(restOfLine, out var id))
 						{
 							// Break out when we reach the generated tiles
@@ -82,11 +77,11 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 							}
 						}
 					}
-					else if (line.StartsWith(imagesTemplate))
+					else if (line.StartsWith(ImagesTemplate))
 					{
-						currentImage = line.Replace(imagesTemplate, string.Empty).Trim();
+						currentImage = line.Replace(ImagesTemplate, string.Empty).Trim();
 					}
-					else if (line.StartsWith(framesTemplate))
+					else if (line.StartsWith(FramesTemplate))
 					{
 						frames = extractFrames(line);
 
@@ -95,7 +90,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 							dict.Add(currentImage, new Dictionary<int, string>());
 						}
 					}
-					else if (line.StartsWith(tilesTemplate))
+					else if (line.StartsWith(TilesTemplate))
 					{
 						// Read ahead the tile definitions
 						var frameCount = frames.Length;
@@ -105,7 +100,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 							.ToArray();
 
 						var tileNames = tileLines
-							.Select(x => Regex.Replace(x, tileTerrainRegex, string.Empty).Trim())
+							.Select(x => Regex.Replace(x, TileTerrainRegex, string.Empty).Trim())
 							.ToArray();
 
 						var currentDictionary = dict[currentImage];
@@ -136,12 +131,12 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				foreach (var line in restOfLines)
 				{
 					var newLine = line;
-					if (line.StartsWith(imagesTemplate))
+					if (line.StartsWith(ImagesTemplate))
 					{
-						currentImage = line.Replace(imagesTemplate, string.Empty).Trim();
+						currentImage = line.Replace(ImagesTemplate, string.Empty).Trim();
 						tileDefs.Clear();
 					}
-					else if (line.StartsWith(framesTemplate))
+					else if (line.StartsWith(FramesTemplate))
 					{
 						frames = extractFrames(line);
 
@@ -162,9 +157,9 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 							}
 						}
 					}
-					else if (Regex.IsMatch(line, tileTerrainRegex))
+					else if (Regex.IsMatch(line, TileTerrainRegex))
 					{
-						var extractedPrefix = Regex.Match(line, tileTerrainRegex).Value;
+						var extractedPrefix = Regex.Match(line, TileTerrainRegex).Value;
 						var restOfLine = line.Replace(extractedPrefix, string.Empty);
 						var digitNotOk = int.TryParse(restOfLine, out var tileIndex);
 						if (digitNotOk)
@@ -188,11 +183,13 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			}
 
 			var filenameOnly = Path.GetFileNameWithoutExtension(filename);
-			var destFile = Path.Combine(tilesetsPath, $"{filenameOnly}-propagated.yaml");
+			var destFile = Path.Combine(TilesetsPath, $"{filenameOnly}-propagated.yaml");
 			try
 			{
-				using var sw = new StreamWriter(destFile);
-				sw.Write(sb.ToString());
+				using (var sw = new StreamWriter(destFile))
+				{
+					sw.Write(sb.ToString());
+				}
 			}
 			catch (Exception ex)
 			{

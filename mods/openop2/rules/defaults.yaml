@@ -140,7 +140,7 @@
 	SelectionDecorations:
 	WithSpriteControlGroupDecoration:
 	Selectable:
-		Bounds: 32, 32
+		Bounds: 1024, 1024
 	Targetable:
 		#RequiresCondition: !parachute
 		TargetTypes: Ground, Vehicle
@@ -364,7 +364,7 @@
 		Footprint: x
 		TerrainTypes: Clear,ClearRock,ClearRock2,ClearSand
 		RequiresBaseProvider: True
-		#BuildSounds: placbldg.aud, build5.aud
+		BuildSounds: bld_make.WAV
 		#UndeploySounds: cashturn.aud
 	ActorPreviewPlaceBuildingPreview:
 	#	OverridePalette: placebuilding
@@ -438,7 +438,7 @@
 	Inherits: ^Building
 	Inherits@selection: ^SelectableCombatBuilding
 	Selectable:
-		Bounds: 32,32
+		Bounds: 1024,1024
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, Defense
 	MustBeDestroyed:
@@ -724,7 +724,6 @@
 		Types: Husk
 		ForceHealthPercentage: 25
 	WithColoredOverlay@IDISABLE:
-		Palette: disabled
 	Targetable:
 		TargetTypes: Ground, Husk, NoAutoTarget
 		RequiresForceFire: true
@@ -830,7 +829,6 @@
 		GenericName: Crate
 		ShowOwnerRow: false
 	Crate:
-		Lifetime: 180
 		TerrainTypes: Clear,ClearSand,ClearRock,ClearRock2
 	RenderSprites:
 		Palette: effect
@@ -851,7 +849,6 @@
 	#	ShadowImage: parach-shadow
 	#	ShadowSequence: idle
 	#	RequiresCondition: parachute
-	ConditionManager:
 	MapEditorData:
 		Categories: System
 
@@ -875,7 +872,6 @@
 		CloakSound:
 		UncloakSound:
 		Palette:
-		CloakTypes: Mine
 		InitialDelay: 0
 	Tooltip:
 		Name: Mine
@@ -890,7 +886,6 @@
 ^DisableOnLowPower:
 	WithColoredOverlay@IDISABLE:
 		RequiresCondition: disabled
-		Palette: disabled
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -928,7 +923,6 @@
 ^DisabledByPowerOutage:
 	WithColoredOverlay@IDISABLE:
 		RequiresCondition: disabled
-		Palette: disabled
 	GrantCondition@IDISABLE:
 		RequiresCondition: power-outage
 		Condition: disabled

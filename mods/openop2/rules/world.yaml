@@ -6,6 +6,7 @@
 	ActorMap:
 	ScreenMap:
 	Selection:
+	ControlGroups:
 	MusicPlaylist:
 	#	VictoryMusic: score
 	#	DefeatMusic: map
@@ -40,6 +41,8 @@ World:
 	ChatCommands:
 	DevCommands:
 	DebugVisualizationCommands:
+	PathFinderOverlay:
+	HierarchicalPathFinderOverlay:
 	PlayerCommands:
 	HelpCommand:
 	ScreenShaker:
@@ -58,7 +61,6 @@ World:
 	#	WaterChance: 20
 	#	InitialSpawnDelay: 1500
 	#	CheckboxDisplayOrder: 1
-	DomainIndex:
 	#SmudgeLayer@SCORCH:
 	#	Type: Scorch
 	#	Sequence: scorches
@@ -72,6 +74,29 @@ World:
 	#	SmokeImage: smoke_m
 	#	SmokeSequences: idle
 	ResourceLayer:
+		#RecalculateResourceDensity: true
+		ResourceTypes:
+			ore.unsurveyed:
+				ResourceIndex: 1
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.common1:
+				ResourceIndex: 2
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.depot:
+				ResourceIndex: 3
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 120000
 	ResourceClaimLayer:
 	WarheadDebugOverlay:
 	SpawnMapActors:
@@ -82,18 +107,18 @@ World:
 		ShortGameCheckboxDisplayOrder: 2
 		TechLevelDropdownDisplayOrder: 2
 		GameSpeedDropdownDisplayOrder: 3
-	CreateMPPlayers:
-	MPStartUnits@cc-eden:
+	CreateMapPlayers:
+	StartingUnits@cc-eden:
 		Class: none
 		ClassName: Command Center
 		Factions: eden
 		BaseActor: eden-command-center
-	MPStartUnits@cc-plymouth:
+	StartingUnits@cc-plymouth:
 		Class: none
 		ClassName: Command Center
 		Factions: plymouth
 		BaseActor: plymouth-command-center
-	MPStartUnits@light-eden:
+	StartingUnits@light-eden:
 		Class: light
 		ClassName: Light
 		Factions: eden
@@ -101,7 +126,7 @@ World:
 		SupportActors: eden-robo-dozer, eden-robo-miner, eden-robo-surveyor, eden-earthworker
 		InnerSupportRadius: 2
 		OuterSupportRadius: 4
-	MPStartUnits@light-plymouth:
+	StartingUnits@light-plymouth:
 		Class: light
 		ClassName: Light
 		Factions: plymouth
@@ -109,10 +134,10 @@ World:
 		SupportActors: plymouth-robo-dozer, plymouth-robo-miner, plymouth-robo-surveyor, plymouth-earthworker
 		InnerSupportRadius: 2
 		OuterSupportRadius: 4
-	SpawnMPUnits:
+	SpawnStartingUnits:
 		StartingUnitsClass: light
 		DropdownDisplayOrder: 0
-	MPStartLocations:
+	MapStartingLocations:
 		SeparateTeamSpawnsCheckboxDisplayOrder: 6
 	PathFinder:
 	ValidateOrder:
@@ -124,17 +149,22 @@ World:
 		PanelName: SKIRMISH_STATS
 	LoadWidgetAtGameStart:
 	ScriptTriggers:
-	#TimeLimitManager:
-	#	TimeLimitWarnings:
-	#		40: FourtyMinutesRemaining
-	#		30: ThirtyMinutesRemaining
-	#		20: TwentyMinutesRemaining
-	#		10: TenMinutesRemaining
-	#		5: WarningFiveMinutesRemaining
-	#		4: WarningFourMinutesRemaining
-	#		3: WarningThreeMinutesRemaining
-	#		2: WarningTwoMinutesRemaining
-	#		1: WarningOneMinuteRemaining
+	TimeLimitManager:
+		TimeLimitDisplayOrder: 2
+		TimeLimitWarnings:
+			40: FourtyMinutesRemaining
+			30: ThirtyMinutesRemaining
+			20: TwentyMinutesRemaining
+			10: TenMinutesRemaining
+			5: WarningFiveMinutesRemaining
+			4: WarningFourMinutesRemaining
+			3: WarningThreeMinutesRemaining
+			2: WarningTwoMinutesRemaining
+			1: WarningOneMinuteRemaining
+	ColorPickerManager:
+		PreviewActor: eden-robo-miner.colorpicker
+		PresetHues: 0, 0.125, 0.22, 0.375, 0.5, 0.56, 0.8, 0.88, 0, 0.15, 0.235, 0.4, 0.47, 0.55, 0.75, 0.85
+		PresetSaturations: 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.4, 0.5, 0.4, 0.5, 0.4, 0.5, 0.4, 0.5
 	BlightOverlay:
 		#RequiresCondition: blight
 		StartVoice: TheBlightIsApproaching
@@ -162,7 +192,32 @@ EditorWorld:
 	Inherits: ^BaseWorld
 	EditorActorLayer:
 	EditorCursorLayer:
+	BuildableTerrainOverlay:
+		AllowedTerrainTypes: Clear, Road
 	EditorResourceLayer:
+		#RecalculateResourceDensity: true
+		ResourceTypes:
+			ore.unsurveyed:
+				ResourceIndex: 1
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.common1:
+				ResourceIndex: 2
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.depot:
+				ResourceIndex: 3
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 120000
 	EditorSelectionLayer:
 	LoadWidgetAtGameStart:
 	EditorActionManager:

@@ -10,9 +10,9 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 {
 	public class Prt
 	{
-		private const string PrtFilename = "op2_art.prt";
+		const string PrtFilename = "op2_art.prt";
 
-		private static Prt instance;
+		static Prt instance;
 		public static Prt Instance
 		{
 			get
@@ -34,6 +34,11 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 		public Prt()
 		{
+			if (!Game.ModData.DefaultFileSystem.Exists(PrtFilename))
+			{
+				return;
+			}
+
 			using (var stream = Game.ModData.DefaultFileSystem.Open(PrtFilename))
 			{
 				FramePalettes = LoadPalettes(stream);
@@ -43,7 +48,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			Sequences = BuildSequences(PrtFile);
 		}
 
-		private Dictionary<string, List<SequenceDTO>> BuildSequences(PrtFile prtFile)
+		Dictionary<string, List<SequenceDTO>> BuildSequences(PrtFile prtFile)
 		{
 			var results = new Dictionary<string, List<SequenceDTO>>();
 
@@ -77,18 +82,23 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					{
 						Func<int, string> getTypeString = (inFrameType) =>
 						{
-							return inFrameType switch
+							switch (inFrameType)
 							{
-								1 => "sprite",
-								4 => "shadow",
-								5 => "shadow",
-								_ => "unknown"
-							};
+								case 1:
+									return "sprite";
+								case 4:
+									return "shadow";
+								case 5:
+									return "shadow";
+								default:
+									return "unknown";
+							}
 						};
 
 						//////////////////////
-						var seqName = $"{set.Sequence}-{getTypeString(inGroup.FrameType)}" + (ind == 0 ? string.Empty : $"-id{ind}");
-						if (inGroup.FrameType == 1 && ind == 0)
+						var frameTypeString = getTypeString(inGroup.FrameType);
+						var seqName = $"{set.Sequence}-{frameTypeString}" + (ind == 0 ? string.Empty : $"-id{ind}");
+						if ((inGroup.FrameType == 0 || inGroup.FrameType == 1) && ind == 0)
 						{
 							seqName = set.Sequence;
 						}
@@ -176,7 +186,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			return results;
 		}
 
-		private List<uint[]> LoadPalettes(Stream s)
+		List<uint[]> LoadPalettes(Stream s)
 		{
 			var cpal = s.ReadASCII(4);
 			if (cpal != "CPAL")

@@ -54,7 +54,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		public readonly int FuzzMax = 12;
 
 		[Desc("Frame order override.")]
-		public readonly int[] Frames = { };
+		public readonly int[] Frames = Array.Empty<int>();
 
 		[Desc("Try and damage any actors caught in the blight every this many ticks.")]
 		public readonly int DamageEvery = 2;
@@ -116,19 +116,17 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		readonly Map map;
 		TerrainSpriteLayer blightLayer;
 		WorldRenderer worldRenderer;
-		private Sprite[] blightSprites;
-		private HashSet<CPos> blightedCells = new HashSet<CPos>();
-		private Dictionary<CPos, FrontierCell> frontier = new Dictionary<CPos, FrontierCell>();
-		private Dictionary<CPos, int> terrainCostMap = new Dictionary<CPos, int>();
-		private Locomotor locomotor;
-		private List<Actor> blightedActors = new List<Actor>();
-		private List<Actor> damageTickActors = new List<Actor>();
-		private List<RepelsBlight> repelsBlights = new List<RepelsBlight>();
-		private Dictionary<CPos, int> spreadBlacklist = new Dictionary<CPos, int>();
-		private ActionQueue damageActors = new ActionQueue();
-		private List<TraitPair<SpawnsBlight>> blightSpawnActors = new List<TraitPair<SpawnsBlight>>();
-		private int startDelayCount;
-		private bool started;
+		Sprite[] blightSprites;
+		readonly HashSet<CPos> blightedCells = new HashSet<CPos>();
+		readonly Dictionary<CPos, FrontierCell> frontier = new Dictionary<CPos, FrontierCell>();
+		readonly Dictionary<CPos, int> terrainCostMap = new Dictionary<CPos, int>();
+		Locomotor locomotor;
+		readonly List<Actor> blightedActors = new List<Actor>();
+		List<RepelsBlight> repelsBlights = new List<RepelsBlight>();
+		readonly Dictionary<CPos, int> spreadBlacklist = new Dictionary<CPos, int>();
+		List<TraitPair<SpawnsBlight>> blightSpawnActors = new List<TraitPair<SpawnsBlight>>();
+		int startDelayCount;
+		bool started;
 
 		public BlightOverlay(World world, BlightOverlayInfo info)
 			: base(info)
@@ -155,7 +153,8 @@ namespace OpenRA.Mods.OpenOP2.Traits
 				.ToArray();
 
 			var shroudSheet = blightSprites[0].Sheet;
-			blightLayer = new TerrainSpriteLayer(world, wr, shroudSheet, BlendMode.Alpha, wr.Palette(info.Palette), false);
+			var emptySprite = new Sprite(shroudSheet, Rectangle.Empty, TextureChannel.Alpha);
+			blightLayer = new TerrainSpriteLayer(world, wr, emptySprite, BlendMode.Alpha, false);
 			foreach (var cell in map.AllCells)
 				UpdateCell(cell);
 
@@ -167,7 +166,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		{
 		}
 
-		private void UpdateCell(CPos pos)
+		void UpdateCell(CPos pos)
 		{
 			var locomotorWeighting = locomotor.MovementSpeedForCell(pos);
 			terrainCostMap.Add(pos, locomotorWeighting);
@@ -284,7 +283,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			}
 		}
 
-		private void RepelBlight()
+		void RepelBlight()
 		{
 			repelsBlights = world.ActorsWithTrait<RepelsBlight>().Select(x => x.Trait).ToList();
 			foreach (var repelsBlight in repelsBlights)
@@ -300,12 +299,12 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			}
 		}
 
-		private bool IsTileRepulsed(CPos pos)
+		bool IsTileRepulsed(CPos pos)
 		{
 			return repelsBlights.Any(x => x.IsTileRepulsed(pos));
 		}
 
-		private void BlightTile(CPos pos)
+		void BlightTile(CPos pos)
 		{
 			if (blightedCells.Contains(pos))
 			{
@@ -366,7 +365,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			}
 		}
 
-		private void UnblightTile(CPos pos)
+		void UnblightTile(CPos pos)
 		{
 			blightedCells.Remove(pos);
 
@@ -429,7 +428,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			// }
 		}
 
-		private void BlightAnyActorsAtPosition(CPos pos)
+		void BlightAnyActorsAtPosition(CPos pos)
 		{
 			if (world.ActorMap.AnyActorsAt(pos))
 			{
@@ -441,14 +440,14 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			}
 		}
 
-		private void AddBlightSpriteToLayer(CPos pos, int tileIndex)
+		void AddBlightSpriteToLayer(CPos pos, int tileIndex)
 		{
-			var sprite = blightSprites[tileIndex];
 			var paletteReference = worldRenderer.Palette(info.Palette);
-			blightLayer.Update(pos, sprite, false);
+			var sequenceProvider = map.Rules.Sequences;
+			blightLayer.Update(pos, sequenceProvider.GetSequence(info.ImageName, info.Sequence), paletteReference, tileIndex);
 		}
 
-		private bool GetSpriteForTile(CPos pos, out int result)
+		bool GetSpriteForTile(CPos pos, out int result)
 		{
 			var isBlighted = blightedCells.Contains(pos);
 			var neighbors = new HashSet<CPos>();
@@ -614,12 +613,12 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			return false;
 		}
 
-		private IEnumerable<Actor> SearchForActors(CPos pos)
+		IEnumerable<Actor> SearchForActors(CPos pos)
 		{
 			var anyActors = world.ActorMap.AnyActorsAt(pos);
 			if (!anyActors)
 			{
-				return new Actor[0];
+				return Array.Empty<Actor>();
 			}
 
 			var actors = new List<Actor>();
@@ -641,10 +640,10 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			public bool IsCompleted => DelayCount == 0;
 		}
 
-		private List<BlightVictimActor> blightVictims = new List<BlightVictimActor>();
-		private readonly Queue<Actor> randomlySelectedVictims = new Queue<Actor>();
+		List<BlightVictimActor> blightVictims = new List<BlightVictimActor>();
+		readonly Queue<Actor> randomlySelectedVictims = new Queue<Actor>();
 
-		private void TickDamageOnExistingActors()
+		void TickDamageOnExistingActors()
 		{
 			if (blightedActors.Count == 0)
 			{
@@ -715,7 +714,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			}
 		}
 
-		private void SearchForNewActorsInBlight()
+		void SearchForNewActorsInBlight()
 		{
 			var tiles = blightedCells.OrderBy(x => world.SharedRandom.Next()).Take(info.RandomSearchMax);
 			foreach (var tile in tiles)

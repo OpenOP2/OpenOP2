@@ -43,6 +43,9 @@ eden-cargo-truck:
 			Start: 8
 			StartOffset: 4
 			Length: 16
+		Sequence: unload
+			Start: 497
+			Length: 1
 		Sequence: icon
 			UseFile: etruck.png
 			Start: 0
@@ -57,10 +60,14 @@ plymouth-cargo-truck:
 			Start: 24
 			StartOffset: 4
 			Length: 16
+		Sequence: unload
+			Start: 500
+			Length: 1
 		Sequence: icon
 			UseFile: ptruck.png
 			Start: 0
 			Length: 1
+
 
 eden-convec:
 	ActorType: Vehicle

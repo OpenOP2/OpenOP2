@@ -23,7 +23,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 {
 	public class Op2SpriteLoader : ISpriteLoader
 	{
-		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
+		public bool TryParseSprite(Stream s, string filename, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
 			var start = s.Position;
 
@@ -43,7 +43,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			var frameList = new List<ISpriteFrame>();
 
 			// Populate art data
-			const byte shadowTileIndex = 1;
+			const byte ShadowTileIndex = 1;
 			var prt = Prt.Instance;
 			var prtFile = prt.PrtFile;
 			var palettes = prt.Palettes;
@@ -69,7 +69,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					var bits = new BitArray(tempData);
 					var processedData = new byte[newSize * 8];
 					var paddedWidth = img.Width;
-					const int bitsInAByte = 8;
+					const int BitsInAByte = 8;
 					var numRows = (int)img.Height * 2; // TODO: This is a hack. Not sure why we need to double this
 					if (hasExtraRow)
 					{
@@ -100,11 +100,11 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						for (var x = 0; x < img.Width; x++)
 						{
 							var i = (int)((y * paddedWidth) + x);
-							var reversedBitIndex = 7 - (i % bitsInAByte);
-							var byteFloor = i - (i % bitsInAByte);
+							var reversedBitIndex = 7 - (i % BitsInAByte);
+							var byteFloor = i - (i % BitsInAByte);
 
 							var lookupIndex = byteFloor + reversedBitIndex;
-							processedData[i] = (byte)(bits[lookupIndex] ? shadowTileIndex : 0);
+							processedData[i] = (byte)(bits[lookupIndex] ? ShadowTileIndex : 0);
 						}
 					}
 
@@ -137,7 +137,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					Size = dataSize,
 					FrameSize = frameSize,
 					Data = data,
-					Type = SpriteFrameType.Indexed,
+					Type = SpriteFrameType.Indexed8,
 				};
 
 				frameList.Add(img.SpriteFrame);
@@ -153,7 +153,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 				Size = blankDataSize,
 				FrameSize = blankFrameSize,
 				Data = Enumerable.Repeat((byte)0, 4).ToArray(),
-				Type = SpriteFrameType.Indexed,
+				Type = SpriteFrameType.Indexed8,
 			};
 
 			frameList.Add(blankFrame);

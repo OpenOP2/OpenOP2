@@ -74,14 +74,6 @@ plymouth-scout:
 	Inherits@generated: ^plymouth-scout-generated
 	Inherits: ^StubVehicle
 
-eden-robo-surveyor:
-	Inherits@generated: ^eden-robo-surveyor-generated
-	Inherits: ^StubVehicle
-
-plymouth-robo-surveyor:
-	Inherits@generated: ^plymouth-robo-surveyor-generated
-	Inherits: ^StubVehicle
-
 eden-tiger:
 	Inherits@generated: ^eden-tiger-generated
 	Inherits: ^StubVehicle
@@ -341,4 +333,3 @@ eden-unknown:
 plymouth-supernova-guardpost:
 	Inherits@generated: ^plymouth-supernova-guardpost-generated
 	Inherits: ^StubBuilding
-

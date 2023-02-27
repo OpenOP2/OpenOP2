@@ -1,27 +1,75 @@
 ^Resources:
-	ResourceType@ore:
-		Type: ore
-		Name: Ore
-		ResourceType: 1
-		TerrainType: Ore
-		Palette: 3
-		Sequences: ore
-		MaxDensity: 1
-		ValuePerUnit: 1
-		AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
-		AllowUnderActors: true
-		AllowUnderBuildings: true
-	ResourceType@ore.mine:
-		Type: ore.mine
-		Name: Ore Mine (placed by miner; do not use)
-		ResourceType: 2
-		TerrainType: Ore
-		Palette: 3
-		Sequences: ore
-		MaxDensity: 120000
-		ValuePerUnit: 20
-		AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
-		AllowUnderActors: true
-		AllowUnderBuildings: true
-	ResourceRenderer: 
-		RenderTypes: ore, ore.mine
+	ResourceRenderer:
+		ResourceTypes:
+			ore.unsurveyed.common1:
+				Sequences: ore
+				Palette: 3
+				Name: Ore (Unsurveyed)
+			ore.unsurveyed.common2:
+				Sequences: ore
+				Palette: 3
+				Name: Ore (Unsurveyed)
+			ore.unsurveyed.common3:
+				Sequences: ore
+				Palette: 3
+				Name: Ore (Unsurveyed)
+			ore.unsurveyed.rare1:
+				Sequences: ore
+				Palette: 3
+				Name: Ore (Unsurveyed)
+			ore.unsurveyed.rare2:
+				Sequences: ore
+				Palette: 3
+				Name: Ore (Unsurveyed)
+			ore.unsurveyed.rare3:
+				Sequences: ore
+				Palette: 3
+				Name: Ore (Unsurveyed)
+			ore.common1:
+				Sequences: ore-1-low
+				Palette: 5
+				Name: Common Ore (1)
+			ore.common2:
+				Sequences: ore-1-medium
+				Palette: 5
+				Name: Common Ore (2)
+			ore.common3:
+				Sequences: ore-1-high
+				Palette: 5
+				Name: Common Ore (3)
+			ore.rare1:
+				Sequences: ore-2-low
+				Palette: 6
+				Name: Rare Ore (1)
+			ore.rare2:
+				Sequences: ore-2-medium
+				Palette: 6
+				Name: Rare Ore (2)
+			ore.rare3:
+				Sequences: ore-2-high
+				Palette: 6
+				Name: Rare Ore (3)
+			ore.depot.common1:
+				Sequences: ore-1-low
+				Palette: 5
+				Name: Common Ore (1)
+			ore.depot.common2:
+				Sequences: ore-1-medium
+				Palette: 5
+				Name: Common Ore (2)
+			ore.depot.common3:
+				Sequences: ore-1-high
+				Palette: 5
+				Name: Common Ore (3)
+			ore.depot.rare1:
+				Sequences: ore-2-low
+				Palette: 6
+				Name: Rare Ore (1)
+			ore.depot.rare2:
+				Sequences: ore-2-medium
+				Palette: 6
+				Name: Rare Ore (2)
+			ore.depot.rare3:
+				Sequences: ore-2-high
+				Palette: 6
+				Name: Rare Ore (3)

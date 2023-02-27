@@ -22,29 +22,29 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 {
 	public class Op2RawLoader : ISpriteLoader
 	{
-		private static bool IsRaw(Stream s)
+		static bool IsRaw(Stream s)
 		{
 			var header = s.ReadASCII(4);
 			return header == "????";
 		}
 
-		private static BitmapSpriteFrame[] ParseFrames(Stream s)
+		static BitmapSpriteFrame[] ParseFrames(Stream s)
 		{
 			var numTiles = 16;
 			var start = s.Position;
 			var frames = new List<BitmapSpriteFrame>();
-			const int tileWidth = 32;
+			const int TileWidth = 32;
 
-			var numPixels = tileWidth * tileWidth;
+			var numPixels = TileWidth * TileWidth;
 			var numBytesPerTile = numPixels / 8;
-			var dataSize = new Size(tileWidth, tileWidth);
-			var size = new Size(tileWidth, tileWidth);
+			var dataSize = new Size(TileWidth, TileWidth);
+			var size = new Size(TileWidth, TileWidth);
 			s.Seek(0, SeekOrigin.Begin);
 			for (var i = 0; i < numTiles; i++)
 			{
 				var bytes = s.ReadBytes(numBytesPerTile);
 				var swappedBytes = new List<byte>();
-				for (var rowIndex = 0; rowIndex < tileWidth; rowIndex++)
+				for (var rowIndex = 0; rowIndex < TileWidth; rowIndex++)
 				{
 					var row = bytes.Skip(rowIndex * 4).Take(4).Reverse().ToList();
 					swappedBytes.AddRange(row);
@@ -64,7 +64,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					Size = size,
 					FrameSize = size,
 					Data = unpackedBytes,
-					Type = SpriteFrameType.Indexed,
+					Type = SpriteFrameType.Indexed8,
 				};
 
 				frames.Add(tile);
@@ -75,7 +75,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			return frames.ToArray();
 		}
 
-		public bool TryParseSprite(Stream s, out ISpriteFrame[] frames, out TypeDictionary metadata)
+		public bool TryParseSprite(Stream s, string filename, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
 			metadata = null;
 			if (!IsRaw(s))

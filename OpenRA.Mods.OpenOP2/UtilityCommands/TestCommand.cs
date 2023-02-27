@@ -12,41 +12,38 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
-using OpenRA.Mods.OpenOP2.FileSystem;
-using OpenRA.Primitives;
 
 namespace OpenRA.Mods.OpenOP2.UtilityCommands
 {
 	class TestingCommand : IUtilityCommand
 	{
-		private const string OutputFilename = "..\\..\\mods\\openop2\\op2-groups.yaml";
+		const string OutputFilename = "..\\..\\mods\\openop2\\op2-groups.yaml";
 
 		string IUtilityCommand.Name => "--testing";
 		bool IUtilityCommand.ValidateArguments(string[] args) { return ValidateArguments(args); }
 
 		[Desc("FILENAME", "Just for debug and test.")]
-		void IUtilityCommand.Run(Utility utility, string[] args) { Run(utility, args); }
-
-		private ModData modData;
+		void IUtilityCommand.Run(Utility utility, string[] args) { Run(utility); }
 
 		public bool ValidateArguments(IReadOnlyCollection<string> args)
 		{
 			return args.Count >= 1;
 		}
 
-		private void Run(Utility utility, string[] args)
+		void Run(Utility utility)
 		{
 			// HACK: The engine code assumes that Game.modData is set.
-			Game.ModData = modData = utility.ModData;
+			Game.ModData = utility.ModData;
 
 			var sb = new StringBuilder();
 
 			try
 			{
-				using var sw = new StreamWriter(OutputFilename);
-				sw.Write(sb.ToString());
+				using (var sw = new StreamWriter(OutputFilename))
+				{
+					sw.Write(sb.ToString());
+				}
 			}
 			catch (Exception ex)
 			{

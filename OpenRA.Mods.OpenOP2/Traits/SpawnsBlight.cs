@@ -19,30 +19,22 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		[Desc("After how many ticks.")]
 		public int After = 0;
 
-		public override object Create(ActorInitializer init) { return new SpawnsBlight(init.Self, this); }
+		public override object Create(ActorInitializer init) { return new SpawnsBlight(this); }
 	}
 
 	public class SpawnsBlight : ITick
 	{
-		private World world;
-		private Actor actor;
-		private int count;
-		private SpawnsBlightInfo info;
+		int count;
 
 		public bool IsReady { get; private set; } = false;
 
-		public SpawnsBlight(Actor self, SpawnsBlightInfo info)
+		public SpawnsBlight(SpawnsBlightInfo info)
 		{
-			actor = self;
-			world = self.World;
-			this.info = info;
 			count = info.After;
 		}
 
 		void ITick.Tick(Actor self)
 		{
-			actor = self;
-
 			if (IsReady)
 			{
 				return;
