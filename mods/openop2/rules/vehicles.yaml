@@ -1,122 +1,53 @@
-# Hi Zhall and Zon,
-# You'll want to look in rules-generated.yaml for the vehicle you need, then move it into here and customize it as you need.
-
-eden-cargo-truck:
-	Inherits@generated: ^eden-cargo-truck-generated
-	Inherits: ^CargoTruck
-	Buildable:
-		Prerequisites: ~vehicles.eden
-		IconPalette: 3
-
-plymouth-cargo-truck:
-	Inherits@generated: ^plymouth-cargo-truck-generated
-	Inherits: ^CargoTruck
-	Buildable:
-		Prerequisites: ~vehicles.plymouth
-		IconPalette: 3
-
-eden-robo-dozer:
-	Inherits@generated: ^eden-robo-dozer-generated
-	Inherits: ^RoboDozer
-	Buildable:
-		Prerequisites: ~vehicles.eden
-		IconPalette: 3
-
-plymouth-robo-dozer:
-	Inherits@generated: ^plymouth-robo-dozer-generated
-	Inherits: ^RoboDozer
-	Buildable:
-		Prerequisites: ~vehicles.plymouth
-		IconPalette: 3
-
-eden-robo-surveyor:
-	Inherits@generated: ^eden-robo-surveyor-generated
-	Inherits: ^RoboSurveyor
-	Buildable:
-		Prerequisites: ~vehicles.eden
-		IconPalette: 3
-
-plymouth-robo-surveyor:
-	Inherits@generated: ^plymouth-robo-surveyor-generated
-	Inherits: ^RoboSurveyor
-	Buildable:
-		Prerequisites: ~vehicles.plymouth
-		IconPalette: 3
-
-eden-robo-miner:
-	Inherits@generated: ^eden-robo-miner-generated
-	Inherits: ^RoboMiner
-	Buildable:
-		Prerequisites: ~vehicles.eden
-		IconPalette: 3
-
-plymouth-robo-miner:
-	Inherits@generated: ^plymouth-robo-miner-generated
-	Inherits: ^RoboMiner
-	Buildable:
-		Prerequisites: ~vehicles.plymouth
-		IconPalette: 3
-	Transforms:
-		IntoActor: plymouth-mine-common
-
 eden-lynx-laser:
-	Inherits@generated:	^eden-lynx-generated
-	Inherits: ^Lynx
+	Inherits: ^eden-lynx
 	Buildable:
 		Prerequisites: ~vehicles.eden
-		IconPalette: 3
-		Icon: iconlaser
+		#IconPalette: 3
+		#Icon: iconlaser
 	WithSpriteTurret:
-		Sequence: laser
+		Sequence: turret-laser
 	Armament:
 		Weapon:	laser
 
 eden-lynx-RailGun:
-	Inherits@generated: ^eden-lynx-generated
-	Inherits: ^Lynx
+	Inherits: ^eden-lynx
 	Buildable:
 		Prerequisites: ~vehicles.eden
-		IconPalette: 3
-		Icon: iconrail
+		#IconPalette: 3
+		#Icon: iconrail
 	WithSpriteTurret:
-		Sequence: rail
+		Sequence: turret-rail
 	Armament:
 		Weapon: railgun
 	Valued:
 		Cost: 1150
 
 plymouth-lynx-microwave:
-	Inherits@generated: ^plymouth-lynx-generated
-	Inherits: ^Lynx
+	Inherits: ^plymouth-lynx
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
-		IconPalette: 3
-		Icon: iconmicrowave
+		#IconPalette: 3
+		#Icon: iconmicrowave
 	WithSpriteTurret:
-		Sequence: microwave
-		Palette: playerMapped8
-		IsPlayerPalette: True
+		Sequence: turret-cannon-plymouth
+		#Palette: playerMapped8
+		#IsPlayerPalette: True
+		#LocalOffset: 856,0,80
 	Armament:
 		Weapon: microwave
 
 plymouth-lynx-rpg:
-	Inherits@generated: ^plymouth-lynx-generated
-	Inherits: ^Lynx
+	Inherits: ^plymouth-lynx
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
-		IconPalette: 3
-		Icon: iconrpg
+		#IconPalette: 3
+		#Icon: iconrpg
 	WithSpriteTurret:
-		Sequence: rpg
-		Palette: playerMapped8
-		IsPlayerPalette: True
+		Sequence: turret-rpg
+		#Palette: playerMapped8
+		#IsPlayerPalette: True
+		#LocalOffset: 856,0,80
 	Armament:
 		Weapon: rpg
 	Valued:
 		Cost: 1150
-#note for zon check costs of microwave and rpg lynx in OG game
-
-#RenderSprites:
-##PlayerPalette: playerMapped8
-##IsPlayerPalette:True
-#example for me do not remove - shpooky

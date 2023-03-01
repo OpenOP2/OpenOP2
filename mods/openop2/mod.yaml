@@ -37,9 +37,9 @@ Rules:
 	openop2|rules/defaults.yaml
 	openop2|rules/defaults-op2.yaml
 	openop2|rules/misc.yaml
-	openop2|rules/op2-test.yaml
+	openop2|rules/vehicles-new.yaml
+	openop2|rules/vehicles.yaml
 	#openop2|rules/walls.yaml
-	#openop2|rules/vehicles.yaml
 	#openop2|rules/structures.yaml
 	#openop2|rules/rules-generated.yaml
 	#openop2|rules/rules-example.yaml

@@ -213,3 +213,6 @@
 		Range: 7c0
 	Mobile:
 		Speed: 72
+	WithSpriteTurret:
+	AttackTurreted:
+	Armament:

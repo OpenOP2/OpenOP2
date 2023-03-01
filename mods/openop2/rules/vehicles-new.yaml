@@ -126,49 +126,97 @@ plymouth-robo-miner:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3
 
-eden-lynx:
+^eden-lynx:
 	RenderSprites:
 		Image: eden-lynx
-	Inherits: ^Op2Vehicle
+	Inherits: ^Lynx
 	Buildable:
 		Prerequisites: ~vehicles.eden
 		IconPalette: 3
 
-plymouth-lynx:
+^plymouth-lynx:
 	RenderSprites:
 		Image: plymouth-lynx
-	Inherits: ^Op2Vehicle
+	Inherits: ^Lynx
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3
 
-eden-panther:
+^eden-panther:
 	RenderSprites:
 		Image: eden-panther
+	Inherits: ^Lynx
+	Buildable:
+		Prerequisites: ~vehicles.eden
+		IconPalette: 3
+
+^plymouth-panther:
+	RenderSprites:
+		Image: plymouth-panther
+	Inherits: ^Lynx
+	Buildable:
+		Prerequisites: ~vehicles.plymouth
+		IconPalette: 3
+
+^eden-tiger:
+	RenderSprites:
+		Image: eden-tiger
+	Inherits: ^Lynx
+	Buildable:
+		Prerequisites: ~vehicles.eden
+		IconPalette: 3
+
+^plymouth-tiger:
+	RenderSprites:
+		Image: plymouth-tiger
+	Inherits: ^Lynx
+	Buildable:
+		Prerequisites: ~vehicles.plymouth
+		IconPalette: 3
+
+eden-flyer:
+	RenderSprites:
+		Image: eden-flyer
 	Inherits: ^Op2Vehicle
 	Buildable:
 		Prerequisites: ~vehicles.eden
 		IconPalette: 3
 
-plymouth-panther:
+plymouth-flyer:
 	RenderSprites:
-		Image: plymouth-panther
+		Image: plymouth-flyer
 	Inherits: ^Op2Vehicle
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3
 
-eden-tiger:
+eden-robo-repair:
 	RenderSprites:
-		Image: eden-tiger
+		Image: eden-robo-repair
 	Inherits: ^Op2Vehicle
 	Buildable:
 		Prerequisites: ~vehicles.eden
 		IconPalette: 3
 
-plymouth-tiger:
+eden-geocom:
 	RenderSprites:
-		Image: plymouth-tiger
+		Image: eden-geocom
+	Inherits: ^Op2Vehicle
+	Buildable:
+		Prerequisites: ~vehicles.eden
+		IconPalette: 3
+
+plymouth-spider:
+	RenderSprites:
+		Image: plymouth-spider
+	Inherits: ^Op2Vehicle
+	Buildable:
+		Prerequisites: ~vehicles.plymouth
+		IconPalette: 3
+
+plymouth-scorpion:
+	RenderSprites:
+		Image: plymouth-scorpion
 	Inherits: ^Op2Vehicle
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
