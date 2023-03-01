@@ -71,6 +71,50 @@
 		ResourceSequences:
 			Ore: pip-yellow
 
+^RoboSurveyor:
+	Inherits: ^Op2Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		#Prerequisites: ~techlevel.infonly
+		Prerequisites: ~vehicles
+		Description: Surveys mineral deposits.
+		IconPalette: 5
+	Voiced:
+		VoiceSet: RoboSurveyorVoice
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: Robo-Surveyor
+	Health:
+		HP: 5000
+	RevealsShroud:
+		Range: 7c0
+	Mobile:
+		Speed: 64
+	SurveysOre:
+		Amount: 120000
+		PlaysNotification: MiningLocationSurveyed
+		Replacements:
+			Replacement@common1:
+				RemoveResourceType: ore.unsurveyed.common1
+				PlaceResourceType: ore.common1
+			Replacement@common2:
+				RemoveResourceType: ore.unsurveyed.common2
+				PlaceResourceType: ore.common2
+			Replacement@common3:
+				RemoveResourceType: ore.unsurveyed.common3
+				PlaceResourceType: ore.common3
+			Replacement@rare1:
+				RemoveResourceType: ore.unsurveyed.rare1
+				PlaceResourceType: ore.rare1
+			Replacement@rare2:
+				RemoveResourceType: ore.unsurveyed.rare2
+				PlaceResourceType: ore.rare2
+			Replacement@rare3:
+				RemoveResourceType: ore.unsurveyed.rare3
+				PlaceResourceType: ore.rare3
+
 ^RoboMiner:
 	Inherits: ^Op2Vehicle
 	Buildable:
@@ -173,6 +217,20 @@ eden-robo-dozer:
 plymouth-robo-dozer:
 	Inherits@generated: ^plymouth-robo-dozer-generated
 	Inherits: ^RoboDozer
+	Buildable:
+		Prerequisites: ~vehicles.plymouth
+		IconPalette: 3
+
+eden-robo-surveyor:
+	Inherits@generated: ^eden-robo-surveyor-generated
+	Inherits: ^RoboSurveyor
+	Buildable:
+		Prerequisites: ~vehicles.eden
+		IconPalette: 3
+
+plymouth-robo-surveyor:
+	Inherits@generated: ^plymouth-robo-surveyor-generated
+	Inherits: ^RoboSurveyor
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3

@@ -57,7 +57,6 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		public string PlaceResourceType = string.Empty;
 	}
 
-
 	public class SurveysOre : ConditionalTrait<SurveysOreInfo>, ITick
 	{
 		CPos lastPosition;
