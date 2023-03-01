@@ -122,7 +122,7 @@ ChromeLayout:
 
 Translations:
 	common|languages/en.ftl
-	openop2|languages/rules/en.ftl
+	#openop2|languages/rules/en.ftl
 
 Voices:
 	openop2|audio/voices.yaml
