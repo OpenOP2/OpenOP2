@@ -14,6 +14,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using OpenRA.Graphics;
 using OpenRA.Mods.Common.Graphics;
 using OpenRA.Mods.OpenOP2.FileSystem;
@@ -23,6 +24,9 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 {
 	public class Op2SpriteLoader : ISpriteLoader
 	{
+		const string OutputFilename = "..\\..\\mods\\openop2\\GROUP-START-VALUES.txt";
+		readonly StringBuilder sb = new StringBuilder();
+
 		public bool TryParseSprite(Stream s, string filename, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
 			var start = s.Position;
@@ -36,6 +40,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 				return false;
 			}
 
+
 			var size = s.ReadUInt32();
 			var reserved1 = s.ReadUInt16();
 			var reserved2 = s.ReadUInt16();
@@ -43,14 +48,139 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			var frameList = new List<ISpriteFrame>();
 
 			// Populate art data
-			const byte ShadowTileIndex = 1;
 			var prt = Prt.Instance;
 			var prtFile = prt.PrtFile;
 			var palettes = prt.Palettes;
 
-			var imgIndex = 0;
-			foreach (var img in prtFile.ImageHeader)
+			metadata = new TypeDictionary { new EmbeddedSpritePalette(framePalettes: palettes) };
+
+			LoadAllImagesAsSpriteFrames(s, dataStart);
+
+			frames = CombineGroupImagesIntoFrames(s);
+
+			//using (var sw = new StreamWriter(OutputFilename))
+			//{
+			//	sw.Write(sb.ToString());
+			//}
+
+			return true;
+		}
+
+		ISpriteFrame[] CombineGroupImagesIntoFrames(Stream s)
+		{
+			var prt = Prt.Instance;
+			var prtFile = prt.PrtFile;
+			var combinedFrames = new List<ISpriteFrame>();
+			var shadowColor = Color.FromArgb(150, 0, 0, 0);
+
+			for (var groupIndex = 0; groupIndex < prtFile.Groups.Length; groupIndex++)
 			{
+				var frameTotal = combinedFrames.Count;
+				var group = prtFile.Groups[groupIndex];
+				var groupWidth = group.SelLeft + group.SelRight + 10;
+				var groupHeight = group.SelTop + group.SelBottom + 10;
+
+				// sb.AppendLine($"Group index {groupIndex} starts at frame {frameTotal}");
+
+				// Console.WriteLine($"GROUP: {groupIndex} RECT (LRTB): {group.SelLeft}, {group.SelRight}, {group.SelTop}, {group.SelBottom}  SIZE: {groupWidth} x {groupHeight}");
+				for (var frameIndex = 0; frameIndex < group.Frames.Length; frameIndex++)
+				{
+					var frame = group.Frames[frameIndex];
+					var frameColors = new Color[groupWidth, groupHeight];
+
+					for (var picIndex = 0; picIndex < frame.Pictures.Length; picIndex++)
+					{
+						var picture = frame.Pictures[picIndex];
+						var imgNumber = picture.ImgNumber;
+						var imageInfo = prtFile.ImageHeader[imgNumber];
+						var imgWidth = imageInfo.PaddedWidth;
+						var imgHeight = imageInfo.Height;
+						var picX = picture.PosX;
+						var picY = picture.PosY;
+
+						// Skip shadows for now
+						var isShadow = imageInfo.ImageType == 4 || imageInfo.ImageType == 5;
+
+						// Console.WriteLine($"  IMAGE: {imgWidth} x {imgHeight}");
+						// Console.WriteLine($"  PIC X: {picX} PIC Y: {picY}");
+
+						// Read every pixel of this image
+						for (var i = 0; i < imageInfo.SpriteFrame.Data.Length; i++)
+						{
+							var y = (uint)i / imgWidth;
+							var x = (uint)i % imgWidth;
+
+							var colorIndex = imageInfo.SpriteFrame.Data[i];
+							if (colorIndex == 0)
+								continue;
+
+							var palette = prt.FramePalettes[imageInfo.Palette];
+							var pixelUint = palette[colorIndex];
+
+							var colorBytes = BitConverter.GetBytes(pixelUint);
+							var r = colorBytes[0];
+							var g = colorBytes[1];
+							var b = colorBytes[2];
+							var a = colorBytes[3];
+							var pixelColor = isShadow ? shadowColor : Color.FromArgb(a, r, g, b);
+
+							// Console.WriteLine($" Color (RGBA): {r} {g} {b} {a}");
+							// Console.WriteLine($" Write color: {picX + x}, {picY + y}");
+
+							var pixX = x + picX;
+							var pixY = y + picY;
+							if (pixX >= groupWidth || pixY >= groupHeight || pixX < 0 || pixY < 0)
+							{
+								// Console.WriteLine($"Pixel out of range at: {pixX}, {pixY} (GROUP SIZE: {groupWidth} x {groupHeight})");
+								// Console.WriteLine($"  Group index: {groupIndex} Frame index: {frameIndex}   Pic Index: {picIndex}   Img Number: {imgNumber}");
+								continue;
+							}
+
+							frameColors[pixX, pixY] = pixelColor;
+						}
+					}
+
+					// Read resulting group image into sprite frame
+					var byteData = new byte[groupWidth * groupHeight * 4];
+					for (var y = 0; y < groupHeight; y++)
+					{
+						for (var x = 0; x < groupWidth; x++)
+						{
+							var thisColor = frameColors[x, y];
+							var colorIndex = ((y * groupWidth * 4) + (x * 4));
+							byteData[colorIndex] = thisColor.R;
+							byteData[colorIndex + 1] = thisColor.G;
+							byteData[colorIndex + 2] = thisColor.B;
+							byteData[colorIndex + 3] = thisColor.A;
+						}
+					}
+
+					var spriteFrame = new BitmapSpriteFrame
+					{
+						Type = SpriteFrameType.Rgba32,
+						Data = byteData,
+						FrameSize = new Size(groupWidth, groupHeight),
+						// Offset = new float2(group.CenterX, group.CenterY),
+						Size = new Size(groupWidth, groupHeight)
+					};
+
+					combinedFrames.Add(spriteFrame);
+				}
+			}
+
+			return combinedFrames.ToArray();
+		}
+
+		ISpriteFrame[] LoadAllImagesAsSpriteFrames(Stream s, uint dataStart)
+		{
+			var prt = Prt.Instance;
+			var prtFile = prt.PrtFile;
+			var frameList = new List<ISpriteFrame>();
+			const byte ShadowTileIndex = 1;
+
+			for (var imgIndex = 0; imgIndex < prtFile.ImageCount; imgIndex++)
+			{
+				var img = prtFile.ImageHeader[imgIndex];
 				var isShadow = img.ImageType == 4 || img.ImageType == 5;
 
 				var dataSize = new Size((int)img.PaddedWidth, (int)img.Height);
@@ -141,26 +271,9 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 				};
 
 				frameList.Add(img.SpriteFrame);
-				imgIndex++;
 			}
 
-			metadata = new TypeDictionary { new EmbeddedSpritePalette(framePalettes: palettes) };
-
-			var blankDataSize = new Size(2, 2);
-			var blankFrameSize = new Size(2, 2);
-			var blankFrame = new BitmapSpriteFrame
-			{
-				Size = blankDataSize,
-				FrameSize = blankFrameSize,
-				Data = Enumerable.Repeat((byte)0, 4).ToArray(),
-				Type = SpriteFrameType.Indexed8,
-			};
-
-			frameList.Add(blankFrame);
-
-			frames = frameList.ToArray();
-
-			return true;
+			return frameList.ToArray();
 		}
 	}
 }
