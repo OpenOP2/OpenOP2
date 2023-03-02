@@ -65,7 +65,7 @@ plymouth-evacuation-transport:
 eden-earthworker:
 	RenderSprites:
 		Image: eden-earthworker
-	Inherits: ^Op2Vehicle
+	Inherits: ^Earthworker
 	Buildable:
 		Prerequisites: ~vehicles.eden
 		IconPalette: 3
@@ -73,7 +73,7 @@ eden-earthworker:
 plymouth-earthworker:
 	RenderSprites:
 		Image: plymouth-earthworker
-	Inherits: ^Op2Vehicle
+	Inherits: ^Earthworker
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3

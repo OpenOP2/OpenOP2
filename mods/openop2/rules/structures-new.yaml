@@ -1,0 +1,114 @@
+eden-command-center:
+	RenderSprites:
+		Image: eden-command-center
+	Inherits: ^CommandCenter
+	Building:
+		Footprint: xxx _xx
+	-Buildable:
+
+plymouth-command-center:
+	RenderSprites:
+		Image: plymouth-command-center
+	Inherits: ^CommandCenter
+	Selectable:
+		Bounds: 3072,2432,0,-192
+	Building:
+		Footprint: xxx xx_
+	-Buildable:
+
+eden-tokamak:
+	RenderSprites:
+		Image: eden-tokamak
+	Inherits: ^Power
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-tokamak:
+	RenderSprites:
+		Image: plymouth-tokamak
+	Inherits: ^Power
+	Selectable:
+		Bounds: 2048,2112,0,-32
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-smelter-common:
+	RenderSprites:
+		Image: eden-smelter-common
+	Inherits: ^OreSmelterCommon
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-smelter-common:
+	RenderSprites:
+		Image: plymouth-smelter-common
+	Inherits: ^OreSmelterCommon
+	Selectable:
+		Bounds: 2048,2112,0,-32
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-agridome:
+	RenderSprites:
+		Image: eden-agridome
+	Inherits: ^Power
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-agridome:
+	RenderSprites:
+		Image: plymouth-agridome
+	Inherits: ^Power
+	Selectable:
+		Bounds: 2048,2112,0,-32
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-vehicle-factory:
+	RenderSprites:
+		Image: eden-vehicle-factory
+	Inherits: ^VehicleFactory
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-vehicle-factory:
+	RenderSprites:
+		Image: plymouth-vehicle-factory
+	Inherits: ^VehicleFactory
+	Selectable:
+		Bounds: 2048,2112,0,-32
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-structure-factory:
+	RenderSprites:
+		Image: eden-structure-factory
+	Inherits: ^Power
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-structure-factory:
+	RenderSprites:
+		Image: plymouth-structure-factory
+	Inherits: ^Power
+	Selectable:
+		Bounds: 2048,2112,0,-32
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+
+eden-mine-common:
+	RenderSprites:
+		Image: eden-mine-common
+	Inherits: ^MineCommon
+	#Buildable:
+	#	Prerequisites: ~structures.eden
+
+plymouth-mine-common:
+	RenderSprites:
+		Image: plymouth-mine-common
+	Inherits: ^MineCommon
+	Selectable:
+		Bounds: 2048,2112,0,-32
+	#Buildable:
+	#	Prerequisites: ~structures.plymouth

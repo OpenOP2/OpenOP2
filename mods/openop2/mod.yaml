@@ -39,6 +39,8 @@ Rules:
 	openop2|rules/misc.yaml
 	openop2|rules/vehicles-new.yaml
 	openop2|rules/vehicles.yaml
+	openop2|rules/structures.yaml
+	openop2|rules/structures-new.yaml
 	#openop2|rules/walls.yaml
 	#openop2|rules/structures.yaml
 	#openop2|rules/rules-generated.yaml
@@ -50,6 +52,7 @@ Sequences:
 	openop2|sequences/resources.yaml
 	openop2|sequences/walls.yaml
 	openop2|sequences/vehicles.yaml
+	openop2|sequences/structures.yaml
 	#openop2|op2-groups.yaml
 
 TileSets:

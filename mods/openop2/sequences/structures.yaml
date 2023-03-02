@@ -1,0 +1,152 @@
+eden-command-center:
+	idle: op2_art.bmp
+		#Start: 24
+		Start: 19741
+		Length: 87
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+
+plymouth-command-center:
+	idle: op2_art.bmp
+		Start: 20247
+		Length: 56
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+
+eden-tokamak:
+	idle: op2_art.bmp
+		Start: 23397
+		Length: 62
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+	icon: buildings.png
+		Start: 4
+		Length: 1
+		Facings: 1
+
+plymouth-tokamak:
+	idle: op2_art.bmp
+		Start: 11737
+		Length: 183
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+	icon: buildings.png
+		Start: 4
+		Length: 1
+		Facings: 1
+
+eden-structure-factory:
+	idle: op2_art.bmp
+		Start: 293
+		Length: 50
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+	icon: buildings.png
+		Start: 2
+		Length: 1
+		Facings: 1
+
+plymouth-structure-factory:
+	idle: op2_art.bmp
+		Start: 20484
+		Length: 46
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+	icon: buildings.png
+		Start: 3
+		Length: 1
+		Facings: 1
+
+eden-vehicle-factory:
+	idle: op2_art.bmp
+		Start: 13186
+		Length: 43
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+	icon: buildings.png
+		Start: 14
+		Length: 1
+		Facings: 1
+
+plymouth-vehicle-factory:
+	idle: op2_art.bmp
+		Start: 20206
+		Length: 41
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+	icon: buildings.png
+		Start: 15
+		Length: 1
+		Facings: 1
+
+eden-agridome:
+	idle: op2_art.bmp
+		Start: 12963
+		Length: 35
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+	icon: buildings.png
+		Start: 16
+		Length: 1
+		Facings: 1
+
+plymouth-agridome:
+	idle: op2_art.bmp
+		Start: 11459
+		Length: 40
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+	icon: buildings.png
+		Start: 17
+		Length: 1
+		Facings: 1
+
+eden-smelter-common:
+	idle: op2_art.bmp
+		Start: 20303
+		Length: 35
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+	icon: buildings.png
+		Start: 6
+		Length: 1
+		Facings: 1
+
+plymouth-smelter-common:
+	idle: op2_art.bmp
+		Start: 20416
+		Length: 68
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+	icon: buildings.png
+		Start: 7
+		Length: 1
+		Facings: 1
+
+eden-mine-common:
+	idle: op2_art.bmp
+		Start: 14163
+		Length: 1
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0
+
+plymouth-mine-common:
+	idle: op2_art.bmp
+		Start: 19945
+		Length: 33
+		Facings: 1
+		Offset: 0,0
+		ZOffset: 0

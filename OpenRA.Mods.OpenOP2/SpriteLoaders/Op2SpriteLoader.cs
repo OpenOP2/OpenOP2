@@ -14,7 +14,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using OpenRA.Graphics;
 using OpenRA.Mods.Common.Graphics;
 using OpenRA.Mods.OpenOP2.FileSystem;
@@ -25,8 +24,8 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 	public class Op2SpriteLoader : ISpriteLoader
 	{
 		const string OutputFilename = "..\\..\\mods\\openop2\\GROUP-START-VALUES.txt";
-		readonly StringBuilder sb = new StringBuilder();
 
+		// readonly StringBuilder sb = new StringBuilder();
 		public bool TryParseSprite(Stream s, string filename, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
 			var start = s.Position;
@@ -58,11 +57,10 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 			frames = CombineGroupImagesIntoFrames(s);
 
-			//using (var sw = new StreamWriter(OutputFilename))
-			//{
-			//	sw.Write(sb.ToString());
-			//}
-
+			// using (var sw = new StreamWriter(OutputFilename))
+			// {
+			// 	sw.Write(sb.ToString());
+			// }
 			return true;
 		}
 
@@ -94,7 +92,6 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						var imgNumber = picture.ImgNumber;
 						var imageInfo = prtFile.ImageHeader[imgNumber];
 						var imgWidth = imageInfo.PaddedWidth;
-						var imgHeight = imageInfo.Height;
 						var picX = picture.PosX;
 						var picY = picture.PosY;
 
@@ -103,7 +100,6 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 						// Console.WriteLine($"  IMAGE: {imgWidth} x {imgHeight}");
 						// Console.WriteLine($"  PIC X: {picX} PIC Y: {picY}");
-
 						// Read every pixel of this image
 						for (var i = 0; i < imageInfo.SpriteFrame.Data.Length; i++)
 						{
@@ -126,7 +122,6 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 							// Console.WriteLine($" Color (RGBA): {r} {g} {b} {a}");
 							// Console.WriteLine($" Write color: {picX + x}, {picY + y}");
-
 							var pixX = x + picX;
 							var pixY = y + picY;
 							if (pixX >= groupWidth || pixY >= groupHeight || pixX < 0 || pixY < 0)
@@ -160,6 +155,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						Type = SpriteFrameType.Rgba32,
 						Data = byteData,
 						FrameSize = new Size(groupWidth, groupHeight),
+
 						// Offset = new float2(group.CenterX, group.CenterY),
 						Size = new Size(groupWidth, groupHeight)
 					};

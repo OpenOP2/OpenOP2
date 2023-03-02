@@ -190,6 +190,30 @@
 	Mobile:
 		Speed: 72
 
+^Earthworker:
+	Inherits: ^Op2Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 30
+		#Prerequisites: ~techlevel.infonly
+		Prerequisites: ~vehicles
+		Description: Can build pipelines and walls.
+		IconPalette: 5
+	Voiced:
+		VoiceSet: RoboDozerVoice
+	Valued:
+		Cost: 400
+	Tooltip:
+		Name: Earthworker
+	Health:
+		HP: 250
+	Armor:
+		Type: none
+	RevealsShroud:
+		Range: 7c0
+	Mobile:
+		Speed: 72
+
 ^Lynx:
 	Inherits: ^TurretedVehicle
 	Buildable:
