@@ -9,7 +9,7 @@ eden-lynx-laser:
 	Armament:
 		Weapon:	laser
 
-eden-lynx-RailGun:
+eden-lynx-rail-gun:
 	Inherits: ^eden-lynx
 	Buildable:
 		Prerequisites: ~vehicles.eden
@@ -18,7 +18,7 @@ eden-lynx-RailGun:
 	WithSpriteTurret:
 		Sequence: turret-rail
 	Armament:
-		Weapon: railgun
+		Weapon: rail-gun
 	Valued:
 		Cost: 1150
 

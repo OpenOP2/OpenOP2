@@ -25,12 +25,16 @@ laser:
 		ValidTargets: Ground, Vehicle
 
 microwave:
-	Inherits: laser
-	Range: 5c0
 	ReloadDelay: 20
+	Range: 5c0
 	Report: microwve.wav
 	Projectile: LaserZap
 		Color: FFFFFFFF
+		Width: 60
+		ZOffset: 2047
+		LaunchEffectPalette: 3
+		HitAnim: puff2
+		HitAnimPalette: 6
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
 		Damage: 40
@@ -38,6 +42,12 @@ microwave:
 			light: 80
 			Medium: 60
 			Heavy: 40
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Scorch
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
+	Warhead@1Eff: CreateEffect
+		ImpactSounds: medexp1.WAV
+		ValidTargets: Ground, Vehicle
 
 rpg:
 	ReloadDelay: 50
@@ -47,10 +57,10 @@ rpg:
 		Palette: 5
 		Speed: 300
 		Inaccuracy: 128
-		Image: missile
+		Image: projectile2
 		Shadow: True
 		LaunchAngle: 0
-		TrailImage: trail1
+		TrailImage: puff1
 		TrailPalette: 1
 		TrailInterval: 1
 	Warhead@1Dam: SpreadDamage
@@ -67,19 +77,19 @@ rpg:
 		ValidTargets: Ground
 	Warhead@3Eff: CreateEffect
 		ExplosionPalette: 6
-		Image: rpghit
+		Image: explosion-small1
 		Explosions: idle
 		ValidTargets: Ground
 		ImpactSounds: medexp2.WAV
 
-railGun:
+rail-gun:
 	Inherits: rpg
 	Range: 7c0
 	Projectile: Bullet
 		Palette: 6
 		Speed: 450
-		Image: rail
+		Image: projectile1
 		Shadow: False
-		TrailImage: railtrail
+		TrailImage: rail-trail-start
 		TrailPalette: 6
 		TrailInterval: 1
