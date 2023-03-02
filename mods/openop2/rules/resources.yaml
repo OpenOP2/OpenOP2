@@ -26,50 +26,50 @@
 				Palette: 3
 				Name: Ore (Unsurveyed)
 			ore.common1:
-				Sequences: ore-1-low
+				Sequences: ore-common-low
 				Palette: 5
 				Name: Common Ore (1)
 			ore.common2:
-				Sequences: ore-1-medium
+				Sequences: ore-common-medium
 				Palette: 5
 				Name: Common Ore (2)
 			ore.common3:
-				Sequences: ore-1-high
+				Sequences: ore-common-high
 				Palette: 5
 				Name: Common Ore (3)
 			ore.rare1:
-				Sequences: ore-2-low
+				Sequences: ore-rare-low
 				Palette: 6
 				Name: Rare Ore (1)
 			ore.rare2:
-				Sequences: ore-2-medium
+				Sequences: ore-rare-medium
 				Palette: 6
 				Name: Rare Ore (2)
 			ore.rare3:
-				Sequences: ore-2-high
+				Sequences: ore-rare-high
 				Palette: 6
 				Name: Rare Ore (3)
 			ore.depot.common1:
-				Sequences: ore-1-low
+				Sequences: ore-common-low
 				Palette: 5
 				Name: Common Ore (1)
 			ore.depot.common2:
-				Sequences: ore-1-medium
+				Sequences: ore-common-medium
 				Palette: 5
 				Name: Common Ore (2)
 			ore.depot.common3:
-				Sequences: ore-1-high
+				Sequences: ore-common-high
 				Palette: 5
 				Name: Common Ore (3)
 			ore.depot.rare1:
-				Sequences: ore-2-low
+				Sequences: ore-rare-low
 				Palette: 6
 				Name: Rare Ore (1)
 			ore.depot.rare2:
-				Sequences: ore-2-medium
+				Sequences: ore-rare-medium
 				Palette: 6
 				Name: Rare Ore (2)
 			ore.depot.rare3:
-				Sequences: ore-2-high
+				Sequences: ore-rare-high
 				Palette: 6
 				Name: Rare Ore (3)

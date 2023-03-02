@@ -20,7 +20,7 @@ resources:
 		Length: 12
 		Facings: 1
 	ore-rare-medium: op2_art.bmp
-		Start: 17516
+		Start: 18516
 		Length: 12
 		Facings: 1
 	ore-rare-high: op2_art.bmp

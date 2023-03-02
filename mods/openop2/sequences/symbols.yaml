@@ -5,7 +5,11 @@ waypoint:
 		Facings: 1
 
 rallypoint:
-	idle: op2_art.bmp
+	flag: op2_art.bmp
+		Start: 18608
+		Length: 17
+		Facings: 1
+	circles: op2_art.bmp
 		Start: 18608
 		Length: 17
 		Facings: 1
