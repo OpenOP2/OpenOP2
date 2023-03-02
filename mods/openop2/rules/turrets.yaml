@@ -1,0 +1,54 @@
+eden-turret-laser:
+	RenderSprites:
+		Image: eden-turret-laser
+	Inherits: ^GuardPost
+
+eden-turret-railgun:
+	RenderSprites:
+		Image: eden-turret-railgun
+	Inherits: ^GuardPost
+
+eden-turret-emp:
+	RenderSprites:
+		Image: eden-turret-emp
+	Inherits: ^GuardPost
+
+eden-turret-acidcloud:
+	RenderSprites:
+		Image: eden-turret-acidcloud
+	Inherits: ^GuardPost
+
+eden-turret-thor:
+	RenderSprites:
+		Image: eden-turret-thor
+	Inherits: ^GuardPost
+
+plymouth-turret-microwave:
+	RenderSprites:
+		Image: plymouth-turret-microwave
+	Inherits: ^GuardPost
+
+plymouth-turret-rpg:
+	RenderSprites:
+		Image: plymouth-turret-rpg
+	Inherits: ^GuardPost
+
+plymouth-turret-emp:
+	RenderSprites:
+		Image: plymouth-turret-emp
+	Inherits: ^GuardPost
+
+plymouth-turret-esg:
+	RenderSprites:
+		Image: plymouth-turret-esg
+	Inherits: ^GuardPost
+
+plymouth-turret-stickyfoam:
+	RenderSprites:
+		Image: plymouth-turret-stickyfoam
+	Inherits: ^GuardPost
+
+plymouth-turret-supernova:
+	RenderSprites:
+		Image: plymouth-turret-supernova
+	Inherits: ^GuardPost

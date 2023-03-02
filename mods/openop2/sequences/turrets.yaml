@@ -1,0 +1,71 @@
+eden-turret-laser:
+	idle: op2_art.bmp
+		Start: 14125
+		Length: 1
+		Facings: 16
+
+eden-turret-railgun:
+	idle: op2_art.bmp
+		Start: 14141
+		Length: 1
+		Facings: 16
+
+eden-turret-emp:
+	idle: op2_art.bmp
+		Start: 14722
+		Length: 1
+		Facings: 16
+
+eden-turret-acidcloud:
+	idle: op2_art.bmp
+		Start: 14706
+		Length: 1
+		Facings: 16
+
+eden-turret-thor:
+	idle: op2_art.bmp
+		Start: 13859
+		Length: 8
+		Facings: 16
+
+eden-turret-supernova:
+	idle: op2_art.bmp
+		Start: 17143
+		Length: 1
+		Facings: 1
+
+plymouth-turret-microwave:
+	idle: op2_art.bmp
+		Start: 14374
+		Length: 1
+		Facings: 16
+
+plymouth-turret-rpg:
+	idle: op2_art.bmp
+		Start: 11179
+		Length: 1
+		Facings: 16
+
+plymouth-turret-emp:
+	idle: op2_art.bmp
+		Start: 23510
+		Length: 1
+		Facings: 16
+
+plymouth-turret-esg:
+	idle: op2_art.bmp
+		Start: 15693
+		Length: 1
+		Facings: 16
+
+plymouth-turret-stickyfoam:
+	idle: op2_art.bmp
+		Start: 14410
+		Length: 1
+		Facings: 16
+
+plymouth-turret-supernova:
+	idle: op2_art.bmp
+		Start: 13650
+		Length: 1
+		Facings: 1

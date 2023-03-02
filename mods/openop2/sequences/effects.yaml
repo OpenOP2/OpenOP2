@@ -1,0 +1,210 @@
+smoking-crater:
+	idle: op2_art.bmp
+		Start: 132
+		Length: 13
+		Facings: 1
+
+projectile1:
+	idle: op2_art.bmp
+		Start: 13059
+		Length: 1
+		Facings: 32
+
+projectile2:
+	idle: op2_art.bmp
+		Start: 10430
+		Length: 1
+		Facings: 32
+
+projectile3:
+	idle: op2_art.bmp
+		Start: 12296
+		Length: 1
+		Facings: 32
+
+building-explosion1:
+	idle: op2_art.bmp
+		Start: 9999
+		Length: 4
+		Facings: 1
+
+building-explosion2:
+	idle: op2_art.bmp
+		Start: 16057
+		Length: 13
+		Facings: 1
+
+building-explosion2:
+	idle: op2_art.bmp
+		Start: 10003
+		Length: 4
+		Facings: 1
+
+puff1:
+	idle: op2_art.bmp
+		Start: 10526
+		Length: 6
+		Facings: 1
+
+puff2:
+	idle: op2_art.bmp
+		Start: 10532
+		Length: 6
+		Facings: 1
+
+puff3:
+	idle: op2_art.bmp
+		Start: 10538
+		Length: 6
+		Facings: 1
+
+explosion-small1:
+	idle: op2_art.bmp
+		Start: 12285
+		Length: 11
+		Facings: 1
+
+explosion-medium1:
+	idle: op2_art.bmp
+		Start: 2329
+		Length: 12
+		Facings: 1
+
+explosion-medium2:
+	idle: op2_art.bmp
+		Start: 12369
+		Length: 12
+		Facings: 1
+
+explosion-large2:
+	idle: op2_art.bmp
+		Start: 12381
+		Length: 13
+		Facings: 1
+
+explosion-large3:
+	idle: op2_art.bmp
+		Start: 24146
+		Length: 19
+		Facings: 1
+
+explosion-large4:
+	idle: op2_art.bmp
+		Start: 24165
+		Length: 14
+		Facings: 1
+
+explosion-large5: # airburst
+	idle: op2_art.bmp
+		Start: 23818
+		Length: 18
+		Facings: 1
+
+emp-spark:
+	idle: op2_art.bmp
+		Start: 12410
+		Length: 16
+		Facings: 1
+
+stickyfoam-stick:
+	idle: op2_art.bmp
+		Start: 12394
+		Length: 9
+		Facings: 1
+
+stickyfoam-melt:
+	idle: op2_art.bmp
+		Start: 12403
+		Length: 7
+		Facings: 1
+
+stickyfoam-melt-large:
+	idle: op2_art.bmp
+		Start: 14436
+		Length: 13
+		Facings: 1
+
+acid-cloud-start:
+	idle: op2_art.bmp
+		Start: 13787
+		Length: 5
+		Facings: 1
+
+acid-cloud-loop:
+	idle: op2_art.bmp
+		Start: 13792
+		Length: 8
+		Facings: 1
+
+acid-cloud-dissipate:
+	idle: op2_art.bmp
+		Start: 13800
+		Length: 8
+		Facings: 1
+
+rail-trail-start:
+	idle: op2_art.bmp
+		Start: 12328
+		Length: 2
+		Facings: 1
+
+rail-trail-idle:
+	idle: op2_art.bmp
+		Start: 12330
+		Length: 31
+		Facings: 1
+
+rail-trail-dissipate:
+	idle: op2_art.bmp
+		Start: 12361
+		Length: 8
+		Facings: 1
+
+lightning-crackle:
+	idle: op2_art.bmp
+		Start: 12410
+		Length: 16
+		Facings: 1
+
+mushroom-cloud-small:
+	idle: op2_art.bmp
+		Start: 15773
+		Length: 9
+		Facings: 1
+
+mushroom-cloud-medium:
+	idle: op2_art.bmp
+		Start: 14426
+		Length: 10
+		Facings: 1
+
+mushroom-cloud-large:
+	idle: op2_art.bmp
+		Start: 17230
+		Length: 12
+		Facings: 1
+
+mushroom-cloud-huge:
+	idle: op2_art.bmp
+		Start: 17254
+		Length: 12
+		Facings: 1
+
+mushroom-cloud-enormous:
+	idle: op2_art.bmp
+		Start: 17266
+		Length: 12
+		Facings: 1
+
+smoke-puff:
+	idle: op2_art.bmp
+		Start: 23811
+		Length: 7
+		Facings: 1
+
+esg-sparks:
+	idle: op2_art.bmp
+		Start: 16210
+		Length: 24
+		Facings: 1
+

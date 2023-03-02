@@ -1106,8 +1106,8 @@
 		Prerequisites: ~disabled
 		Description: Basic defense turret.
 		IconPalette: 3
-	Voiced:
-		VoiceSet: TurretVoice
+	#Voiced:
+	#	VoiceSet: TurretVoice
 	Health:
 		HP: 500
 	Armor:
@@ -1120,14 +1120,14 @@
 		Cost: 700
 	RevealsShroud:
 		Range: 4c0
-	Armament:
-		Weapon: laser
-		#Recoil: 85
-		#RecoilRecovery: 25
-		LocalOffset: 768,0,90
-		MuzzlePalette: 3
-	Turreted:
-		TurnSpeed: 64
-	AttackTurreted:
-	WithSpriteTurret:
+	#Armament:
+	#	Weapon: laser
+	#	#Recoil: 85
+	#	#RecoilRecovery: 25
+	#	LocalOffset: 768,0,90
+	#	MuzzlePalette: 3
+	#Turreted:
+	#	TurnSpeed: 64
+	#AttackTurreted:
+	#WithSpriteTurret:
 	RenderRangeCircle:
