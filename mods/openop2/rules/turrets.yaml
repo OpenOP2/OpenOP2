@@ -23,6 +23,11 @@ eden-turret-thor:
 		Image: eden-turret-thor
 	Inherits: ^GuardPost
 
+eden-turret-starflare:
+	RenderSprites:
+		Image: eden-turret-starflare
+	Inherits: ^GuardPost
+
 plymouth-turret-microwave:
 	RenderSprites:
 		Image: plymouth-turret-microwave
@@ -46,6 +51,11 @@ plymouth-turret-esg:
 plymouth-turret-stickyfoam:
 	RenderSprites:
 		Image: plymouth-turret-stickyfoam
+	Inherits: ^GuardPost
+
+plymouth-turret-starflare:
+	RenderSprites:
+		Image: plymouth-turret-starflare
 	Inherits: ^GuardPost
 
 plymouth-turret-supernova:

@@ -1120,14 +1120,14 @@
 		Cost: 700
 	RevealsShroud:
 		Range: 4c0
-	#Armament:
-	#	Weapon: laser
-	#	#Recoil: 85
-	#	#RecoilRecovery: 25
+	Armament:
+		Weapon: laser
+	#	Recoil: 85
+	#	RecoilRecovery: 25
 	#	LocalOffset: 768,0,90
 	#	MuzzlePalette: 3
-	#Turreted:
-	#	TurnSpeed: 64
-	#AttackTurreted:
-	#WithSpriteTurret:
+	Turreted:
+		TurnSpeed: 64
+	AttackTurreted:
+	WithSpriteTurret:
 	RenderRangeCircle:

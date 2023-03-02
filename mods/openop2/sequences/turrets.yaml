@@ -1,71 +1,122 @@
-eden-turret-laser:
+turret-idle:
 	idle: op2_art.bmp
+		Start: 39
+		Length: 1
+		Facings: 1
+
+eden-turret-laser:
+	Inherits: turret-idle
+	turret: op2_art.bmp
 		Start: 14125
 		Length: 1
 		Facings: 16
+	icon: towers.png
+		Start: 6
 
 eden-turret-railgun:
-	idle: op2_art.bmp
+	Inherits: turret-idle
+	turret: op2_art.bmp
 		Start: 14141
 		Length: 1
 		Facings: 16
+	icon: towers.png
+		Start: 10
 
 eden-turret-emp:
-	idle: op2_art.bmp
+	Inherits: turret-idle
+	turret: op2_art.bmp
 		Start: 14722
 		Length: 1
 		Facings: 16
+	icon: towers.png
+		Start: 12
 
 eden-turret-acidcloud:
-	idle: op2_art.bmp
+	Inherits: turret-idle
+	turret: op2_art.bmp
 		Start: 14706
 		Length: 1
 		Facings: 16
+	icon: towers.png
+		Start: 14
 
 eden-turret-thor:
-	idle: op2_art.bmp
+	Inherits: turret-idle
+	turret: op2_art.bmp
 		Start: 13859
 		Length: 8
 		Facings: 16
+	icon: towers.png
+		Start: 16
 
-eden-turret-supernova:
-	idle: op2_art.bmp
+eden-turret-starflare:
+	Inherits: turret-idle
+	turret: op2_art.bmp
 		Start: 17143
 		Length: 1
 		Facings: 1
+	icon: towers.png
+		Start: 8
 
 plymouth-turret-microwave:
-	idle: op2_art.bmp
+	Inherits: turret-idle
+	turret: op2_art.bmp
 		Start: 14374
 		Length: 1
 		Facings: 16
+	icon: towers.png
+		Start: 7
 
 plymouth-turret-rpg:
-	idle: op2_art.bmp
+	Inherits: turret-idle
+	turret: op2_art.bmp
 		Start: 11179
 		Length: 1
 		Facings: 16
+	icon: towers.png
+		Start: 11
 
 plymouth-turret-emp:
-	idle: op2_art.bmp
+	Inherits: turret-idle
+	turret: op2_art.bmp
 		Start: 23510
 		Length: 1
 		Facings: 16
+	icon: towers.png
+		Start: 13
 
 plymouth-turret-esg:
-	idle: op2_art.bmp
+	Inherits: turret-idle
+	turret: op2_art.bmp
 		Start: 15693
 		Length: 1
 		Facings: 16
+	icon: towers.png
+		Start: 17
 
 plymouth-turret-stickyfoam:
-	idle: op2_art.bmp
+	Inherits: turret-idle
+	turret: op2_art.bmp
 		Start: 14410
 		Length: 1
 		Facings: 16
+	icon: towers.png
+		Start: 15
+
+plymouth-turret-starflare:
+	Inherits: turret-idle
+	turret: op2_art.bmp
+		Start: 17143
+		Length: 1
+		Facings: 1
+	icon: towers.png
+		Start: 9
 
 plymouth-turret-supernova:
-	idle: op2_art.bmp
+	Inherits: turret-idle
+	turret: op2_art.bmp
 		Start: 13650
 		Length: 1
 		Facings: 1
+	icon: towers.png
+		Start: 18
