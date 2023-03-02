@@ -7,7 +7,7 @@ laser:
 		Width: 60
 		ZOffset: 2047
 		LaunchEffectPalette: 3
-		HitAnim: laserhit
+		HitAnim: puff3
 		HitAnimPalette: 6
 	Warhead@1Dam: SpreadDamage
 		Spread: 42

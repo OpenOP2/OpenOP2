@@ -1,0 +1,163 @@
+
+eden-lynx-laser:
+	Inherits: ^eden-lynx
+	turret: op2_art.bmp
+		Start: 16298 # double is 16314
+		Length: 1
+		Facings: 16
+	icon: units.png
+		Start: 18
+
+eden-lynx-rail-gun:
+	Inherits: ^eden-lynx
+	turret: op2_art.bmp
+		Start: 16080 # double is 16096
+		Length: 1
+		Facings: 16
+	icon: units.png
+		Start: 22
+
+eden-lynx-emp:
+	Inherits: ^eden-lynx
+	turret: op2_art.bmp
+		Start: 15709 # double is 15725
+		Length: 1
+		Facings: 16
+	icon: units.png
+		Start: 20
+
+eden-lynx-acid-cloud:
+	Inherits: ^eden-lynx
+	turret: op2_art.bmp
+		Start: 16362 # double is 16378
+		Length: 1
+		Facings: 16
+	icon: units.png
+		Start: 26
+
+eden-lynx-thor:
+	Inherits: ^eden-lynx
+	turret: op2_art.bmp
+		Start: 16330 # double is 16346
+		Length: 1
+		Facings: 16
+	icon: units.png
+		Start: 28
+
+eden-lynx-starflare:
+	Inherits: ^eden-lynx
+	turret: op2_art.bmp
+		Start: 16396 # double is 16397
+		Length: 1
+		Facings: 1
+	icon: units.png
+		Start: 24
+
+plymouth-lynx-microwave:
+	Inherits: ^plymouth-lynx
+	turret: op2_art.bmp
+		Start: 16266 # double is 16282
+		Length: 1
+		Facings: 16
+	icon: units.png
+		Start: 19
+
+plymouth-lynx-emp:
+	Inherits: ^plymouth-lynx
+	turret: op2_art.bmp
+		Start: 15741 # double 15757
+		Length: 1
+		Facings: 16
+	icon: units.png
+		Start: 21
+
+plymouth-lynx-rpg:
+	Inherits: ^plymouth-lynx
+	turret: op2_art.bmp
+		Start: 16112 # double 16128
+		Length: 1
+		Facings: 16
+	icon: units.png
+		Start: 23
+
+plymouth-lynx-stickyfoam:
+	Inherits: ^plymouth-lynx
+	turret: op2_art.bmp
+		Start: 16144 # double is 16160
+		Length: 1
+		Facings: 16
+	icon: units.png
+		Start: 27
+
+plymouth-lynx-esg:
+	Inherits: ^plymouth-lynx
+	turret: op2_art.bmp
+		Start: 16234 # double is 16250
+		Length: 1
+		Facings: 16
+	icon: units.png
+		Start: 29
+
+plymouth-lynx-starflare:
+	Inherits: ^plymouth-lynx
+	turret: op2_art.bmp
+		Start: 16022 # double is 16394
+		Length: 1
+		Facings: 1
+	icon: units.png
+		Start: 25
+
+plymouth-lynx-supernova:
+	Inherits: ^plymouth-lynx
+	turret: op2_art.bmp
+		Start: 16023 # double is 16395
+		Length: 1
+		Facings: 16
+	icon: units.png
+		Start: 56
+
+tank-turret-doubles:
+	turret-starflare-eden-double: op2_art.bmp
+		Start: 16397
+		Length: 1
+		Facings: 1
+	icon: units.png
+		Start: 21
+	turret-laser-double: op2_art.bmp
+		Start: 16314
+		Length: 1
+		Facings: 16
+	turret-thor-double: op2_art.bmp
+		Start: 16346
+		Length: 1
+		Facings: 16
+	turret-acid-cloud-double: op2_art.bmp
+		Start: 16378
+		Length: 1
+		Facings: 16
+	turret-starflare-plymouth-double: op2_art.bmp
+		Start: 16394
+		Length: 1
+		Facings: 1
+	turret-rpg-double: op2_art.bmp
+		Start: 16128
+		Length: 1
+		Facings: 16
+	turret-triple-plymouth: op2_art.bmp
+		Start: 16144
+		Length: 1
+		Facings: 16
+	turret-wide-double-plymouth: op2_art.bmp
+		Start: 16250
+		Length: 1
+		Facings: 16
+	turret-cannon-plymouth: op2_art.bmp
+		Start: 16266
+		Length: 1
+		Facings: 16
+	turret-cannon-double-plymouth: op2_art.bmp
+		Start: 16282
+		Length: 1
+		Facings: 16
+	icon: units.png
+		Start: 18

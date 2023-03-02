@@ -53,6 +53,7 @@ Sequences:
 	openop2|sequences/resources.yaml
 	openop2|sequences/walls.yaml
 	openop2|sequences/vehicles.yaml
+	openop2|sequences/combat-vehicles.yaml
 	openop2|sequences/structures.yaml
 	openop2|sequences/turrets.yaml
 	openop2|sequences/symbols.yaml

@@ -1,22 +1,26 @@
 eden-lynx-laser:
 	Inherits: ^eden-lynx
+	RenderSprites:
+		Image: eden-lynx-laser
 	Buildable:
 		Prerequisites: ~vehicles.eden
 		#IconPalette: 3
 		#Icon: iconlaser
 	WithSpriteTurret:
-		Sequence: turret-laser
+		Sequence: turret
 	Armament:
 		Weapon:	laser
 
 eden-lynx-rail-gun:
 	Inherits: ^eden-lynx
+	RenderSprites:
+		Image: eden-lynx-rail-gun
 	Buildable:
 		Prerequisites: ~vehicles.eden
 		#IconPalette: 3
 		#Icon: iconrail
 	WithSpriteTurret:
-		Sequence: turret-rail
+		Sequence: turret
 	Armament:
 		Weapon: rail-gun
 	Valued:
@@ -24,12 +28,14 @@ eden-lynx-rail-gun:
 
 plymouth-lynx-microwave:
 	Inherits: ^plymouth-lynx
+	RenderSprites:
+		Image: plymouth-lynx-microwave
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		#IconPalette: 3
 		#Icon: iconmicrowave
 	WithSpriteTurret:
-		Sequence: turret-cannon-plymouth
+		Sequence: turret
 		#Palette: playerMapped8
 		#IsPlayerPalette: True
 		#LocalOffset: 856,0,80
@@ -38,12 +44,14 @@ plymouth-lynx-microwave:
 
 plymouth-lynx-rpg:
 	Inherits: ^plymouth-lynx
+	RenderSprites:
+		Image: plymouth-lynx-rpg
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		#IconPalette: 3
 		#Icon: iconrpg
 	WithSpriteTurret:
-		Sequence: turret-rpg
+		Sequence: turret
 		#Palette: playerMapped8
 		#IsPlayerPalette: True
 		#LocalOffset: 856,0,80
