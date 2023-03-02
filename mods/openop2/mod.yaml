@@ -53,7 +53,9 @@ Sequences:
 	openop2|sequences/walls.yaml
 	openop2|sequences/vehicles.yaml
 	openop2|sequences/structures.yaml
-	#openop2|op2-groups.yaml
+	openop2|sequences/turrets.yaml
+	openop2|sequences/symbols.yaml
+	openop2|sequences/effects.yaml
 
 TileSets:
 	openop2|tilesets/default.yaml

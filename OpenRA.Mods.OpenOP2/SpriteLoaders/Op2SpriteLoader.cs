@@ -70,21 +70,20 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			var prtFile = prt.PrtFile;
 			var combinedFrames = new List<ISpriteFrame>();
 			var shadowColor = Color.FromArgb(150, 0, 0, 0);
+			var shadowColorInt = (uint)shadowColor.ToArgb();
 
 			for (var groupIndex = 0; groupIndex < prtFile.Groups.Length; groupIndex++)
 			{
-				var frameTotal = combinedFrames.Count;
 				var group = prtFile.Groups[groupIndex];
 				var groupWidth = group.SelLeft + group.SelRight + 10;
 				var groupHeight = group.SelTop + group.SelBottom + 10;
 
 				// sb.AppendLine($"Group index {groupIndex} starts at frame {frameTotal}");
-
 				// Console.WriteLine($"GROUP: {groupIndex} RECT (LRTB): {group.SelLeft}, {group.SelRight}, {group.SelTop}, {group.SelBottom}  SIZE: {groupWidth} x {groupHeight}");
 				for (var frameIndex = 0; frameIndex < group.Frames.Length; frameIndex++)
 				{
 					var frame = group.Frames[frameIndex];
-					var frameColors = new Color[groupWidth, groupHeight];
+					var frameColors = new uint[groupWidth, groupHeight];
 
 					for (var picIndex = 0; picIndex < frame.Pictures.Length; picIndex++)
 					{
@@ -113,25 +112,18 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 							var palette = prt.FramePalettes[imageInfo.Palette];
 							var pixelUint = palette[colorIndex];
 
-							var colorBytes = BitConverter.GetBytes(pixelUint);
-							var r = colorBytes[0];
-							var g = colorBytes[1];
-							var b = colorBytes[2];
-							var a = colorBytes[3];
-							var pixelColor = isShadow ? shadowColor : Color.FromArgb(a, r, g, b);
-
 							// Console.WriteLine($" Color (RGBA): {r} {g} {b} {a}");
 							// Console.WriteLine($" Write color: {picX + x}, {picY + y}");
 							var pixX = x + picX;
 							var pixY = y + picY;
-							if (pixX >= groupWidth || pixY >= groupHeight || pixX < 0 || pixY < 0)
+							if (pixX < 0 || pixY < 0 || pixX >= groupWidth || pixY >= groupHeight)
 							{
 								// Console.WriteLine($"Pixel out of range at: {pixX}, {pixY} (GROUP SIZE: {groupWidth} x {groupHeight})");
 								// Console.WriteLine($"  Group index: {groupIndex} Frame index: {frameIndex}   Pic Index: {picIndex}   Img Number: {imgNumber}");
 								continue;
 							}
 
-							frameColors[pixX, pixY] = pixelColor;
+							frameColors[pixX, pixY] = isShadow ? shadowColorInt : pixelUint;
 						}
 					}
 
@@ -143,10 +135,12 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						{
 							var thisColor = frameColors[x, y];
 							var colorIndex = ((y * groupWidth * 4) + (x * 4));
-							byteData[colorIndex] = thisColor.R;
-							byteData[colorIndex + 1] = thisColor.G;
-							byteData[colorIndex + 2] = thisColor.B;
-							byteData[colorIndex + 3] = thisColor.A;
+							var colorBytes = BitConverter.GetBytes(thisColor);
+
+							byteData[colorIndex] = colorBytes[0];
+							byteData[colorIndex + 1] = colorBytes[1];
+							byteData[colorIndex + 2] = colorBytes[2];
+							byteData[colorIndex + 3] = colorBytes[3];
 						}
 					}
 

@@ -444,3 +444,9 @@ resources:
 				Offset: 1, 1
 				Length: 1
 				ZOffset: 0
+
+deck:
+	idle: op2_art.bmp
+		Start: 24182
+		Length: 1
+		Facings: 1

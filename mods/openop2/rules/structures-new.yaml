@@ -32,33 +32,17 @@ plymouth-tokamak:
 	Buildable:
 		Prerequisites: ~structures.plymouth
 
-eden-smelter-common:
+eden-structure-factory:
 	RenderSprites:
-		Image: eden-smelter-common
-	Inherits: ^OreSmelterCommon
+		Image: eden-structure-factory
+	Inherits: ^StructureFactory
 	Buildable:
 		Prerequisites: ~structures.eden
 
-plymouth-smelter-common:
+plymouth-structure-factory:
 	RenderSprites:
-		Image: plymouth-smelter-common
-	Inherits: ^OreSmelterCommon
-	Selectable:
-		Bounds: 2048,2112,0,-32
-	Buildable:
-		Prerequisites: ~structures.plymouth
-
-eden-agridome:
-	RenderSprites:
-		Image: eden-agridome
-	Inherits: ^Power
-	Buildable:
-		Prerequisites: ~structures.eden
-
-plymouth-agridome:
-	RenderSprites:
-		Image: plymouth-agridome
-	Inherits: ^Power
+		Image: plymouth-structure-factory
+	Inherits: ^StructureFactory
 	Selectable:
 		Bounds: 2048,2112,0,-32
 	Buildable:
@@ -80,29 +64,82 @@ plymouth-vehicle-factory:
 	Buildable:
 		Prerequisites: ~structures.plymouth
 
-eden-structure-factory:
+eden-agridome:
 	RenderSprites:
-		Image: eden-structure-factory
-	Inherits: ^Power
+		Image: eden-agridome
+	Inherits: ^Agridome
 	Buildable:
 		Prerequisites: ~structures.eden
 
-plymouth-structure-factory:
+plymouth-agridome:
 	RenderSprites:
-		Image: plymouth-structure-factory
-	Inherits: ^Power
+		Image: plymouth-agridome
+	Inherits: ^Agridome
 	Selectable:
 		Bounds: 2048,2112,0,-32
 	Buildable:
 		Prerequisites: ~structures.plymouth
 
+eden-smelter-common:
+	RenderSprites:
+		Image: eden-smelter-common
+	Inherits: ^OreSmelterCommon
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-smelter-common:
+	RenderSprites:
+		Image: plymouth-smelter-common
+	Inherits: ^OreSmelterCommon
+	Selectable:
+		Bounds: 2048,2112,0,-32
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-smelter-rare:
+	RenderSprites:
+		Image: eden-smelter-rare
+	Inherits: ^OreSmelterRare
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-smelter-rare:
+	RenderSprites:
+		Image: plymouth-smelter-rare
+	Inherits: ^OreSmelterRare
+	Selectable:
+		Bounds: 2048,2112,0,-32
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-storage-common:
+	RenderSprites:
+		Image: eden-storage-common
+	Inherits: ^StorageCommon
+
+plymouth-storage-common:
+	RenderSprites:
+		Image: plymouth-storage-common
+	Inherits: ^StorageCommon
+	Selectable:
+		Bounds: 2048,2112,0,-32
+
+eden-storage-rare:
+	RenderSprites:
+		Image: eden-storage-rare
+	Inherits: ^StorageRare
+
+plymouth-storage-rare:
+	RenderSprites:
+		Image: plymouth-storage-rare
+	Inherits: ^StorageRare
+	Selectable:
+		Bounds: 2048,2112,0,-32
 
 eden-mine-common:
 	RenderSprites:
 		Image: eden-mine-common
 	Inherits: ^MineCommon
-	#Buildable:
-	#	Prerequisites: ~structures.eden
 
 plymouth-mine-common:
 	RenderSprites:
@@ -110,5 +147,217 @@ plymouth-mine-common:
 	Inherits: ^MineCommon
 	Selectable:
 		Bounds: 2048,2112,0,-32
-	#Buildable:
-	#	Prerequisites: ~structures.plymouth
+
+eden-mine-rare:
+	RenderSprites:
+		Image: eden-mine-rare
+	Inherits: ^MineRare
+
+plymouth-mine-rare:
+	RenderSprites:
+		Image: plymouth-mine-rare
+	Inherits: ^MineRare
+	Selectable:
+		Bounds: 2048,2112,0,-32
+
+eden-mine-magma:
+	RenderSprites:
+		Image: eden-mine-magma
+	Inherits: ^MineMagma
+
+plymouth-mhd-generator:
+	RenderSprites:
+		Image: plymouth-mhd-generator
+	Inherits: ^MhdGenerator
+	Selectable:
+		Bounds: 2048,2112,0,-32
+
+eden-residence:
+	RenderSprites:
+		Image: eden-residence
+	Inherits: ^Residence
+
+plymouth-residence:
+	RenderSprites:
+		Image: plymouth-residence
+	Inherits: ^Residence
+
+eden-residence-advanced:
+	RenderSprites:
+		Image: eden-residence-advanced
+	Inherits: ^Residence
+
+plymouth-residence-reinforced:
+	RenderSprites:
+		Image: plymouth-residence-reinforced
+	Inherits: ^Residence
+
+eden-dirt:
+	RenderSprites:
+		Image: eden-dirt
+	Inherits: ^Dirt
+
+plymouth-dirt:
+	RenderSprites:
+		Image: plymouth-dirt
+	Inherits: ^Dirt
+
+eden-gorf:
+	RenderSprites:
+		Image: eden-gorf
+	Inherits: ^Gorf
+
+plymouth-gorf:
+	RenderSprites:
+		Image: plymouth-gorf
+	Inherits: ^Gorf
+
+eden-medical-center:
+	RenderSprites:
+		Image: eden-medical-center
+	Inherits: ^MedicalCenter
+
+plymouth-medical-center:
+	RenderSprites:
+		Image: plymouth-medical-center
+	Inherits: ^MedicalCenter
+
+eden-nursery:
+	RenderSprites:
+		Image: eden-nursery
+	Inherits: ^Nursery
+
+plymouth-nursery:
+	RenderSprites:
+		Image: plymouth-nursery
+	Inherits: ^Nursery
+
+eden-recreation-facility:
+	RenderSprites:
+		Image: eden-recreation-facility
+	Inherits: ^RecreationFacility
+
+plymouth-recreation-facility:
+	RenderSprites:
+		Image: plymouth-recreation-facility
+	Inherits: ^RecreationFacility
+
+eden-trade-center:
+	RenderSprites:
+		Image: eden-trade-center
+	Inherits: ^TradeCenter
+
+plymouth-trade-center:
+	RenderSprites:
+		Image: plymouth-trade-center
+	Inherits: ^TradeCenter
+
+eden-lab-basic:
+	RenderSprites:
+		Image: eden-lab-basic
+	Inherits: ^Laboratory
+
+plymouth-lab-basic:
+	RenderSprites:
+		Image: plymouth-lab-basic
+	Inherits: ^Laboratory
+
+eden-lab-standard:
+	RenderSprites:
+		Image: eden-lab-standard
+	Inherits: ^Laboratory
+
+plymouth-lab-standard:
+	RenderSprites:
+		Image: plymouth-lab-standard
+	Inherits: ^Laboratory
+
+eden-lab-advanced:
+	RenderSprites:
+		Image: eden-lab-advanced
+	Inherits: ^Laboratory
+
+plymouth-lab-advanced:
+	RenderSprites:
+		Image: plymouth-lab-advanced
+	Inherits: ^Laboratory
+
+eden-robot-command-center:
+	RenderSprites:
+		Image: eden-robot-command-center
+	Inherits: ^RobotCommandCenter
+
+plymouth-robot-command-center:
+	RenderSprites:
+		Image: plymouth-robot-command-center
+	Inherits: ^RobotCommandCenter
+
+eden-solar-power-array:
+	RenderSprites:
+		Image: eden-solar-power-array
+	Inherits: ^SolarPowerArray
+
+plymouth-solar-power-array:
+	RenderSprites:
+		Image: plymouth-solar-power-array
+	Inherits: ^SolarPowerArray
+
+eden-university:
+	RenderSprites:
+		Image: eden-university
+	Inherits: ^University
+
+plymouth-university:
+	RenderSprites:
+		Image: plymouth-university
+	Inherits: ^University
+
+eden-spaceport:
+	RenderSprites:
+		Image: eden-spaceport
+	Inherits: ^Spaceport
+
+plymouth-spaceport:
+	RenderSprites:
+		Image: plymouth-spaceport
+	Inherits: ^Spaceport
+
+eden-meteor-defense:
+	RenderSprites:
+		Image: eden-meteor-defense
+	Inherits: ^MeteorDefense
+
+eden-geothermal-plant:
+	RenderSprites:
+		Image: eden-geothermal-plant
+	Inherits: ^GeothermalPlant
+
+plymouth-arachnid-factory:
+	RenderSprites:
+		Image: plymouth-arachnid-factory
+	Inherits: ^ArachnidFactory
+
+plymouth-forum:
+	RenderSprites:
+		Image: plymouth-forum
+	Inherits: ^Forum
+
+eden-consumer-factory:
+	RenderSprites:
+		Image: eden-consumer-factory
+	Inherits: ^ConsumerFactory
+
+eden-observatory:
+	RenderSprites:
+		Image: eden-observatory
+	Inherits: ^Observatory
+
+eden-light-tower:
+	RenderSprites:
+		Image: eden-light-tower
+	Inherits: ^LightTower
+
+plymouth-light-tower:
+	RenderSprites:
+		Image: plymouth-light-tower
+	Inherits: ^LightTower

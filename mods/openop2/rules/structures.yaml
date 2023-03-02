@@ -150,6 +150,79 @@
 	#	SpawnOffset: 3,2
 	#	Facing: 0
 
+^OreSmelterRare:
+	Inherits: ^Op2Building
+	Inherits@shape: ^4x3Shape
+	Tooltip:
+		Name: Ore Smelter (Rare)
+	Selectable:
+		Bounds: 4096,3264,0,-96
+	Building:
+		Footprint: xxxx xxxx xxx_
+		Dimensions: 4,3
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 1536
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 60
+		Prerequisites: ~disabled
+		Description: Smelts raw rare ore into credits.
+	Voiced:
+		VoiceSet: OreSmelterVoice
+	ProvidesPrerequisite:
+		Prerequisite: anyrefinery
+	Health:
+		HP: 2000
+	Power:
+		Amount: -50
+	Armor:
+		Type: Heavy
+	Valued:
+		Cost: 2000
+	RevealsShroud:
+		Range: 4c0
+	Refinery:
+		DockAngle: 270
+		DockOffset: 3,2
+	StoresResources:
+		Capacity: 5000
+
+^StructureFactory:
+	Inherits: ^Op2Building
+	Inherits@shape: ^4x3Shape
+	Tooltip:
+		Name: Structure Factory
+	Selectable:
+		Bounds: 4096,3264,0,-96
+	Building:
+		Footprint: xxxx xxxx xxxx
+		Dimensions: 4,3
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 1536
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 40
+		#Prerequisites: ~techlevel.infonly
+		Prerequisites: ~disabled
+		Description: Produces structures.
+		IconPalette: 6
+	Voiced:
+		VoiceSet: VehicleFactoryVoice
+	Health:
+		HP: 3000
+	Power:
+		Amount: -50
+	Armor:
+		Type: Medium
+	Valued:
+		Cost: 2000
+	RevealsShroud:
+		Range: 4c0
+
 ^VehicleFactory:
 	Inherits: ^Op2Building
 	Inherits@shape: ^4x3Shape
@@ -243,6 +316,774 @@
 	PlacesResourcesWhenCreated:
 		ResourceType: ore.depot
 		Amount: 1200000
+
+^MineRare:
+	Inherits: ^Building
+	Inherits@shape: ^1x1Shape
+	Tooltip:
+		Name: Mine (Rare)
+		GenericName: Mine
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	ProvidesPrerequisite:
+		Prerequisite: anymine
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+	WithDirectionalIdleOverlay@deck:
+		Sequence: deck
+		Palette: 8
+		Offset: 0,-512,0
+	PlacesResourcesWhenCreated:
+		ResourceType: ore.depot
+		Amount: 1200000
+
+^MineMagma:
+	Inherits: ^Building
+	Inherits@shape: ^1x1Shape
+	Tooltip:
+		Name: Mine (Magma)
+		GenericName: Mine
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	ProvidesPrerequisite:
+		Prerequisite: anymine
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+	WithDirectionalIdleOverlay@deck:
+		Sequence: deck
+		Palette: 8
+		Offset: 0,-512,0
+	PlacesResourcesWhenCreated:
+		ResourceType: ore.depot
+		Amount: 1200000
+
+^StorageCommon:
+	Inherits: ^Building
+	Inherits@shape: ^1x1Shape
+	Tooltip:
+		Name: Storage (Common)
+		GenericName: Ore Storage
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^StorageRare:
+	Inherits: ^Building
+	Inherits@shape: ^1x1Shape
+	Tooltip:
+		Name: Storage (Rare)
+		GenericName: Ore Storage
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^Agridome:
+	Inherits: ^Building
+	Inherits@shape: ^1x1Shape
+	Tooltip:
+		Name: Agridome
+		GenericName: Agridome
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^MhdGenerator:
+	Inherits: ^Building
+	Inherits@shape: ^1x1Shape
+	Tooltip:
+		Name: MHD Generator
+		GenericName: MHD Generator
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^Residence:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Residence
+		GenericName: Residence
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^Dirt:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: DIRT
+		GenericName: DIRT
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^Gorf:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: GORF
+		GenericName: GORF
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^MedicalCenter:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Medical Center
+		GenericName: Medical Center
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^Nursery:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Nursery
+		GenericName: Nursery
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^RecreationFacility:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Recreation Facility
+		GenericName: Recreation Facility
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^TradeCenter:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Trade Center
+		GenericName: Trade Center
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^Laboratory:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Laboratory
+		GenericName: Laboratory
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^RobotCommandCenter:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Robot Command Center
+		GenericName: Robot Command Center
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^SolarPowerArray:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Solar Power Array
+		GenericName: Solar Power Array
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^University:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: University
+		GenericName: University
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^Spaceport:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Spaceport
+		GenericName: Spaceport
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^MeteorDefense:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Meteor Defense
+		GenericName: Meteor Defense
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^GeothermalPlant:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Geothermal Plant
+		GenericName: Geothermal Plant
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^ArachnidFactory:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Arachnid Factory
+		GenericName: Arachnid Factory
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^Forum:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Forum
+		GenericName: Forum
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^ConsumerFactory:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Consumer Factory
+		GenericName: Consumer Factory
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^Observatory:
+	Inherits: ^Building
+	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Observatory
+		GenericName: Observatory
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+		TerrainTypes: Ore
+		AllowPlacementOnResources: true
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: MineVoice
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+	RevealsShroud:
+		Range: 4c0
+
+^LightTower:
+	Inherits: ^Building
+	Inherits@shape: ^1x1Shape
+	Tooltip:
+		Name: Light Tower
+		GenericName: Light Tower
+	Selectable:
+		Bounds: 1152,1152,0,0
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Voiced:
+		VoiceSet: TurretVoice
+	Health:
+		HP: 500
+	Armor:
+		Type: Heavy
+	Power:
+		Amount: -10
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 700
+	RevealsShroud:
+		Range: 4c0
 
 ^GuardPost:
 	Inherits: ^Defense
