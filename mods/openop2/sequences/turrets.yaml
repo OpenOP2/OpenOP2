@@ -106,7 +106,7 @@ plymouth-turret-stickyfoam:
 plymouth-turret-starflare:
 	Inherits: turret-idle
 	turret: op2_art.bmp
-		Start: 17143
+		Start: 13649
 		Length: 1
 		Facings: 1
 	icon: towers.png

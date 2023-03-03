@@ -2,63 +2,89 @@ eden-turret-laser:
 	RenderSprites:
 		Image: eden-turret-laser
 	Inherits: ^GuardPost
+	Buildable:
+		Prerequisites: ~structures.eden
 
 eden-turret-railgun:
 	RenderSprites:
 		Image: eden-turret-railgun
 	Inherits: ^GuardPost
+	Buildable:
+		Prerequisites: ~structures.eden
 
 eden-turret-emp:
 	RenderSprites:
 		Image: eden-turret-emp
 	Inherits: ^GuardPost
+	Buildable:
+		Prerequisites: ~structures.eden
 
 eden-turret-acidcloud:
 	RenderSprites:
 		Image: eden-turret-acidcloud
 	Inherits: ^GuardPost
+	Buildable:
+		Prerequisites: ~structures.eden
 
 eden-turret-thor:
 	RenderSprites:
 		Image: eden-turret-thor
 	Inherits: ^GuardPost
+	Buildable:
+		Prerequisites: ~structures.eden
 
 eden-turret-starflare:
 	RenderSprites:
 		Image: eden-turret-starflare
 	Inherits: ^GuardPost
+	Buildable:
+		Prerequisites: ~structures.eden
 
 plymouth-turret-microwave:
 	RenderSprites:
 		Image: plymouth-turret-microwave
 	Inherits: ^GuardPost
+	Buildable:
+		Prerequisites: ~structures.plymouth
 
 plymouth-turret-rpg:
 	RenderSprites:
 		Image: plymouth-turret-rpg
 	Inherits: ^GuardPost
+	Buildable:
+		Prerequisites: ~structures.plymouth
 
 plymouth-turret-emp:
 	RenderSprites:
 		Image: plymouth-turret-emp
 	Inherits: ^GuardPost
+	Buildable:
+		Prerequisites: ~structures.plymouth
 
 plymouth-turret-esg:
 	RenderSprites:
 		Image: plymouth-turret-esg
 	Inherits: ^GuardPost
+	Buildable:
+		Prerequisites: ~structures.plymouth
 
 plymouth-turret-stickyfoam:
 	RenderSprites:
 		Image: plymouth-turret-stickyfoam
 	Inherits: ^GuardPost
+	Buildable:
+		Prerequisites: ~structures.plymouth
 
 plymouth-turret-starflare:
 	RenderSprites:
 		Image: plymouth-turret-starflare
 	Inherits: ^GuardPost
+	Buildable:
+		Prerequisites: ~structures.plymouth
 
 plymouth-turret-supernova:
 	RenderSprites:
 		Image: plymouth-turret-supernova
 	Inherits: ^GuardPost
+	Buildable:
+		Prerequisites: ~structures.plymouth
