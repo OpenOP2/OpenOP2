@@ -458,6 +458,8 @@
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Inherits@shape: ^1x1Shape
+	Selectable:
+		Bounds: 1024,1024
 	Interactable:
 		Bounds: 24,24
 	OwnerLostAction:
@@ -487,7 +489,7 @@
 		TargetTypes: Ground, DetonateAttack, Wall, NoAutoTarget
 	-GivesExperience:
 	RenderSprites:
-		Palette: effect
+		#Palette: effect
 	WithWallSpriteBody:
 	#Sellable:
 	#	SellSounds: cashturn.aud

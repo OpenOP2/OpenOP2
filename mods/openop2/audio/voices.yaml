@@ -19,6 +19,56 @@ TokamakVoice:
 	Voices:
 		Select: tokamsel.WAV
 
+LabBasicVoice:
+	DefaultVariant: 
+	Voices:
+		Select: lab_1.WAV
+
+LabStandardVoice:
+	DefaultVariant: 
+	Voices:
+		Select: lab_2.WAV
+
+LabAdvancedVoice:
+	DefaultVariant: 
+	Voices:
+		Select: lab_3.WAV
+
+MedicalCenterVoice:
+	DefaultVariant: 
+	Voices:
+		Select: medisel.WAV
+
+NurseryVoice:
+	DefaultVariant: 
+	Voices:
+		Select: nur_sel.WAV
+
+ResidenceBasicVoice:
+	DefaultVariant: 
+	Voices:
+		Select: res1_sel.WAV
+
+ResidenceStandardVoice:
+	DefaultVariant: 
+	Voices:
+		Select: res2_sel.WAV
+
+ResidenceAdvancedVoice:
+	DefaultVariant: 
+	Voices:
+		Select: res3_sel.WAV
+
+RobotCommandCenterVoice:
+	DefaultVariant: 
+	Voices:
+		Select: robosel.WAV
+
+UniversityVoice:
+	DefaultVariant: 
+	Voices:
+		Select: uni_sel.WAV
+
 OreSmelterVoice:
 	DefaultVariant: 
 	Voices:
@@ -27,17 +77,52 @@ OreSmelterVoice:
 VehicleFactoryVoice:
 	DefaultVariant: 
 	Voices:
-		Select: repvhc.WAV
+		Select: fac_sel.WAV
 
-MineVoice:
+TurretVoice:
+	DefaultVariant: 
+	Voices:
+		Select: guardsel.WAV
+
+AgridomeVoice:
+	DefaultVariant: 
+	Voices:
+		Select: ag_sel.wav
+
+CommonStorageVoice:
+	DefaultVariant: 
+	Voices:
+		Select: storage1.WAV
+
+RareStorageVoice:
+	DefaultVariant: 
+	Voices:
+		Select: storage2.WAV
+
+SpaceportVoice:
+	DefaultVariant: 
+	Voices:
+		Select: spaceprt.wav
+
+MineCommonVoice:
 	DefaultVariant: 
 	Voices:
 		Select: mine_1.WAV
 
+MineRareVoice:
+	DefaultVariant: 
+	Voices:
+		Select: mine_2.WAV
+
+MineMagmaVoice:
+	DefaultVariant: 
+	Voices:
+		Select: mine_2.WAV
+
 RoboDozerVoice:
 	DefaultVariant: 
 	Voices:
-		Select: earthwrk.wav
+		Select: dozr_sel.wav
 		Action: beep2.WAV
 
 CargoTruckVoice:
@@ -47,10 +132,22 @@ CargoTruckVoice:
 		Action: beep2.WAV
 		Unload: dump.wav
 
-ConVecVoice: # TODO
+EarthworkerVoice:
 	DefaultVariant: 
 	Voices:
-		Select: robosel.WAV
+		Select: earthwrk.wav
+		Action: beep2.WAV
+
+ConVecVoice:
+	DefaultVariant: 
+	Voices:
+		Select: consvhc.wav
+		Action: beep2.WAV
+
+EvacuationTransportVoice:
+	DefaultVariant: 
+	Voices:
+		Select: evac_trn.wav
 		Action: beep2.WAV
 
 RoboSurveyorVoice:
@@ -65,10 +162,28 @@ RoboMinerVoice:
 		Select: robmine.wav
 		Action: beep2.WAV
 
+ScoutVoice:
+	DefaultVariant: 
+	Voices:
+		Select: scout.wav
+		Action: beep2.WAV
+
 LynxVoice:
 	DefaultVariant: 
 	Voices:
-		Select: repvhc.WAV
+		Select: comblit.wav
+		Action: beep2.WAV
+
+PantherVoice:
+	DefaultVariant: 
+	Voices:
+		Select: combmed.wav
+		Action: beep2.WAV
+
+TigerVoice:
+	DefaultVariant: 
+	Voices:
+		Select: combhev.wav
 		Action: beep2.WAV
 
 TurretVoice:

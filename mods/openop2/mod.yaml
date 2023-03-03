@@ -35,29 +35,25 @@ Rules:
 	openop2|rules/world.yaml
 	openop2|rules/player.yaml
 	openop2|rules/defaults.yaml
-	openop2|rules/defaults-op2.yaml
+	openop2|rules/defaults-vehicles.yaml
+	openop2|rules/defaults-structures.yaml
 	openop2|rules/misc.yaml
-	openop2|rules/vehicles-new.yaml
 	openop2|rules/vehicles.yaml
 	openop2|rules/structures.yaml
-	openop2|rules/structures-new.yaml
 	openop2|rules/turrets.yaml
-	#openop2|rules/walls.yaml
-	#openop2|rules/structures.yaml
-	#openop2|rules/rules-generated.yaml
-	#openop2|rules/rules-example.yaml
+	openop2|rules/walls.yaml
 	openop2|rules/ai.yaml
 
 Sequences:
-	openop2|sequences/misc.yaml
-	openop2|sequences/resources.yaml
-	openop2|sequences/walls.yaml
 	openop2|sequences/vehicles.yaml
 	openop2|sequences/combat-vehicles.yaml
 	openop2|sequences/structures.yaml
 	openop2|sequences/turrets.yaml
 	openop2|sequences/symbols.yaml
 	openop2|sequences/effects.yaml
+	openop2|sequences/misc.yaml
+	openop2|sequences/resources.yaml
+	openop2|sequences/walls.yaml
 
 TileSets:
 	openop2|tilesets/default.yaml

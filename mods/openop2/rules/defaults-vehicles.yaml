@@ -200,7 +200,7 @@
 		Description: Can build pipelines and walls.
 		IconPalette: 5
 	Voiced:
-		VoiceSet: RoboDozerVoice
+		VoiceSet: EarthworkerVoice
 	Valued:
 		Cost: 400
 	Tooltip:
@@ -237,6 +237,60 @@
 		Range: 7c0
 	Mobile:
 		Speed: 72
+	WithSpriteTurret:
+	AttackTurreted:
+	Armament:
+
+^Panther:
+	Inherits: ^TurretedVehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 50
+		#Prerequisites: ~techlevel.infonly
+		#Prerequisites: ~vehicles
+		Description: Standard combat vehicle.
+		IconPalette: 5
+	Voiced:
+		VoiceSet: PantherVoice
+	Valued:
+		Cost: 1250
+	Tooltip:
+		Name: Panther
+	Health:
+		HP: 600
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 7c0
+	Mobile:
+		Speed: 48
+	WithSpriteTurret:
+	AttackTurreted:
+	Armament:
+
+^Tiger:
+	Inherits: ^TurretedVehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 60
+		#Prerequisites: ~techlevel.infonly
+		#Prerequisites: ~vehicles
+		Description: Advanced combat vehicle.
+		IconPalette: 5
+	Voiced:
+		VoiceSet: TigerVoice
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: Tiger
+	Health:
+		HP: 900
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 7c0
+	Mobile:
+		Speed: 32
 	WithSpriteTurret:
 	AttackTurreted:
 	Armament:

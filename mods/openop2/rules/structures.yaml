@@ -1,1133 +1,363 @@
-# Hi Zhall and Zon,
-# You'll want to look in rules-generated.yaml for the building you need, then move it into here and customize it as you need.
-
-# Templates start here
-
-^Op2Building:
-	Inherits: ^Building
-	Buildable:
-		IconPalette: 5
-	ActorLostNotification:
-		Notification: StructureDestroyed
-	#WithBuildingPlacedAnimation:
-	#	Sequence: make
-	#	RequiresCondition: !build-incomplete
-	#WithDeathAnimation:
-	#	DeathSequence: die
-	#	UseDeathTypeSuffix: false
-	#	CrushedSequencePalette: 3
-
-^CommandCenter:
-	Inherits: ^Op2Building
-	Inherits@shape: ^3x3Shape
-	Tooltip:
-		Name: Command Center
-	Selectable:
-		Bounds: 3072,2624,0,-288
+eden-command-center:
+	RenderSprites:
+		Image: eden-command-center
+	Inherits: ^CommandCenter
 	Building:
 		Footprint: xxx _xx
-		Dimensions: 3,2
-	HitShape:
-		Type: Rectangle
-			TopLeft: -1536, -1536
-			BottomRight: 1536, 1536
+	-Buildable:
+
+plymouth-command-center:
+	RenderSprites:
+		Image: plymouth-command-center
+	Inherits: ^CommandCenter
+	Selectable:
+		Bounds: 3072,2432,0,-192
+	Building:
+		Footprint: xxx xx_
+	-Buildable:
+
+eden-tokamak:
+	RenderSprites:
+		Image: eden-tokamak
+	Inherits: ^Power
 	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 10
-		Prerequisites: ~disabled
-		Description: Produces structures (for now).
-	Voiced:
-		VoiceSet: CommandCenterVoice
-	ProvidesPrerequisite@eden:
-		Factions: eden
-		Prerequisite: structures.eden
-	ProvidesPrerequisite@plymouth:
-		Factions: plymouth
-		Prerequisite: structures.plymouth
-	ProvidesPrerequisite@structures:
-		Prerequisite: structures
-	Health:
-		HP: 2500
-	Power:
-		Amount: 50
-	Armor:
-		Type: Heavy
-	Valued:
-		Cost: 2800
-	RevealsShroud:
-		Range: 5c0
-		RevealGeneratedShroud: False
-	Production:
-		Produces: Building, Defense
-	ProductionBar@Building:
-		ProductionType: Building
-	ProductionBar@Defense:
-		ProductionType: Defense
-		Color: 8A8A8A
-	ProvidesRadar:
-	BaseBuilding:
-	Sellable:
-		RequiresCondition: !being-captured && !being-demolished
-	BaseProvider:
-		PauseOnCondition: being-captured
-		Range: 16c0
+		Prerequisites: ~structures.eden
 
-^Power:
-	Inherits: ^Op2Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Tokamak
+plymouth-tokamak:
+	RenderSprites:
+		Image: plymouth-tokamak
+	Inherits: ^Power
 	Selectable:
-		Bounds: 2048,2432,0,-192
-	Building:
-		Footprint: xx xx
-		Dimensions: 2,2
-	HitShape:
-		Type: Rectangle
-			TopLeft: -1536, -1536
-			BottomRight: 1536, 1536
+		Bounds: 2048,2112,0,-32
 	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 20
-		Prerequisites: ~disabled
-		Description: Produces power for your colony.
-	Voiced:
-		VoiceSet: TokamakVoice
-	ProvidesPrerequisite:
-		Prerequisite: anypower
-	Health:
-		HP: 1500
-	Power:
-		Amount: 300
-	Armor:
-		Type: Heavy
-	Valued:
-		Cost: 1100
-	RevealsShroud:
-		Range: 4c0
-	ScalePowerWithHealth:
+		Prerequisites: ~structures.plymouth
 
-^OreSmelterCommon:
-	Inherits: ^Op2Building
-	Inherits@shape: ^4x3Shape
-	Tooltip:
-		Name: Ore Smelter (Common)
-	Selectable:
-		Bounds: 4096,3264,0,-96
-	Building:
-		Footprint: xxxx xxxx xxx_
-		Dimensions: 4,3
-	HitShape:
-		Type: Rectangle
-			TopLeft: -1536, -1536
-			BottomRight: 1536, 1536
+eden-structure-factory:
+	RenderSprites:
+		Image: eden-structure-factory
+	Inherits: ^StructureFactory
 	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 30
-		Prerequisites: ~disabled
-		Description: Smelts raw common ore into credits.
-	Voiced:
-		VoiceSet: OreSmelterVoice
-	ProvidesPrerequisite:
-		Prerequisite: anyrefinery
-	Health:
-		HP: 2000
-	Power:
-		Amount: -50
-	Armor:
-		Type: Heavy
-	Valued:
-		Cost: 2000
-	RevealsShroud:
-		Range: 4c0
-	Refinery:
-		DockAngle: 270
-		DockOffset: 3,2
-	StoresResources:
-		Capacity: 5000
-	#FreeActor:
-	#	Actor: HARV
-	#	SpawnOffset: 3,2
-	#	Facing: 0
+		Prerequisites: ~structures.eden
 
-^OreSmelterRare:
-	Inherits: ^Op2Building
-	Inherits@shape: ^4x3Shape
-	Tooltip:
-		Name: Ore Smelter (Rare)
+plymouth-structure-factory:
+	RenderSprites:
+		Image: plymouth-structure-factory
+	Inherits: ^StructureFactory
 	Selectable:
-		Bounds: 4096,3264,0,-96
-	Building:
-		Footprint: xxxx xxxx xxx_
-		Dimensions: 4,3
-	HitShape:
-		Type: Rectangle
-			TopLeft: -1536, -1536
-			BottomRight: 1536, 1536
+		Bounds: 2048,2112,0,-32
 	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 60
-		Prerequisites: ~disabled
-		Description: Smelts raw rare ore into credits.
-	Voiced:
-		VoiceSet: OreSmelterVoice
-	ProvidesPrerequisite:
-		Prerequisite: anyrefinery
-	Health:
-		HP: 2000
-	Power:
-		Amount: -50
-	Armor:
-		Type: Heavy
-	Valued:
-		Cost: 2000
-	RevealsShroud:
-		Range: 4c0
-	Refinery:
-		DockAngle: 270
-		DockOffset: 3,2
-	StoresResources:
-		Capacity: 5000
+		Prerequisites: ~structures.plymouth
 
-^StructureFactory:
-	Inherits: ^Op2Building
-	Inherits@shape: ^4x3Shape
-	Tooltip:
-		Name: Structure Factory
-	Selectable:
-		Bounds: 4096,3264,0,-96
-	Building:
-		Footprint: xxxx xxxx xxxx
-		Dimensions: 4,3
-	HitShape:
-		Type: Rectangle
-			TopLeft: -1536, -1536
-			BottomRight: 1536, 1536
+eden-vehicle-factory:
+	RenderSprites:
+		Image: eden-vehicle-factory
+	Inherits: ^VehicleFactory
 	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 40
-		#Prerequisites: ~techlevel.infonly
-		Prerequisites: ~disabled
-		Description: Produces structures.
-		IconPalette: 6
-	Voiced:
-		VoiceSet: VehicleFactoryVoice
-	Health:
-		HP: 3000
-	Power:
-		Amount: -50
-	Armor:
-		Type: Medium
-	Valued:
-		Cost: 2000
-	RevealsShroud:
-		Range: 4c0
+		Prerequisites: ~structures.eden
 
-^VehicleFactory:
-	Inherits: ^Op2Building
-	Inherits@shape: ^4x3Shape
-	Tooltip:
-		Name: Vehicle Factory
+plymouth-vehicle-factory:
+	RenderSprites:
+		Image: plymouth-vehicle-factory
+	Inherits: ^VehicleFactory
 	Selectable:
-		Bounds: 4096,3264,0,-96
-	Building:
-		Footprint: xxxx xxxx xx=x
-		Dimensions: 4,3
-	HitShape:
-		Type: Rectangle
-			TopLeft: -1536, -1536
-			BottomRight: 1536, 1536
+		Bounds: 2048,2112,0,-32
 	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 40
-		#Prerequisites: ~techlevel.infonly
-		Prerequisites: ~disabled
-		Description: Produces vehicles.
-		IconPalette: 6
-	Voiced:
-		VoiceSet: VehicleFactoryVoice
-	ProvidesPrerequisite:
-		Prerequisite: vehicles
-	ProvidesPrerequisite@eden:
-		Factions: eden
-		Prerequisite: vehicles.eden
-	ProvidesPrerequisite@plymouth:
-		Factions: plymouth
-		Prerequisite: vehicles.plymouth
-	Health:
-		HP: 3000
-	Power:
-		Amount: -50
-	Armor:
-		Type: Medium
-	Valued:
-		Cost: 2000
-	RevealsShroud:
-		Range: 4c0
-	Production:
-		Produces: Vehicle
-	ProductionBar:
-		ProductionType: Vehicle
-	Exit@1:
-		Facing: 512
-		SpawnOffset: 512,0,0
-		ExitCell: 2,1
-		ProductionTypes: Vehicle
-	RallyPoint:
-		Palette: 8
-		IsPlayerPalette: false
-		Path: 2,3
+		Prerequisites: ~structures.plymouth
 
-^MineCommon:
-	Inherits: ^Building
-	Inherits@shape: ^1x1Shape
-	Tooltip:
-		Name: Mine (Common)
-		GenericName: Mine
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	ProvidesPrerequisite:
-		Prerequisite: anymine
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-	WithDirectionalIdleOverlay@deck:
-		Sequence: deck
-		Palette: 8
-		Offset: 0,-512,0
-	PlacesResourcesWhenCreated:
-		ResourceType: ore.depot
-		Amount: 1200000
-
-^MineRare:
-	Inherits: ^Building
-	Inherits@shape: ^1x1Shape
-	Tooltip:
-		Name: Mine (Rare)
-		GenericName: Mine
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	ProvidesPrerequisite:
-		Prerequisite: anymine
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-	WithDirectionalIdleOverlay@deck:
-		Sequence: deck
-		Palette: 8
-		Offset: 0,-512,0
-	PlacesResourcesWhenCreated:
-		ResourceType: ore.depot
-		Amount: 1200000
-
-^MineMagma:
-	Inherits: ^Building
-	Inherits@shape: ^1x1Shape
-	Tooltip:
-		Name: Mine (Magma)
-		GenericName: Mine
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	ProvidesPrerequisite:
-		Prerequisite: anymine
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-	WithDirectionalIdleOverlay@deck:
-		Sequence: deck
-		Palette: 8
-		Offset: 0,-512,0
-	PlacesResourcesWhenCreated:
-		ResourceType: ore.depot
-		Amount: 1200000
-
-^StorageCommon:
-	Inherits: ^Building
-	Inherits@shape: ^1x1Shape
-	Tooltip:
-		Name: Storage (Common)
-		GenericName: Ore Storage
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^StorageRare:
-	Inherits: ^Building
-	Inherits@shape: ^1x1Shape
-	Tooltip:
-		Name: Storage (Rare)
-		GenericName: Ore Storage
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^Agridome:
-	Inherits: ^Building
-	Inherits@shape: ^1x1Shape
-	Tooltip:
-		Name: Agridome
-		GenericName: Agridome
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^MhdGenerator:
-	Inherits: ^Building
-	Inherits@shape: ^1x1Shape
-	Tooltip:
-		Name: MHD Generator
-		GenericName: MHD Generator
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^Residence:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Residence
-		GenericName: Residence
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^Dirt:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: DIRT
-		GenericName: DIRT
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^Gorf:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: GORF
-		GenericName: GORF
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^MedicalCenter:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Medical Center
-		GenericName: Medical Center
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^Nursery:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Nursery
-		GenericName: Nursery
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^RecreationFacility:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Recreation Facility
-		GenericName: Recreation Facility
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^TradeCenter:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Trade Center
-		GenericName: Trade Center
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^Laboratory:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Laboratory
-		GenericName: Laboratory
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^RobotCommandCenter:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Robot Command Center
-		GenericName: Robot Command Center
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^SolarPowerArray:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Solar Power Array
-		GenericName: Solar Power Array
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^University:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: University
-		GenericName: University
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^Spaceport:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Spaceport
-		GenericName: Spaceport
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^MeteorDefense:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Meteor Defense
-		GenericName: Meteor Defense
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^GeothermalPlant:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Geothermal Plant
-		GenericName: Geothermal Plant
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^ArachnidFactory:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Arachnid Factory
-		GenericName: Arachnid Factory
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^Forum:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Forum
-		GenericName: Forum
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^ConsumerFactory:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Consumer Factory
-		GenericName: Consumer Factory
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^Observatory:
-	Inherits: ^Building
-	Inherits@shape: ^2x2Shape
-	Tooltip:
-		Name: Observatory
-		GenericName: Observatory
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
-	RevealsShroud:
-		Range: 4c0
-
-^LightTower:
-	Inherits: ^Building
-	Inherits@shape: ^1x1Shape
-	Tooltip:
-		Name: Light Tower
-		GenericName: Light Tower
-	Selectable:
-		Bounds: 1152,1152,0,0
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: TurretVoice
-	Health:
-		HP: 500
-	Armor:
-		Type: Heavy
-	Power:
-		Amount: -10
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 700
-	RevealsShroud:
-		Range: 4c0
-
-^GuardPost:
-	Inherits: ^Defense
-	Inherits@shape: ^1x1Shape
-	Tooltip:
-		Name: Guard Post
-		GenericName: Guard Post
-	Selectable:
-		Bounds: 1152,1152,0,0
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
+eden-agridome:
+	RenderSprites:
+		Image: eden-agridome
+	Inherits: ^Agridome
 	Buildable:
-		Queue: Defense
-		BuildPaletteOrder: 10
-		Prerequisites: ~disabled
-		Description: Basic defense turret.
-		IconPalette: 3
-	#Voiced:
-	#	VoiceSet: TurretVoice
-	Health:
-		HP: 500
-	Armor:
-		Type: Heavy
-	Power:
-		Amount: -10
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 700
-	RevealsShroud:
-		Range: 4c0
-	Armament:
-		Weapon: laser
-	#	Recoil: 85
-	#	RecoilRecovery: 25
-	#	LocalOffset: 768,0,90
-	#	MuzzlePalette: 3
-	Turreted:
-		TurnSpeed: 64
-	AttackTurreted:
-	WithSpriteTurret:
-	RenderRangeCircle:
+		Prerequisites: ~structures.eden
+
+plymouth-agridome:
+	RenderSprites:
+		Image: plymouth-agridome
+	Inherits: ^Agridome
+	Selectable:
+		Bounds: 2048,2112,0,-32
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-smelter-common:
+	RenderSprites:
+		Image: eden-smelter-common
+	Inherits: ^OreSmelterCommon
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-smelter-common:
+	RenderSprites:
+		Image: plymouth-smelter-common
+	Inherits: ^OreSmelterCommon
+	Selectable:
+		Bounds: 2048,2112,0,-32
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-smelter-rare:
+	RenderSprites:
+		Image: eden-smelter-rare
+	Inherits: ^OreSmelterRare
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-smelter-rare:
+	RenderSprites:
+		Image: plymouth-smelter-rare
+	Inherits: ^OreSmelterRare
+	Selectable:
+		Bounds: 2048,2112,0,-32
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-storage-common:
+	RenderSprites:
+		Image: eden-storage-common
+	Inherits: ^StorageCommon
+
+plymouth-storage-common:
+	RenderSprites:
+		Image: plymouth-storage-common
+	Inherits: ^StorageCommon
+	Selectable:
+		Bounds: 2048,2112,0,-32
+
+eden-storage-rare:
+	RenderSprites:
+		Image: eden-storage-rare
+	Inherits: ^StorageRare
+
+plymouth-storage-rare:
+	RenderSprites:
+		Image: plymouth-storage-rare
+	Inherits: ^StorageRare
+	Selectable:
+		Bounds: 2048,2112,0,-32
+
+eden-mine-common:
+	RenderSprites:
+		Image: eden-mine-common
+	Inherits: ^MineCommon
+
+plymouth-mine-common:
+	RenderSprites:
+		Image: plymouth-mine-common
+	Inherits: ^MineCommon
+	Selectable:
+		Bounds: 2048,2112,0,-32
+
+eden-mine-rare:
+	RenderSprites:
+		Image: eden-mine-rare
+	Inherits: ^MineRare
+
+plymouth-mine-rare:
+	RenderSprites:
+		Image: plymouth-mine-rare
+	Inherits: ^MineRare
+	Selectable:
+		Bounds: 2048,2112,0,-32
+
+eden-mine-magma:
+	RenderSprites:
+		Image: eden-mine-magma
+	Inherits: ^MineMagma
+
+plymouth-mhd-generator:
+	RenderSprites:
+		Image: plymouth-mhd-generator
+	Inherits: ^MhdGenerator
+	Selectable:
+		Bounds: 2048,2112,0,-32
+
+eden-residence:
+	RenderSprites:
+		Image: eden-residence
+	Inherits: ^Residence
+
+plymouth-residence:
+	RenderSprites:
+		Image: plymouth-residence
+	Inherits: ^Residence
+
+eden-residence-advanced:
+	RenderSprites:
+		Image: eden-residence-advanced
+	Inherits: ^Residence
+
+plymouth-residence-reinforced:
+	RenderSprites:
+		Image: plymouth-residence-reinforced
+	Inherits: ^Residence
+
+eden-dirt:
+	RenderSprites:
+		Image: eden-dirt
+	Inherits: ^Dirt
+
+plymouth-dirt:
+	RenderSprites:
+		Image: plymouth-dirt
+	Inherits: ^Dirt
+
+eden-gorf:
+	RenderSprites:
+		Image: eden-gorf
+	Inherits: ^Gorf
+
+plymouth-gorf:
+	RenderSprites:
+		Image: plymouth-gorf
+	Inherits: ^Gorf
+
+eden-medical-center:
+	RenderSprites:
+		Image: eden-medical-center
+	Inherits: ^MedicalCenter
+
+plymouth-medical-center:
+	RenderSprites:
+		Image: plymouth-medical-center
+	Inherits: ^MedicalCenter
+
+eden-nursery:
+	RenderSprites:
+		Image: eden-nursery
+	Inherits: ^Nursery
+
+plymouth-nursery:
+	RenderSprites:
+		Image: plymouth-nursery
+	Inherits: ^Nursery
+
+eden-recreation-facility:
+	RenderSprites:
+		Image: eden-recreation-facility
+	Inherits: ^RecreationFacility
+
+plymouth-recreation-facility:
+	RenderSprites:
+		Image: plymouth-recreation-facility
+	Inherits: ^RecreationFacility
+
+eden-trade-center:
+	RenderSprites:
+		Image: eden-trade-center
+	Inherits: ^TradeCenter
+
+plymouth-trade-center:
+	RenderSprites:
+		Image: plymouth-trade-center
+	Inherits: ^TradeCenter
+
+eden-lab-basic:
+	RenderSprites:
+		Image: eden-lab-basic
+	Inherits: ^Laboratory
+
+plymouth-lab-basic:
+	RenderSprites:
+		Image: plymouth-lab-basic
+	Inherits: ^Laboratory
+
+eden-lab-standard:
+	RenderSprites:
+		Image: eden-lab-standard
+	Inherits: ^Laboratory
+
+plymouth-lab-standard:
+	RenderSprites:
+		Image: plymouth-lab-standard
+	Inherits: ^Laboratory
+
+eden-lab-advanced:
+	RenderSprites:
+		Image: eden-lab-advanced
+	Inherits: ^Laboratory
+
+plymouth-lab-advanced:
+	RenderSprites:
+		Image: plymouth-lab-advanced
+	Inherits: ^Laboratory
+
+eden-robot-command-center:
+	RenderSprites:
+		Image: eden-robot-command-center
+	Inherits: ^RobotCommandCenter
+
+plymouth-robot-command-center:
+	RenderSprites:
+		Image: plymouth-robot-command-center
+	Inherits: ^RobotCommandCenter
+
+eden-solar-power-array:
+	RenderSprites:
+		Image: eden-solar-power-array
+	Inherits: ^SolarPowerArray
+
+plymouth-solar-power-array:
+	RenderSprites:
+		Image: plymouth-solar-power-array
+	Inherits: ^SolarPowerArray
+
+eden-university:
+	RenderSprites:
+		Image: eden-university
+	Inherits: ^University
+
+plymouth-university:
+	RenderSprites:
+		Image: plymouth-university
+	Inherits: ^University
+
+eden-spaceport:
+	RenderSprites:
+		Image: eden-spaceport
+	Inherits: ^Spaceport
+
+plymouth-spaceport:
+	RenderSprites:
+		Image: plymouth-spaceport
+	Inherits: ^Spaceport
+
+eden-meteor-defense:
+	RenderSprites:
+		Image: eden-meteor-defense
+	Inherits: ^MeteorDefense
+
+eden-geothermal-plant:
+	RenderSprites:
+		Image: eden-geothermal-plant
+	Inherits: ^GeothermalPlant
+
+plymouth-arachnid-factory:
+	RenderSprites:
+		Image: plymouth-arachnid-factory
+	Inherits: ^ArachnidFactory
+
+plymouth-forum:
+	RenderSprites:
+		Image: plymouth-forum
+	Inherits: ^Forum
+
+eden-consumer-factory:
+	RenderSprites:
+		Image: eden-consumer-factory
+	Inherits: ^ConsumerFactory
+
+eden-observatory:
+	RenderSprites:
+		Image: eden-observatory
+	Inherits: ^Observatory
+
+eden-light-tower:
+	RenderSprites:
+		Image: eden-light-tower
+	Inherits: ^LightTower
+
+plymouth-light-tower:
+	RenderSprites:
+		Image: plymouth-light-tower
+	Inherits: ^LightTower
