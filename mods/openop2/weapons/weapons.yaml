@@ -60,7 +60,7 @@ rpg:
 		Image: projectile2
 		Shadow: True
 		LaunchAngle: 0
-		TrailImage: puff1
+		TrailImage: puff2
 		TrailPalette: 1
 		TrailInterval: 1
 	Warhead@1Dam: SpreadDamage
@@ -90,6 +90,6 @@ rail-gun:
 		Speed: 450
 		Image: projectile1
 		Shadow: False
-		TrailImage: rail-trail-start
+		TrailImage: rail-trail
 		TrailPalette: 6
 		TrailInterval: 1
