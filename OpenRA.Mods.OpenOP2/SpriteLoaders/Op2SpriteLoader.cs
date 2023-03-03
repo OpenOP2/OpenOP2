@@ -54,7 +54,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 			LoadAllImagesAsSpriteFrames(s, dataStart);
 
-			frames = CombineGroupImagesIntoFrames(s);
+			frames = CombineGroupImagesIntoFrames();
 
 			// using (var sw = new StreamWriter(OutputFilename))
 			// {
@@ -63,7 +63,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			return true;
 		}
 
-		ISpriteFrame[] CombineGroupImagesIntoFrames(Stream s)
+		ISpriteFrame[] CombineGroupImagesIntoFrames()
 		{
 			var prt = Prt.Instance;
 			var prtFile = prt.PrtFile;
