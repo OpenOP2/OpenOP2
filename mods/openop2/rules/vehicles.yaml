@@ -59,3 +59,40 @@ plymouth-lynx-rpg:
 		Weapon: rpg
 	Valued:
 		Cost: 1150
+
+eden-panther-emp:
+	Inherits: ^eden-panther
+	RenderSprites:
+		Image: eden-panther-emp
+	Buildable:
+		Prerequisites: ~vehicles.eden
+		#IconPalette: 3
+		#Icon: iconrpg
+	WithSpriteTurret:
+		Sequence: turret
+		#Palette: playerMapped8
+		#IsPlayerPalette: True
+		#LocalOffset: 856,0,80
+	Armament:
+		Weapon: microwave
+	Valued:
+		Cost: 2150
+
+
+plymouth-tiger-rpg:
+	Inherits: ^plymouth-tiger
+	RenderSprites:
+		Image: plymouth-tiger-rpg
+	Buildable:
+		Prerequisites: ~vehicles.plymouth
+		#IconPalette: 3
+		#Icon: iconrpg
+	WithSpriteTurret:
+		Sequence: turret
+		#Palette: playerMapped8
+		#IsPlayerPalette: True
+		#LocalOffset: 856,0,80
+	Armament:
+		Weapon: rpg
+	Valued:
+		Cost: 2150

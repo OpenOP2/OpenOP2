@@ -127,6 +127,264 @@ plymouth-lynx-supernova:
 	icon: units.png
 		Start: 56
 
+# Panthers
+eden-panther-laser:
+	Inherits: ^eden-panther
+	turret: op2_art.bmp
+		Start: 16298 # double is 16314
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 30
+
+eden-panther-rail-gun:
+	Inherits: ^eden-panther
+	turret: op2_art.bmp
+		Start: 16080 # double is 16096
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 34
+
+eden-panther-emp:
+	Inherits: ^eden-panther
+	turret: op2_art.bmp
+		Start: 15709 # double is 15725
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 32
+
+eden-panther-acid-cloud:
+	Inherits: ^eden-panther
+	turret: op2_art.bmp
+		Start: 16362 # double is 16378
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 38
+
+eden-panther-thor:
+	Inherits: ^eden-panther
+	turret: op2_art.bmp
+		Start: 16330 # double is 16346
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 40
+
+eden-panther-starflare:
+	Inherits: ^eden-panther
+	turret: op2_art.bmp
+		Start: 16396 # double is 16397
+		Length: 1
+		Facings: 1
+	icon: units.png
+		Start: 36
+
+plymouth-panther-microwave:
+	Inherits: ^plymouth-panther
+	turret: op2_art.bmp
+		Start: 16266 # double is 16282
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 31
+
+plymouth-panther-emp:
+	Inherits: ^plymouth-panther
+	turret: op2_art.bmp
+		Start: 15741 # double 15757
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 33
+
+plymouth-panther-rpg:
+	Inherits: ^plymouth-panther
+	turret: op2_art.bmp
+		Start: 16112 # double 16128
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 35
+
+plymouth-panther-stickyfoam:
+	Inherits: ^plymouth-panther
+	turret: op2_art.bmp
+		Start: 16144 # double is 16160
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 39
+
+plymouth-panther-esg:
+	Inherits: ^plymouth-panther
+	turret: op2_art.bmp
+		Start: 16234 # double is 16250
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 41
+
+plymouth-panther-starflare:
+	Inherits: ^plymouth-panther
+	turret: op2_art.bmp
+		Start: 16022 # double is 16394
+		Length: 1
+		Facings: 1
+	icon: units.png
+		Start: 37
+
+plymouth-panther-supernova:
+	Inherits: ^plymouth-panther
+	turret: op2_art.bmp
+		Start: 16023 # double is 16395
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 57
+
+# Tigers
+eden-tiger-laser:
+	Inherits: ^eden-tiger
+	turret: op2_art.bmp
+		Start: 16298 # double is 16314
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 42
+
+eden-tiger-rail-gun:
+	Inherits: ^eden-tiger
+	turret: op2_art.bmp
+		Start: 16080 # double is 16096
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 46
+
+eden-tiger-emp:
+	Inherits: ^eden-tiger
+	turret: op2_art.bmp
+		Start: 15709 # double is 15725
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 44
+
+eden-tiger-acid-cloud:
+	Inherits: ^eden-tiger
+	turret: op2_art.bmp
+		Start: 16362 # double is 16378
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 50
+
+eden-tiger-thor:
+	Inherits: ^eden-tiger
+	turret: op2_art.bmp
+		Start: 16330 # double is 16346
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 52
+
+eden-tiger-starflare:
+	Inherits: ^eden-tiger
+	turret: op2_art.bmp
+		Start: 16396 # double is 16397
+		Length: 1
+		Facings: 1
+	icon: units.png
+		Start: 48
+
+plymouth-tiger-microwave:
+	Inherits: ^plymouth-tiger
+	turret: op2_art.bmp
+		Start: 16266 # double is 16282
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 43
+
+plymouth-tiger-emp:
+	Inherits: ^plymouth-tiger
+	turret: op2_art.bmp
+		Start: 15741 # double 15757
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 45
+
+plymouth-tiger-rpg:
+	Inherits: ^plymouth-tiger
+	turret: op2_art.bmp
+		Start: 16112 # double 16128
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 47
+
+plymouth-tiger-stickyfoam:
+	Inherits: ^plymouth-tiger
+	turret: op2_art.bmp
+		Start: 16144 # double is 16160
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 51
+
+plymouth-tiger-esg:
+	Inherits: ^plymouth-tiger
+	turret: op2_art.bmp
+		Start: 16234 # double is 16250
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 53
+
+plymouth-tiger-starflare:
+	Inherits: ^plymouth-tiger
+	turret: op2_art.bmp
+		Start: 16022 # double is 16394
+		Length: 1
+		Facings: 1
+	icon: units.png
+		Start: 49
+
+plymouth-tiger-supernova:
+	Inherits: ^plymouth-tiger
+	turret: op2_art.bmp
+		Start: 16023 # double is 16395
+		Length: 1
+		Facings: 16
+		FacingOffset: 4
+	icon: units.png
+		Start: 58
+
 tank-turret-doubles:
 	turret-starflare-eden-double: op2_art.bmp
 		Start: 16397
