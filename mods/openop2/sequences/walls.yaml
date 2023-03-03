@@ -1,884 +1,189 @@
-lava-wall-mud:
-	icon:
-		Length: 1
-		Combine:
-			well0002.bmp: single-segment-ew
-				Frames: 15
-				Length: 1
-	idle:
-		Length: 16
-		Combine:
-			well0002.bmp: single-segment-ew
-				Frames: 15
-				Length: 1
-			well0002.bmp: segment-ns-n
-				Frames: 12
-				Length: 1
-			well0002.bmp: segment-ew-e
-				Frames: 13
-				Length: 1
-			well0002.bmp: segment-corner-sw
-				Frames: 5
-				Length: 1
-			well0002.bmp: segment-ns-s
-				Frames: 11
-				Length: 1
-			well0002.bmp: segment-ns
-				Frames: 1
-				Length: 1
-			well0002.bmp: segment-corner-nw
-				Frames: 3
-				Length: 1
-			well0002.bmp: segment-t-e
-				Frames: 10
-				Length: 1
-			well0002.bmp: segment-ew-w
-				Frames: 14
-				Length: 1
-			well0002.bmp: segment-corner-se
-				Frames: 4
-				Length: 1
-			well0002.bmp: segment-ew
-				Frames: 0
-				Length: 1
-			well0002.bmp: segment-t-n
-				Frames: 6
-				Length: 1
-			well0002.bmp: segment-corner-ne
-				Frames: 2
-				Length: 1
-			well0002.bmp: segment-t-w
-				Frames: 9
-				Length: 1
-			well0002.bmp: segment-t-s
-				Frames: 7
-				Length: 1
-			well0002.bmp: segment-x
-				Frames: 8
-				Length: 1
 
-microbe-wall-mud:
-	icon:
+^concrete-wall-icon:
+	icon: towers.png
+		Start: 19
 		Length: 1
-		Combine:
-			well0002.bmp: single-segment-ew
-				Frames: 16
-				Length: 1
-	idle:
-		Length: 16
-		Combine:
-			well0002.bmp: single-segment-ew
-				Frames: 31
-				Length: 1
-			well0002.bmp: segment-ns-n
-				Frames: 28
-				Length: 1
-			well0002.bmp: segment-ew-e
-				Frames: 29
-				Length: 1
-			well0002.bmp: segment-corner-sw
-				Frames: 21
-				Length: 1
-			well0002.bmp: segment-ns-s
-				Frames: 27
-				Length: 1
-			well0002.bmp: segment-ns
-				Frames: 17
-				Length: 1
-			well0002.bmp: segment-corner-nw
-				Frames: 19
-				Length: 1
-			well0002.bmp: segment-t-e
-				Frames: 26
-				Length: 1
-			well0002.bmp: segment-ew-w
-				Frames: 30
-				Length: 1
-			well0002.bmp: segment-corner-se
-				Frames: 20
-				Length: 1
-			well0002.bmp: segment-ew
-				Frames: 16
-				Length: 1
-			well0002.bmp: segment-t-n
-				Frames: 22
-				Length: 1
-			well0002.bmp: segment-corner-ne
-				Frames: 18
-				Length: 1
-			well0002.bmp: segment-t-w
-				Frames: 25
-				Length: 1
-			well0002.bmp: segment-t-s
-				Frames: 23
-				Length: 1
-			well0002.bmp: segment-x
-				Frames: 24
-				Length: 1
+
+^lava-wall-icon:
+	icon: towers.png
+		Start: 21
+		Length: 1
+
+^microbe-wall-icon:
+	icon: towers.png
+		Start: 20
+		Length: 1
 
 concrete-wall-mud:
-	icon:
-		Length: 1
-		Combine:
-			well0002.bmp: single-segment-ew
-				Frames: 76
-				Length: 1
-	idle:
+	Inherits: ^concrete-wall-icon
+	#icon:
+	#	Length: 1
+	#	Combine:
+	#		well0002.bmp: single-segment-ew
+	#			Frames: 76
+	#			Length: 1
+	idle: well0002.bmp
+		Frames: 76, 73, 74, 66, 72, 62, 64, 71, 75, 65, 61, 67, 63, 70, 68, 69
 		Length: 16
-		Combine:
-			well0002.bmp: single-segment-ew
-				Frames: 76
-				Length: 1
-			well0002.bmp: segment-ns-n
-				Frames: 73
-				Length: 1
-			well0002.bmp: segment-ew-e
-				Frames: 74
-				Length: 1
-			well0002.bmp: segment-corner-sw
-				Frames: 66
-				Length: 1
-			well0002.bmp: segment-ns-s
-				Frames: 72
-				Length: 1
-			well0002.bmp: segment-ns
-				Frames: 62
-				Length: 1
-			well0002.bmp: segment-corner-nw
-				Frames: 64
-				Length: 1
-			well0002.bmp: segment-t-e
-				Frames: 71
-				Length: 1
-			well0002.bmp: segment-ew-w
-				Frames: 75
-				Length: 1
-			well0002.bmp: segment-corner-se
-				Frames: 65
-				Length: 1
-			well0002.bmp: segment-ew
-				Frames: 61
-				Length: 1
-			well0002.bmp: segment-t-n
-				Frames: 67
-				Length: 1
-			well0002.bmp: segment-corner-ne
-				Frames: 63
-				Length: 1
-			well0002.bmp: segment-t-w
-				Frames: 70
-				Length: 1
-			well0002.bmp: segment-t-s
-				Frames: 68
-				Length: 1
-			well0002.bmp: segment-x
-				Frames: 69
-				Length: 1
-
-concrete-wall-mud-damaged1:
-	icon:
-		Length: 1
-		Combine:
-			well0002.bmp: single-segment-ew
-				Frames: 92
-				Length: 1
-	idle:
-		Length: 16
-		Combine:
-			well0002.bmp: single-segment-ew
-				Frames: 92
-				Length: 1
-			well0002.bmp: segment-ns-n
-				Frames: 89
-				Length: 1
-			well0002.bmp: segment-ew-e
-				Frames: 90
-				Length: 1
-			well0002.bmp: segment-corner-sw
-				Frames: 82
-				Length: 1
-			well0002.bmp: segment-ns-s
-				Frames: 88
-				Length: 1
-			well0002.bmp: segment-ns
-				Frames: 78
-				Length: 1
-			well0002.bmp: segment-corner-nw
-				Frames: 80
-				Length: 1
-			well0002.bmp: segment-t-e
-				Frames: 87
-				Length: 1
-			well0002.bmp: segment-ew-w
-				Frames: 91
-				Length: 1
-			well0002.bmp: segment-corner-se
-				Frames: 81
-				Length: 1
-			well0002.bmp: segment-ew
-				Frames: 77
-				Length: 1
-			well0002.bmp: segment-t-n
-				Frames: 83
-				Length: 1
-			well0002.bmp: segment-corner-ne
-				Frames: 79
-				Length: 1
-			well0002.bmp: segment-t-w
-				Frames: 86
-				Length: 1
-			well0002.bmp: segment-t-s
-				Frames: 84
-				Length: 1
-			well0002.bmp: segment-x
-				Frames: 85
-				Length: 1
-
-concrete-wall-mud-damaged2:
-	icon:
-		Length: 1
-		Combine:
-			well0002.bmp: single-segment-ew
-				Frames: 108
-				Length: 1
-	idle:
-		Length: 16
-		Combine:
-			well0002.bmp: single-segment-ew
-				Frames: 108
-				Length: 1
-			well0002.bmp: segment-ns-n
-				Frames: 105
-				Length: 1
-			well0002.bmp: segment-ew-e
-				Frames: 106
-				Length: 1
-			well0002.bmp: segment-corner-sw
-				Frames: 98
-				Length: 1
-			well0002.bmp: segment-ns-s
-				Frames: 104
-				Length: 1
-			well0002.bmp: segment-ns
-				Frames: 94
-				Length: 1
-			well0002.bmp: segment-corner-nw
-				Frames: 96
-				Length: 1
-			well0002.bmp: segment-t-e
-				Frames: 103
-				Length: 1
-			well0002.bmp: segment-ew-w
-				Frames: 107
-				Length: 1
-			well0002.bmp: segment-corner-se
-				Frames: 97
-				Length: 1
-			well0002.bmp: segment-ew
-				Frames: 93
-				Length: 1
-			well0002.bmp: segment-t-n
-				Frames: 99
-				Length: 1
-			well0002.bmp: segment-corner-ne
-				Frames: 95
-				Length: 1
-			well0002.bmp: segment-t-w
-				Frames: 102
-				Length: 1
-			well0002.bmp: segment-t-s
-				Frames: 100
-				Length: 1
-			well0002.bmp: segment-x
-				Frames: 101
-				Length: 1
-
-lava-wall-rock:
-	icon:
-		Length: 1
-		Combine:
-			well0005.bmp: single-segment-ew
-				Frames: 15
-				Length: 1
-	idle:
-		Length: 16
-		Combine:
-			well0005.bmp: single-segment-ew
-				Frames: 15
-				Length: 1
-			well0005.bmp: segment-ns-n
-				Frames: 12
-				Length: 1
-			well0005.bmp: segment-ew-e
-				Frames: 13
-				Length: 1
-			well0005.bmp: segment-corner-sw
-				Frames: 5
-				Length: 1
-			well0005.bmp: segment-ns-s
-				Frames: 11
-				Length: 1
-			well0005.bmp: segment-ns
-				Frames: 1
-				Length: 1
-			well0005.bmp: segment-corner-nw
-				Frames: 3
-				Length: 1
-			well0005.bmp: segment-t-e
-				Frames: 10
-				Length: 1
-			well0005.bmp: segment-ew-w
-				Frames: 14
-				Length: 1
-			well0005.bmp: segment-corner-se
-				Frames: 4
-				Length: 1
-			well0005.bmp: segment-ew
-				Frames: 0
-				Length: 1
-			well0005.bmp: segment-t-n
-				Frames: 6
-				Length: 1
-			well0005.bmp: segment-corner-ne
-				Frames: 2
-				Length: 1
-			well0005.bmp: segment-t-w
-				Frames: 9
-				Length: 1
-			well0005.bmp: segment-t-s
-				Frames: 7
-				Length: 1
-			well0005.bmp: segment-x
-				Frames: 8
-				Length: 1
-
-microbe-wall-rock:
-	icon:
-		Length: 1
-		Combine:
-			well0005.bmp: single-segment-ew
-				Frames: 16
-				Length: 1
-	idle:
-		Length: 16
-		Combine:
-			well0005.bmp: single-segment-ew
-				Frames: 31
-				Length: 1
-			well0005.bmp: segment-ns-n
-				Frames: 28
-				Length: 1
-			well0005.bmp: segment-ew-e
-				Frames: 29
-				Length: 1
-			well0005.bmp: segment-corner-sw
-				Frames: 21
-				Length: 1
-			well0005.bmp: segment-ns-s
-				Frames: 27
-				Length: 1
-			well0005.bmp: segment-ns
-				Frames: 17
-				Length: 1
-			well0005.bmp: segment-corner-nw
-				Frames: 19
-				Length: 1
-			well0005.bmp: segment-t-e
-				Frames: 26
-				Length: 1
-			well0005.bmp: segment-ew-w
-				Frames: 30
-				Length: 1
-			well0005.bmp: segment-corner-se
-				Frames: 20
-				Length: 1
-			well0005.bmp: segment-ew
-				Frames: 16
-				Length: 1
-			well0005.bmp: segment-t-n
-				Frames: 22
-				Length: 1
-			well0005.bmp: segment-corner-ne
-				Frames: 18
-				Length: 1
-			well0005.bmp: segment-t-w
-				Frames: 25
-				Length: 1
-			well0005.bmp: segment-t-s
-				Frames: 23
-				Length: 1
-			well0005.bmp: segment-x
-				Frames: 24
-				Length: 1
 
 concrete-wall-rock:
-	icon:
-		Length: 1
-		Combine:
-			well0005.bmp: single-segment-ew
-				Frames: 55
-				Length: 1
-	idle:
+	Inherits: ^concrete-wall-icon
+	#icon:
+	#	Length: 1
+	#	Combine:
+	#		well0005.bmp: single-segment-ew
+	#			Frames: 55
+	#			Length: 1
+	idle: well0005.bmp
+		Frames: 55, 52, 53, 45, 51, 41, 43, 50, 54, 44, 40, 46, 42, 49, 47, 48
 		Length: 16
-		Combine:
-			well0005.bmp: single-segment-ew
-				Frames: 55
-				Length: 1
-			well0005.bmp: segment-ns-n
-				Frames: 52
-				Length: 1
-			well0005.bmp: segment-ew-e
-				Frames: 53
-				Length: 1
-			well0005.bmp: segment-corner-sw
-				Frames: 45
-				Length: 1
-			well0005.bmp: segment-ns-s
-				Frames: 51
-				Length: 1
-			well0005.bmp: segment-ns
-				Frames: 41
-				Length: 1
-			well0005.bmp: segment-corner-nw
-				Frames: 43
-				Length: 1
-			well0005.bmp: segment-t-e
-				Frames: 50
-				Length: 1
-			well0005.bmp: segment-ew-w
-				Frames: 54
-				Length: 1
-			well0005.bmp: segment-corner-se
-				Frames: 44
-				Length: 1
-			well0005.bmp: segment-ew
-				Frames: 40
-				Length: 1
-			well0005.bmp: segment-t-n
-				Frames: 46
-				Length: 1
-			well0005.bmp: segment-corner-ne
-				Frames: 42
-				Length: 1
-			well0005.bmp: segment-t-w
-				Frames: 49
-				Length: 1
-			well0005.bmp: segment-t-s
-				Frames: 47
-				Length: 1
-			well0005.bmp: segment-x
-				Frames: 48
-				Length: 1
-
-concrete-wall-rock-damaged1:
-	icon:
-		Length: 1
-		Combine:
-			well0005.bmp: single-segment-ew
-				Frames: 71
-				Length: 1
-	idle:
-		Length: 16
-		Combine:
-			well0005.bmp: single-segment-ew
-				Frames: 71
-				Length: 1
-			well0005.bmp: segment-ns-n
-				Frames: 68
-				Length: 1
-			well0005.bmp: segment-ew-e
-				Frames: 69
-				Length: 1
-			well0005.bmp: segment-corner-sw
-				Frames: 61
-				Length: 1
-			well0005.bmp: segment-ns-s
-				Frames: 67
-				Length: 1
-			well0005.bmp: segment-ns
-				Frames: 57
-				Length: 1
-			well0005.bmp: segment-corner-nw
-				Frames: 59
-				Length: 1
-			well0005.bmp: segment-t-e
-				Frames: 66
-				Length: 1
-			well0005.bmp: segment-ew-w
-				Frames: 70
-				Length: 1
-			well0005.bmp: segment-corner-se
-				Frames: 60
-				Length: 1
-			well0005.bmp: segment-ew
-				Frames: 56
-				Length: 1
-			well0005.bmp: segment-t-n
-				Frames: 62
-				Length: 1
-			well0005.bmp: segment-corner-ne
-				Frames: 58
-				Length: 1
-			well0005.bmp: segment-t-w
-				Frames: 65
-				Length: 1
-			well0005.bmp: segment-t-s
-				Frames: 63
-				Length: 1
-			well0005.bmp: segment-x
-				Frames: 64
-				Length: 1
-
-concrete-wall-rock-damaged2:
-	icon:
-		Length: 1
-		Combine:
-			well0005.bmp: single-segment-ew
-				Frames: 87
-				Length: 1
-	idle:
-		Length: 16
-		Combine:
-			well0005.bmp: single-segment-ew
-				Frames: 87
-				Length: 1
-			well0005.bmp: segment-ns-n
-				Frames: 84
-				Length: 1
-			well0005.bmp: segment-ew-e
-				Frames: 85
-				Length: 1
-			well0005.bmp: segment-corner-sw
-				Frames: 77
-				Length: 1
-			well0005.bmp: segment-ns-s
-				Frames: 83
-				Length: 1
-			well0005.bmp: segment-ns
-				Frames: 73
-				Length: 1
-			well0005.bmp: segment-corner-nw
-				Frames: 75
-				Length: 1
-			well0005.bmp: segment-t-e
-				Frames: 82
-				Length: 1
-			well0005.bmp: segment-ew-w
-				Frames: 86
-				Length: 1
-			well0005.bmp: segment-corner-se
-				Frames: 76
-				Length: 1
-			well0005.bmp: segment-ew
-				Frames: 72
-				Length: 1
-			well0005.bmp: segment-t-n
-				Frames: 78
-				Length: 1
-			well0005.bmp: segment-corner-ne
-				Frames: 74
-				Length: 1
-			well0005.bmp: segment-t-w
-				Frames: 81
-				Length: 1
-			well0005.bmp: segment-t-s
-				Frames: 79
-				Length: 1
-			well0005.bmp: segment-x
-				Frames: 80
-				Length: 1
-
-lava-wall-sand:
-	icon:
-		Length: 1
-		Combine:
-			well0009.bmp: single-segment-ew
-				Frames: 15
-				Length: 1
-	idle:
-		Length: 16
-		Combine:
-			well0009.bmp: single-segment-ew
-				Frames: 15
-				Length: 1
-			well0009.bmp: segment-ns-n
-				Frames: 12
-				Length: 1
-			well0009.bmp: segment-ew-e
-				Frames: 13
-				Length: 1
-			well0009.bmp: segment-corner-sw
-				Frames: 5
-				Length: 1
-			well0009.bmp: segment-ns-s
-				Frames: 11
-				Length: 1
-			well0009.bmp: segment-ns
-				Frames: 1
-				Length: 1
-			well0009.bmp: segment-corner-nw
-				Frames: 3
-				Length: 1
-			well0009.bmp: segment-t-e
-				Frames: 10
-				Length: 1
-			well0009.bmp: segment-ew-w
-				Frames: 14
-				Length: 1
-			well0009.bmp: segment-corner-se
-				Frames: 4
-				Length: 1
-			well0009.bmp: segment-ew
-				Frames: 0
-				Length: 1
-			well0009.bmp: segment-t-n
-				Frames: 6
-				Length: 1
-			well0009.bmp: segment-corner-ne
-				Frames: 2
-				Length: 1
-			well0009.bmp: segment-t-w
-				Frames: 9
-				Length: 1
-			well0009.bmp: segment-t-s
-				Frames: 7
-				Length: 1
-			well0009.bmp: segment-x
-				Frames: 8
-				Length: 1
-
-microbe-wall-sand:
-	icon:
-		Length: 1
-		Combine:
-			well0009.bmp: single-segment-ew
-				Frames: 16
-				Length: 1
-	idle:
-		Length: 16
-		Combine:
-			well0009.bmp: single-segment-ew
-				Frames: 31
-				Length: 1
-			well0009.bmp: segment-ns-n
-				Frames: 28
-				Length: 1
-			well0009.bmp: segment-ew-e
-				Frames: 29
-				Length: 1
-			well0009.bmp: segment-corner-sw
-				Frames: 21
-				Length: 1
-			well0009.bmp: segment-ns-s
-				Frames: 27
-				Length: 1
-			well0009.bmp: segment-ns
-				Frames: 17
-				Length: 1
-			well0009.bmp: segment-corner-nw
-				Frames: 19
-				Length: 1
-			well0009.bmp: segment-t-e
-				Frames: 26
-				Length: 1
-			well0009.bmp: segment-ew-w
-				Frames: 30
-				Length: 1
-			well0009.bmp: segment-corner-se
-				Frames: 20
-				Length: 1
-			well0009.bmp: segment-ew
-				Frames: 16
-				Length: 1
-			well0009.bmp: segment-t-n
-				Frames: 22
-				Length: 1
-			well0009.bmp: segment-corner-ne
-				Frames: 18
-				Length: 1
-			well0009.bmp: segment-t-w
-				Frames: 25
-				Length: 1
-			well0009.bmp: segment-t-s
-				Frames: 23
-				Length: 1
-			well0009.bmp: segment-x
-				Frames: 24
-				Length: 1
 
 concrete-wall-sand:
-	icon:
-		Length: 1
-		Combine:
-			well0009.bmp: single-segment-ew
-				Frames: 55
-				Length: 1
-	idle:
+	Inherits: ^concrete-wall-icon
+	#icon:
+	#	Length: 1
+	#	Combine:
+	#		well0009.bmp: single-segment-ew
+	#			Frames: 55
+	#			Length: 1
+	idle: well0009.bmp
+		Frames: 55, 52, 53, 45, 51, 41, 43, 50, 54, 44, 40, 46, 42, 49, 47, 48
 		Length: 16
-		Combine:
-			well0009.bmp: single-segment-ew
-				Frames: 55
-				Length: 1
-			well0009.bmp: segment-ns-n
-				Frames: 52
-				Length: 1
-			well0009.bmp: segment-ew-e
-				Frames: 53
-				Length: 1
-			well0009.bmp: segment-corner-sw
-				Frames: 45
-				Length: 1
-			well0009.bmp: segment-ns-s
-				Frames: 51
-				Length: 1
-			well0009.bmp: segment-ns
-				Frames: 41
-				Length: 1
-			well0009.bmp: segment-corner-nw
-				Frames: 43
-				Length: 1
-			well0009.bmp: segment-t-e
-				Frames: 50
-				Length: 1
-			well0009.bmp: segment-ew-w
-				Frames: 54
-				Length: 1
-			well0009.bmp: segment-corner-se
-				Frames: 44
-				Length: 1
-			well0009.bmp: segment-ew
-				Frames: 40
-				Length: 1
-			well0009.bmp: segment-t-n
-				Frames: 46
-				Length: 1
-			well0009.bmp: segment-corner-ne
-				Frames: 42
-				Length: 1
-			well0009.bmp: segment-t-w
-				Frames: 49
-				Length: 1
-			well0009.bmp: segment-t-s
-				Frames: 47
-				Length: 1
-			well0009.bmp: segment-x
-				Frames: 48
-				Length: 1
+
+lava-wall-mud:
+	Inherits: ^lava-wall-icon
+	#icon:
+	#	Length: 1
+	#	Combine:
+	#		well0002.bmp: single-segment-ew
+	#			Frames: 15
+	#			Length: 1
+	idle: well0002.bmp
+		Frames: 15, 12, 13, 5, 11, 1, 3, 10, 14, 4, 0, 6, 2, 9, 7, 8
+		Length: 16
+
+lava-wall-rock:
+	Inherits: ^lava-wall-icon
+	#icon:
+	#	Length: 1
+	#	Combine:
+	#		well0005.bmp: single-segment-ew
+	#			Frames: 15
+	#			Length: 1
+	idle: well0005.bmp
+		Frames: 15, 12, 13, 5, 11, 1, 3, 10, 14, 4, 0, 6, 2, 9, 7, 8
+		Length: 16
+
+lava-wall-sand:
+	Inherits: ^lava-wall-icon
+	#icon:
+	#	Length: 1
+	#	Combine:
+	#		well0009.bmp: single-segment-ew
+	#			Frames: 15
+	#			Length: 1
+	idle: well0009.bmp
+		Frames: 15, 12, 13, 5, 11, 1, 3, 10, 14, 4, 0, 6, 2, 9, 7, 8
+		Length: 16
+
+microbe-wall-mud:
+	Inherits: ^microbe-wall-icon
+	#icon:
+	#	Length: 1
+	#	Combine:
+	#		well0002.bmp: single-segment-ew
+	#			Frames: 16
+	#			Length: 1
+	idle: well0002.bmp
+		Frames: 31, 28, 29, 21, 27, 17, 19, 26, 30, 20, 16, 22, 18, 25, 23, 24
+		Length: 16
+
+microbe-wall-rock:
+	Inherits: ^microbe-wall-icon
+	#icon:
+	#	Length: 1
+	#	Combine:
+	#		well0005.bmp: single-segment-ew
+	#			Frames: 16
+	#			Length: 1
+	idle: well0005.bmp
+		Frames: 31, 28, 29, 21, 27, 17, 19, 26, 30, 20, 16, 22, 18, 25, 23, 24
+		Length: 16
+
+microbe-wall-sand:
+	Inherits: ^microbe-wall-icon
+	#icon:
+	#	Length: 1
+	#	Combine:
+	#		well0009.bmp: single-segment-ew
+	#			Frames: 16
+	#			Length: 1
+	idle: well0009.bmp
+		Frames: 31, 28, 29, 21, 27, 17, 19, 26, 30, 20, 16, 22, 18, 25, 23, 24
+		Length: 16
+
+concrete-wall-mud-damaged1:
+	#icon:
+	#	Length: 1
+	#	Combine:
+	#		well0002.bmp: single-segment-ew
+	#			Frames: 92
+	#			Length: 1
+	idle: well0002.bmp
+		Frames: 92, 89, 90, 82, 88, 78, 80, 87, 91, 81, 77, 83, 79, 86, 84, 85
+		Length: 16
+
+concrete-wall-mud-damaged2:
+	#icon:
+	#	Length: 1
+	#	Combine:
+	#		well0002.bmp: single-segment-ew
+	#			Frames: 108
+	#			Length: 1
+	idle: well0002.bmp
+		Frames: 108, 105, 106, 98, 104, 94, 96, 103, 107, 97, 93, 99, 95, 102, 100, 101
+		Length: 16
+
+concrete-wall-rock-damaged1:
+	#icon:
+	#	Length: 1
+	#	Combine:
+	#		well0005.bmp: single-segment-ew
+	#			Frames: 71
+	#			Length: 1
+	idle: well0005.bmp
+		Frames: 71, 68, 69, 61, 67, 57, 59, 66, 70, 60, 56, 62, 58, 65, 63, 64
+		Length: 16
+
+concrete-wall-rock-damaged2:
+	#icon:
+	#	Length: 1
+	#	Combine:
+	#		well0005.bmp: single-segment-ew
+	#			Frames: 87
+	#			Length: 1
+	idle: well0005.bmp
+		Frames: 87, 84, 85, 77, 83, 73, 75, 82, 86, 76, 72, 78, 74, 81, 79, 80
+		Length: 16
 
 concrete-wall-sand-damaged1:
-	icon:
-		Length: 1
-		Combine:
-			well0009.bmp: single-segment-ew
-				Frames: 71
-				Length: 1
-	idle:
+	#icon:
+	#	Length: 1
+	#	Combine:
+	#		well0009.bmp: single-segment-ew
+	#			Frames: 71
+	#			Length: 1
+	idle: well0009.bmp
+		Frames: 71, 68, 69, 61, 67, 57, 59, 66, 70, 60, 56, 62, 58, 65, 63, 64
 		Length: 16
-		Combine:
-			well0009.bmp: single-segment-ew
-				Frames: 71
-				Length: 1
-			well0009.bmp: segment-ns-n
-				Frames: 68
-				Length: 1
-			well0009.bmp: segment-ew-e
-				Frames: 69
-				Length: 1
-			well0009.bmp: segment-corner-sw
-				Frames: 61
-				Length: 1
-			well0009.bmp: segment-ns-s
-				Frames: 67
-				Length: 1
-			well0009.bmp: segment-ns
-				Frames: 57
-				Length: 1
-			well0009.bmp: segment-corner-nw
-				Frames: 59
-				Length: 1
-			well0009.bmp: segment-t-e
-				Frames: 66
-				Length: 1
-			well0009.bmp: segment-ew-w
-				Frames: 70
-				Length: 1
-			well0009.bmp: segment-corner-se
-				Frames: 60
-				Length: 1
-			well0009.bmp: segment-ew
-				Frames: 56
-				Length: 1
-			well0009.bmp: segment-t-n
-				Frames: 62
-				Length: 1
-			well0009.bmp: segment-corner-ne
-				Frames: 58
-				Length: 1
-			well0009.bmp: segment-t-w
-				Frames: 65
-				Length: 1
-			well0009.bmp: segment-t-s
-				Frames: 63
-				Length: 1
-			well0009.bmp: segment-x
-				Frames: 64
-				Length: 1
 
 concrete-wall-sand-damaged2:
-	icon:
-		Length: 1
-		Combine:
-			well0009.bmp: single-segment-ew
-				Frames: 87
-				Length: 1
-	idle:
+	#icon:
+	#	Length: 1
+	#	Combine:
+	#		well0009.bmp: single-segment-ew
+	#			Frames: 87
+	#			Length: 1
+	idle: well0009.bmp
+		Frames: 87, 84, 85, 77, 83, 73, 75, 82, 86, 76, 72, 78, 74, 81, 79, 80
 		Length: 16
-		Combine:
-			well0009.bmp: single-segment-ew
-				Frames: 87
-				Length: 1
-			well0009.bmp: segment-ns-n
-				Frames: 84
-				Length: 1
-			well0009.bmp: segment-ew-e
-				Frames: 85
-				Length: 1
-			well0009.bmp: segment-corner-sw
-				Frames: 77
-				Length: 1
-			well0009.bmp: segment-ns-s
-				Frames: 83
-				Length: 1
-			well0009.bmp: segment-ns
-				Frames: 73
-				Length: 1
-			well0009.bmp: segment-corner-nw
-				Frames: 75
-				Length: 1
-			well0009.bmp: segment-t-e
-				Frames: 82
-				Length: 1
-			well0009.bmp: segment-ew-w
-				Frames: 86
-				Length: 1
-			well0009.bmp: segment-corner-se
-				Frames: 76
-				Length: 1
-			well0009.bmp: segment-ew
-				Frames: 72
-				Length: 1
-			well0009.bmp: segment-t-n
-				Frames: 78
-				Length: 1
-			well0009.bmp: segment-corner-ne
-				Frames: 74
-				Length: 1
-			well0009.bmp: segment-t-w
-				Frames: 81
-				Length: 1
-			well0009.bmp: segment-t-s
-				Frames: 79
-				Length: 1
-			well0009.bmp: segment-x
-				Frames: 80
-				Length: 1
