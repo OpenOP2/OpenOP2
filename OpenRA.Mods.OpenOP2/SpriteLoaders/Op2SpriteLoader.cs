@@ -39,7 +39,6 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 				return false;
 			}
 
-
 			var size = s.ReadUInt32();
 			var reserved1 = s.ReadUInt16();
 			var reserved2 = s.ReadUInt16();
@@ -150,7 +149,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						Data = byteData,
 						FrameSize = new Size(groupWidth, groupHeight),
 
-						// Offset = new float2(group.CenterX, group.CenterY),
+						// Offset = new float2(group.SelLeft, group.SelTop),
 						Size = new Size(groupWidth, groupHeight)
 					};
 
