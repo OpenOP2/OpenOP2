@@ -74,7 +74,7 @@
 		Speed: 78
 	Harvester:
 		Capacity: 1
-		Resources: ore.mine
+		Resources: ore.depot.common1, ore.depot.common2, ore.depot.common3, ore.depot.common4, ore.depot.common5, ore.depot.common6
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 15
 		SearchFromHarvesterRadius: 8

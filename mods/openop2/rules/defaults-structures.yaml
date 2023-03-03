@@ -304,12 +304,12 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
-	WithDirectionalIdleOverlay@deck:
-		Sequence: deck
-		Palette: 8
-		Offset: 0,-512,0
+	#WithDirectionalIdleOverlay@deck:
+	#	Sequence: deck
+	#	Palette: 8
+	#	Offset: 0,-512,0
 	PlacesResourcesWhenCreated:
-		ResourceType: ore.depot
+		ResourceType: ore.depot.common3
 		Amount: 1200000
 
 ^MineRare:
@@ -348,7 +348,7 @@
 		Palette: 8
 		Offset: 0,-512,0
 	PlacesResourcesWhenCreated:
-		ResourceType: ore.depot
+		ResourceType: ore.depot.rare3
 		Amount: 1200000
 
 ^MineMagma:

@@ -239,6 +239,10 @@ eden-mine-common:
 		Start: 14163
 		Length: 1
 		Facings: 1
+	deck: op2_art.bmp
+		Start: 24182
+		Length: 1
+		Facings: 1
 
 plymouth-mine-common:
 	idle: op2_art.bmp
@@ -249,10 +253,18 @@ plymouth-mine-common:
 		Start: 19945
 		Length: 33
 		Facings: 1
+	deck: op2_art.bmp
+		Start: 24182
+		Length: 1
+		Facings: 1
 
 eden-mine-rare:
 	idle: op2_art.bmp
 		Start: 4108
+		Length: 1
+		Facings: 1
+	deck: op2_art.bmp
+		Start: 24182
 		Length: 1
 		Facings: 1
 
@@ -265,10 +277,18 @@ plymouth-mine-rare:
 		Start: 10235
 		Length: 61
 		Facings: 1
+	deck: op2_art.bmp
+		Start: 24182
+		Length: 1
+		Facings: 1
 
 eden-mine-magma:
 	idle: op2_art.bmp
 		Start: 4114
+		Length: 1
+		Facings: 1
+	deck: op2_art.bmp
+		Start: 24182
 		Length: 1
 		Facings: 1
 

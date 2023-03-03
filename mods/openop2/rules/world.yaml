@@ -76,22 +76,127 @@ World:
 	ResourceLayer:
 		#RecalculateResourceDensity: true
 		ResourceTypes:
-			ore.unsurveyed:
+			ore.unsurveyed.common1:
 				ResourceIndex: 1
 				TerrainType: Ore
 				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 				AllowUnderActors: true
 				AllowUnderBuildings: true
 				MaxDensity: 1
-			ore.common1:
+			ore.unsurveyed.common2:
 				ResourceIndex: 2
 				TerrainType: Ore
 				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 				AllowUnderActors: true
 				AllowUnderBuildings: true
 				MaxDensity: 1
-			ore.depot:
+			ore.unsurveyed.common3:
 				ResourceIndex: 3
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.unsurveyed.rare1:
+				ResourceIndex: 4
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.unsurveyed.rare2:
+				ResourceIndex: 5
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.unsurveyed.rare3:
+				ResourceIndex: 6
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.common1:
+				ResourceIndex: 7
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.common2:
+				ResourceIndex: 8
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.common3:
+				ResourceIndex: 9
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.rare1:
+				ResourceIndex: 10
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.rare2:
+				ResourceIndex: 11
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.rare3:
+				ResourceIndex: 12
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 1
+			ore.depot.common1:
+				ResourceIndex: 13
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 120000
+			ore.depot.common2:
+				ResourceIndex: 14
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 120000
+			ore.depot.common3:
+				ResourceIndex: 15
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 120000
+			ore.depot.rare1:
+				ResourceIndex: 16
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 120000
+			ore.depot.rare2:
+				ResourceIndex: 17
+				TerrainType: Ore
+				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
+				AllowUnderActors: true
+				AllowUnderBuildings: true
+				MaxDensity: 120000
+			ore.depot.rare3:
+				ResourceIndex: 18
 				TerrainType: Ore
 				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 				AllowUnderActors: true
