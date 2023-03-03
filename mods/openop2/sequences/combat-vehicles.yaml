@@ -5,6 +5,7 @@ eden-lynx-laser:
 		Start: 16298 # double is 16314
 		Length: 1
 		Facings: 16
+		FacingOffset: 4
 	icon: units.png
 		Start: 18
 
@@ -14,6 +15,7 @@ eden-lynx-rail-gun:
 		Start: 16080 # double is 16096
 		Length: 1
 		Facings: 16
+		FacingOffset: 4
 	icon: units.png
 		Start: 22
 
@@ -23,6 +25,7 @@ eden-lynx-emp:
 		Start: 15709 # double is 15725
 		Length: 1
 		Facings: 16
+		FacingOffset: 4
 	icon: units.png
 		Start: 20
 
@@ -32,6 +35,7 @@ eden-lynx-acid-cloud:
 		Start: 16362 # double is 16378
 		Length: 1
 		Facings: 16
+		FacingOffset: 4
 	icon: units.png
 		Start: 26
 
@@ -41,6 +45,7 @@ eden-lynx-thor:
 		Start: 16330 # double is 16346
 		Length: 1
 		Facings: 16
+		FacingOffset: 4
 	icon: units.png
 		Start: 28
 
@@ -59,6 +64,7 @@ plymouth-lynx-microwave:
 		Start: 16266 # double is 16282
 		Length: 1
 		Facings: 16
+		FacingOffset: 4
 	icon: units.png
 		Start: 19
 
@@ -68,6 +74,7 @@ plymouth-lynx-emp:
 		Start: 15741 # double 15757
 		Length: 1
 		Facings: 16
+		FacingOffset: 4
 	icon: units.png
 		Start: 21
 
@@ -77,6 +84,7 @@ plymouth-lynx-rpg:
 		Start: 16112 # double 16128
 		Length: 1
 		Facings: 16
+		FacingOffset: 4
 	icon: units.png
 		Start: 23
 
@@ -86,6 +94,7 @@ plymouth-lynx-stickyfoam:
 		Start: 16144 # double is 16160
 		Length: 1
 		Facings: 16
+		FacingOffset: 4
 	icon: units.png
 		Start: 27
 
@@ -95,6 +104,7 @@ plymouth-lynx-esg:
 		Start: 16234 # double is 16250
 		Length: 1
 		Facings: 16
+		FacingOffset: 4
 	icon: units.png
 		Start: 29
 
@@ -113,6 +123,7 @@ plymouth-lynx-supernova:
 		Start: 16023 # double is 16395
 		Length: 1
 		Facings: 16
+		FacingOffset: 4
 	icon: units.png
 		Start: 56
 

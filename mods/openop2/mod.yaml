@@ -220,7 +220,7 @@ SpriteFormats: ShpTD, PngSheet, Op2Sprite, Op2TileSet, Op2Raw
 
 TerrainFormat: DefaultTerrain
 
-SpriteSequenceFormat: DefaultSpriteSequence
+SpriteSequenceFormat: Op2SpriteSequence
 
 ModelSequenceFormat: PlaceholderModelSequence
 

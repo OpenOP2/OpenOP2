@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using OpenRA.Mods.OpenOP2.FileSystem;
-using OpenRA.Mods.OpenOP2.UtilityCommands;
 using OpenRA.Primitives;
 
 namespace OpenRA.Mods.OpenOP2.SpriteLoaders
@@ -30,7 +28,6 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 		public readonly PrtFile PrtFile;
 		public readonly List<uint[]> FramePalettes;
 		public readonly Dictionary<int, uint[]> Palettes;
-		public readonly Dictionary<string, List<SequenceDTO>> Sequences;
 
 		public Prt()
 		{
@@ -44,146 +41,6 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 				FramePalettes = LoadPalettes(stream);
 				PrtFile = LoadGroups(stream, out Palettes);
 			}
-
-			Sequences = BuildSequences(PrtFile);
-		}
-
-		Dictionary<string, List<SequenceDTO>> BuildSequences(PrtFile prtFile)
-		{
-			var results = new Dictionary<string, List<SequenceDTO>>();
-
-			Action<SequenceDTO> addSequence = (seq) =>
-			{
-				if (results.ContainsKey(seq.Image))
-				{
-					results[seq.Image].Add(seq);
-				}
-				else
-				{
-					results.Add(seq.Image, new List<SequenceDTO> { seq });
-				}
-			};
-
-			var groups = new GroupsFile();
-			foreach (var group in groups.Groups)
-			{
-				var literalGroupSequenceSets = new List<GroupSequenceSet>();
-
-				foreach (var set in group.Sets)
-				{
-					if (!string.IsNullOrWhiteSpace(set.UseFile))
-					{
-						literalGroupSequenceSets.Add(set);
-						continue;
-					}
-
-					var typeGroupedFrames = GroupsFile.GetTypedGroupFrames(prtFile, group, set, out var frameCount);
-					Func<SequenceSet, int, string> getSequenceName = (inGroup, ind) =>
-					{
-						Func<int, string> getTypeString = (inFrameType) =>
-						{
-							switch (inFrameType)
-							{
-								case 1:
-									return "sprite";
-								case 4:
-									return "shadow";
-								case 5:
-									return "shadow";
-								default:
-									return "unknown";
-							}
-						};
-
-						//////////////////////
-						var frameTypeString = getTypeString(inGroup.FrameType);
-						var seqName = $"{set.Sequence}-{frameTypeString}" + (ind == 0 ? string.Empty : $"-id{ind}");
-						if ((inGroup.FrameType == 0 || inGroup.FrameType == 1) && ind == 0)
-						{
-							seqName = set.Sequence;
-						}
-
-						return seqName;
-					};
-
-					var allSequenceNames = typeGroupedFrames.Select((x, index) => getSequenceName(x, index)).ToArray();
-
-					var zIndex = 0;
-					var typeIndex = 0;
-					foreach (var typeGroupedFrame in typeGroupedFrames)
-					{
-						var sequenceName = allSequenceNames[typeIndex];
-						var outputSequence = GroupsFile.GetOutputSequence(sequenceName, set, typeGroupedFrame);
-						if (group.WithBlankIdle && set == group.Sets.First() && typeGroupedFrame == typeGroupedFrames.First())
-						{
-							var result = new SequenceDTO()
-							{
-								Image = group.Name,
-								Name = "idle",
-								IsBlank = true,
-								Length = 1,
-								Facings = 1,
-								Start = GroupsFile.EmptySprite,
-							};
-
-							addSequence(result);
-						}
-
-						var isFacingOverride = set.FacingsOverride > 0;
-						var seq = new SequenceDTO()
-						{
-							Image = group.Name,
-							Name = sequenceName,
-							Length = isFacingOverride ? 1 : frameCount,
-							Facings = isFacingOverride ? set.FacingsOverride : set.Length,
-							Offset = new float3(set.OffsetX, set.OffsetY, 0),
-							ZOffset = set.OffsetZ != 0 ? set.OffsetZ : zIndex,
-							Tick = set.Tick ?? 40,
-						};
-
-						foreach (var frameset in outputSequence.Framesets)
-						{
-							var dto = new CombineSequenceDTO()
-							{
-								IsBlank = frameset.IsBlank,
-								Frames = frameset.Frames.ToArray(),
-								Length = frameset.Frames.Count,
-								Offset = new float3(frameset.OffsetX, frameset.OffsetY, 0),
-								ZOffset = set.OffsetZ != 0 ? set.OffsetZ : zIndex
-							};
-
-							seq.Combine.Add(dto);
-						}
-
-						addSequence(seq);
-
-						typeIndex++;
-						zIndex -= 256;
-					}
-				}
-
-				// Hack in our literal sequences
-				// Used for icons only for now
-				foreach (var seq in literalGroupSequenceSets)
-				{
-					var seqDto = new SequenceDTO()
-					{
-						Image = group.Name,
-						UseFile = seq.UseFile,
-						Name = seq.Sequence,
-						Length = seq.Length,
-						Start = seq.Start,
-						Facings = 1,
-						Offset = new float3(seq.OffsetX, seq.OffsetY, 0),
-						ZOffset = seq.OffsetZ,
-						Tick = seq.Tick ?? 40,
-					};
-
-					addSequence(seqDto);
-				}
-			}
-
-			return results;
 		}
 
 		List<uint[]> LoadPalettes(Stream s)
