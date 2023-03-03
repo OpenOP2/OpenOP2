@@ -74,9 +74,33 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			for (var groupIndex = 0; groupIndex < prtFile.Groups.Length; groupIndex++)
 			{
 				var group = prtFile.Groups[groupIndex];
-				var groupWidth = group.SelLeft + group.SelRight + 10;
-				var groupHeight = group.SelTop + group.SelBottom + 10;
+				var groupWidth = group.SelLeft + group.SelRight;
+				var groupHeight = group.SelTop + group.SelBottom;
 
+				// int groupWidth = 0;
+				// int groupHeight = 0;
+				// for (var frameIndex = 0; frameIndex < group.Frames.Length; frameIndex++)
+				// {
+				// 	// Precalculate all frame sizes with offsets to get a correct frame size
+				// 	var frame = group.Frames[frameIndex];
+				// 	for (var picIndex = 0; picIndex < frame.Pictures.Length; picIndex++)
+				// 	{
+				// 		var picture = frame.Pictures[picIndex];
+				// 		var picX = picture.PosX;
+				// 		var picY = picture.PosY;
+				// 		var imgNumber = picture.ImgNumber;
+				// 		var imageInfo = prtFile.ImageHeader[imgNumber];
+
+				// 		var thisWidth = picX + imageInfo.Width;
+				// 		var thisHeight = picY + imageInfo.Height;
+
+				// 		if (groupWidth < thisWidth)
+				// 			groupWidth = (int)thisWidth;
+
+				// 		if (groupHeight < thisHeight)
+				// 			groupHeight = (int)thisHeight;
+				// 	}
+				// }
 				// sb.AppendLine($"Group index {groupIndex} starts at frame {frameTotal}");
 				// Console.WriteLine($"GROUP: {groupIndex} RECT (LRTB): {group.SelLeft}, {group.SelRight}, {group.SelTop}, {group.SelBottom}  SIZE: {groupWidth} x {groupHeight}");
 				for (var frameIndex = 0; frameIndex < group.Frames.Length; frameIndex++)
@@ -146,7 +170,8 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						Type = SpriteFrameType.Rgba32,
 						Data = byteData,
 						FrameSize = new Size(groupWidth, groupHeight),
-						Offset = new float2(group.SelLeft, group.SelTop),
+
+						// Offset = new float2(group.SelLeft, group.SelTop),
 						Size = new Size(groupWidth, groupHeight)
 					};
 

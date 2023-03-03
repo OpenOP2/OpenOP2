@@ -239,6 +239,7 @@ eden-mine-common:
 		Start: 14163
 		Length: 1
 		Facings: 1
+		Offset: -15, -4, 0
 	deck: op2_art.bmp
 		Start: 24182
 		Length: 1
@@ -249,6 +250,7 @@ plymouth-mine-common:
 		Start: 19945
 		Length: 1
 		Facings: 1
+		Offset: -15, -4, 0
 	animate: op2_art.bmp
 		Start: 19945
 		Length: 33

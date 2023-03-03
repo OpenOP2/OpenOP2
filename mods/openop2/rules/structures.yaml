@@ -133,8 +133,6 @@ plymouth-storage-rare:
 	RenderSprites:
 		Image: plymouth-storage-rare
 	Inherits: ^StorageRare
-	Selectable:
-		Bounds: 2048,2112,0,-32
 
 eden-mine-common:
 	RenderSprites:
@@ -145,8 +143,6 @@ plymouth-mine-common:
 	RenderSprites:
 		Image: plymouth-mine-common
 	Inherits: ^MineCommon
-	Selectable:
-		Bounds: 2048,2112,0,-32
 
 eden-mine-rare:
 	RenderSprites:

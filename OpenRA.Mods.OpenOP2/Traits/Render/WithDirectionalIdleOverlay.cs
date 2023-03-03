@@ -44,6 +44,9 @@ namespace OpenRA.Mods.OpenOP2.Traits.Render
 		[Desc("Position relative to body")]
 		public readonly WVec Offset = WVec.Zero;
 
+		[Desc("ZOffset")]
+		public readonly int ZOffset = 0;
+
 		[PaletteReference(nameof(IsPlayerPalette))]
 		[Desc("Custom palette name")]
 		public readonly string Palette = null;
@@ -118,7 +121,7 @@ namespace OpenRA.Mods.OpenOP2.Traits.Render
 			var anim = new AnimationWithOffset(overlay,
 				() => body.LocalToWorld(info.Offset.Rotate(body.QuantizeOrientation(self.Orientation))),
 				() => IsTraitDisabled,
-				p => RenderUtils.ZOffsetFromCenter(self, p, 1));
+				p => info.ZOffset != 0 ? info.ZOffset : RenderUtils.ZOffsetFromCenter(self, p, 1));
 
 			rs.Add(anim, info.Palette, info.IsPlayerPalette);
 		}

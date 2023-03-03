@@ -6,10 +6,9 @@ eden-cargo-truck:
 		Facings: 16
 		FacingOffset: 4
 	unload: op2_art.bmp
-		Start: 21315
+		Start: 22575
 		Length: 15
-		Facings: 16
-		FacingOffset: 4
+		Facings: 1
 	icon: units.png
 		Start: 0
 
@@ -21,10 +20,9 @@ plymouth-cargo-truck:
 		Facings: 16
 		FacingOffset: 4
 	unload: op2_art.bmp
-		Start: 22395
+		Start: 22455
 		Length: 15
-		Facings: 16
-		FacingOffset: 4
+		Facings: 1
 	icon: units.png
 		Start: 1
 

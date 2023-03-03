@@ -238,6 +238,7 @@
 	Mobile:
 		Speed: 72
 	WithSpriteTurret:
+		Sequence: turret
 	AttackTurreted:
 	Armament:
 
@@ -265,6 +266,7 @@
 	Mobile:
 		Speed: 48
 	WithSpriteTurret:
+		Sequence: turret
 	AttackTurreted:
 	Armament:
 
@@ -292,5 +294,6 @@
 	Mobile:
 		Speed: 32
 	WithSpriteTurret:
+		Sequence: turret
 	AttackTurreted:
 	Armament:

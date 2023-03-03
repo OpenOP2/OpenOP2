@@ -51,23 +51,19 @@ eden-lynx-laser:
 	Inherits: ^eden-lynx
 	RenderSprites:
 		Image: eden-lynx-laser
-	Buildable:
-		Prerequisites: ~vehicles.eden
-		#IconPalette: 3
-		#Icon: iconlaser
-	WithSpriteTurret:
-		Sequence: turret
+	Tooltip:
+		Name: Laser Lynx
 	Armament:
 		Weapon:	laser
+	Valued:
+		Cost: 1150
 
 eden-lynx-rail-gun:
 	Inherits: ^eden-lynx
 	RenderSprites:
 		Image: eden-lynx-rail-gun
-	Buildable:
-		Prerequisites: ~vehicles.eden
-		#IconPalette: 3
-		#Icon: iconrail
+	Tooltip:
+		Name: Railgun Lynx
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -79,30 +75,23 @@ plymouth-lynx-microwave:
 	Inherits: ^plymouth-lynx
 	RenderSprites:
 		Image: plymouth-lynx-microwave
-	Buildable:
-		Prerequisites: ~vehicles.plymouth
-		#IconPalette: 3
-		#Icon: iconmicrowave
+	Tooltip:
+		Name: Microwave Lynx
 	WithSpriteTurret:
 		Sequence: turret
-		#Palette: playerMapped8
-		#IsPlayerPalette: True
-		#LocalOffset: 856,0,80
 	Armament:
 		Weapon: microwave
+	Valued:
+		Cost: 1150
 
 plymouth-lynx-rpg:
 	Inherits: ^plymouth-lynx
 	RenderSprites:
 		Image: plymouth-lynx-rpg
-	Buildable:
-		Prerequisites: ~vehicles.plymouth
-		#IconPalette: 3
-		#Icon: iconrpg
+	Tooltip:
+		Name: RPG Lynx
 	WithSpriteTurret:
 		Sequence: turret
-		#Palette: playerMapped8
-		#IsPlayerPalette: True
 		#LocalOffset: 856,0,80
 	Armament:
 		Weapon: rpg
@@ -115,14 +104,10 @@ eden-panther-emp:
 	Inherits: ^eden-panther
 	RenderSprites:
 		Image: eden-panther-emp
-	Buildable:
-		Prerequisites: ~vehicles.eden
-		#IconPalette: 3
-		#Icon: iconrpg
+	Tooltip:
+		Name: EMP Panther
 	WithSpriteTurret:
 		Sequence: turret
-		#Palette: playerMapped8
-		#IsPlayerPalette: True
 		#LocalOffset: 856,0,80
 	Armament:
 		Weapon: microwave
@@ -133,14 +118,10 @@ plymouth-tiger-rpg:
 	Inherits: ^plymouth-tiger
 	RenderSprites:
 		Image: plymouth-tiger-rpg
-	Buildable:
-		Prerequisites: ~vehicles.plymouth
-		#IconPalette: 3
-		#Icon: iconrpg
+	Tooltip:
+		Name: RPG Tiger
 	WithSpriteTurret:
 		Sequence: turret
-		#Palette: playerMapped8
-		#IsPlayerPalette: True
 		#LocalOffset: 856,0,80
 	Armament:
 		Weapon: rpg
@@ -275,6 +256,8 @@ plymouth-robo-miner:
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3
+	Transforms:
+		IntoActor: plymouth-mine-common
 
 eden-flyer:
 	RenderSprites:

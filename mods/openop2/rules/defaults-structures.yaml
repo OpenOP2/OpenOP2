@@ -304,10 +304,10 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
-	#WithDirectionalIdleOverlay@deck:
-	#	Sequence: deck
-	#	Palette: 8
-	#	Offset: 0,-512,0
+	WithDirectionalIdleOverlay@deck:
+		Sequence: deck
+		Offset: 0,-1024,0
+		ZOffset: -1024
 	PlacesResourcesWhenCreated:
 		ResourceType: ore.depot.common3
 		Amount: 1200000
