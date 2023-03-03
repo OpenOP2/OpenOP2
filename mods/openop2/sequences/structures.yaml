@@ -1,6 +1,9 @@
 eden-command-center:
 	idle: op2_art.bmp
-		#Start: 24
+		Start: 19741
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 19741
 		Length: 87
 		Facings: 1
@@ -8,11 +11,19 @@ eden-command-center:
 plymouth-command-center:
 	idle: op2_art.bmp
 		Start: 20247
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 20247
 		Length: 56
 		Facings: 1
 
 eden-tokamak:
 	idle: op2_art.bmp
+		Start: 23397
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 23397
 		Length: 62
 		Facings: 1
@@ -24,6 +35,10 @@ eden-tokamak:
 plymouth-tokamak:
 	idle: op2_art.bmp
 		Start: 11737
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 11737
 		Length: 183
 		Facings: 1
 	icon: buildings.png
@@ -33,6 +48,10 @@ plymouth-tokamak:
 
 eden-structure-factory:
 	idle: op2_art.bmp
+		Start: 293
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 293
 		Length: 50
 		Facings: 1
@@ -44,6 +63,10 @@ eden-structure-factory:
 plymouth-structure-factory:
 	idle: op2_art.bmp
 		Start: 20484
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 20484
 		Length: 46
 		Facings: 1
 	icon: buildings.png
@@ -53,6 +76,10 @@ plymouth-structure-factory:
 
 eden-vehicle-factory:
 	idle: op2_art.bmp
+		Start: 13186
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 13186
 		Length: 43
 		Facings: 1
@@ -64,6 +91,10 @@ eden-vehicle-factory:
 plymouth-vehicle-factory:
 	idle: op2_art.bmp
 		Start: 20206
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 20206
 		Length: 41
 		Facings: 1
 	icon: buildings.png
@@ -73,6 +104,10 @@ plymouth-vehicle-factory:
 
 eden-agridome:
 	idle: op2_art.bmp
+		Start: 12963
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 12963
 		Length: 35
 		Facings: 1
@@ -84,6 +119,10 @@ eden-agridome:
 plymouth-agridome:
 	idle: op2_art.bmp
 		Start: 11459
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 11459
 		Length: 40
 		Facings: 1
 	icon: buildings.png
@@ -93,6 +132,10 @@ plymouth-agridome:
 
 eden-smelter-common:
 	idle: op2_art.bmp
+		Start: 20303
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 20303
 		Length: 35
 		Facings: 1
@@ -104,6 +147,10 @@ eden-smelter-common:
 plymouth-smelter-common:
 	idle: op2_art.bmp
 		Start: 20416
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 20416
 		Length: 68
 		Facings: 1
 	icon: buildings.png
@@ -113,6 +160,10 @@ plymouth-smelter-common:
 
 eden-smelter-rare:
 	idle: op2_art.bmp
+		Start: 19490
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 19490
 		Length: 89
 		Facings: 1
@@ -124,6 +175,10 @@ eden-smelter-rare:
 plymouth-smelter-rare:
 	idle: op2_art.bmp
 		Start: 14340
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 14340
 		Length: 34
 		Facings: 1
 	icon: buildings.png
@@ -134,11 +189,19 @@ plymouth-smelter-rare:
 eden-storage-common:
 	idle: op2_art.bmp
 		Start: 23526
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 23526
 		Length: 27
 		Facings: 1
 
 plymouth-storage-common:
 	idle: op2_art.bmp
+		Start: 23586
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 23586
 		Length: 27
 		Facings: 1
@@ -146,11 +209,19 @@ plymouth-storage-common:
 eden-storage-rare:
 	idle: op2_art.bmp
 		Start: 23553
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 23553
 		Length: 33
 		Facings: 1
 
 plymouth-storage-rare:
 	idle: op2_art.bmp
+		Start: 23613
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 23613
 		Length: 36
 		Facings: 1
@@ -164,6 +235,10 @@ eden-mine-common:
 plymouth-mine-common:
 	idle: op2_art.bmp
 		Start: 19945
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 19945
 		Length: 33
 		Facings: 1
 
@@ -175,6 +250,10 @@ eden-mine-rare:
 
 plymouth-mine-rare:
 	idle: op2_art.bmp
+		Start: 10235
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 10235
 		Length: 61
 		Facings: 1
@@ -188,6 +267,10 @@ eden-mine-magma:
 plymouth-mhd-generator:
 	idle: op2_art.bmp
 		Start: 13651
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 13651
 		Length: 40
 		Facings: 1
 	icon: buildings.png
@@ -197,6 +280,10 @@ plymouth-mhd-generator:
 
 eden-residence:
 	idle: op2_art.bmp
+		Start: 10668
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 10668
 		Length: 56
 		Facings: 1
@@ -208,6 +295,10 @@ eden-residence:
 plymouth-residence:
 	idle: op2_art.bmp
 		Start: 10787
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 10787
 		Length: 47
 		Facings: 1
 	icon: buildings.png
@@ -217,6 +308,10 @@ plymouth-residence:
 
 eden-residence-advanced:
 	idle: op2_art.bmp
+		Start: 11082
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 11082
 		Length: 53
 		Facings: 1
@@ -228,6 +323,10 @@ eden-residence-advanced:
 plymouth-residence-reinforced:
 	idle: op2_art.bmp
 		Start: 11195
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 11195
 		Length: 43
 		Facings: 1
 	icon: buildings.png
@@ -238,6 +337,10 @@ plymouth-residence-reinforced:
 eden-dirt:
 	idle: op2_art.bmp
 		Start: 12998
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 12998
 		Length: 30
 		Facings: 1
 	icon: buildings.png
@@ -247,6 +350,10 @@ eden-dirt:
 
 plymouth-dirt:
 	idle: op2_art.bmp
+		Start: 20576
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 20576
 		Length: 30
 		Facings: 1
@@ -268,6 +375,10 @@ eden-gorf:
 plymouth-gorf:
 	idle: op2_art.bmp
 		Start: 17947
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 17947
 		Length: 41
 		Facings: 1
 	icon: buildings.png
@@ -277,6 +388,10 @@ plymouth-gorf:
 
 eden-medical-center:
 	idle: op2_art.bmp
+		Start: 10494
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 10494
 		Length: 32
 		Facings: 1
@@ -288,6 +403,10 @@ eden-medical-center:
 plymouth-medical-center:
 	idle: op2_art.bmp
 		Start: 10986
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 10986
 		Length: 36
 		Facings: 1
 	icon: buildings.png
@@ -297,6 +416,10 @@ plymouth-medical-center:
 
 eden-nursery:
 	idle: op2_art.bmp
+		Start: 10399
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 10399
 		Length: 31
 		Facings: 1
@@ -308,6 +431,10 @@ eden-nursery:
 plymouth-nursery:
 	idle: op2_art.bmp
 		Start: 10544
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 10544
 		Length: 21
 		Facings: 1
 	icon: buildings.png
@@ -317,6 +444,10 @@ plymouth-nursery:
 
 eden-recreation-facility:
 	idle: op2_art.bmp
+		Start: 10883
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 10883
 		Length: 20
 		Facings: 1
@@ -328,6 +459,10 @@ eden-recreation-facility:
 plymouth-recreation-facility:
 	idle: op2_art.bmp
 		Start: 10934
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 10934
 		Length: 20
 		Facings: 1
 	icon: buildings.png
@@ -337,6 +472,10 @@ plymouth-recreation-facility:
 
 eden-trade-center:
 	idle: op2_art.bmp
+		Start: 12933
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 12933
 		Length: 30
 		Facings: 1
@@ -348,6 +487,10 @@ eden-trade-center:
 plymouth-trade-center:
 	idle: op2_art.bmp
 		Start: 13808
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 13808
 		Length: 51
 		Facings: 1
 	icon: buildings.png
@@ -357,6 +500,10 @@ plymouth-trade-center:
 
 eden-lab-basic:
 	idle: op2_art.bmp
+		Start: 11299
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 11299
 		Length: 41
 		Facings: 1
@@ -368,6 +515,10 @@ eden-lab-basic:
 plymouth-lab-basic:
 	idle: op2_art.bmp
 		Start: 23337
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 23337
 		Length: 60
 		Facings: 1
 	icon: buildings.png
@@ -377,6 +528,10 @@ plymouth-lab-basic:
 
 eden-lab-standard:
 	idle: op2_art.bmp
+		Start: 12592
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 12592
 		Length: 29
 		Facings: 1
@@ -388,6 +543,10 @@ eden-lab-standard:
 plymouth-lab-standard:
 	idle: op2_art.bmp
 		Start: 12643
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 12643
 		Length: 34
 		Facings: 1
 	icon: buildings.png
@@ -397,6 +556,10 @@ plymouth-lab-standard:
 
 eden-lab-advanced:
 	idle: op2_art.bmp
+		Start: 10462
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 10462
 		Length: 10
 		Facings: 1
@@ -408,6 +571,10 @@ eden-lab-advanced:
 plymouth-lab-advanced:
 	idle: op2_art.bmp
 		Start: 11340
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 11340
 		Length: 20
 		Facings: 1
 	icon: buildings.png
@@ -417,6 +584,10 @@ plymouth-lab-advanced:
 
 eden-robot-command-center:
 	idle: op2_art.bmp
+		Start: 11499
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 11499
 		Length: 68
 		Facings: 1
@@ -428,6 +599,10 @@ eden-robot-command-center:
 plymouth-robot-command-center:
 	idle: op2_art.bmp
 		Start: 11387
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 11387
 		Length: 72
 		Facings: 1
 	icon: buildings.png
@@ -437,6 +612,10 @@ plymouth-robot-command-center:
 
 eden-solar-power-array:
 	idle: op2_art.bmp
+		Start: 13691
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 13691
 		Length: 66
 		Facings: 1
@@ -448,6 +627,10 @@ eden-solar-power-array:
 plymouth-solar-power-array:
 	idle: op2_art.bmp
 		Start: 13757
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 13757
 		Length: 30
 		Facings: 1
 	icon: buildings.png
@@ -457,6 +640,10 @@ plymouth-solar-power-array:
 
 eden-university:
 	idle: op2_art.bmp
+		Start: 12426
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 12426
 		Length: 91
 		Facings: 1
@@ -468,6 +655,10 @@ eden-university:
 plymouth-university:
 	idle: op2_art.bmp
 		Start: 13485
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 13485
 		Length: 68
 		Facings: 1
 	icon: buildings.png
@@ -477,6 +668,10 @@ plymouth-university:
 
 eden-spaceport:
 	idle: op2_art.bmp
+		Start: 13987
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 13987
 		Length: 30
 		Facings: 1
@@ -488,6 +683,10 @@ eden-spaceport:
 plymouth-spaceport:
 	idle: op2_art.bmp
 		Start: 14047
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 14047
 		Length: 78
 		Facings: 1
 	icon: buildings.png
@@ -497,6 +696,10 @@ plymouth-spaceport:
 
 eden-meteor-defense:
 	idle: op2_art.bmp
+		Start: 9760
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 9760
 		Length: 82
 		Facings: 1
@@ -514,6 +717,10 @@ eden-geothermal-plant:
 plymouth-arachnid-factory:
 	idle: op2_art.bmp
 		Start: 19870
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 19870
 		Length: 75
 		Facings: 1
 	icon: buildings.png
@@ -523,6 +730,10 @@ plymouth-arachnid-factory:
 
 plymouth-forum:
 	idle: op2_art.bmp
+		Start: 23307
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 23307
 		Length: 30
 		Facings: 1
@@ -534,11 +745,19 @@ plymouth-forum:
 eden-consumer-factory:
 	idle: op2_art.bmp
 		Start: 19423
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
+		Start: 19423
 		Length: 35
 		Facings: 1
 
 eden-observatory:
 	idle: op2_art.bmp
+		Start: 12092
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 12092
 		Length: 61
 		Facings: 1
@@ -549,6 +768,10 @@ eden-observatory:
 
 eden-light-tower:
 	idle: op2_art.bmp
+		Start: 11567
+		Length: 1
+		Facings: 1
+	animate: op2_art.bmp
 		Start: 11567
 		Length: 41
 		Facings: 1

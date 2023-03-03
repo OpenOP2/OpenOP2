@@ -90,8 +90,6 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						var imgNumber = picture.ImgNumber;
 						var imageInfo = prtFile.ImageHeader[imgNumber];
 						var imgWidth = imageInfo.PaddedWidth;
-						var picX = picture.PosX;
-						var picY = picture.PosY;
 
 						// Skip shadows for now
 						var isShadow = imageInfo.ImageType == 4 || imageInfo.ImageType == 5;
@@ -113,8 +111,8 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 							// Console.WriteLine($" Color (RGBA): {r} {g} {b} {a}");
 							// Console.WriteLine($" Write color: {picX + x}, {picY + y}");
-							var pixX = x + picX;
-							var pixY = y + picY;
+							var pixX = x + picture.PosX;
+							var pixY = y + picture.PosY;
 							if (pixX < 0 || pixY < 0 || pixX >= groupWidth || pixY >= groupHeight)
 							{
 								// Console.WriteLine($"Pixel out of range at: {pixX}, {pixY} (GROUP SIZE: {groupWidth} x {groupHeight})");
@@ -148,8 +146,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						Type = SpriteFrameType.Rgba32,
 						Data = byteData,
 						FrameSize = new Size(groupWidth, groupHeight),
-
-						// Offset = new float2(group.SelLeft, group.SelTop),
+						Offset = new float2(group.SelLeft, group.SelTop),
 						Size = new Size(groupWidth, groupHeight)
 					};
 
