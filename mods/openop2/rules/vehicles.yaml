@@ -60,6 +60,8 @@ plymouth-lynx-rpg:
 	Valued:
 		Cost: 1150
 
+# TODO: the rest of the tank types....
+
 eden-panther-emp:
 	Inherits: ^eden-panther
 	RenderSprites:
@@ -77,7 +79,6 @@ eden-panther-emp:
 		Weapon: microwave
 	Valued:
 		Cost: 2150
-
 
 plymouth-tiger-rpg:
 	Inherits: ^plymouth-tiger

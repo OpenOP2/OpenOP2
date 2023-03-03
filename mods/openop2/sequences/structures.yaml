@@ -195,6 +195,8 @@ eden-storage-common:
 		Start: 23526
 		Length: 27
 		Facings: 1
+	icon: towers.png
+		Start: 2
 
 plymouth-storage-common:
 	idle: op2_art.bmp
@@ -205,6 +207,8 @@ plymouth-storage-common:
 		Start: 23586
 		Length: 27
 		Facings: 1
+	icon: towers.png
+		Start: 3
 
 eden-storage-rare:
 	idle: op2_art.bmp
@@ -215,6 +219,8 @@ eden-storage-rare:
 		Start: 23553
 		Length: 33
 		Facings: 1
+	icon: towers.png
+		Start: 4
 
 plymouth-storage-rare:
 	idle: op2_art.bmp
@@ -225,6 +231,8 @@ plymouth-storage-rare:
 		Start: 23613
 		Length: 36
 		Facings: 1
+	icon: towers.png
+		Start: 5
 
 eden-mine-common:
 	idle: op2_art.bmp
