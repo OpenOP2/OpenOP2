@@ -13,9 +13,66 @@
 	#	UseDeathTypeSuffix: false
 	#	CrushedSequencePalette: 3
 
+^BulldozesArea:
+	BulldozesTerrainWhenCreated:
+		Size: 3,3
+		Offset: -1,-1
+		Replacements:
+			Replacement@mud-big:
+				MinTileIndex: 2012
+				MaxTileIndex: 2013
+				PlaceTileType: 2111
+			Replacement@rock-big:
+				MinTileIndex: 2014
+				MaxTileIndex: 2017
+				PlaceTileType: 2219
+			Replacement@sand-big:
+				MinTileIndex: 2018
+				MaxTileIndex: 2021
+				PlaceTileType: 2384
+			Replacement@mud-raw:
+				MinTileIndex: 0
+				MaxTileIndex: 269
+				PlaceTileType: 2111
+			Replacement@rock-raw:
+				MinTileIndex: 439
+				MaxTileIndex: 797
+				PlaceTileType: 2219
+			Replacement@sand-raw:
+				MinTileIndex: 1206
+				MaxTileIndex: 1552
+				PlaceTileType: 2384
+			Replacement@mud-raw-debris:
+				MinTileIndex: 433
+				MaxTileIndex: 438
+				PlaceTileType: 2111
+			Replacement@rock-raw-debris:
+				MinTileIndex: 945
+				MaxTileIndex: 950
+				PlaceTileType: 2219
+			Replacement@mud-rock-raw-transition:
+				MinTileIndex: 951
+				MaxTileIndex: 998
+				PlaceTileType: 2219
+			Replacement@mud-sand-raw-transition:
+				MinTileIndex: 1694
+				MaxTileIndex: 1741
+				PlaceTileType: 2111
+			Replacement@sand-rock-raw-transition:
+				MinTileIndex: 1742
+				MaxTileIndex: 1789
+				PlaceTileType: 2219
+			Replacement@mud-ice-raw-transition:
+				MinTileIndex: 2003
+				MaxTileIndex: 2011
+				PlaceTileType: 2111
+
 ^CommandCenter:
 	Inherits: ^Op2Building
 	Inherits@shape: ^3x3Shape
+	Inherits@bulldoze: ^BulldozesArea
+	BulldozesTerrainWhenCreated:
+		Size: 5,4
 	Tooltip:
 		Name: Command Center
 	Selectable:
@@ -73,6 +130,9 @@
 ^Power:
 	Inherits: ^Op2Building
 	Inherits@shape: ^2x2Shape
+	Inherits@bulldoze: ^BulldozesArea
+	BulldozesTerrainWhenCreated:
+		Size: 4,4
 	Tooltip:
 		Name: Tokamak
 	Selectable:
@@ -110,6 +170,9 @@
 ^OreSmelterCommon:
 	Inherits: ^Op2Building
 	Inherits@shape: ^4x3Shape
+	Inherits@bulldoze: ^BulldozesArea
+	BulldozesTerrainWhenCreated:
+		Size: 6,5
 	Tooltip:
 		Name: Ore Smelter (Common)
 	Selectable:
@@ -151,6 +214,9 @@
 ^OreSmelterRare:
 	Inherits: ^Op2Building
 	Inherits@shape: ^4x3Shape
+	Inherits@bulldoze: ^BulldozesArea
+	BulldozesTerrainWhenCreated:
+		Size: 6,5
 	Tooltip:
 		Name: Ore Smelter (Rare)
 	Selectable:
@@ -192,6 +258,9 @@
 ^StructureFactory:
 	Inherits: ^Op2Building
 	Inherits@shape: ^4x3Shape
+	Inherits@bulldoze: ^BulldozesArea
+	BulldozesTerrainWhenCreated:
+		Size: 6,5
 	Tooltip:
 		Name: Structure Factory
 	Selectable:
@@ -228,6 +297,9 @@
 ^VehicleFactory:
 	Inherits: ^Op2Building
 	Inherits@shape: ^4x3Shape
+	Inherits@bulldoze: ^BulldozesArea
+	BulldozesTerrainWhenCreated:
+		Size: 6,5
 	Tooltip:
 		Name: Vehicle Factory
 	Selectable:
