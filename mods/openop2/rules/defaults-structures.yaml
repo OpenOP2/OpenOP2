@@ -263,6 +263,16 @@
 		Produces: Vehicle
 	ProductionBar:
 		ProductionType: Vehicle
+	ProductionQueue@Vehicle:
+		Type: Vehicle
+		Group: Vehicle
+		ReadyAudio: VehicleReady
+		BlockedAudio: NoBuild
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+		#LowPowerModifier: 300
+		#SpeedUp: False
 	Exit@1:
 		Facing: 512
 		SpawnOffset: 512,0,0

@@ -458,6 +458,15 @@ Container@PLAYER_WIDGETS:
 					HotkeyPrefix: Production
 					HotkeyCount: 24
 					SelectProductionBuildingHotkey: SelectProductionBuilding
+				Container@PRODUCTION_BACKGROUND:
+					X: 40
+					Y: 20
+					Children:
+						Background@ICON_TEMPLATE:
+							Width: 64
+							Height: 49
+							Background: sidebar-button
+							Visible: false
 				Container@PALETTE_FOREGROUND:
 					Children:
 						Image@ROW_TEMPLATE:
@@ -598,6 +607,17 @@ Container@PLAYER_WIDGETS:
 									Y: 3
 									ImageCollection: scrollpanel-decorations
 									ImageName: down
+				ProductionTabs@PRODUCTION_TABS:
+					Logic: ProductionTabsLogic
+					X: WINDOW_RIGHT - 5 - 18 - 194
+					Y: 299
+					Width: 194
+					Height: 20
+					PaletteWidget: PRODUCTION_PALETTE
+					TypesContainer: PRODUCTION_TYPES
+					BackgroundContainer: PRODUCTION_BACKGROUND
+					PreviousProductionTabKey: PreviousProductionTab
+					NextProductionTabKey: NextProductionTab
 		Image@SIDEBAR_MONEYBIN:
 			Logic: AddFactionSuffixLogic
 			X: WINDOW_RIGHT - 250
