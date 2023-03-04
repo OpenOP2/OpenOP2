@@ -1,5 +1,8 @@
 ^Op2Vehicle:
 	Inherits: ^Vehicle
+	WithInfantryBody:
+		IdleSequences: idle
+		StandSequences: idle
 
 ^TurretedVehicle:
 	Inherits: ^Op2Vehicle
@@ -60,9 +63,6 @@
 		IconPalette: 2
 	Voiced:
 		VoiceSet: CargoTruckVoice
-	WithInfantryBody:
-		IdleSequences: idle
-		StandSequences: idle
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -106,9 +106,6 @@
 		IconPalette: 5
 	Voiced:
 		VoiceSet: RoboSurveyorVoice
-	WithInfantryBody:
-		IdleSequences: idle
-		StandSequences: idle
 	Valued:
 		Cost: 200
 	Tooltip:
@@ -183,9 +180,6 @@
 		IconPalette: 5
 	Voiced:
 		VoiceSet: RoboDozerVoice
-	WithInfantryBody:
-		IdleSequences: idle
-		StandSequences: idle
 	Valued:
 		Cost: 400
 	Tooltip:
