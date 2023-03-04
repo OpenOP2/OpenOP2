@@ -212,7 +212,7 @@ plymouth-earthworker:
 eden-scout:
 	RenderSprites:
 		Image: eden-scout
-	Inherits: ^Op2Vehicle
+	Inherits: ^Scout
 	Buildable:
 		Prerequisites: ~vehicles.eden
 		IconPalette: 3
@@ -220,7 +220,7 @@ eden-scout:
 plymouth-scout:
 	RenderSprites:
 		Image: plymouth-scout
-	Inherits: ^Op2Vehicle
+	Inherits: ^Scout
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3

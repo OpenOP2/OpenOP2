@@ -2,7 +2,7 @@
 	Inherits: ^Wall
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 10
 		Prerequisites: ~techlevel.medium
 		Description: Stop units and blocks enemy fire.
 	Valued:
@@ -32,7 +32,7 @@
 	Inherits: ^Wall
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 10
 		Prerequisites: ~techlevel.medium
 		Description: Stops the blight.
 	Valued:
@@ -62,7 +62,7 @@
 	Inherits: ^Wall
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 10
 		Prerequisites: ~techlevel.medium
 		Description: Stops (most) enemy units.
 	Valued:

@@ -214,6 +214,30 @@
 	Mobile:
 		Speed: 72
 
+^Scout:
+	Inherits: ^Op2Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 30
+		#Prerequisites: ~techlevel.infonly
+		#Prerequisites: ~vehicles
+		Description: Fast scout vehicle.
+		IconPalette: 5
+	Voiced:
+		VoiceSet: ScoutVoice
+	Valued:
+		Cost: 750
+	Tooltip:
+		Name: Scout
+	Health:
+		HP: 300
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 8c0
+	Mobile:
+		Speed: 144
+
 ^Lynx:
 	Inherits: ^TurretedVehicle
 	Buildable:
