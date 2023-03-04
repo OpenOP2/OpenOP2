@@ -62,7 +62,7 @@
 		VoiceSet: CargoTruckVoice
 	WithInfantryBody:
 		IdleSequences: idle
-		StandSequences: stand
+		StandSequences: idle
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -106,6 +106,9 @@
 		IconPalette: 5
 	Voiced:
 		VoiceSet: RoboSurveyorVoice
+	WithInfantryBody:
+		IdleSequences: idle
+		StandSequences: idle
 	Valued:
 		Cost: 200
 	Tooltip:
@@ -180,6 +183,9 @@
 		IconPalette: 5
 	Voiced:
 		VoiceSet: RoboDozerVoice
+	WithInfantryBody:
+		IdleSequences: idle
+		StandSequences: idle
 	Valued:
 		Cost: 400
 	Tooltip:

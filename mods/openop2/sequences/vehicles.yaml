@@ -1,10 +1,4 @@
 eden-cargo-truck:
-	stand: op2_art.bmp
-		#Start: 24
-		Frames: 24, 27, 28, 31, 32, 35, 36, 39, 40, 43, 44, 47, 48, 51, 52, 55
-		Length: 1
-		Facings: 16
-		FacingOffset: 4
 	idle: op2_art.bmp
 		#Start: 24
 		Frames: 24, 27, 28, 31, 32, 35, 36, 39, 40, 43, 44, 47, 48, 51, 52, 55
@@ -25,12 +19,6 @@ eden-cargo-truck:
 		Start: 0
 
 plymouth-cargo-truck:
-	stand: op2_art.bmp
-		#Start: 56
-		Frames: 56, 59, 60, 63, 64, 67, 68, 71, 72, 75, 76, 79, 80, 83, 84, 87
-		Length: 1
-		Facings: 16
-		FacingOffset: 4
 	idle: op2_art.bmp
 		#Start: 56
 		Frames: 56, 59, 60, 63, 64, 67, 68, 71, 72, 75, 76, 79, 80, 83, 84, 87
@@ -53,6 +41,12 @@ plymouth-cargo-truck:
 eden-robo-dozer:
 	idle: op2_art.bmp
 		Start: 0
+		Length: 1
+		Stride: 3
+		Facings: 8
+		FacingOffset: 2
+	run: op2_art.bmp
+		Start: 0
 		Length: 3
 		Facings: 8
 		FacingOffset: 2
@@ -61,6 +55,12 @@ eden-robo-dozer:
 
 plymouth-robo-dozer:
 	idle: op2_art.bmp
+		Start: 2685
+		Length: 1
+		Stride: 3
+		Facings: 8
+		FacingOffset: 2
+	run: op2_art.bmp
 		Start: 2685
 		Length: 3
 		Facings: 8
@@ -143,6 +143,12 @@ plymouth-scout:
 eden-robo-surveyor:
 	idle: op2_art.bmp
 		Start: 2385
+		Length: 1
+		Stride: 8
+		Facings: 8
+		FacingOffset: 2
+	run: op2_art.bmp
+		Start: 2385
 		Length: 8
 		Facings: 8
 		FacingOffset: 2
@@ -151,6 +157,12 @@ eden-robo-surveyor:
 
 plymouth-robo-surveyor:
 	idle: op2_art.bmp
+		Start: 2449
+		Length: 1
+		Stride: 8
+		Facings: 8
+		FacingOffset: 2
+	run: op2_art.bmp
 		Start: 2449
 		Length: 8
 		Facings: 8
