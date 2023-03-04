@@ -143,6 +143,8 @@ plymouth-mine-common:
 	RenderSprites:
 		Image: plymouth-mine-common
 	Inherits: ^MineCommon
+	WithIdleAnimation:
+		Interval: 500, 1000
 
 eden-mine-rare:
 	RenderSprites:
@@ -153,6 +155,8 @@ plymouth-mine-rare:
 	RenderSprites:
 		Image: plymouth-mine-rare
 	Inherits: ^MineRare
+	WithIdleAnimation:
+		Interval: 500, 1000
 	Selectable:
 		Bounds: 2048,2112,0,-32
 
@@ -207,6 +211,8 @@ plymouth-gorf:
 	RenderSprites:
 		Image: plymouth-gorf
 	Inherits: ^Gorf
+	WithIdleAnimation:
+		Interval: 500, 1000
 
 eden-medical-center:
 	RenderSprites:

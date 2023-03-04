@@ -3,7 +3,7 @@ eden-command-center:
 		Start: 19741
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 19741
 		Length: 87
 		Facings: 1
@@ -13,7 +13,7 @@ plymouth-command-center:
 		Start: 20247
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 20247
 		Length: 56
 		Facings: 1
@@ -23,7 +23,7 @@ eden-tokamak:
 		Start: 23397
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 23397
 		Length: 62
 		Facings: 1
@@ -37,7 +37,7 @@ plymouth-tokamak:
 		Start: 11737
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 11737
 		Length: 183
 		Facings: 1
@@ -51,7 +51,7 @@ eden-structure-factory:
 		Start: 293
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 293
 		Length: 50
 		Facings: 1
@@ -65,7 +65,7 @@ plymouth-structure-factory:
 		Start: 20484
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 20484
 		Length: 46
 		Facings: 1
@@ -79,7 +79,7 @@ eden-vehicle-factory:
 		Start: 13186
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 13186
 		Length: 43
 		Facings: 1
@@ -93,7 +93,7 @@ plymouth-vehicle-factory:
 		Start: 20206
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 20206
 		Length: 41
 		Facings: 1
@@ -107,7 +107,7 @@ eden-agridome:
 		Start: 12963
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 12963
 		Length: 35
 		Facings: 1
@@ -121,7 +121,7 @@ plymouth-agridome:
 		Start: 11459
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 11459
 		Length: 40
 		Facings: 1
@@ -135,7 +135,7 @@ eden-smelter-common:
 		Start: 20303
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 20303
 		Length: 35
 		Facings: 1
@@ -149,7 +149,7 @@ plymouth-smelter-common:
 		Start: 20416
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 20416
 		Length: 68
 		Facings: 1
@@ -163,7 +163,7 @@ eden-smelter-rare:
 		Start: 19490
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 19490
 		Length: 89
 		Facings: 1
@@ -177,7 +177,7 @@ plymouth-smelter-rare:
 		Start: 14340
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 14340
 		Length: 34
 		Facings: 1
@@ -191,7 +191,7 @@ eden-storage-common:
 		Start: 23526
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 23526
 		Length: 27
 		Facings: 1
@@ -203,7 +203,7 @@ plymouth-storage-common:
 		Start: 23586
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 23586
 		Length: 27
 		Facings: 1
@@ -215,7 +215,7 @@ eden-storage-rare:
 		Start: 23553
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 23553
 		Length: 33
 		Facings: 1
@@ -227,7 +227,7 @@ plymouth-storage-rare:
 		Start: 23613
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 23613
 		Length: 36
 		Facings: 1
@@ -251,7 +251,7 @@ plymouth-mine-common:
 		Length: 1
 		Facings: 1
 		Offset: -15, -4, 0
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 19945
 		Length: 33
 		Facings: 1
@@ -275,7 +275,7 @@ plymouth-mine-rare:
 		Start: 10235
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 10235
 		Length: 61
 		Facings: 1
@@ -299,7 +299,7 @@ plymouth-mhd-generator:
 		Start: 13651
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 13651
 		Length: 40
 		Facings: 1
@@ -313,7 +313,7 @@ eden-residence:
 		Start: 10668
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 10668
 		Length: 56
 		Facings: 1
@@ -327,7 +327,7 @@ plymouth-residence:
 		Start: 10787
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 10787
 		Length: 47
 		Facings: 1
@@ -341,7 +341,7 @@ eden-residence-advanced:
 		Start: 11082
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 11082
 		Length: 53
 		Facings: 1
@@ -355,7 +355,7 @@ plymouth-residence-reinforced:
 		Start: 11195
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 11195
 		Length: 43
 		Facings: 1
@@ -369,7 +369,7 @@ eden-dirt:
 		Start: 12998
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 12998
 		Length: 30
 		Facings: 1
@@ -383,7 +383,7 @@ plymouth-dirt:
 		Start: 20576
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 20576
 		Length: 30
 		Facings: 1
@@ -407,7 +407,7 @@ plymouth-gorf:
 		Start: 17947
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 17947
 		Length: 41
 		Facings: 1
@@ -421,7 +421,7 @@ eden-medical-center:
 		Start: 10494
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 10494
 		Length: 32
 		Facings: 1
@@ -435,7 +435,7 @@ plymouth-medical-center:
 		Start: 10986
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 10986
 		Length: 36
 		Facings: 1
@@ -449,7 +449,7 @@ eden-nursery:
 		Start: 10399
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 10399
 		Length: 31
 		Facings: 1
@@ -463,7 +463,7 @@ plymouth-nursery:
 		Start: 10544
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 10544
 		Length: 21
 		Facings: 1
@@ -477,7 +477,7 @@ eden-recreation-facility:
 		Start: 10883
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 10883
 		Length: 20
 		Facings: 1
@@ -491,7 +491,7 @@ plymouth-recreation-facility:
 		Start: 10934
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 10934
 		Length: 20
 		Facings: 1
@@ -505,7 +505,7 @@ eden-trade-center:
 		Start: 12933
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 12933
 		Length: 30
 		Facings: 1
@@ -519,7 +519,7 @@ plymouth-trade-center:
 		Start: 13808
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 13808
 		Length: 51
 		Facings: 1
@@ -533,7 +533,7 @@ eden-lab-basic:
 		Start: 11299
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 11299
 		Length: 41
 		Facings: 1
@@ -547,7 +547,7 @@ plymouth-lab-basic:
 		Start: 23337
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 23337
 		Length: 60
 		Facings: 1
@@ -561,7 +561,7 @@ eden-lab-standard:
 		Start: 12592
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 12592
 		Length: 29
 		Facings: 1
@@ -575,7 +575,7 @@ plymouth-lab-standard:
 		Start: 12643
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 12643
 		Length: 34
 		Facings: 1
@@ -589,7 +589,7 @@ eden-lab-advanced:
 		Start: 10462
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 10462
 		Length: 10
 		Facings: 1
@@ -603,7 +603,7 @@ plymouth-lab-advanced:
 		Start: 11340
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 11340
 		Length: 20
 		Facings: 1
@@ -617,7 +617,7 @@ eden-robot-command-center:
 		Start: 11499
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 11499
 		Length: 68
 		Facings: 1
@@ -631,7 +631,7 @@ plymouth-robot-command-center:
 		Start: 11387
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 11387
 		Length: 72
 		Facings: 1
@@ -645,7 +645,7 @@ eden-solar-power-array:
 		Start: 13691
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 13691
 		Length: 66
 		Facings: 1
@@ -659,7 +659,7 @@ plymouth-solar-power-array:
 		Start: 13757
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 13757
 		Length: 30
 		Facings: 1
@@ -673,7 +673,7 @@ eden-university:
 		Start: 12426
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 12426
 		Length: 91
 		Facings: 1
@@ -687,7 +687,7 @@ plymouth-university:
 		Start: 13485
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 13485
 		Length: 68
 		Facings: 1
@@ -701,7 +701,7 @@ eden-spaceport:
 		Start: 13987
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 13987
 		Length: 30
 		Facings: 1
@@ -715,7 +715,7 @@ plymouth-spaceport:
 		Start: 14047
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 14047
 		Length: 78
 		Facings: 1
@@ -729,7 +729,7 @@ eden-meteor-defense:
 		Start: 9760
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 9760
 		Length: 82
 		Facings: 1
@@ -749,7 +749,7 @@ plymouth-arachnid-factory:
 		Start: 19870
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 19870
 		Length: 75
 		Facings: 1
@@ -763,7 +763,7 @@ plymouth-forum:
 		Start: 23307
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 23307
 		Length: 30
 		Facings: 1
@@ -777,7 +777,7 @@ eden-consumer-factory:
 		Start: 19423
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 19423
 		Length: 35
 		Facings: 1
@@ -787,7 +787,7 @@ eden-observatory:
 		Start: 12092
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 12092
 		Length: 61
 		Facings: 1
@@ -801,7 +801,7 @@ eden-light-tower:
 		Start: 11567
 		Length: 1
 		Facings: 1
-	animate: op2_art.bmp
+	active: op2_art.bmp
 		Start: 11567
 		Length: 41
 		Facings: 1

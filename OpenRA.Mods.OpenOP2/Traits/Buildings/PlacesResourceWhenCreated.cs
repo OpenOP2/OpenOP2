@@ -9,7 +9,7 @@
  */
 #endregion
 
-using System;
+using System.Collections.Generic;
 using System.Linq;
 using OpenRA.Mods.Common.Traits;
 using OpenRA.Traits;
@@ -19,43 +19,76 @@ namespace OpenRA.Mods.OpenOP2.Traits
 	[Desc("Places a resource tile to the west of the building when it is created.")]
 	public class PlacesResourcesWhenCreatedInfo : ConditionalTraitInfo
 	{
-		[Desc("The type of resource to place.")]
-		public string ResourceType = string.Empty;
+		public override object Create(ActorInitializer init) { return new PlacesResourcesWhenCreated(init.Self, this); }
+
+		[FieldLoader.LoadUsing("LoadReplacements")]
+		public Dictionary<string, MinerNodeResourceReplacementInfo> Replacements;
+
+		static object LoadReplacements(MiniYaml yaml)
+		{
+			var retList = new Dictionary<string, MinerNodeResourceReplacementInfo>();
+			var replacements = yaml.Nodes.First(x => x.Key == "Replacements");
+			foreach (var node in replacements.Value.Nodes.Where(n => n.Key.StartsWith("Replacement")))
+			{
+				var ret = new MinerNodeResourceReplacementInfo();
+				FieldLoader.Load(ret, node.Value);
+				retList.Add(node.Key, ret);
+			}
+
+			return retList;
+		}
+	}
+
+	public class MinerNodeResourceReplacementInfo
+	{
+		[Desc("The type of resource to remove when surveying.")]
+		public string RemoveResourceType = string.Empty;
+
+		[Desc("The type of resource to place when surveying.")]
+		public string PlaceResourceType = string.Empty;
 
 		[Desc("The resource density to set.")]
 		public int Amount = 1;
-		public override object Create(ActorInitializer init) { return new PlacesResourcesWhenCreated(init.Self, this); }
 	}
 
 	public class PlacesResourcesWhenCreated : ConditionalTrait<PlacesResourcesWhenCreatedInfo>, INotifyRemovedFromWorld
 	{
 		readonly PlacesResourcesWhenCreatedInfo info;
 		readonly IResourceLayer resourceLayer;
-		readonly IResourceLayer resourceType;
 		CPos deployLocation;
+		string removedResourceType;
+		int removedResourceAmount;
 
 		public PlacesResourcesWhenCreated(Actor self, PlacesResourcesWhenCreatedInfo info)
 			: base(info)
 		{
 			this.info = info;
 			resourceLayer = self.World.WorldActor.Trait<ResourceLayer>();
-			var resourceTypes = self.World.WorldActor.TraitsImplementing<IResourceLayer>().ToArray();
-			resourceType = resourceTypes.FirstOrDefault(a =>
-				string.Equals(info.ResourceType, info.ResourceType, StringComparison.InvariantCultureIgnoreCase));
-
-			if (resourceType == null)
-				throw new ArgumentException($"Couldn't find resource type: {info.ResourceType}");
 		}
 
 		protected override void Created(Actor self)
 		{
-			deployLocation = self.World.Map.CellContaining(self.CenterPosition) + new CVec(-1, 0);
-			resourceLayer.AddResource(info.ResourceType, deployLocation, Info.Amount);
+			var selfLocation = self.World.Map.CellContaining(self.CenterPosition);
+			deployLocation = selfLocation + new CVec(-1, 0);
+			var thisResource = resourceLayer.GetResource(selfLocation);
+			foreach (var replacement in info.Replacements)
+			{
+				if (thisResource.Type == replacement.Value.RemoveResourceType)
+				{
+					removedResourceType = replacement.Value.RemoveResourceType;
+					removedResourceAmount = thisResource.Density;
+
+					resourceLayer.RemoveResource(removedResourceType, selfLocation);
+					resourceLayer.AddResource(replacement.Value.PlaceResourceType, deployLocation, replacement.Value.Amount);
+					break;
+				}
+			}
 		}
 
 		void INotifyRemovedFromWorld.RemovedFromWorld(Actor self)
 		{
 			resourceLayer.ClearResources(deployLocation);
+			resourceLayer.AddResource(removedResourceType, self.World.Map.CellContaining(self.CenterPosition), removedResourceAmount);
 		}
 	}
 }

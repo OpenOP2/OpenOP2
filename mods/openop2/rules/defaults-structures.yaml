@@ -66,6 +66,8 @@
 	BaseProvider:
 		PauseOnCondition: being-captured
 		Range: 16c0
+	WithIdleAnimation:
+		Interval: 400, 1200
 
 ^Power:
 	Inherits: ^Op2Building
@@ -101,6 +103,8 @@
 	RevealsShroud:
 		Range: 4c0
 	ScalePowerWithHealth:
+	WithIdleAnimation:
+		Interval: 350, 900
 
 ^OreSmelterCommon:
 	Inherits: ^Op2Building
@@ -140,10 +144,8 @@
 		DockOffset: 3,2
 	StoresResources:
 		Capacity: 5000
-	#FreeActor:
-	#	Actor: HARV
-	#	SpawnOffset: 3,2
-	#	Facing: 0
+	WithIdleAnimation:
+		Interval: 300, 700
 
 ^OreSmelterRare:
 	Inherits: ^Op2Building
@@ -183,6 +185,8 @@
 		DockOffset: 3,2
 	StoresResources:
 		Capacity: 5000
+	WithIdleAnimation:
+		Interval: 450, 950
 
 ^StructureFactory:
 	Inherits: ^Op2Building
@@ -217,6 +221,8 @@
 		Cost: 2000
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 550, 850
 
 ^VehicleFactory:
 	Inherits: ^Op2Building
@@ -282,6 +288,8 @@
 		Palette: 8
 		IsPlayerPalette: false
 		Path: 2,3
+	WithIdleAnimation:
+		Interval: 380, 800
 
 ^MineCommon:
 	Inherits: ^Building
@@ -319,8 +327,31 @@
 		Offset: 0,-1024,0
 		ZOffset: -1024
 	PlacesResourcesWhenCreated:
-		ResourceType: ore.depot.common3
-		Amount: 1200000
+		Replacements:
+			Replacement@common1:
+				RemoveResourceType: ore.common1
+				PlaceResourceType: ore.depot.common1
+				Amount: 120000
+			Replacement@common2:
+				RemoveResourceType: ore.common2
+				PlaceResourceType: ore.depot.common2
+				Amount: 240000
+			Replacement@common3:
+				RemoveResourceType: ore.common3
+				PlaceResourceType: ore.depot.common3
+				Amount: 360000
+			Replacement@rare1:
+				RemoveResourceType: ore.rare1
+				PlaceResourceType: ore.depot.rare1
+				Amount: 120000
+			Replacement@rare2:
+				RemoveResourceType: ore.rare2
+				PlaceResourceType: ore.depot.rare2
+				Amount: 240000
+			Replacement@rare3:
+				RemoveResourceType: ore.rare3
+				PlaceResourceType: ore.depot.rare3
+				Amount: 360000
 
 ^MineRare:
 	Inherits: ^Building
@@ -358,8 +389,31 @@
 		Palette: 8
 		Offset: 0,-512,0
 	PlacesResourcesWhenCreated:
-		ResourceType: ore.depot.rare3
-		Amount: 1200000
+		Replacements:
+			Replacement@common1:
+				RemoveResourceType: ore.common1
+				PlaceResourceType: ore.depot.common1
+				Amount: 120000
+			Replacement@common2:
+				RemoveResourceType: ore.common2
+				PlaceResourceType: ore.depot.common2
+				Amount: 240000
+			Replacement@common3:
+				RemoveResourceType: ore.common3
+				PlaceResourceType: ore.depot.common3
+				Amount: 360000
+			Replacement@rare1:
+				RemoveResourceType: ore.rare1
+				PlaceResourceType: ore.depot.rare1
+				Amount: 120000
+			Replacement@rare2:
+				RemoveResourceType: ore.rare2
+				PlaceResourceType: ore.depot.rare2
+				Amount: 240000
+			Replacement@rare3:
+				RemoveResourceType: ore.rare3
+				PlaceResourceType: ore.depot.rare3
+				Amount: 360000
 
 ^MineMagma:
 	Inherits: ^Building
@@ -397,8 +451,31 @@
 		Palette: 8
 		Offset: 0,-512,0
 	PlacesResourcesWhenCreated:
-		ResourceType: ore.depot
-		Amount: 1200000
+		Replacements:
+			Replacement@common1:
+				RemoveResourceType: ore.common1
+				PlaceResourceType: ore.depot.common1
+				Amount: 120000
+			Replacement@common2:
+				RemoveResourceType: ore.common2
+				PlaceResourceType: ore.depot.common2
+				Amount: 240000
+			Replacement@common3:
+				RemoveResourceType: ore.common3
+				PlaceResourceType: ore.depot.common3
+				Amount: 360000
+			Replacement@rare1:
+				RemoveResourceType: ore.rare1
+				PlaceResourceType: ore.depot.rare1
+				Amount: 120000
+			Replacement@rare2:
+				RemoveResourceType: ore.rare2
+				PlaceResourceType: ore.depot.rare2
+				Amount: 240000
+			Replacement@rare3:
+				RemoveResourceType: ore.rare3
+				PlaceResourceType: ore.depot.rare3
+				Amount: 360000
 
 ^StorageCommon:
 	Inherits: ^Building
@@ -429,6 +506,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 350, 1100
 
 ^StorageRare:
 	Inherits: ^Building
@@ -459,6 +538,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 450, 1200
 
 ^Agridome:
 	Inherits: ^Building
@@ -489,6 +570,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 550, 1200
 
 ^MhdGenerator:
 	Inherits: ^Building
@@ -519,6 +602,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 420, 760
 
 ^Residence:
 	Inherits: ^Building
@@ -549,6 +634,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 600, 1200
 
 ^Dirt:
 	Inherits: ^Building
@@ -579,6 +666,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 550, 1300
 
 ^Gorf:
 	Inherits: ^Building
@@ -639,6 +728,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 520, 820
 
 ^Nursery:
 	Inherits: ^Building
@@ -669,6 +760,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 510, 1400
 
 ^RecreationFacility:
 	Inherits: ^Building
@@ -699,6 +792,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 570, 1300
 
 ^TradeCenter:
 	Inherits: ^Building
@@ -729,6 +824,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 480, 1220
 
 ^Laboratory:
 	Inherits: ^Building
@@ -759,6 +856,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 560, 880
 
 ^RobotCommandCenter:
 	Inherits: ^Building
@@ -789,6 +888,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 300, 600
 
 ^SolarPowerArray:
 	Inherits: ^Building
@@ -819,6 +920,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 540, 1040
 
 ^University:
 	Inherits: ^Building
@@ -849,6 +952,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 360, 1100
 
 ^Spaceport:
 	Inherits: ^Building
@@ -879,6 +984,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 350, 580
 
 ^MeteorDefense:
 	Inherits: ^Building
@@ -909,6 +1016,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 400, 800
 
 ^GeothermalPlant:
 	Inherits: ^Building
@@ -969,6 +1078,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 320, 900
 
 ^Forum:
 	Inherits: ^Building
@@ -999,6 +1110,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 440, 880
 
 ^ConsumerFactory:
 	Inherits: ^Building
@@ -1059,6 +1172,8 @@
 		Cost: 300
 	RevealsShroud:
 		Range: 4c0
+	WithIdleAnimation:
+		Interval: 460, 1060
 
 ^LightTower:
 	Inherits: ^Building
@@ -1088,7 +1203,7 @@
 	Valued:
 		Cost: 700
 	RevealsShroud:
-		Range: 4c0
+		Range: 9c0
 
 ^GuardPost:
 	Inherits: ^Defense

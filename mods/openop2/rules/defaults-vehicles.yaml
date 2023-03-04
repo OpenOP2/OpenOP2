@@ -60,6 +60,9 @@
 		IconPalette: 2
 	Voiced:
 		VoiceSet: CargoTruckVoice
+	WithInfantryBody:
+		IdleSequences: idle
+		StandSequences: stand
 	Valued:
 		Cost: 500
 	Tooltip:
