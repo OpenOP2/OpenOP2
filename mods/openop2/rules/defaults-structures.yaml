@@ -16,7 +16,7 @@
 ^BulldozesArea:
 	BulldozesTerrainWhenCreated:
 		Size: 3,3
-		Offset: -1,-1
+		Offset: 0,0
 		Replacements:
 			Replacement@mud-big:
 				MinTileIndex: 2012
@@ -78,8 +78,8 @@
 	Selectable:
 		Bounds: 3072,2624,0,-288
 	Building:
-		Footprint: xxx _xx
-		Dimensions: 3,2
+		Footprint: ===== =xxx= ==xx= =====
+		Dimensions: 5,4
 	HitShape:
 		Type: Rectangle
 			TopLeft: -1536, -1536
@@ -138,8 +138,8 @@
 	Selectable:
 		Bounds: 2048,2432,0,-192
 	Building:
-		Footprint: xx xx
-		Dimensions: 2,2
+		Footprint: ==== =xx= =xx= ====
+		Dimensions: 4,4
 	HitShape:
 		Type: Rectangle
 			TopLeft: -1536, -1536
@@ -178,8 +178,8 @@
 	Selectable:
 		Bounds: 4096,3264,0,-96
 	Building:
-		Footprint: xxxx xxxx xxx_
-		Dimensions: 4,3
+		Footprint: ====== =xxxx= =xxxx= =xxx== ======
+		Dimensions: 6,5
 	HitShape:
 		Type: Rectangle
 			TopLeft: -1536, -1536
@@ -205,7 +205,7 @@
 		Range: 4c0
 	Refinery:
 		DockAngle: 270
-		DockOffset: 3,2
+		DockOffset: 4,3
 	StoresResources:
 		Capacity: 5000
 	WithIdleAnimation:
@@ -222,8 +222,8 @@
 	Selectable:
 		Bounds: 4096,3264,0,-96
 	Building:
-		Footprint: xxxx xxxx xxx_
-		Dimensions: 4,3
+		Footprint: ====== =xxxx= =xxxx= =xxx== ======
+		Dimensions: 6,5
 	HitShape:
 		Type: Rectangle
 			TopLeft: -1536, -1536
@@ -249,7 +249,7 @@
 		Range: 4c0
 	Refinery:
 		DockAngle: 270
-		DockOffset: 3,2
+		DockOffset: 4,3
 	StoresResources:
 		Capacity: 5000
 	WithIdleAnimation:
@@ -266,8 +266,8 @@
 	Selectable:
 		Bounds: 4096,3264,0,-96
 	Building:
-		Footprint: xxxx xxxx xxxx
-		Dimensions: 4,3
+		Footprint: ====== =xxxx= =xxxx= =xxxx= ======
+		Dimensions: 6,5
 	HitShape:
 		Type: Rectangle
 			TopLeft: -1536, -1536
@@ -305,8 +305,8 @@
 	Selectable:
 		Bounds: 4096,3264,0,-96
 	Building:
-		Footprint: xxxx xxxx xx=x
-		Dimensions: 4,3
+		Footprint: ====== =xxxx= =xxxx= =xx=x= ======
+		Dimensions: 6,5
 	HitShape:
 		Type: Rectangle
 			TopLeft: -1536, -1536
@@ -352,21 +352,25 @@
 		CancelledAudio: Cancelled
 		#LowPowerModifier: 300
 		#SpeedUp: False
-	Exit@1:
+	Exit:
 		Facing: 512
-		SpawnOffset: 512,0,0
-		ExitCell: 2,1
+		SpawnOffset: 512,768,0
+		ExitCell: 3,3
 		ProductionTypes: Vehicle
 	RallyPoint:
 		Palette: 8
 		IsPlayerPalette: false
-		Path: 2,3
+		Path: 3,5
 	WithIdleAnimation:
 		Interval: 380, 800
 
 ^MineCommon:
 	Inherits: ^Building
 	Inherits@shape: ^1x1Shape
+	Inherits@bulldoze: ^BulldozesArea
+	BulldozesTerrainWhenCreated:
+		Size: 4,3
+		Offset: -2,-1
 	Tooltip:
 		Name: Mine (Common)
 		GenericName: Mine
@@ -429,6 +433,10 @@
 ^MineRare:
 	Inherits: ^Building
 	Inherits@shape: ^1x1Shape
+	Inherits@bulldoze: ^BulldozesArea
+	BulldozesTerrainWhenCreated:
+		Size: 3,3
+		Offset: -1,-1
 	Tooltip:
 		Name: Mine (Rare)
 		GenericName: Mine
@@ -491,6 +499,10 @@
 ^MineMagma:
 	Inherits: ^Building
 	Inherits@shape: ^1x1Shape
+	Inherits@bulldoze: ^BulldozesArea
+	BulldozesTerrainWhenCreated:
+		Size: 3,3
+		Offset: -1,-1
 	Tooltip:
 		Name: Mine (Magma)
 		GenericName: Mine
@@ -553,16 +565,17 @@
 ^StorageCommon:
 	Inherits: ^Building
 	Inherits@shape: ^1x1Shape
+	Inherits@bulldoze: ^BulldozesArea
+	BulldozesTerrainWhenCreated:
+		Size: 3,3
 	Tooltip:
 		Name: Storage (Common)
 		GenericName: Ore Storage
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
+		Footprint: === =x= ===
+		Dimensions: 3,3
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -591,10 +604,8 @@
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
-		Footprint: x
-		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
+		Footprint: === =x= ===
+		Dimensions: 3,3
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -625,8 +636,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -657,8 +666,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -689,8 +696,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -721,8 +726,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -753,8 +756,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -783,8 +784,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -815,8 +814,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -847,8 +844,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -879,8 +874,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -911,8 +904,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -943,8 +934,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -975,8 +964,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -1007,8 +994,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -1039,8 +1024,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -1071,8 +1054,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -1103,8 +1084,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -1133,8 +1112,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -1165,8 +1142,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -1197,8 +1172,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -1227,8 +1200,6 @@
 	Building:
 		Footprint: x
 		Dimensions: 1,1
-		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -1297,7 +1268,7 @@
 			BottomRight: 512, 512
 	Buildable:
 		Queue: Defense
-		BuildPaletteOrder: 10
+		BuildPaletteOrder: 20
 		Prerequisites: ~disabled
 		Description: Basic defense turret.
 		IconPalette: 3

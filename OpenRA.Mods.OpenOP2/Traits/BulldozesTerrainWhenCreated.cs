@@ -22,7 +22,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		public int2 Size = new int2(3, 3);
 
 		[Desc("Offset from the top left of the object when bulldozing.")]
-		public int2 Offset = new int2(-1, -1);
+		public int2 Offset = new int2(0, 0);
 
 		public override object Create(ActorInitializer init) { return new BulldozesTerrainWhenCreated(this); }
 
