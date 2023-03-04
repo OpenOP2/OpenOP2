@@ -1,3 +1,6 @@
+# Note that this file is no longer used.
+# It is just kept around to reference group ID's
+
 eden-robo-dozer:
 	ActorType: Vehicle
 	CreateBaseActor: True

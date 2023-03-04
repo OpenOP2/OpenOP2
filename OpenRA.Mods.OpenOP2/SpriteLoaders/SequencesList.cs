@@ -1,4 +1,4 @@
-﻿namespace OpenRA.Mods.OpenOP2.UtilityCommands
+﻿namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 {
 	public class GroupSequenceSet
 	{

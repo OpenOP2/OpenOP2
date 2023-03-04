@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 using OpenRA.Mods.OpenOP2.FileSystem;
-using OpenRA.Mods.OpenOP2.UtilityCommands;
 
 namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 {
