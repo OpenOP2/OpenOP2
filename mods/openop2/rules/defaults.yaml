@@ -957,3 +957,7 @@
 ^SelectableBuilding:
 	Selectable:
 		Priority: 2
+
+^EmpDisable:
+	ExternalCondition@EMPDISABLE:
+		Condition: empdisable

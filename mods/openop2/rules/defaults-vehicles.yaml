@@ -3,6 +3,8 @@
 	WithInfantryBody:
 		IdleSequences: idle
 		StandSequences: idle
+	Mobile:
+		PauseOnCondition: empdisable
 
 ^TurretedVehicle:
 	Inherits: ^Op2Vehicle

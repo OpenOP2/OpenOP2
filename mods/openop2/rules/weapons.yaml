@@ -1,17 +1,17 @@
 laser:
-	ReloadDelay: 30
-	Range: 6c0
+	ReloadDelay: 35
+	Range: 4c0
 	Report: laser.WAV
 	Projectile: LaserZap
 		Color: FF000080
 		Width: 60
-		ZOffset: 2047
 		LaunchEffectPalette: 3
 		HitAnim: puff3
 		HitAnimPalette: 6
 	Warhead@1Dam: SpreadDamage
-		Spread: 42
-		Damage: 40
+		Spread: 16
+		Damage: 35
+		#Penetration: 35
 		Versus:
 			light: 80
 			Medium: 60
@@ -25,19 +25,20 @@ laser:
 		ValidTargets: Ground, Vehicle
 
 microwave:
-	ReloadDelay: 20
-	Range: 5c0
+	ReloadDelay: 30
+	Range: 4c0
 	Report: microwve.wav
 	Projectile: LaserZap
 		Color: FFFFFFFF
 		Width: 60
-		ZOffset: 2047
 		LaunchEffectPalette: 3
 		HitAnim: puff2
 		HitAnimPalette: 6
 	Warhead@1Dam: SpreadDamage
-		Spread: 42
+		Spread: 16
 		Damage: 40
+		#Penetration: 20
+		#Concussion: 20
 		Versus:
 			light: 80
 			Medium: 60
@@ -49,14 +50,15 @@ microwave:
 		ImpactSounds: medexp1.WAV
 		ValidTargets: Ground, Vehicle
 
+#rpg=cannon in op2
 rpg:
-	ReloadDelay: 50
-	Range: 8c0
+	ReloadDelay: 55
+	Range: 6c0
 	Report: mis_fire.WAV
 	Projectile: Bullet
 		Palette: 5
 		Speed: 300
-		Inaccuracy: 128
+		Inaccuracy: 0
 		Image: projectile2
 		Shadow: True
 		LaunchAngle: 0
@@ -64,8 +66,10 @@ rpg:
 		TrailPalette: 1
 		TrailInterval: 1
 	Warhead@1Dam: SpreadDamage
-		Spread: 80
-		Damage: 80
+		Spread: 16
+		Damage: 100
+		#Penetration:40
+		#Concussion:60
 		Versus:
 			light: 80
 			Medium: 60
@@ -83,13 +87,34 @@ rpg:
 		ImpactSounds: medexp2.WAV
 
 rail-gun:
+	ReloadDelay: 80
 	Inherits: rpg
-	Range: 7c0
 	Projectile: Bullet
 		Palette: 6
-		Speed: 450
+		Speed: 300
 		Image: projectile1
 		Shadow: False
 		TrailImage: rail-trail
 		TrailPalette: 6
 		TrailInterval: 1
+	Warhead@1Dam: SpreadDamage
+		Damage: 120
+		#Concussion: 80
+		#Penetration: 40
+
+EMP:
+	ReloadDelay: 140
+	Range: 5c0
+	Inherits: rpg
+	Projectile: Bullet
+		ZOffset: 64
+	Warhead@1Dam: SpreadDamage
+		Spread: 48
+		Damage: 0
+		#concussion: 256
+		ZOffset: 0
+	Warhead@emp: GrantExternalCondition
+		Range: 4c0
+		Spread: 48
+		Duration: 250
+		Condition: empdisable

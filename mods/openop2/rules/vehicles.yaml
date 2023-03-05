@@ -110,7 +110,7 @@ eden-panther-emp:
 		Sequence: turret
 		#LocalOffset: 856,0,80
 	Armament:
-		Weapon: microwave
+		Weapon: EMP
 	Valued:
 		Cost: 2150
 
