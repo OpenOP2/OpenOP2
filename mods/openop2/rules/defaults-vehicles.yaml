@@ -1,9 +1,11 @@
 ^Op2Vehicle:
-	Inherits: ^Vehicle
+	Inherits@1: ^Vehicle
+	Inherits@2: ^EmpDisable
 	WithInfantryBody:
 		IdleSequences: idle
 		StandSequences: idle
 	Mobile:
+		Speed:
 		PauseOnCondition: empdisable
 
 ^TurretedVehicle:

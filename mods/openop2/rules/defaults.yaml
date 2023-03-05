@@ -961,3 +961,6 @@
 ^EmpDisable:
 	ExternalCondition@EMPDISABLE:
 		Condition: empdisable
+	TimedConditionBar@EMPDISABLE:
+		Condition: empdisable
+		Color: FFFFFF
