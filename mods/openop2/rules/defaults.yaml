@@ -964,3 +964,18 @@
 	TimedConditionBar@EMPDISABLE:
 		Condition: empdisable
 		Color: FFFFFF
+	WithIdleOverlay@EMPDISABLE:
+		RequiresCondition: empdisable
+		Image: emp-spark
+		Palette: 6
+
+^StickyFoam:
+	ExternalCondition@STICKYFOAM:
+		Condition: stickyfoam
+	TimedConditionBar@STICKTFOAM:
+		Condition: stickyfoam
+		Color: 00FF00
+	WithIdleOverlay@STICKYFOAM:
+		RequiresCondition: stickyfoam
+		Image: 
+		Palette: 6

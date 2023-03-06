@@ -1,12 +1,11 @@
 ^Op2Vehicle:
-	Inherits@1: ^Vehicle
-	Inherits@2: ^EmpDisable
+	Inherits: ^Vehicle
+	Inherits: ^EmpDisable
 	WithInfantryBody:
 		IdleSequences: idle
 		StandSequences: idle
 	Mobile:
-		Speed:
-		PauseOnCondition: empdisable
+		PauseOnCondition: empdisable || sticky
 
 ^TurretedVehicle:
 	Inherits: ^Op2Vehicle
@@ -21,6 +20,7 @@
 		TurnSpeed: 28
 		Offset: -48,0,176
 	Armament:
+		PauseOnCondition: empdisable
 		Weapon: laser
 		LocalOffset: 768,0,90
 		#MuzzleSequence: muzzle

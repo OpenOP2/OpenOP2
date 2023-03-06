@@ -8,7 +8,7 @@ laser:
 		LaunchEffectPalette: 3
 		HitAnim: puff3
 		HitAnimPalette: 6
-	Warhead@1Dam: SpreadDamage
+	Warhead@Dam: SpreadDamage
 		Spread: 16
 		Damage: 35
 		#Penetration: 35
@@ -17,10 +17,10 @@ laser:
 			Medium: 60
 			Heavy: 40
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath
-	Warhead@2Smu: LeaveSmudge
+	Warhead@Smu: LeaveSmudge
 		SmudgeType: Scorch
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
-	Warhead@1Eff: CreateEffect
+	Warhead@Eff: CreateEffect
 		ImpactSounds: medexp1.WAV
 		ValidTargets: Ground, Vehicle
 
@@ -34,7 +34,7 @@ microwave:
 		LaunchEffectPalette: 3
 		HitAnim: puff2
 		HitAnimPalette: 6
-	Warhead@1Dam: SpreadDamage
+	Warhead@Dam: SpreadDamage
 		Spread: 16
 		Damage: 40
 		#Penetration: 20
@@ -43,10 +43,10 @@ microwave:
 			light: 80
 			Medium: 60
 			Heavy: 40
-	Warhead@2Smu: LeaveSmudge
+	Warhead@Smu: LeaveSmudge
 		SmudgeType: Scorch
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
-	Warhead@1Eff: CreateEffect
+	Warhead@Eff: CreateEffect
 		ImpactSounds: medexp1.WAV
 		ValidTargets: Ground, Vehicle
 
@@ -65,7 +65,7 @@ rpg:
 		TrailImage: puff2
 		TrailPalette: 1
 		TrailInterval: 1
-	Warhead@1Dam: SpreadDamage
+	Warhead@Dam: SpreadDamage
 		Spread: 16
 		Damage: 100
 		#Penetration:40
@@ -75,11 +75,11 @@ rpg:
 			Medium: 60
 			Heavy: 40
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath
-	Warhead@2Smu: LeaveSmudge
+	Warhead@Smu: LeaveSmudge
 		SmudgeType: Scorch
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
 		ValidTargets: Ground
-	Warhead@3Eff: CreateEffect
+	Warhead@Eff: CreateEffect
 		ExplosionPalette: 6
 		Image: explosion-small1
 		Explosions: idle
@@ -97,7 +97,7 @@ rail-gun:
 		TrailImage: rail-trail
 		TrailPalette: 6
 		TrailInterval: 1
-	Warhead@1Dam: SpreadDamage
+	Warhead@Dam: SpreadDamage
 		Damage: 120
 		#Concussion: 80
 		#Penetration: 40
@@ -108,13 +108,19 @@ EMP:
 	Inherits: rpg
 	Projectile: Bullet
 		ZOffset: 64
-	Warhead@1Dam: SpreadDamage
-		Spread: 48
+	Warhead@Dam: SpreadDamage
 		Damage: 0
 		#concussion: 256
 		ZOffset: 0
 	Warhead@emp: GrantExternalCondition
-		Range: 4c0
 		Spread: 48
 		Duration: 250
 		Condition: empdisable
+	Warhead@Eff: CreateEffect
+		ExplosionPalette: 6
+		Image: emp-spark
+		ValidTargets: Ground
+		-ImpactSounds: medexp2.WAV
+
+StickyFoam:
+
