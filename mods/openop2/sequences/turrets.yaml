@@ -1,8 +1,9 @@
 turret-idle:
 	idle: op2_art.bmp
-		Start: 39
+		Start: 18470
 		Length: 1
 		Facings: 1
+		FacingOffset: 4
 
 eden-turret-laser:
 	Inherits: turret-idle

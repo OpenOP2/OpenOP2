@@ -51,7 +51,7 @@ microwave:
 		ValidTargets: Ground, Vehicle
 
 #rpg=cannon in op2
-rpg:
+RPG:
 	ReloadDelay: 55
 	Range: 6c0
 	Report: mis_fire.WAV
@@ -88,7 +88,7 @@ rpg:
 
 rail-gun:
 	ReloadDelay: 80
-	Inherits: rpg
+	Inherits: RPG
 	Projectile: Bullet
 		Palette: 6
 		Speed: 300
@@ -105,13 +105,12 @@ rail-gun:
 EMP:
 	ReloadDelay: 140
 	Range: 5c0
-	Inherits: rpg
+	Inherits: RPG
 	Projectile: Bullet
 		ZOffset: 64
 	Warhead@Dam: SpreadDamage
 		Damage: 0
 		#concussion: 256
-		ZOffset: 0
 	Warhead@emp: GrantExternalCondition
 		Spread: 48
 		Duration: 250

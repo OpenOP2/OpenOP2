@@ -22,7 +22,7 @@
 	Armament:
 		PauseOnCondition: empdisable
 		Weapon: laser
-		LocalOffset: 768,0,90
+		LocalOffset: 700,0,0
 		#MuzzleSequence: muzzle
 		MuzzlePalette: 3
 	AttackTurreted:
@@ -265,7 +265,7 @@
 	Armor:
 		Type: Light
 	RevealsShroud:
-		Range: 7c0
+		Range: 4c0
 	Mobile:
 		Speed: 72
 	WithSpriteTurret:
@@ -291,9 +291,9 @@
 	Health:
 		HP: 600
 	Armor:
-		Type: Light
+		Type: Medium
 	RevealsShroud:
-		Range: 7c0
+		Range: 4c0
 	Mobile:
 		Speed: 48
 	WithSpriteTurret:
@@ -319,9 +319,9 @@
 	Health:
 		HP: 900
 	Armor:
-		Type: Light
+		Type: Heavy
 	RevealsShroud:
-		Range: 7c0
+		Range: 4c0
 	Mobile:
 		Speed: 32
 	WithSpriteTurret:

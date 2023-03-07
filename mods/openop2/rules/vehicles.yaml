@@ -1,133 +1,3 @@
-^eden-lynx:
-	RenderSprites:
-		Image: eden-lynx
-	Inherits: ^Lynx
-	Buildable:
-		Prerequisites: ~vehicles.eden
-		IconPalette: 3
-
-^plymouth-lynx:
-	RenderSprites:
-		Image: plymouth-lynx
-	Inherits: ^Lynx
-	Buildable:
-		Prerequisites: ~vehicles.plymouth
-		IconPalette: 3
-
-^eden-panther:
-	RenderSprites:
-		Image: eden-panther
-	Inherits: ^Panther
-	Buildable:
-		Prerequisites: ~vehicles.eden
-		IconPalette: 3
-
-^plymouth-panther:
-	RenderSprites:
-		Image: plymouth-panther
-	Inherits: ^Panther
-	Buildable:
-		Prerequisites: ~vehicles.plymouth
-		IconPalette: 3
-
-^eden-tiger:
-	RenderSprites:
-		Image: eden-tiger
-	Inherits: ^Tiger
-	Buildable:
-		Prerequisites: ~vehicles.eden
-		IconPalette: 3
-
-^plymouth-tiger:
-	RenderSprites:
-		Image: plymouth-tiger
-	Inherits: ^Tiger
-	Buildable:
-		Prerequisites: ~vehicles.plymouth
-		IconPalette: 3
-
-# Combat Vehicles
-eden-lynx-laser:
-	Inherits: ^eden-lynx
-	RenderSprites:
-		Image: eden-lynx-laser
-	Tooltip:
-		Name: Laser Lynx
-	Armament:
-		Weapon:	laser
-	Valued:
-		Cost: 1150
-
-eden-lynx-rail-gun:
-	Inherits: ^eden-lynx
-	RenderSprites:
-		Image: eden-lynx-rail-gun
-	Tooltip:
-		Name: Railgun Lynx
-	WithSpriteTurret:
-		Sequence: turret
-	Armament:
-		Weapon: rail-gun
-	Valued:
-		Cost: 1150
-
-plymouth-lynx-microwave:
-	Inherits: ^plymouth-lynx
-	RenderSprites:
-		Image: plymouth-lynx-microwave
-	Tooltip:
-		Name: Microwave Lynx
-	WithSpriteTurret:
-		Sequence: turret
-	Armament:
-		Weapon: microwave
-	Valued:
-		Cost: 1150
-
-plymouth-lynx-rpg:
-	Inherits: ^plymouth-lynx
-	RenderSprites:
-		Image: plymouth-lynx-rpg
-	Tooltip:
-		Name: RPG Lynx
-	WithSpriteTurret:
-		Sequence: turret
-		#LocalOffset: 856,0,80
-	Armament:
-		Weapon: rpg
-	Valued:
-		Cost: 1150
-
-# TODO: the rest of the tank types....
-
-eden-panther-emp:
-	Inherits: ^eden-panther
-	RenderSprites:
-		Image: eden-panther-emp
-	Tooltip:
-		Name: EMP Panther
-	WithSpriteTurret:
-		Sequence: turret
-		#LocalOffset: 856,0,80
-	Armament:
-		Weapon: EMP
-	Valued:
-		Cost: 2150
-
-plymouth-tiger-rpg:
-	Inherits: ^plymouth-tiger
-	RenderSprites:
-		Image: plymouth-tiger-rpg
-	Tooltip:
-		Name: RPG Tiger
-	WithSpriteTurret:
-		Sequence: turret
-		#LocalOffset: 856,0,80
-	Armament:
-		Weapon: rpg
-	Valued:
-		Cost: 2150
-
 # Non-combat vehicles
 eden-cargo-truck:
 	RenderSprites:
@@ -291,6 +161,262 @@ eden-geocom:
 		Prerequisites: ~vehicles.eden
 		IconPalette: 3
 
+^eden-lynx:
+	RenderSprites:
+		Image: eden-lynx
+	Inherits: ^Lynx
+	Buildable:
+		Prerequisites: ~vehicles.eden
+		IconPalette: 3
+
+^plymouth-lynx:
+	RenderSprites:
+		Image: plymouth-lynx
+	Inherits: ^Lynx
+	Buildable:
+		Prerequisites: ~vehicles.plymouth
+		IconPalette: 3
+
+^eden-panther:
+	RenderSprites:
+		Image: eden-panther
+	Inherits: ^Panther
+	Buildable:
+		Prerequisites: ~vehicles.eden
+		IconPalette: 3
+
+^plymouth-panther:
+	RenderSprites:
+		Image: plymouth-panther
+	Inherits: ^Panther
+	Buildable:
+		Prerequisites: ~vehicles.plymouth
+		IconPalette: 3
+
+^eden-tiger:
+	RenderSprites:
+		Image: eden-tiger
+	Inherits: ^Tiger
+	Buildable:
+		Prerequisites: ~vehicles.eden
+		IconPalette: 3
+
+^plymouth-tiger:
+	RenderSprites:
+		Image: plymouth-tiger
+	Inherits: ^Tiger
+	Buildable:
+		Prerequisites: ~vehicles.plymouth
+		IconPalette: 3
+
+#########################################################################################################
+#########################################################################################################
+#eden lynxs
+
+eden-lynx-laser:
+	Inherits: ^eden-lynx
+	RenderSprites:
+		Image: eden-lynx-laser
+	Tooltip:
+		Name: Laser Lynx
+	Armament:
+		Weapon:	laser
+	Valued:
+		Cost: 750
+	#common: 750
+
+eden-lynx-rail:
+	Inherits: ^eden-lynx
+	RenderSprites:
+		Image: eden-lynx-rail
+	Tooltip:
+		Name: Railgun Lynx
+	WithSpriteTurret:
+		Sequence: turret
+	Armament:
+		Weapon: rail-gun
+	Valued:
+		Cost: 1150
+	#common: 1150
+
+eden-lynx-emp:
+	Inherits: ^eden-lynx
+	RenderSprites:
+		Image: eden-lynx-emp
+	Tooltip:
+		Name: EMP Lynx
+	WithSpriteTurret:
+		Sequence: turret
+	Armament:
+		Weapon: emp
+	Valued:
+		Cost: 1200
+	#commonorecost: 1200
+
+#plymouth lynxs
+
+plymouth-lynx-microwave:
+	Inherits: ^plymouth-lynx
+	RenderSprites:
+		Image: plymouth-lynx-microwave
+	Tooltip:
+		Name: Microwave Lynx
+	WithSpriteTurret:
+		Sequence: turret
+	Armament:
+		Weapon: microwave
+	Valued:
+		Cost: 750
+	#common:750
+
+plymouth-lynx-rpg:
+	Inherits: ^plymouth-lynx
+	RenderSprites:
+		Image: plymouth-lynx-rpg
+	Tooltip:
+		Name: RPG Lynx
+	WithSpriteTurret:
+		Sequence: turret
+		#LocalOffset: 856,0,80
+	Armament:
+		Weapon: RPG
+	Valued:
+		Cost: 1150
+	#common: 1150
+
+plymouth-lynx-emp:
+	Inherits: ^plymouth-lynx
+	RenderSprites:
+		Image: plymouth-lynx-emp
+	Tooltip:
+		Name: EMP Lynx
+	WithSpriteTurret:
+		Sequence: turret
+	Armament:
+		Weapon: emp
+	Valued:
+		Cost: 1200
+	#common: 1200
+
+#eden panthers
+
+eden-panther-laser:
+	Inherits: ^eden-panther
+	RenderSprites:
+		Image: eden-panther-laser
+	Tooltip:
+		Name: Laser Panther
+	WithSpriteTurret:
+		Sequence: turret
+		#LocalOffset: 856,0,80
+	Armament:
+		Weapon: laser
+	Valued:
+		Cost: 975
+	#common: 850
+	#rare: 125
+
+eden-panther-rail:
+	Inherits: ^eden-panther
+	RenderSprites:
+		Image: eden-panther-rail
+	Tooltip:
+		Name: Laser Panther
+	WithSpriteTurret:
+		Sequence: turret
+		#LocalOffset: 856,0,80
+	Armament:
+		Weapon: rail-gun
+	Valued:
+		Cost: 1375
+	#common: 1250
+	#rare: 125
+
+eden-panther-emp:
+	Inherits: ^eden-panther
+	RenderSprites:
+		Image: eden-panther-emp
+	Tooltip:
+		Name: EMP Panther
+	WithSpriteTurret:
+		Sequence: turret
+		#LocalOffset: 856,0,80
+	Armament:
+		Weapon: EMP
+	Valued:
+		Cost: 1425
+	#common: 1300
+	#rare: 125
+
+#plymouth panthers
+
+plymouth-panther-microwave:
+	Inherits: ^plymouth-panther
+	RenderSprites:
+		Image: plymouth-panther-microwave
+	Tooltip:
+		Name: Microwave Panther
+	WithSpriteTurret:
+		Sequence: turret
+		#LocalOffset: 856,0,80
+	Armament:
+		Weapon: microwave
+	Valued:
+		Cost: 975
+	#common: 850
+	#rare: 125
+
+plymouth-panther-rpg:
+	Inherits: ^plymouth-panther
+	RenderSprites:
+		Image: plymouth-panther-rpg
+	Tooltip:
+		Name: RPG Panther
+	WithSpriteTurret:
+		Sequence: turret
+		#LocalOffset: 856,0,80
+	Armament:
+		Weapon: RPG
+	Valued:
+		Cost: 1375
+	#common: 1250
+	#rare: 125
+
+plymouth-panther-emp:
+	Inherits: ^plymouth-panther
+	RenderSprites:
+		Image: plymouth-panther-emp
+	Tooltip:
+		Name: EMP Panther
+	WithSpriteTurret:
+		Sequence: turret
+		#LocalOffset: 856,0,80
+	Armament:
+		Weapon: EMP
+	Valued:
+		Cost: 1425
+	#common: 1300
+	#rare: 125
+
+#eden tigers
+
+#plymouth tigers
+
+plymouth-tiger-rpg:
+	Inherits: ^plymouth-tiger
+	RenderSprites:
+		Image: plymouth-tiger-rpg
+	Tooltip:
+		Name: RPG Tiger
+	WithSpriteTurret:
+		Sequence: turret
+		#LocalOffset: 856,0,80
+	Armament:
+		Weapon: rpg
+	Valued:
+		Cost: 2150
+
+#plymouth arachnids
 plymouth-spider:
 	RenderSprites:
 		Image: plymouth-spider

@@ -1208,6 +1208,7 @@
 ^GuardPost:
 	Inherits: ^Defense
 	Inherits@shape: ^1x1Shape
+	Inherits: ^AutoTargetGround
 	Tooltip:
 		Name: Guard Post
 		GenericName: Guard Post
@@ -1234,18 +1235,16 @@
 		Type: Heavy
 	Power:
 		Amount: -10
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 700
 	RevealsShroud:
 		Range: 4c0
 	Armament:
 		Weapon: laser
-	#	Recoil: 85
-	#	RecoilRecovery: 25
-	#	LocalOffset: 768,0,90
-	#	MuzzlePalette: 3
+	#Recoil: 85
+	#RecoilRecovery: 25
+	#LocalOffset: 768,0,90
+	#MuzzlePalette: 3
 	Turreted:
 		TurnSpeed: 64
 	AttackTurreted:
