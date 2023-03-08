@@ -120,7 +120,7 @@ EMP:
 		ExplosionPalette: 6
 		Image: emp-spark
 		ValidTargets: Ground
-		-ImpactSounds: medexp2.WAV
+		ImpactSounds: geo_sel.WAV
 
 #Tiger Versions
 

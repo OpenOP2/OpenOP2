@@ -968,6 +968,7 @@
 		RequiresCondition: empdisable
 		Image: emp-spark
 		Palette: 6
+#OnFireSound: geo_sel.WAV
 
 ^StickyFoam:
 	ExternalCondition@STICKYFOAM:
