@@ -1,6 +1,7 @@
 ^Op2Vehicle:
 	Inherits: ^Vehicle
 	Inherits: ^EmpDisable
+	Inherits: ^StickyFoam
 	WithInfantryBody:
 		IdleSequences: idle
 		StandSequences: idle
@@ -22,9 +23,9 @@
 	Armament:
 		PauseOnCondition: empdisable
 		Weapon: laser
-		LocalOffset: 700,0,0
-		#MuzzleSequence: muzzle
-		MuzzlePalette: 3
+	#LocalOffset: 700,0,0
+	#MuzzleSequence: muzzle
+	#MuzzlePalette: 3
 	AttackTurreted:
 	#WithMuzzleOverlay:
 	WithSpriteTurret:

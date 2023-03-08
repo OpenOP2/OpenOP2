@@ -975,7 +975,7 @@
 	TimedConditionBar@STICKTFOAM:
 		Condition: stickyfoam
 		Color: 00FF00
-	WithIdleOverlay@STICKYFOAM:
-		RequiresCondition: stickyfoam
-		Image: 
-		Palette: 6
+	#WithIdleOverlay@STICKYFOAM:
+	#RequiresCondition: stickyfoam
+	#Image: 
+	#Palette: 6

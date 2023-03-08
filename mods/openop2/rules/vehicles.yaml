@@ -402,6 +402,22 @@ plymouth-panther-emp:
 
 #plymouth tigers
 
+plymouth-tiger-microwave:
+	Inherits: ^plymouth-tiger
+	RenderSprites:
+		Image: plymouth-tiger-microwave
+	Tooltip:
+		Name: Microwave Tiger
+	WithSpriteTurret:
+		Sequence: turret
+		#LocalOffset: 856,0,80
+	Armament:
+		Weapon: microwave
+			ReloadDelay: 15
+		LocalOffset: 700,140,90, 700,-140,90
+	Valued:
+		Cost: 2150
+
 plymouth-tiger-rpg:
 	Inherits: ^plymouth-tiger
 	RenderSprites:

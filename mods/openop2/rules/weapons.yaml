@@ -2,6 +2,7 @@ laser:
 	ReloadDelay: 35
 	Range: 4c0
 	Report: laser.WAV
+	Zoffset: 700
 	Projectile: LaserZap
 		Color: FF000080
 		Width: 60

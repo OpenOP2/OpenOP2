@@ -264,7 +264,7 @@ plymouth-robo-miner:
 
 ^eden-panther:
 	idle: op2_art.bmp
-		Frames: 2373, 2376, 2377, 2378, 2381, 2382, 2383, 2386
+		Frames: 2373, 2376, 2377, 2378, 2381, 2382, 2383, 2384
 		Length: 1
 		Facings: 8
 		FacingOffset: 2
@@ -276,7 +276,7 @@ plymouth-robo-miner:
 
 ^plymouth-panther:
 	idle: op2_art.bmp
-		Frames: 2673, 2676, 2677, 2678, 2681, 2682, 2683, 2686
+		Frames: 2673, 2676, 2677, 2678, 2681, 2682, 2683, 2684
 		Length: 1
 		Facings: 8
 		FacingOffset: 2
