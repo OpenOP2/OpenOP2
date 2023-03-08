@@ -14,9 +14,9 @@ laser:
 		Damage: 35
 		#Penetration: 35
 		Versus:
-			light: 80
+			light: 70
 			Medium: 60
-			Heavy: 40
+			Heavy: 50
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: Scorch
@@ -41,9 +41,9 @@ microwave:
 		#Penetration: 20
 		#Concussion: 20
 		Versus:
-			light: 80
+			light: 70
 			Medium: 60
-			Heavy: 40
+			Heavy: 50
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: Scorch
 		InvalidTargets: Vehicle, Structure, Wall, Husk, Trees, Creep
@@ -73,8 +73,8 @@ RPG:
 		#Concussion:60
 		Versus:
 			light: 80
-			Medium: 60
-			Heavy: 40
+			Medium: 80
+			Heavy: 80
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath
 	Warhead@Smu: LeaveSmudge
 		SmudgeType: Scorch
@@ -121,6 +121,34 @@ EMP:
 		Image: emp-spark
 		ValidTargets: Ground
 		-ImpactSounds: medexp2.WAV
+
+#Tiger Versions
+
+tiger-laser:
+	Inherits: laser
+	ReloadDelay: 18
+#was 17.5
+
+tiger-microwave:
+	Inherits: microwave
+	ReloadDelay: 15
+
+tiger-rpg:
+	Inherits: RPG
+	ReloadDelay: 28
+#was 27.5
+
+tiger-rail-gun:
+	Inherits: rail-gun
+	ReloadDelay: 40
+
+tiger-emp:
+	Inherits: EMP
+	ReloadDelay: 70
+
+
+
+
 
 StickyFoam:
 

@@ -1,5 +1,6 @@
 ^Op2Building:
 	Inherits: ^Building
+	Inherits: ^EmpDisable
 	Buildable:
 		IconPalette: 5
 	ActorLostNotification:
@@ -1206,6 +1207,7 @@
 		Range: 9c0
 
 ^GuardPost:
+	Inherits: ^EmpDisable
 	Inherits: ^Defense
 	Inherits@shape: ^1x1Shape
 	Inherits: ^AutoTargetGround
@@ -1240,6 +1242,7 @@
 	RevealsShroud:
 		Range: 4c0
 	Armament:
+		PauseOnCondition: empdisable
 		Weapon: laser
 	#Recoil: 85
 	#RecoilRecovery: 25

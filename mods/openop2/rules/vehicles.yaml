@@ -316,10 +316,10 @@ eden-panther-laser:
 	#common: 850
 	#rare: 125
 
-eden-panther-rail:
+eden-panther-rail-gun:
 	Inherits: ^eden-panther
 	RenderSprites:
-		Image: eden-panther-rail
+		Image: eden-panther-rail-gun
 	Tooltip:
 		Name: Laser Panther
 	WithSpriteTurret:
@@ -400,6 +400,54 @@ plymouth-panther-emp:
 
 #eden tigers
 
+eden-tiger-laser:
+	Inherits: ^eden-tiger
+	RenderSprites:
+		Image: eden-tiger-laser
+	Tooltip:
+		Name: Laser Tiger
+	WithSpriteTurret:
+		Sequence: turret
+		#LocalOffset: 856,0,80
+	Armament:
+		Weapon: tiger-laser
+	Valued:
+		Cost: 1450
+	#common: 1200
+	#rare: 250
+
+eden-tiger-rail-gun:
+	Inherits: ^eden-tiger
+	RenderSprites:
+		Image: eden-tiger-rail-gun
+	Tooltip:
+		Name: Railgun Tiger
+	WithSpriteTurret:
+		Sequence: turret
+		#LocalOffset: 856,0,80
+	Armament:
+		Weapon: tiger-rail-gun
+	Valued:
+		Cost: 1850
+	#common: 1600
+	#rare: 250
+
+eden-tiger-emp:
+	Inherits: ^eden-tiger
+	RenderSprites:
+		Image: eden-tiger-emp
+	Tooltip:
+		Name: EMP Tiger
+	WithSpriteTurret:
+		Sequence: turret
+		#LocalOffset: 856,0,80
+	Armament:
+		Weapon: tiger-emp
+	Valued:
+		Cost: 1900
+	#common: 1650
+	#rare: 250
+
 #plymouth tigers
 
 plymouth-tiger-microwave:
@@ -412,11 +460,12 @@ plymouth-tiger-microwave:
 		Sequence: turret
 		#LocalOffset: 856,0,80
 	Armament:
-		Weapon: microwave
-			ReloadDelay: 15
+		Weapon: tiger-microwave
 		LocalOffset: 700,140,90, 700,-140,90
 	Valued:
-		Cost: 2150
+		Cost: 1450
+	#common: 1200
+	#rare: 250
 
 plymouth-tiger-rpg:
 	Inherits: ^plymouth-tiger
@@ -428,9 +477,27 @@ plymouth-tiger-rpg:
 		Sequence: turret
 		#LocalOffset: 856,0,80
 	Armament:
-		Weapon: rpg
+		Weapon: tiger-rpg
 	Valued:
-		Cost: 2150
+		Cost: 1850
+	#common: 1600
+	#rare: 250
+
+plymouth-tiger-emp:
+	Inherits: ^plymouth-tiger
+	RenderSprites:
+		Image: plymouth-tiger-emp
+	Tooltip:
+		Name: EMP Tiger
+	WithSpriteTurret:
+		Sequence: turret
+		LocalOffset: -856,0,80
+	Armament:
+		Weapon: tiger-emp
+	Valued:
+		Cost: 1900
+	#common: 1650
+	#rare: 250
 
 #plymouth arachnids
 plymouth-spider:

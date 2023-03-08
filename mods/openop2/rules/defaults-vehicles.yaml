@@ -112,11 +112,11 @@
 	Voiced:
 		VoiceSet: RoboSurveyorVoice
 	Valued:
-		Cost: 200
+		Cost: 300
 	Tooltip:
 		Name: Robo-Surveyor
 	Health:
-		HP: 5000
+		HP: 125
 	RevealsShroud:
 		Range: 7c0
 	Mobile:
@@ -327,5 +327,7 @@
 		Speed: 32
 	WithSpriteTurret:
 		Sequence: turret
+		OffSet: 5675,56756,5767
 	AttackTurreted:
 	Armament:
+		LocalOffset: 700,140,90, 700,-140,90

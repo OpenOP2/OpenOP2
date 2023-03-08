@@ -139,7 +139,7 @@ eden-panther-laser:
 	icon: units.png
 		Start: 30
 
-eden-panther-rail:
+eden-panther-rail-gun:
 	Inherits: ^eden-panther
 	turret: op2_art.bmp
 		Start: 16080 # double is 16096
