@@ -83,7 +83,7 @@ Player:
 	AllyRepair:
 	PlayerResources:
 		SelectableCash: 5000, 7500, 10000, 20000
-		DefaultCash: 7500
+		DefaultCash: 20000
 		InsufficientFundsNotification: InsufficientFunds
 		CashTickUpNotification: CashTickUp
 		CashTickDownNotification: CashTickDown
@@ -95,9 +95,11 @@ Player:
 			ore.depot.rare2: 50
 			ore.depot.rare3: 60
 	DeveloperMode:
+		CheckboxEnabled: True
 		CheckboxDisplayOrder: 10
 	GpsWatcher:
 	Shroud:
+		ExploredMapCheckboxEnabled: True
 		FogCheckboxDisplayOrder: 3
 	FrozenActorLayer:
 	BaseAttackNotifier:

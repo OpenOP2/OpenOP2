@@ -108,7 +108,7 @@ EMP:
 	Range: 5c0
 	Inherits: RPG
 	Projectile: Bullet
-		ZOffset: 64
+	ZOffset: 700
 	Warhead@Dam: SpreadDamage
 		Damage: 0
 		#concussion: 256

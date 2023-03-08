@@ -220,6 +220,7 @@ eden-lynx-laser:
 	Tooltip:
 		Name: Laser Lynx
 	Armament:
+		LocalOffset: 500,0,-90
 		Weapon:	laser
 	Valued:
 		Cost: 750
@@ -264,6 +265,7 @@ plymouth-lynx-microwave:
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
+		LocalOffset: 500,0,-90
 		Weapon: microwave
 	Valued:
 		Cost: 750
@@ -310,6 +312,7 @@ eden-panther-laser:
 		Sequence: turret
 		#LocalOffset: 856,0,80
 	Armament:
+		LocalOffset: 500,0,-90
 		Weapon: laser
 	Valued:
 		Cost: 975
@@ -357,9 +360,11 @@ plymouth-panther-microwave:
 	Tooltip:
 		Name: Microwave Panther
 	WithSpriteTurret:
+		LocalOffset: 500,90,-90, 500,-90,-90
 		Sequence: turret
 		#LocalOffset: 856,0,80
 	Armament:
+		LocalOffset: 500,0,-90
 		Weapon: microwave
 	Valued:
 		Cost: 975
@@ -410,6 +415,7 @@ eden-tiger-laser:
 		Sequence: turret
 		#LocalOffset: 856,0,80
 	Armament:
+		LocalOffset: 500,90,-90, 500,-90,-90
 		Weapon: tiger-laser
 	Valued:
 		Cost: 1450

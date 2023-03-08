@@ -19,7 +19,7 @@
 		IconPalette: 5
 	Turreted:
 		TurnSpeed: 28
-		Offset: -48,0,176
+		Offset: 0,0,300
 	Armament:
 		PauseOnCondition: empdisable
 		Weapon: laser
@@ -273,6 +273,7 @@
 		Sequence: turret
 	AttackTurreted:
 	Armament:
+		LocalOffset: 900,0,0
 
 ^Panther:
 	Inherits: ^TurretedVehicle
@@ -301,6 +302,7 @@
 		Sequence: turret
 	AttackTurreted:
 	Armament:
+		LocalOffset: 900,0,0
 
 ^Tiger:
 	Inherits: ^TurretedVehicle
@@ -327,7 +329,6 @@
 		Speed: 32
 	WithSpriteTurret:
 		Sequence: turret
-		OffSet: 5675,56756,5767
 	AttackTurreted:
 	Armament:
-		LocalOffset: 700,140,90, 700,-140,90
+		LocalOffset: 900,140,90, 900,-140,90
