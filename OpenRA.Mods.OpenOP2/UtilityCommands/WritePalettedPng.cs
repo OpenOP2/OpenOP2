@@ -11,7 +11,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using OpenRA.FileFormats;
 using OpenRA.Primitives;
 
@@ -23,18 +22,18 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 		bool IUtilityCommand.ValidateArguments(string[] args) { return ValidateArguments(args); }
 
 		[Desc("Writes a patterned indexed8 PNG out to c:\\temp\\!overlay.png.")]
-		void IUtilityCommand.Run(Utility utility, string[] args) { Run(utility, args); }
+		void IUtilityCommand.Run(Utility utility, string[] _) { Run(utility); }
 
 		public bool ValidateArguments(IReadOnlyCollection<string> args)
 		{
 			return args.Count >= 0;
 		}
 
-		void Run(Utility utility, string[] args)
+		void Run(Utility utility)
 		{
-			const byte emptyIndex = 0;
-			const byte coloredPixelIndex = 150;
-			const byte coloredPixelIndex2 = 149;
+			const byte EmptyIndex = 0;
+			const byte ValidIndex = 150;
+			const byte InvalidIndex = 149;
 			var filePath = "C:\\temp\\!overlay.png";
 
 			// HACK: The engine code assumes that Game.modData is set.
@@ -49,10 +48,10 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				var xOffset = y % 2 != 0 ? 2 : 0;
 				for (var x = 0; x < width; x++)
 				{
-					var pixelIndex = coloredPixelIndex;
+					var pixelIndex = ValidIndex;
 					if (x >= 32)
 					{
-						pixelIndex = coloredPixelIndex2;
+						pixelIndex = InvalidIndex;
 					}
 
 					Console.WriteLine($"{index}: {x}, {y}");
@@ -63,11 +62,10 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					}
 					else
 					{
-						bytes[index] = emptyIndex;
+						bytes[index] = EmptyIndex;
 					}
 
 					index++;
-
 				}
 			}
 
@@ -80,8 +78,8 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			}
 
 			palette[0] = Color.Transparent;
-			palette[coloredPixelIndex] = validColor;
-			palette[coloredPixelIndex2] = invalidColor;
+			palette[ValidIndex] = validColor;
+			palette[InvalidIndex] = invalidColor;
 
 			var png = new Png(bytes, OpenRA.Graphics.SpriteFrameType.Indexed8, width, height, palette, null);
 			png.Save(filePath);
