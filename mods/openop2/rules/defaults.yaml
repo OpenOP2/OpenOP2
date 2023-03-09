@@ -367,6 +367,7 @@
 		BuildSounds: bld_make.WAV
 		#UndeploySounds: cashturn.aud
 	ActorPreviewPlaceBuildingPreview:
+		Palette: 6
 	#	OverridePalette: placebuilding
 	RequiresBuildableArea:
 		AreaTypes: building
@@ -471,6 +472,7 @@
 		TerrainTypes: Clear,ClearRock,ClearRock2,ClearSand
 		#UndeploySounds: cashturn.aud
 	FootprintPlaceBuildingPreview:
+		Palette: 6
 	#	LineBuildSegmentPalette: placelinesegment
 	RequiresBuildableArea:
 		AreaTypes: building

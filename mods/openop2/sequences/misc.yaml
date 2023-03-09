@@ -23,16 +23,21 @@ clock:
 		Length: *
 
 overlay:
-	Defaults: bits/filled.png
-		Length: *
+	Defaults: bits/overlay.png
+		Length: 1
 	build-valid:
+		Start: 0
 	build-invalid:
+		Start: 1
 	target-valid:
+		Start: 0
 	target-select:
+		Start: 0
 	target-invalid:
+		Start: 1
 
 editor-overlay:
-	Defaults: bits/filled.png
+	Defaults: bits/overlay-invalid.png
 		Length: *
 	copy:
 	paste:
