@@ -10,7 +10,7 @@ laser:
 		HitAnim: puff3
 		HitAnimPalette: 6
 	Warhead@Dam: SpreadDamage
-		Spread: 16
+		Spread: 0c16
 		Damage: 35
 		#Penetration: 35
 		Versus:
@@ -67,7 +67,7 @@ RPG:
 		TrailPalette: 1
 		TrailInterval: 1
 	Warhead@Dam: SpreadDamage
-		Spread: 16
+		Spread: 0c16
 		Damage: 100
 		#Penetration:40
 		#Concussion:60
@@ -107,20 +107,63 @@ EMP:
 	ReloadDelay: 140
 	Range: 5c0
 	Inherits: RPG
-	Projectile: Bullet
 	ZOffset: 700
 	Warhead@Dam: SpreadDamage
 		Damage: 0
 		#concussion: 256
 	Warhead@emp: GrantExternalCondition
-		Spread: 48
-		Duration: 250
+		Range: 1c9
+		Duration: 140
 		Condition: empdisable
 	Warhead@Eff: CreateEffect
 		ExplosionPalette: 6
 		Image: emp-spark
 		ValidTargets: Ground
 		ImpactSounds: geo_sel.WAV
+
+stickyfoam:
+	ReloadDelay: 90
+	Range: 5c0
+	Inherits: RPG
+	ZOffset: 700
+	Warhead@Dam: SpreadDamage
+		Damage: 100
+		Spread: 128
+		#penetration: 100
+	Warhead@STICKYFOAM: GrantExternalCondition
+		Range: 2c0
+		Duration: 200
+		Condition: stickyfoam
+	Warhead@Eff: CreateEffect
+		ExplosionPalette: 6
+		Image: stickyfoam-melt-large
+		ValidTargets: Ground
+		ImpactSounds: foam.wav
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #Tiger Versions
 
@@ -146,9 +189,4 @@ tiger-emp:
 	Inherits: EMP
 	ReloadDelay: 70
 
-
-
-
-
-StickyFoam:
 

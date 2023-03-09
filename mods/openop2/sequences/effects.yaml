@@ -118,6 +118,10 @@ stickyfoam-stick:
 		Start: 12394
 		Length: 9
 		Facings: 1
+	idle-overlay: op2_art.bmp
+		Start: 12394
+		Length: 9
+		Facings: 1
 
 stickyfoam-melt:
 	idle: op2_art.bmp

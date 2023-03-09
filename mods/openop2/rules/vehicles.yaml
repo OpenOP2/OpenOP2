@@ -300,6 +300,20 @@ plymouth-lynx-emp:
 		Cost: 1200
 	#common: 1200
 
+plymouth-lynx-stickyfoam:
+	Inherits: ^plymouth-lynx
+	RenderSprites:
+		Image: plymouth-lynx-stickyfoam
+	Tooltip:
+		Name: Stickyfoam Lynx
+	WithSpriteTurret:
+		Sequence: turret
+	Armament:
+		Weapon: stickyfoam
+	Valued:
+		Cost: 1200
+	#common: 1200
+
 #eden panthers
 
 eden-panther-laser:

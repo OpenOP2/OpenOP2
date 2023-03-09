@@ -1249,6 +1249,7 @@
 	#LocalOffset: 768,0,90
 	#MuzzlePalette: 3
 	Turreted:
+		PauseOnCondition: empdisable
 		TurnSpeed: 64
 	AttackTurreted:
 	WithSpriteTurret:
