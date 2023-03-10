@@ -64,9 +64,6 @@
 	BaseBuilding:
 	Sellable:
 		RequiresCondition: !being-captured && !being-demolished
-	BaseProvider:
-		PauseOnCondition: being-captured
-		Range: 16c0
 	WithIdleAnimation:
 		Interval: 400, 1200
 

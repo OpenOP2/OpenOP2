@@ -7,7 +7,7 @@ laser:
 		Color: FF000080
 		Width: 60
 		LaunchEffectPalette: 3
-		HitAnim: puff3
+		HitAnim: explosion-small1
 		HitAnimPalette: 6
 	Warhead@Dam: SpreadDamage
 		Spread: 0c16
@@ -33,7 +33,7 @@ microwave:
 		Color: FFFFFFFF
 		Width: 60
 		LaunchEffectPalette: 3
-		HitAnim: puff2
+		HitAnim: explosion-small1
 		HitAnimPalette: 6
 	Warhead@Dam: SpreadDamage
 		Spread: 16
@@ -50,6 +50,18 @@ microwave:
 	Warhead@Eff: CreateEffect
 		ImpactSounds: medexp1.WAV
 		ValidTargets: Ground, Vehicle
+
+scorp-laser:
+	ReloadDelay: 25
+	Inherits: laser
+	Range: 2c0
+	Projectile: LaserZap
+		Color: 0000FF
+	Warhead@Dam: SpreadDamage
+		Spread: 0c16
+		Damage: 20
+	#Penetration: 20
+
 
 #rpg=cannon in op2
 RPG:
@@ -103,6 +115,9 @@ rail-gun:
 		#Concussion: 80
 		#Penetration: 40
 
+####################
+#emp and stickyfoam may be able to work correctly by using cluster warheads
+
 EMP:
 	ReloadDelay: 140
 	Range: 5c0
@@ -112,7 +127,7 @@ EMP:
 		Damage: 0
 		#concussion: 256
 	Warhead@emp: GrantExternalCondition
-		Range: 1c9
+		Range: 0c5
 		Duration: 140
 		Condition: empdisable
 	Warhead@Eff: CreateEffect
@@ -127,11 +142,12 @@ stickyfoam:
 	Inherits: RPG
 	ZOffset: 700
 	Warhead@Dam: SpreadDamage
+		Spread: 0c5
 		Damage: 100
-		Spread: 128
+		Falloff: 100
 		#penetration: 100
 	Warhead@STICKYFOAM: GrantExternalCondition
-		Range: 2c0
+		Range: 0c5
 		Duration: 200
 		Condition: stickyfoam
 	Warhead@Eff: CreateEffect
@@ -140,6 +156,25 @@ stickyfoam:
 		ValidTargets: Ground
 		ImpactSounds: foam.wav
 
+####################
+
+vehicleexplode:
+	ValidTargets: Ground, GroundActor
+	Warhead@Eff: CreateEffect
+		ExplosionPalette: 6
+		Explosions: vechicleexplosion
+		ImpactSounds: foam.wav
+		ValidTargets: Ground, GroundActor
+
+
+	#HitAnim: explosion-large4
+	#HitAnimPalette: 6
+	#Report: foam.wav
+	#Warhead@Eff: CreateEffect
+	#Image: explosion-large4
+	#ExplosionPalette: 6
+	#ValidTargets: Ground
+	#ImpactSounds: foam.wav
 
 
 
@@ -189,4 +224,6 @@ tiger-emp:
 	Inherits: EMP
 	ReloadDelay: 70
 
-
+tiger-stickyfoam:
+	Inherits: stickyfoam
+	ReloadDelay: 45

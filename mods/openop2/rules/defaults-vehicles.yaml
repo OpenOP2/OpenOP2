@@ -7,6 +7,9 @@
 		StandSequences: idle
 	Mobile:
 		PauseOnCondition: empdisable || stickyfoam
+	Explodes:
+		Weapon: vehicleexplode
+		EmptyWeapon: vehicleexplode
 
 ^TurretedVehicle:
 	Inherits: ^Op2Vehicle
@@ -293,7 +296,7 @@
 	Tooltip:
 		Name: Panther
 	Health:
-		HP: 600
+		HP: 500
 	Armor:
 		Type: Medium
 	RevealsShroud:
@@ -322,7 +325,7 @@
 	Tooltip:
 		Name: Tiger
 	Health:
-		HP: 900
+		HP: 800
 	Armor:
 		Type: Heavy
 	RevealsShroud:

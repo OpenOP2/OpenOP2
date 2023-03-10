@@ -91,7 +91,7 @@ explosion-large3:
 		Length: 19
 		Facings: 1
 
-explosion-large4:
+vechicleexplosion:
 	idle: op2_art.bmp
 		Start: 24165
 		Length: 14

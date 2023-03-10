@@ -297,8 +297,8 @@ plymouth-lynx-emp:
 	Armament:
 		Weapon: emp
 	Valued:
-		Cost: 1200
-	#common: 1200
+		Cost: 900
+	#common: 900
 
 plymouth-lynx-stickyfoam:
 	Inherits: ^plymouth-lynx
@@ -417,6 +417,21 @@ plymouth-panther-emp:
 	#common: 1300
 	#rare: 125
 
+plymouth-panther-stickyfoam:
+	Inherits: ^plymouth-panther
+	RenderSprites:
+		Image: plymouth-panther-stickyfoam
+	Tooltip:
+		Name: Stickyfoam Panther
+	WithSpriteTurret:
+		Sequence: turret
+	Armament:
+		Weapon: stickyfoam
+	Valued:
+		Cost: 1125
+	#common: 1000
+	#rare: 125
+
 #eden tigers
 
 eden-tiger-laser:
@@ -519,6 +534,21 @@ plymouth-tiger-emp:
 	#common: 1650
 	#rare: 250
 
+plymouth-tiger-stickyfoam:
+	Inherits: ^plymouth-tiger
+	RenderSprites:
+		Image: plymouth-tiger-stickyfoam
+	Tooltip:
+		Name: Stickyfoam Tiger
+	WithSpriteTurret:
+		Sequence: turret
+	Armament:
+		Weapon: tiger-stickyfoam
+	Valued:
+		Cost: 1600
+	#common: 1350
+	#rare: 250
+
 #plymouth arachnids
 plymouth-spider:
 	RenderSprites:
@@ -529,9 +559,21 @@ plymouth-spider:
 		IconPalette: 3
 
 plymouth-scorpion:
+	Inherits: ^TurretedVehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	RenderSprites:
 		Image: plymouth-scorpion
-	Inherits: ^Op2Vehicle
 	Buildable:
 		Prerequisites: ~vehicles.plymouth
 		IconPalette: 3
+	Armament:
+		Weapon: scorp-laser
+	Health:
+		HP: 125
+	Armor:
+		Type: light
+	-WithSpriteTurret:
+	Voiced:
+		VoiceSet: RoboDozerVoice
+	RevealsShroud:
+		Range: 4c0

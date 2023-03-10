@@ -191,3 +191,4 @@ TurretVoice:
 	Voices:
 		Select: guardsel.WAV
 		Action: beep2.WAV
+

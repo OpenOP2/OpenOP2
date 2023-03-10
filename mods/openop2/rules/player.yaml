@@ -94,6 +94,8 @@ Player:
 			ore.depot.rare1: 40
 			ore.depot.rare2: 50
 			ore.depot.rare3: 60
+	#MapBuildRadius:
+	#BuildRadiusCheckboxVisible: False
 	DeveloperMode:
 		CheckboxEnabled: True
 		CheckboxDisplayOrder: 10
