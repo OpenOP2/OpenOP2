@@ -299,6 +299,7 @@ EditorWorld:
 	EditorActorLayer:
 	EditorCursorLayer:
 	BuildableTerrainOverlay:
+		Palette: 6
 		AllowedTerrainTypes: Clear, Road
 	EditorResourceLayer:
 		#RecalculateResourceDensity: true

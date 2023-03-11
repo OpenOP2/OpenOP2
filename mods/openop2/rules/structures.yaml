@@ -3,7 +3,7 @@ eden-command-center:
 		Image: eden-command-center
 	Inherits: ^CommandCenter
 	Building:
-		Footprint: xxx _xx
+		Footprint: ===== =xxx= ==xx= =====
 	-Buildable:
 
 plymouth-command-center:
@@ -13,7 +13,7 @@ plymouth-command-center:
 	Selectable:
 		Bounds: 3072,2432,0,-192
 	Building:
-		Footprint: xxx xx_
+		Footprint: ===== =xxx= =xx== =====
 	-Buildable:
 
 eden-tokamak:
@@ -59,10 +59,19 @@ plymouth-vehicle-factory:
 	RenderSprites:
 		Image: plymouth-vehicle-factory
 	Inherits: ^VehicleFactory
-	Selectable:
-		Bounds: 2048,2112,0,-32
+	Building:
+		Footprint: ====== =xxxx= =xxx== =xxxx= ======
 	Buildable:
 		Prerequisites: ~structures.plymouth
+	Exit:
+		Facing: 768
+		SpawnOffset: 1536,0,0
+		ExitCell: 4,2
+		ProductionTypes: Vehicle
+	RallyPoint:
+		Palette: 8
+		IsPlayerPalette: false
+		Path: 6,2
 
 eden-agridome:
 	RenderSprites:

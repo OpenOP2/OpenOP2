@@ -77,6 +77,11 @@ OreSmelterVoice:
 VehicleFactoryVoice:
 	DefaultVariant: 
 	Voices:
+		Select: repvhc.WAV
+
+StructureFactoryVoice:
+	DefaultVariant: 
+	Voices:
 		Select: fac_sel.WAV
 
 TurretVoice:

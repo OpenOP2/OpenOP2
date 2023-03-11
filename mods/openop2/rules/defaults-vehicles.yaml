@@ -24,7 +24,7 @@
 	Turreted:
 		PauseOnCondition: empdisable
 		TurnSpeed: 28
-		Offset: 0,0,300
+		Offset: 0,0,50 # forward, side, up/down
 	Armament:
 		PauseOnCondition: empdisable
 		Weapon: laser
@@ -126,7 +126,7 @@
 	RevealsShroud:
 		Range: 7c0
 	Mobile:
-		Speed: 64
+		Speed: 96
 	SurveysOre:
 		Amount: 120000
 		PlaysNotification: MiningLocationSurveyed
