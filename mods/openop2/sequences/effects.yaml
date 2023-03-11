@@ -91,8 +91,8 @@ explosion-large3:
 		Length: 19
 		Facings: 1
 
-explosion:
-	vehicleexplosion: op2_art.bmp
+vehicleexplosion:
+	idle: op2_art.bmp
 		Start: 24165
 		Length: 14
 		Facings: 1

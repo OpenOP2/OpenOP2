@@ -7,7 +7,7 @@ laser:
 		Color: FF000080
 		Width: 60
 		LaunchEffectPalette: 3
-		HitAnim: explosion-small1
+		HitAnim: vehicleexplosion
 		HitAnimPalette: 6
 	Warhead@Dam: SpreadDamage
 		Spread: 0c16
