@@ -150,13 +150,6 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 							// Console.WriteLine($" Write color: {picX + x}, {picY + y}");
 							var picX = x + picOffsetX;
 							var picY = y + picOffsetY;
-							if (picX < 0 || picY < 0 || picX >= groupWidth || picY >= groupHeight)
-							{
-								// Console.WriteLine($"Pixel out of range at: {pixX}, {pixY} (GROUP SIZE: {groupWidth} x {groupHeight})");
-								// Console.WriteLine($"  Group index: {groupIndex} Frame index: {frameIndex}   Pic Index: {picIndex}   Img Number: {imgNumber}");
-								continue;
-							}
-
 							frameColors[picX, picY] = isShadow ? shadowColorInt : pixelUint;
 						}
 					}
