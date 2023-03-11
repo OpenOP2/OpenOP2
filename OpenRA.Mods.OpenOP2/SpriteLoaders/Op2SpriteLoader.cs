@@ -74,33 +74,43 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			for (var groupIndex = 0; groupIndex < prtFile.Groups.Length; groupIndex++)
 			{
 				var group = prtFile.Groups[groupIndex];
-				var groupWidth = group.SelLeft + group.SelRight;
-				var groupHeight = group.SelTop + group.SelBottom;
 
-				// int groupWidth = 0;
-				// int groupHeight = 0;
-				// for (var frameIndex = 0; frameIndex < group.Frames.Length; frameIndex++)
-				// {
-				// 	// Precalculate all frame sizes with offsets to get a correct frame size
-				// 	var frame = group.Frames[frameIndex];
-				// 	for (var picIndex = 0; picIndex < frame.Pictures.Length; picIndex++)
-				// 	{
-				// 		var picture = frame.Pictures[picIndex];
-				// 		var picX = picture.PosX;
-				// 		var picY = picture.PosY;
-				// 		var imgNumber = picture.ImgNumber;
-				// 		var imageInfo = prtFile.ImageHeader[imgNumber];
+				int maxWidth = 0;
+				int maxHeight = 0;
+				int minPicX = int.MaxValue;
+				int minPicY = int.MaxValue;
+				for (var frameIndex = 0; frameIndex < group.Frames.Length; frameIndex++)
+				{
+					// Precalculate all frame sizes with offsets to get a correct frame size
+					var frame = group.Frames[frameIndex];
+					for (var picIndex = 0; picIndex < frame.Pictures.Length; picIndex++)
+					{
+						var picture = frame.Pictures[picIndex];
+						var picX = picture.PosX;
+						var picY = picture.PosY;
+						var imgNumber = picture.ImgNumber;
+						var imageInfo = prtFile.ImageHeader[imgNumber];
 
-				// 		var thisWidth = picX + imageInfo.Width;
-				// 		var thisHeight = picY + imageInfo.Height;
+						var thisWidth = picX + imageInfo.Width;
+						var thisHeight = picY + imageInfo.Height;
 
-				// 		if (groupWidth < thisWidth)
-				// 			groupWidth = (int)thisWidth;
+						if (picX < minPicX)
+							minPicX = picX;
 
-				// 		if (groupHeight < thisHeight)
-				// 			groupHeight = (int)thisHeight;
-				// 	}
-				// }
+						if (picY < minPicY)
+							minPicY = picY;
+
+						if (thisWidth > maxWidth)
+							maxWidth = (int)thisWidth;
+
+						if (thisHeight > maxHeight)
+							maxHeight = (int)thisHeight;
+					}
+				}
+
+				var groupWidth = maxWidth - minPicX;
+				var groupHeight = maxHeight - minPicY;
+
 				// sb.AppendLine($"Group index {groupIndex} starts at frame {frameTotal}");
 				// Console.WriteLine($"GROUP: {groupIndex} RECT (LRTB): {group.SelLeft}, {group.SelRight}, {group.SelTop}, {group.SelBottom}  SIZE: {groupWidth} x {groupHeight}");
 				for (var frameIndex = 0; frameIndex < group.Frames.Length; frameIndex++)
@@ -117,6 +127,9 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 						// Skip shadows for now
 						var isShadow = imageInfo.ImageType == 4 || imageInfo.ImageType == 5;
+
+						var picOffsetX = picture.PosX - minPicX;
+						var picOffsetY = picture.PosY - minPicY;
 
 						// Console.WriteLine($"  IMAGE: {imgWidth} x {imgHeight}");
 						// Console.WriteLine($"  PIC X: {picX} PIC Y: {picY}");
@@ -135,16 +148,16 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 							// Console.WriteLine($" Color (RGBA): {r} {g} {b} {a}");
 							// Console.WriteLine($" Write color: {picX + x}, {picY + y}");
-							var pixX = x + picture.PosX;
-							var pixY = y + picture.PosY;
-							if (pixX < 0 || pixY < 0 || pixX >= groupWidth || pixY >= groupHeight)
+							var picX = x + picOffsetX;
+							var picY = y + picOffsetY;
+							if (picX < 0 || picY < 0 || picX >= groupWidth || picY >= groupHeight)
 							{
 								// Console.WriteLine($"Pixel out of range at: {pixX}, {pixY} (GROUP SIZE: {groupWidth} x {groupHeight})");
 								// Console.WriteLine($"  Group index: {groupIndex} Frame index: {frameIndex}   Pic Index: {picIndex}   Img Number: {imgNumber}");
 								continue;
 							}
 
-							frameColors[pixX, pixY] = isShadow ? shadowColorInt : pixelUint;
+							frameColors[picX, picY] = isShadow ? shadowColorInt : pixelUint;
 						}
 					}
 
@@ -171,7 +184,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						Data = byteData,
 						FrameSize = new Size(groupWidth, groupHeight),
 
-						// Offset = new float2(group.SelLeft, group.SelTop),
+						// Offset = new float2(offsetX, offsetY),
 						Size = new Size(groupWidth, groupHeight)
 					};
 

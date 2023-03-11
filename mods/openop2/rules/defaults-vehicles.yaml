@@ -20,7 +20,7 @@
 	Turreted:
 		PauseOnCondition: empdisable
 		TurnSpeed: 28
-		Offset: 0,0,300
+		Offset: 0,0,50 # forward, side, up/down
 	Armament:
 		PauseOnCondition: empdisable
 		Weapon: laser

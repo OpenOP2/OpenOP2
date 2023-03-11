@@ -6,6 +6,7 @@ eden-lynx-laser:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 18
 
@@ -16,6 +17,7 @@ eden-lynx-rail:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 22
 
@@ -26,6 +28,7 @@ eden-lynx-emp:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 20
 
@@ -36,6 +39,7 @@ eden-lynx-acid:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 26
 
@@ -46,6 +50,7 @@ eden-lynx-thor:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 28
 
@@ -55,6 +60,7 @@ eden-lynx-starflare:
 		Start: 16396 # double is 16397
 		Length: 1
 		Facings: 1
+		Offset: 0,-5
 	icon: units.png
 		Start: 24
 
@@ -65,6 +71,7 @@ plymouth-lynx-microwave:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 19
 
@@ -75,6 +82,7 @@ plymouth-lynx-emp:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 21
 
@@ -85,6 +93,7 @@ plymouth-lynx-rpg:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 23
 
@@ -95,6 +104,7 @@ plymouth-lynx-stickyfoam:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 27
 
@@ -105,6 +115,7 @@ plymouth-lynx-esg:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 29
 
@@ -114,6 +125,7 @@ plymouth-lynx-starflare:
 		Start: 16022 # double is 16394
 		Length: 1
 		Facings: 1
+		Offset: 0,-5
 	icon: units.png
 		Start: 25
 
@@ -124,6 +136,7 @@ plymouth-lynx-supernova:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 56
 
@@ -136,6 +149,7 @@ eden-panther-laser:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 30
 
@@ -146,6 +160,7 @@ eden-panther-rail-gun:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 34
 
@@ -156,6 +171,7 @@ eden-panther-emp:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: -1,-2
 	icon: units.png
 		Start: 32
 
@@ -166,6 +182,7 @@ eden-panther-acid-cloud:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 38
 
@@ -176,6 +193,7 @@ eden-panther-thor:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 40
 
@@ -185,6 +203,7 @@ eden-panther-starflare:
 		Start: 16396 # double is 16397
 		Length: 1
 		Facings: 1
+		Offset: 0,-5
 	icon: units.png
 		Start: 36
 
@@ -195,6 +214,7 @@ plymouth-panther-microwave:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 31
 
@@ -205,6 +225,7 @@ plymouth-panther-emp:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: -1,-2
 	icon: units.png
 		Start: 33
 
@@ -215,6 +236,7 @@ plymouth-panther-rpg:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: -1,-2
 	icon: units.png
 		Start: 35
 
@@ -225,6 +247,7 @@ plymouth-panther-stickyfoam:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 39
 
@@ -235,6 +258,7 @@ plymouth-panther-esg:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 41
 
@@ -244,6 +268,7 @@ plymouth-panther-starflare:
 		Start: 16022 # double is 16394
 		Length: 1
 		Facings: 1
+		Offset: 0,-5
 	icon: units.png
 		Start: 37
 
@@ -254,6 +279,7 @@ plymouth-panther-supernova:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 57
 
@@ -265,6 +291,7 @@ eden-tiger-laser:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 1,-5
 	icon: units.png
 		Start: 42
 
@@ -275,6 +302,7 @@ eden-tiger-rail-gun:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 1,-5
 	icon: units.png
 		Start: 46
 
@@ -285,6 +313,7 @@ eden-tiger-emp:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 1,-5
 	icon: units.png
 		Start: 44
 
@@ -295,6 +324,7 @@ eden-tiger-acid-cloud:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 50
 
@@ -305,6 +335,7 @@ eden-tiger-thor:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 52
 
@@ -314,6 +345,7 @@ eden-tiger-starflare:
 		Start: 16397
 		Length: 1
 		Facings: 1
+		Offset: 0,-5
 	icon: units.png
 		Start: 48
 
@@ -324,6 +356,7 @@ plymouth-tiger-microwave:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 43
 
@@ -334,6 +367,7 @@ plymouth-tiger-emp:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 1,-5
 	icon: units.png
 		Start: 45
 
@@ -344,6 +378,7 @@ plymouth-tiger-rpg:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 1,-5
 	icon: units.png
 		Start: 47
 
@@ -354,6 +389,7 @@ plymouth-tiger-stickyfoam:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 51
 
@@ -364,6 +400,7 @@ plymouth-tiger-esg:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 53
 
@@ -373,6 +410,7 @@ plymouth-tiger-starflare:
 		Start: 16394
 		Length: 1
 		Facings: 1
+		Offset: 0,-5
 	icon: units.png
 		Start: 49
 
@@ -383,6 +421,7 @@ plymouth-tiger-supernova:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+		Offset: 0,-5
 	icon: units.png
 		Start: 58
 
