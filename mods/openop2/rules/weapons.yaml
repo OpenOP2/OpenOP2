@@ -160,11 +160,18 @@ stickyfoam:
 
 vehicleexplode:
 	ValidTargets: Ground, GroundActor
+	Warhead@Dam: SpreadDamage
+		Spread: 426
+		Damage: 100
+		ValidTargets: Ground, GroundActor
 	Warhead@Eff: CreateEffect
 		ExplosionPalette: 6
-		Explosions: vechicleexplosion
+		Explosions: vehicleexplosion
 		ImpactSounds: foam.wav
 		ValidTargets: Ground, GroundActor
+	Warhead@Smu: LeaveSmudge
+		SmudgeType: Scorch
+		ValidTargets: Ground, Vehicle, Infantry
 
 
 	#HitAnim: explosion-large4

@@ -11,6 +11,7 @@
 		Weapon: vehicleexplode
 		EmptyWeapon: vehicleexplode
 
+
 ^TurretedVehicle:
 	Inherits: ^Op2Vehicle
 	#Inherits@GAINSEXPERIENCE: ^GainsExperience
