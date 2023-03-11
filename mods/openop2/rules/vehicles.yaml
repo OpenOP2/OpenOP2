@@ -220,8 +220,8 @@ eden-lynx-laser:
 	Tooltip:
 		Name: Laser Lynx
 	Armament:
-		LocalOffset: 500,0,-90
 		Weapon:	laser
+		LocalOffset: 430,0,170
 	Valued:
 		Cost: 750
 	#common: 750
@@ -236,6 +236,7 @@ eden-lynx-rail:
 		Sequence: turret
 	Armament:
 		Weapon: rail-gun
+		LocalOffset: 900,0,130
 	Valued:
 		Cost: 1150
 	#common: 1150
@@ -250,6 +251,7 @@ eden-lynx-emp:
 		Sequence: turret
 	Armament:
 		Weapon: emp
+		LocalOffset: 900,0,200
 	Valued:
 		Cost: 1200
 	#commonorecost: 1200
@@ -265,8 +267,8 @@ plymouth-lynx-microwave:
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
-		LocalOffset: 500,0,-90
 		Weapon: microwave
+		LocalOffset: 430,0,180
 	Valued:
 		Cost: 750
 	#common:750
@@ -279,9 +281,9 @@ plymouth-lynx-rpg:
 		Name: RPG Lynx
 	WithSpriteTurret:
 		Sequence: turret
-		#LocalOffset: 856,0,80
 	Armament:
 		Weapon: RPG
+		LocalOffset: 900,0,200
 	Valued:
 		Cost: 1150
 	#common: 1150
@@ -296,6 +298,7 @@ plymouth-lynx-emp:
 		Sequence: turret
 	Armament:
 		Weapon: emp
+		LocalOffset: 900,0,200
 	Valued:
 		Cost: 900
 	#common: 900
@@ -310,6 +313,7 @@ plymouth-lynx-stickyfoam:
 		Sequence: turret
 	Armament:
 		Weapon: stickyfoam
+		LocalOffset: 1100,0,110
 	Valued:
 		Cost: 1200
 	#common: 1200
@@ -324,9 +328,8 @@ eden-panther-laser:
 		Name: Laser Panther
 	WithSpriteTurret:
 		Sequence: turret
-		#LocalOffset: 856,0,80
 	Armament:
-		LocalOffset: 500,0,-90
+		LocalOffset: 430,0,170
 		Weapon: laser
 	Valued:
 		Cost: 975
@@ -341,9 +344,9 @@ eden-panther-rail-gun:
 		Name: Laser Panther
 	WithSpriteTurret:
 		Sequence: turret
-		#LocalOffset: 856,0,80
 	Armament:
 		Weapon: rail-gun
+		LocalOffset: 900,0,130
 	Valued:
 		Cost: 1375
 	#common: 1250
@@ -357,9 +360,9 @@ eden-panther-emp:
 		Name: EMP Panther
 	WithSpriteTurret:
 		Sequence: turret
-		#LocalOffset: 856,0,80
 	Armament:
 		Weapon: EMP
+		LocalOffset: 900,0,120
 	Valued:
 		Cost: 1425
 	#common: 1300
@@ -376,10 +379,9 @@ plymouth-panther-microwave:
 	WithSpriteTurret:
 		LocalOffset: 500,90,-90, 500,-90,-90
 		Sequence: turret
-		#LocalOffset: 856,0,80
 	Armament:
-		LocalOffset: 500,0,-90
 		Weapon: microwave
+		LocalOffset: 430,0,180
 	Valued:
 		Cost: 975
 	#common: 850
@@ -393,9 +395,9 @@ plymouth-panther-rpg:
 		Name: RPG Panther
 	WithSpriteTurret:
 		Sequence: turret
-		#LocalOffset: 856,0,80
 	Armament:
 		Weapon: RPG
+		LocalOffset: 900,0,120
 	Valued:
 		Cost: 1375
 	#common: 1250
@@ -409,9 +411,9 @@ plymouth-panther-emp:
 		Name: EMP Panther
 	WithSpriteTurret:
 		Sequence: turret
-		#LocalOffset: 856,0,80
 	Armament:
 		Weapon: EMP
+		LocalOffset: 900,0,120
 	Valued:
 		Cost: 1425
 	#common: 1300
@@ -427,6 +429,7 @@ plymouth-panther-stickyfoam:
 		Sequence: turret
 	Armament:
 		Weapon: stickyfoam
+		LocalOffset: 1100,0,110
 	Valued:
 		Cost: 1125
 	#common: 1000
@@ -444,8 +447,8 @@ eden-tiger-laser:
 		Sequence: turret
 		#LocalOffset: 856,0,80
 	Armament:
-		LocalOffset: 500,90,-90, 500,-90,-90
 		Weapon: tiger-laser
+		LocalOffset: 430,90,170,430,-90,170
 	Valued:
 		Cost: 1450
 	#common: 1200
@@ -459,9 +462,9 @@ eden-tiger-rail-gun:
 		Name: Railgun Tiger
 	WithSpriteTurret:
 		Sequence: turret
-		#LocalOffset: 856,0,80
 	Armament:
 		Weapon: tiger-rail-gun
+		LocalOffset: 900,130,130,900,-130,130
 	Valued:
 		Cost: 1850
 	#common: 1600
@@ -475,9 +478,9 @@ eden-tiger-emp:
 		Name: EMP Tiger
 	WithSpriteTurret:
 		Sequence: turret
-		#LocalOffset: 856,0,80
 	Armament:
 		Weapon: tiger-emp
+		LocalOffset: 900,140,170,900,-140,170
 	Valued:
 		Cost: 1900
 	#common: 1650
@@ -493,10 +496,10 @@ plymouth-tiger-microwave:
 		Name: Microwave Tiger
 	WithSpriteTurret:
 		Sequence: turret
-		#LocalOffset: 856,0,80
 	Armament:
 		Weapon: tiger-microwave
-		LocalOffset: 700,140,90, 700,-140,90
+		LocalOffset: 430,170,180,430,-170,180
+		#LocalOffset: 700,140,90, 700,-140,90
 	Valued:
 		Cost: 1450
 	#common: 1200
@@ -510,9 +513,9 @@ plymouth-tiger-rpg:
 		Name: RPG Tiger
 	WithSpriteTurret:
 		Sequence: turret
-		#LocalOffset: 856,0,80
 	Armament:
 		Weapon: tiger-rpg
+		LocalOffset: 900,100,180,900,-100,180
 	Valued:
 		Cost: 1850
 	#common: 1600
@@ -526,9 +529,9 @@ plymouth-tiger-emp:
 		Name: EMP Tiger
 	WithSpriteTurret:
 		Sequence: turret
-		LocalOffset: -856,0,80
 	Armament:
 		Weapon: tiger-emp
+		LocalOffset: 900,140,170,900,-140,170
 	Valued:
 		Cost: 1900
 	#common: 1650
@@ -544,6 +547,7 @@ plymouth-tiger-stickyfoam:
 		Sequence: turret
 	Armament:
 		Weapon: tiger-stickyfoam
+		LocalOffset: 1100,135,110,1100,-135,110
 	Valued:
 		Cost: 1600
 	#common: 1350

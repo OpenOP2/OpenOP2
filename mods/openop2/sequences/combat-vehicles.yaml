@@ -291,7 +291,7 @@ eden-tiger-laser:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
-		Offset: 1,-5
+		Offset: 2,-5
 	icon: units.png
 		Start: 42
 
