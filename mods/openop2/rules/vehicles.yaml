@@ -464,7 +464,7 @@ eden-tiger-rail-gun:
 		Sequence: turret
 	Armament:
 		Weapon: tiger-rail-gun
-		LocalOffset: 900,130,130,900,-130,130
+		LocalOffset: 900,140,130,900,-140,130
 	Valued:
 		Cost: 1850
 	#common: 1600
