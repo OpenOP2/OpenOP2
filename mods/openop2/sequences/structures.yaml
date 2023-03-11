@@ -7,6 +7,19 @@ eden-command-center:
 		Start: 19741
 		Length: 87
 		Facings: 1
+	building: op2_art.bmp
+		Start: 178
+		Length: 41
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 147
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 148
+		Length: 1
+		Facings: 1
 
 plymouth-command-center:
 	idle: op2_art.bmp
@@ -16,6 +29,19 @@ plymouth-command-center:
 	active: op2_art.bmp
 		Start: 20247
 		Length: 56
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1095
+		Length: 40
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 575
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 576
+		Length: 1
 		Facings: 1
 
 eden-tokamak:
@@ -31,6 +57,23 @@ eden-tokamak:
 		Start: 4
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 402
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1009
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1010
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 3525
+		Length: 6
+		Facings: 1
 
 plymouth-tokamak:
 	idle: op2_art.bmp
@@ -41,8 +84,25 @@ plymouth-tokamak:
 		Start: 11737
 		Length: 183
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 11920
+		Length: 172
+		Facings: 1
 	icon: buildings.png
 		Start: 5
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1433
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 591
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 592
 		Length: 1
 		Facings: 1
 
@@ -59,6 +119,19 @@ eden-structure-factory:
 		Start: 2
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 259
+		Length: 34
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 151
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 152
+		Length: 1
+		Facings: 1
 
 plymouth-structure-factory:
 	idle: op2_art.bmp
@@ -71,6 +144,19 @@ plymouth-structure-factory:
 		Facings: 1
 	icon: buildings.png
 		Start: 3
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1215
+		Length: 34
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 579
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 580
 		Length: 1
 		Facings: 1
 
@@ -87,6 +173,19 @@ eden-vehicle-factory:
 		Start: 14
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 368
+		Length: 34
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1013
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1014
+		Length: 1
+		Facings: 1
 
 plymouth-vehicle-factory:
 	idle: op2_art.bmp
@@ -99,6 +198,19 @@ plymouth-vehicle-factory:
 		Facings: 1
 	icon: buildings.png
 		Start: 15
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 2869
+		Length: 28
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 835
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 836
 		Length: 1
 		Facings: 1
 
@@ -115,6 +227,19 @@ eden-agridome:
 		Start: 16
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 1175
+		Length: 40
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 985
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 986
+		Length: 1
+		Facings: 1
 
 plymouth-agridome:
 	idle: op2_art.bmp
@@ -129,6 +254,19 @@ plymouth-agridome:
 		Start: 17
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 1015
+		Length: 40
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 573
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 574
+		Length: 1
+		Facings: 1
 
 eden-smelter-common:
 	idle: op2_art.bmp
@@ -139,8 +277,29 @@ eden-smelter-common:
 		Start: 20303
 		Length: 35
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 14191
+		Length: 58
+		Facings: 1
+	active3: op2_art.bmp
+		Start: 14249
+		Length: 61
+		Facings: 1
 	icon: buildings.png
 		Start: 6
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 477
+		Length: 34
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1005
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1006
 		Length: 1
 		Facings: 1
 
@@ -153,8 +312,25 @@ plymouth-smelter-common:
 		Start: 20416
 		Length: 68
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 14310
+		Length: 30
+		Facings: 1
 	icon: buildings.png
 		Start: 7
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1249
+		Length: 34
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 587
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 588
 		Length: 1
 		Facings: 1
 
@@ -171,6 +347,23 @@ eden-smelter-rare:
 		Start: 8
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 3478
+		Length: 34
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 3512
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 3513
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 3514
+		Length: 11
+		Facings: 1
 
 plymouth-smelter-rare:
 	idle: op2_art.bmp
@@ -185,6 +378,19 @@ plymouth-smelter-rare:
 		Start: 9
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 1994
+		Length: 34
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 2028
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 2029
+		Length: 1
+		Facings: 1
 
 eden-storage-common:
 	idle: op2_art.bmp
@@ -197,6 +403,11 @@ eden-storage-common:
 		Facings: 1
 	icon: towers.png
 		Start: 2
+	building: op2_art.bmp
+		Start: 155
+		Length: 23
+		Facings: 1
+		Tick: 200
 
 plymouth-storage-common:
 	idle: op2_art.bmp
@@ -209,6 +420,19 @@ plymouth-storage-common:
 		Facings: 1
 	icon: towers.png
 		Start: 3
+	building: op2_art.bmp
+		Start: 1514
+		Length: 23
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 589
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 590
+		Length: 1
+		Facings: 1
 
 eden-storage-rare:
 	idle: op2_art.bmp
@@ -221,6 +445,23 @@ eden-storage-rare:
 		Facings: 1
 	icon: towers.png
 		Start: 4
+	building: op2_art.bmp
+		Start: 3735
+		Length: 23
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 3758
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 3759
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 3760
+		Length: 4
+		Facings: 1
 
 plymouth-storage-rare:
 	idle: op2_art.bmp
@@ -233,6 +474,23 @@ plymouth-storage-rare:
 		Facings: 1
 	icon: towers.png
 		Start: 5
+	building: op2_art.bmp
+		Start: 3764
+		Length: 23
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 3787
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 3788
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 3789
+		Length: 4
+		Facings: 1
 
 eden-mine-common:
 	idle: op2_art.bmp
@@ -240,9 +498,31 @@ eden-mine-common:
 		Length: 1
 		Facings: 1
 		Offset: -15, -4, 0
+	active: op2_art.bmp
+		Start: 10017
+		Length: 41
+		Facings: 1
+		Offset: -15, -4, 0
 	deck: op2_art.bmp
-		Start: 24182
+		Start: 18589
 		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 837
+		Length: 73
+		Facings: 1
+		Tick: 100
+	damaged1: op2_art.bmp
+		Start: 14163
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 14164
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 14165
+		Length: 4
 		Facings: 1
 
 plymouth-mine-common:
@@ -256,8 +536,25 @@ plymouth-mine-common:
 		Length: 33
 		Facings: 1
 	deck: op2_art.bmp
-		Start: 24182
+		Start: 18589
 		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 3537
+		Length: 72
+		Facings: 1
+		Tick: 100
+	damaged1: op2_art.bmp
+		Start: 14157
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 14158
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 14159
+		Length: 4
 		Facings: 1
 
 eden-mine-rare:
@@ -266,22 +563,60 @@ eden-mine-rare:
 		Length: 1
 		Facings: 1
 	deck: op2_art.bmp
-		Start: 24182
+		Start: 18589
 		Length: 1
+		Facings: 1
+	active: op2_art.bmp
+		Start: 10058
+		Length: 51
+		Facings: 1
+	building: op2_art.bmp
+		Start: 3904
+		Length: 102
+		Facings: 1
+		Tick: 100
+	damaged1: op2_art.bmp
+		Start: 4108
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 4109
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 4110
+		Length: 4
 		Facings: 1
 
 plymouth-mine-rare:
 	idle: op2_art.bmp
-		Start: 10235
+		Start: 10109
 		Length: 1
 		Facings: 1
 	active: op2_art.bmp
-		Start: 10235
+		Start: 10109
 		Length: 61
 		Facings: 1
 	deck: op2_art.bmp
-		Start: 24182
+		Start: 18589
 		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 4186
+		Length: 74
+		Facings: 1
+		Tick: 100
+	damaged1: op2_art.bmp
+		Start: 4260
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 4261
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 4262
+		Length: 4
 		Facings: 1
 
 eden-mine-magma:
@@ -290,8 +625,29 @@ eden-mine-magma:
 		Length: 1
 		Facings: 1
 	deck: op2_art.bmp
-		Start: 24182
+		Start: 18589
 		Length: 1
+		Facings: 1
+	active: op2_art.bmp
+		Start: 15998
+		Length: 21
+		Facings: 1
+	building: op2_art.bmp
+		Start: 15782
+		Length: 108
+		Facings: 1
+		Tick: 100
+	damaged1: op2_art.bmp
+		Start: 4114
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 4115
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 4116
+		Length: 4
 		Facings: 1
 
 plymouth-mhd-generator:
@@ -307,6 +663,23 @@ plymouth-mhd-generator:
 		Start: 51
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 4120
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 4145
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 4146
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 4147
+		Length: 6
+		Facings: 1
 
 eden-residence:
 	idle: op2_art.bmp
@@ -317,8 +690,25 @@ eden-residence:
 		Start: 10668
 		Length: 56
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 10724
+		Length: 63
+		Facings: 1
 	icon: buildings.png
 		Start: 10
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 427
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1001
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1002
 		Length: 1
 		Facings: 1
 
@@ -331,8 +721,25 @@ plymouth-residence:
 		Start: 10787
 		Length: 47
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 10834
+		Length: 49
+		Facings: 1
 	icon: buildings.png
 		Start: 11
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1408
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 583
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 584
 		Length: 1
 		Facings: 1
 
@@ -345,8 +752,25 @@ eden-residence-advanced:
 		Start: 11082
 		Length: 53
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 11135
+		Length: 44
+		Facings: 1
 	icon: buildings.png
 		Start: 12
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1458
+		Length: 28
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 983
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 984
 		Length: 1
 		Facings: 1
 
@@ -359,8 +783,25 @@ plymouth-residence-reinforced:
 		Start: 11195
 		Length: 43
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 11238
+		Length: 61
+		Facings: 1
 	icon: buildings.png
 		Start: 13
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1713
+		Length: 40
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1753
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1754
 		Length: 1
 		Facings: 1
 
@@ -373,8 +814,25 @@ eden-dirt:
 		Start: 12998
 		Length: 30
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 13028
+		Length: 31
+		Facings: 1
 	icon: buildings.png
 		Start: 30
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 219
+		Length: 40
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 149
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 150
 		Length: 1
 		Facings: 1
 
@@ -391,14 +849,56 @@ plymouth-dirt:
 		Start: 31
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 1055
+		Length: 40
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 577
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 578
+		Length: 1
+		Facings: 1
 
 eden-gorf:
 	idle: op2_art.bmp
-		Start: 3694
+		Start: 3693
 		Length: 1
+		Facings: 1
+	active: op2_art.bmp
+		Start: 13091
+		Length: 50
+		Facings: 1
+	active2: op2_art.bmp
+		Start: 13141
+		Length: 45
+		Facings: 1
+	active3: op2_art.bmp
+		Start: 18254
+		Length: 31
+		Facings: 1
+	active4: op2_art.bmp
+		Start: 18285
+		Length: 34
 		Facings: 1
 	icon: buildings.png
 		Start: 36
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 3654
+		Length: 40
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 3694
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 3695
 		Length: 1
 		Facings: 1
 
@@ -411,9 +911,30 @@ plymouth-gorf:
 		Start: 17947
 		Length: 41
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 17988
+		Length: 48
+		Facings: 1
 	icon: buildings.png
 		Start: 37
 		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 3621
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 3646
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 3647
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 3648
+		Length: 6
 		Facings: 1
 
 eden-medical-center:
@@ -425,8 +946,25 @@ eden-medical-center:
 		Start: 10494
 		Length: 32
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 18233
+		Length: 21
+		Facings: 1
 	icon: buildings.png
 		Start: 20
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1283
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 995
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 996
 		Length: 1
 		Facings: 1
 
@@ -439,9 +977,34 @@ plymouth-medical-center:
 		Start: 10986
 		Length: 36
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 11022
+		Length: 60
+		Facings: 1
+	active3: op2_art.bmp
+		Start: 18036
+		Length: 31
+		Facings: 1
 	icon: buildings.png
 		Start: 21
 		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 4153
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 4178
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 4179
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 4180
+		Length: 6
 		Facings: 1
 
 eden-nursery:
@@ -457,6 +1020,14 @@ eden-nursery:
 		Start: 18
 		Length: 1
 		Facings: 1
+	damaged1: op2_art.bmp
+		Start: 997
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 998
+		Length: 1
+		Facings: 1
 
 plymouth-nursery:
 	idle: op2_art.bmp
@@ -467,8 +1038,29 @@ plymouth-nursery:
 		Start: 10544
 		Length: 21
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 10590
+		Length: 46
+		Facings: 1
+	active3: op2_art.bmp
+		Start: 10636
+		Length: 32
+		Facings: 1
 	icon: buildings.png
 		Start: 19
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 10565
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1941
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1942
 		Length: 1
 		Facings: 1
 
@@ -481,8 +1073,29 @@ eden-recreation-facility:
 		Start: 10883
 		Length: 20
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 10903
+		Length: 15
+		Facings: 1
+	active3: op2_art.bmp
+		Start: 10918
+		Length: 16
+		Facings: 1
 	icon: buildings.png
 		Start: 40
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1308
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 999
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1000
 		Length: 1
 		Facings: 1
 
@@ -495,8 +1108,29 @@ plymouth-recreation-facility:
 		Start: 10934
 		Length: 20
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 10954
+		Length: 21
+		Facings: 1
+	active3: op2_art.bmp
+		Start: 10975
+		Length: 11
+		Facings: 1
 	icon: buildings.png
 		Start: 41
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1686
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1711
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1712
 		Length: 1
 		Facings: 1
 
@@ -513,6 +1147,23 @@ eden-trade-center:
 		Start: 38
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 3702
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 3727
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 3728
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 3729
+		Length: 6
+		Facings: 1
 
 plymouth-trade-center:
 	idle: op2_art.bmp
@@ -525,6 +1176,19 @@ plymouth-trade-center:
 		Facings: 1
 	icon: buildings.png
 		Start: 39
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 3405
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 3404
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 3403
 		Length: 1
 		Facings: 1
 
@@ -541,6 +1205,19 @@ eden-lab-basic:
 		Start: 22
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 343
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 153
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 154
+		Length: 1
+		Facings: 1
 
 plymouth-lab-basic:
 	idle: op2_art.bmp
@@ -555,6 +1232,19 @@ plymouth-lab-basic:
 		Start: 23
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 1358
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 581
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 582
+		Length: 1
+		Facings: 1
 
 eden-lab-standard:
 	idle: op2_art.bmp
@@ -565,8 +1255,33 @@ eden-lab-standard:
 		Start: 12592
 		Length: 29
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 12621
+		Length: 22
+		Facings: 1
+	active3: op2_art.bmp
+		Start: 18382
+		Length: 31
+		Facings: 1
+	active4: op2_art.bmp
+		Start: 18413
+		Length: 57
+		Facings: 1
 	icon: buildings.png
 		Start: 24
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1135
+		Length: 40
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 991
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 992
 		Length: 1
 		Facings: 1
 
@@ -579,8 +1294,29 @@ plymouth-lab-standard:
 		Start: 12643
 		Length: 34
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 17854
+		Length: 48
+		Facings: 1
+	active3: op2_art.bmp
+		Start: 17902
+		Length: 45
+		Facings: 1
 	icon: buildings.png
 		Start: 25
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1644
+		Length: 40
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1684
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1685
 		Length: 1
 		Facings: 1
 
@@ -597,6 +1333,19 @@ eden-lab-advanced:
 		Start: 26
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 1486
+		Length: 28
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 989
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 990
+		Length: 1
+		Facings: 1
 
 plymouth-lab-advanced:
 	idle: op2_art.bmp
@@ -607,8 +1356,25 @@ plymouth-lab-advanced:
 		Start: 11340
 		Length: 20
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 11360
+		Length: 27
+		Facings: 1
 	icon: buildings.png
 		Start: 27
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1614
+		Length: 28
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1642
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1643
 		Length: 1
 		Facings: 1
 
@@ -621,8 +1387,29 @@ eden-robot-command-center:
 		Start: 11499
 		Length: 68
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 11649
+		Length: 41
+		Facings: 1
+	active3: op2_art.bmp
+		Start: 11690
+		Length: 47
+		Facings: 1
 	icon: buildings.png
 		Start: 34
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 452
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1003
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1004
 		Length: 1
 		Facings: 1
 
@@ -639,6 +1426,19 @@ plymouth-robot-command-center:
 		Start: 35
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 1383
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 585
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 586
+		Length: 1
+		Facings: 1
 
 eden-solar-power-array:
 	idle: op2_art.bmp
@@ -651,6 +1451,19 @@ eden-solar-power-array:
 		Facings: 1
 	icon: buildings.png
 		Start: 46
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 511
+		Length: 40
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1007
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1008
 		Length: 1
 		Facings: 1
 
@@ -667,6 +1480,19 @@ plymouth-solar-power-array:
 		Start: 47
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 1755
+		Length: 40
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1916
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1917
+		Length: 1
+		Facings: 1
 
 eden-university:
 	idle: op2_art.bmp
@@ -677,8 +1503,29 @@ eden-university:
 		Start: 12426
 		Length: 91
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 12517
+		Length: 75
+		Facings: 1
+	active3: op2_art.bmp
+		Start: 18319
+		Length: 63
+		Facings: 1
 	icon: buildings.png
 		Start: 28
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1333
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1011
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1012
 		Length: 1
 		Facings: 1
 
@@ -691,8 +1538,29 @@ plymouth-university:
 		Start: 13485
 		Length: 68
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 13553
+		Length: 96
+		Facings: 1
+	active3: op2_art.bmp
+		Start: 18067
+		Length: 90
+		Facings: 1
 	icon: buildings.png
 		Start: 29
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1943
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1968
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1969
 		Length: 1
 		Facings: 1
 
@@ -709,6 +1577,23 @@ eden-spaceport:
 		Start: 42
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 4266
+		Length: 28
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 3896
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 3897
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 3898
+		Length: 6
+		Facings: 1
 
 plymouth-spaceport:
 	idle: op2_art.bmp
@@ -719,9 +1604,34 @@ plymouth-spaceport:
 		Start: 14047
 		Length: 78
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 18157
+		Length: 35
+		Facings: 1
+	active3: op2_art.bmp
+		Start: 18192
+		Length: 41
+		Facings: 1
 	icon: buildings.png
 		Start: 43
 		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 4427
+		Length: 40
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 4419
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 4420
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 4421
+		Length: 6
 		Facings: 1
 
 eden-meteor-defense:
@@ -733,15 +1643,57 @@ eden-meteor-defense:
 		Start: 9760
 		Length: 82
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 9842
+		Length: 83
+		Facings: 1
+	active3: op2_art.bmp
+		Start: 9925
+		Length: 41
+		Facings: 1
 	icon: buildings.png
 		Start: 48
 		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 9966
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 9991
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 9992
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 9993
+		Length: 6
 		Facings: 1
 
 eden-geothermal-plant:
 	idle: op2_art.bmp
 		Start: 4361
 		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 4294
+		Length: 67
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 4361
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 4362
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 4363
+		Length: 4
 		Facings: 1
 
 plymouth-arachnid-factory:
@@ -755,6 +1707,19 @@ plymouth-arachnid-factory:
 		Facings: 1
 	icon: buildings.png
 		Start: 49
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1562
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1560
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1561
 		Length: 1
 		Facings: 1
 
@@ -771,6 +1736,19 @@ plymouth-forum:
 		Start: 45
 		Length: 1
 		Facings: 1
+	building: op2_art.bmp
+		Start: 1587
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 1612
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1613
+		Length: 1
+		Facings: 1
 
 eden-consumer-factory:
 	idle: op2_art.bmp
@@ -780,6 +1758,19 @@ eden-consumer-factory:
 	active: op2_art.bmp
 		Start: 19423
 		Length: 35
+		Facings: 1
+	building: op2_art.bmp
+		Start: 3438
+		Length: 28
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 3466
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 3467
+		Length: 1
 		Facings: 1
 
 eden-observatory:
@@ -791,9 +1782,34 @@ eden-observatory:
 		Start: 12092
 		Length: 61
 		Facings: 1
+	active2: op2_art.bmp
+		Start: 12153
+		Length: 61
+		Facings: 1
+	active3: op2_art.bmp
+		Start: 12214
+		Length: 71
+		Facings: 1
 	icon: buildings.png
 		Start: 50
 		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 3793
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 3818
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 3819
+		Length: 1
+		Facings: 1
+	destroyed: op2_art.bmp
+		Start: 3890
+		Length: 6
 		Facings: 1
 
 eden-light-tower:
@@ -805,9 +1821,54 @@ eden-light-tower:
 		Start: 11567
 		Length: 41
 		Facings: 1
+	#building: op2_art.bmp # 1x1 filler build anim
+	#	Start: 551
+	#	Length: 22
+	#	Facings: 1
+	#	Tick: 200
+	#building: op2_art.bmp # 1x1 filler build anim
+	#	Start: 1918
+	#	Length: 21
+	#	Facings: 1
+	#	Tick: 200
+	building: op2_art.bmp
+		Start: 1943
+		Length: 25
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
+		Start: 993
+		Length: 1
+		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 994
+		Length: 1
+		Facings: 1
 
 plymouth-light-tower:
 	idle: op2_art.bmp
+		Start: 1991
+		Length: 1
+		Facings: 1
+	building: op2_art.bmp
+		Start: 1970
+		Length: 22
+		Facings: 1
+		Tick: 200
+	damaged1: op2_art.bmp
 		Start: 1992
 		Length: 1
 		Facings: 1
+	damaged2: op2_art.bmp
+		Start: 1993
+		Length: 1
+		Facings: 1
+	# Ones without a light
+	#damaged1: op2_art.bmp
+	#	Start: 1939
+	#	Length: 1
+	#	Facings: 1
+	#damaged2: op2_art.bmp
+	#	Start: 1940
+	#	Length: 1
+	#	Facings: 1

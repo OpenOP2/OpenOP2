@@ -62,6 +62,9 @@
 		Range: 7c0
 	Mobile:
 		Speed: 78
+	BuilderUnit@Building:
+		Type: Building
+		Group: Building
 
 ^CargoTruck:
 	Inherits: ^Op2Vehicle

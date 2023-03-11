@@ -669,6 +669,50 @@ Container@PLAYER_WIDGETS:
 							Y: 4
 							ImageCollection: power-icons
 							ImageName: power-normal
+		Container@SIDEBAR_BUILDING_SELECT: # Building selector
+			Logic: BuildingPickerLogic
+				ProductionParent: SIDEBAR_PRODUCTION
+			X: WINDOW_RIGHT - 250
+			Y: 322
+			Width: 238
+			Height: 256
+			Children:
+				Container@PALETTE_BACKGROUND:
+					Children:
+						Image@ROW_TEMPLATE: # Row of building icons
+							Logic: AddFactionSuffixLogic
+							Width: 238
+							Height: 49
+							ClickThrough: false
+							ImageCollection: sidebar
+							ImageName: background-iconrow
+						Image@BOTTOM_CAP: # Footer
+							Logic: AddFactionSuffixLogic
+							Width: 238
+							Height: 6
+							ClickThrough: false
+							ImageCollection: sidebar
+							ImageName: background-bottom
+				BuildSelectPalette@BUILD_SELECT_PALETTE: # The actual icons
+					X: 39
+					Y: 1
+					TooltipContainer: TOOLTIP_CONTAINER
+					IconSize: 54, 40
+					IconMargin: 10, 9
+					IconSpriteOffset: 6, 6
+					HotkeyPrefix: Production
+					HotkeyCount: 24
+				Container@PALETTE_FOREGROUND: # Black border
+					X: 39
+					Y: 1
+					Children:
+						Image@ROW_TEMPLATE:
+							Width: 238
+							Height: 49
+							IgnoreMouseOver: true
+							ImageCollection: sidebar-bits
+							ImageName: production-iconoverlay
+							Visible: false
 		Container@HPF_OVERLAY:
 			Logic: HierarchicalPathFinderOverlayLogic
 			X: WINDOW_RIGHT - WIDTH - 260

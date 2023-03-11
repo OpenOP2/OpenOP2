@@ -67,6 +67,22 @@
 				MaxTileIndex: 2011
 				PlaceTileType: 2111
 
+^SelfConstructingBuilding:
+	Inherits: ^Op2Building
+	Buildable:
+		#BuildDurationModifier: 2486 # DR build rate
+	SelfConstructing:
+		Sequence: building
+		Steps: 30
+	Production:
+		Produces: Building
+	BuilderQueue@Building:
+		Type: Building
+		Group: Building
+		QueuedAudio: Building
+		ReadyAudio: ConstructionComplete
+		BlockedAudio: Upgrading
+
 ^CommandCenter:
 	Inherits: ^Op2Building
 	Inherits@shape: ^3x3Shape
@@ -125,7 +141,8 @@
 		Interval: 400, 1200
 
 ^Power:
-	Inherits: ^Op2Building
+	#Inherits: ^Op2Building
+	Inherits: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Inherits@bulldoze: ^BulldozesArea
 	BulldozesTerrainWhenCreated:
