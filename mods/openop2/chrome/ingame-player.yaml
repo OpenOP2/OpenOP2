@@ -476,20 +476,6 @@ Container@PLAYER_WIDGETS:
 							IgnoreMouseOver: true
 							ImageCollection: sidebar
 							ImageName: background-iconrow
-				Container@PALETTE_FOOTER: # Footer graphic
-					X: 0
-					Y: 0
-					Children:
-						Image@ROW_TEMPLATE:
-							X: 0
-							Y: 19
-							Logic: AddFactionSuffixLogic
-							Width: 238
-							Height: 6
-							IgnoreMouseOver: true
-							ClickThrough: true
-							ImageCollection: sidebar
-							ImageName: background-bottom
 				Container@PRODUCTION_TYPES:
 					X: 7
 					Y: 2
@@ -621,30 +607,6 @@ Container@PLAYER_WIDGETS:
 									Y: 3
 									ImageCollection: scrollpanel-decorations
 									ImageName: down
-				ProductionTabsWithRowsAndFooter@PRODUCTION_TABS: # per-queue tabs
-					Logic: ProductionTabsWithRowsAndFooterLogic
-					PaletteWidget: PRODUCTION_PALETTE
-					TypesContainer: PRODUCTION_TYPES
-					RowWidget: PALETTE_FOREGROUND
-					FooterWidget: PALETTE_FOOTER
-					BackgroundContainer: PRODUCTION_BACKGROUND
-					PreviousProductionTabKey: PreviousProductionTab
-					NextProductionTabKey: NextProductionTab
-					X: 38
-					Y: 2
-					Width: 196
-					Height: 18
-				#ProductionTabs@PRODUCTION_TABS:
-				#	Logic: ProductionTabsLogic
-				#	X: WINDOW_RIGHT - 5 - 18 - 194
-				#	Y: 299
-				#	Width: 194
-				#	Height: 20
-				#	PaletteWidget: PRODUCTION_PALETTE
-				#	TypesContainer: PRODUCTION_TYPES
-				#	BackgroundContainer: PRODUCTION_BACKGROUND
-				#	PreviousProductionTabKey: PreviousProductionTab
-				#	NextProductionTabKey: NextProductionTab
 		Image@SIDEBAR_MONEYBIN:
 			Logic: AddFactionSuffixLogic
 			X: WINDOW_RIGHT - 250
