@@ -672,7 +672,7 @@ Container@PLAYER_WIDGETS:
 						Image@ROW_TEMPLATE: # Row of building icons
 							Logic: AddFactionSuffixLogic
 							Width: 238
-							Height: 49
+							Height: 48
 							ClickThrough: false
 							ImageCollection: sidebar
 							ImageName: background-iconrow
@@ -685,11 +685,11 @@ Container@PLAYER_WIDGETS:
 							ImageName: background-bottom
 				BuildSelectPalette@BUILD_SELECT_PALETTE: # The actual icons
 					X: 39
-					Y: 1
+					Y: 0
 					TooltipContainer: TOOLTIP_CONTAINER
-					IconSize: 54, 40
-					IconMargin: 10, 9
-					IconSpriteOffset: 6, 6
+					IconSize: 64, 48
+					IconMargin: 0, 0
+					IconSpriteOffset: 0, 0
 					HotkeyPrefix: Production
 					HotkeyCount: 24
 				#Container@PALETTE_FOREGROUND: # Black border
