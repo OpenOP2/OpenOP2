@@ -65,6 +65,11 @@
 	BuilderUnit@Building:
 		Type: Building
 		Group: Building
+	Production:
+		Produces: Building, Defense
+	ProvidesPrerequisite@structures:
+		Factions: eden, plymouth
+		Prerequisite: structures
 
 ^CargoTruck:
 	Inherits: ^Op2Vehicle

@@ -20,6 +20,10 @@ eden-command-center:
 		Start: 148
 		Length: 1
 		Facings: 1
+	icon: buildings.png
+		Start: 0
+		Length: 1
+		Facings: 1
 
 plymouth-command-center:
 	idle: op2_art.bmp
@@ -41,6 +45,10 @@ plymouth-command-center:
 		Facings: 1
 	damaged2: op2_art.bmp
 		Start: 576
+		Length: 1
+		Facings: 1
+	icon: buildings.png
+		Start: 1
 		Length: 1
 		Facings: 1
 
@@ -507,6 +515,8 @@ eden-mine-common:
 		Start: 18589
 		Length: 1
 		Facings: 1
+	icon: towers.png
+		Start: 2
 	building: op2_art.bmp
 		Start: 837
 		Length: 73
@@ -539,6 +549,8 @@ plymouth-mine-common:
 		Start: 18589
 		Length: 1
 		Facings: 1
+	icon: towers.png
+		Start: 3
 	building: op2_art.bmp
 		Start: 3537
 		Length: 72
@@ -1821,6 +1833,8 @@ eden-light-tower:
 		Start: 11567
 		Length: 41
 		Facings: 1
+	icon: towers.png
+		Start: 0
 	#building: op2_art.bmp # 1x1 filler build anim
 	#	Start: 551
 	#	Length: 22
@@ -1855,6 +1869,8 @@ plymouth-light-tower:
 		Length: 22
 		Facings: 1
 		Tick: 200
+	icon: towers.png
+		Start: 1
 	damaged1: op2_art.bmp
 		Start: 1992
 		Length: 1

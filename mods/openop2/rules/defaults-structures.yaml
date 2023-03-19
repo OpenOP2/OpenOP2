@@ -1,8 +1,9 @@
 ^Op2Building:
 	Inherits: ^Building
 	Inherits: ^EmpDisable
-	Buildable:
-		IconPalette: 5
+	#Buildable:
+	#	Queue: Building
+	#	IconPalette: 5
 	ActorLostNotification:
 		Notification: StructureDestroyed
 	#WithBuildingPlacedAnimation:
@@ -68,45 +69,63 @@
 				PlaceTileType: 2111
 
 ^SelfConstructingBuilding:
-	Inherits: ^Op2Building
+	Inherits@bulldoze: ^BulldozesArea
 	Buildable:
-		#BuildDurationModifier: 2486 # DR build rate
+		Queue: Building
+		BuildPaletteOrder: 200
+		BuildDuration: 22
+		BuildDurationModifier: 4096
 	SelfConstructing:
 		Sequence: building
 		Steps: 30
 	Production:
-		Produces: Building
-	BuilderQueue@Building:
+		Produces: Building, Defense
+	BuilderQueue:
 		Type: Building
 		Group: Building
 		QueuedAudio: Building
-		ReadyAudio: ConstructionComplete
-		BlockedAudio: Upgrading
+		#ReadyAudio: ConstructionComplete
+		#BlockedAudio: Upgrading
 
-^CommandCenter:
+^CommandCenter.Constructing:
 	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^3x3Shape
-	Inherits@bulldoze: ^BulldozesArea
 	BulldozesTerrainWhenCreated:
 		Size: 5,4
 	Tooltip:
-		Name: Command Center
+		Name: Command Center (Under Construction)
+	Buildable:
+		BuildPaletteOrder: 10
 	Selectable:
 		Bounds: 3072,2624,0,-288
 	Building:
-		Footprint: ===== =xxx= ==xx= =====
 		Dimensions: 5,4
 	HitShape:
 		Type: Rectangle
 			TopLeft: -1536, -1536
 			BottomRight: 1536, 1536
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 10
-		Prerequisites: ~disabled
-		Description: Produces structures (for now).
 	Voiced:
 		VoiceSet: CommandCenterVoice
+	Health:
+		HP: 2500
+	Armor:
+		Type: Heavy
+	Valued:
+		Cost: 2800
+	RevealsShroud:
+		Range: 5c0
+		RevealGeneratedShroud: False
+
+^CommandCenter:
+	Inherits: ^CommandCenter.Constructing
+	-SelfConstructing:
+	-Buildable:
+	#-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Command Center
 	ProvidesPrerequisite@eden:
 		Factions: eden
 		Prerequisite: structures.eden
@@ -115,24 +134,15 @@
 		Prerequisite: structures.plymouth
 	ProvidesPrerequisite@structures:
 		Prerequisite: structures
-	Health:
-		HP: 2500
 	Power:
 		Amount: 50
-	Armor:
-		Type: Heavy
-	Valued:
-		Cost: 2800
-	RevealsShroud:
-		Range: 5c0
-		RevealGeneratedShroud: False
-	Production:
-		Produces: Building, Defense
-	ProductionBar@Building:
-		ProductionType: Building
-	ProductionBar@Defense:
-		ProductionType: Defense
-		Color: 8A8A8A
+	#Production:
+	#	Produces: Defense
+	#ProductionBar@Building:
+	#	ProductionType: Building
+	#ProductionBar@Defense:
+	#	ProductionType: Defense
+	#	Color: 8A8A8A
 	ProvidesRadar:
 	BaseBuilding:
 	Sellable:
@@ -140,19 +150,20 @@
 	WithIdleAnimation:
 		Interval: 400, 1200
 
-^Power:
-	#Inherits: ^Op2Building
-	Inherits: ^SelfConstructingBuilding
+^Power.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
-	Inherits@bulldoze: ^BulldozesArea
 	BulldozesTerrainWhenCreated:
 		Size: 4,4
 	Tooltip:
-		Name: Tokamak
+		Name: Tokamak (Under Construction)
+	Buildable:
+		BuildPaletteOrder: 20
 	Selectable:
 		Bounds: 2048,2432,0,-192
 	Building:
-		Footprint: ==== =xx= =xx= ====
+		Footprint: ____ _xx_ _xx_ ____
 		Dimensions: 4,4
 	HitShape:
 		Type: Rectangle
@@ -163,36 +174,48 @@
 		BuildPaletteOrder: 20
 		Prerequisites: ~disabled
 		Description: Produces power for your colony.
-	Voiced:
-		VoiceSet: TokamakVoice
-	ProvidesPrerequisite:
-		Prerequisite: anypower
 	Health:
 		HP: 1500
-	Power:
-		Amount: 300
 	Armor:
 		Type: Heavy
 	Valued:
 		Cost: 1100
+
+^Power:
+	Inherits: ^Power.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Tokamak
+	Voiced:
+		VoiceSet: TokamakVoice
+	ProvidesPrerequisite:
+		Prerequisite: anypower
+	Power:
+		Amount: 300
 	RevealsShroud:
 		Range: 4c0
 	ScalePowerWithHealth:
 	WithIdleAnimation:
 		Interval: 350, 900
 
-^OreSmelterCommon:
+^OreSmelterCommon.Constructing:
 	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^4x3Shape
-	Inherits@bulldoze: ^BulldozesArea
 	BulldozesTerrainWhenCreated:
 		Size: 6,5
 	Tooltip:
-		Name: Ore Smelter (Common)
+		Name: Ore Smelter (Common) (Under Construction)
+	Buildable:
+		BuildPaletteOrder: 30
 	Selectable:
 		Bounds: 4096,3264,0,-96
 	Building:
-		Footprint: ====== =xxxx= =xxxx= =xxx== ======
+		Footprint: ______ _xxxx_ _xxxx_ _xxx=_ ______
 		Dimensions: 6,5
 	HitShape:
 		Type: Rectangle
@@ -203,18 +226,28 @@
 		BuildPaletteOrder: 30
 		Prerequisites: ~disabled
 		Description: Smelts raw common ore into credits.
-	Voiced:
-		VoiceSet: OreSmelterVoice
-	ProvidesPrerequisite:
-		Prerequisite: anyrefinery
 	Health:
 		HP: 2000
-	Power:
-		Amount: -50
 	Armor:
 		Type: Heavy
 	Valued:
 		Cost: 2000
+
+^OreSmelterCommon:
+	Inherits: ^OreSmelterCommon.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Ore Smelter (Common)
+	Voiced:
+		VoiceSet: OreSmelterVoice
+	ProvidesPrerequisite:
+		Prerequisite: anyrefinery
+	Power:
+		Amount: -50
 	RevealsShroud:
 		Range: 4c0
 	Refinery:
@@ -225,18 +258,18 @@
 	WithIdleAnimation:
 		Interval: 300, 700
 
-^OreSmelterRare:
+^OreSmelterRare.Constructing:
 	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^4x3Shape
-	Inherits@bulldoze: ^BulldozesArea
 	BulldozesTerrainWhenCreated:
 		Size: 6,5
 	Tooltip:
-		Name: Ore Smelter (Rare)
+		Name: Ore Smelter (Rare) (Under Construction)
 	Selectable:
 		Bounds: 4096,3264,0,-96
 	Building:
-		Footprint: ====== =xxxx= =xxxx= =xxx== ======
+		Footprint: ______ _xxxx_ _xxxx_ _xxx=_ ______
 		Dimensions: 6,5
 	HitShape:
 		Type: Rectangle
@@ -247,18 +280,28 @@
 		BuildPaletteOrder: 60
 		Prerequisites: ~disabled
 		Description: Smelts raw rare ore into credits.
-	Voiced:
-		VoiceSet: OreSmelterVoice
-	ProvidesPrerequisite:
-		Prerequisite: anyrefinery
 	Health:
 		HP: 2000
-	Power:
-		Amount: -50
 	Armor:
 		Type: Heavy
 	Valued:
 		Cost: 2000
+
+^OreSmelterRare:
+	Inherits: ^OreSmelterRare.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Ore Smelter (Rare)
+	Voiced:
+		VoiceSet: OreSmelterVoice
+	ProvidesPrerequisite:
+		Prerequisite: anyrefinery
+	Power:
+		Amount: -50
 	RevealsShroud:
 		Range: 4c0
 	Refinery:
@@ -269,18 +312,19 @@
 	WithIdleAnimation:
 		Interval: 450, 950
 
-^StructureFactory:
+^StructureFactory.Constructing:
 	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^4x3Shape
-	Inherits@bulldoze: ^BulldozesArea
 	BulldozesTerrainWhenCreated:
 		Size: 6,5
 	Tooltip:
-		Name: Structure Factory
+		Name: Structure Factory (Under Construction)
+	Buildable:
+		BuildPaletteOrder: 40
 	Selectable:
 		Bounds: 4096,3264,0,-96
 	Building:
-		Footprint: ====== =xxxx= =xxxx= =xxxx= ======
 		Dimensions: 6,5
 	HitShape:
 		Type: Rectangle
@@ -293,33 +337,44 @@
 		Prerequisites: ~disabled
 		Description: Produces structures.
 		IconPalette: 6
-	Voiced:
-		VoiceSet: StructureFactoryVoice
 	Health:
 		HP: 3000
-	Power:
-		Amount: -50
 	Armor:
 		Type: Medium
 	Valued:
 		Cost: 2000
+
+^StructureFactory:
+	Inherits: ^StructureFactory.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Structure Factory
+	Voiced:
+		VoiceSet: StructureFactoryVoice
+	Power:
+		Amount: -50
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 550, 850
 
-^VehicleFactory:
+^VehicleFactory.Constructing:
 	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^4x3Shape
-	Inherits@bulldoze: ^BulldozesArea
 	BulldozesTerrainWhenCreated:
 		Size: 6,5
 	Tooltip:
-		Name: Vehicle Factory
+		Name: Vehicle Factory (Under Construction)
+	Buildable:
+		BuildPaletteOrder: 50
 	Selectable:
 		Bounds: 4096,3264,0,-96
 	Building:
-		Footprint: ====== =xxxx= =xxxx= =xx=x= ======
 		Dimensions: 6,5
 	HitShape:
 		Type: Rectangle
@@ -332,6 +387,22 @@
 		Prerequisites: ~disabled
 		Description: Produces vehicles.
 		IconPalette: 6
+	Health:
+		HP: 3000
+	Armor:
+		Type: Medium
+	Valued:
+		Cost: 2000
+
+^VehicleFactory:
+	Inherits: ^VehicleFactory.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Vehicle Factory
 	Voiced:
 		VoiceSet: VehicleFactoryVoice
 	ProvidesPrerequisite:
@@ -342,14 +413,8 @@
 	ProvidesPrerequisite@plymouth:
 		Factions: plymouth
 		Prerequisite: vehicles.plymouth
-	Health:
-		HP: 3000
 	Power:
 		Amount: -50
-	Armor:
-		Type: Medium
-	Valued:
-		Cost: 2000
 	RevealsShroud:
 		Range: 4c0
 	Production:
@@ -378,16 +443,17 @@
 	WithIdleAnimation:
 		Interval: 380, 800
 
-^MineCommon:
-	Inherits: ^Building
+^MineCommon.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
+	-Buildable:
 	Inherits@shape: ^1x1Shape
-	Inherits@bulldoze: ^BulldozesArea
 	BulldozesTerrainWhenCreated:
 		Size: 4,3
 		Offset: -2,-1
 	Tooltip:
-		Name: Mine (Common)
-		GenericName: Mine
+		Name: Mine (Common) (Under Construction)
+		GenericName: Mine (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -399,18 +465,27 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineCommonVoice
-	ProvidesPrerequisite:
-		Prerequisite: anymine
 	Health:
 		HP: 1000
-	Armor:
-		Type: Medium
 	Armor:
 		Type: Concrete
 	Valued:
 		Cost: 300
+
+^MineCommon:
+	Inherits: ^MineCommon.Constructing
+	-SelfConstructing:
+	#-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Mine (Common)
+		GenericName: Mine
+	Voiced:
+		VoiceSet: MineCommonVoice
+	ProvidesPrerequisite:
+		Prerequisite: anymine
 	RevealsShroud:
 		Range: 4c0
 	WithDirectionalIdleOverlay@deck:
@@ -444,16 +519,17 @@
 				PlaceResourceType: ore.depot.rare3
 				Amount: 360000
 
-^MineRare:
-	Inherits: ^Building
+^MineRare.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
+	-Buildable:
 	Inherits@shape: ^1x1Shape
-	Inherits@bulldoze: ^BulldozesArea
 	BulldozesTerrainWhenCreated:
 		Size: 3,3
 		Offset: -1,-1
 	Tooltip:
-		Name: Mine (Rare)
-		GenericName: Mine
+		Name: Mine (Rare) (Under Construction)
+		GenericName: Mine (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -465,18 +541,27 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
+	Health:
+		HP: 1000
+	Armor:
+		Type: Concrete
+	Valued:
+		Cost: 300
+
+^MineRare:
+	Inherits: ^MineRare.Constructing
+	-SelfConstructing:
+	#-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Mine (Rare)
+		GenericName: Mine
 	Voiced:
 		VoiceSet: MineRareVoice
 	ProvidesPrerequisite:
 		Prerequisite: anymine
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
 	RevealsShroud:
 		Range: 4c0
 	WithDirectionalIdleOverlay@deck:
@@ -510,16 +595,17 @@
 				PlaceResourceType: ore.depot.rare3
 				Amount: 360000
 
-^MineMagma:
-	Inherits: ^Building
+^MineMagma.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
+	-Buildable:
 	Inherits@shape: ^1x1Shape
-	Inherits@bulldoze: ^BulldozesArea
 	BulldozesTerrainWhenCreated:
 		Size: 3,3
 		Offset: -1,-1
 	Tooltip:
-		Name: Mine (Magma)
-		GenericName: Mine
+		Name: Mine (Magma) (Under Construction)
+		GenericName: Mine (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -531,18 +617,27 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineMagmaVoice
-	ProvidesPrerequisite:
-		Prerequisite: anymine
 	Health:
 		HP: 1000
-	Armor:
-		Type: Medium
 	Armor:
 		Type: Concrete
 	Valued:
 		Cost: 300
+
+^MineMagma:
+	Inherits: ^MineMagma.Constructing
+	-SelfConstructing:
+	#-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Mine (Magma)
+		GenericName: Mine
+	Voiced:
+		VoiceSet: MineMagmaVoice
+	ProvidesPrerequisite:
+		Prerequisite: anymine
 	RevealsShroud:
 		Range: 4c0
 	WithDirectionalIdleOverlay@deck:
@@ -576,15 +671,17 @@
 				PlaceResourceType: ore.depot.rare3
 				Amount: 360000
 
-^StorageCommon:
-	Inherits: ^Building
+^StorageCommon.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^1x1Shape
-	Inherits@bulldoze: ^BulldozesArea
+	Tooltip:
+		Name: Storage (Common) (Under Construction)
+		GenericName: Ore Storage (Under Construction)
+	Buildable:
+		BuildPaletteOrder: 60
 	BulldozesTerrainWhenCreated:
 		Size: 3,3
-	Tooltip:
-		Name: Storage (Common)
-		GenericName: Ore Storage
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -594,27 +691,41 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: CommonStorageVoice
 	Health:
 		HP: 1000
-	Armor:
-		Type: Medium
 	Armor:
 		Type: Concrete
 	Valued:
 		Cost: 300
+
+^StorageCommon:
+	Inherits: ^StorageCommon.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Storage (Common)
+		GenericName: Ore Storage
+	Voiced:
+		VoiceSet: CommonStorageVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 350, 1100
 
-^StorageRare:
-	Inherits: ^Building
+^StorageRare.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^1x1Shape
+	BulldozesTerrainWhenCreated:
+		Size: 3,3
 	Tooltip:
-		Name: Storage (Rare)
-		GenericName: Ore Storage
+		Name: Storage (Rare) (Under Construction)
+		GenericName: Ore Storage (Under Construction)
+	Buildable:
+		BuildPaletteOrder: 70
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -624,27 +735,41 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: RareStorageVoice
 	Health:
 		HP: 1000
-	Armor:
-		Type: Medium
 	Armor:
 		Type: Concrete
 	Valued:
 		Cost: 300
+
+^StorageRare:
+	Inherits: ^StorageRare.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Storage (Rare)
+		GenericName: Ore Storage
+	Voiced:
+		VoiceSet: RareStorageVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 450, 1200
 
-^Agridome:
-	Inherits: ^Building
+^Agridome.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^1x1Shape
+	BulldozesTerrainWhenCreated:
+		Size: 5,4
 	Tooltip:
-		Name: Agridome
-		GenericName: Agridome
+		Name: Agridome (Under Construction)
+		GenericName: Agridome (Under Construction)
+	Buildable:
+		BuildPaletteOrder: 80
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -654,27 +779,37 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: AgridomeVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^Agridome:
+	Inherits: ^Agridome.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Agridome
+		GenericName: Agridome
+	Voiced:
+		VoiceSet: AgridomeVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 550, 1200
 
-^MhdGenerator:
-	Inherits: ^Building
+^MhdGenerator.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^1x1Shape
 	Tooltip:
-		Name: MHD Generator
-		GenericName: MHD Generator
+		Name: MHD Generator (Under Construction)
+		GenericName: MHD Generator (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -684,27 +819,37 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^MhdGenerator:
+	Inherits: ^MhdGenerator.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: MHD Generator
+		GenericName: MHD Generator
+	Voiced:
+		VoiceSet: MineVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 420, 760
 
-^Residence:
-	Inherits: ^Building
+^Residence.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Residence
-		GenericName: Residence
+		Name: Residence (Under Construction)
+		GenericName: Residence (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -714,27 +859,37 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: ResidenceBasicVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^Residence:
+	Inherits: ^Residence.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Residence
+		GenericName: Residence
+	Voiced:
+		VoiceSet: ResidenceBasicVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 600, 1200
 
-^Dirt:
-	Inherits: ^Building
+^Dirt.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: DIRT
-		GenericName: DIRT
+		Name: DIRT (Under Construction)
+		GenericName: DIRT (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -744,55 +899,75 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^Dirt:
+	Inherits: ^Dirt.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: DIRT
+		GenericName: DIRT
+	Voiced:
+		VoiceSet: MineVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 550, 1300
 
-^Gorf:
-	Inherits: ^Building
+^Gorf.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: GORF (Under Construction)
+		GenericName: GORF (Under Construction)
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Valued:
+		Cost: 300
+
+^Gorf:
+	Inherits: ^Gorf.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: GORF
 		GenericName: GORF
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
 	Voiced:
 		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
 	RevealsShroud:
 		Range: 4c0
 
-^MedicalCenter:
-	Inherits: ^Building
+^MedicalCenter.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Medical Center
-		GenericName: Medical Center
+		Name: Medical Center (Under Construction)
+		GenericName: Medical Center (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -802,27 +977,37 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MedicalCenterVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^MedicalCenter:
+	Inherits: ^MedicalCenter.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Medical Center
+		GenericName: Medical Center
+	Voiced:
+		VoiceSet: MedicalCenterVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 520, 820
 
-^Nursery:
-	Inherits: ^Building
+^Nursery.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Nursery
-		GenericName: Nursery
+		Name: Nursery (Under Construction)
+		GenericName: Nursery (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -832,27 +1017,37 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: NurseryVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^Nursery:
+	Inherits: ^Nursery.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Nursery
+		GenericName: Nursery
+	Voiced:
+		VoiceSet: NurseryVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 510, 1400
 
-^RecreationFacility:
-	Inherits: ^Building
+^RecreationFacility.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Recreation Facility
-		GenericName: Recreation Facility
+		Name: Recreation Facility (Under Construction)
+		GenericName: Recreation Facility (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -862,27 +1057,37 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^RecreationFacility:
+	Inherits: ^RecreationFacility.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Recreation Facility
+		GenericName: Recreation Facility
+	Voiced:
+		VoiceSet: MineVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 570, 1300
 
-^TradeCenter:
-	Inherits: ^Building
+^TradeCenter.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Trade Center
-		GenericName: Trade Center
+		Name: Trade Center (Under Construction)
+		GenericName: Trade Center (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -892,27 +1097,37 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^TradeCenter:
+	Inherits: ^TradeCenter.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Trade Center
+		GenericName: Trade Center
+	Voiced:
+		VoiceSet: MineVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 480, 1220
 
-^Laboratory:
-	Inherits: ^Building
+^Laboratory.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Laboratory
-		GenericName: Laboratory
+		Name: Laboratory (Under Construction)
+		GenericName: Laboratory (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -922,27 +1137,37 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: LabBasicVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^Laboratory:
+	Inherits: ^Laboratory.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Laboratory
+		GenericName: Laboratory
+	Voiced:
+		VoiceSet: LabBasicVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 560, 880
 
-^RobotCommandCenter:
-	Inherits: ^Building
+^RobotCommandCenter.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Robot Command Center
-		GenericName: Robot Command Center
+		Name: Robot Command Center (Under Construction)
+		GenericName: Robot Command Center (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -952,27 +1177,37 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: RobotCommandCenterVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^RobotCommandCenter:
+	Inherits: ^RobotCommandCenter.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Robot Command Center
+		GenericName: Robot Command Center
+	Voiced:
+		VoiceSet: RobotCommandCenterVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 300, 600
 
-^SolarPowerArray:
-	Inherits: ^Building
+^SolarPowerArray.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Solar Power Array
-		GenericName: Solar Power Array
+		Name: Solar Power Array (Under Construction)
+		GenericName: Solar Power Array (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -982,27 +1217,37 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^SolarPowerArray:
+	Inherits: ^SolarPowerArray.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Solar Power Array
+		GenericName: Solar Power Array
+	Voiced:
+		VoiceSet: MineVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 540, 1040
 
-^University:
-	Inherits: ^Building
+^University.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: University
-		GenericName: University
+		Name: University (Under Construction)
+		GenericName: University (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -1012,27 +1257,37 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: UniversityVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^University:
+	Inherits: ^University.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: University
+		GenericName: University
+	Voiced:
+		VoiceSet: UniversityVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 360, 1100
 
-^Spaceport:
-	Inherits: ^Building
+^Spaceport.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Spaceport
-		GenericName: Spaceport
+		Name: Spaceport (Under Construction)
+		GenericName: Spaceport (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -1042,27 +1297,37 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: SpaceportVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^Spaceport:
+	Inherits: ^Spaceport.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Spaceport
+		GenericName: Spaceport
+	Voiced:
+		VoiceSet: SpaceportVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 350, 580
 
-^MeteorDefense:
-	Inherits: ^Building
+^MeteorDefense.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Meteor Defense
-		GenericName: Meteor Defense
+		Name: Meteor Defense (Under Construction)
+		GenericName: Meteor Defense (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -1072,55 +1337,76 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^MeteorDefense:
+	Inherits: ^MeteorDefense.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Meteor Defense
+		GenericName: Meteor Defense
+	Voiced:
+		VoiceSet: MineVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 400, 800
 
-^GeothermalPlant:
-	Inherits: ^Building
+^GeothermalPlant.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
+	-Buildable:
 	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Geothermal Plant (Under Construction)
+		GenericName: Geothermal Plant (Under Construction)
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Valued:
+		Cost: 300
+
+^GeothermalPlant:
+	Inherits: ^GeothermalPlant.Constructing
+	-SelfConstructing:
+	#-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Geothermal Plant
 		GenericName: Geothermal Plant
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
 	Voiced:
 		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
 	RevealsShroud:
 		Range: 4c0
 
-^ArachnidFactory:
-	Inherits: ^Building
+^ArachnidFactory.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Arachnid Factory
-		GenericName: Arachnid Factory
+		Name: Arachnid Factory (Under Construction)
+		GenericName: Arachnid Factory (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -1130,27 +1416,37 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^ArachnidFactory:
+	Inherits: ^ArachnidFactory.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Arachnid Factory
+		GenericName: Arachnid Factory
+	Voiced:
+		VoiceSet: MineVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 320, 900
 
-^Forum:
-	Inherits: ^Building
+^Forum.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Forum
-		GenericName: Forum
+		Name: Forum (Under Construction)
+		GenericName: Forum (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -1160,55 +1456,76 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^Forum:
+	Inherits: ^Forum.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Forum
+		GenericName: Forum
+	Voiced:
+		VoiceSet: MineVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 440, 880
 
-^ConsumerFactory:
-	Inherits: ^Building
+^ConsumerFactory.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
+	-Buildable:
 	Inherits@shape: ^2x2Shape
+	Tooltip:
+		Name: Consumer Factory (Under Construction)
+		GenericName: Consumer Factory (Under Construction)
+	Selectable:
+		Bounds: 1152,1664,0,-192
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	HitShape:
+		Type: Rectangle
+			TopLeft: -512, -512
+			BottomRight: 512, 512
+	Health:
+		HP: 1000
+	Armor:
+		Type: Medium
+	Valued:
+		Cost: 300
+
+^ConsumerFactory:
+	Inherits: ^ConsumerFactory.Constructing
+	-SelfConstructing:
+	#-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Consumer Factory
 		GenericName: Consumer Factory
-	Selectable:
-		Bounds: 1152,1664,0,-192
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
 	Voiced:
 		VoiceSet: MineVoice
-	Health:
-		HP: 1000
-	Armor:
-		Type: Medium
-	Armor:
-		Type: Concrete
-	Valued:
-		Cost: 300
 	RevealsShroud:
 		Range: 4c0
 
-^Observatory:
-	Inherits: ^Building
+^Observatory.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Observatory
-		GenericName: Observatory
+		Name: Observatory (Under Construction)
+		GenericName: Observatory (Under Construction)
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -1218,27 +1535,37 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: MineVoice
 	Health:
 		HP: 1000
 	Armor:
 		Type: Medium
-	Armor:
-		Type: Concrete
 	Valued:
 		Cost: 300
+
+^Observatory:
+	Inherits: ^Observatory.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Observatory
+		GenericName: Observatory
+	Voiced:
+		VoiceSet: MineVoice
 	RevealsShroud:
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 460, 1060
 
-^LightTower:
-	Inherits: ^Building
+^LightTower.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^1x1Shape
 	Tooltip:
-		Name: Light Tower
-		GenericName: Light Tower
+		Name: Light Tower (Under Construction)
+		GenericName: Light Tower (Under Construction)
 	Selectable:
 		Bounds: 1152,1152,0,0
 	Building:
@@ -1248,29 +1575,37 @@
 		Type: Rectangle
 			TopLeft: -512, -512
 			BottomRight: 512, 512
-	Voiced:
-		VoiceSet: TurretVoice
 	Health:
 		HP: 500
-	Armor:
-		Type: Heavy
-	Power:
-		Amount: -10
 	Armor:
 		Type: Concrete
 	Valued:
 		Cost: 700
+
+^LightTower:
+	Inherits: ^LightTower.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Tooltip:
+		Name: Light Tower
+		GenericName: Light Tower
+	Voiced:
+		VoiceSet: TurretVoice
+	Power:
+		Amount: -10
 	RevealsShroud:
 		Range: 9c0
 
-^GuardPost:
-	Inherits: ^EmpDisable
-	Inherits: ^Defense
+^GuardPost.Constructing:
+	Inherits: ^Op2Building
+	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^1x1Shape
-	Inherits: ^AutoTargetGround
 	Tooltip:
-		Name: Guard Post
-		GenericName: Guard Post
+		Name: Guard Post (Under Construction)
+		GenericName: Guard Post (Under Construction)
 	Selectable:
 		Bounds: 1152,1152,0,0
 	Building:
@@ -1286,16 +1621,30 @@
 		Prerequisites: ~disabled
 		Description: Basic defense turret.
 		IconPalette: 3
-	#Voiced:
-	#	VoiceSet: TurretVoice
 	Health:
 		HP: 500
 	Armor:
 		Type: Heavy
-	Power:
-		Amount: -10
 	Valued:
 		Cost: 700
+
+^GuardPost:
+	Inherits: ^GuardPost.Constructing
+	-SelfConstructing:
+	-Buildable:
+	-Production:
+	-BuilderQueue:
+	-BulldozesTerrainWhenCreated:
+	Inherits: ^EmpDisable
+	Inherits: ^Defense
+	Inherits: ^AutoTargetGround
+	Tooltip:
+		Name: Guard Post
+		GenericName: Guard Post
+	#Voiced:
+	#	VoiceSet: TurretVoice
+	Power:
+		Amount: -10
 	RevealsShroud:
 		Range: 4c0
 	Armament:

@@ -1,68 +1,35 @@
 eden-command-center:
-	RenderSprites:
-		Image: eden-command-center
 	Inherits: ^CommandCenter
-	Building:
-		Footprint: ===== =xxx= ==xx= =====
-	-Buildable:
+	# These templates are found in structures-constructing.yaml
+	Inherits@common: ^eden-command-center
 
 plymouth-command-center:
-	RenderSprites:
-		Image: plymouth-command-center
 	Inherits: ^CommandCenter
-	Selectable:
-		Bounds: 3072,2432,0,-192
-	Building:
-		Footprint: ===== =xxx= =xx== =====
-	-Buildable:
+	Inherits@common: ^plymouth-command-center
 
 eden-tokamak:
-	RenderSprites:
-		Image: eden-tokamak
 	Inherits: ^Power
-	Buildable:
-		Prerequisites: ~structures.eden
+	Inherits@common: ^eden-tokamak
 
 plymouth-tokamak:
-	RenderSprites:
-		Image: plymouth-tokamak
 	Inherits: ^Power
-	Selectable:
-		Bounds: 2048,2112,0,-32
-	Buildable:
-		Prerequisites: ~structures.plymouth
+	Inherits@common: ^plymouth-tokamak
 
 eden-structure-factory:
-	RenderSprites:
-		Image: eden-structure-factory
 	Inherits: ^StructureFactory
-	Buildable:
-		Prerequisites: ~structures.eden
+	Inherits@common: ^eden-structure-factory
 
 plymouth-structure-factory:
-	RenderSprites:
-		Image: plymouth-structure-factory
 	Inherits: ^StructureFactory
-	Selectable:
-		Bounds: 2048,2112,0,-32
-	Buildable:
-		Prerequisites: ~structures.plymouth
+	Inherits@common: ^plymouth-structure-factory
 
 eden-vehicle-factory:
-	RenderSprites:
-		Image: eden-vehicle-factory
 	Inherits: ^VehicleFactory
-	Buildable:
-		Prerequisites: ~structures.eden
+	Inherits@common: ^eden-vehicle-factory
 
 plymouth-vehicle-factory:
-	RenderSprites:
-		Image: plymouth-vehicle-factory
 	Inherits: ^VehicleFactory
-	Building:
-		Footprint: ====== =xxxx= =xxx== =xxxx= ======
-	Buildable:
-		Prerequisites: ~structures.plymouth
+	Inherits@common: ^plymouth-vehicle-factory
 	Exit:
 		Facing: 768
 		SpawnOffset: 1536,0,0
@@ -74,301 +41,223 @@ plymouth-vehicle-factory:
 		Path: 6,2
 
 eden-agridome:
-	RenderSprites:
-		Image: eden-agridome
 	Inherits: ^Agridome
-	Buildable:
-		Prerequisites: ~structures.eden
+	Inherits@common: ^eden-agridome
 
 plymouth-agridome:
-	RenderSprites:
-		Image: plymouth-agridome
 	Inherits: ^Agridome
-	Selectable:
-		Bounds: 2048,2112,0,-32
-	Buildable:
-		Prerequisites: ~structures.plymouth
+	Inherits@common: ^plymouth-agridome
 
 eden-smelter-common:
-	RenderSprites:
-		Image: eden-smelter-common
 	Inherits: ^OreSmelterCommon
-	Buildable:
-		Prerequisites: ~structures.eden
+	Inherits@common: ^eden-smelter-common
 
 plymouth-smelter-common:
-	RenderSprites:
-		Image: plymouth-smelter-common
 	Inherits: ^OreSmelterCommon
-	Selectable:
-		Bounds: 2048,2112,0,-32
-	Buildable:
-		Prerequisites: ~structures.plymouth
+	Inherits@common: ^plymouth-smelter-common
 
 eden-smelter-rare:
-	RenderSprites:
-		Image: eden-smelter-rare
 	Inherits: ^OreSmelterRare
-	Buildable:
-		Prerequisites: ~structures.eden
+	Inherits@common: ^eden-smelter-rare
 
 plymouth-smelter-rare:
-	RenderSprites:
-		Image: plymouth-smelter-rare
 	Inherits: ^OreSmelterRare
-	Selectable:
-		Bounds: 2048,2112,0,-32
-	Buildable:
-		Prerequisites: ~structures.plymouth
+	Inherits@common: ^plymouth-smelter-rare
 
 eden-storage-common:
-	RenderSprites:
-		Image: eden-storage-common
 	Inherits: ^StorageCommon
+	Inherits@common: ^eden-storage-common
 
 plymouth-storage-common:
-	RenderSprites:
-		Image: plymouth-storage-common
 	Inherits: ^StorageCommon
-	Selectable:
-		Bounds: 2048,2112,0,-32
+	Inherits@common: ^plymouth-storage-common
 
 eden-storage-rare:
-	RenderSprites:
-		Image: eden-storage-rare
 	Inherits: ^StorageRare
+	Inherits@common: ^eden-storage-rare
 
 plymouth-storage-rare:
-	RenderSprites:
-		Image: plymouth-storage-rare
 	Inherits: ^StorageRare
+	Inherits@common: ^plymouth-storage-rare
 
 eden-mine-common:
-	RenderSprites:
-		Image: eden-mine-common
 	Inherits: ^MineCommon
+	Inherits@common: ^eden-mine-common
 
 plymouth-mine-common:
-	RenderSprites:
-		Image: plymouth-mine-common
 	Inherits: ^MineCommon
+	Inherits@common: ^plymouth-mine-common
 	WithIdleAnimation:
 		Interval: 500, 1000
 
 eden-mine-rare:
-	RenderSprites:
-		Image: eden-mine-rare
 	Inherits: ^MineRare
+	Inherits@common: ^eden-mine-rare
 
 plymouth-mine-rare:
-	RenderSprites:
-		Image: plymouth-mine-rare
 	Inherits: ^MineRare
+	Inherits@common: ^plymouth-mine-rare
 	WithIdleAnimation:
 		Interval: 500, 1000
-	Selectable:
-		Bounds: 2048,2112,0,-32
 
 eden-mine-magma:
-	RenderSprites:
-		Image: eden-mine-magma
 	Inherits: ^MineMagma
+	Inherits@common: ^eden-mine-magma
 
 plymouth-mhd-generator:
-	RenderSprites:
-		Image: plymouth-mhd-generator
 	Inherits: ^MhdGenerator
-	Selectable:
-		Bounds: 2048,2112,0,-32
+	Inherits@common: ^plymouth-mhd-generator
 
 eden-residence:
-	RenderSprites:
-		Image: eden-residence
 	Inherits: ^Residence
+	Inherits@common: ^eden-residence
 
 plymouth-residence:
-	RenderSprites:
-		Image: plymouth-residence
 	Inherits: ^Residence
+	Inherits@common: ^plymouth-residence
 
 eden-residence-advanced:
-	RenderSprites:
-		Image: eden-residence-advanced
 	Inherits: ^Residence
+	Inherits@common: ^eden-residence-advanced
 
 plymouth-residence-reinforced:
-	RenderSprites:
-		Image: plymouth-residence-reinforced
 	Inherits: ^Residence
+	Inherits@common: ^plymouth-residence-reinforced
 
 eden-dirt:
-	RenderSprites:
-		Image: eden-dirt
 	Inherits: ^Dirt
+	Inherits@common: ^eden-dirt
 
 plymouth-dirt:
-	RenderSprites:
-		Image: plymouth-dirt
 	Inherits: ^Dirt
+	Inherits@common: ^plymouth-dirt
 
 eden-gorf:
-	RenderSprites:
-		Image: eden-gorf
 	Inherits: ^Gorf
+	Inherits@common: ^eden-gorf
 
 plymouth-gorf:
-	RenderSprites:
-		Image: plymouth-gorf
 	Inherits: ^Gorf
+	Inherits@common: ^plymouth-gorf
 	WithIdleAnimation:
 		Interval: 500, 1000
 
 eden-medical-center:
-	RenderSprites:
-		Image: eden-medical-center
 	Inherits: ^MedicalCenter
+	Inherits@common: ^eden-medical-center
 
 plymouth-medical-center:
-	RenderSprites:
-		Image: plymouth-medical-center
 	Inherits: ^MedicalCenter
+	Inherits@common: ^plymouth-medical-center
 
 eden-nursery:
-	RenderSprites:
-		Image: eden-nursery
 	Inherits: ^Nursery
+	Inherits@common: ^eden-nursery
 
 plymouth-nursery:
-	RenderSprites:
-		Image: plymouth-nursery
 	Inherits: ^Nursery
+	Inherits@common: ^plymouth-nursery
 
 eden-recreation-facility:
-	RenderSprites:
-		Image: eden-recreation-facility
 	Inherits: ^RecreationFacility
+	Inherits@common: ^eden-recreation-facility
 
 plymouth-recreation-facility:
-	RenderSprites:
-		Image: plymouth-recreation-facility
 	Inherits: ^RecreationFacility
+	Inherits@common: ^plymouth-recreation-facility
 
 eden-trade-center:
-	RenderSprites:
-		Image: eden-trade-center
 	Inherits: ^TradeCenter
+	Inherits@common: ^eden-trade-center
 
 plymouth-trade-center:
-	RenderSprites:
-		Image: plymouth-trade-center
 	Inherits: ^TradeCenter
+	Inherits@common: ^plymouth-trade-center
 
 eden-lab-basic:
-	RenderSprites:
-		Image: eden-lab-basic
 	Inherits: ^Laboratory
+	Inherits@common: ^eden-lab-basic
 
 plymouth-lab-basic:
-	RenderSprites:
-		Image: plymouth-lab-basic
 	Inherits: ^Laboratory
+	Inherits@common: ^plymouth-lab-basic
 
 eden-lab-standard:
-	RenderSprites:
-		Image: eden-lab-standard
 	Inherits: ^Laboratory
+	Inherits@common: ^eden-lab-standard
 
 plymouth-lab-standard:
-	RenderSprites:
-		Image: plymouth-lab-standard
 	Inherits: ^Laboratory
+	Inherits@common: ^plymouth-lab-standard
 
 eden-lab-advanced:
-	RenderSprites:
-		Image: eden-lab-advanced
 	Inherits: ^Laboratory
+	Inherits@common: ^eden-lab-advanced
 
 plymouth-lab-advanced:
-	RenderSprites:
-		Image: plymouth-lab-advanced
 	Inherits: ^Laboratory
+	Inherits@common: ^plymouth-lab-advanced
 
 eden-robot-command-center:
-	RenderSprites:
-		Image: eden-robot-command-center
 	Inherits: ^RobotCommandCenter
+	Inherits@common: ^eden-robot-command-center
 
 plymouth-robot-command-center:
-	RenderSprites:
-		Image: plymouth-robot-command-center
 	Inherits: ^RobotCommandCenter
+	Inherits@common: ^plymouth-robot-command-center
 
 eden-solar-power-array:
-	RenderSprites:
-		Image: eden-solar-power-array
 	Inherits: ^SolarPowerArray
+	Inherits@common: ^eden-solar-power-array
 
 plymouth-solar-power-array:
-	RenderSprites:
-		Image: plymouth-solar-power-array
 	Inherits: ^SolarPowerArray
+	Inherits@common: ^plymouth-solar-power-array
 
 eden-university:
-	RenderSprites:
-		Image: eden-university
 	Inherits: ^University
+	Inherits@common: ^eden-university
 
 plymouth-university:
-	RenderSprites:
-		Image: plymouth-university
 	Inherits: ^University
+	Inherits@common: ^plymouth-university
 
 eden-spaceport:
-	RenderSprites:
-		Image: eden-spaceport
 	Inherits: ^Spaceport
+	Inherits@common: ^eden-spaceport
 
 plymouth-spaceport:
-	RenderSprites:
-		Image: plymouth-spaceport
 	Inherits: ^Spaceport
+	Inherits@common: ^plymouth-spaceport
 
 eden-meteor-defense:
-	RenderSprites:
-		Image: eden-meteor-defense
 	Inherits: ^MeteorDefense
+	Inherits@common: ^eden-meteor-defense
 
 eden-geothermal-plant:
-	RenderSprites:
-		Image: eden-geothermal-plant
 	Inherits: ^GeothermalPlant
+	Inherits@common: ^eden-geothermal-plant
 
 plymouth-arachnid-factory:
-	RenderSprites:
-		Image: plymouth-arachnid-factory
 	Inherits: ^ArachnidFactory
+	Inherits@common: ^plymouth-arachnid-factory
 
 plymouth-forum:
-	RenderSprites:
-		Image: plymouth-forum
 	Inherits: ^Forum
+	Inherits@common: ^plymouth-forum
 
 eden-consumer-factory:
-	RenderSprites:
-		Image: eden-consumer-factory
 	Inherits: ^ConsumerFactory
+	Inherits@common: ^eden-consumer-factory
 
 eden-observatory:
-	RenderSprites:
-		Image: eden-observatory
 	Inherits: ^Observatory
+	Inherits@common: ^eden-observatory
 
 eden-light-tower:
-	RenderSprites:
-		Image: eden-light-tower
 	Inherits: ^LightTower
+	Inherits@common: ^eden-light-tower
 
 plymouth-light-tower:
-	RenderSprites:
-		Image: plymouth-light-tower
 	Inherits: ^LightTower
+	Inherits@common: ^plymouth-light-tower

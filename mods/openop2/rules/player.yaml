@@ -8,69 +8,70 @@ EditorPlayer:
 Player:
 	Inherits: ^BasePlayer
 	TechTree:
-	ClassicProductionQueue@Building:
-		Type: Building
-		Group: Building
-		DisplayOrder: 0
-		LowPowerModifier: 300
-		ReadyAudio: StructureKitManufactured
-		BlockedAudio: NoBuild
-		LimitedAudio: BuildingInProgress
-		QueuedAudio: Building
-		OnHoldAudio: OnHold
-		CancelledAudio: Cancelled
-		SpeedUp: False
-	ClassicProductionQueue@Defense:
-		Type: Defense
-		Group: Defense
-		DisplayOrder: 1
-		LowPowerModifier: 300
-		ReadyAudio: StructureKitManufactured
-		BlockedAudio: NoBuild
-		LimitedAudio: BuildingInProgress
-		QueuedAudio: Building
-		OnHoldAudio: OnHold
-		CancelledAudio: Cancelled
-		SpeedUp: False
-	ClassicProductionQueue@Infantry:
-		Type: Infantry
-		Group: Infantry
-		DisplayOrder: 2
-		LowPowerModifier: 300
-		ReadyAudio: VehicleReady
-		BlockedAudio: NoBuild
-		LimitedAudio: BuildingInProgress
-		QueuedAudio: Training
-		OnHoldAudio: OnHold
-		CancelledAudio: Cancelled
-		SpeedUp: False
-	ClassicProductionQueue@Ship:
-		Type: Ship
-		Group: Ship
-		DisplayOrder: 5
-		LowPowerModifier: 300
-		ReadyAudio: VehicleReady
-		BlockedAudio: NoBuild
-		LimitedAudio: BuildingInProgress
-		QueuedAudio: Building
-		OnHoldAudio: OnHold
-		CancelledAudio: Cancelled
-		SpeedUp: False
-	ClassicProductionQueue@Aircraft:
-		Type: Aircraft
-		Group: Aircraft
-		DisplayOrder: 4
-		LowPowerModifier: 300
-		ReadyAudio: VehicleReady
-		BlockedAudio: NoBuild
-		LimitedAudio: BuildingInProgress
-		QueuedAudio: Building
-		OnHoldAudio: OnHold
-		CancelledAudio: Cancelled
-		SpeedUp: False
+	#ClassicProductionQueue@Building:
+	#	Type: Building
+	#	Group: Building
+	#	DisplayOrder: 0
+	#	LowPowerModifier: 300
+	#	ReadyAudio: StructureKitManufactured
+	#	BlockedAudio: NoBuild
+	#	LimitedAudio: BuildingInProgress
+	#	QueuedAudio: Building
+	#	OnHoldAudio: OnHold
+	#	CancelledAudio: Cancelled
+	#	SpeedUp: False
+	#ClassicProductionQueue@Defense:
+	#	Type: Defense
+	#	Group: Defense
+	#	DisplayOrder: 1
+	#	LowPowerModifier: 300
+	#	ReadyAudio: StructureKitManufactured
+	#	BlockedAudio: NoBuild
+	#	LimitedAudio: BuildingInProgress
+	#	QueuedAudio: Building
+	#	OnHoldAudio: OnHold
+	#	CancelledAudio: Cancelled
+	#	SpeedUp: False
+	#ClassicProductionQueue@Infantry:
+	#	Type: Infantry
+	#	Group: Infantry
+	#	DisplayOrder: 2
+	#	LowPowerModifier: 300
+	#	ReadyAudio: VehicleReady
+	#	BlockedAudio: NoBuild
+	#	LimitedAudio: BuildingInProgress
+	#	QueuedAudio: Training
+	#	OnHoldAudio: OnHold
+	#	CancelledAudio: Cancelled
+	#	SpeedUp: False
+	#ClassicProductionQueue@Ship:
+	#	Type: Ship
+	#	Group: Ship
+	#	DisplayOrder: 5
+	#	LowPowerModifier: 300
+	#	ReadyAudio: VehicleReady
+	#	BlockedAudio: NoBuild
+	#	LimitedAudio: BuildingInProgress
+	#	QueuedAudio: Building
+	#	OnHoldAudio: OnHold
+	#	CancelledAudio: Cancelled
+	#	SpeedUp: False
+	#ClassicProductionQueue@Aircraft:
+	#	Type: Aircraft
+	#	Group: Aircraft
+	#	DisplayOrder: 4
+	#	LowPowerModifier: 300
+	#	ReadyAudio: VehicleReady
+	#	BlockedAudio: NoBuild
+	#	LimitedAudio: BuildingInProgress
+	#	QueuedAudio: Building
+	#	OnHoldAudio: OnHold
+	#	CancelledAudio: Cancelled
+	#	SpeedUp: False
 	PlaceBuilding:
 		NewOptionsNotification: NewOptions
 		CannotPlaceNotification: BuildingCannotPlaceAudio
+	BuildUnitPlaceBuilding:
 	SupportPowerManager:
 	ScriptTriggers:
 	MissionObjectives:
@@ -94,6 +95,10 @@ Player:
 			ore.depot.rare1: 40
 			ore.depot.rare2: 50
 			ore.depot.rare3: 60
+	ClassicProductionQueue@DummyQueue:
+		Type: Dummy
+		Group: Dummy
+		LowPowerModifier: 100
 	#MapBuildRadius:
 	#BuildRadiusCheckboxVisible: False
 	DeveloperMode:

@@ -45,7 +45,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 	}
 
 	// Copied from ProductionQueue
-	public class BuilderUnit : IResolveOrder, ITick, ITechTreeElement, INotifyKilled, INotifySold, ISync, INotifyTransform, INotifyCreated
+	public class BuilderUnit : IResolveOrder, ITick, ITechTreeElement, INotifyOwnerChanged, INotifyKilled, INotifySold, ISync, INotifyTransform, INotifyCreated
 	{
 		public readonly BuilderUnitInfo Info;
 		readonly Actor self;
@@ -89,6 +89,17 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 			productionTraits = self.TraitsImplementing<BuilderUnit>().ToArray();
 			CacheProducibles();
+		}
+
+		void INotifyOwnerChanged.OnOwnerChanged(Actor self, Player oldOwner, Player newOwner)
+		{
+			developerMode = newOwner.PlayerActor.Trait<DeveloperMode>();
+			techTree = newOwner.PlayerActor.Trait<TechTree>();
+
+			// Regenerate the producibles and tech tree state
+			oldOwner.PlayerActor.Trait<TechTree>().Remove(this);
+			CacheProducibles();
+			techTree.Update();
 		}
 
 		void INotifyKilled.Killed(Actor killed, AttackInfo e) { if (killed == self) { Enabled = false; } }

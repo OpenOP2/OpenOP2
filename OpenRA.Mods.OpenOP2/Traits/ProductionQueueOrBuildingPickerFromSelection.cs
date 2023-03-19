@@ -22,6 +22,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 	class ProductionQueueOrBuildingPickerFromSelectionInfo : TraitInfo
 	{
 		public string ProductionParent = null;
+		public bool UseTabs = false;
 		public string ProductionTabsWidget = null;
 		public string ProductionPaletteWidget = null;
 		public string BuildSelectPalette = null;
@@ -34,6 +35,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 	// Now performs extraordinary hacking to show two different types of build palettes - regular production queues and building picker
 	class ProductionQueueOrBuildingPickerFromSelection : INotifySelection
 	{
+		readonly ProductionQueueOrBuildingPickerFromSelectionInfo info;
 		readonly World world;
 		readonly Lazy<ProductionTabsWidget> tabsWidget;
 		readonly Lazy<ProductionPaletteWidget> paletteWidget;
@@ -43,9 +45,12 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 		public ProductionQueueOrBuildingPickerFromSelection(World world, ProductionQueueOrBuildingPickerFromSelectionInfo info)
 		{
+			this.info = info;
 			this.world = world;
 
-			tabsWidget = Exts.Lazy(() => Ui.Root.GetOrNull(info.ProductionTabsWidget) as ProductionTabsWidget);
+			if (info.UseTabs)
+				tabsWidget = Exts.Lazy(() => Ui.Root.GetOrNull(info.ProductionTabsWidget) as ProductionTabsWidget);
+
 			paletteWidget = Exts.Lazy(() => Ui.Root.GetOrNull(info.ProductionPaletteWidget) as ProductionPaletteWidget);
 			buildSelectWidget = Exts.Lazy(() => Ui.Root.GetOrNull(info.BuildSelectPalette) as BuildSelectPaletteWidget);
 			productionParentWidget = Exts.Lazy(() => Ui.Root.GetOrNull(info.ProductionParent) as ContainerWidget);
@@ -111,10 +116,13 @@ namespace OpenRA.Mods.OpenOP2.Traits
 				return;
 			}
 
-			if (tabsWidget.Value != null)
+			if (info.UseTabs && tabsWidget.Value != null)
 				tabsWidget.Value.CurrentQueue = queue;
 			else if (paletteWidget.Value != null)
+			{
+				productionParentWidget.Value.Visible = true;
 				paletteWidget.Value.CurrentQueue = queue;
+			}
 		}
 	}
 }

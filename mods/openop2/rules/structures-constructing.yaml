@@ -1,0 +1,602 @@
+
+# Templates below are a set of shared faction-specific RenderSprites, building footprints, and custom selection boxes while a building is under construction and also when it is fully constructed.
+# These are referenced in structures.yaml for the fully-constructed buildings.
+
+# After these templates are the buildable actor definitions.
+
+^eden-command-center:
+	RenderSprites:
+		Image: eden-command-center
+	Building:
+		Footprint: ===== =xxx= ==xx= =====
+
+^plymouth-command-center:
+	RenderSprites:
+		Image: plymouth-command-center
+	Building:
+		Footprint: ===== =xxx= =xx== =====
+	Selectable:
+		Bounds: 3072,2432,0,-192
+
+^eden-tokamak:
+	RenderSprites:
+		Image: eden-tokamak
+
+^plymouth-tokamak:
+	RenderSprites:
+		Image: plymouth-tokamak
+	Selectable:
+		Bounds: 2048,2112,0,-32
+
+^eden-structure-factory:
+	RenderSprites:
+		Image: eden-structure-factory
+	Building:
+		Footprint: ====== =xxxx= =xxxx= =xxx== ======
+
+^plymouth-structure-factory:
+	RenderSprites:
+		Image: plymouth-structure-factory
+	Building:
+		Footprint: ====== =xxxx= =xxxx= ==xxx= ======
+	Selectable:
+		Bounds: 2048,2112,0,-32
+
+^eden-vehicle-factory:
+	RenderSprites:
+		Image: eden-vehicle-factory
+	Building:
+		Footprint: ====== =xxxx= =xxxx= =xx=x= ======
+
+^plymouth-vehicle-factory:
+	RenderSprites:
+		Image: plymouth-vehicle-factory
+	Building:
+		Footprint: ====== =xxxx= =xxx== =xxxx= ======
+
+^eden-agridome:
+	RenderSprites:
+		Image: eden-agridome
+
+^plymouth-agridome:
+	RenderSprites:
+		Image: plymouth-agridome
+	Selectable:
+		Bounds: 2048,2112,0,-32
+
+^eden-smelter-common:
+	RenderSprites:
+		Image: eden-smelter-common
+
+^plymouth-smelter-common:
+	RenderSprites:
+		Image: plymouth-smelter-common
+
+^eden-smelter-rare:
+	RenderSprites:
+		Image: eden-smelter-rare
+
+^plymouth-smelter-rare:
+	RenderSprites:
+		Image: plymouth-smelter-rare
+
+^eden-storage-common:
+	RenderSprites:
+		Image: eden-storage-common
+
+^plymouth-storage-common:
+	RenderSprites:
+		Image: plymouth-storage-common
+	Selectable:
+		Bounds: 2048,2112,0,-32
+
+^eden-storage-rare:
+	RenderSprites:
+		Image: eden-storage-rare
+
+^plymouth-storage-rare:
+	RenderSprites:
+		Image: plymouth-storage-rare
+
+^eden-mine-common:
+	RenderSprites:
+		Image: eden-mine-common
+
+^plymouth-mine-common:
+	RenderSprites:
+		Image: plymouth-mine-common
+
+^eden-mine-rare:
+	RenderSprites:
+		Image: eden-mine-rare
+
+^plymouth-mine-rare:
+	RenderSprites:
+		Image: plymouth-mine-rare
+	Selectable:
+		Bounds: 2048,2112,0,-32
+
+^eden-mine-magma:
+	RenderSprites:
+		Image: eden-mine-magma
+
+^plymouth-mhd-generator:
+	RenderSprites:
+		Image: plymouth-mhd-generator
+	Selectable:
+		Bounds: 2048,2112,0,-32
+
+^eden-residence:
+	RenderSprites:
+		Image: eden-residence
+
+^plymouth-residence:
+	RenderSprites:
+		Image: plymouth-residence
+
+^eden-residence-advanced:
+	RenderSprites:
+		Image: eden-residence-advanced
+
+^plymouth-residence-reinforced:
+	RenderSprites:
+		Image: plymouth-residence-reinforced
+
+^eden-dirt:
+	RenderSprites:
+		Image: eden-dirt
+
+^plymouth-dirt:
+	RenderSprites:
+		Image: plymouth-dirt
+
+^eden-gorf:
+	RenderSprites:
+		Image: eden-gorf
+
+^plymouth-gorf:
+	RenderSprites:
+		Image: plymouth-gorf
+
+^eden-medical-center:
+	RenderSprites:
+		Image: eden-medical-center
+
+^plymouth-medical-center:
+	RenderSprites:
+		Image: plymouth-medical-center
+
+^eden-nursery:
+	RenderSprites:
+		Image: eden-nursery
+
+^plymouth-nursery:
+	RenderSprites:
+		Image: plymouth-nursery
+
+^eden-recreation-facility:
+	RenderSprites:
+		Image: eden-recreation-facility
+
+^plymouth-recreation-facility:
+	RenderSprites:
+		Image: plymouth-recreation-facility
+
+^eden-trade-center:
+	RenderSprites:
+		Image: eden-trade-center
+
+^plymouth-trade-center:
+	RenderSprites:
+		Image: plymouth-trade-center
+
+^eden-lab-basic:
+	RenderSprites:
+		Image: eden-lab-basic
+
+^plymouth-lab-basic:
+	RenderSprites:
+		Image: plymouth-lab-basic
+
+^eden-lab-standard:
+	RenderSprites:
+		Image: eden-lab-standard
+
+^plymouth-lab-standard:
+	RenderSprites:
+		Image: plymouth-lab-standard
+
+^eden-lab-advanced:
+	RenderSprites:
+		Image: eden-lab-advanced
+
+^plymouth-lab-advanced:
+	RenderSprites:
+		Image: plymouth-lab-advanced
+
+^eden-robot-command-center:
+	RenderSprites:
+		Image: eden-robot-command-center
+
+^plymouth-robot-command-center:
+	RenderSprites:
+		Image: plymouth-robot-command-center
+
+^eden-solar-power-array:
+	RenderSprites:
+		Image: eden-solar-power-array
+
+^plymouth-solar-power-array:
+	RenderSprites:
+		Image: plymouth-solar-power-array
+
+^eden-university:
+	RenderSprites:
+		Image: eden-university
+
+^plymouth-university:
+	RenderSprites:
+		Image: plymouth-university
+
+^eden-spaceport:
+	RenderSprites:
+		Image: eden-spaceport
+
+^plymouth-spaceport:
+	RenderSprites:
+		Image: plymouth-spaceport
+
+^eden-meteor-defense:
+	RenderSprites:
+		Image: eden-meteor-defense
+
+^eden-geothermal-plant:
+	RenderSprites:
+		Image: eden-geothermal-plant
+
+^plymouth-arachnid-factory:
+	RenderSprites:
+		Image: plymouth-arachnid-factory
+
+^plymouth-forum:
+	RenderSprites:
+		Image: plymouth-forum
+
+^eden-consumer-factory:
+	RenderSprites:
+		Image: eden-consumer-factory
+
+^eden-observatory:
+	RenderSprites:
+		Image: eden-observatory
+
+^eden-light-tower:
+	RenderSprites:
+		Image: eden-light-tower
+
+^plymouth-light-tower:
+	RenderSprites:
+		Image: plymouth-light-tower
+
+
+
+
+# Buildable buildings start here
+
+eden-command-center.constructing:
+	Inherits: ^CommandCenter.Constructing
+	Inherits@common: ^eden-command-center
+	SelfConstructing:
+		Becomes: eden-command-center
+	Buildable:
+		Queue: Building
+		Prerequisites: ~structures.eden
+
+plymouth-command-center.constructing:
+	Inherits: ^CommandCenter.Constructing
+	Inherits@common: ^plymouth-command-center
+	SelfConstructing:
+		Becomes: plymouth-command-center
+	Buildable:
+		Queue: Building
+		Prerequisites: ~structures.plymouth
+
+eden-tokamak.constructing:
+	Inherits: ^Power.Constructing
+	Inherits@common: ^eden-tokamak
+	SelfConstructing:
+		Becomes: eden-tokamak
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-tokamak.constructing:
+	Inherits: ^Power.Constructing
+	Inherits@common: ^plymouth-tokamak
+	SelfConstructing:
+		Becomes: plymouth-tokamak
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-structure-factory.constructing:
+	Inherits: ^StructureFactory.Constructing
+	Inherits@common: ^eden-structure-factory
+	SelfConstructing:
+		Becomes: eden-structure-factory
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-structure-factory.constructing:
+	Inherits: ^StructureFactory.Constructing
+	Inherits@common: ^plymouth-structure-factory
+	SelfConstructing:
+		Becomes: plymouth-structure-factory
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-vehicle-factory.constructing:
+	Inherits: ^VehicleFactory.Constructing
+	Inherits@common: ^eden-vehicle-factory
+	SelfConstructing:
+		Becomes: eden-vehicle-factory
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-vehicle-factory.constructing:
+	Inherits: ^VehicleFactory.Constructing
+	Inherits@common: ^plymouth-vehicle-factory
+	SelfConstructing:
+		Becomes: plymouth-vehicle-factory
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-agridome.constructing:
+	Inherits: ^Agridome.Constructing
+	Inherits@common: ^eden-agridome
+	SelfConstructing:
+		Becomes: eden-agridome
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-agridome.constructing:
+	Inherits: ^Agridome.Constructing
+	Inherits@common: ^plymouth-agridome
+	SelfConstructing:
+		Becomes: plymouth-agridome
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-smelter-common.constructing:
+	Inherits: ^OreSmelterCommon.Constructing
+	Inherits@common: ^eden-smelter-common
+	SelfConstructing:
+		Becomes: eden-smelter-common
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-smelter-common.constructing:
+	Inherits: ^OreSmelterCommon.Constructing
+	Inherits@common: ^plymouth-smelter-common
+	SelfConstructing:
+		Becomes: plymouth-smelter-common
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-smelter-rare.constructing:
+	Inherits: ^OreSmelterRare.Constructing
+	Inherits@common: ^eden-smelter-rare
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-smelter-rare.constructing:
+	Inherits: ^OreSmelterRare.Constructing
+	Inherits@common: ^plymouth-smelter-rare
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-storage-common.constructing:
+	Inherits: ^StorageCommon.Constructing
+	Inherits@common: ^eden-storage-common
+	SelfConstructing:
+		Becomes: eden-storage-common
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-storage-common.constructing:
+	Inherits: ^StorageCommon.Constructing
+	Inherits@common: ^plymouth-storage-common
+	SelfConstructing:
+		Becomes: plymouth-storage-common
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-storage-rare.constructing:
+	Inherits: ^StorageRare.Constructing
+	Inherits@common: ^eden-storage-rare
+	SelfConstructing:
+		Becomes: eden-storage-rare
+	Buildable:
+		Prerequisites: ~structures.eden
+
+plymouth-storage-rare.constructing:
+	Inherits: ^StorageRare.Constructing
+	Inherits@common: ^plymouth-storage-rare
+	SelfConstructing:
+		Becomes: plymouth-storage-rare
+	Buildable:
+		Prerequisites: ~structures.plymouth
+
+eden-mine-common.constructing:
+	Inherits: ^MineCommon.Constructing
+	Inherits@common: ^eden-mine-common
+
+plymouth-mine-common.constructing:
+	Inherits: ^MineCommon.Constructing
+	Inherits@common: ^plymouth-mine-common
+
+eden-mine-rare.constructing:
+	Inherits: ^MineRare.Constructing
+	Inherits@common: ^eden-mine-rare
+
+plymouth-mine-rare.constructing:
+	Inherits: ^MineRare.Constructing
+	Inherits@common: ^plymouth-mine-rare
+
+eden-mine-magma.constructing:
+	Inherits: ^MineMagma.Constructing
+	Inherits@common: ^eden-mine-magma
+
+plymouth-mhd-generator.constructing:
+	Inherits: ^MhdGenerator.Constructing
+	Inherits@common: ^plymouth-mhd-generator
+
+eden-residence.constructing:
+	Inherits: ^Residence.Constructing
+	Inherits@common: ^eden-residence
+
+plymouth-residence.constructing:
+	Inherits: ^Residence.Constructing
+	Inherits@common: ^plymouth-residence
+
+eden-residence-advanced.constructing:
+	Inherits: ^Residence.Constructing
+	Inherits@common: ^eden-residence-advanced
+
+plymouth-residence-reinforced.constructing:
+	Inherits: ^Residence.Constructing
+	Inherits@common: ^plymouth-residence-reinforced
+
+eden-dirt.constructing:
+	Inherits: ^Dirt.Constructing
+	Inherits@common: ^eden-dirt
+
+plymouth-dirt.constructing:
+	Inherits: ^Dirt.Constructing
+	Inherits@common: ^plymouth-dirt
+
+eden-gorf.constructing:
+	Inherits: ^Gorf.Constructing
+	Inherits@common: ^eden-gorf
+
+plymouth-gorf.constructing:
+	Inherits: ^Gorf.Constructing
+	Inherits@common: ^plymouth-gorf
+
+eden-medical-center.constructing:
+	Inherits: ^MedicalCenter.Constructing
+	Inherits@common: ^eden-medical-center
+
+plymouth-medical-center.constructing:
+	Inherits: ^MedicalCenter.Constructing
+	Inherits@common: ^plymouth-medical-center
+
+eden-nursery.constructing:
+	Inherits: ^Nursery.Constructing
+	Inherits@common: ^eden-nursery
+
+plymouth-nursery.constructing:
+	Inherits: ^Nursery.Constructing
+	Inherits@common: ^plymouth-nursery
+
+eden-recreation-facility.constructing:
+	Inherits: ^RecreationFacility.Constructing
+	Inherits@common: ^eden-recreation-facility
+
+plymouth-recreation-facility.constructing:
+	Inherits: ^RecreationFacility.Constructing
+	Inherits@common: ^plymouth-recreation-facility
+
+eden-trade-center.constructing:
+	Inherits: ^TradeCenter.Constructing
+	Inherits@common: ^eden-trade-center
+
+plymouth-trade-center.constructing:
+	Inherits: ^TradeCenter.Constructing
+	Inherits@common: ^plymouth-trade-center
+
+eden-lab-basic.constructing:
+	Inherits: ^Laboratory.Constructing
+	Inherits@common: ^eden-lab-basic
+
+plymouth-lab-basic.constructing:
+	Inherits: ^Laboratory.Constructing
+	Inherits@common: ^plymouth-lab-basic
+
+eden-lab-standard.constructing:
+	Inherits: ^Laboratory.Constructing
+	Inherits@common: ^eden-lab-standard
+
+plymouth-lab-standard.constructing:
+	Inherits: ^Laboratory.Constructing
+	Inherits@common: ^plymouth-lab-standard
+
+eden-lab-advanced.constructing:
+	Inherits: ^Laboratory.Constructing
+	Inherits@common: ^eden-lab-advanced
+
+plymouth-lab-advanced.constructing:
+	Inherits: ^Laboratory.Constructing
+	Inherits@common: ^plymouth-lab-advanced
+
+eden-robot-command-center.constructing:
+	Inherits: ^RobotCommandCenter.Constructing
+	Inherits@common: ^eden-robot-command-center
+
+plymouth-robot-command-center.constructing:
+	Inherits: ^RobotCommandCenter.Constructing
+	Inherits@common: ^plymouth-robot-command-center
+
+eden-solar-power-array.constructing:
+	Inherits: ^SolarPowerArray.Constructing
+	Inherits@common: ^eden-solar-power-array
+
+plymouth-solar-power-array.constructing:
+	Inherits: ^SolarPowerArray.Constructing
+	Inherits@common: ^plymouth-solar-power-array
+
+eden-university.constructing:
+	Inherits: ^University.Constructing
+	Inherits@common: ^eden-university
+
+plymouth-university.constructing:
+	Inherits: ^University.Constructing
+	Inherits@common: ^plymouth-university
+
+eden-spaceport.constructing:
+	Inherits: ^Spaceport.Constructing
+	Inherits@common: ^eden-spaceport
+
+plymouth-spaceport.constructing:
+	Inherits: ^Spaceport.Constructing
+	Inherits@common: ^plymouth-spaceport
+
+eden-meteor-defense.constructing:
+	Inherits: ^MeteorDefense.Constructing
+	Inherits@common: ^eden-meteor-defense
+
+eden-geothermal-plant.constructing:
+	Inherits: ^GeothermalPlant.Constructing
+	Inherits@common: ^eden-geothermal-plant
+
+plymouth-arachnid-factory.constructing:
+	Inherits: ^ArachnidFactory.Constructing
+	Inherits@common: ^plymouth-arachnid-factory
+
+plymouth-forum.constructing:
+	Inherits: ^Forum.Constructing
+	Inherits@common: ^plymouth-forum
+
+eden-consumer-factory.constructing:
+	Inherits: ^ConsumerFactory.Constructing
+	Inherits@common: ^eden-consumer-factory
+
+eden-observatory.constructing:
+	Inherits: ^Observatory.Constructing
+	Inherits@common: ^eden-observatory
+
+eden-light-tower.constructing:
+	Inherits: ^LightTower.Constructing
+	Inherits@common: ^eden-light-tower
+
+plymouth-light-tower.constructing:
+	Inherits: ^LightTower.Constructing
+	Inherits@common: ^plymouth-light-tower

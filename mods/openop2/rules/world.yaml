@@ -52,7 +52,9 @@ World:
 	#	#ProductionPaletteWidget: PRODUCTION_PALETTE
 	ProductionQueueOrBuildingPickerFromSelection:
 		ProductionParent: SIDEBAR_PRODUCTION
+		UseTabs: False
 		ProductionTabsWidget: PRODUCTION_TABS
+		ProductionPaletteWidget: PRODUCTION_PALETTE
 		BuildSelectPalette: BUILD_SELECT_PALETTE
 		BuildingCancel: SIDEBAR_BUILDING_CANCEL
 	#LegacyBridgeLayer:
@@ -234,7 +236,7 @@ World:
 		ClassName: Light
 		Factions: eden
 		BaseActor: eden-command-center
-		SupportActors: eden-robo-dozer, eden-robo-miner, eden-robo-surveyor, eden-earthworker
+		SupportActors: eden-robo-dozer, eden-robo-miner, eden-robo-surveyor, eden-earthworker, eden-convec, eden-convec, eden-convec
 		InnerSupportRadius: 2
 		OuterSupportRadius: 4
 	StartingUnits@light-plymouth:
@@ -242,7 +244,7 @@ World:
 		ClassName: Light
 		Factions: plymouth
 		BaseActor: plymouth-command-center
-		SupportActors: plymouth-robo-dozer, plymouth-robo-miner, plymouth-robo-surveyor, plymouth-earthworker
+		SupportActors: plymouth-robo-dozer, plymouth-robo-miner, plymouth-robo-surveyor, plymouth-earthworker, plymouth-convec, plymouth-convec, plymouth-convec
 		InnerSupportRadius: 2
 		OuterSupportRadius: 4
 	SpawnStartingUnits:
