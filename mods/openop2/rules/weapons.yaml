@@ -7,7 +7,7 @@ laser:
 		Color: FF000080
 		Width: 60
 		LaunchEffectPalette: 3
-		HitAnim: vehicleexplosion
+		HitAnim: explosion-small1
 		HitAnimPalette: 6
 	Warhead@Dam: SpreadDamage
 		Spread: 0c16
@@ -52,8 +52,8 @@ microwave:
 		ValidTargets: Ground, Vehicle
 
 scorp-laser:
-	ReloadDelay: 25
 	Inherits: laser
+	ReloadDelay: 25
 	Range: 2c0
 	Projectile: LaserZap
 		Color: 0000FF
@@ -62,8 +62,7 @@ scorp-laser:
 		Damage: 20
 	#Penetration: 20
 
-
-#rpg=cannon in op2
+#rpg=cannon in op2 code
 RPG:
 	ReloadDelay: 55
 	Range: 6c0
@@ -75,9 +74,10 @@ RPG:
 		Image: projectile2
 		Shadow: True
 		LaunchAngle: 0
-		TrailImage: puff2
+		TrailImage: puff1 #puff2 puff3
 		TrailPalette: 1
 		TrailInterval: 1
+		#TrailSequences: puff1 puff2 puff3
 	Warhead@Dam: SpreadDamage
 		Spread: 0c16
 		Damage: 100
@@ -94,14 +94,14 @@ RPG:
 		ValidTargets: Ground
 	Warhead@Eff: CreateEffect
 		ExplosionPalette: 6
-		Image: explosion-small1
+		Image: explosion-medium1
 		Explosions: idle
 		ValidTargets: Ground
 		ImpactSounds: medexp2.WAV
 
 rail-gun:
-	ReloadDelay: 80
 	Inherits: RPG
+	ReloadDelay: 80
 	Projectile: Bullet
 		Palette: 6
 		Speed: 300
@@ -116,13 +116,48 @@ rail-gun:
 		#Penetration: 40
 
 ####################
-#emp and stickyfoam may be able to work correctly by using cluster warheads
+#emp and stickyfoam durations set to reload time (cause we dont know the actual durations)
+#need to make units under the effect of emp or stickyfoam untargetable by their respective weapons
+
+#fire sound plays when projectile hits?
+#stickyfoam still needs to be added
 
 EMP:
 	ReloadDelay: 140
 	Range: 5c0
+	Report: mis_fire.WAV
+	Projectile: Bullet
+		Palette: 5
+		Speed: 300
+		Inaccuracy: 0
+		Image: projectile2
+		Shadow: True
+		LaunchAngle: 0
+		TrailImage: puff1
+		TrailPalette: 1
+		TrailInterval: 1
+	Warhead@Cluster: FireCluster
+		Weapon: EMP_Sparks
+		RandomClusterCount: 5
+		Dimensions: 3,3
+		Footprint: xxx xxx xxx
+		ValidTargets: Ground, Vehicle
+	Warhead@Eff: CreateEffect
+		ExplosionPalette: 6
+		Image: emp-spark
+		Explosions: idle
+		ValidTargets: Ground
+		#ImpactSounds: medexp2.WAV
+
+EMP_Sparks:
 	Inherits: RPG
+	Range: 5c0
 	ZOffset: 700
+	-Report: mis_fire.WAV
+	Projectile: Bullet
+		Palette: 5
+		Speed: 1000
+		-Image: projectile2
 	Warhead@Dam: SpreadDamage
 		Damage: 0
 		#concussion: 256
@@ -133,56 +168,53 @@ EMP:
 	Warhead@Eff: CreateEffect
 		ExplosionPalette: 6
 		Image: emp-spark
-		ValidTargets: Ground
+		ValidTargets: Vehicle
 		ImpactSounds: geo_sel.WAV
 
 stickyfoam:
+	Inherits: EMP
 	ReloadDelay: 90
 	Range: 5c0
-	Inherits: RPG
-	ZOffset: 700
-	Warhead@Dam: SpreadDamage
-		Spread: 0c5
-		Damage: 100
-		Falloff: 100
-		#penetration: 100
-	Warhead@STICKYFOAM: GrantExternalCondition
-		Range: 0c5
-		Duration: 200
-		Condition: stickyfoam
 	Warhead@Eff: CreateEffect
 		ExplosionPalette: 6
 		Image: stickyfoam-melt-large
-		ValidTargets: Ground
+		ValidTargets: Ground, Vehicle
+		InvalidTargets: stickyfoam
 		ImpactSounds: foam.wav
+	Warhead@Cluster: FireCluster
+		Weapon: stickygoo
+		RandomClusterCount: 9
+		Dimensions: 3,3
+		Footprint: XXX XXX XXX
+		ValidTargets: Ground, Vehicle
 
-####################
+stickygoo:
+	Inherits: EMP_Sparks
+	ReloadDelay: 90
+	Range: 5c0
+	ZOffset: 700
+	InvalidTargets: stickyfoam
+	Warhead@Dam: SpreadDamage
+		Spread: 0c9
+		Damage: 100
+		#penetration: 100
+		InvalidTargets: stickyfoam
+	Warhead@STICKYFOAM: GrantExternalCondition
+		Range: 0c9
+		Duration: 90
+		Condition: stickyfoam
+		InvalidTargets: stickyfoam
+	-Warhead@emp: GrantExternalCondition
+	-Warhead@Eff: CreateEffect
 
 vehicleexplode:
 	ValidTargets: Ground, GroundActor
-	Warhead@Dam: SpreadDamage
-		Spread: 426
-		Damage: 100
-		ValidTargets: Ground, GroundActor
 	Warhead@Eff: CreateEffect
 		ExplosionPalette: 6
-		Explosions: vehicleexplosion
-		ImpactSounds: foam.wav
-		ValidTargets: Ground, GroundActor
-	Warhead@Smu: LeaveSmudge
-		SmudgeType: Scorch
-		ValidTargets: Ground, Vehicle, Infantry
-
-
-	#HitAnim: explosion-large4
-	#HitAnimPalette: 6
-	#Report: foam.wav
-	#Warhead@Eff: CreateEffect
-	#Image: explosion-large4
-	#ExplosionPalette: 6
-	#ValidTargets: Ground
-	#ImpactSounds: foam.wav
-
+		Image: vehicleexplosion
+		ImpactSounds: smalxp1.wav
+		ValidTargets: Ground
+		Explosions: idle
 
 
 

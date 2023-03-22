@@ -969,6 +969,7 @@
 	WithIdleOverlay@EMPDISABLE:
 		RequiresCondition: empdisable
 		Image: emp-spark
+		Sequence: idle
 		Palette: 6
 #OnFireSound: geo_sel.WAV
 
@@ -982,25 +983,3 @@
 		RequiresCondition: stickyfoam
 		Image: stickyfoam-stick
 		Palette: 6
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#Warhead@Eff: CreateEffect
-##RequiresCondition: 

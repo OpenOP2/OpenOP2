@@ -250,7 +250,7 @@ eden-lynx-emp:
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
-		Weapon: emp
+		Weapon: EMP
 		LocalOffset: 900,0,200
 	Valued:
 		Cost: 1200
@@ -297,7 +297,7 @@ plymouth-lynx-emp:
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
-		Weapon: emp
+		Weapon: EMP
 		LocalOffset: 900,0,200
 	Valued:
 		Cost: 900
