@@ -37,10 +37,12 @@ overlay:
 		Start: 1
 
 editor-overlay:
-	Defaults: bits/overlay-invalid.png
-		Length: *
+	Defaults: bits/overlay.png
+		Length: 1
 	copy:
+		Start: 1
 	paste:
+		Start: 0
 
 moveflsh:
 	Defaults: bits/filled.png
