@@ -9,7 +9,7 @@ eden-command-center:
 		Facings: 1
 	building: op2_art.bmp
 		Start: 178
-		Length: 41
+		Length: 40
 		Facings: 1
 		Tick: 200
 	damaged1: op2_art.bmp
@@ -36,7 +36,7 @@ plymouth-command-center:
 		Facings: 1
 	building: op2_art.bmp
 		Start: 1095
-		Length: 40
+		Length: 39
 		Facings: 1
 		Tick: 200
 	damaged1: op2_art.bmp
@@ -67,7 +67,7 @@ eden-tokamak:
 		Facings: 1
 	building: op2_art.bmp
 		Start: 402
-		Length: 25
+		Length: 24
 		Facings: 1
 		Tick: 200
 	damaged1: op2_art.bmp
@@ -102,7 +102,7 @@ plymouth-tokamak:
 		Facings: 1
 	building: op2_art.bmp
 		Start: 1433
-		Length: 25
+		Length: 24
 		Facings: 1
 		Tick: 200
 	damaged1: op2_art.bmp
@@ -129,7 +129,7 @@ eden-structure-factory:
 		Facings: 1
 	building: op2_art.bmp
 		Start: 259
-		Length: 34
+		Length: 33
 		Facings: 1
 		Tick: 200
 	damaged1: op2_art.bmp
@@ -156,7 +156,7 @@ plymouth-structure-factory:
 		Facings: 1
 	building: op2_art.bmp
 		Start: 1215
-		Length: 34
+		Length: 33
 		Facings: 1
 		Tick: 200
 	damaged1: op2_art.bmp
@@ -183,7 +183,7 @@ eden-vehicle-factory:
 		Facings: 1
 	building: op2_art.bmp
 		Start: 368
-		Length: 34
+		Length: 33
 		Facings: 1
 		Tick: 200
 	damaged1: op2_art.bmp
@@ -210,7 +210,7 @@ plymouth-vehicle-factory:
 		Facings: 1
 	building: op2_art.bmp
 		Start: 2869
-		Length: 28
+		Length: 27
 		Facings: 1
 		Tick: 200
 	damaged1: op2_art.bmp
