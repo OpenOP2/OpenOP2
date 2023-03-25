@@ -41,8 +41,8 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		readonly Lazy<ProductionPaletteWidget> paletteWidget;
 		readonly Lazy<BuildSelectPaletteWidget> buildSelectWidget;
 		readonly Lazy<ContainerWidget> productionParentWidget;
-		//readonly Lazy<Widget> buildingCancelWidget;
 
+		// readonly Lazy<Widget> buildingCancelWidget;
 		public ProductionQueueOrBuildingPickerFromSelection(World world, ProductionQueueOrBuildingPickerFromSelectionInfo info)
 		{
 			this.info = info;
@@ -54,7 +54,8 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			paletteWidget = Exts.Lazy(() => Ui.Root.GetOrNull(info.ProductionPaletteWidget) as ProductionPaletteWidget);
 			buildSelectWidget = Exts.Lazy(() => Ui.Root.GetOrNull(info.BuildSelectPalette) as BuildSelectPaletteWidget);
 			productionParentWidget = Exts.Lazy(() => Ui.Root.GetOrNull(info.ProductionParent) as ContainerWidget);
-			//buildingCancelWidget = Exts.Lazy(() => Ui.Root.GetOrNull(info.BuildingCancel));
+
+			// buildingCancelWidget = Exts.Lazy(() => Ui.Root.GetOrNull(info.BuildingCancel));
 		}
 
 		void INotifySelection.SelectionChanged()
@@ -63,8 +64,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			if (world.LocalPlayer == null)
 				return;
 
-			//buildingCancelWidget.Value.Visible = false;
-
+			// buildingCancelWidget.Value.Visible = false;
 			// Check for builder unit
 			var builderQueue = world.Selection.Actors
 				.Where(a => a.IsInWorld && a.World.LocalPlayer == a.Owner)
@@ -112,7 +112,8 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			if (queue is BuilderQueue)
 			{
 				productionParentWidget.Value.Visible = false;
-				//buildingCancelWidget.Value.Visible = true;
+
+				// buildingCancelWidget.Value.Visible = true;
 				return;
 			}
 
