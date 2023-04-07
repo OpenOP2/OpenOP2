@@ -54,15 +54,17 @@ namespace OpenRA.Mods.OpenOP2.Traits
 					startingUnits, StartingUnitsClass, DropdownLocked);
 		}
 
-		public override object Create(ActorInitializer init) { return new SpawnOp2StartingUnits(this); }
+		public override object Create(ActorInitializer init) { return new SpawnOp2StartingUnits(init.World, this); }
 	}
 
 	public class SpawnOp2StartingUnits : IWorldLoaded
 	{
 		readonly SpawnOp2StartingUnitsInfo info;
+		readonly World world;
 
-		public SpawnOp2StartingUnits(SpawnOp2StartingUnitsInfo info)
+		public SpawnOp2StartingUnits(World world, SpawnOp2StartingUnitsInfo info)
 		{
+			this.world = world;
 			this.info = info;
 		}
 
@@ -73,8 +75,56 @@ namespace OpenRA.Mods.OpenOP2.Traits
 					SpawnUnitsForPlayer(world, p);
 		}
 
+		class ActorPlacementInfo
+		{
+			public ActorInfo Actor;
+			public List<CVec> Tiles;
+		}
+
+		bool PlaceActors(Op2StartingUnitsInfo unitsInfo, List<ActorPlacementInfo> actors, CPos startPos, Func<CPos, ActorPlacementInfo, bool> isAreaBuildable, Action<CPos, ActorInfo> createActor)
+		{
+			var radius = unitsInfo.RadiusStep;
+			var angleStep = unitsInfo.AngleStep;
+			var numAngles = 1024 / angleStep.Angle;
+			var stepCount = 0;
+			var done = false;
+			while (stepCount < unitsInfo.MaxRadiusIncrease && done == false)
+			{
+				var angle = WAngle.Zero;
+				for (var i = 0; i < numAngles; i++)
+				{
+					var actor = actors.FirstOrDefault();
+					if (actor == null)
+					{
+						return true;
+					}
+
+					var x = (angle.Cos() * radius) / 1024;
+					var y = (angle.Sin() * radius) / 1024;
+
+					var vec = new CVec(x, y);
+					var targetCell = startPos + vec;
+
+					if (isAreaBuildable(targetCell, actor))
+					{
+						actors.Remove(actor);
+						createActor(targetCell, actor.Actor);
+					}
+
+					angle += angleStep;
+				}
+
+				radius += unitsInfo.RadiusStep;
+				stepCount++;
+			}
+
+			return false;
+		}
+
 		void SpawnUnitsForPlayer(World w, Player p)
 		{
+			var resourceLayer = w.WorldActor.TraitOrDefault<IResourceLayer>();
+
 			var spawnClass = p.PlayerReference.StartingUnitsClass ?? w.LobbyInfo.GlobalSettings
 				.OptionOrDefault("startingunits", info.StartingUnitsClass);
 
@@ -87,63 +137,140 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 			if (unitGroup.BaseActor != null)
 			{
-				var facing = unitGroup.BaseActorFacing.HasValue ? unitGroup.BaseActorFacing.Value : new WAngle(w.SharedRandom.Next(1024));
 				w.CreateActor(unitGroup.BaseActor.ToLowerInvariant(), new TypeDictionary
 				{
 					new LocationInit(p.HomeLocation + unitGroup.BaseActorOffset),
 					new OwnerInit(p),
 					new SkipMakeAnimsInit(),
-					new FacingInit(facing),
+					new FacingInit(WAngle.Zero),
 				});
 			}
 
-			if (unitGroup.SupportActors.Length == 0)
+			if (unitGroup.AdditionalBuildings.Length == 0)
 				return;
 
-			// Create a grid for how many support actors we have
-			var gridSize = new int2(11, 11);
-			var numBuildings = unitGroup.SupportActors.Length;
-			if (numBuildings > 8)
+			var buildingList = unitGroup.AdditionalBuildings.Shuffle(w.SharedRandom)
+				.Select(x => w.Map.Rules.Actors[x])
+				.ToList();
+
+			bool IsBuildingActorBuildable(CPos cell, ActorPlacementInfo actorInfo)
 			{
-				gridSize = new int2(4, 4);
+				var actor = actorInfo.Actor;
+
+				var bi = actor.TraitInfoOrDefault<BuildingInfo>();
+
+				var buildingTiles = actorInfo.Tiles.Select(x => cell + x);
+
+				return buildingTiles.All(t => w.Map.Contains(t) &&
+					(bi.AllowPlacementOnResources || resourceLayer == null || resourceLayer.GetResource(t).Type == null) &&
+						w.IsCellBuildable(t, actor, bi) &&
+						!IsTileBulldozed(t));
 			}
 
-			var cellSize = new int2(6, 5);
-			var padding = new int2(0, 0);
-
-			var centerGridPos = new int2((int)Math.Floor((decimal)(gridSize.X / 2)), (int)Math.Floor((decimal)(gridSize.Y / 2)));
-
-			var halfCellSize = new int2((int)Math.Floor((decimal)(cellSize.X / 2)), (int)Math.Floor((decimal)(cellSize.Y / 2)));
-
-			var startPos = p.HomeLocation - new CVec(centerGridPos.X * (cellSize.X + padding.X), centerGridPos.Y * (cellSize.Y + padding.Y));
-
-			var shuffledActors = unitGroup.SupportActors.Shuffle(w.SharedRandom).ToArray();
-
-			var index = 0;
-			for (var y = 0; y < gridSize.Y; y++)
+			bool IsTileBulldozed(CPos pos)
 			{
-				for (var x = 0; x < gridSize.X; x++)
+				var tile = world.Map.Tiles[pos];
+				var bulldozedTypes = new int[] { 2219, 2384, 2111 };
+				if (bulldozedTypes.Contains(tile.Type))
 				{
-					// Skip "center" cell containing our command center
-					if (y == centerGridPos.X && x == centerGridPos.Y) continue;
+					return true;
+				}
 
-					if (shuffledActors.Length <= index)
-						continue;
+				return false;
+			}
 
-					var cell = startPos + new CVec(x * (cellSize.X + padding.X), y * (cellSize.Y + padding.Y));
-
-					var s = shuffledActors[index];
-					w.CreateActor(s.ToLowerInvariant(), new TypeDictionary
+			var buildingPlacementInfo = buildingList
+			.Select(buildingActor => {
+				var bi = buildingActor.TraitInfoOrDefault<BuildingInfo>();
+				var buildingTiles = new List<CVec>();
+				for (var y = -1; y < bi.Dimensions.Y + 1; y++)
+				{
+					for (var x = -1; x < bi.Dimensions.X + 1; x++)
 					{
-						new LocationInit(cell),
+						buildingTiles.Add(new CVec(x, y));
+					}
+				}
+
+				return new ActorPlacementInfo
+				{
+					Actor = buildingActor,
+					Tiles = buildingTiles
+				};
+			})
+			.ToList();
+
+			PlaceActors(unitGroup, buildingPlacementInfo, p.HomeLocation, IsBuildingActorBuildable, (pos, actorInfo) =>
+			{
+				world.CreateActor(actorInfo.Name.ToLowerInvariant(), new TypeDictionary
+				{
+					new LocationInit(pos),
+					new OwnerInit(p),
+					new SkipMakeAnimsInit(),
+					new FacingInit(WAngle.Zero),
+				});
+			});
+
+			// Support actors
+			var actors = unitGroup.SupportActors.Values.Shuffle(w.SharedRandom)
+				.Select(supportActor =>
+				{
+					var groupSize = new int2(supportActor.Width + 2, supportActor.Height + 2);
+					var tileList = new List<CVec>();
+
+					for (var y = -1; y < groupSize.Y; y++)
+					{
+						for (var x = -1; x < groupSize.X; x++)
+						{
+							tileList.Add(new CVec(x, y));
+						}
+					}
+
+					return new ActorPlacementInfo
+					{
+						Actor = w.Map.Rules.Actors[supportActor.ActorName],
+						Tiles = tileList
+					};
+				})
+				.ToList();
+
+			bool IsSupportActorBuildable(CPos cell, ActorPlacementInfo actorInfo)
+			{
+				var actor = actorInfo.Actor;
+
+				var buildingTiles = actorInfo.Tiles.Select(x => cell + x);
+
+				return buildingTiles.All(t => w.Map.Contains(t) &&
+					(resourceLayer == null || resourceLayer.GetResource(t).Type == null) &&
+						!world.ActorMap.GetActorsAt(t).Any() &&
+						!IsTileBulldozed(t));
+			}
+
+			PlaceActors(unitGroup, actors, p.HomeLocation, IsSupportActorBuildable, (pos, actorInfo) =>
+			{
+				var placementInfo = unitGroup.SupportActors.Values.First(x => x.ActorName == actorInfo.Name);
+
+				var positions = new List<CPos>();
+				for (var y = 0; y < placementInfo.Height; y++)
+				{
+					for (var x = 0; x < placementInfo.Width; x++)
+					{
+						positions.Add(pos + new CVec(x, y));
+					}
+				}
+
+				var placementAngle = new WAngle(w.SharedRandom.Next(1024));
+				for (var i = 0; i < placementInfo.Count; i++)
+				{
+					var placementPos = positions[i];
+					world.CreateActor(actorInfo.Name.ToLowerInvariant(), new TypeDictionary
+					{
+						new LocationInit(placementPos),
 						new OwnerInit(p),
 						new SkipMakeAnimsInit(),
-						new FacingInit(WAngle.Zero),
+						new FacingInit(placementAngle),
 					});
-
-					index++;
 				}
-			}
+			});
 		}
 	}
 }

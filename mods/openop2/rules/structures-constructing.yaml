@@ -39,8 +39,6 @@
 		Image: plymouth-structure-factory
 	Building:
 		Footprint: ====== =xxxx= =xxxx= ==xxx= ======
-	Selectable:
-		Bounds: 2048,2112,0,-32
 
 ^eden-vehicle-factory:
 	RenderSprites:

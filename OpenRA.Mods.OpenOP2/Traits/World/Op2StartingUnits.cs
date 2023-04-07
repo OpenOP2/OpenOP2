@@ -11,6 +11,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using OpenRA.Traits;
 
 namespace OpenRA.Mods.OpenOP2.Traits
@@ -35,21 +36,51 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		[Desc("Offset from the spawn point, BaseActor will spawn at.")]
 		public readonly CVec BaseActorOffset = CVec.Zero;
 
-		[Desc("A group of units ready to defend or scout.")]
+		[Desc("Additional buildings to add.")]
 		[ActorReference]
-		public readonly string[] SupportActors = Array.Empty<string>();
+		public readonly string[] AdditionalBuildings = Array.Empty<string>();
 
-		[Desc("Inner radius for spawning support actors")]
-		public readonly int InnerSupportRadius = 2;
+		[Desc("When checking for building/unit availability, increase radius by this much when checking a wider radius.")]
+		public readonly int RadiusStep = 3;
 
 		[Desc("Outer radius for spawning support actors")]
-		public readonly int OuterSupportRadius = 4;
+		public readonly WAngle AngleStep = new WAngle(16);
 
-		[Desc("Initial facing of BaseActor. Leave undefined for random facings.")]
-		public readonly WAngle? BaseActorFacing = new WAngle(512);
+		[Desc("Max of this many radius increases.")]
+		public readonly int MaxRadiusIncrease = 40;
 
-		[Desc("Initial facing of SupportActors. Leave undefined for random facings.")]
-		public readonly WAngle? SupportActorsFacing = null;
+		[FieldLoader.LoadUsing("LoadSupportActors")]
+		public Dictionary<string, SupportActorsPlacementInfo> SupportActors;
+
+		static object LoadSupportActors(MiniYaml yaml)
+		{
+			var retList = new Dictionary<string, SupportActorsPlacementInfo>();
+			var replacements = yaml.Nodes.First(x => x.Key == "SupportActors");
+
+			foreach (var node in replacements.Value.Nodes.Where(n => n.Key.StartsWith("SupportActorsPlacement")))
+			{
+				var ret = new SupportActorsPlacementInfo();
+				FieldLoader.Load(ret, node.Value);
+				retList.Add(node.Key, ret);
+			}
+
+			return retList;
+		}
+	}
+
+	public class SupportActorsPlacementInfo
+	{
+		[Desc("Number of units to add.")]
+		public int Count = 0;
+
+		[Desc("The actor type to place.")]
+		public string ActorName;
+
+		[Desc("Number of columns.")]
+		public int Width = 3;
+
+		[Desc("Number of rows.")]
+		public int Height = 3;
 	}
 
 	public class Op2StartingUnits { }

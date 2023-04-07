@@ -762,7 +762,7 @@
 ^Agridome.Constructing:
 	Inherits: ^Op2Building
 	Inherits@constructing: ^SelfConstructingBuilding
-	Inherits@shape: ^1x1Shape
+	Inherits@shape: ^3x2Shape
 	BulldozesTerrainWhenCreated:
 		Size: 5,4
 	Tooltip:
@@ -771,10 +771,10 @@
 	Buildable:
 		BuildPaletteOrder: 80
 	Selectable:
-		Bounds: 1152,1664,0,-192
+		Bounds: 3072,2048,0,0
 	Building:
-		Footprint: x
-		Dimensions: 1,1
+		Footprint: ===== =xxx= =xxx= =====
+		Dimensions: 5,4
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -847,18 +847,20 @@
 	Inherits: ^Op2Building
 	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
+	BulldozesTerrainWhenCreated:
+		Size: 4,4
 	Tooltip:
 		Name: Residence (Under Construction)
 		GenericName: Residence (Under Construction)
 	Selectable:
-		Bounds: 1152,1664,0,-192
+		Bounds: 2048,2048,0,0
 	Building:
-		Footprint: x
-		Dimensions: 1,1
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
+		Footprint: ==== =xx= =xx= ====
+		Dimensions: 4,4
+	#HitShape:
+	#	Type: Rectangle
+	#		TopLeft: -512, -512
+	#		BottomRight: 512, 512
 	Health:
 		HP: 1000
 	Armor:
@@ -965,18 +967,20 @@
 	Inherits: ^Op2Building
 	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
+	BulldozesTerrainWhenCreated:
+		Size: 4,4
 	Tooltip:
 		Name: Medical Center (Under Construction)
 		GenericName: Medical Center (Under Construction)
 	Selectable:
-		Bounds: 1152,1664,0,-192
+		Bounds: 2048,2048,0,0
 	Building:
-		Footprint: x
-		Dimensions: 1,1
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
+		Footprint: ==== =xx= =xx= ====
+		Dimensions: 4,4
+	#HitShape:
+	#	Type: Rectangle
+	#		TopLeft: -512, -512
+	#		BottomRight: 512, 512
 	Health:
 		HP: 1000
 	Armor:
@@ -1005,18 +1009,20 @@
 	Inherits: ^Op2Building
 	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
+	BulldozesTerrainWhenCreated:
+		Size: 4,4
 	Tooltip:
 		Name: Nursery (Under Construction)
 		GenericName: Nursery (Under Construction)
 	Selectable:
-		Bounds: 1152,1664,0,-192
+		Bounds: 2048,2048,0,0
 	Building:
-		Footprint: x
-		Dimensions: 1,1
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
+		Footprint: ==== =xx= =xx= ====
+		Dimensions: 4,4
+	#HitShape:
+	#	Type: Rectangle
+	#		TopLeft: -512, -512
+	#		BottomRight: 512, 512
 	Health:
 		HP: 1000
 	Armor:
@@ -1045,18 +1051,20 @@
 	Inherits: ^Op2Building
 	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
+	BulldozesTerrainWhenCreated:
+		Size: 4,4
 	Tooltip:
 		Name: Recreation Facility (Under Construction)
 		GenericName: Recreation Facility (Under Construction)
 	Selectable:
-		Bounds: 1152,1664,0,-192
+		Bounds: 2048,2048,0,0
 	Building:
-		Footprint: x
-		Dimensions: 1,1
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
+		Footprint: ==== =xx= =xx= ====
+		Dimensions: 4,4
+	#HitShape:
+	#	Type: Rectangle
+	#		TopLeft: -512, -512
+	#		BottomRight: 512, 512
 	Health:
 		HP: 1000
 	Armor:
@@ -1165,14 +1173,16 @@
 	Inherits: ^Op2Building
 	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
+	BulldozesTerrainWhenCreated:
+		Size: 4,4
 	Tooltip:
 		Name: Robot Command Center (Under Construction)
 		GenericName: Robot Command Center (Under Construction)
 	Selectable:
-		Bounds: 1152,1664,0,-192
+		Bounds: 2048,2048,0,0
 	Building:
-		Footprint: x
-		Dimensions: 1,1
+		Footprint: ==== =xx= =xx= ====
+		Dimensions: 4,4
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -1209,10 +1219,10 @@
 		Name: Solar Power Array (Under Construction)
 		GenericName: Solar Power Array (Under Construction)
 	Selectable:
-		Bounds: 1152,1664,0,-192
+		Bounds: 2048,2048,0,0
 	Building:
-		Footprint: x
-		Dimensions: 1,1
+		Footprint: ==== =xx= =xx= ====
+		Dimensions: 4,4
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -1245,18 +1255,20 @@
 	Inherits: ^Op2Building
 	Inherits@constructing: ^SelfConstructingBuilding
 	Inherits@shape: ^2x2Shape
+	BulldozesTerrainWhenCreated:
+		Size: 4,4
 	Tooltip:
 		Name: University (Under Construction)
 		GenericName: University (Under Construction)
 	Selectable:
-		Bounds: 1152,1664,0,-192
+		Bounds: 2048,2048,0,0
 	Building:
-		Footprint: x
-		Dimensions: 1,1
-	HitShape:
-		Type: Rectangle
-			TopLeft: -512, -512
-			BottomRight: 512, 512
+		Footprint: ==== =xx= =xx= ====
+		Dimensions: 4,4
+	#HitShape:
+	#	Type: Rectangle
+	#		TopLeft: -512, -512
+	#		BottomRight: 512, 512
 	Health:
 		HP: 1000
 	Armor:
