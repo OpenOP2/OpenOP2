@@ -123,7 +123,7 @@
 	-Buildable:
 	#-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Command Center
 	ProvidesPrerequisite@eden:
@@ -187,7 +187,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Tokamak
 	Voiced:
@@ -239,7 +239,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Ore Smelter (Common)
 	Voiced:
@@ -293,7 +293,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Ore Smelter (Rare)
 	Voiced:
@@ -350,7 +350,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Structure Factory
 	Voiced:
@@ -400,7 +400,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Vehicle Factory
 	Voiced:
@@ -478,7 +478,7 @@
 	#-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Mine (Common)
 		GenericName: Mine
@@ -554,7 +554,7 @@
 	#-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Mine (Rare)
 		GenericName: Mine
@@ -630,7 +630,7 @@
 	#-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Mine (Magma)
 		GenericName: Mine
@@ -704,7 +704,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Storage (Common)
 		GenericName: Ore Storage
@@ -748,7 +748,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Storage (Rare)
 		GenericName: Ore Storage
@@ -792,7 +792,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Agridome
 		GenericName: Agridome
@@ -832,7 +832,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: MHD Generator
 		GenericName: MHD Generator
@@ -872,7 +872,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Residence
 		GenericName: Residence
@@ -912,7 +912,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: DIRT
 		GenericName: DIRT
@@ -952,7 +952,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: GORF
 		GenericName: GORF
@@ -990,7 +990,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Medical Center
 		GenericName: Medical Center
@@ -1030,7 +1030,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Nursery
 		GenericName: Nursery
@@ -1070,7 +1070,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Recreation Facility
 		GenericName: Recreation Facility
@@ -1110,7 +1110,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Trade Center
 		GenericName: Trade Center
@@ -1150,7 +1150,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Laboratory
 		GenericName: Laboratory
@@ -1190,7 +1190,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Robot Command Center
 		GenericName: Robot Command Center
@@ -1230,7 +1230,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Solar Power Array
 		GenericName: Solar Power Array
@@ -1270,7 +1270,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: University
 		GenericName: University
@@ -1310,7 +1310,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Spaceport
 		GenericName: Spaceport
@@ -1350,7 +1350,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Meteor Defense
 		GenericName: Meteor Defense
@@ -1391,7 +1391,7 @@
 	#-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Geothermal Plant
 		GenericName: Geothermal Plant
@@ -1429,7 +1429,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Arachnid Factory
 		GenericName: Arachnid Factory
@@ -1469,7 +1469,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Forum
 		GenericName: Forum
@@ -1510,7 +1510,7 @@
 	#-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Consumer Factory
 		GenericName: Consumer Factory
@@ -1548,7 +1548,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Observatory
 		GenericName: Observatory
@@ -1588,7 +1588,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Tooltip:
 		Name: Light Tower
 		GenericName: Light Tower
@@ -1634,7 +1634,7 @@
 	-Buildable:
 	-Production:
 	-BuilderQueue:
-	-BulldozesTerrainWhenCreated:
+	#-BulldozesTerrainWhenCreated:
 	Inherits: ^EmpDisable
 	Inherits: ^Defense
 	Inherits: ^AutoTargetGround

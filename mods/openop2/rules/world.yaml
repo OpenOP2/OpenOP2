@@ -221,33 +221,35 @@ World:
 		TechLevelDropdownDisplayOrder: 2
 		GameSpeedDropdownDisplayOrder: 3
 	CreateMapPlayers:
-	StartingUnits@cc-eden:
+	Op2StartingUnits@cc-eden:
 		Class: none
 		ClassName: Command Center
 		Factions: eden
 		BaseActor: eden-command-center
-	StartingUnits@cc-plymouth:
+	Op2StartingUnits@cc-plymouth:
 		Class: none
 		ClassName: Command Center
 		Factions: plymouth
 		BaseActor: plymouth-command-center
-	StartingUnits@light-eden:
+	Op2StartingUnits@light-eden:
 		Class: light
 		ClassName: Light
 		Factions: eden
 		BaseActor: eden-command-center
-		SupportActors: eden-robo-dozer, eden-robo-miner, eden-robo-surveyor, eden-earthworker, eden-convec, eden-convec, eden-convec
+		SupportActors: eden-residence, eden-agridome, eden-structure-factory, eden-smelter-common, eden-tokamak, eden-vehicle-factory, eden-nursery, eden-university, eden-residence
+		#SupportActors: eden-robo-dozer, eden-robo-miner, eden-robo-surveyor, eden-earthworker, eden-convec, eden-convec, eden-convec
 		InnerSupportRadius: 2
 		OuterSupportRadius: 4
-	StartingUnits@light-plymouth:
+	Op2StartingUnits@light-plymouth:
 		Class: light
 		ClassName: Light
 		Factions: plymouth
 		BaseActor: plymouth-command-center
-		SupportActors: plymouth-robo-dozer, plymouth-robo-miner, plymouth-robo-surveyor, plymouth-earthworker, plymouth-convec, plymouth-convec, plymouth-convec
+		SupportActors: plymouth-residence, plymouth-agridome, plymouth-structure-factory, plymouth-smelter-common, plymouth-tokamak, plymouth-vehicle-factory, plymouth-nursery, plymouth-university, plymouth-residence
+		#SupportActors: plymouth-robo-dozer, plymouth-robo-miner, plymouth-robo-surveyor, plymouth-earthworker, plymouth-convec, plymouth-convec, plymouth-convec
 		InnerSupportRadius: 2
 		OuterSupportRadius: 4
-	SpawnStartingUnits:
+	SpawnOp2StartingUnits:
 		StartingUnitsClass: light
 		DropdownDisplayOrder: 0
 	MapStartingLocations:
