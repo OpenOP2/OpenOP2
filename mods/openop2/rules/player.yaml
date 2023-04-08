@@ -89,12 +89,12 @@ Player:
 		CashTickUpNotification: CashTickUp
 		CashTickDownNotification: CashTickDown
 		ResourceValues:
-			ore.depot.common1: 10
-			ore.depot.common2: 20
-			ore.depot.common3: 30
+			ore.depot.common1: 40
+			ore.depot.common2: 70
+			ore.depot.common3: 100
 			ore.depot.rare1: 40
-			ore.depot.rare2: 50
-			ore.depot.rare3: 60
+			ore.depot.rare2: 70
+			ore.depot.rare3: 100
 	ClassicProductionQueue@DummyQueue:
 		Type: Dummy
 		Group: Dummy

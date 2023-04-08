@@ -661,6 +661,7 @@ Container@PLAYER_WIDGETS:
 		Container@SIDEBAR_BUILDING_SELECT: # Building selector
 			Logic: BuildingPickerLogic
 				ProductionParent: SIDEBAR_PRODUCTION
+			Visible: false
 			X: WINDOW_RIGHT - 250
 			X: WINDOW_RIGHT - 250
 			Y: 300
@@ -703,6 +704,41 @@ Container@PLAYER_WIDGETS:
 				#			ImageCollection: sidebar-bits
 				#			ImageName: production-iconoverlay
 				#			Visible: false
+		Container@SIDEBAR_DOZER_SELECT: # Building selector
+			#Logic: BuildingPickerLogic
+			#	ProductionParent: SIDEBAR_PRODUCTION
+			Visible: false
+			X: WINDOW_RIGHT - 250
+			X: WINDOW_RIGHT - 250
+			Y: 300
+			Width: 238
+			Height: 250
+			Children:
+				Container@PALETTE_BACKGROUND:
+					Children:
+						Image@ROW_TEMPLATE: # Row of building icons
+							Logic: AddFactionSuffixLogic
+							Width: 238
+							Height: 48
+							ClickThrough: false
+							ImageCollection: sidebar
+							ImageName: background-iconrow
+						Image@BOTTOM_CAP: # Footer
+							Logic: AddFactionSuffixLogic
+							Width: 238
+							Height: 6
+							ClickThrough: false
+							ImageCollection: sidebar
+							ImageName: background-bottom
+				#BuildSelectPalette@BUILD_SELECT_PALETTE: # The actual icons
+				#	X: 39
+				#	Y: 0
+				#	TooltipContainer: TOOLTIP_CONTAINER
+				#	IconSize: 64, 48
+				#	IconMargin: 0, 0
+				#	IconSpriteOffset: 0, 0
+				#	HotkeyPrefix: Production
+				#	HotkeyCount: 24
 		Container@HPF_OVERLAY:
 			Logic: HierarchicalPathFinderOverlayLogic
 			X: WINDOW_RIGHT - WIDTH - 260

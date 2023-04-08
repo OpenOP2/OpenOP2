@@ -62,6 +62,8 @@
 		Range: 7c0
 	Mobile:
 		Speed: 78
+	CustomProductionPalette:
+		Name: building-select
 	BuilderUnit@Building:
 		Type: Building
 		Group: Building
@@ -203,6 +205,8 @@
 		Cost: 400
 	Tooltip:
 		Name: Robo-Dozer
+	CustomProductionPalette:
+		Name: dozer-select
 	Health:
 		HP: 250
 	Armor:

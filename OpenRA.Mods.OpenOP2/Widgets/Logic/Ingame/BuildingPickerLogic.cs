@@ -56,9 +56,6 @@ namespace OpenRA.Mods.OpenOP2.Widgets.Logic
 
 				Action<int, int> updateBackground = (_, icons) =>
 				{
-					sidebarProductionWidget.Visible = icons == 0; // TODO: This is where the aformentioned hacking takes place.
-					widget.Visible = icons > 0;
-
 					var rows = Math.Max(palette.MinimumRows, (icons + palette.Columns - 1) / palette.Columns);
 					rows = Math.Min(rows, palette.MaximumRows);
 
