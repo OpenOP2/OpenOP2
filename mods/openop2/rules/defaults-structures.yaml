@@ -354,13 +354,37 @@
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 550, 850
-	#Production:
-	#	Produces: Defense
-	#ProductionBar@Building:
-	#	ProductionType: Building
-	#ProductionBar@Defense:
-	#	ProductionType: Defense
-	#	Color: 8A8A8A
+	CustomProductionPalette:
+		Name: structure-factory
+	CargoBay:
+		BayIconImage: plymouth-robo-dozer
+		BayIconSequence: icon
+		Capacity: 6
+		StartsWith: plymouth-vehicle-factory.constructing
+		BayOffset: 1,3
+	Production:
+		Produces: Building, Defense
+	ProductionBar@Building:
+		ProductionType: Building
+	ProductionBar@Defense:
+		ProductionType: Defense
+		Color: 8A8A8A
+	ProductionQueue@Building:
+		Type: Building
+		Group: Building
+		ReadyAudio: StructureKitManufactured
+		BlockedAudio: NoBuild
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
+	ProductionQueue@Defense:
+		Type: Defense
+		Group: Defense
+		ReadyAudio: StructureKitManufactured
+		BlockedAudio: NoBuild
+		QueuedAudio: Building
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
 
 ^VehicleFactory.Constructing:
 	Inherits: ^Op2Building

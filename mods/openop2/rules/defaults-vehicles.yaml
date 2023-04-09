@@ -63,10 +63,15 @@
 	Mobile:
 		Speed: 78
 	CustomProductionPalette:
-		Name: building-select
+		Name: construction-vehicle
 	BuilderUnit@Building:
 		Type: Building
 		Group: Building
+	CarriesCargo:
+		EmptyImage: eden-robo-dozer
+		EmptySequence: icon
+		Capacity: 1
+		#StartsWith: eden-vehicle-factory.constructing, plymouth-vehicle-factory.constructing
 	Production:
 		Produces: Building, Defense
 	ProvidesPrerequisite@structures:

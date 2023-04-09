@@ -662,7 +662,6 @@ Container@PLAYER_WIDGETS:
 			Logic: BuildingPickerLogic
 			Visible: false
 			X: WINDOW_RIGHT - 250
-			X: WINDOW_RIGHT - 250
 			Y: 300
 			Width: 238
 			Height: 250
@@ -707,7 +706,6 @@ Container@PLAYER_WIDGETS:
 			Logic: DozerPickerLogic
 			Visible: false
 			X: WINDOW_RIGHT - 250
-			X: WINDOW_RIGHT - 250
 			Y: 300
 			Width: 238
 			Height: 250
@@ -729,6 +727,72 @@ Container@PLAYER_WIDGETS:
 							ImageCollection: sidebar
 							ImageName: background-bottom
 				DozerPalette@BUILD_SELECT_PALETTE2: # The actual icons
+					X: 39
+					Y: 0
+					TooltipContainer: TOOLTIP_CONTAINER
+					IconSize: 64, 48
+					IconMargin: 0, 0
+					IconSpriteOffset: 0, 0
+					HotkeyPrefix: Production
+					HotkeyCount: 24
+		Container@SIDEBAR_STRUCTURE_FACTORY: # Building selector
+			Logic: StructureFactoryLogic
+			Visible: false
+			X: WINDOW_RIGHT - 500
+			Y: WINDOW_BOTTOM - 250
+			Width: 238
+			Height: 250
+			Children:
+				Container@PALETTE_BACKGROUND:
+					Children:
+						Image@ROW_TEMPLATE: # Row of building icons
+							Logic: AddFactionSuffixLogic
+							Width: 238
+							Height: 48
+							ClickThrough: false
+							ImageCollection: sidebar
+							ImageName: background-iconrow
+						Image@BOTTOM_CAP: # Footer
+							Logic: AddFactionSuffixLogic
+							Width: 238
+							Height: 6
+							ClickThrough: false
+							ImageCollection: sidebar
+							ImageName: background-bottom
+				CargoBaysPalette@BUILD_SELECT_PALETTE3: # The actual icons
+					X: 39
+					Y: 0
+					TooltipContainer: TOOLTIP_CONTAINER
+					IconSize: 64, 48
+					IconMargin: 0, 0
+					IconSpriteOffset: 0, 0
+					HotkeyPrefix: Production
+					HotkeyCount: 24
+		Container@SIDEBAR_CONSTRUCTION_VEHICLE: # Building selector
+			Logic: ConstructionVehicleLogic
+			Visible: false
+			X: WINDOW_RIGHT - 250
+			Y: 300
+			Width: 238
+			Height: 250
+			Children:
+				Container@PALETTE_BACKGROUND:
+					Children:
+						Image@ROW_TEMPLATE: # Row of building icons
+							Logic: AddFactionSuffixLogic
+							Width: 238
+							Height: 48
+							ClickThrough: false
+							ImageCollection: sidebar
+							ImageName: background-iconrow
+						Image@BOTTOM_CAP: # Footer
+							Logic: AddFactionSuffixLogic
+							Width: 238
+							Height: 6
+							ClickThrough: false
+							ImageCollection: sidebar
+							ImageName: background-bottom
+				ConstructionVehiclePalette@BUILD_SELECT_PALETTE4: # The actual icons
 					X: 39
 					Y: 0
 					TooltipContainer: TOOLTIP_CONTAINER

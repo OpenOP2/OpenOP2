@@ -18,6 +18,10 @@ plymouth-tokamak:
 eden-structure-factory:
 	Inherits: ^StructureFactory
 	Inherits@common: ^eden-structure-factory
+	CargoBay:
+		BayIconImage: eden-robo-dozer
+		StartsWith: eden-vehicle-factory.constructing
+		BayOffset: 4,3
 
 plymouth-structure-factory:
 	Inherits: ^StructureFactory

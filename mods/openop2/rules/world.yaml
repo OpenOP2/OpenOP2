@@ -54,15 +54,26 @@ World:
 		BuildSelectPalette: BUILD_SELECT_PALETTE
 	DozerFromSelection:
 		DozerPalette: BUILD_SELECT_PALETTE2
+	StructureFactoryFromSelection:
+		StructureFactoryPalette: BUILD_SELECT_PALETTE3
+	ConstructionVehicleFromSelection:
+		ConstructionVehiclePalette: BUILD_SELECT_PALETTE4
 	UseCustomProductionPalettes:
 		MainProductionWidgetName: SIDEBAR_PRODUCTION
 		CustomProductionPalettes:
 			Palette@building-select:
 				Name: building-select
-				WidgetName: SIDEBAR_BUILDING_SELECT
+				WidgetNames: SIDEBAR_BUILDING_SELECT
 			Palette@dozer-select:
 				Name: dozer-select
-				WidgetName: SIDEBAR_DOZER_SELECT
+				WidgetNames: SIDEBAR_DOZER_SELECT
+			Palette@structure-factory:
+				Name: structure-factory
+				WidgetNames: SIDEBAR_STRUCTURE_FACTORY
+				HideDefaultPalette: false
+			Palette@construction-vehicle:
+				Name: construction-vehicle
+				WidgetNames: SIDEBAR_CONSTRUCTION_VEHICLE
 	UseCustomPaletteIcons@dozer:
 		Name: dozer
 		CustomPaletteIcons:

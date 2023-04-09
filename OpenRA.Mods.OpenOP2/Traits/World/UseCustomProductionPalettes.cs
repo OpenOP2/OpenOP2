@@ -50,26 +50,36 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		[Desc("The name of the production palette type.")]
 		public string Name;
 
-		[Desc("The name of the production palette widget.")]
-		public string WidgetName;
+		[Desc("The names of the production palette widgets.")]
+		public string[] WidgetNames;
+
+		public bool HideDefaultPalette = true;
 	}
 
 	public class UseCustomProductionPalettes : INotifySelection
 	{
 		readonly World world;
+		readonly UseCustomProductionPalettesInfo info;
 		readonly Lazy<ContainerWidget> mainProductionWidget;
-		readonly Dictionary<string, Lazy<Widget>> paletteWidgets = new Dictionary<string, Lazy<Widget>>();
+		readonly Dictionary<string, Lazy<Widget>[]> paletteWidgets = new Dictionary<string, Lazy<Widget>[]>();
 
 		public UseCustomProductionPalettes(World world, UseCustomProductionPalettesInfo info)
 		{
+			this.info = info;
 			this.world = world;
 
 			mainProductionWidget = Exts.Lazy(() => Ui.Root.GetOrNull(info.MainProductionWidgetName) as ContainerWidget);
 
 			foreach (var widgetInfo in info.CustomProductionPalettes.Values)
 			{
-				var widget = Exts.Lazy(() => Ui.Root.GetOrNull(widgetInfo.WidgetName));
-				paletteWidgets.Add(widgetInfo.Name, widget);
+				var widgets = new List<Lazy<Widget>>();
+				foreach (var widgetName in widgetInfo.WidgetNames)
+				{
+					var widget = Exts.Lazy(() => Ui.Root.GetOrNull(widgetName));
+					widgets.Add(widget);
+				}
+
+				paletteWidgets.Add(widgetInfo.Name, widgets.ToArray());
 			}
 		}
 
@@ -86,23 +96,38 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 			if (customProductionPalette != null)
 			{
-				mainProductionWidget.Value.Visible = false;
+				var palette = info.CustomProductionPalettes.First(x => x.Value.Name == customProductionPalette.Name);
+
+				if (palette.Value.HideDefaultPalette)
+				{
+					mainProductionWidget.Value.Visible = false;
+				}
+
 				var paletteWidget = paletteWidgets[customProductionPalette.Name];
 				if (paletteWidget != null)
 				{
 					foreach (var existingWidget in paletteWidgets.Values)
 					{
-						existingWidget.Value.Visible = false;
+						foreach (var widget in existingWidget)
+						{
+							widget.Value.Visible = false;
+						}
 					}
 
-					paletteWidget.Value.Visible = true;
+					foreach (var widget in paletteWidget)
+					{
+						widget.Value.Visible = true;
+					}
 				}
 			}
 			else
 			{
 				foreach (var existingWidget in paletteWidgets.Values)
 				{
-					existingWidget.Value.Visible = false;
+					foreach (var widget in existingWidget)
+					{
+						widget.Value.Visible = false;
+					}
 				}
 
 				mainProductionWidget.Value.Visible = true;

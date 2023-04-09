@@ -13,6 +13,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Helpers\" />
+    <Folder Include="Orders\Helpers\" />
   </ItemGroup>
 </Project>
