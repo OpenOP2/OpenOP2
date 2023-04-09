@@ -167,6 +167,12 @@ namespace OpenRA.Mods.OpenOP2.Traits
 						!IsTileBulldozed(t));
 			}
 
+			bool IsTileClear(CPos pos)
+			{
+				var clearTerrains = new[] { "Clear", "ClearSand", "ClearRock" };
+				return clearTerrains.Contains(w.Map.GetTerrainInfo(pos).Type);
+			}
+
 			bool IsTileBulldozed(CPos pos)
 			{
 				var tile = world.Map.Tiles[pos];
@@ -242,6 +248,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 				return buildingTiles.All(t => w.Map.Contains(t) &&
 					(resourceLayer == null || resourceLayer.GetResource(t).Type == null) &&
 						!world.ActorMap.GetActorsAt(t).Any() &&
+						IsTileClear(t) &&
 						!IsTileBulldozed(t));
 			}
 

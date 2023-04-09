@@ -52,6 +52,8 @@ World:
 		ProductionPaletteWidget: PRODUCTION_PALETTE
 	BuildingPickerFromSelection:
 		BuildSelectPalette: BUILD_SELECT_PALETTE
+	DozerFromSelection:
+		DozerPalette: BUILD_SELECT_PALETTE2
 	UseCustomProductionPalettes:
 		MainProductionWidgetName: SIDEBAR_PRODUCTION
 		CustomProductionPalettes:
@@ -61,6 +63,14 @@ World:
 			Palette@dozer-select:
 				Name: dozer-select
 				WidgetName: SIDEBAR_DOZER_SELECT
+	UseCustomPaletteIcons@dozer:
+		Name: dozer
+		CustomPaletteIcons:
+			Icon@dozer:
+				Name: Bulldoze
+				ImageName: eden-robo-dozer
+				SequenceName: icon
+				Palette: player
 	#LegacyBridgeLayer:
 	#	Bridges: bridge1, bridge2, bridge3, bridge4, br1, br2, br3, sbridge1, sbridge2, sbridge3, sbridge4
 	CustomTerrainDebugOverlay:

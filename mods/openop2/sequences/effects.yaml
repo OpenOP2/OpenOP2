@@ -1,3 +1,13 @@
+
+explosion:
+	Defaults:
+		Length: *
+		ZOffset: 2047
+	vehicleexplosion: op2_art.bmp
+		Start: 2329
+		Length: 12
+		Facings: 1
+
 smoking-crater:
 	idle: op2_art.bmp
 		Start: 132

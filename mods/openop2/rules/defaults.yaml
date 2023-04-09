@@ -369,8 +369,8 @@
 	ActorPreviewPlaceBuildingPreview:
 		Palette: 6
 	#	OverridePalette: placebuilding
-	RequiresBuildableArea:
-		AreaTypes: building
+	#RequiresBuildableArea:
+	#	AreaTypes: building
 	SoundOnDamageTransition:
 	#	DamagedSounds: kaboom1.aud
 	#	DestroyedSounds: kaboom22.aud
@@ -400,8 +400,8 @@
 	OwnerLostAction:
 		Action: Kill
 	UpdatesPlayerStatistics:
-	GivesBuildableArea:
-		AreaTypes: building, fake
+	#GivesBuildableArea:
+	#	AreaTypes: building, fake
 	RepairableBuilding:
 		RepairStep: 10
 		PlayerExperience: 25
@@ -444,7 +444,6 @@
 		TargetTypes: Ground, C4, DetonateAttack, Structure, Defense
 	MustBeDestroyed:
 		RequiredForShortGame: false
-	-GivesBuildableArea:
 	-AcceptsDeliveredCash:
 	DrawLineToTarget:
 	#RenderRangeCircle:
@@ -474,9 +473,9 @@
 	FootprintPlaceBuildingPreview:
 		Palette: 6
 	#	LineBuildSegmentPalette: placelinesegment
-	RequiresBuildableArea:
-		AreaTypes: building
-		Adjacent: 7
+	#RequiresBuildableArea:
+	#	AreaTypes: building
+	#	Adjacent: 7
 	#SoundOnDamageTransition:
 	#	DamagedSounds: sandbag2.aud
 	#	DestroyedSounds: sandbag2.aud
@@ -523,10 +522,6 @@
 
 ^FakeBuilding:
 	Inherits: ^Building
-	GivesBuildableArea:
-		AreaTypes: fake
-	RequiresBuildableArea:
-		AreaTypes: fake
 	Health:
 		HP: 10000
 	Explodes:

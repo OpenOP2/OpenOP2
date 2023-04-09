@@ -660,7 +660,6 @@ Container@PLAYER_WIDGETS:
 							ImageName: power-normal
 		Container@SIDEBAR_BUILDING_SELECT: # Building selector
 			Logic: BuildingPickerLogic
-				ProductionParent: SIDEBAR_PRODUCTION
 			Visible: false
 			X: WINDOW_RIGHT - 250
 			X: WINDOW_RIGHT - 250
@@ -705,8 +704,7 @@ Container@PLAYER_WIDGETS:
 				#			ImageName: production-iconoverlay
 				#			Visible: false
 		Container@SIDEBAR_DOZER_SELECT: # Building selector
-			#Logic: BuildingPickerLogic
-			#	ProductionParent: SIDEBAR_PRODUCTION
+			Logic: DozerPickerLogic
 			Visible: false
 			X: WINDOW_RIGHT - 250
 			X: WINDOW_RIGHT - 250
@@ -730,15 +728,15 @@ Container@PLAYER_WIDGETS:
 							ClickThrough: false
 							ImageCollection: sidebar
 							ImageName: background-bottom
-				#BuildSelectPalette@BUILD_SELECT_PALETTE: # The actual icons
-				#	X: 39
-				#	Y: 0
-				#	TooltipContainer: TOOLTIP_CONTAINER
-				#	IconSize: 64, 48
-				#	IconMargin: 0, 0
-				#	IconSpriteOffset: 0, 0
-				#	HotkeyPrefix: Production
-				#	HotkeyCount: 24
+				DozerPalette@BUILD_SELECT_PALETTE2: # The actual icons
+					X: 39
+					Y: 0
+					TooltipContainer: TOOLTIP_CONTAINER
+					IconSize: 64, 48
+					IconMargin: 0, 0
+					IconSpriteOffset: 0, 0
+					HotkeyPrefix: Production
+					HotkeyCount: 24
 		Container@HPF_OVERLAY:
 			Logic: HierarchicalPathFinderOverlayLogic
 			X: WINDOW_RIGHT - WIDTH - 260

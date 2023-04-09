@@ -136,13 +136,6 @@
 		Prerequisite: structures
 	Power:
 		Amount: 50
-	#Production:
-	#	Produces: Defense
-	#ProductionBar@Building:
-	#	ProductionType: Building
-	#ProductionBar@Defense:
-	#	ProductionType: Defense
-	#	Color: 8A8A8A
 	ProvidesRadar:
 	BaseBuilding:
 	Sellable:
@@ -361,6 +354,13 @@
 		Range: 4c0
 	WithIdleAnimation:
 		Interval: 550, 850
+	#Production:
+	#	Produces: Defense
+	#ProductionBar@Building:
+	#	ProductionType: Building
+	#ProductionBar@Defense:
+	#	ProductionType: Defense
+	#	Color: 8A8A8A
 
 ^VehicleFactory.Constructing:
 	Inherits: ^Op2Building

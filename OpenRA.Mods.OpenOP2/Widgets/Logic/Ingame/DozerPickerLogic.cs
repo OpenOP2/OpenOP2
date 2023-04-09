@@ -15,14 +15,14 @@ using OpenRA.Widgets;
 namespace OpenRA.Mods.OpenOP2.Widgets.Logic
 {
 	// Based on ClassicProductionLogic
-	public class BuildingPickerLogic : ChromeLogic
+	public class DozerPickerLogic : ChromeLogic
 	{
-		readonly BuildSelectPaletteWidget palette;
+		readonly DozerPaletteWidget palette;
 
 		[ObjectCreator.UseCtor]
-		public BuildingPickerLogic(Widget widget)
+		public DozerPickerLogic(Widget widget)
 		{
-			palette = widget.Get<BuildSelectPaletteWidget>("BUILD_SELECT_PALETTE");
+			palette = widget.Get<DozerPaletteWidget>("BUILD_SELECT_PALETTE2");
 
 			var background = widget.GetOrNull("PALETTE_BACKGROUND");
 			var foreground = widget.GetOrNull("PALETTE_FOREGROUND");
