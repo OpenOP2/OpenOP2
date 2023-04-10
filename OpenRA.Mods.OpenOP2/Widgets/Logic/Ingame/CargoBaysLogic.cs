@@ -15,14 +15,14 @@ using OpenRA.Widgets;
 namespace OpenRA.Mods.OpenOP2.Widgets.Logic
 {
 	// Based on ClassicProductionLogic
-	public class StructureFactoryLogic : ChromeLogic
+	public class CargoBaysLogic : ChromeLogic
 	{
-		readonly StructureFactoryPaletteWidget palette;
+		readonly CargoBaysPaletteWidget palette;
 
 		[ObjectCreator.UseCtor]
-		public StructureFactoryLogic(Widget widget)
+		public CargoBaysLogic(Widget widget)
 		{
-			palette = widget.Get<StructureFactoryPaletteWidget>("BUILD_SELECT_PALETTE5");
+			palette = widget.Get<CargoBaysPaletteWidget>("BUILD_SELECT_PALETTE3");
 
 			var background = widget.GetOrNull("PALETTE_BACKGROUND");
 			var foreground = widget.GetOrNull("PALETTE_FOREGROUND");

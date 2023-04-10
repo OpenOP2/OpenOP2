@@ -11,6 +11,8 @@
 
 using System;
 using System.Linq;
+using OpenRA.Mods.Common.Traits;
+using OpenRA.Mods.Common.Widgets;
 using OpenRA.Mods.OpenOP2.Widgets;
 using OpenRA.Traits;
 using OpenRA.Widgets;
@@ -22,7 +24,9 @@ namespace OpenRA.Mods.OpenOP2.Traits
 	/// </summary>
 	class StructureFactoryFromSelectionInfo : TraitInfo
 	{
-		public string StructureFactoryPalette = null;
+		public readonly string StructureFactoryPalette = null;
+		public readonly string ProductionPaletteWidget = null;
+		public readonly string StructureQueueName = "Buildings";
 
 		public override object Create(ActorInitializer init) { return new StructureFactoryFromSelection(init.World, this); }
 	}
@@ -30,12 +34,16 @@ namespace OpenRA.Mods.OpenOP2.Traits
 	class StructureFactoryFromSelection : INotifySelection
 	{
 		readonly World world;
-		readonly Lazy<CargoBaysPaletteWidget> cargoBaysWidget;
+		readonly StructureFactoryFromSelectionInfo info;
+		readonly Lazy<ProductionPaletteWidget> paletteWidget;
+		readonly Lazy<StructureFactoryPaletteWidget> structureFactoryWidget;
 
 		public StructureFactoryFromSelection(World world, StructureFactoryFromSelectionInfo info)
 		{
 			this.world = world;
-			cargoBaysWidget = Exts.Lazy(() => Ui.Root.GetOrNull(info.StructureFactoryPalette) as CargoBaysPaletteWidget);
+			this.info = info;
+			paletteWidget = Exts.Lazy(() => Ui.Root.GetOrNull(info.ProductionPaletteWidget) as ProductionPaletteWidget);
+			structureFactoryWidget = Exts.Lazy(() => Ui.Root.GetOrNull(info.StructureFactoryPalette) as StructureFactoryPaletteWidget);
 		}
 
 		void INotifySelection.SelectionChanged()
@@ -45,14 +53,17 @@ namespace OpenRA.Mods.OpenOP2.Traits
 				return;
 
 			// Check for custom palette icons
-			var cargoBay = world.Selection.Actors
+			var productionQueue = world.Selection.Actors
 				.Where(a => a.IsInWorld && a.World.LocalPlayer == a.Owner)
-				.Select(a => a.TraitOrDefault<CargoBay>())
-				.FirstOrDefault();
+				.SelectMany(a => a.TraitsImplementing<ProductionQueue>())
+				.Where(a => a.Info.Group == info.StructureQueueName)
+				.FirstOrDefault(q => q.Enabled);
 
-			if (cargoBay != null)
+			if (productionQueue != null)
 			{
-				cargoBaysWidget.Value.CargoBay = cargoBay;
+				structureFactoryWidget.Value.CurrentQueue = productionQueue;
+
+				paletteWidget.Value.CurrentQueue = null;
 			}
 		}
 	}

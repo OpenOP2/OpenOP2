@@ -670,18 +670,28 @@ Container@PLAYER_WIDGETS:
 					Children:
 						Image@ROW_TEMPLATE: # Row of building icons
 							Logic: AddFactionSuffixLogic
-							Width: 238
-							Height: 48
+							X: 40
+							Width: 190
+							Height: 47
 							ClickThrough: false
 							ImageCollection: sidebar
-							ImageName: background-iconrow
+							ImageName: background-iconbg
 						Image@BOTTOM_CAP: # Footer
 							Logic: AddFactionSuffixLogic
 							Width: 238
-							Height: 6
+							Height: 8
 							ClickThrough: false
 							ImageCollection: sidebar
 							ImageName: background-bottom
+				Container@PALETTE_FOREGROUND:
+					Children:
+						Image@ROW_TEMPLATE:
+							Logic: AddFactionSuffixLogic
+							Width: 238
+							Height: 47
+							IgnoreMouseOver: true
+							ImageCollection: sidebar
+							ImageName: background-iconrow
 				BuildSelectPalette@BUILD_SELECT_PALETTE: # The actual icons
 					X: 39
 					Y: 0
@@ -691,18 +701,7 @@ Container@PLAYER_WIDGETS:
 					IconSpriteOffset: 0, 0
 					HotkeyPrefix: Production
 					HotkeyCount: 24
-				#Container@PALETTE_FOREGROUND: # Black border
-				#	X: 39
-				#	Y: 1
-				#	Children:
-				#		Image@ROW_TEMPLATE:
-				#			Width: 238
-				#			Height: 49
-				#			IgnoreMouseOver: true
-				#			ImageCollection: sidebar-bits
-				#			ImageName: production-iconoverlay
-				#			Visible: false
-		Container@SIDEBAR_DOZER_SELECT: # Building selector
+		Container@SIDEBAR_DOZER_SELECT: # Robo-dozer actions
 			Logic: DozerPickerLogic
 			Visible: false
 			X: WINDOW_RIGHT - 250
@@ -714,18 +713,28 @@ Container@PLAYER_WIDGETS:
 					Children:
 						Image@ROW_TEMPLATE: # Row of building icons
 							Logic: AddFactionSuffixLogic
-							Width: 238
-							Height: 48
+							X: 40
+							Width: 190
+							Height: 47
 							ClickThrough: false
 							ImageCollection: sidebar
-							ImageName: background-iconrow
+							ImageName: background-iconbg
 						Image@BOTTOM_CAP: # Footer
 							Logic: AddFactionSuffixLogic
 							Width: 238
-							Height: 6
+							Height: 8
 							ClickThrough: false
 							ImageCollection: sidebar
 							ImageName: background-bottom
+				Container@PALETTE_FOREGROUND:
+					Children:
+						Image@ROW_TEMPLATE:
+							Logic: AddFactionSuffixLogic
+							Width: 238
+							Height: 47
+							IgnoreMouseOver: true
+							ImageCollection: sidebar
+							ImageName: background-iconrow
 				DozerPalette@BUILD_SELECT_PALETTE2: # The actual icons
 					X: 39
 					Y: 0
@@ -735,8 +744,8 @@ Container@PLAYER_WIDGETS:
 					IconSpriteOffset: 0, 0
 					HotkeyPrefix: Production
 					HotkeyCount: 24
-		Container@SIDEBAR_STRUCTURE_FACTORY: # Building selector
-			Logic: StructureFactoryLogic
+		Container@SIDEBAR_CARGO_BAYS: # Structure factory cargo bays
+			Logic: CargoBaysLogic
 			Visible: false
 			X: WINDOW_RIGHT - 500
 			Y: WINDOW_BOTTOM - 250
@@ -747,18 +756,28 @@ Container@PLAYER_WIDGETS:
 					Children:
 						Image@ROW_TEMPLATE: # Row of building icons
 							Logic: AddFactionSuffixLogic
-							Width: 238
-							Height: 48
+							X: 40
+							Width: 190
+							Height: 47
 							ClickThrough: false
 							ImageCollection: sidebar
-							ImageName: background-iconrow
+							ImageName: background-iconbg
 						Image@BOTTOM_CAP: # Footer
 							Logic: AddFactionSuffixLogic
 							Width: 238
-							Height: 6
+							Height: 8
 							ClickThrough: false
 							ImageCollection: sidebar
 							ImageName: background-bottom
+				Container@PALETTE_FOREGROUND:
+					Children:
+						Image@ROW_TEMPLATE:
+							Logic: AddFactionSuffixLogic
+							Width: 238
+							Height: 47
+							IgnoreMouseOver: true
+							ImageCollection: sidebar
+							ImageName: background-iconrow
 				CargoBaysPalette@BUILD_SELECT_PALETTE3: # The actual icons
 					X: 39
 					Y: 0
@@ -768,7 +787,7 @@ Container@PLAYER_WIDGETS:
 					IconSpriteOffset: 0, 0
 					HotkeyPrefix: Production
 					HotkeyCount: 24
-		Container@SIDEBAR_CONSTRUCTION_VEHICLE: # Building selector
+		Container@SIDEBAR_CONSTRUCTION_VEHICLE: # ConVec structure kit cargo
 			Logic: ConstructionVehicleLogic
 			Visible: false
 			X: WINDOW_RIGHT - 250
@@ -780,19 +799,72 @@ Container@PLAYER_WIDGETS:
 					Children:
 						Image@ROW_TEMPLATE: # Row of building icons
 							Logic: AddFactionSuffixLogic
-							Width: 238
-							Height: 48
+							X: 40
+							Width: 190
+							Height: 47
 							ClickThrough: false
 							ImageCollection: sidebar
-							ImageName: background-iconrow
+							ImageName: background-iconbg
 						Image@BOTTOM_CAP: # Footer
 							Logic: AddFactionSuffixLogic
 							Width: 238
-							Height: 6
+							Height: 8
 							ClickThrough: false
 							ImageCollection: sidebar
 							ImageName: background-bottom
+				Container@PALETTE_FOREGROUND:
+					Children:
+						Image@ROW_TEMPLATE:
+							Logic: AddFactionSuffixLogic
+							Width: 238
+							Height: 47
+							IgnoreMouseOver: true
+							ImageCollection: sidebar
+							ImageName: background-iconrow
 				ConstructionVehiclePalette@BUILD_SELECT_PALETTE4: # The actual icons
+					X: 39
+					Y: 0
+					TooltipContainer: TOOLTIP_CONTAINER
+					IconSize: 64, 48
+					IconMargin: 0, 0
+					IconSpriteOffset: 0, 0
+					HotkeyPrefix: Production
+					HotkeyCount: 24
+		Container@SIDEBAR_STRUCTURE_FACTORY: # Structure factory production
+			Logic: StructureFactoryLogic
+			Visible: false
+			X: WINDOW_RIGHT - 250
+			Y: 300
+			Width: 238
+			Height: 250
+			Children:
+				Container@PALETTE_BACKGROUND:
+					Children:
+						Image@ROW_TEMPLATE: # Row of building icons
+							Logic: AddFactionSuffixLogic
+							X: 40
+							Width: 190
+							Height: 47
+							ClickThrough: false
+							ImageCollection: sidebar
+							ImageName: background-iconbg
+						Image@BOTTOM_CAP: # Footer
+							Logic: AddFactionSuffixLogic
+							Width: 238
+							Height: 8
+							ClickThrough: false
+							ImageCollection: sidebar
+							ImageName: background-bottom
+				Container@PALETTE_FOREGROUND:
+					Children:
+						Image@ROW_TEMPLATE:
+							Logic: AddFactionSuffixLogic
+							Width: 238
+							Height: 47
+							IgnoreMouseOver: true
+							ImageCollection: sidebar
+							ImageName: background-iconrow
+				StructureFactoryPalette@BUILD_SELECT_PALETTE5: # The actual icons
 					X: 39
 					Y: 0
 					TooltipContainer: TOOLTIP_CONTAINER

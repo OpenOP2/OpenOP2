@@ -275,17 +275,19 @@ namespace OpenRA.Mods.OpenOP2.Widgets
 				var carrier = cargoBay.GetCargoCarrier();
 				if (carrier != null)
 				{
+					// TODO: Handle disburse of cargo using an order instead
 					var cargoName = icon.Name;
-					cargoBay.GetCargo(cargoName);
-					carrier.AddCargo(cargoName);
+					if (cargoBay.GetCargo(cargoName))
+					{
+						carrier.AddCargo(cargoName);
+						return true;
+					}
 
-					return true;
+					return false;
 				}
-
-				//World.OrderGenerator = new PlaceBuildingOrderGenerator(actor, icon.Name, worldRenderer);
 			}
 
-			return true;
+			return false;
 		}
 
 		bool HandleEvent(BayIcon icon, MouseButton btn)
