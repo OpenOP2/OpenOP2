@@ -168,7 +168,7 @@
 	Tooltip:
 		GenericName: Vehicle
 	CaptureManager:
-		BeingCapturedCondition: being-captured
+		#BeingCapturedCondition: being-captured
 	Capturable:
 		Types: vehicle
 		CancelActivity: True
@@ -177,7 +177,7 @@
 	#	LoseNotification: UnitLost
 	MustBeDestroyed:
 	Voiced:
-		VoiceSet: VehicleVoice
+		VoiceSet: PantherVoice
 	#Parachutable:
 	#	FallRate: 26
 	#	KilledOnImpassableTerrain: true
@@ -252,7 +252,7 @@
 		ExcludeTilesets: INTERIOR
 		Categories: Naval
 	Voiced:
-		VoiceSet: VehicleVoice
+		VoiceSet: PantherVoice
 	WithFacingSpriteBody:
 	HitShape:
 
@@ -459,10 +459,10 @@
 	Inherits@1: ^ExistsInWorld
 	Inherits@2: ^SpriteActor
 	Inherits@shape: ^1x1Shape
-	Selectable:
-		Bounds: 1024,1024
+	#Selectable:
+	#	Bounds: 1024,1024
 	Interactable:
-		Bounds: 24,24
+		Bounds: 1024,1024
 	OwnerLostAction:
 		Action: ChangeOwner
 	Building:

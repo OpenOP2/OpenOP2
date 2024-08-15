@@ -7,6 +7,8 @@
 	WithInfantryBody:
 		IdleSequences: idle
 		StandSequences: idle
+	Health:
+		HP: 400
 	Mobile:
 		PauseOnCondition: empdisable || stickyfoam
 	Explodes:
