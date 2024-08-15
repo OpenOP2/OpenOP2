@@ -218,8 +218,6 @@ TerrainFormat: DefaultTerrain
 
 SpriteSequenceFormat: Op2SpriteSequence
 
-ModelSequenceFormat: PlaceholderModelSequence
-
 AssetBrowser:
 	SupportedExtensions: .BMP
 

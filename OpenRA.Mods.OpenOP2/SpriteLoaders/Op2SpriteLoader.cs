@@ -16,6 +16,7 @@ using System.IO;
 using System.Linq;
 using OpenRA.Graphics;
 using OpenRA.Mods.Common.Graphics;
+using OpenRA.Mods.Common.SpriteLoaders;
 using OpenRA.Mods.OpenOP2.FileSystem;
 using OpenRA.Primitives;
 

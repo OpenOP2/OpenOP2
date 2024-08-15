@@ -1,6 +1,6 @@
 #region Copyright & License Information
 /*
- * Copyright 2007-2021 The OpenRA Developers (see AUTHORS)
+ * Copyright 2007-2024 The OpenRA Developers (see AUTHORS)
  * This file is part of OpenRA, which is free software. It is made
  * available to you under the terms of the GNU General Public License
  * as published by the Free Software Foundation, either version 3 of
@@ -145,7 +145,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 			worldRenderer = wr;
 
-			var sequenceProvider = map.Rules.Sequences;
+			var sequenceProvider = map.Sequences;
 			var frames = info.Frames;
 
 			blightSprites = frames.Select(frame =>
@@ -443,7 +443,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		void AddBlightSpriteToLayer(CPos pos, int tileIndex)
 		{
 			var paletteReference = worldRenderer.Palette(info.Palette);
-			var sequenceProvider = map.Rules.Sequences;
+			var sequenceProvider = map.Sequences;
 			blightLayer.Update(pos, sequenceProvider.GetSequence(info.ImageName, info.Sequence), paletteReference, tileIndex);
 		}
 
