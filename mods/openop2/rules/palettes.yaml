@@ -51,13 +51,18 @@
 		Name: player
 		Number: 3
 		Filename: op2_art.prt
-	#PlayerColorShift:
-	#	BasePalette: player
-	#	MinHue: 0.83
-	#	MaxHue: 0.84
-	#	ReferenceHue: 0.835
-	#	ReferenceSaturation: 1
-	#	ReferenceValue: 0.405
+	ColorPickerPalette@colorpicker:
+		Name: colorpicker
+		BasePalette: player
+		#RemapIndex: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+		AllowModifiers: false
+	ColorPickerColorShift:
+		BasePalette: colorpicker
+		MinHue: 0.66
+		MaxHue: 0.70
+		ReferenceHue: 0.68
+		ReferenceSaturation: 1
+		ReferenceValue: 0.98
 	PaletteFromPrtFile@1:
 		Name: 1
 		Number: 1
@@ -92,7 +97,14 @@
 		Filename: op2_art.prt
 	PlayerColorPalette:
 		BasePalette: player
-		RemapIndex: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+		#RemapIndex: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+	PlayerColorShift:
+		BasePalette: player
+		MinHue: 0.66
+		MaxHue: 0.70
+		ReferenceHue: 0.68
+		ReferenceSaturation: 1
+		ReferenceValue: 0.98
 	PaletteFromRGBA@highlight:
 		Name: highlight
 		R: 255
@@ -129,8 +141,3 @@
 		G: 0
 		B: 255
 		A: 127
-	PaletteFromPrtFile@colorpicker:
-		Name: colorpicker
-		Number: 3
-		Filename: op2_art.prt
-		AllowModifiers: false

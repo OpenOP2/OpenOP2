@@ -37,7 +37,7 @@
 	#WithMuzzleOverlay:
 	WithSpriteTurret:
 		Sequence: emp
-		Palette: playerMapped3
+		Palette: player
 		IsPlayerPalette: true
 	#RenderRangeCircle:
 
