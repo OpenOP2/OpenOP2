@@ -327,3 +327,4 @@ EditorWorld:
 	EditorSelectionLayer:
 	LoadWidgetAtGameStart:
 	EditorActionManager:
+	MarkerLayerOverlay:
