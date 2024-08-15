@@ -209,6 +209,9 @@
 		Type: Unload
 		DockAngle: 270
 		DockOffset: 1536,1024,0
+	DockHost:
+		Type: Unload
+		DockOffset: -2560,-2048,0
 
 ^OreSmelterRare:
 	Inherits: ^Op2Building
@@ -255,6 +258,9 @@
 		Type: Unload
 		DockAngle: 270
 		DockOffset: 1536,1024,0
+	DockHost:
+		Type: Unload
+		DockOffset: -2560,-2048,0
 
 ^StructureFactory:
 	Inherits: ^Op2Building

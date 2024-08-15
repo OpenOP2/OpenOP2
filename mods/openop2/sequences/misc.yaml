@@ -12,7 +12,7 @@ pips:
 
 clock:
 	idle:
-		Filename: clock
+		Filename: clock.shp
 		Length: *
 
 blight-spawn:
@@ -20,11 +20,6 @@ blight-spawn:
 		Filename: bits/icons/blight.png
 		Length: 1
 	idle:
-
-clock:
-	idle:
-		Filename: clock
-		Length: *
 
 overlay:
 	Defaults:
@@ -67,13 +62,13 @@ shroud:
 		Length: 16
 		Combine:
 			0:
-				Filename: shroud1
+				Filename: virmask.raw
 				Length: 16
 	shadow:
 		Length: 16
 		Combine:
 			0:
-				Filename: shadow1
+				Filename: virmask.raw
 				Length: 16
 
 beacon:

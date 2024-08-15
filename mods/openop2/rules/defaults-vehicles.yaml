@@ -2,6 +2,8 @@
 	Inherits: ^Vehicle
 	Inherits: ^EmpDisable
 	Inherits: ^StickyFoam
+	Tooltip:
+		Name: Op2Vehicle
 	WithInfantryBody:
 		IdleSequences: idle
 		StandSequences: idle
@@ -104,6 +106,10 @@
 		PipCount: 1
 		ResourceSequences:
 			Ore: pip-yellow
+	StoresPlayerResources:
+		Capacity: 1
+		Resources: ore.depot.common1, ore.depot.common2, ore.depot.common3, ore.depot.common4, ore.depot.common5, ore.depot.common6
+	DockClientManager:
 	StoresResources:
 		Capacity: 1
 		Resources: ore.depot.common1, ore.depot.common2, ore.depot.common3, ore.depot.common4, ore.depot.common5, ore.depot.common6

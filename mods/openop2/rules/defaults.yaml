@@ -876,7 +876,8 @@
 		CloakSound:
 		UncloakSound:
 		InitialDelay: 0
-		CloakStyle: None
+		CloakedPalette: cloak
+		CloakStyle: Palette
 	Tooltip:
 		Name: Mine
 	Targetable:

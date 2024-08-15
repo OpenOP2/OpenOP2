@@ -51,13 +51,13 @@
 		Name: player
 		Number: 3
 		Filename: op2_art.prt
-	PlayerColorShift:
-		BasePalette: player
-		MinHue: 0.83
-		MaxHue: 0.84
-		ReferenceHue: 0.835
-		ReferenceSaturation: 1
-		ReferenceValue: 0.405
+	#PlayerColorShift:
+	#	BasePalette: player
+	#	MinHue: 0.83
+	#	MaxHue: 0.84
+	#	ReferenceHue: 0.835
+	#	ReferenceSaturation: 1
+	#	ReferenceValue: 0.405
 	PaletteFromPrtFile@1:
 		Name: 1
 		Number: 1
@@ -90,33 +90,8 @@
 		Name: 8
 		Number: 8
 		Filename: op2_art.prt
-	PlayerColorPalette@playerMapped1:
-		BaseName: playerMapped1
-		BasePalette: 1
-		RemapIndex: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
-	PlayerColorPalette@playerMapped2:
-		BaseName: playerMapped2
-		BasePalette: 2
-		RemapIndex: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
-	PlayerColorPalette@playerMapped3:
-		BaseName: playerMapped3
-		BasePalette: 3
-		RemapIndex: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
-	PlayerColorPalette@playerMapped5:
-		BaseName: playerMapped5
-		BasePalette: 5
-		RemapIndex: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
-	PlayerColorPalette@playerMapped6:
-		BaseName: playerMapped6
-		BasePalette: 6
-		RemapIndex: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
-	PlayerColorPalette@playerMapped7:
-		BaseName: playerMapped7
-		BasePalette: 7
-		RemapIndex: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
-	PlayerColorPalette@playerMapped8:
-		BaseName: playerMapped8
-		BasePalette: 8
+	PlayerColorPalette:
+		BasePalette: player
 		RemapIndex: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
 	PaletteFromRGBA@highlight:
 		Name: highlight
