@@ -3,6 +3,7 @@ Metadata:
 	Version: {release-20210823}
 	Website: https://github.com/OpenOP2
 	WebIcon32: https://www.drogoganor.net/op2/openop2_32x32.png
+	WindowTitle: OpenRA - OpenOP2
 
 PackageFormats: VolFile, ClmFile
 
@@ -10,7 +11,7 @@ Packages:
 	~^SupportDir|Content/openop2/
 	^EngineDir|
 	$openop2: openop2
-	^EngineDir|/mods/common: common
+	^EngineDir|mods/common: common
 	~art.vol
 	~maps.vol
 	~OP2_ART.BMP
@@ -88,6 +89,7 @@ ChromeLayout:
 	openop2|chrome/ingame-player.yaml
 	common|chrome/ingame-perf.yaml
 	common|chrome/ingame-debug.yaml
+	common|chrome/ingame-debug-hpf.yaml
 	common|chrome/ingame-debuginfo.yaml
 	common|chrome/ingame-infochat.yaml
 	common|chrome/mainmenu.yaml
@@ -128,16 +130,19 @@ ChromeLayout:
 
 Translations:
 	common|languages/en.ftl
-	#openop2|languages/rules/en.ftl
+	common|languages/chrome/en.ftl
+	common|languages/rules/en.ftl
+	openop2|languages/chrome/en.ftl
+	openop2|languages/rules/en.ftl
 
 Voices:
 	openop2|audio/voices.yaml
 
-Music:
-	openop2|audio/music.yaml
-
 Notifications:
 	openop2|audio/notifications.yaml
+
+Music:
+	openop2|audio/music.yaml
 
 Hotkeys:
 	common|hotkeys/game.yaml
@@ -158,6 +163,7 @@ LoadScreen: LogoStripeLoadScreen
 
 ServerTraits:
 	LobbyCommands
+	SkirmishLogic
 	PlayerPinger
 	MasterServerPinger
 	LobbySettingsNotification
