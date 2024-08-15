@@ -37,7 +37,7 @@
 
 World:
 	Inherits: ^BaseWorld
-	DumpPalettesToJascFiles:
+	#DumpPalettesToJascFiles:
 	ChatCommands:
 	DevCommands:
 	DebugVisualizationCommands:
