@@ -1,21 +1,25 @@
 waypoint:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 20338
 		Length: 8
 		Facings: 1
 
 rallypoint:
-	flag: op2_art.bmp
+	flag:
+		Filename: op2_art.bmp
 		Start: 18608
 		Length: 17
 		Facings: 1
-	circles: op2_art.bmp
+	circles:
+		Filename: op2_art.bmp
 		Start: 18608
 		Length: 17
 		Facings: 1
 
 mpspawn:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 14823
 		Length: 16
 		Facings: 1

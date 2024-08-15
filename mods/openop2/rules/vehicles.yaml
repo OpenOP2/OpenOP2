@@ -220,7 +220,7 @@ eden-lynx-laser:
 	Tooltip:
 		Name: Laser Lynx
 	Armament:
-		Weapon:	laser
+		Weapon: laser
 		LocalOffset: 430,0,170
 	Valued:
 		Cost: 750

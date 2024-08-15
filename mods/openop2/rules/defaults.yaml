@@ -406,7 +406,7 @@
 		RepairStep: 10
 		PlayerExperience: 25
 		RepairingNotification: Repairing
-	EngineerRepairable:
+	InstantlyRepairable:
 	AcceptsDeliveredCash:
 	#WithMakeAnimation:
 	#	Condition: build-incomplete
@@ -875,8 +875,8 @@
 	Cloak:
 		CloakSound:
 		UncloakSound:
-		Palette:
 		InitialDelay: 0
+		CloakStyle: None
 	Tooltip:
 		Name: Mine
 	Targetable:

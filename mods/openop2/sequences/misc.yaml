@@ -1,5 +1,6 @@
 pips:
-	Defaults: bits/pips.png
+	Defaults:
+		Filename: bits/pips.png
 		Length: *
 	blank:
 	groups:
@@ -10,20 +11,24 @@ pips:
 		Start: 2
 
 clock:
-	idle: clock.shp
+	idle:
+		Filename: clock
 		Length: *
 
 blight-spawn:
-	Defaults: bits/icons/blight.png
+	Defaults:
+		Filename: bits/icons/blight.png
 		Length: 1
 	idle:
 
 clock:
-	idle: clock.shp
+	idle:
+		Filename: clock
 		Length: *
 
 overlay:
-	Defaults: bits/overlay.png
+	Defaults:
+		Filename: bits/overlay.png
 		Length: 1
 	build-valid:
 		Start: 0
@@ -37,7 +42,8 @@ overlay:
 		Start: 1
 
 editor-overlay:
-	Defaults: bits/overlay.png
+	Defaults:
+		Filename: bits/overlay.png
 		Length: 1
 	copy:
 		Start: 1
@@ -45,12 +51,14 @@ editor-overlay:
 		Start: 0
 
 moveflsh:
-	Defaults: bits/filled.png
+	Defaults:
+		Filename: bits/filled.png
 		Length: *
 	idle:
 
 allyrepair:
-	Defaults: bits/filled.png
+	Defaults:
+		Filename: bits/filled.png
 		Length: *
 	repair:
 
@@ -58,19 +66,21 @@ shroud:
 	shroud:
 		Length: 16
 		Combine:
-			virmask.raw: shroud1
+			0:
+				Filename: shroud1
 				Length: 16
 	shadow:
 		Length: 16
 		Combine:
-			virmask.raw: shadow1
+			0:
+				Filename: shadow1
 				Length: 16
 
 beacon:
-	Defaults: bits/filled.png
+	Defaults:
+		Filename: bits/filled.png
 		Length: *
 		ZOffset: 2535
 	arrow:
-	circles: 
+	circles:
 	clock:
-

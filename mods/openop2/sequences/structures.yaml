@@ -1,813 +1,987 @@
 eden-command-center:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 19741
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 19741
 		Length: 87
 		Facings: 1
 
 plymouth-command-center:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 20247
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 20247
 		Length: 56
 		Facings: 1
 
 eden-tokamak:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 23397
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 23397
 		Length: 62
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 4
 		Length: 1
 		Facings: 1
 
 plymouth-tokamak:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 11737
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 11737
 		Length: 183
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 5
 		Length: 1
 		Facings: 1
 
 eden-structure-factory:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 293
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 293
 		Length: 50
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 2
 		Length: 1
 		Facings: 1
 
 plymouth-structure-factory:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 20484
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 20484
 		Length: 46
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 3
 		Length: 1
 		Facings: 1
 
 eden-vehicle-factory:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 13186
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 13186
 		Length: 43
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 14
 		Length: 1
 		Facings: 1
 
 plymouth-vehicle-factory:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 20206
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 20206
 		Length: 41
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 15
 		Length: 1
 		Facings: 1
 
 eden-agridome:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 12963
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 12963
 		Length: 35
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 16
 		Length: 1
 		Facings: 1
 
 plymouth-agridome:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 11459
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 11459
 		Length: 40
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 17
 		Length: 1
 		Facings: 1
 
 eden-smelter-common:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 20303
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 20303
 		Length: 35
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 6
 		Length: 1
 		Facings: 1
 
 plymouth-smelter-common:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 20416
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 20416
 		Length: 68
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 7
 		Length: 1
 		Facings: 1
 
 eden-smelter-rare:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 19490
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 19490
 		Length: 89
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 8
 		Length: 1
 		Facings: 1
 
 plymouth-smelter-rare:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 14340
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 14340
 		Length: 34
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 9
 		Length: 1
 		Facings: 1
 
 eden-storage-common:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 23526
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 23526
 		Length: 27
 		Facings: 1
-	icon: towers.png
+	icon:
+		Filename: towers.png
 		Start: 2
 
 plymouth-storage-common:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 23586
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 23586
 		Length: 27
 		Facings: 1
-	icon: towers.png
+	icon:
+		Filename: towers.png
 		Start: 3
 
 eden-storage-rare:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 23553
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 23553
 		Length: 33
 		Facings: 1
-	icon: towers.png
+	icon:
+		Filename: towers.png
 		Start: 4
 
 plymouth-storage-rare:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 23613
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 23613
 		Length: 36
 		Facings: 1
-	icon: towers.png
+	icon:
+		Filename: towers.png
 		Start: 5
 
 eden-mine-common:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 14163
 		Length: 1
 		Facings: 1
 		Offset: -15, -4, 0
-	deck: op2_art.bmp
+	deck:
+		Filename: op2_art.bmp
 		Start: 24182
 		Length: 1
 		Facings: 1
 
 plymouth-mine-common:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 19945
 		Length: 1
 		Facings: 1
 		Offset: -15, -4, 0
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 19945
 		Length: 33
 		Facings: 1
-	deck: op2_art.bmp
+	deck:
+		Filename: op2_art.bmp
 		Start: 24182
 		Length: 1
 		Facings: 1
 
 eden-mine-rare:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 4108
 		Length: 1
 		Facings: 1
-	deck: op2_art.bmp
+	deck:
+		Filename: op2_art.bmp
 		Start: 24182
 		Length: 1
 		Facings: 1
 
 plymouth-mine-rare:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 10235
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 10235
 		Length: 61
 		Facings: 1
-	deck: op2_art.bmp
+	deck:
+		Filename: op2_art.bmp
 		Start: 24182
 		Length: 1
 		Facings: 1
 
 eden-mine-magma:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 4114
 		Length: 1
 		Facings: 1
-	deck: op2_art.bmp
+	deck:
+		Filename: op2_art.bmp
 		Start: 24182
 		Length: 1
 		Facings: 1
 
 plymouth-mhd-generator:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 13651
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 13651
 		Length: 40
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 51
 		Length: 1
 		Facings: 1
 
 eden-residence:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 10668
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 10668
 		Length: 56
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 10
 		Length: 1
 		Facings: 1
 
 plymouth-residence:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 10787
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 10787
 		Length: 47
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 11
 		Length: 1
 		Facings: 1
 
 eden-residence-advanced:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 11082
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 11082
 		Length: 53
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 12
 		Length: 1
 		Facings: 1
 
 plymouth-residence-reinforced:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 11195
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 11195
 		Length: 43
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 13
 		Length: 1
 		Facings: 1
 
 eden-dirt:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 12998
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 12998
 		Length: 30
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 30
 		Length: 1
 		Facings: 1
 
 plymouth-dirt:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 20576
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 20576
 		Length: 30
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 31
 		Length: 1
 		Facings: 1
 
 eden-gorf:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 3694
 		Length: 1
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 36
 		Length: 1
 		Facings: 1
 
 plymouth-gorf:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 17947
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 17947
 		Length: 41
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 37
 		Length: 1
 		Facings: 1
 
 eden-medical-center:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 10494
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 10494
 		Length: 32
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 20
 		Length: 1
 		Facings: 1
 
 plymouth-medical-center:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 10986
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 10986
 		Length: 36
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 21
 		Length: 1
 		Facings: 1
 
 eden-nursery:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 10399
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 10399
 		Length: 31
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 18
 		Length: 1
 		Facings: 1
 
 plymouth-nursery:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 10544
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 10544
 		Length: 21
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 19
 		Length: 1
 		Facings: 1
 
 eden-recreation-facility:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 10883
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 10883
 		Length: 20
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 40
 		Length: 1
 		Facings: 1
 
 plymouth-recreation-facility:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 10934
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 10934
 		Length: 20
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 41
 		Length: 1
 		Facings: 1
 
 eden-trade-center:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 12933
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 12933
 		Length: 30
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 38
 		Length: 1
 		Facings: 1
 
 plymouth-trade-center:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 13808
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 13808
 		Length: 51
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 39
 		Length: 1
 		Facings: 1
 
 eden-lab-basic:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 11299
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 11299
 		Length: 41
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 22
 		Length: 1
 		Facings: 1
 
 plymouth-lab-basic:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 23337
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 23337
 		Length: 60
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 23
 		Length: 1
 		Facings: 1
 
 eden-lab-standard:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 12592
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 12592
 		Length: 29
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 24
 		Length: 1
 		Facings: 1
 
 plymouth-lab-standard:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 12643
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 12643
 		Length: 34
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 25
 		Length: 1
 		Facings: 1
 
 eden-lab-advanced:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 10462
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 10462
 		Length: 10
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 26
 		Length: 1
 		Facings: 1
 
 plymouth-lab-advanced:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 11340
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 11340
 		Length: 20
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 27
 		Length: 1
 		Facings: 1
 
 eden-robot-command-center:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 11499
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 11499
 		Length: 68
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 34
 		Length: 1
 		Facings: 1
 
 plymouth-robot-command-center:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 11387
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 11387
 		Length: 72
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 35
 		Length: 1
 		Facings: 1
 
 eden-solar-power-array:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 13691
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 13691
 		Length: 66
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 46
 		Length: 1
 		Facings: 1
 
 plymouth-solar-power-array:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 13757
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 13757
 		Length: 30
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 47
 		Length: 1
 		Facings: 1
 
 eden-university:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 12426
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 12426
 		Length: 91
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 28
 		Length: 1
 		Facings: 1
 
 plymouth-university:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 13485
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 13485
 		Length: 68
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 29
 		Length: 1
 		Facings: 1
 
 eden-spaceport:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 13987
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 13987
 		Length: 30
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 42
 		Length: 1
 		Facings: 1
 
 plymouth-spaceport:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 14047
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 14047
 		Length: 78
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 43
 		Length: 1
 		Facings: 1
 
 eden-meteor-defense:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 9760
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 9760
 		Length: 82
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 48
 		Length: 1
 		Facings: 1
 
 eden-geothermal-plant:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 4361
 		Length: 1
 		Facings: 1
 
 plymouth-arachnid-factory:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 19870
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 19870
 		Length: 75
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 49
 		Length: 1
 		Facings: 1
 
 plymouth-forum:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 23307
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 23307
 		Length: 30
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 45
 		Length: 1
 		Facings: 1
 
 eden-consumer-factory:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 19423
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 19423
 		Length: 35
 		Facings: 1
 
 eden-observatory:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 12092
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 12092
 		Length: 61
 		Facings: 1
-	icon: buildings.png
+	icon:
+		Filename: buildings.png
 		Start: 50
 		Length: 1
 		Facings: 1
 
 eden-light-tower:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 11567
 		Length: 1
 		Facings: 1
-	active: op2_art.bmp
+	active:
+		Filename: op2_art.bmp
 		Start: 11567
 		Length: 41
 		Facings: 1
 
 plymouth-light-tower:
-	idle: op2_art.bmp
+	idle:
+		Filename: op2_art.bmp
 		Start: 1992
 		Length: 1
 		Facings: 1

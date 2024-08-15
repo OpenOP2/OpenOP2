@@ -201,12 +201,14 @@
 	RevealsShroud:
 		Range: 4c0
 	Refinery:
-		DockAngle: 270
-		DockOffset: 4,3
-	StoresResources:
+	StoresPlayerResources:
 		Capacity: 5000
 	WithIdleAnimation:
 		Interval: 300, 700
+	DockHost:
+		Type: Unload
+		DockAngle: 270
+		DockOffset: 1536,1024,0
 
 ^OreSmelterRare:
 	Inherits: ^Op2Building
@@ -245,12 +247,14 @@
 	RevealsShroud:
 		Range: 4c0
 	Refinery:
-		DockAngle: 270
-		DockOffset: 4,3
-	StoresResources:
+	StoresPlayerResources:
 		Capacity: 5000
 	WithIdleAnimation:
 		Interval: 450, 950
+	DockHost:
+		Type: Unload
+		DockAngle: 270
+		DockOffset: 1536,1024,0
 
 ^StructureFactory:
 	Inherits: ^Op2Building
