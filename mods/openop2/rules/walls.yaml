@@ -4,13 +4,13 @@
 		Queue: Defense
 		BuildPaletteOrder: 10
 		Prerequisites: ~techlevel.medium
-		Description: Stop units and blocks enemy fire.
+		Description: wall-lava.description
 	Valued:
 		Cost: 200
 	CustomSellValue:
 		Value: 0
 	Tooltip:
-		Name: Lava Wall
+		Name: wall-lava.name
 	Health:
 		HP: 40000
 	Armor:
@@ -34,13 +34,13 @@
 		Queue: Defense
 		BuildPaletteOrder: 10
 		Prerequisites: ~techlevel.medium
-		Description: Stops the blight.
+		Description: wall-microbe.description
 	Valued:
 		Cost: 400
 	CustomSellValue:
 		Value: 0
 	Tooltip:
-		Name: Microbe Wall
+		Name: wall-microbe.name
 	Health:
 		HP: 40000
 	Armor:
@@ -64,13 +64,13 @@
 		Queue: Defense
 		BuildPaletteOrder: 10
 		Prerequisites: ~techlevel.medium
-		Description: Stops (most) enemy units.
+		Description: wall-concrete.description
 	Valued:
 		Cost: 100
 	CustomSellValue:
 		Value: 0
 	Tooltip:
-		Name: Concrete Wall
+		Name: wall-concrete.name
 	Health:
 		HP: 40000
 	Armor:
@@ -87,15 +87,6 @@
 	#	CrushClasses: heavywall
 	WithWallSpriteBody:
 		Type: concrete
-
-concrete-wall:
-	Inherits: ^concrete-wall-rock
-
-lava-wall:
-	Inherits: ^lava-wall-rock
-
-microbe-wall:
-	Inherits: ^microbe-wall-rock
 
 ^lava-wall-mud:
 	Inherits: ^lava-wall
@@ -122,7 +113,7 @@ microbe-wall:
 		IconPalette: well0009.bmp
 
 ^microbe-wall-mud:
-	Inherits: ^lava-wall
+	Inherits: ^microbe-wall
 	RenderSprites:
 		Image: microbe-wall-mud
 		Palette: well0002.bmp
@@ -130,7 +121,7 @@ microbe-wall:
 		IconPalette: well0002.bmp
 
 ^microbe-wall-rock:
-	Inherits: ^lava-wall
+	Inherits: ^microbe-wall
 	RenderSprites:
 		Image: microbe-wall-rock
 		Palette: well0005.bmp
@@ -138,7 +129,7 @@ microbe-wall:
 		IconPalette: well0005.bmp
 
 ^microbe-wall-sand:
-	Inherits: ^lava-wall
+	Inherits: ^microbe-wall
 	RenderSprites:
 		Image: microbe-wall-sand
 		Palette: well0009.bmp
@@ -146,7 +137,7 @@ microbe-wall:
 		IconPalette: well0009.bmp
 
 ^concrete-wall-mud:
-	Inherits: ^lava-wall
+	Inherits: ^concrete-wall
 	RenderSprites:
 		Image: concrete-wall-mud
 		Palette: well0002.bmp
@@ -154,7 +145,7 @@ microbe-wall:
 		IconPalette: well0002.bmp
 
 ^concrete-wall-rock:
-	Inherits: ^lava-wall
+	Inherits: ^concrete-wall
 	RenderSprites:
 		Image: concrete-wall-rock
 		Palette: well0005.bmp
@@ -162,7 +153,7 @@ microbe-wall:
 		IconPalette: well0005.bmp
 
 ^concrete-wall-sand:
-	Inherits: ^lava-wall
+	Inherits: ^concrete-wall
 	RenderSprites:
 		Image: concrete-wall-sand
 		Palette: well0009.bmp
@@ -170,7 +161,7 @@ microbe-wall:
 		IconPalette: well0009.bmp
 
 ^concrete-wall-mud-damaged1:
-	Inherits: ^lava-wall
+	Inherits: ^concrete-wall
 	RenderSprites:
 		Image: concrete-wall-mud-damaged1
 		Palette: well0002.bmp
@@ -178,7 +169,7 @@ microbe-wall:
 		IconPalette: well0002.bmp
 
 ^concrete-wall-rock-damaged1:
-	Inherits: ^lava-wall
+	Inherits: ^concrete-wall
 	RenderSprites:
 		Image: concrete-wall-rock-damaged1
 		Palette: well0005.bmp
@@ -186,7 +177,7 @@ microbe-wall:
 		IconPalette: well0005.bmp
 
 ^concrete-wall-sand-damaged1:
-	Inherits: ^lava-wall
+	Inherits: ^concrete-wall
 	RenderSprites:
 		Image: concrete-wall-sand-damaged1
 		Palette: well0009.bmp
@@ -194,7 +185,7 @@ microbe-wall:
 		IconPalette: well0009.bmp
 
 ^concrete-wall-mud-damaged2:
-	Inherits: ^lava-wall
+	Inherits: ^concrete-wall
 	RenderSprites:
 		Image: concrete-wall-mud-damaged2
 		Palette: well0002.bmp
@@ -202,7 +193,7 @@ microbe-wall:
 		IconPalette: well0002.bmp
 
 ^concrete-wall-rock-damaged2:
-	Inherits: ^lava-wall
+	Inherits: ^concrete-wall
 	RenderSprites:
 		Image: concrete-wall-rock-damaged2
 		Palette: well0005.bmp
@@ -210,9 +201,18 @@ microbe-wall:
 		IconPalette: well0005.bmp
 
 ^concrete-wall-sand-damaged2:
-	Inherits: ^lava-wall
+	Inherits: ^concrete-wall
 	RenderSprites:
 		Image: concrete-wall-sand-damaged2
 		Palette: well0009.bmp
 	Buildable:
 		IconPalette: well0009.bmp
+
+concrete-wall:
+	Inherits: ^concrete-wall-rock
+
+lava-wall:
+	Inherits: ^lava-wall-rock
+
+microbe-wall:
+	Inherits: ^microbe-wall-rock

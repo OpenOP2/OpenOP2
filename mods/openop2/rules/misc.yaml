@@ -34,7 +34,7 @@ blight-spawn:
 	SpawnsBlight:
 		After: 0
 	EditorOnlyTooltip:
-		Name: Blight Spawn
+		Name: blight-spawn
 	AlwaysVisible:
 	Immobile:
 		OccupiesSpace: false

@@ -218,7 +218,7 @@ eden-lynx-laser:
 	RenderSprites:
 		Image: eden-lynx-laser
 	Tooltip:
-		Name: Laser Lynx
+		Name: laser.lynx
 	Armament:
 		Weapon: laser
 		LocalOffset: 430,0,170
@@ -231,7 +231,7 @@ eden-lynx-rail:
 	RenderSprites:
 		Image: eden-lynx-rail
 	Tooltip:
-		Name: Railgun Lynx
+		Name: railgun.lynx
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -246,7 +246,7 @@ eden-lynx-emp:
 	RenderSprites:
 		Image: eden-lynx-emp
 	Tooltip:
-		Name: EMP Lynx
+		Name: emp.lynx
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -263,7 +263,7 @@ plymouth-lynx-microwave:
 	RenderSprites:
 		Image: plymouth-lynx-microwave
 	Tooltip:
-		Name: Microwave Lynx
+		Name: microwave.lynx
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -278,7 +278,7 @@ plymouth-lynx-rpg:
 	RenderSprites:
 		Image: plymouth-lynx-rpg
 	Tooltip:
-		Name: RPG Lynx
+		Name: rpg.lynx
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -293,7 +293,7 @@ plymouth-lynx-emp:
 	RenderSprites:
 		Image: plymouth-lynx-emp
 	Tooltip:
-		Name: EMP Lynx
+		Name: emp.lynx
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -308,7 +308,7 @@ plymouth-lynx-stickyfoam:
 	RenderSprites:
 		Image: plymouth-lynx-stickyfoam
 	Tooltip:
-		Name: Stickyfoam Lynx
+		Name: stickyfoam.lynx
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -325,7 +325,7 @@ eden-panther-laser:
 	RenderSprites:
 		Image: eden-panther-laser
 	Tooltip:
-		Name: Laser Panther
+		Name: laser.panther
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -341,7 +341,7 @@ eden-panther-rail-gun:
 	RenderSprites:
 		Image: eden-panther-rail-gun
 	Tooltip:
-		Name: Laser Panther
+		Name: railgun.panther
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -357,7 +357,7 @@ eden-panther-emp:
 	RenderSprites:
 		Image: eden-panther-emp
 	Tooltip:
-		Name: EMP Panther
+		Name: emp.panther
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -375,7 +375,7 @@ plymouth-panther-microwave:
 	RenderSprites:
 		Image: plymouth-panther-microwave
 	Tooltip:
-		Name: Microwave Panther
+		Name: microwave.panther
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -391,7 +391,7 @@ plymouth-panther-rpg:
 	RenderSprites:
 		Image: plymouth-panther-rpg
 	Tooltip:
-		Name: RPG Panther
+		Name: rpg.panther
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -407,7 +407,7 @@ plymouth-panther-emp:
 	RenderSprites:
 		Image: plymouth-panther-emp
 	Tooltip:
-		Name: EMP Panther
+		Name: emp.panther
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -423,7 +423,7 @@ plymouth-panther-stickyfoam:
 	RenderSprites:
 		Image: plymouth-panther-stickyfoam
 	Tooltip:
-		Name: Stickyfoam Panther
+		Name: stickyfoam.panther
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -441,7 +441,7 @@ eden-tiger-laser:
 	RenderSprites:
 		Image: eden-tiger-laser
 	Tooltip:
-		Name: Laser Tiger
+		Name: laser.tiger
 	WithSpriteTurret:
 		Sequence: turret
 		#LocalOffset: 856,0,80
@@ -458,7 +458,7 @@ eden-tiger-rail-gun:
 	RenderSprites:
 		Image: eden-tiger-rail-gun
 	Tooltip:
-		Name: Railgun Tiger
+		Name: railgun.tiger
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -474,7 +474,7 @@ eden-tiger-emp:
 	RenderSprites:
 		Image: eden-tiger-emp
 	Tooltip:
-		Name: EMP Tiger
+		Name: emp.tiger
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -492,7 +492,7 @@ plymouth-tiger-microwave:
 	RenderSprites:
 		Image: plymouth-tiger-microwave
 	Tooltip:
-		Name: Microwave Tiger
+		Name: microwave.tiger
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -509,7 +509,7 @@ plymouth-tiger-rpg:
 	RenderSprites:
 		Image: plymouth-tiger-rpg
 	Tooltip:
-		Name: RPG Tiger
+		Name: rpg.tiger
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -525,7 +525,7 @@ plymouth-tiger-emp:
 	RenderSprites:
 		Image: plymouth-tiger-emp
 	Tooltip:
-		Name: EMP Tiger
+		Name: emp.tiger
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:
@@ -541,7 +541,7 @@ plymouth-tiger-stickyfoam:
 	RenderSprites:
 		Image: plymouth-tiger-stickyfoam
 	Tooltip:
-		Name: Stickyfoam Tiger
+		Name: stickyfoam.tiger
 	WithSpriteTurret:
 		Sequence: turret
 	Armament:

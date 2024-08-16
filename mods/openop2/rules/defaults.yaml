@@ -166,7 +166,7 @@
 	Guard:
 	Guardable:
 	Tooltip:
-		GenericName: Vehicle
+		GenericName: actor-vehicle.name
 	CaptureManager:
 		#BeingCapturedCondition: being-captured
 	Capturable:
@@ -246,7 +246,7 @@
 	Guard:
 	Guardable:
 	Tooltip:
-		GenericName: Ship
+		GenericName: actor-vehicle.name
 	MustBeDestroyed:
 	MapEditorData:
 		ExcludeTilesets: INTERIOR
@@ -307,7 +307,7 @@
 	#GpsDot:
 	#	String: Plane
 	Tooltip:
-		GenericName: Plane
+		GenericName: actor-vehicle.name
 	WithShadow:
 		Offset: 43, 128, 0
 		ZOffset: -129
@@ -332,7 +332,7 @@
 ^Helicopter:
 	Inherits: ^Plane
 	Tooltip:
-		GenericName: Helicopter
+		GenericName: actor-vehicle.name
 	Aircraft:
 		CanHover: True
 		CruisingCondition: cruising
@@ -388,7 +388,7 @@
 	FrozenUnderFog:
 	#FrozenUnderFogUpdatedByGps:
 	Tooltip:
-		GenericName: Structure
+		GenericName: actor-structure.name
 	Demolishable:
 	MapEditorData:
 		Categories: Building
@@ -733,7 +733,7 @@
 		RequiresForceFire: true
 	Chronoshiftable:
 	Tooltip:
-		GenericName: Destroyed Vehicle
+		GenericName: actor-destroyed-vehicle.name
 	BodyOrientation:
 
 ^PlaneHusk:
@@ -742,7 +742,7 @@
 		Offset: 43, 128, 0
 		ZOffset: -129
 	Tooltip:
-		GenericName: Destroyed Plane
+		GenericName: actor-destroyed-plane.name
 	Aircraft:
 	FallsToEarth:
 		Moves: True
@@ -760,7 +760,7 @@
 		Offset: 43, 128, 0
 		ZOffset: -129
 	Tooltip:
-		GenericName: Destroyed Helicopter
+		GenericName: actor-destroyed-heli.name
 	Aircraft:
 		CanHover: True
 		VTOL: true
@@ -829,8 +829,8 @@
 		Bounds: 24,24
 	HiddenUnderFog:
 	Tooltip:
-		Name: Crate
-		GenericName: Crate
+		Name: actor-crate.name
+		GenericName: actor-crate.name
 		ShowOwnerRow: false
 	Crate:
 		TerrainTypes: Clear,ClearSand,ClearRock,ClearRock2

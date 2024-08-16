@@ -74,7 +74,7 @@
 	BulldozesTerrainWhenCreated:
 		Size: 5,4
 	Tooltip:
-		Name: Command Center
+		Name: actor-command-center.name
 	Selectable:
 		Bounds: 3072,2624,0,-288
 	Building:
@@ -88,7 +88,7 @@
 		Queue: Building
 		BuildPaletteOrder: 10
 		Prerequisites: ~disabled
-		Description: Produces structures (for now).
+		Description: actor-command-center.description
 	Voiced:
 		VoiceSet: CommandCenterVoice
 	ProvidesPrerequisite@eden:
@@ -131,7 +131,7 @@
 	BulldozesTerrainWhenCreated:
 		Size: 4,4
 	Tooltip:
-		Name: Tokamak
+		Name: actor-tokamak.name
 	Selectable:
 		Bounds: 2048,2432,0,-192
 	Building:
@@ -145,7 +145,7 @@
 		Queue: Building
 		BuildPaletteOrder: 20
 		Prerequisites: ~disabled
-		Description: Produces power for your colony.
+		Description: actor-tokamak.description
 	Voiced:
 		VoiceSet: TokamakVoice
 	ProvidesPrerequisite:
@@ -171,7 +171,7 @@
 	BulldozesTerrainWhenCreated:
 		Size: 6,5
 	Tooltip:
-		Name: Ore Smelter (Common)
+		Name: actor-ore-smelter-common.name
 	Selectable:
 		Bounds: 4096,3264,0,-96
 	Building:
@@ -185,7 +185,7 @@
 		Queue: Building
 		BuildPaletteOrder: 30
 		Prerequisites: ~disabled
-		Description: Smelts raw common ore into credits.
+		Description: actor-ore-smelter-common.description
 	Voiced:
 		VoiceSet: OreSmelterVoice
 	ProvidesPrerequisite:
@@ -220,7 +220,7 @@
 	BulldozesTerrainWhenCreated:
 		Size: 6,5
 	Tooltip:
-		Name: Ore Smelter (Rare)
+		Name: actor-ore-smelter-rare.name
 	Selectable:
 		Bounds: 4096,3264,0,-96
 	Building:
@@ -234,7 +234,7 @@
 		Queue: Building
 		BuildPaletteOrder: 60
 		Prerequisites: ~disabled
-		Description: Smelts raw rare ore into credits.
+		Description: actor-ore-smelter-rare.description
 	Voiced:
 		VoiceSet: OreSmelterVoice
 	ProvidesPrerequisite:
@@ -269,7 +269,7 @@
 	BulldozesTerrainWhenCreated:
 		Size: 6,5
 	Tooltip:
-		Name: Structure Factory
+		Name: actor-structure-factory.name
 	Selectable:
 		Bounds: 4096,3264,0,-96
 	Building:
@@ -284,7 +284,7 @@
 		BuildPaletteOrder: 40
 		#Prerequisites: ~techlevel.infonly
 		Prerequisites: ~disabled
-		Description: Produces structures.
+		Description: actor-structure-factory.description
 		IconPalette: 6
 	Voiced:
 		VoiceSet: StructureFactoryVoice
@@ -308,7 +308,7 @@
 	BulldozesTerrainWhenCreated:
 		Size: 6,5
 	Tooltip:
-		Name: Vehicle Factory
+		Name: actor-vehicle-factory.name
 	Selectable:
 		Bounds: 4096,3264,0,-96
 	Building:
@@ -323,7 +323,7 @@
 		BuildPaletteOrder: 40
 		#Prerequisites: ~techlevel.infonly
 		Prerequisites: ~disabled
-		Description: Produces vehicles.
+		Description: actor-vehicle-factory.description
 		IconPalette: 6
 	Voiced:
 		VoiceSet: VehicleFactoryVoice
@@ -379,8 +379,8 @@
 		Size: 4,3
 		Offset: -2,-1
 	Tooltip:
-		Name: Mine (Common)
-		GenericName: Mine
+		Name: actor-mine-common.name
+		GenericName: actor-mine.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -445,8 +445,8 @@
 		Size: 3,3
 		Offset: -1,-1
 	Tooltip:
-		Name: Mine (Rare)
-		GenericName: Mine
+		Name: actor-mine-rare.name
+		GenericName: actor-mine.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -511,8 +511,8 @@
 		Size: 3,3
 		Offset: -1,-1
 	Tooltip:
-		Name: Mine (Magma)
-		GenericName: Mine
+		Name: actor-mine-magma.name
+		GenericName: actor-mine.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -576,8 +576,8 @@
 	BulldozesTerrainWhenCreated:
 		Size: 3,3
 	Tooltip:
-		Name: Storage (Common)
-		GenericName: Ore Storage
+		Name: actor-storage-common.name
+		GenericName: actor-storage.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -606,8 +606,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^1x1Shape
 	Tooltip:
-		Name: Storage (Rare)
-		GenericName: Ore Storage
+		Name: actor-storage-rare.name
+		GenericName: actor-storage.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -636,8 +636,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^1x1Shape
 	Tooltip:
-		Name: Agridome
-		GenericName: Agridome
+		Name: actor-agridome.name
+		GenericName: actor-agridome.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -666,8 +666,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^1x1Shape
 	Tooltip:
-		Name: MHD Generator
-		GenericName: MHD Generator
+		Name: actor-mhd-generator.name
+		GenericName: actor-mhd-generator.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -696,8 +696,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Residence
-		GenericName: Residence
+		Name: actor-residence.name
+		GenericName: actor-residence.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -726,8 +726,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: DIRT
-		GenericName: DIRT
+		Name: actor-dirt.name
+		GenericName: actor-dirt.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -756,8 +756,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: GORF
-		GenericName: GORF
+		Name: actor-gorf.name
+		GenericName: actor-gorf.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -784,8 +784,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Medical Center
-		GenericName: Medical Center
+		Name: actor-medical-center.name
+		GenericName: actor-medical-center.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -814,8 +814,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Nursery
-		GenericName: Nursery
+		Name: actor-nursery.name
+		GenericName: actor-nursery.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -844,8 +844,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Recreation Facility
-		GenericName: Recreation Facility
+		Name: actor-recreation-facility.name
+		GenericName: actor-recreation-facility.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -874,8 +874,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Trade Center
-		GenericName: Trade Center
+		Name: actor-trade-center.name
+		GenericName: actor-trade-center.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -904,8 +904,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Laboratory
-		GenericName: Laboratory
+		Name: actor-laboratory.name
+		GenericName: actor-laboratory.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -934,8 +934,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Robot Command Center
-		GenericName: Robot Command Center
+		Name: actor-robot-command-center.name
+		GenericName: actor-robot-command-center.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -964,8 +964,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Solar Power Array
-		GenericName: Solar Power Array
+		Name: actor-solar-power-array.name
+		GenericName: actor-solar-power-array.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -994,8 +994,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: University
-		GenericName: University
+		Name: actor-university.name
+		GenericName: actor-university.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -1024,8 +1024,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Spaceport
-		GenericName: Spaceport
+		Name: actor-spaceport.name
+		GenericName: actor-spaceport.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -1054,8 +1054,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Meteor Defense
-		GenericName: Meteor Defense
+		Name: actor-meteor-defense.name
+		GenericName: actor-meteor-defense.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -1084,8 +1084,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Geothermal Plant
-		GenericName: Geothermal Plant
+		Name: actor-geothermal-plant.name
+		GenericName: actor-geothermal-plant.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -1112,8 +1112,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Arachnid Factory
-		GenericName: Arachnid Factory
+		Name: actor-arachnid-factory.name
+		GenericName: actor-arachnid-factory.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -1142,8 +1142,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Forum
-		GenericName: Forum
+		Name: actor-forum.name
+		GenericName: actor-forum.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -1172,8 +1172,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Consumer Factory
-		GenericName: Consumer Factory
+		Name: actor-consumer-factory.name
+		GenericName: actor-consumer-factory.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -1200,8 +1200,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
 	Tooltip:
-		Name: Observatory
-		GenericName: Observatory
+		Name: actor-observatory.name
+		GenericName: actor-observatory.name
 	Selectable:
 		Bounds: 1152,1664,0,-192
 	Building:
@@ -1230,8 +1230,8 @@
 	Inherits: ^Building
 	Inherits@shape: ^1x1Shape
 	Tooltip:
-		Name: Light Tower
-		GenericName: Light Tower
+		Name: actor-light-tower.name
+		GenericName: actor-light-tower.name
 	Selectable:
 		Bounds: 1152,1152,0,0
 	Building:
@@ -1262,8 +1262,8 @@
 	Inherits@shape: ^1x1Shape
 	Inherits: ^AutoTargetGround
 	Tooltip:
-		Name: Guard Post
-		GenericName: Guard Post
+		Name: actor-guard-post.name
+		GenericName: actor-guard-post.name
 	Selectable:
 		Bounds: 1152,1152,0,0
 	Building:
@@ -1277,7 +1277,7 @@
 		Queue: Defense
 		BuildPaletteOrder: 20
 		Prerequisites: ~disabled
-		Description: Basic defense turret.
+		Description: actor-guard-post.description
 		IconPalette: 3
 	#Voiced:
 	#	VoiceSet: TurretVoice

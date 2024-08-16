@@ -1,6 +1,6 @@
 Player:
 	ModularBot@NormalAI:
-		Name: HTPHarold AI
+		Name: bot.harold
 		Type: normal
 	GrantConditionOnBotOwner@normal:
 		Condition: enable-normal-ai

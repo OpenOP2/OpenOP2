@@ -4,72 +4,72 @@
 			ore.unsurveyed.common1:
 				Sequences: ore
 				Palette: 3
-				Name: Ore (Unsurveyed)
+				Name: ore.unsurveyed
 			ore.unsurveyed.common2:
 				Sequences: ore
 				Palette: 3
-				Name: Ore (Unsurveyed)
+				Name: ore.unsurveyed
 			ore.unsurveyed.common3:
 				Sequences: ore
 				Palette: 3
-				Name: Ore (Unsurveyed)
+				Name: ore.unsurveyed
 			ore.unsurveyed.rare1:
 				Sequences: ore
 				Palette: 3
-				Name: Ore (Unsurveyed)
+				Name: ore.unsurveyed
 			ore.unsurveyed.rare2:
 				Sequences: ore
 				Palette: 3
-				Name: Ore (Unsurveyed)
+				Name: ore.unsurveyed
 			ore.unsurveyed.rare3:
 				Sequences: ore
 				Palette: 3
-				Name: Ore (Unsurveyed)
+				Name: ore.unsurveyed
 			ore.common1:
 				Sequences: ore-common-low
 				Palette: 5
-				Name: Common Ore (1)
+				Name: ore.common1
 			ore.common2:
 				Sequences: ore-common-medium
 				Palette: 5
-				Name: Common Ore (2)
+				Name: ore.common2
 			ore.common3:
 				Sequences: ore-common-high
 				Palette: 5
-				Name: Common Ore (3)
+				Name: ore.common3
 			ore.rare1:
 				Sequences: ore-rare-low
 				Palette: 6
-				Name: Rare Ore (1)
+				Name: ore.rare1
 			ore.rare2:
 				Sequences: ore-rare-medium
 				Palette: 6
-				Name: Rare Ore (2)
+				Name: ore.rare2
 			ore.rare3:
 				Sequences: ore-rare-high
 				Palette: 6
-				Name: Rare Ore (3)
+				Name: ore.rare3
 			ore.depot.common1:
 				Sequences: ore-common-low
 				Palette: 5
-				Name: Common Ore (1)
+				Name: ore.common1
 			ore.depot.common2:
 				Sequences: ore-common-medium
 				Palette: 5
-				Name: Common Ore (2)
+				Name: ore.common2
 			ore.depot.common3:
 				Sequences: ore-common-high
 				Palette: 5
-				Name: Common Ore (3)
+				Name: ore.common3
 			ore.depot.rare1:
 				Sequences: ore-rare-low
 				Palette: 6
-				Name: Rare Ore (1)
+				Name: ore.rare1
 			ore.depot.rare2:
 				Sequences: ore-rare-medium
 				Palette: 6
-				Name: Rare Ore (2)
+				Name: ore.rare2
 			ore.depot.rare3:
 				Sequences: ore-rare-high
 				Palette: 6
-				Name: Rare Ore (3)
+				Name: ore.rare3

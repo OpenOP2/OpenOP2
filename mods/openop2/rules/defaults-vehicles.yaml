@@ -3,7 +3,7 @@
 	Inherits: ^EmpDisable
 	Inherits: ^StickyFoam
 	Tooltip:
-		Name: Op2Vehicle
+		Name: actor-vehicle.name
 	WithInfantryBody:
 		IdleSequences: idle
 		StandSequences: idle
@@ -50,14 +50,14 @@
 		BuildPaletteOrder: 10
 		#Prerequisites: ~techlevel.infonly
 		Prerequisites: ~vehicles
-		Description: Construction vehicle for constructing buildings.
+		Description: actor-convec.description
 		IconPalette: 3
 	Voiced:
 		VoiceSet: ConVecVoice
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Construction Vehicle (ConVec)
+		Name: actor-convec.name
 	Health:
 		HP: 400
 	Armor:
@@ -74,14 +74,14 @@
 		BuildPaletteOrder: 10
 		#Prerequisites: ~techlevel.infonly
 		Prerequisites: ~vehicles
-		Description: Truck your minerals around with the cargo truck.
+		Description: actor-cargotruck.description
 		IconPalette: 2
 	Voiced:
 		VoiceSet: CargoTruckVoice
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Cargo Truck
+		Name: actor-cargotruck.name
 	Health:
 		HP: 400
 	Armor:
@@ -124,14 +124,14 @@
 		BuildPaletteOrder: 20
 		#Prerequisites: ~techlevel.infonly
 		Prerequisites: ~vehicles
-		Description: Surveys mineral deposits.
+		Description: actor-robosurveyor.description
 		IconPalette: 5
 	Voiced:
 		VoiceSet: RoboSurveyorVoice
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Robo-Surveyor
+		Name: actor-robosurveyor.name
 	Health:
 		HP: 125
 	RevealsShroud:
@@ -168,14 +168,14 @@
 		BuildPaletteOrder: 20
 		#Prerequisites: ~techlevel.infonly
 		Prerequisites: ~vehicles
-		Description: Constructs mines on valuable mineral deposits.
+		Description: actor-robominer.description
 		IconPalette: 5
 	Voiced:
 		VoiceSet: RoboMinerVoice
 	Valued:
 		Cost: 700
 	Tooltip:
-		Name: Robo-Miner
+		Name: actor-robominer.name
 	Health:
 		HP: 400
 	Armor:
@@ -198,14 +198,14 @@
 		BuildPaletteOrder: 30
 		#Prerequisites: ~techlevel.infonly
 		Prerequisites: ~vehicles
-		Description: Can clear rough terrain so it can be built upon.
+		Description: actor-robodozer.description
 		IconPalette: 5
 	Voiced:
 		VoiceSet: RoboDozerVoice
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Robo-Dozer
+		Name: actor-robodozer.name
 	Health:
 		HP: 250
 	Armor:
@@ -222,14 +222,14 @@
 		BuildPaletteOrder: 30
 		#Prerequisites: ~techlevel.infonly
 		Prerequisites: ~vehicles
-		Description: Can build pipelines and walls.
+		Description: actor-earthworker.description
 		IconPalette: 5
 	Voiced:
 		VoiceSet: EarthworkerVoice
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Earthworker
+		Name: actor-earthworker.name
 	Health:
 		HP: 250
 	Armor:
@@ -246,14 +246,14 @@
 		BuildPaletteOrder: 30
 		#Prerequisites: ~techlevel.infonly
 		#Prerequisites: ~vehicles
-		Description: Fast scout vehicle.
+		Description: actor-scout.description
 		IconPalette: 5
 	Voiced:
 		VoiceSet: ScoutVoice
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: Scout
+		Name: actor-scout.name
 	Health:
 		HP: 300
 	Armor:
@@ -270,14 +270,14 @@
 		BuildPaletteOrder: 40
 		#Prerequisites: ~techlevel.infonly
 		#Prerequisites: ~vehicles
-		Description: Basic combat vehicle.
+		Description: actor-lynx.description
 		IconPalette: 5
 	Voiced:
 		VoiceSet: LynxVoice
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: Lynx
+		Name: actor-lynx.name
 	Health:
 		HP: 300
 	Armor:
@@ -299,14 +299,14 @@
 		BuildPaletteOrder: 50
 		#Prerequisites: ~techlevel.infonly
 		#Prerequisites: ~vehicles
-		Description: Standard combat vehicle.
+		Description: actor-panther.description
 		IconPalette: 5
 	Voiced:
 		VoiceSet: PantherVoice
 	Valued:
 		Cost: 1250
 	Tooltip:
-		Name: Panther
+		Name: actor-panther.name
 	Health:
 		HP: 500
 	Armor:
@@ -328,14 +328,14 @@
 		BuildPaletteOrder: 60
 		#Prerequisites: ~techlevel.infonly
 		#Prerequisites: ~vehicles
-		Description: Advanced combat vehicle.
+		Description: actor-tiger.description
 		IconPalette: 5
 	Voiced:
 		VoiceSet: TigerVoice
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Tiger
+		Name: actor-tiger.name
 	Health:
 		HP: 800
 	Armor:
