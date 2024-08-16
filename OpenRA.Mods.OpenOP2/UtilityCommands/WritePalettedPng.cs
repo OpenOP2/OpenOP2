@@ -10,31 +10,25 @@
 #endregion
 
 using System;
-using System.Collections.Generic;
 using OpenRA.FileFormats;
 using OpenRA.Primitives;
 
 namespace OpenRA.Mods.OpenOP2.UtilityCommands
 {
-	class WritePalettedPngCommand : IUtilityCommand
+	sealed class WritePalettedPngCommand : IUtilityCommand
 	{
 		string IUtilityCommand.Name => "--write-paletted-png";
-		bool IUtilityCommand.ValidateArguments(string[] args) { return ValidateArguments(args); }
+		bool IUtilityCommand.ValidateArguments(string[] args) { return true; }
 
 		[Desc("Writes a patterned indexed8 PNG out to c:\\temp\\!overlay.png.")]
 		void IUtilityCommand.Run(Utility utility, string[] _) { Run(utility); }
 
-		public bool ValidateArguments(IReadOnlyCollection<string> args)
-		{
-			return args.Count >= 0;
-		}
-
-		void Run(Utility utility)
+		static void Run(Utility utility)
 		{
 			const byte EmptyIndex = 0;
 			const byte ValidIndex = 150;
 			const byte InvalidIndex = 149;
-			var filePath = "C:\\temp\\!overlay.png";
+			const string FilePath = "C:\\temp\\!overlay.png";
 
 			// HACK: The engine code assumes that Game.modData is set.
 			Game.ModData = utility.ModData;
@@ -82,9 +76,9 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			palette[InvalidIndex] = invalidColor;
 
 			var png = new Png(bytes, OpenRA.Graphics.SpriteFrameType.Indexed8, width, height, palette, null);
-			png.Save(filePath);
+			png.Save(FilePath);
 
-			Console.WriteLine($"'{filePath}' saved.");
+			Console.WriteLine($"'{FilePath}' saved.");
 		}
 	}
 }

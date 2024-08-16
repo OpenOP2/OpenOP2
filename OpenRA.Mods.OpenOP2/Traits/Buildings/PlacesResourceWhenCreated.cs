@@ -21,7 +21,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 	{
 		public override object Create(ActorInitializer init) { return new PlacesResourcesWhenCreated(init.Self, this); }
 
-		[FieldLoader.LoadUsing("LoadReplacements")]
+		[FieldLoader.LoadUsing(nameof(LoadReplacements))]
 		public Dictionary<string, MinerNodeResourceReplacementInfo> Replacements;
 
 		static object LoadReplacements(MiniYaml yaml)

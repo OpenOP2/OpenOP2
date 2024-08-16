@@ -12,7 +12,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using OpenRA.FileFormats;
 using OpenRA.FileSystem;
 using OpenRA.Graphics;
 using OpenRA.Mods.Common.Traits;
@@ -22,7 +21,7 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.OpenOP2.Traits
 {
 	[Desc("Loads palettes from a .prt file.")]
-	class PaletteFromPrtFileInfo : TraitInfo, IProvidesCursorPaletteInfo
+	sealed class PaletteFromPrtFileInfo : TraitInfo, IProvidesCursorPaletteInfo
 	{
 		[PaletteDefinition]
 		[FieldLoader.Require]
@@ -31,10 +30,10 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 		[Desc("Defines for which tileset IDs this palette should be loaded.",
 			"If none specified, it applies to all tileset IDs not explicitly excluded.")]
-		public readonly HashSet<string> Tilesets = new HashSet<string>();
+		public readonly HashSet<string> Tilesets = new();
 
 		[Desc("Don't load palette for these tileset IDs.")]
-		public readonly HashSet<string> ExcludeTilesets = new HashSet<string>();
+		public readonly HashSet<string> ExcludeTilesets = new();
 
 		[Desc("Name of the file to load.")]
 		public readonly string Filename = null;
@@ -97,13 +96,14 @@ namespace OpenRA.Mods.OpenOP2.Traits
 				}
 
 				// WritePaletteToPng(paletteData, Number);
-				framePalettes = paletteData.Select(d => (uint)d.ToArgb()).ToArray();
+				framePalettes = paletteData.Select(d => d.ToArgb()).ToArray();
 
 				return new ImmutablePalette(Enumerable.Range(0, Palette.Size).Select(i => (i == TransparentIndex) ? 0 : framePalettes[i]));
 			}
 		}
 
-		void WritePaletteToPng(Color[] colors, int number)
+		/*
+		static void WritePaletteToPng(Color[] colors, int number)
 		{
 			var blockSize = 8;
 			var colorMap = new Color[16 * blockSize, 16 * blockSize];
@@ -140,9 +140,10 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			var png = new Png(bytes, SpriteFrameType.Rgba32, 16 * blockSize, 16 * blockSize);
 			png.Save($"..\\..\\palette{number}.png");
 		}
+		*/
 	}
 
-	class PaletteFromPrtFile : ILoadsPalettes, IProvidesAssetBrowserPalettes
+	sealed class PaletteFromPrtFile : ILoadsPalettes, IProvidesAssetBrowserPalettes
 	{
 		readonly World world;
 		readonly PaletteFromPrtFileInfo info;

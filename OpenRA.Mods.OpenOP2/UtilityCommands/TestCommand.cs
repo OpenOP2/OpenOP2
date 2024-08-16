@@ -16,7 +16,7 @@ using System.Text;
 
 namespace OpenRA.Mods.OpenOP2.UtilityCommands
 {
-	class TestingCommand : IUtilityCommand
+	sealed class TestingCommand : IUtilityCommand
 	{
 		const string OutputFilename = "..\\..\\mods\\openop2\\op2-groups.yaml";
 
@@ -26,12 +26,12 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 		[Desc("FILENAME", "Just for debug and test.")]
 		void IUtilityCommand.Run(Utility utility, string[] args) { Run(utility); }
 
-		public bool ValidateArguments(IReadOnlyCollection<string> args)
+		public static bool ValidateArguments(IReadOnlyCollection<string> args)
 		{
 			return args.Count >= 1;
 		}
 
-		void Run(Utility utility)
+		static void Run(Utility utility)
 		{
 			// HACK: The engine code assumes that Game.modData is set.
 			Game.ModData = utility.ModData;
@@ -45,9 +45,9 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					sw.Write(sb.ToString());
 				}
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
-				Console.WriteLine("Couldn't write destination file.", ex);
+				// Console.WriteLine("Couldn't write destination file.", ex);
 				throw;
 			}
 

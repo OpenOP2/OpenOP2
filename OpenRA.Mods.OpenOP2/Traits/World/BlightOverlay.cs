@@ -78,7 +78,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		public readonly int RandomSearchMax = 8;
 
 		[Desc("Apply the damage using these DamageTypes.")]
-		public readonly BitSet<DamageType> DamageTypes = default(BitSet<DamageType>);
+		public readonly BitSet<DamageType> DamageTypes = default;
 
 		[Desc("Play this notification from the Speech section when the blight is triggered.")]
 		public readonly string StartVoice;
@@ -117,14 +117,14 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		TerrainSpriteLayer blightLayer;
 		WorldRenderer worldRenderer;
 		Sprite[] blightSprites;
-		readonly HashSet<CPos> blightedCells = new HashSet<CPos>();
-		readonly Dictionary<CPos, FrontierCell> frontier = new Dictionary<CPos, FrontierCell>();
-		readonly Dictionary<CPos, int> terrainCostMap = new Dictionary<CPos, int>();
+		readonly HashSet<CPos> blightedCells = new();
+		readonly Dictionary<CPos, FrontierCell> frontier = new();
+		readonly Dictionary<CPos, int> terrainCostMap = new();
 		Locomotor locomotor;
-		readonly List<Actor> blightedActors = new List<Actor>();
-		List<RepelsBlight> repelsBlights = new List<RepelsBlight>();
-		readonly Dictionary<CPos, int> spreadBlacklist = new Dictionary<CPos, int>();
-		List<TraitPair<SpawnsBlight>> blightSpawnActors = new List<TraitPair<SpawnsBlight>>();
+		readonly List<Actor> blightedActors = new();
+		List<RepelsBlight> repelsBlights = new();
+		readonly Dictionary<CPos, int> spreadBlacklist = new();
+		List<TraitPair<SpawnsBlight>> blightSpawnActors = new();
 		int startDelayCount;
 		bool started;
 
@@ -232,7 +232,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 				var randomCells = frontier
 					.Where(x => !spreadBlacklist.ContainsKey(x.Key))
 					.OrderByDescending(r =>
-						(r.Value.TerrainTypeWeighting / 10) +
+						r.Value.TerrainTypeWeighting / 10 +
 						r.Value.NumBlightedNeighbors + (info.FuzzPivot - world.SharedRandom.Next(0, info.FuzzMax)))
 					.Take(numCells)
 					.Select(x => x.Key)
@@ -371,7 +371,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 			// BlightAnyActorsAtPosition(pos);
 			// Get all neighbors
-			var neighbors = new HashSet<CPos>();
+			_ = new HashSet<CPos>();
 			for (var y = -1; y < 2; y++)
 			{
 				for (var x = -1; x < 2; x++)
@@ -407,7 +407,6 @@ namespace OpenRA.Mods.OpenOP2.Traits
 						if (frontierCell.NumBlightedNeighbors == 0)
 						{
 							frontier.Remove(neighborPos);
-							frontierContains = false;
 						}
 					}
 
@@ -433,10 +432,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			if (world.ActorMap.AnyActorsAt(pos))
 			{
 				var newBlightedActors = SearchForActors(pos);
-				foreach (var actor in newBlightedActors)
-				{
-					blightedActors.Add(actor);
-				}
+				blightedActors.AddRange(newBlightedActors);
 			}
 		}
 
@@ -481,9 +477,9 @@ namespace OpenRA.Mods.OpenOP2.Traits
 				}
 			}
 
-			var topLeft = neighbors.Any(neighbor => (neighbor - pos) == new CVec(-1, -1));
-			var top = neighbors.Any(neighbor => (neighbor - pos) == new CVec(0, -1));
-			var left = neighbors.Any(neighbor => (neighbor - pos) == new CVec(-1, 0));
+			var topLeft = neighbors.Any(neighbor => neighbor - pos == new CVec(-1, -1));
+			var top = neighbors.Any(neighbor => neighbor - pos == new CVec(0, -1));
+			var left = neighbors.Any(neighbor => neighbor - pos == new CVec(-1, 0));
 
 			// 0: Empty
 			// 1: TR Inner
@@ -633,15 +629,15 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			return actors;
 		}
 
-		class BlightVictimActor
+		sealed class BlightVictimActor
 		{
 			public Actor Actor;
 			public int DelayCount;
 			public bool IsCompleted => DelayCount == 0;
 		}
 
-		List<BlightVictimActor> blightVictims = new List<BlightVictimActor>();
-		readonly Queue<Actor> randomlySelectedVictims = new Queue<Actor>();
+		List<BlightVictimActor> blightVictims = new();
+		readonly Queue<Actor> randomlySelectedVictims = new();
 
 		void TickDamageOnExistingActors()
 		{
@@ -692,8 +688,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 			// Each damage tick, add (min to max) actors to be damaged next tick
 			var numExpiredVictims = damagedVictims.Count;
-			var numNewVictims = numExpiredVictims +
-			                    world.SharedRandom.Next(info.ActorsToDamageMin, info.ActorsToDamageMax);
+			var numNewVictims = numExpiredVictims + world.SharedRandom.Next(info.ActorsToDamageMin, info.ActorsToDamageMax);
 			if (numNewVictims > 0)
 			{
 				if (randomlySelectedVictims.Count < numNewVictims)

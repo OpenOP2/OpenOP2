@@ -30,17 +30,17 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 		static BitmapSpriteFrame[] ParseFrames(Stream s)
 		{
-			var numTiles = 16;
+			const int NumTiles = 16;
 			var start = s.Position;
 			var frames = new List<BitmapSpriteFrame>();
 			const int TileWidth = 32;
 
-			var numPixels = TileWidth * TileWidth;
-			var numBytesPerTile = numPixels / 8;
-			var dataSize = new Size(TileWidth, TileWidth);
+			const int NumPixels = TileWidth * TileWidth;
+			var numBytesPerTile = NumPixels / 8;
+			_ = new Size(TileWidth, TileWidth);
 			var size = new Size(TileWidth, TileWidth);
 			s.Seek(0, SeekOrigin.Begin);
-			for (var i = 0; i < numTiles; i++)
+			for (var i = 0; i < NumTiles; i++)
 			{
 				var bytes = s.ReadBytes(numBytesPerTile);
 				var swappedBytes = new List<byte>();
@@ -53,8 +53,8 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 				var newBytes = swappedBytes.ToArray();
 
 				var bits = new BitArray(newBytes);
-				var unpackedBytes = new byte[numPixels];
-				for (var byteI = 0; byteI < numPixels; byteI++)
+				var unpackedBytes = new byte[NumPixels];
+				for (var byteI = 0; byteI < NumPixels; byteI++)
 				{
 					unpackedBytes[byteI] = (byte)(bits[byteI] ? 1 : 0);
 				}

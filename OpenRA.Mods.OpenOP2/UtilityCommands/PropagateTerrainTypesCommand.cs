@@ -18,7 +18,7 @@ using System.Text.RegularExpressions;
 
 namespace OpenRA.Mods.OpenOP2.UtilityCommands
 {
-	class PropagateTerrainTypesCommand : IUtilityCommand
+	sealed class PropagateTerrainTypesCommand : IUtilityCommand
 	{
 		string IUtilityCommand.Name => "--propagate-terrain-types";
 		bool IUtilityCommand.ValidateArguments(string[] args) { return ValidateArguments(args); }
@@ -26,12 +26,12 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 		[Desc("FILENAME", "Copies the tile terrain types from the grouped sets into the raw tile definitions used by imported maps.")]
 		void IUtilityCommand.Run(Utility utility, string[] args) { Run(utility, args); }
 
-		public bool ValidateArguments(IReadOnlyCollection<string> args)
+		public static bool ValidateArguments(IReadOnlyCollection<string> args)
 		{
 			return args.Count >= 2;
 		}
 
-		void Run(Utility utility, string[] args)
+		static void Run(Utility utility, string[] args)
 		{
 			const string TilesetsPath = "..\\..\\mods\\openop2\\tilesets";
 
@@ -48,12 +48,12 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				var lines = stream.ReadAllLines().ToArray();
 
 				const string FramesTemplate = "\t\tFrames: ";
-				Func<string, int[]> extractFrames = (ln) =>
+				static int[] ExtractFrames(string ln)
 				{
 					var restOfLine = ln.Replace(FramesTemplate, string.Empty);
 					var frameStrArray = restOfLine.Split(new char[] { ',' });
 					return frameStrArray.Select(x => int.Parse(x.Trim())).ToArray();
-				};
+				}
 
 				const string IdTemplate = "\t\tId: ";
 				const string ImagesTemplate = "\t\tImages: ";
@@ -61,7 +61,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				const string TileTerrainRegex = @"^\s\s\s(0?\d|\d\d):\s";
 				var currentImage = string.Empty;
 				var lineIndex = 0;
-				int[] frames = Array.Empty<int>();
+				var frames = Array.Empty<int>();
 				foreach (var line in lines)
 				{
 					var newLine = line;
@@ -83,7 +83,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					}
 					else if (line.StartsWith(FramesTemplate))
 					{
-						frames = extractFrames(line);
+						frames = ExtractFrames(line);
 
 						if (!dict.ContainsKey(currentImage))
 						{
@@ -138,18 +138,18 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					}
 					else if (line.StartsWith(FramesTemplate))
 					{
-						frames = extractFrames(line);
+						frames = ExtractFrames(line);
 
-						if (dict.ContainsKey(currentImage))
+						if (dict.TryGetValue(currentImage, out var value))
 						{
-							var currentDictionary = dict[currentImage];
+							var currentDictionary = value;
 							var frameIndex = 0;
 							foreach (var frameId in frames)
 							{
-								if (currentDictionary.ContainsKey(frameId))
+								if (currentDictionary.TryGetValue(frameId, out var value2))
 								{
 									// Found a replacement
-									var terrainType = currentDictionary[frameId];
+									var terrainType = value2;
 									tileDefs.Add(frameIndex, terrainType);
 								}
 
@@ -167,9 +167,9 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 							throw new Exception($"Couldn't parse digit: {restOfLine}");
 						}
 
-						if (tileDefs.ContainsKey(tileIndex))
+						if (tileDefs.TryGetValue(tileIndex, out var value))
 						{
-							var tileDef = tileDefs[tileIndex];
+							var tileDef = value;
 							if (restOfLine != tileDef)
 							{
 								newLine = extractedPrefix + tileDef; // \t\t\t0: ClearMud
@@ -191,9 +191,9 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					sw.Write(sb.ToString());
 				}
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
-				Console.WriteLine("Couldn't write destination filename.", ex);
+				// Console.WriteLine("Couldn't write destination filename.", ex);
 				throw;
 			}
 

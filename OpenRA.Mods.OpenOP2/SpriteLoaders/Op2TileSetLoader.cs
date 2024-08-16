@@ -30,18 +30,17 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			var start = s.Position;
 			var frames = new List<BitmapSpriteFrame>();
 			const int TileWidth = 32;
-			var dataSize = new Size(TileWidth * 8, TileWidth * 8);
+			_ = new Size(TileWidth * 8, TileWidth * 8);
 			var size = new Size(TileWidth, TileWidth);
-			var frameSize = new Size(0, 0);
+			_ = new Size(0, 0);
 			s.Seek(12, SeekOrigin.Begin);
-			var something = s.ReadDouble();
+			_ = s.ReadDouble();
 			var width = s.ReadUInt32();
 			var height = s.ReadUInt32();
 			var numTiles = height / width;
 			s.Seek(1088, SeekOrigin.Begin);
-			var header = s.ReadASCII(4);
-
-			var blockSize = s.ReadUInt32();
+			_ = s.ReadASCII(4);
+			_ = s.ReadUInt32();
 			for (var i = 0; i < numTiles; i++)
 			{
 				var bytes = s.ReadBytes(TileWidth * TileWidth);

@@ -17,9 +17,9 @@ using OpenRA.FileSystem;
 
 namespace OpenRA.Mods.OpenOP2.UtilityCommands
 {
-	class ImportOp2MapCommand : IUtilityCommand
+	sealed class ImportOp2MapCommand : IUtilityCommand
 	{
-		class ClipRect
+		sealed class ClipRect
 		{
 			public int X1;
 			public int X2;
@@ -27,13 +27,13 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			public int Y2;
 		}
 
-		class TileSetInfo
+		sealed class TileSetInfo
 		{
 			public int NumTiles;				// Number of tiles in this tile set
 			public string TileSetName;			// File name of the tile set, as Outpost2 sees it
 		}
 
-		class TileSetMapping
+		sealed class TileSetMapping
 		{
 			public short TileSetIndex;
 			public short TileIndex;
@@ -41,7 +41,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			public short CycleDelay;
 		}
 
-		class TerrainType
+		sealed class TerrainType
 		{
 			// public short FirstTile;		// First tile index in this terrain type class
 			// public short LastTile;			// Last tile index in this terrain type class
@@ -70,7 +70,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 		Map map;
 		MapPlayers mapPlayers;
 
-		public bool ValidateArguments(IReadOnlyCollection<string> args)
+		public static bool ValidateArguments(IReadOnlyCollection<string> args)
 		{
 			return args.Count >= 2;
 		}
@@ -98,16 +98,16 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				// Round height up to nearest power of 2
 				var newHeight = tileHeight;
 				newHeight -= 1;
-				newHeight |= (newHeight >> 1);
-				newHeight |= (newHeight >> 2);
-				newHeight |= (newHeight >> 4);
-				newHeight |= (newHeight >> 8);
-				newHeight |= (newHeight >> 16);
+				newHeight |= newHeight >> 1;
+				newHeight |= newHeight >> 2;
+				newHeight |= newHeight >> 4;
+				newHeight |= newHeight >> 8;
+				newHeight |= newHeight >> 16;
 				newHeight++;
 				var width = 1 << lgTileWidth; // Calculate map width
 				var height = newHeight;
 
-				map = new Map(modData, modData.DefaultTerrainInfo["default"], width + 2, (int)height + 2)
+				map = new Map(modData, modData.DefaultTerrainInfo["default"], width + 2, height + 2)
 				{
 					Title = Path.GetFileNameWithoutExtension(filename),
 					Author = "OpenOP2",
@@ -137,7 +137,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				var tileIds = new List<TileSetInfo>();
 				var tilesetStartIndices = new List<uint>();
 				var tilesetTileIndex = 0;
-				for (int i = 0; i < numTileSets; i++)
+				for (var i = 0; i < numTileSets; i++)
 				{
 					var stringLength = stream.ReadInt32();
 					if (stringLength <= 0) continue;
@@ -195,11 +195,11 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 					{
 						var tileXUpper = x >> 5;
 						var tileXLower = x & 0x1F;
-						var tileOffset = (((tileXUpper * height) + y) << 5) + tileXLower;
+						var tileOffset = ((tileXUpper * height + y) << 5) + tileXLower;
 						var tile = tiles[tileOffset];
 
 						// Get the tile mapping index
-						var cellType = (tile & 0x1F);
+						var cellType = tile & 0x1F;
 						var tileMappingIndex = (tile & 0xFFE0) >> 5;
 						var actorMappingIndex = (tile & 0x7FF00000) >> 11;
 						var lava = (tile & 0x00000001) >> 27;
@@ -257,7 +257,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			var dest = Path.GetFileNameWithoutExtension(args[1]) + ".oramap";
 			var mapLocations = Game.ModData.Manifest.MapFolders;
 			var userMapPath = mapLocations.First(mapLocation => mapLocation.Value == "User");
-			var targetPath = Path.Combine(Platform.ResolvePath(userMapPath.Key.Substring(1)), dest);
+			var targetPath = Path.Combine(Platform.ResolvePath(userMapPath.Key[1..]), dest);
 			map.Save(ZipFileLoader.Create(targetPath));
 
 			Console.WriteLine(targetPath + " saved.");

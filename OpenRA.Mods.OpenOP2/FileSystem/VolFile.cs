@@ -29,10 +29,10 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 
 		sealed class VolFile : IReadOnlyPackage
 		{
-			public string Name { get; private set; }
+			public string Name { get; }
 			public IEnumerable<string> Contents { get { return index.Keys; } }
 
-			readonly Dictionary<string, VolEntry> index = new Dictionary<string, VolEntry>();
+			readonly Dictionary<string, VolEntry> index = new();
 			readonly Stream stream;
 
 			public VolFile(Stream stream, string filename)
@@ -43,8 +43,7 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 				var magicByte = stream.ReadASCII(4);
 				if (magicByte != "VOL ")
 					return;
-
-				var unknown1 = stream.ReadUInt32();
+				_ = stream.ReadUInt32();
 
 				var header = stream.ReadASCII(4);
 				var zero = stream.ReadUInt32();
@@ -54,9 +53,8 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 				var volumeSection = stream.ReadASCII(4);
 				if (volumeSection != "vols")
 					return;
-
-				var unknown2 = stream.ReadUInt32();
-				var directoryOffset = stream.ReadUInt32();
+				_ = stream.ReadUInt32();
+				_ = stream.ReadUInt32();
 
 				var entryFilenames = new List<string>();
 				while (true)
@@ -79,8 +77,7 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 				var volumeIndex = stream.ReadASCII(4);
 				if (volumeIndex != "voli")
 					return;
-
-				var totalSize = stream.ReadUInt32();
+				_ = stream.ReadUInt32();
 
 				foreach (var entryFilename in entryFilenames)
 				{
@@ -113,8 +110,7 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 
 			public Stream GetStream(string filename)
 			{
-				VolEntry entry;
-				if (!index.TryGetValue(filename, out entry))
+				if (!index.TryGetValue(filename, out var entry))
 					return null;
 
 				stream.Seek(entry.Offset, SeekOrigin.Begin);
@@ -129,12 +125,11 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 
 			public IReadOnlyPackage OpenPackage(string filename, FS context)
 			{
-				IReadOnlyPackage package;
 				var childStream = GetStream(filename);
 				if (childStream == null)
 					return null;
 
-				if (context.TryParsePackage(childStream, filename, out package))
+				if (context.TryParsePackage(childStream, filename, out var package))
 					return package;
 
 				childStream.Dispose();

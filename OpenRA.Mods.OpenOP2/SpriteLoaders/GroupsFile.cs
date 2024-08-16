@@ -50,7 +50,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 	public class OutputSequence
 	{
 		public string Name;
-		public List<OutputSequenceFrameset> Framesets = new List<OutputSequenceFrameset>();
+		public List<OutputSequenceFrameset> Framesets = new();
 	}
 
 	public class OutputSequenceFrameset
@@ -59,14 +59,14 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 		public bool IsBlank;
 		public int OffsetX;
 		public int OffsetY;
-		public List<int> Frames = new List<int>();
+		public List<int> Frames = new();
 	}
 
 	public class GroupsFile
 	{
 		public const int EmptySprite = 5390;
 
-		public List<GroupSequence> Groups { get; private set; }
+		public List<GroupSequence> Groups { get; }
 
 		public GroupsFile()
 		{
@@ -185,11 +185,11 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 		/// The frame types of each picture for each facing might not be in the same order for all facings, nor the same number of pictures for each frame type per facing.
 		/// Create "buckets" for each frame type and deposit each picture into each bucket, expanding the number of buckets as necessary.
 		/// </summary>
-		/// <param name="prtFile">The PRT file</param>
-		/// <param name="groupSequence">The group sequence</param>
-		/// <param name="groupSequenceSet">The group sequence set</param>
-		/// <param name="frameCount">The output frame count</param>
-		/// <returns>The list of sequence sets</returns>
+		/// <param name="prtFile">The PRT file.</param>
+		/// <param name="groupSequence">The group sequence.</param>
+		/// <param name="groupSequenceSet">The group sequence set.</param>
+		/// <param name="frameCount">The output frame count.</param>
+		/// <returns>The list of sequence sets.</returns>
 		public static List<SequenceSet> GetTypedGroupFrames(PrtFile prtFile, GroupSequence groupSequence, GroupSequenceSet groupSequenceSet, out int frameCount)
 		{
 			var typeGroupedFrames = new List<SequenceSet>();
@@ -264,8 +264,8 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						var rawFrame = prtFile.ImageHeader[pic.ImgNumber];
 						var halfWidth = (int)Math.Ceiling(rawFrame.PaddedWidth / 2.0);
 						var halfHeight = (int)Math.Ceiling(rawFrame.Height / 2.0);
-						var relX = (halfWidth - group.CenterX) + pic.PosX;
-						var relY = (halfHeight - group.CenterY) + pic.PosY;
+						var relX = halfWidth - group.CenterX + pic.PosX;
+						var relY = halfHeight - group.CenterY + pic.PosY;
 
 						var matchingSequenceFrames = typeGroupedFrames
 							.Where(x => x.FrameType == rawFrame.ImageType &&
@@ -382,12 +382,12 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 		}
 
 		/// <summary>
-		/// Further specialize output sequences by shared offsets
+		/// Further specialize output sequences by shared offsets.
 		/// </summary>
-		/// <param name="sequenceName">a</param>
-		/// <param name="groupSequenceSet">b</param>
-		/// <param name="typeGroupedFrame">c</param>
-		/// <returns>d</returns>
+		/// <param name="sequenceName">a.</param>
+		/// <param name="groupSequenceSet">b.</param>
+		/// <param name="typeGroupedFrame">c.</param>
+		/// <returns>d.</returns>
 		public static OutputSequence GetOutputSequence(string sequenceName, GroupSequenceSet groupSequenceSet, SequenceSet typeGroupedFrame)
 		{
 			var outputSequence = new OutputSequence()
@@ -407,7 +407,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					var isBlank = frame == null;
 					var innerSequenceName = $"{groupSequenceSet.Sequence}-facing{facingIndex}-{frameIndex}";
 
-					Func<OutputSequenceFrameset> getNewFrameset = () =>
+					OutputSequenceFrameset GetNewFrameset()
 					{
 						var newFrameset = new OutputSequenceFrameset()
 						{
@@ -427,13 +427,13 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						}
 
 						return newFrameset;
-					};
+					}
 
 					var outputFrames = outputSequence.Framesets;
 					var lastFrame = outputFrames.LastOrDefault();
 					if (lastFrame == null)
 					{
-						outputSequence.Framesets.Add(getNewFrameset());
+						outputSequence.Framesets.Add(GetNewFrameset());
 					}
 					else
 					{
@@ -446,7 +446,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						else
 						{
 							// It's not a match; add a new one
-							outputSequence.Framesets.Add(getNewFrameset());
+							outputSequence.Framesets.Add(GetNewFrameset());
 						}
 					}
 				}

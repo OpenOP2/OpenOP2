@@ -22,7 +22,7 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.OpenOP2.Traits
 {
 	[Desc("Loads palettes from a .bmp file.")]
-	class PaletteFromBmpFileInfo : TraitInfo, IProvidesCursorPaletteInfo
+	sealed class PaletteFromBmpFileInfo : TraitInfo, IProvidesCursorPaletteInfo
 	{
 		[PaletteDefinition]
 		[FieldLoader.Require]
@@ -31,10 +31,10 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 		[Desc("Defines for which tileset IDs this palette should be loaded.",
 			"If none specified, it applies to all tileset IDs not explicitly excluded.")]
-		public readonly HashSet<string> Tilesets = new HashSet<string>();
+		public readonly HashSet<string> Tilesets = new();
 
 		[Desc("Don't load palette for these tileset IDs.")]
-		public readonly HashSet<string> ExcludeTilesets = new HashSet<string>();
+		public readonly HashSet<string> ExcludeTilesets = new();
 
 		[FieldLoader.Require]
 		[Desc("Name of the file to load.")]
@@ -72,12 +72,12 @@ namespace OpenRA.Mods.OpenOP2.Traits
 					var reserved = s.ReadByte();
 				}
 
-				return new ImmutablePalette(paletteData.Select(d => (uint)d.ToArgb()).ToArray());
+				return new ImmutablePalette(paletteData.Select(d => d.ToArgb()).ToArray());
 			}
 		}
 	}
 
-	class PaletteFromBmpFile : ILoadsPalettes, IProvidesAssetBrowserPalettes
+	sealed class PaletteFromBmpFile : ILoadsPalettes, IProvidesAssetBrowserPalettes
 	{
 		readonly World world;
 		readonly PaletteFromBmpFileInfo info;

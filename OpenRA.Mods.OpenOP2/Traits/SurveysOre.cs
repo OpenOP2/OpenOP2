@@ -30,7 +30,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 		public override object Create(ActorInitializer init) { return new SurveysOre(init.Self, this); }
 
-		[FieldLoader.LoadUsing("LoadReplacements")]
+		[FieldLoader.LoadUsing(nameof(LoadReplacements))]
 		public Dictionary<string, OreSurveyReplacementInfo> Replacements;
 
 		static object LoadReplacements(MiniYaml yaml)
@@ -120,11 +120,6 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 			lastPosition = actor.Location;
 			UpdateCellsIfMoved(self);
-		}
-
-		protected override void TraitDisabled(Actor self)
-		{
-			base.TraitDisabled(self);
 		}
 	}
 }

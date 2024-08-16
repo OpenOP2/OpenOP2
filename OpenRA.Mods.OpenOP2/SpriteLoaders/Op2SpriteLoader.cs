@@ -15,7 +15,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using OpenRA.Graphics;
-using OpenRA.Mods.Common.Graphics;
 using OpenRA.Mods.Common.SpriteLoaders;
 using OpenRA.Mods.OpenOP2.FileSystem;
 using OpenRA.Primitives;
@@ -24,9 +23,6 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 {
 	public class Op2SpriteLoader : ISpriteLoader
 	{
-		const string OutputFilename = "..\\..\\mods\\openop2\\GROUP-START-VALUES.txt";
-
-		// readonly StringBuilder sb = new StringBuilder();
 		public bool TryParseSprite(Stream s, string filename, out ISpriteFrame[] frames, out TypeDictionary metadata)
 		{
 			var start = s.Position;
@@ -40,15 +36,14 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 				return false;
 			}
 
-			var size = s.ReadUInt32();
-			var reserved1 = s.ReadUInt16();
-			var reserved2 = s.ReadUInt16();
+			_ = s.ReadUInt32();
+			_ = s.ReadUInt16();
+			_ = s.ReadUInt16();
 			var dataStart = s.ReadUInt32();
-			var frameList = new List<ISpriteFrame>();
+			_ = new List<ISpriteFrame>();
 
 			// Populate art data
 			var prt = Prt.Instance;
-			var prtFile = prt.PrtFile;
 			var palettes = prt.Palettes;
 
 			metadata = new TypeDictionary { new EmbeddedSpritePalette(framePalettes: palettes) };
@@ -57,29 +52,25 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 			frames = CombineGroupImagesIntoFrames();
 
-			// using (var sw = new StreamWriter(OutputFilename))
-			// {
-			// 	sw.Write(sb.ToString());
-			// }
 			return true;
 		}
 
-		ISpriteFrame[] CombineGroupImagesIntoFrames()
+		static ISpriteFrame[] CombineGroupImagesIntoFrames()
 		{
 			var prt = Prt.Instance;
 			var prtFile = prt.PrtFile;
 			var combinedFrames = new List<ISpriteFrame>();
 			var shadowColor = Color.FromArgb(150, 0, 0, 0);
-			var shadowColorInt = (uint)shadowColor.ToArgb();
+			var shadowColorInt = shadowColor.ToArgb();
 
 			for (var groupIndex = 0; groupIndex < prtFile.Groups.Length; groupIndex++)
 			{
 				var group = prtFile.Groups[groupIndex];
 
-				int maxWidth = 0;
-				int maxHeight = 0;
-				int minPicX = int.MaxValue;
-				int minPicY = int.MaxValue;
+				var maxWidth = 0;
+				var maxHeight = 0;
+				var minPicX = int.MaxValue;
+				var minPicY = int.MaxValue;
 				for (var frameIndex = 0; frameIndex < group.Frames.Length; frameIndex++)
 				{
 					// Precalculate all frame sizes with offsets to get a correct frame size
@@ -162,7 +153,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 						for (var x = 0; x < groupWidth; x++)
 						{
 							var thisColor = frameColors[x, y];
-							var colorIndex = ((y * groupWidth * 4) + (x * 4));
+							var colorIndex = y * groupWidth * 4 + x * 4;
 							var colorBytes = BitConverter.GetBytes(thisColor);
 
 							byteData[colorIndex] = colorBytes[0];
@@ -189,7 +180,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			return combinedFrames.ToArray();
 		}
 
-		ISpriteFrame[] LoadAllImagesAsSpriteFrames(Stream s, uint dataStart)
+		static ISpriteFrame[] LoadAllImagesAsSpriteFrames(Stream s, uint dataStart)
 		{
 			var prt = Prt.Instance;
 			var prtFile = prt.PrtFile;
@@ -247,9 +238,9 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					{
 						for (var x = 0; x < img.Width; x++)
 						{
-							var i = (int)((y * paddedWidth) + x);
-							var reversedBitIndex = 7 - (i % BitsInAByte);
-							var byteFloor = i - (i % BitsInAByte);
+							var i = (int)(y * paddedWidth + x);
+							var reversedBitIndex = 7 - i % BitsInAByte;
+							var byteFloor = i - i % BitsInAByte;
 
 							var lookupIndex = byteFloor + reversedBitIndex;
 							processedData[i] = (byte)(bits[lookupIndex] ? ShadowTileIndex : 0);

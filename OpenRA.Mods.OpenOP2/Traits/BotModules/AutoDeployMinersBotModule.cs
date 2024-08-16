@@ -9,7 +9,6 @@
  */
 #endregion
 
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using OpenRA.Mods.Common.Traits;
@@ -21,7 +20,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 	public class AutoDeployMinersBotModuleInfo : ConditionalTraitInfo
 	{
 		[Desc("Actor types that are considered miners (deploy into mines).")]
-		public readonly HashSet<string> MinerTypes = new HashSet<string>();
+		public readonly HashSet<string> MinerTypes = new();
 
 		[Desc("The type of resource to look for.")]
 		public string TargetResourceType = "ore";
@@ -33,7 +32,6 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 	public class AutoDeployMinersBotModule : ConditionalTrait<AutoDeployMinersBotModuleInfo>, IBotTick
 	{
-		readonly IResourceLayer resourceLayer;
 		readonly ResourceClaimLayer claimLayer;
 		readonly int tickEvery = 50;
 
@@ -46,7 +44,6 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			world = self.World;
 			player = self.Owner;
 
-			resourceLayer = self.World.WorldActor.Trait<IResourceLayer>();
 			claimLayer = self.World.WorldActor.Trait<ResourceClaimLayer>();
 		}
 
@@ -75,23 +72,11 @@ namespace OpenRA.Mods.OpenOP2.Traits
 
 		/// <summary>
 		/// Finds the closest harvestable pos between the current position of the harvester
-		/// and the last order location
+		/// and the last order location.
 		/// </summary>
 		CPos? ClosestHarvestablePos(Actor self)
 		{
 			var mobile = self.Trait<Mobile>();
-
-			// Determine where to search from and how far to search:
-			Func<CPos, bool> canHarvest = pos =>
-			{
-				var resType = resourceLayer.GetResource(pos);
-				if (string.Compare(resType.Type, Info.TargetResourceType, StringComparison.OrdinalIgnoreCase) == 0)
-				{
-					return true;
-				}
-
-				return false;
-			};
 
 			// Find any harvestable resources:
 			var path = mobile.PathFinder.FindPathToTargetCellByPredicate(

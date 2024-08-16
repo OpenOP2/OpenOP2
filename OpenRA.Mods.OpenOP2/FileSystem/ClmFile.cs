@@ -44,10 +44,10 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 			const string ClmHeaderString = "OP2 Clump File Version 1.0\u001a\0\0\0\0\0";
 			const int HeaderSize = 44;
 
-			public string Name { get; private set; }
+			public string Name { get; }
 			public IEnumerable<string> Contents { get { return index.Keys; } }
 
-			readonly Dictionary<string, ClmEntry> index = new Dictionary<string, ClmEntry>();
+			readonly Dictionary<string, ClmEntry> index = new();
 			readonly Stream stream;
 			readonly WaveFormatEx waveFormatEx;
 
@@ -70,8 +70,7 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 					BitsPerSample = stream.ReadUInt16(),
 					Size = stream.ReadUInt16()
 				};
-
-				var unknownBytes = stream.ReadBytes(6);
+				_ = stream.ReadBytes(6);
 
 				var filesCount = stream.ReadUInt32();
 
@@ -87,13 +86,12 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 					index.Add(clmIndex.Filename, clmIndex);
 				}
 
-				var test = stream.ReadASCII(160);
+				_ = stream.ReadASCII(160);
 			}
 
 			public Stream GetStream(string filename)
 			{
-				ClmEntry entry;
-				if (!index.TryGetValue(filename.Replace(".wav", string.Empty), out entry))
+				if (!index.TryGetValue(filename.Replace(".wav", string.Empty), out var entry))
 					return null;
 
 				stream.Seek(entry.Offset, SeekOrigin.Begin);
@@ -111,7 +109,7 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 			{
 				var bytes = new byte[HeaderSize];
 				var stream = new MemoryStream(bytes);
-				using (var streamWriter = new BinaryWriter(stream, System.Text.Encoding.UTF8, false))
+				using (var streamWriter = new BinaryWriter(stream, Encoding.UTF8, false))
 				{
 					streamWriter.Write(Encoding.ASCII.GetBytes("RIFF"));
 					streamWriter.Write(38 + length);
@@ -138,12 +136,11 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 
 			public IReadOnlyPackage OpenPackage(string filename, FS context)
 			{
-				IReadOnlyPackage package;
 				var childStream = GetStream(filename);
 				if (childStream == null)
 					return null;
 
-				if (context.TryParsePackage(childStream, filename, out package))
+				if (context.TryParsePackage(childStream, filename, out var package))
 					return package;
 
 				childStream.Dispose();

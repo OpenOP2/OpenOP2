@@ -17,10 +17,6 @@ namespace OpenRA.Mods.OpenOP2.Graphics
 	/// <inheritdoc/>
 	public class Op2SpriteSequenceLoader : DefaultSpriteSequenceLoader
 	{
-		/// <summary>
-		/// Initializes a new instance of the <see cref="Op2SpriteSequenceLoader"/> class.
-		/// </summary>
-		/// <param name="modData">Mod data</param>
 		public Op2SpriteSequenceLoader(ModData modData)
 			: base(modData) { }
 

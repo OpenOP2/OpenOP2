@@ -22,28 +22,18 @@ namespace OpenRA.Mods.OpenOP2.Graphics
 	public class Op2SpriteSequence : DefaultSpriteSequence, IOp2SpriteSequence
 	{
 		[Desc("Facing index to start from.")]
-		static readonly SpriteSequenceField<int> FacingOffset = new SpriteSequenceField<int>(nameof(FacingOffset), 0);
+		static readonly SpriteSequenceField<int> FacingOffset = new(nameof(FacingOffset), 0);
 
 		int IOp2SpriteSequence.FacingOffset => facingOffset;
 
 		readonly int facingOffset;
 
-		/// <summary>
-		/// Initializes a new instance of the <see cref="Op2SpriteSequence"/> class.
-		/// </summary>
-		/// <param name="cache"></param>
-		/// <param name="loader"></param>
-		/// <param name="image"></param>
-		/// <param name="sequence"></param>
-		/// <param name="data"></param>
-		/// <param name="defaults"></param>
-		/// <exception cref="FormatException"></exception>
 		public Op2SpriteSequence(SpriteCache cache, ISpriteSequenceLoader loader, string image, string sequence, MiniYaml data, MiniYaml defaults)
 			: base(cache, loader, image, sequence, data, defaults)
 		{
 			try
 			{
-				this.facingOffset = LoadField(FacingOffset, data, defaults);
+				facingOffset = LoadField(FacingOffset, data, defaults);
 			}
 			catch (FormatException f)
 			{
@@ -54,7 +44,7 @@ namespace OpenRA.Mods.OpenOP2.Graphics
 		/// <inheritdoc/>
 		protected override int GetFacingFrameOffset(WAngle facing)
 		{
-			return (Util.IndexFacing(facing, this.facings) + this.facingOffset) % this.facings;
+			return (Util.IndexFacing(facing, facings) + facingOffset) % facings;
 		}
 	}
 }

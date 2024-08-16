@@ -20,7 +20,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 	public class RepelsBlightInfo : ConditionalTraitInfo
 	{
 		[Desc("How far the light repulsion extends from the actor.")]
-		public WDist Radius = new WDist(2048);
+		public WDist Radius = new(2048);
 
 		[Desc("How often to update the light radius cells.")]
 		public int UpdateEvery = 1;
@@ -43,7 +43,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		readonly World world;
 		Actor actor;
 		readonly RepelsBlightInfo info;
-		HashSet<CPos> repellingCells = new HashSet<CPos>();
+		HashSet<CPos> repellingCells = new();
 		public List<CPos> RandomSamples { get; private set; } = new List<CPos>();
 		public RepelsBlight(Actor self, RepelsBlightInfo info)
 			: base(info)
@@ -125,8 +125,8 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			var metrics = repellingCells.Select(x =>
 			{
 				var distanceFromCenter = x - actor.Location;
-				var distancePercent = ((radiusLength - distanceFromCenter.Length) * 100) / radiusLength;
-				var random = (info.RepulsionRandom / 2) - world.SharedRandom.Next(0, info.RepulsionRandom);
+				var distancePercent = (radiusLength - distanceFromCenter.Length) * 100 / radiusLength;
+				var random = info.RepulsionRandom / 2 - world.SharedRandom.Next(0, info.RepulsionRandom);
 				return new
 				{
 					Position = x,

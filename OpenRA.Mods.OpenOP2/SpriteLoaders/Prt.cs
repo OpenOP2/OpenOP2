@@ -43,7 +43,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			}
 		}
 
-		List<uint[]> LoadPalettes(Stream s)
+		static List<uint[]> LoadPalettes(Stream s)
 		{
 			var cpal = s.ReadASCII(4);
 			if (cpal != "CPAL")
@@ -82,7 +82,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					var reserved = s.ReadByte();
 				}
 
-				palettes.Add(paletteData.Select(d => (uint)d.ToArgb()).ToArray());
+				palettes.Add(paletteData.Select(d => d.ToArgb()).ToArray());
 			}
 
 			return palettes;

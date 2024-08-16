@@ -19,14 +19,14 @@ namespace OpenRA.Mods.OpenOP2.Traits
 	public class BulldozesTerrainWhenCreatedInfo : ConditionalTraitInfo
 	{
 		[Desc("Size of bulldozed area.")]
-		public int2 Size = new int2(3, 3);
+		public int2 Size = new(3, 3);
 
 		[Desc("Offset from the top left of the object when bulldozing.")]
-		public int2 Offset = new int2(0, 0);
+		public int2 Offset = new(0, 0);
 
 		public override object Create(ActorInitializer init) { return new BulldozesTerrainWhenCreated(this); }
 
-		[FieldLoader.LoadUsing("LoadReplacements")]
+		[FieldLoader.LoadUsing(nameof(LoadReplacements))]
 		public Dictionary<string, BulldozesTerrainReplacementInfo> Replacements;
 
 		static object LoadReplacements(MiniYaml yaml)
@@ -92,16 +92,6 @@ namespace OpenRA.Mods.OpenOP2.Traits
 					}
 				}
 			}
-		}
-
-		protected override void TraitEnabled(Actor self)
-		{
-			base.TraitEnabled(self);
-		}
-
-		protected override void TraitDisabled(Actor self)
-		{
-			base.TraitDisabled(self);
 		}
 	}
 }

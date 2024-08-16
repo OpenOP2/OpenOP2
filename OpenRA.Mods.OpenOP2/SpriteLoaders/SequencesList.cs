@@ -59,7 +59,7 @@
 		public bool WithSingleFrameIdle { get; set; }
 
 		/// <summary>
-		/// Reorder the group IDs in this order, from 0 to N
+		/// Reorder the group IDs in this order, from 0 to N.
 		/// </summary>
 		public int[] GroupIndexRemapping { get; set; }
 	}
