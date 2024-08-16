@@ -2,7 +2,6 @@ laser:
 	ReloadDelay: 35
 	Range: 4c0
 	Report: laser.WAV
-	Zoffset: 700
 	Projectile: LaserZap
 		Color: FF000080
 		Width: 60
@@ -152,8 +151,7 @@ EMP:
 EMP_Sparks:
 	Inherits: RPG
 	Range: 5c0
-	ZOffset: 700
-	-Report: mis_fire.WAV
+	-Report:
 	Projectile: Bullet
 		Palette: 5
 		Speed: 1000
@@ -192,7 +190,6 @@ stickygoo:
 	Inherits: EMP_Sparks
 	ReloadDelay: 90
 	Range: 5c0
-	ZOffset: 700
 	InvalidTargets: stickyfoam
 	Warhead@Dam: SpreadDamage
 		Spread: 0c9
@@ -204,8 +201,8 @@ stickygoo:
 		Duration: 90
 		Condition: stickyfoam
 		InvalidTargets: stickyfoam
-	-Warhead@emp: GrantExternalCondition
-	-Warhead@Eff: CreateEffect
+	-Warhead@emp:
+	-Warhead@Eff:
 
 vehicleexplode:
 	ValidTargets: Ground, GroundActor

@@ -377,7 +377,6 @@ plymouth-panther-microwave:
 	Tooltip:
 		Name: Microwave Panther
 	WithSpriteTurret:
-		LocalOffset: 500,90,-90, 500,-90,-90
 		Sequence: turret
 	Armament:
 		Weapon: microwave

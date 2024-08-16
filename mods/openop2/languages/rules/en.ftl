@@ -1,90 +1,63 @@
 ## player.yaml
-options-tech-level =
-    .infantry-only = Infantry Only
-    .low = Low
-    .medium = Medium
-    .no-superweapons = No Superweapons
-    .unrestricted = Unrestricted
+#options-tech-level =
+#    .infantry-only = Infantry Only
+#    .low = Low
+#    .medium = Medium
+#    .no-superweapons = No Superweapons
+#    .unrestricted = Unrestricted
 
-checkbox-kill-bounties =
-    .label = Kill Bounties
-    .description = Players receive cash bonuses when killing enemy units
+#checkbox-kill-bounties =
+#    .label = Kill Bounties
+#    .description = Players receive cash bonuses when killing enemy units
 
-checkbox-redeployable-mcvs =
-    .label = Redeployable MCVs
-    .description = Allow undeploying Construction Yard
+#checkbox-redeployable-mcvs =
+#    .label = Redeployable MCVs
+#    .description = Allow undeploying Construction Yard
 
-checkbox-reusable-engineers =
-    .label = Reusable Engineers
-    .description = Engineers remain on the battlefield after capturing a structure
+#checkbox-reusable-engineers =
+#    .label = Reusable Engineers
+#    .description = Engineers remain on the battlefield after capturing a structure
 
-notification-insufficient-funds = Insufficient funds.
-notification-new-construction-options = New construction options.
-notification-cannot-deploy-here = Cannot deploy here.
+#-insufficient-funds = Insufficient funds.
+#notification-new-construction-options = New construction options.
+#notification-cannot-deploy-here = Cannot deploy here.
 notification-low-power = Low power.
 notification-base-under-attack = Base under attack.
-notification-ally-under-attack = Our ally is under attack.
-notification-silos-needed = Silos needed.
+#notification-ally-under-attack = Our ally is under attack.
+#notification-silos-needed = Silos needed.
 
 ## world.yaml
 options-starting-units =
-    .mcv-only = MCV Only
-    .light-support = Light Support
-    .heavy-support = Heavy Support
+    .cc-only = Command Center
+    .light = Light
 
 resource-minerals = Valuable Minerals
 
 ## Faction
-faction-allies =
-    .name = Allies
+faction-eden =
+    .name = Eden
+    .description = Eden
+     Background: A technology-driven colony, their purpose is
+     to terraform the planet and claim dominance over it.
+     Doctrine: Can exploit the local landscape to their benefit,
+     more efficient.
+     Specialty: Thor, GeoCon/Thermal Vents, Consumer Factory,
+     SULV, Blight Walls, Meteor Defense.
 
-faction-england =
-    .name = England
-    .description = England: Counterintelligence
-     Special Unit: British Spy
-     Special Unit: Mobile Gap Generator
-
-faction-france =
-    .name = France
-    .description = France: Deception
-     Special Ability: Can build fake structures
-     Special Unit: Phase Transport
-
-faction-germany =
-    .name = Germany
-    .description = Germany: Technology
-     Special Ability: Advanced Chronoshift
-     Special Unit: Chrono Tank
-
-faction-soviet =
-    .name = Soviet
-
-faction-russia =
-    .name = Russia
-    .description = Russia: Tesla Weapons
-     Special Unit: Tesla Tank
-     Special Unit: Shock Trooper
-
-faction-ukraine =
-    .name = Ukraine
-    .description = Ukraine: Demolitions
-     Special Ability: Parabombs
-     Special Unit: Demolition Truck
+faction-plymouth =
+    .name = Plymouth
+    .description = Plymouth
+     Background: The splinter colony: outcasts and rebels,
+     forced by planetary events to live a nomadic lifestyle.
+     Doctrine: Higher variety of weapons, more resistant to natural
+     disasters.
+     Specialty: Stickyfoam, Arachnids, ESG, Magma well, Lava Walls,
+     Super Nova, EMP SULV.
 
 faction-random =
     .name = Any
-    .description = Random Country
-     A random country will be chosen when the game starts.
-
-faction-randomallies =
-    .name = Allies
-    .description = Random Allied Country
-     A random Allied country will be chosen when the game starts.
-
-faction-randomsoviet =
-    .name = Soviet
-    .description = Random Soviet Country
-     A random Soviet country will be chosen when the game starts.
+    .description = Random Faction
+     A random faction will be chosen when the game starts.
 
 ## aircraft.yaml
 actor-badr-name = Badger

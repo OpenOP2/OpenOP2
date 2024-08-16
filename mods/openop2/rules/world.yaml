@@ -16,24 +16,24 @@
 	ShroudRenderer:
 		FogVariants: shroud
 		Index: 0, 13, 14, 12, 11, 9, 0, 8, 7, 0, 6, 4, 3, 1, 2, 0
-	Faction@Eden:
-		Name: Eden
+	Faction@eden:
+		Name: faction-eden.name
 		InternalName: eden
-		Side: Eden
+		Side: eden
 		Selectable: True
-		Description: Eden\nBackground: A technology-driven colony, their purpose is\nto terraform the planet and claim dominance over it.\n\nDoctrine: Can exploit the local landscape to their benefit,\nmore efficient.\n\nSpecialty: Thor, GeoCon/Thermal Vents, Consumer Factory,\nSULV, Blight Walls, Meteor Defense.
-	Faction@Plymouth:
-		Name: Plymouth
+		Description: faction-eden.description
+	Faction@plymouth:
+		Name: faction-plymouth.name
 		InternalName: plymouth
-		Side: Plymouth
+		Side: plymouth
 		Selectable: True
-		Description: Plymouth\nBackground: The splinter colony: outcasts and rebels,\nforced by planetary events to live a nomadic lifestyle.\n\nDoctrine: Higher variety of weapons, more resistant to natural\ndisasters.\n\nSpecialty: Stickyfoam, Arachnids, ESG, Magma well, Lava Walls,\nSuper Nova, EMP SULV.
-	Faction@Any:
-		Name: Any
+		Description: faction-plymouth.description
+	Faction@random:
+		Name: faction-random.name
 		InternalName: Random
-		Side: Any
+		Side: Random
 		RandomFactionMembers: eden, plymouth
-		Description: Randomly select Eden or Plymouth.
+		Description: faction-random.description
 
 World:
 	Inherits: ^BaseWorld
@@ -216,17 +216,17 @@ World:
 	CreateMapPlayers:
 	StartingUnits@cc-eden:
 		Class: none
-		ClassName: Command Center
+		ClassName: options-starting-units.cc-only
 		Factions: eden
 		BaseActor: eden-command-center
 	StartingUnits@cc-plymouth:
 		Class: none
-		ClassName: Command Center
+		ClassName: options-starting-units.cc-only
 		Factions: plymouth
 		BaseActor: plymouth-command-center
 	StartingUnits@light-eden:
 		Class: light
-		ClassName: Light
+		ClassName: options-starting-units.light
 		Factions: eden
 		BaseActor: eden-command-center
 		SupportActors: eden-robo-dozer, eden-robo-miner, eden-robo-surveyor, eden-earthworker
@@ -234,7 +234,7 @@ World:
 		OuterSupportRadius: 4
 	StartingUnits@light-plymouth:
 		Class: light
-		ClassName: Light
+		ClassName: options-starting-units.light
 		Factions: plymouth
 		BaseActor: plymouth-command-center
 		SupportActors: plymouth-robo-dozer, plymouth-robo-miner, plymouth-robo-surveyor, plymouth-earthworker

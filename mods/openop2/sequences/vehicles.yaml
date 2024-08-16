@@ -387,6 +387,9 @@ eden-flyer:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+	icon:
+		Filename: units.png
+		Start: 5
 
 plymouth-flyer:
 	idle:
@@ -401,6 +404,9 @@ plymouth-flyer:
 		Length: 1
 		Facings: 16
 		FacingOffset: 4
+	icon:
+		Filename: units.png
+		Start: 5
 
 eden-robo-repair:
 	idle:
@@ -432,6 +438,9 @@ eden-geocom:
 		Length: 8
 		Facings: 16
 		FacingOffset: 4
+	icon:
+		Filename: units.png
+		Start: 5
 
 plymouth-spider:
 	idle:
