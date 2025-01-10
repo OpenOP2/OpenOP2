@@ -221,7 +221,7 @@ actor-light-tower =
    .name = Light Tower
 
 actor-guard-post =
-   .name = Guard 
+   .name = Guard Post
    .description = Basic defense turret.
 
 ore =

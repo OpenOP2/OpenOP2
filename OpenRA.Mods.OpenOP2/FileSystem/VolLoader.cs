@@ -17,7 +17,7 @@ using FS = OpenRA.FileSystem.FileSystem;
 
 namespace OpenRA.Mods.OpenOP2.FileSystem
 {
-	public class VolFileLoader : IPackageLoader
+	public class VolLoader : IPackageLoader
 	{
 		struct VolEntry
 		{
@@ -27,7 +27,7 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 			public int Compression { get; set; }
 		}
 
-		sealed class VolFile : IReadOnlyPackage
+		public sealed class VolFile : IReadOnlyPackage
 		{
 			public string Name { get; }
 			public IEnumerable<string> Contents { get { return index.Keys; } }
@@ -35,9 +35,9 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 			readonly Dictionary<string, VolEntry> index = new();
 			readonly Stream stream;
 
-			public VolFile(Stream stream, string filename)
-			{
-				Name = filename;
+			public VolFile(Stream stream, string filename, string[] globalFilenames)
+            {
+                Name = filename;
 				this.stream = stream;
 
 				var magicByte = stream.ReadASCII(4);
@@ -140,17 +140,17 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 			{
 				stream.Dispose();
 			}
-		}
+        }
 
 		bool IPackageLoader.TryParsePackage(Stream s, string filename, FS context, out IReadOnlyPackage package)
-		{
+        {
 			if (!filename.EndsWith(".vol", StringComparison.InvariantCultureIgnoreCase))
 			{
 				package = null;
 				return false;
 			}
 
-			package = new VolFile(s, filename);
+			package = new VolFile(s, filename, Array.Empty<string>());
 			return true;
 		}
 	}

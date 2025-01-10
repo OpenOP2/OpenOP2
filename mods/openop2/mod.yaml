@@ -1,29 +1,32 @@
 Metadata:
 	Title: Outpost 2
-	Version: {release-20210823}
+	Version: {DEV_VERSION}
 	Website: https://github.com/OpenOP2
 	WebIcon32: https://www.drogoganor.net/op2/openop2_32x32.png
 	WindowTitle: OpenRA - OpenOP2
 
-PackageFormats: VolFile, ClmFile
+PackageFormats: Vol, ClmFile
 
-Packages:
-	~^SupportDir|Content/openop2/
-	^EngineDir|
-	$openop2: openop2
-	^EngineDir|mods/common: common
-	~art.vol
-	~maps.vol
-	~OP2_ART.BMP
-	~sheets.vol
-	~sound.vol
-	~story.vol
-	~tech.vol
-	~voices.vol
-	~op2.clm
-	openop2|bits
-	openop2|bits/icons
-	openop2|uibits
+FileSystem: ContentInstallerFileSystem
+	Packages:
+		^EngineDir
+		$openop2: openop2
+		^EngineDir|mods/common: common
+		~^SupportDir|Content/openop2: content
+	ContentPackages:
+		~content|art.vol
+		~content|maps.vol
+		~content|OP2_ART.BMP
+		~content|sheets.vol
+		~content|sound.vol
+		~content|story.vol
+		~content|tech.vol
+		~content|voices.vol
+		~content|op2.clm
+		openop2|bits
+		openop2|bits/icons
+		openop2|uibits
+	ContentInstallerMod: openop2-content
 
 MapFolders:
 	openop2|maps: System
@@ -59,19 +62,13 @@ Sequences:
 TileSets:
 	openop2|tilesets/default.yaml
 
-Weapons:
-	openop2|rules/weapons.yaml
-
 Cursors:
 	openop2|cursors.yaml
 
 Chrome:
 	openop2|chrome.yaml
 
-Assemblies:
-	^BinDir|OpenRA.Mods.OpenOP2.dll
-	^BinDir|OpenRA.Mods.Common.dll
-	^BinDir|OpenRA.Mods.Cnc.dll
+Assemblies: OpenRA.Mods.OpenOP2.dll, OpenRA.Mods.Common.dll, OpenRA.Mods.Cnc.dll
 
 ChromeLayout:
 	common|chrome/ingame.yaml
@@ -128,12 +125,18 @@ ChromeLayout:
 	common|chrome/playerprofile.yaml
 	common|chrome/text-notifications.yaml
 
-Translations:
-	common|languages/en.ftl
-	common|languages/chrome/en.ftl
-	common|languages/rules/en.ftl
-	openop2|languages/chrome/en.ftl
-	openop2|languages/rules/en.ftl
+FluentMessages:
+	common|fluent/common.ftl
+	common|fluent/chrome.ftl
+	common|fluent/hotkeys.ftl
+	common|fluent/rules.ftl
+	openop2|fluent/openop2.ftl
+	openop2|fluent/rules.ftl
+
+AllowUnusedFluentMessagesInExternalPackages: false
+
+Weapons:
+	openop2|rules/weapons.yaml
 
 Voices:
 	openop2|audio/voices.yaml
@@ -148,7 +151,6 @@ Hotkeys:
 	common|hotkeys/game.yaml
 	common|hotkeys/observer.yaml
 	common|hotkeys/production-common.yaml
-	common|hotkeys/production-peractor.yaml
 	common|hotkeys/supportpowers.yaml
 	common|hotkeys/viewport.yaml
 	common|hotkeys/chat.yaml
@@ -160,7 +162,6 @@ LoadScreen: LogoStripeLoadScreen
 	Image: openop2|uibits/loadscreen.png
 	Image2x: openop2|uibits/loadscreen-2x.png
 	Image3x: openop2|uibits/loadscreen-3x.png
-	Text: Filling Crates..., Charging Capacitors..., Reticulating Splines..., Planting Trees..., Building Bridges..., Aging Empires..., Compiling EVA..., Constructing Pylons..., Activating Skynet..., Splitting Atoms...
 
 ServerTraits:
 	LobbyCommands
@@ -255,17 +256,6 @@ GameSpeeds:
 			Name: options-game-speed.fastest
 			Timestep: 20
 			OrderLatency: 6
-
-ModContent:
-	InstallPromptMessage: OpenOP2 requires artwork and audio from the original game.\n\nPlease select Advanced Install and choose a source for installing\nthe game content.
-	HeaderMessage: Game content may be extracted from the original game.
-	Packages:
-		gog: GOG Install
-			TestFiles: ^SupportDir|Content/openop2/maps.vol, ^SupportDir|Content/openop2/sheets.vol, ^SupportDir|Content/openop2/sound.vol, ^SupportDir|Content/openop2/story.vol, ^SupportDir|Content/openop2/voices.vol, ^SupportDir|Content/openop2/OP2_ART.BMP, ^SupportDir|Content/openop2/op2.clm
-			Sources: op2gog
-			Required: true
-	Sources:
-		openop2|installer/gog.yaml
 
 DiscordService:
 	ApplicationId: 824544668116189194

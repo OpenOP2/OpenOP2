@@ -324,7 +324,6 @@ EditorWorld:
 				AllowUnderActors: true
 				AllowUnderBuildings: true
 				MaxDensity: 120000
-	EditorSelectionLayer:
 	LoadWidgetAtGameStart:
 	EditorActionManager:
 	MarkerLayerOverlay:

@@ -182,7 +182,7 @@
 	#	FallRate: 26
 	#	KilledOnImpassableTerrain: true
 	#	ParachutingCondition: parachute
-	#Explodes:
+	#FireWarheadsOnDeath:
 	#	Weapon: UnitExplodeSmall
 	#	EmptyWeapon: UnitExplodeSmall
 	WithFacingSpriteBody:
@@ -240,7 +240,7 @@
 	#GpsDot:
 	#	String: Ship
 	WithDamageOverlay:
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: UnitExplodeShip
 		EmptyWeapon: UnitExplodeShip
 	Guard:
@@ -320,7 +320,7 @@
 		Categories: Aircraft
 	SpawnActorOnDeath:
 		RequiresCondition: airborne
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: UnitExplode
 		RequiresCondition: !airborne
 
@@ -375,7 +375,7 @@
 	#	DamagedSounds: kaboom1.aud
 	#	DestroyedSounds: kaboom22.aud
 	WithSpriteBody:
-	#Explodes:
+	#FireWarheadsOnDeath:
 	#	Type: Footprint
 	#	Weapon: BuildingExplode
 	#	EmptyWeapon: BuildingExplode
@@ -448,7 +448,7 @@
 	-AcceptsDeliveredCash:
 	DrawLineToTarget:
 	#RenderRangeCircle:
-	#Explodes:
+	#FireWarheadsOnDeath:
 	#	Weapon: SmallBuildingExplode
 	#	EmptyWeapon: SmallBuildingExplode
 	MapEditorData:
@@ -529,7 +529,7 @@
 		AreaTypes: fake
 	Health:
 		HP: 10000
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: Demolish
 		DamageThreshold: 70
 	RevealsShroud:
@@ -560,7 +560,7 @@
 	SelectionDecorations:
 	Health:
 		HP: 1000
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: UnitExplode
 	Tooltip:
 		Name: Ammo Box
@@ -589,7 +589,7 @@
 	#SpawnActorOnDeath@3:
 	#	Actor: c3
 	#	Probability: 15
-	Explodes:
+	FireWarheadsOnDeath:
 		Weapon: SmallBuildingExplode
 	Explodes@CIVPANIC:
 		Weapon: CivPanicExplosion
@@ -598,7 +598,7 @@
 	Inherits: ^CivBuilding
 	-HitShape:
 	-Health:
-	-Explodes:
+	-FireWarheadsOnDeath:
 	-Explodes@CIVPANIC:
 	-Selectable:
 	-SelectionDecorations:
