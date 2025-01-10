@@ -131,6 +131,7 @@ FluentMessages:
 	common|fluent/hotkeys.ftl
 	common|fluent/rules.ftl
 	openop2|fluent/openop2.ftl
+	openop2|fluent/chrome.ftl
 	openop2|fluent/rules.ftl
 
 AllowUnusedFluentMessagesInExternalPackages: false
