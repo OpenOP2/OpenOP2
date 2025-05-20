@@ -1,0 +1,10 @@
+Container@OP2_WIDGETS:
+	X: WINDOW_WIDTH - 250
+	Y: 800
+	Visible: false
+	Children:
+		Image@TEST:
+			Width: 238
+			Height: 28
+			ImageCollection: commandbar
+			ImageName: background

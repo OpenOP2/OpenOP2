@@ -1,14 +1,14 @@
 Metadata:
-	Title: Outpost 2
+	Title: mod-title
 	Version: {DEV_VERSION}
 	Website: https://github.com/OpenOP2
 	WebIcon32: https://www.drogoganor.net/op2/openop2_32x32.png
-	WindowTitle: OpenRA - OpenOP2
+	WindowTitle: mod-windowtitle
 
 PackageFormats: Vol, ClmFile
 
 FileSystem: ContentInstallerFileSystem
-	Packages:
+	SystemPackages:
 		^EngineDir
 		$openop2: openop2
 		^EngineDir|mods/common: common
@@ -134,6 +134,7 @@ FluentMessages:
 	openop2|fluent/openop2.ftl
 	openop2|fluent/chrome.ftl
 	openop2|fluent/rules.ftl
+	openop2|fluent/hotkeys.ftl
 
 AllowUnusedFluentMessagesInExternalPackages: false
 

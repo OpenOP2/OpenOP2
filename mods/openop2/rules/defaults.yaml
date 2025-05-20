@@ -591,7 +591,7 @@
 	#	Probability: 15
 	FireWarheadsOnDeath:
 		Weapon: SmallBuildingExplode
-	Explodes@CIVPANIC:
+	FireWarheadsOnDeath@CIVPANIC:
 		Weapon: CivPanicExplosion
 
 ^CivField:
@@ -599,7 +599,7 @@
 	-HitShape:
 	-Health:
 	-FireWarheadsOnDeath:
-	-Explodes@CIVPANIC:
+	-FireWarheadsOnDeath@CIVPANIC:
 	-Selectable:
 	-SelectionDecorations:
 	Tooltip:

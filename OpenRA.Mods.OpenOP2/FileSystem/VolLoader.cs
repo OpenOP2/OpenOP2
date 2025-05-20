@@ -36,8 +36,8 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 			readonly Stream stream;
 
 			public VolFile(Stream stream, string filename, string[] globalFilenames)
-            {
-                Name = filename;
+			{
+				Name = filename;
 				this.stream = stream;
 
 				var magicByte = stream.ReadASCII(4);
@@ -140,10 +140,10 @@ namespace OpenRA.Mods.OpenOP2.FileSystem
 			{
 				stream.Dispose();
 			}
-        }
+		}
 
 		bool IPackageLoader.TryParsePackage(Stream s, string filename, FS context, out IReadOnlyPackage package)
-        {
+		{
 			if (!filename.EndsWith(".vol", StringComparison.InvariantCultureIgnoreCase))
 			{
 				package = null;
