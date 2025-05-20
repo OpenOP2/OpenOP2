@@ -68,7 +68,7 @@ Cursors:
 Chrome:
 	openop2|chrome.yaml
 
-Assemblies: OpenRA.Mods.OpenOP2.dll, OpenRA.Mods.Common.dll, OpenRA.Mods.Cnc.dll
+Assemblies: OpenRA.Mods.Common.dll, OpenRA.Mods.Cnc.dll, OpenRA.Mods.OpenOP2.dll
 
 ChromeLayout:
 	common|chrome/ingame.yaml
@@ -84,6 +84,7 @@ ChromeLayout:
 	common|chrome/ingame-menu.yaml
 	openop2|chrome/ingame-observer.yaml
 	openop2|chrome/ingame-player.yaml
+	openop2|chrome/ingame-op2.yaml
 	common|chrome/ingame-perf.yaml
 	common|chrome/ingame-debug.yaml
 	common|chrome/ingame-debug-hpf.yaml

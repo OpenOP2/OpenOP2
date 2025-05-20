@@ -292,6 +292,7 @@ World:
 		RandomSearchEvery: 8
 		RandomSearchMax: 8
 		StartDelayRandom: 8
+	LoadOp2WidgetAtGameStart:
 
 EditorWorld:
 	Inherits: ^BaseWorld
