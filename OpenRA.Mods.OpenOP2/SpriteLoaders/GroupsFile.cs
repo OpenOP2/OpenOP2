@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 using OpenRA.Mods.OpenOP2.FileSystem;
@@ -115,7 +116,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 				if (!string.IsNullOrWhiteSpace(groupIndexRemapping))
 				{
 					var indexStrings = groupIndexRemapping.Split(',');
-					var parsedIndices = indexStrings.Select(x => int.Parse(x)).ToArray();
+					var parsedIndices = indexStrings.Select(x => int.Parse(x, NumberStyles.Integer, CultureInfo.InvariantCulture)).ToArray();
 					groupSequence.GroupIndexRemapping = parsedIndices;
 				}
 
@@ -127,7 +128,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					var groupSequenceSet = new GroupSequenceSet
 					{
 						Sequence = set.Value.Value,
-						Start = int.Parse(setNodes.First(x => x.Key == "Start").Value.Value.ToString()),
+						Start = int.Parse(setNodes.First(x => x.Key == "Start").Value.Value.ToString(), NumberStyles.Integer, CultureInfo.InvariantCulture),
 					};
 
 					if (int.TryParse(setNodes.FirstOrDefault(x => x.Key == "Length")?.Value?.Value?.ToString(), out var length))
@@ -269,7 +270,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 
 						var matchingSequenceFrames = typeGroupedFrames
 							.Where(x => x.FrameType == rawFrame.ImageType &&
-							            x.Palette == rawFrame.Palette)
+										x.Palette == rawFrame.Palette)
 							.ToList();
 
 						var setFrame = false;
@@ -371,7 +372,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			var nonIdleSets = groupSequenceSets.Where(x => !idleSets.Contains(x));
 			var renumberedIdleSets = idleSets.Select((x, ind) =>
 			{
-				x.Sequence = "idle" + (ind + 2).ToString();
+				x.Sequence = "idle" + (ind + 2).ToString(CultureInfo.InvariantCulture);
 				return x;
 			}).ToList();
 
@@ -438,7 +439,7 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 					else
 					{
 						if ((isBlank && lastFrame.IsBlank) ||
-						    (!isBlank && !lastFrame.IsBlank && lastFrame.OffsetX == frame.OffsetX && lastFrame.OffsetY == frame.OffsetY))
+							(!isBlank && !lastFrame.IsBlank && lastFrame.OffsetX == frame.OffsetX && lastFrame.OffsetY == frame.OffsetY))
 						{
 							// It's a match, add our frame
 							lastFrame.Frames.Add(isBlank ? EmptySprite : frame.Frame);

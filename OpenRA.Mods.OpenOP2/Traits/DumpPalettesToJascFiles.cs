@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Globalization;
+using System.IO;
 using System.Text;
 using OpenRA.Graphics;
 using OpenRA.Primitives;
@@ -18,7 +19,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 			var outDir = Path.Combine(Platform.EngineDir, "..");
 			for (var i = 1; i < 9; i++)
 			{
-				var palette = wr.Palette(i.ToString());
+				var palette = wr.Palette(i.ToString(NumberFormatInfo.InvariantInfo));
 				var sb = new StringBuilder();
 				sb.AppendLine("JASC-PAL");
 				sb.AppendLine("0100");

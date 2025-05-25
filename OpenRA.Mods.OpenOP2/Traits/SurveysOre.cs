@@ -9,6 +9,7 @@
  */
 #endregion
 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using OpenRA.Mods.Common.Traits;
@@ -37,7 +38,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		{
 			var retList = new Dictionary<string, OreSurveyReplacementInfo>();
 			var replacements = yaml.Nodes.First(x => x.Key == "Replacements");
-			foreach (var node in replacements.Value.Nodes.Where(n => n.Key.StartsWith("Replacement")))
+			foreach (var node in replacements.Value.Nodes.Where(n => n.Key.StartsWith("Replacement", StringComparison.InvariantCulture)))
 			{
 				var ret = new OreSurveyReplacementInfo();
 				FieldLoader.Load(ret, node.Value);

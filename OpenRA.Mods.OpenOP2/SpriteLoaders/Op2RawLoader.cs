@@ -36,13 +36,13 @@ namespace OpenRA.Mods.OpenOP2.SpriteLoaders
 			const int TileWidth = 32;
 
 			const int NumPixels = TileWidth * TileWidth;
-			var numBytesPerTile = NumPixels / 8;
+			const int NumBytesPerTile = NumPixels / 8;
 			_ = new Size(TileWidth, TileWidth);
 			var size = new Size(TileWidth, TileWidth);
 			s.Seek(0, SeekOrigin.Begin);
 			for (var i = 0; i < NumTiles; i++)
 			{
-				var bytes = s.ReadBytes(numBytesPerTile);
+				var bytes = s.ReadBytes(NumBytesPerTile);
 				var swappedBytes = new List<byte>();
 				for (var rowIndex = 0; rowIndex < TileWidth; rowIndex++)
 				{

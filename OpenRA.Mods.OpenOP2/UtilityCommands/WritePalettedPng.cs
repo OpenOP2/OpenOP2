@@ -33,14 +33,14 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			// HACK: The engine code assumes that Game.modData is set.
 			Game.ModData = utility.ModData;
 
-			var height = 32;
-			var width = 64;
-			var bytes = new byte[height * width];
+			const int Height = 32;
+			const int Width = 64;
+			var bytes = new byte[Height * Width];
 			var index = 0;
-			for (var y = 0; y < height; y++)
+			for (var y = 0; y < Height; y++)
 			{
 				var xOffset = y % 2 != 0 ? 2 : 0;
-				for (var x = 0; x < width; x++)
+				for (var x = 0; x < Width; x++)
 				{
 					var pixelIndex = ValidIndex;
 					if (x >= 32)
@@ -75,7 +75,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 			palette[ValidIndex] = validColor;
 			palette[InvalidIndex] = invalidColor;
 
-			var png = new Png(bytes, OpenRA.Graphics.SpriteFrameType.Indexed8, width, height, palette, null);
+			var png = new Png(bytes, OpenRA.Graphics.SpriteFrameType.Indexed8, Width, Height, palette, null);
 			png.Save(FilePath);
 
 			Console.WriteLine($"'{FilePath}' saved.");

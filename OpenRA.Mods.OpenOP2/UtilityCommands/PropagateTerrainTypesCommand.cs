@@ -11,6 +11,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -52,7 +53,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				{
 					var restOfLine = ln.Replace(FramesTemplate, string.Empty);
 					var frameStrArray = restOfLine.Split(new char[] { ',' });
-					return frameStrArray.Select(x => int.Parse(x.Trim())).ToArray();
+					return frameStrArray.Select(x => int.Parse(x.Trim(), NumberStyles.Integer, NumberFormatInfo.InvariantInfo)).ToArray();
 				}
 
 				const string IdTemplate = "\t\tId: ";
@@ -65,7 +66,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				foreach (var line in lines)
 				{
 					var newLine = line;
-					if (line.StartsWith(IdTemplate))
+					if (line.StartsWith(IdTemplate, StringComparison.InvariantCulture))
 					{
 						var restOfLine = line.Replace(IdTemplate, string.Empty);
 						if (int.TryParse(restOfLine, out var id))
@@ -77,11 +78,11 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 							}
 						}
 					}
-					else if (line.StartsWith(ImagesTemplate))
+					else if (line.StartsWith(ImagesTemplate, StringComparison.InvariantCulture))
 					{
 						currentImage = line.Replace(ImagesTemplate, string.Empty).Trim();
 					}
-					else if (line.StartsWith(FramesTemplate))
+					else if (line.StartsWith(FramesTemplate, StringComparison.InvariantCulture))
 					{
 						frames = ExtractFrames(line);
 
@@ -90,7 +91,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 							dict.Add(currentImage, new Dictionary<int, string>());
 						}
 					}
-					else if (line.StartsWith(TilesTemplate))
+					else if (line.StartsWith(TilesTemplate, StringComparison.InvariantCulture))
 					{
 						// Read ahead the tile definitions
 						var frameCount = frames.Length;
@@ -131,12 +132,12 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				foreach (var line in restOfLines)
 				{
 					var newLine = line;
-					if (line.StartsWith(ImagesTemplate))
+					if (line.StartsWith(ImagesTemplate, StringComparison.InvariantCulture))
 					{
 						currentImage = line.Replace(ImagesTemplate, string.Empty).Trim();
 						tileDefs.Clear();
 					}
-					else if (line.StartsWith(FramesTemplate))
+					else if (line.StartsWith(FramesTemplate, StringComparison.InvariantCulture))
 					{
 						frames = ExtractFrames(line);
 

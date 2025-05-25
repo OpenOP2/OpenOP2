@@ -61,9 +61,9 @@ namespace OpenRA.Mods.OpenOP2.Traits
 				var something = s.ReadUInt32();
 
 				var framePalettes = new List<uint>();
-				var colors = 256;
-				var paletteData = new Color[colors];
-				for (var c = 0; c < colors; c++)
+				const int Colors = 256;
+				var paletteData = new Color[Colors];
+				for (var c = 0; c < Colors; c++)
 				{
 					var red = s.ReadByte();
 					var green = s.ReadByte();

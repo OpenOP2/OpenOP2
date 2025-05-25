@@ -29,8 +29,8 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 		sealed class TileSetInfo
 		{
-			public int NumTiles;				// Number of tiles in this tile set
-			public string TileSetName;			// File name of the tile set, as Outpost2 sees it
+			public int NumTiles;                // Number of tiles in this tile set
+			public string TileSetName;          // File name of the tile set, as Outpost2 sees it
 		}
 
 		sealed class TileSetMapping
@@ -96,8 +96,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 
 				// Update map header fields
 				// Round height up to nearest power of 2
-				var newHeight = tileHeight;
-				newHeight -= 1;
+				var newHeight = tileHeight - 1;
 				newHeight |= newHeight >> 1;
 				newHeight |= newHeight >> 2;
 				newHeight |= newHeight >> 4;
@@ -155,7 +154,7 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				}
 
 				var testString = stream.ReadASCII(10);
-				if (!testString.StartsWith("TILE SET"))
+				if (!testString.StartsWith("TILE SET", StringComparison.InvariantCulture))
 				{
 					throw new IOException("Couldn't find TILE SET tag.");
 				}
