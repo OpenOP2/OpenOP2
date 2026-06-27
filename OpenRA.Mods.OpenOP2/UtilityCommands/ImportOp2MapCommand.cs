@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using OpenRA.FileSystem;
+using OpenRA.Primitives;
 
 namespace OpenRA.Mods.OpenOP2.UtilityCommands
 {
@@ -106,7 +107,8 @@ namespace OpenRA.Mods.OpenOP2.UtilityCommands
 				var width = 1 << lgTileWidth; // Calculate map width
 				var height = newHeight;
 
-				map = new Map(modData, modData.DefaultTerrainInfo["default"], width + 2, height + 2)
+				var mapSize = new Size(width + 2, height + 2);
+				map = new Map(modData, modData.DefaultTerrainInfo["default"], mapSize)
 				{
 					Title = Path.GetFileNameWithoutExtension(filename),
 					Author = "OpenOP2",

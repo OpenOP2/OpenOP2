@@ -49,7 +49,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		public string PlaceResourceType = string.Empty;
 
 		[Desc("The resource density to set.")]
-		public int Amount = 1;
+		public byte Amount = 1;
 	}
 
 	public class PlacesResourcesWhenCreated : ConditionalTrait<PlacesResourcesWhenCreatedInfo>, INotifyRemovedFromWorld
@@ -58,7 +58,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		readonly IResourceLayer resourceLayer;
 		CPos deployLocation;
 		string removedResourceType;
-		int removedResourceAmount;
+		byte removedResourceAmount;
 
 		public PlacesResourcesWhenCreated(Actor self, PlacesResourcesWhenCreatedInfo info)
 			: base(info)

@@ -24,7 +24,7 @@ namespace OpenRA.Mods.OpenOP2.Traits
 		public int UpdateEvery = 1;
 
 		[Desc("Amount of ore to place when surveyed.")]
-		public int Amount = 120000;
+		public byte Amount = 255; // 120000;
 
 		[Desc("Notification sound to play when surveying completed.")]
 		public string PlaysNotification = string.Empty;

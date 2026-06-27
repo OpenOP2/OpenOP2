@@ -2,7 +2,6 @@
 	Inherits: ^Palettes
 	Inherits: ^Locomotors
 	Inherits: ^Resources
-	AlwaysVisible:
 	ActorMap:
 	ScreenMap:
 	Selection:

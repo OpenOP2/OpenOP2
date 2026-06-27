@@ -775,7 +775,6 @@
 
 ^Bridge:
 	Inherits@shape: ^1x1Shape
-	AlwaysVisible:
 	Tooltip:
 		Name: Bridge
 		ShowOwnerRow: false

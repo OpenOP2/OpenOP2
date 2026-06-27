@@ -1,6 +1,6 @@
 Metadata:
 	Title: mod-title
-	Version: {DEV_VERSION}
+	Version: playtest-20260222
 	Website: https://github.com/OpenOP2
 	WebIcon32: https://www.drogoganor.net/op2/openop2_32x32.png
 	WindowTitle: mod-windowtitle
@@ -30,7 +30,7 @@ FileSystem: ContentInstallerFileSystem
 
 MapFolders:
 	openop2|maps: System
-	~^SupportDir|maps/openop2/{DEV_VERSION}: User
+	~^SupportDir|maps/openop2/playtest-20260222: User
 
 Rules:
 	openop2|rules/palettes.yaml
@@ -97,6 +97,7 @@ ChromeLayout:
 	common|chrome/settings-audio.yaml
 	common|chrome/settings-input.yaml
 	common|chrome/settings-hotkeys.yaml
+	common|chrome/settings-gameplay.yaml
 	common|chrome/settings-advanced.yaml
 	common|chrome/credits.yaml
 	common|chrome/lobby.yaml
@@ -115,6 +116,7 @@ ChromeLayout:
 	common|chrome/connection.yaml
 	common|chrome/replaybrowser.yaml
 	common|chrome/gamesave-browser.yaml
+	#common|chrome/load-game-browser.yaml
 	openop2|chrome/gamesave-loading.yaml
 	common|chrome/dropdowns.yaml
 	common|chrome/musicplayer.yaml
@@ -129,12 +131,13 @@ ChromeLayout:
 FluentMessages:
 	common|fluent/common.ftl
 	common|fluent/chrome.ftl
+	#common|fluent/ingame-debug.ftl
 	common|fluent/hotkeys.ftl
 	common|fluent/rules.ftl
 	openop2|fluent/openop2.ftl
 	openop2|fluent/chrome.ftl
-	openop2|fluent/rules.ftl
 	openop2|fluent/hotkeys.ftl
+	openop2|fluent/rules.ftl
 
 AllowUnusedFluentMessagesInExternalPackages: false
 
@@ -208,8 +211,8 @@ Fonts:
 		Ascender: 18
 	Title:
 		Font: common|FreeSansBold.ttf
-		Size: 32
-		Ascender: 24
+		Size: 48
+		Ascender: 26
 
 Missions:
 
