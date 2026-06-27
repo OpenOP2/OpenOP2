@@ -174,7 +174,6 @@ ServerTraits:
 	SkirmishLogic
 	PlayerPinger
 	MasterServerPinger
-	LobbySettingsNotification
 
 ChromeMetrics:
 	common|metrics.yaml

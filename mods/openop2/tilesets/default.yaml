@@ -1,6 +1,7 @@
 General:
 	Name: Default
 	Id: default
+	TileSize: 32, 32
 	EditorTemplateOrder: Terrain
 	SheetSize: 1024
 

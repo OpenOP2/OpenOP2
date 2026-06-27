@@ -11,7 +11,6 @@ FileSystem: DefaultFileSystem
 		$openop2-content: op2content
 
 Rules:
-	content|rules.yaml
 
 Cursors:
 	content|cursors.yaml
