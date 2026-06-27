@@ -387,7 +387,6 @@
 		Footprint: x
 		Dimensions: 1,1
 		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -415,27 +414,27 @@
 			Replacement@common1:
 				RemoveResourceType: ore.common1
 				PlaceResourceType: ore.depot.common1
-				Amount: 120000
+				Amount: 255 # 120000
 			Replacement@common2:
 				RemoveResourceType: ore.common2
 				PlaceResourceType: ore.depot.common2
-				Amount: 240000
+				Amount: 255 # 240000
 			Replacement@common3:
 				RemoveResourceType: ore.common3
 				PlaceResourceType: ore.depot.common3
-				Amount: 360000
+				Amount: 255 # 360000
 			Replacement@rare1:
 				RemoveResourceType: ore.rare1
 				PlaceResourceType: ore.depot.rare1
-				Amount: 120000
+				Amount: 255 # 120000
 			Replacement@rare2:
 				RemoveResourceType: ore.rare2
 				PlaceResourceType: ore.depot.rare2
-				Amount: 240000
+				Amount: 255 # 240000
 			Replacement@rare3:
 				RemoveResourceType: ore.rare3
 				PlaceResourceType: ore.depot.rare3
-				Amount: 360000
+				Amount: 255 # 360000
 
 ^MineRare:
 	Inherits: ^Building
@@ -453,7 +452,6 @@
 		Footprint: x
 		Dimensions: 1,1
 		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -481,27 +479,27 @@
 			Replacement@common1:
 				RemoveResourceType: ore.common1
 				PlaceResourceType: ore.depot.common1
-				Amount: 120000
+				Amount: 255 # 120000
 			Replacement@common2:
 				RemoveResourceType: ore.common2
 				PlaceResourceType: ore.depot.common2
-				Amount: 240000
+				Amount: 255 # 240000
 			Replacement@common3:
 				RemoveResourceType: ore.common3
 				PlaceResourceType: ore.depot.common3
-				Amount: 360000
+				Amount: 255 # 360000
 			Replacement@rare1:
 				RemoveResourceType: ore.rare1
 				PlaceResourceType: ore.depot.rare1
-				Amount: 120000
+				Amount: 255 # 120000
 			Replacement@rare2:
 				RemoveResourceType: ore.rare2
 				PlaceResourceType: ore.depot.rare2
-				Amount: 240000
+				Amount: 255 # 240000
 			Replacement@rare3:
 				RemoveResourceType: ore.rare3
 				PlaceResourceType: ore.depot.rare3
-				Amount: 360000
+				Amount: 255 # 360000
 
 ^MineMagma:
 	Inherits: ^Building
@@ -519,7 +517,6 @@
 		Footprint: x
 		Dimensions: 1,1
 		TerrainTypes: Ore
-		AllowPlacementOnResources: true
 	HitShape:
 		Type: Rectangle
 			TopLeft: -512, -512
@@ -547,27 +544,27 @@
 			Replacement@common1:
 				RemoveResourceType: ore.common1
 				PlaceResourceType: ore.depot.common1
-				Amount: 120000
+				Amount: 255 # 120000
 			Replacement@common2:
 				RemoveResourceType: ore.common2
 				PlaceResourceType: ore.depot.common2
-				Amount: 240000
+				Amount: 255 # 240000
 			Replacement@common3:
 				RemoveResourceType: ore.common3
 				PlaceResourceType: ore.depot.common3
-				Amount: 360000
+				Amount: 255 # 360000
 			Replacement@rare1:
 				RemoveResourceType: ore.rare1
 				PlaceResourceType: ore.depot.rare1
-				Amount: 120000
+				Amount: 255 # 120000
 			Replacement@rare2:
 				RemoveResourceType: ore.rare2
 				PlaceResourceType: ore.depot.rare2
-				Amount: 240000
+				Amount: 255 # 240000
 			Replacement@rare3:
 				RemoveResourceType: ore.rare3
 				PlaceResourceType: ore.depot.rare3
-				Amount: 360000
+				Amount: 255 # 360000
 
 ^StorageCommon:
 	Inherits: ^Building

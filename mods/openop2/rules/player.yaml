@@ -103,7 +103,9 @@ Player:
 		ExploredMapCheckboxEnabled: True
 		FogCheckboxDisplayOrder: 3
 	FrozenActorLayer:
-	BaseAttackNotifier:
+	DamageNotifier:
+		ValidTargets: BaseBuilding
+		Notification: BaseAttack
 	PlayerStatistics:
 	PlaceBeacon:
 	ProvidesTechPrerequisite@infonly:

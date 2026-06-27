@@ -166,42 +166,42 @@ World:
 				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 				AllowUnderActors: true
 				AllowUnderBuildings: true
-				MaxDensity: 120000
+				MaxDensity: 255 # 120000
 			ore.depot.common2:
 				ResourceIndex: 14
 				TerrainType: Ore
 				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 				AllowUnderActors: true
 				AllowUnderBuildings: true
-				MaxDensity: 120000
+				MaxDensity: 255 # 120000
 			ore.depot.common3:
 				ResourceIndex: 15
 				TerrainType: Ore
 				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 				AllowUnderActors: true
 				AllowUnderBuildings: true
-				MaxDensity: 120000
+				MaxDensity: 255 # 120000
 			ore.depot.rare1:
 				ResourceIndex: 16
 				TerrainType: Ore
 				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 				AllowUnderActors: true
 				AllowUnderBuildings: true
-				MaxDensity: 120000
+				MaxDensity: 255 # 120000
 			ore.depot.rare2:
 				ResourceIndex: 17
 				TerrainType: Ore
 				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 				AllowUnderActors: true
 				AllowUnderBuildings: true
-				MaxDensity: 120000
+				MaxDensity: 255 # 120000
 			ore.depot.rare3:
 				ResourceIndex: 18
 				TerrainType: Ore
 				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 				AllowUnderActors: true
 				AllowUnderBuildings: true
-				MaxDensity: 120000
+				MaxDensity: 255 # 120000
 	ResourceClaimLayer:
 	WarheadDebugOverlay:
 	SpawnMapActors:
@@ -323,7 +323,7 @@ EditorWorld:
 				AllowedTerrainTypes: Clear, ClearSand, ClearRock, ClearRock2
 				AllowUnderActors: true
 				AllowUnderBuildings: true
-				MaxDensity: 120000
+				MaxDensity: 255 # 120000
 	LoadWidgetAtGameStart:
 	EditorActionManager:
 	MarkerLayerOverlay:

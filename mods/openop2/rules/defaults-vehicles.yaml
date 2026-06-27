@@ -139,7 +139,7 @@
 	Mobile:
 		Speed: 96
 	SurveysOre:
-		Amount: 120000
+		Amount: 255 # 120000
 		PlaysNotification: MiningLocationSurveyed
 		Replacements:
 			Replacement@common1:

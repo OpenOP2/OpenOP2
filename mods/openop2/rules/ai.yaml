@@ -24,7 +24,6 @@ Player:
 		RefineryTypes: eden-smelter-common, plymouth-smelter-common
 		PowerTypes: eden-tokamak, plymouth-tokamak
 		#BarracksTypes: eden-factory-vehicle, plymouth-factory-vehicle
-		VehiclesFactoryTypes: eden-factory-vehicle, plymouth-factory-vehicle
 		ProductionTypes: eden-factory-vehicle, plymouth-factory-vehicle
 		#NavalProductionTypes: spen,syrd
 		#SiloTypes: silo
